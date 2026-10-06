@@ -1,0 +1,98 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>AI research trend tracker</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<style>
+body{font-family:system-ui,sans-serif;margin:20px;color:#222}
+h1{margin:0 0 4px;font-size:22px}.meta{color:#666;font-size:13px}
+.tabs{display:flex;gap:6px;margin:14px 0 6px;flex-wrap:wrap}
+.tabs button{border:1px solid #3b6fb6;background:#fff;color:#3b6fb6;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:14px}
+.tabs#views button{font-size:12px;padding:3px 10px;border-color:#888;color:#555}.tabs#views button.on{background:#555;color:#fff}
+.tabs button.on{background:#3b6fb6;color:#fff}.top button{font-size:16px;padding:8px 22px}
+input#q{padding:7px;width:360px;font-size:14px;margin:6px 10px 6px 0}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th,td{border-bottom:1px solid #e3e3e3;padding:5px 5px;text-align:left;vertical-align:top}
+th{background:#f3f6fb;position:sticky;top:0}td.n,th.n{text-align:right;white-space:nowrap}
+.up{color:#1a8f2e;font-weight:600}.dn{color:#c62828;font-weight:600}.eq{color:#999}.new{background:#2962ff;color:#fff;border-radius:3px;padding:0 4px;font-size:11px}
+.tag{border-radius:10px;padding:1px 7px;font-size:11px;white-space:nowrap;background:#eee}
+.t-agents{background:#e3f2fd}.t-harness{background:#fff3e0}.t-JEPA{background:#ede7f6}.t-JEV{background:#fce4ec}.t-world{background:#e8f5e9}
+.score{font-weight:700}.dim{color:#999}.fav{color:#e6a700}
+.conf{display:inline-block;height:6px;width:36px;background:#eee;border-radius:3px;overflow:hidden;vertical-align:middle}
+.conf>i{display:block;height:100%;background:#3b6fb6}
+.help{display:inline-block;border:1px solid #888;border-radius:50%;width:16px;height:16px;text-align:center;font-size:11px;line-height:16px;cursor:help;color:#555;position:relative}
+.help .tip{display:none;position:absolute;left:20px;top:-4px;width:560px;background:#222;color:#eee;padding:10px;border-radius:6px;font-size:12px;line-height:1.45;text-align:left;z-index:9;font-weight:normal}
+.help:hover .tip{display:block}
+details{font-size:12px;color:#555;margin-top:16px}
+</style></head><body>
+<h1>AI research trend tracker <span class=help>?<span class=tip>
+<b>Trust / momentum score (0–100) — not star totals.</b><br>
+<b>Repos</b> combine (log-scaled within the window, missing → — / 0 weight, lowers confidence):<br>
+• Star <i>growth</i>/day (25%) — from our snapshots or stargazer timestamps; born-in-window repos use all stars as growth. Never lifetime star totals.<br>
+• Issue activity/day (15%) — issues opened + closed in ~30d lookback<br>
+• PR volume/day (10%) + merge rate (10%) — PRs opened and merged/opened<br>
+• Commit frequency/day (15%)<br>
+• Contributor count (10%) + contributor growth/day (15%) — count from GitHub; growth from our snapshots<br>
+<b>Papers</b>: HF upvotes/day (40%), linked-repo trust score (35%) when available (else measured star growth), HN mentions/day (25%).<br>
+Windows: papers by release date; repos created or pushed in window. Arrows vs previous run. Paradigm buttons re-rank within a tag.</span></span></h1>
+<div class=meta>Last updated: <b id=upd>…</b> · <span id=prevrun></span> · <span id=tracked></span></div>
+<div class="tabs top" id=tabs></div>
+<div class=tabs id=wins></div>
+<div class=tabs id=views style="font-size:12px"></div>
+<input id=q placeholder="Filter rows: title, author, lab, repo, tag…"> <span id=cnt class=meta></span>
+<table><thead id=th></thead><tbody id=tb></tbody></table>
+<details open><summary>Data sources (this run)</summary><ul id=src></ul></details>
+<script>
+let D=null, tab='papers', win='7d', view='all';
+{const h=decodeURIComponent(location.hash.slice(1)).split('/');if(h[0]=='papers'||h[0]=='repos')tab=h[0];if(h[1])win=h[1];if(h[2])view=h.slice(2).join('/');}
+const WN=['1d','7d','30d','90d','180d','1y','overall'];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=v=>v==null?'<span class=dim>—</span>':Number(v).toLocaleString('en-US');
+const tagc=t=>'tag t-'+(t||'').split(/[\/ ]/)[0];
+function mv(r){if(r.prev==null)return '<span class=new>new</span>';const d=r.prev-r.rank;
+ return d>0?`<span class=up>▲${d}</span>`:d<0?`<span class=dn>▼${-d}</span>`:'<span class=eq>=</span>'}
+function ago(iso){if(!iso)return '—';const d=(Date.now()-Date.parse(iso))/864e5;return d<1?Math.round(d*24)+'h ago':Math.round(d)+'d ago'}
+function conf(c){if(c==null)return '<span class=dim>—</span>';const pct=Math.round(100*c);return `<span class=conf title="confidence ${pct}% — fraction of trust signals present"><i style="width:${pct}%"></i></span> <span class=dim>${pct}%</span>`}
+const PH=['#','Title','Lab / authors','Score','HF ▲','Stars / code','Mentions (HN)','Days','Tag'];
+const RH=['#','Repo','Owner','Score','Conf.','Stars gained','Issues','PRs (merged)','Commits','Contributors','Paper','Last push','Tag'];
+function prow(r){const au=r.lab?esc(r.lab):esc((r.authors||[]).join(', '))+(r.n_authors>4?' et al.':'');
+ return `<tr><td class=n>${r.rank} ${mv(r)}</td><td>${r.fav?'<span class=fav title="DeepSeek / MIT / RLM">★</span> ':''}<a href="https://arxiv.org/abs/${r.id}" target=_blank>${esc(r.title)}</a> <span class=dim>${r.id}</span></td>
+ <td>${au||'—'}</td><td class="n score">${r.score}</td>
+ <td class=n>${r.upvotes==null?'<span class=dim>—</span>':`<a href="https://huggingface.co/papers/${r.id}" target=_blank>${num(r.upvotes)}</a>`}</td>
+ <td class=n>${r.code?`<a href="${esc(r.code)}" target=_blank>${r.stars==null?'code':num(r.stars)+' ★'}</a>`:'<span class=dim>—</span>'}</td>
+ <td class=n>${r.mentions==null?'<span class=dim>—</span>':`<a href="https://hn.algolia.com/?q=${r.id}" target=_blank title="${r.hn_points??0} story points">${r.mentions}</a>`}</td>
+ <td class=n>${r.days}</td><td><span class="${tagc(r.tag)}">${esc(r.tag)}</span></td></tr>`}
+function rrow(r){
+ const iss=(r.issues_opened==null&&r.issues_closed==null)?'<span class=dim>—</span>':`${num(r.issues_opened)}/${num(r.issues_closed)}`;
+ const prs=r.prs_opened==null?'<span class=dim>—</span>':`${num(r.prs_opened)}${r.prs_merged==null?'':` (${num(r.prs_merged)} m)`}`;
+ const cg=r.contrib_gained==null?'':` <span class=dim>(${r.contrib_gained>=0?'+':''}${num(r.contrib_gained)})</span>`;
+ return `<tr><td class=n>${r.rank} ${mv(r)}</td><td>${r.fav?'<span class=fav>★</span> ':''}<a href="${esc(r.url)}" target=_blank>${esc(r.id)}</a><div class=dim>${esc(r.desc)}</div></td>
+ <td>${esc(r.owner)}</td><td class="n score">${r.score}</td><td class=n>${conf(r.confidence)}</td>
+ <td class=n>${r.gained==null?'<span class=dim title="no growth history yet">—</span>':'+'+num(r.gained)}</td>
+ <td class=n title="opened / closed in lookback">${iss}</td>
+ <td class=n>${prs}</td><td class=n>${num(r.commits)}</td>
+ <td class=n>${r.contributors==null?'<span class=dim>—</span>':num(r.contributors)}${cg}</td>
+ <td>${r.paper?`<a href="https://arxiv.org/abs/${r.paper}" target=_blank title="${esc(r.paper_title||'')}">${r.paper}</a>`:'<span class=dim>—</span>'}</td>
+ <td class=n>${ago(r.pushed)}</td><td><span class="${tagc(r.tag)}">${esc(r.tag)}</span></td></tr>`}
+function render(){
+ document.getElementById('tabs').innerHTML=[['papers','Papers'],['repos','GitHub']].map(([k,l])=>`<button class="${k==tab?'on':''}" onclick="tab='${k}';render()">${l}</button>`).join('');
+ if(!D.views.includes(view))view='all';history.replaceState(null,'','#'+tab+'/'+win+'/'+view);
+ const V=D[tab][win];
+ document.getElementById('wins').innerHTML=WN.map(w=>{const n=D[tab][w]?.[view]?.rows.length??0;return `<button class="${w==win?'on':''}" onclick="win='${w}';render()">${w} <span class=dim>(${n})</span></button>`}).join('');
+ document.getElementById('views').innerHTML='<span class=meta style="align-self:center">Paradigm:</span>'+D.views.map(v=>`<button class="${v==view?'on':''}" onclick="view='${v}';render()">${v=='all'?'all (top 100)':esc(v)}</button>`).join('');
+ const H=tab=='papers'?PH:RH;document.getElementById('th').innerHTML='<tr>'+H.map((h,i)=>`<th class="${i==0||(tab=='repos'?i>=3&&i<=9:i>=3&&i<=7)?'n':''}">${h}</th>`).join('')+'</tr>';
+ const q=document.getElementById('q').value.toLowerCase().trim();
+ const cur=V?.[view]||{rows:[],candidates:0};
+ let rows=cur.rows.map(v=>({...D[tab].items[v.id],...v})).sort((a,b)=>b.score-a.score);
+ if(q)rows=rows.filter(r=>JSON.stringify(r).toLowerCase().includes(q));
+ document.getElementById('tb').innerHTML=rows.map(tab=='papers'?prow:rrow).join('')||'<tr><td colspan=14 class=dim>No rows</td></tr>';
+ document.getElementById('cnt').textContent=`${rows.length} rows shown (top ${cur.rows.length} of ${cur.candidates} candidates in window${view=='all'?'':', ranked within '+view})`;
+}
+async function load(){
+ const r=await fetch('data.json?'+Date.now());D=await r.json();
+ document.getElementById('upd').textContent=D.generated_local;
+ document.getElementById('prevrun').textContent=D.previous_run?'movement vs run of '+D.previous_run.replace('T',' '):'first run (all entries marked new)';
+ document.getElementById('tracked').textContent=`tracking ${D.tracked.papers} papers, ${D.tracked.repos} repos · run took ${D.run_seconds}s`;
+ document.getElementById('src').innerHTML=Object.entries(D.sources).map(([k,v])=>`<li><b>${esc(k)}</b>: ${esc(v.status)} — ${esc(v.detail)}</li>`).join('');
+ render();
+}
+document.getElementById('q').oninput=render;
+load();setInterval(load,5*60*1000);
+</script></body></html>

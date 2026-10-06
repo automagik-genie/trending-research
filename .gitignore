@@ -1,0 +1,7 @@
+cache/
+history/
+__pycache__/
+*.pyc
+*.log
+.run.lock
+run*.log
