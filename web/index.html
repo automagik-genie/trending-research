@@ -52,8 +52,10 @@ a.sc{color:inherit;text-decoration:none;border-bottom:1px dotted #9ab}a.sc:hover
 </style></head><body>
 <h1>AI research trend tracker <span class=help>?<span class=tip>
 <b>Scores are versioned 0–100 discovery proxies, never star totals or validated capability.</b> Full formulas: <a href="#methodology" style="color:#9cf">Methodology tab</a>.<br>
-Each present signal is log-scaled against the run-wide P95 (one outlier can't squash the rest), combined with the weights below over the signals present,
-then <b>shrunk toward the reference median by evidence coverage</b> (weighted completeness), not calibrated truth confidence.<br>
+Present compatible signals are normalized against their reference and combined with the documented weights over the signals present.<br>
+<b>Repos/Papers</b>: raw scores shrink toward the reference median raw score: <code>score = prior + coverage * (raw - prior)</code>.<br>
+<b>HYPE Attention/Discovery</b>: mid-rank percentiles of raw scores shrink toward fixed neutral 50: <code>score = 50 + coverage * (pct - 50)</code>. Attention uses window candidates; Discovery uses the available-proxy cohort.<br>
+Evidence coverage is weighted completeness, not calibrated truth confidence.<br>
 <b>Repos</b>: star growth/day 25% · issue activity 15% · PR volume 10% · created-PR cohort merge fraction 10% · commits 15% · contributors 10% · contributor growth 15%.
 These are discovery activity proxies, not technical or economic validation. Historical v2 archives retain their original formulas.<br>
 <b>Papers</b>: HF upvote momentum 40% · linked-repo activity 35% · HN mention momentum 25%. <span class=px>~</span> = rate proxy.<br>
