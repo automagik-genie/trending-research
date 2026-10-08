@@ -1,0 +1,32 @@
+{
+  "issue": 2,
+  "group": 1,
+  "implementation_head": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+  "parent_head": "1fe2a85853441690c89ef3e91731ed859afd7bcf",
+  "paths": {
+    "docs/contracts/evidence.md": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f",
+    "schemas/evidence.schema.json": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+    "tests/fixtures/evidence_contracts.json": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5",
+    "tests/test_evidence_contracts.py": "a6634faaeee1d354039392fb164e93e7e35200fdd30998482e3eb9e71b8616ef"
+  },
+  "coordinator_exercised": {
+    "command": "python3 tests/test_evidence_contracts.py --smoke tests/fixtures/evidence_contracts.json && python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "exit_code": 0,
+    "smoke": {
+      "opposed_claims": ["claim:sustainable:1", "claim:unsustainable:1"],
+      "equity_transaction_parties": [["transaction:one", "entity:investor-a"], ["transaction:one", "entity:investor-b"], ["transaction:two", "entity:investor-a"]],
+      "source_revision_chain": ["source:a:1", "source:a:2"],
+      "evidence_cutoff": "2020-02-03T00:00:00Z",
+      "method_version": "fixture-method/1",
+      "later_correction_excluded": true,
+      "fixture_sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    },
+    "unittest": {"tests": 36, "failures": 0, "result": "OK"},
+    "evaluation": "Full committed feature/HYPE fixture evaluation emitted all stability, coverage and HYPE-window tables; exit 0. No accuracy claim inferred.",
+    "observed_warning": "Existing tests/test_scoring.py:213 unclosed-file ResourceWarning; not a test failure.",
+    "identity_binding": "Command exercised the complete four-file candidate immediately before its exact-path commit; independent SHA256 receipts matched the committed pathset, with no source mutation between command and commit. Commit tool reported exactly four new files and 952 insertions."
+  },
+  "independent_acceptance": "pending",
+  "separate_quality": "pending",
+  "scope_limit": "This is a synthetic domain-contract example smoke, not Brain persistence, DSH isolation, economics evidence, public deployment, source rights, editorial approval or roadmap completion."
+}
