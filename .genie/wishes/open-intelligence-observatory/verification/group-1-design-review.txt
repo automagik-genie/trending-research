@@ -1,6 +1,6 @@
 Independent acceptance/design review — SHIP
 Reviewer: independent read-only acceptance/design worker, term_0c7e1a58-9817-4c7b-9a9e-3c479df643c0; assessed 2026-10-08T04:52:56Z.
-Target: Group 1 / GitHub #2, /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory.
+Target: Group 1 / GitHub #2, isolated wish/open-intelligence-observatory worktree (repository-relative paths below; local machine path omitted for publication).
 Reviewed commit: 60975ca9c66efaa8f8284d37897c5e5d5f8a2f68; parent 1fe2a85853441690c89ef3e91731ed859afd7bcf. All four additions reviewed in full after criteria were frozen; current bytes independently matched committed Git blobs and the coordinator SHA256 receipts before review, then SHA256 was rechecked after smoke with no change. Commit modes are 100644; checkout POSIX permissions are 0600, with the same non-executable Git mode. No review is being attached to an unpinned branch.
 Reviewed SHA256 identities:
 - docs/contracts/evidence.md: b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f

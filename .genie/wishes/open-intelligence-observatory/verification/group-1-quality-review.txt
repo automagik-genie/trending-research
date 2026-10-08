@@ -1,6 +1,6 @@
 Separate security/maintainability/performance quality review — SHIP
 Reviewer: read-only quality worker term_0c7e1a58-9817-4c7b-9a9e-3c479df643c0; task task_6994ff911f8c, dispatch ctx_e0246b8b9cf1; time 2026-10-08T04:56:50Z. Different from implementation author. This is separately scoped quality assessment after acceptance, not a second acceptance vote. I performed the prior acceptance assessment, so prior artifact familiarity is disclosed; quality criteria/triggers were frozen before reopening the artifact, with no criterion added afterward.
-Target: Group 1 / GitHub #2 at /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory.
+Target: Group 1 / GitHub #2, isolated wish/open-intelligence-observatory worktree (repository-relative paths below; local machine path omitted for publication).
 Exact reviewed SHA: 60975ca9c66efaa8f8284d37897c5e5d5f8a2f68; parent 1fe2a85853441690c89ef3e91731ed859afd7bcf; committed four-path scope, no untracked implementation included.
 Path SHA256 identities, independently matched to committed Git blobs before review and unchanged after quality smoke:
 - docs/contracts/evidence.md: b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f

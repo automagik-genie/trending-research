@@ -901,6 +901,12 @@ Full attributed evidence: `verification/group-1-design-review.txt`. Unresolved d
 
 Quality reviewer `ctx_e0246b8b9cf1`, assessed 2026-10-08T04:56:50Z, returned SHIP at the same `60975ca9c66efaa8f8284d37897c5e5d5f8a2f68`; zero blocking security/maintainability/performance gaps and no repairs. Fresh source-as-data, redaction/exact-byte and missing editorial-receipt controls reached intended guards. Current fixture CLI path was exercised; production-scale performance and all deferred integration gates remain unclaimed. Full receipt: `verification/group-1-quality-review.txt`. Coordinator recorded independent acceptance plus separate quality SHIP and marked Genie card `t_muz1j2dm37330b70` done after observed smoke/full aggregate. GitHub #2 is still open until remote acceptance evidence is linked through the authorized publication/tracking route; this does not establish merged/deployed delivery or M0 completion. #3/#4/#5/#11 are now eligible for scoped intake.
 
+### Group 1 remote evidence and publication route
+
+Draft PR: https://github.com/namastex888/trending-research/pull/22, base `main`, head `automagik-genie:wish/open-intelligence-observatory`. Upstream push failed HTTP 403 under READ-only `automagik-genie`; approved conventional public fork was created and read back with ADMIN/write permission, then the nondefault feature branch was pushed without force or changing origin. PR body read-back exactly matched its source, ten current remote paths matched the initial accepted checkpoint, and fork/PR/local head matched `e5717db65e4bcb1b99667c653392628113cb5828`. PR checks reported no checks; no CI pass inferred.
+
+Acceptance evidence linked on GitHub #2 and stored text read back exactly: https://github.com/namastex888/trending-research/issues/2#issuecomment-6052666339. The owner-authored issue remains open because upstream closure/workflow-label authority is unavailable. Local Group 1 acceptance is complete and evidence is externally inspectable; the remaining roadmap is still IN_PROGRESS. Public reviewer receipts normalize only their local target paths to repository-relative identity; raw authoritative messages remain archived by Orca, and reviewed implementation digests/verdicts are unchanged.
+
 ## Files to Create/Modify
 
 ```
