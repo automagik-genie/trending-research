@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this tracker, its scoring method or its data snapshots, please cite it as below."
+title: "trending-research: an open, evidence-weighted tracker of AI research papers, repositories and hype"
+abstract: >-
+  Ranks AI research papers and GitHub repositories on agents, harnesses and context layers, JEPA,
+  JEV (decision models) and world/action models, and compares sampled attention (Hype) with evidence
+  of substance (Real) across the wider AI world. Scores are confidence-aware: missing evidence shrinks
+  a score toward the median instead of being filled in.
+type: software
+authors:
+  - given-names: Felipe
+    family-names: Rosa
+    affiliation: Namastex
+  - name: Namastex
+repository-code: "https://github.com/namastex888/trending-research"
+url: "https://github.com/namastex888/trending-research"
+license: MIT
+version: "2.0"
+date-released: "2026-10-07"
+keywords:
+  - AI agents
+  - context engineering
+  - JEPA
+  - world models
+  - research trends
+  - open research

@@ -1,0 +1,31 @@
+name: Methodology proposal
+description: Propose a change to a formula, weight, threshold or rule.
+title: "[method] "
+labels: ["methodology"]
+body:
+  - type: input
+    id: section
+    attributes:
+      label: METHODOLOGY.md section
+      description: e.g. "Repo trust index" or "Hype vs Real gap"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong today?
+      description: Concrete examples (items, windows, numbers from the page) where the current score misleads.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: The formula or config change in plain math.
+    validations:
+      required: true
+  - type: textarea
+    id: eval
+    attributes:
+      label: eval.py output (if you already tried it)
+      render: text

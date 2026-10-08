@@ -1,0 +1,36 @@
+name: Project suggestion
+description: Suggest a paper, repo, project or seed query that the tracker misses.
+title: "[project] "
+labels: ["project-suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: arXiv / Hugging Face / GitHub / site / launch post. Public sources only.
+    validations:
+      required: true
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Subject
+      options:
+        - agents
+        - harness / context layers
+        - JEPA
+        - JEV / decision models
+        - world / action models
+        - other (non-LLM paradigms, wider AI world for HYPE)
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs here
+      description: If it needs a new search query or tag rule, say which one.

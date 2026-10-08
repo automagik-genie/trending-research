@@ -1,0 +1,23 @@
+name: Bug
+description: Something is broken, wrong or misleading on the page or in the pipeline.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the tab, window and item, or the command and its output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Scoring version / run
+      description: Shown in the page header ("scoring v2.0") and in data.json (scoring_version, generated_at).

@@ -6,3 +6,9 @@ __pycache__/
 .run.lock
 run*.log
 hype/
+.eval_snap/
+shots/
+*.db
+.env
+.env.*
+*.token

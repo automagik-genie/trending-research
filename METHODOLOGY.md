@@ -215,7 +215,7 @@ Because Hype and Real are both percentiles shrunk toward 50, the gap reads as "a
 - Bump the minor version (2.1) for weight or threshold changes, and the major version (3.0) for new signals or formula changes.
 - Every full run stores its inputs in `history/runs/<stamp>-features.json.gz`, so any run can be re-scored under any version (`eval.py`, `scoring.score_run(features, version='1.0')`).
 - `python run.py --rescore` re-scores the last full run's cached inputs with the current code and config, without network calls.
-- The page reads `web/METHODOLOGY.md`, a copy of this file that `run.py` refreshes on every run. CI fails if the two differ, so edit the root file and copy it (`cp METHODOLOGY.md web/`).
+- The page reads `web/METHODOLOGY.md`, a copy of this file that `run.py` refreshes on every run. Keep them identical (the CI workflow checks this): edit the root file and copy it (`cp METHODOLOGY.md web/`).
 
 ## How to propose changes
 

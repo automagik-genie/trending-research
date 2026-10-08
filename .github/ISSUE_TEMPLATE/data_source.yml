@@ -1,0 +1,31 @@
+name: Data source request
+description: Propose a new source of evidence (a platform, API or dataset).
+title: "[source] "
+labels: ["data-source"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Name and URL of the API or dataset.
+    validations:
+      required: true
+  - type: textarea
+    id: signal
+    attributes:
+      label: What would it measure?
+      description: Which score would use it (Papers, GitHub trust, Hype, Real), and why is it signal rather than noise?
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Access, limits and terms
+      description: Auth needed? Rate limits? Terms of use? Can it be cached? What happens when it fails?
+    validations:
+      required: true
+  - type: textarea
+    id: bias
+    attributes:
+      label: Known biases or gaps
+      description: Who or what does this source over- or under-represent?

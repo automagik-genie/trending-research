@@ -1,36 +1,84 @@
-# AI research trend tracker
+# trending-research
 
-Live ranking of AI research **papers** and **GitHub repos** focused on agents, harness/context, JEPA, and world/action models.
+[![code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+An open, evidence-weighted tracker of AI research. It ranks **papers** and **GitHub repos** on AI agents, harnesses and context layers, JEPA, JEV (decision models), and world and action models. It also compares **hype** with **real substance** across the wider AI world. Every score says how much evidence is behind it, and thin evidence can't produce an extreme score.
+
+![The HYPE tab: Hype vs Real with confidence, gap labels and an expanded evidence card](docs/screenshot.png)
+
+## Quickstart
+
+```bash
+git clone https://github.com/namastex888/trending-research && cd trending-research
+pip install -r requirements.txt     # standard library only (installs tzdata on Windows)
+python -m http.server 8765 -d web   # open http://localhost:8765 to browse the committed snapshot
+python run.py                       # refresh everything (20-40 min; `gh auth login` raises GitHub limits)
+```
+
+`web/` is a static page (`index.html` plus `data.json` and `hype.json`), so any static host can serve it. There is no hosted copy yet.
 
 ## The page
 
-Open `web/index.html` (it loads `web/data.json`, and `web/hype.json` lazily for HYPE). The UI has three top-level tabs:
+| Tab | What it ranks | Score |
+|---|---|---|
+| **Papers** | arXiv / Hugging Face papers on the subjects above | HF upvote momentum 40%, linked-repo trust 35%, HN mention momentum 25% |
+| **GitHub** | repos on the same subjects | trust index: star growth, issue activity, PRs and merge rate, commits, contributors and their growth |
+| **HYPE** | AI projects overall, open and closed source | **Hype** (sampled attention) vs **Real** (GitHub trust, paper traction, sourced usage, developer discussion), and the gap between them |
+| **Methodology** | renders [METHODOLOGY.md](METHODOLOGY.md) | every formula, weight and threshold |
 
-- **Papers** — arXiv papers scored by Hugging Face upvotes, linked-repo activity, and Hacker News mentions
-- **GitHub** — repos scored by a multi-signal trust/momentum index (not lifetime star totals)
-- **HYPE** — what is going on in AI overall (open + closed source): early viral projects, and hype vs. real substance
+Windows (1d, 7d, 30d, 90d, 180d, 1y, overall) filter by release, creation or push date. Paradigm buttons re-rank within a subject. Each score links to its methodology section, and its tooltip shows the raw score, confidence and prior.
 
-Time **windows** (`1d`, `7d`, `30d`, `90d`, `180d`, `1y`, `overall`) filter papers by release date and repos by create/push activity in that window. Paradigm buttons re-rank within a tag (agents, harness, JEPA, world, …). Rank arrows compare to the previous run.
+## Method in one minute (scoring v2.0)
 
-## Trust index (one paragraph)
+1. **Normalize** each signal against the whole run's distribution: `u = min(1, log1p(v) / log1p(P95))`. One outlier can't squash the rest, and a small window can't inflate its few items.
+2. **Combine** the signals that are present with fixed weights. **Confidence** is the evidence-weighted share of signals present: rate proxies and vendor claims count half.
+3. **Anti-noise**: star spikes without matching issue, PR or commit activity are capped. Solo repos, one-off spikes, single-post and single-platform attention are discounted.
+4. **Shrink** toward the median in proportion to missing evidence: `score = prior + confidence * (raw - prior)`.
+5. **Momentum** uses real deltas between our own snapshots, blended with the since-release rate while history is shorter than the window. With no snapshot it falls back to per-day-since-release rates, marked `~` (rate proxy).
+6. **Gap** = Hype − Real, both on the same percentile scale. It is labelled *likely hype* (≥ +15) or *sleeper* (≤ −15) only when both confidences are ≥ 50%. Otherwise it reads *insufficient evidence*.
+7. **Arrows** compare ranks only among items present in both runs, with hysteresis, so small changes don't flip them.
 
-Scores are **0–100 momentum**, not raw popularity: each present signal is log-scaled within the window (`z = log1p(rate) / max(log1p(rate))`), missing signals count as 0 and lower confidence, then `score = 100 × Σ(w·z) / max(raw in window)`. **Repos** weight star *growth*/day (~25–35%), issue activity/day, PR volume/day + merge rate, commit frequency/day, and contributor count + contributor growth/day (activity lookback ≈ 30d). **Papers** weight HF upvotes/day (40%), linked-repo trust score when available else measured star growth (35%), and HN mentions/day (25%).
+All weights and thresholds are in [scoring_config.json](scoring_config.json), and the code is [scoring.py](scoring.py). Full details, including known biases: [METHODOLOGY.md](METHODOLOGY.md).
 
-## HYPE tab
+## Data coverage
 
-Built by `hype_build.py` from a social-research dossier (`hype/hype_research.json`, X / Reddit / LinkedIn / HN / YouTube / Telegram / Discord; not committed). `run.py` calls it automatically when that file exists, so dropping in a new dossier updates the tab; `python3 hype_build.py` rebuilds HYPE alone. Output is the compact `web/hype.json` (~0.55 MB, only the fields the table and cards need). HYPE ranks go into the same history DB as the other tabs (tab `hype`), so arrows compare to the previous HYPE run.
+- Sources: arXiv API, Hugging Face papers API, Hacker News (Algolia), GitHub REST API. HYPE also uses a social-research dossier: a purposive, public-only sample of X, Reddit, LinkedIn, HN, YouTube, Discord and Telegram posts. HN dominates it (about 2,019 of 2,163 sampled posts), and it is not committed.
+- Reddit, X and LinkedIn have no free API in the pipeline. The GitHub stargazer-timestamp endpoint returned HTTP 404 in our runs, so star growth comes from our own snapshots, which are young until runs accumulate.
+- HYPE counts are **samples**, not platform-wide totals. Acceleration can't be measured yet (no growth series). Downloads count operations, not unique users.
+- **Numbers are never invented.** Missing data shows as — and lowers confidence. Every source failure is listed under "Data sources" on the page.
 
-- **Hype (0–100), a sampled attention proxy**: mention velocity 35% (sampled posts / effective days in window), acceleration 25%, unique voices 20%, cross-platform spread 20%. Each component is log-scaled against the window max (`z = log1p(v)/max log1p(v)`, spread = n / max n). The score is `100 · Σ(w·z) / Σ(w of present components)`, and **confidence** is the share of the 4 components present. *Acceleration can't be computed from this data* (no growth series; the HN sample is the first 100 hits by date), so its weight is spread over the other three and confidence tops out at 75%.
-- **Real (0–100), substance, the same for every window**: GitHub trust index 30% (the GitHub tab's score for the same repo), paper traction 20% (Hugging Face upvotes for the linked arXiv paper), real usage 30% (largest sourced downloads/users figure; vendor claims count half), developer discussion 20% (comments on the sampled HN stories). Missing components are dropped and the weights renormalised; confidence = present / 4.
-- **Gap = Hype − Real**: ≥ +15 likely hype (red), ≤ −15 underrated sleeper (blue), otherwise earned (green). A dashed badge means Real rests on fewer than 2 signals.
-- **Windows**: 1d / 7d / 30d / 90d are the windows the research measured. *overall* is the 12-month lookback. 180d and 1y are disabled because the research has no such windows.
-- **Coverage caveats**: this is a purposive, public-source sample, not exhaustive social listening. Platform-wide counts, author censuses, peak dates, true viral origin, follower counts and growth series are all null in the source, and the page shows them as —. Downloads count repeat operations, not unique users. Coordination is never inferred: the card only shows measured signals and disclosed sponsorship with evidence links.
+## Repository layout
 
-## Run locally
-
-```bash
-python3 run.py         # writes web/data.json (+ web/hype.json if hype/hype_research.json exists; cache/ and history/ are gitignored)
-python3 hype_build.py  # rebuild only the HYPE tab
+```
+run.py               fetch -> features -> score -> web/data.json (+ history/, cache/: not committed)
+hype_build.py        HYPE tab: research dossier -> web/hype.json
+scoring.py           the one scoring module (v2), used by both
+scoring_config.json  every weight and threshold
+eval.py              stability / evidence / HYPE-shortlist report for scoring PRs
+METHODOLOGY.md       the method (run.py copies it to web/ for the page)
+web/                 static page + data snapshots (CC BY 4.0)
+tests/               unit tests + a small real-data fixture
 ```
 
-Serve `web/` with any static file server to view the dashboard. Sources are public APIs (arXiv, Hugging Face, HN Algolia, GitHub); optional `gh` auth raises GitHub rate limits.
+## Contributing
+
+Weight changes, new data sources, seed queries and bug reports are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md). In short: edit the config, run `python eval.py`, paste its output into the PR, and never invent a number.
+
+## Citation
+
+If you use the tracker, its method or its data, please cite it ([CITATION.cff](CITATION.cff)):
+
+```bibtex
+@software{rosa_trending_research_2026,
+  author  = {Rosa, Felipe and {Namastex}},
+  title   = {trending-research: an open, evidence-weighted tracker of AI research papers, repositories and hype},
+  year    = {2026},
+  version = {2.0},
+  url     = {https://github.com/namastex888/trending-research}
+}
+```
+
+## License
+
+Code: [MIT](LICENSE). Data snapshots in `web/*.json`: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Upstream sources keep their own terms.
