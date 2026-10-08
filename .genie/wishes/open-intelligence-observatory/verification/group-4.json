@@ -1,0 +1,42 @@
+{
+  "issue": 5,
+  "group": 4,
+  "qualification_artifacts": "REPAIRED_ACCEPTANCE_AND_SEPARATE_QUALITY_SHIP",
+  "original_issue": "BLOCKED",
+  "source_commit": "51118d337d085ca1c9f29c48ee481a42c4f89fba",
+  "paths_sha256": {
+    "docs/integrations/brain.md": "33d2cd946532a88fca305b64e184100cb9a7a2641aafb7b1860727d76e612448",
+    "integrations/brain/qualification/native-tools.json": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+    "integrations/brain/qualification/evidence.json": "79c045ad0221dc5fec7856d6368906a13b593441209230736a00408085a09917"
+  },
+  "acceptance_dispatch": "ctx_b8bac21ca982",
+  "quality_dispatch": "ctx_f32ba3018bb1",
+  "quality_public_report": "group-4-quality-review.md",
+  "quality_raw_report_sha256": "fe198c57392eb1272b0a6281cb566c655fc895ea7c2aa9acc814aec94f88f3e2",
+  "quality_fresh_smoke": "Exact published zero-write pure-component probe QUALIFICATION_EXIT0; six audit guards/seven component controls/ten exact descriptors; no native MCP/model/records/restart.",
+  "reviewer_familiarity": "Separate quality session reused prior acceptance reader; independent of author, not fresh/blind.",
+  "repair": {
+    "attempt": 1,
+    "B": 2,
+    "source": "config2",
+    "effort_escalations": 0,
+    "resolved": [
+      "R1 portable published exact command",
+      "R2 full actual MIT notice and narrow declared-commit module/descriptor provenance"
+    ]
+  },
+  "criteria": [
+    "BLOCKED: A claim links back to its exact evidence span after restart.",
+    "BLOCKED: Conflicting reports and multiple investors survive ingest and update.",
+    "Documentary-only PASS: Document graph relationships are not presented as verified entity transactions.",
+    "Documentary/source-only PASS: Supported time semantics and any unavailable bitemporal replay are documented."
+  ],
+  "remaining_prerequisites": [
+    "Owner-approved actual product brn authority and owner/principal/grants plus denied principal",
+    "Live native tool/schema digest and same-cluster transport/storage authority",
+    "Rights-qualified live fixture + actual immutable ID/byte/span binding",
+    "Native ingest/update/conflict/investor read-back and authorized isolated storage restart"
+  ],
+  "downstream": "Original #5 remains failed/BLOCKED; no competitor semantic store, client pin is not RLS, health is not product readiness, no original DAG unlock.",
+  "recorded_at": "2026-10-08T07:32:21.662154+00:00"
+}

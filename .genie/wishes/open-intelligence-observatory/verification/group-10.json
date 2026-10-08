@@ -1,0 +1,137 @@
+{
+  "issue": 11,
+  "group": 10,
+  "status": "ORIGINAL_ACCEPTANCE_AND_SEPARATE_QUALITY_SHIP_LOCAL",
+  "author": {
+    "dispatch": "ctx_3efee6c9646e",
+    "outcome": "succeeded",
+    "genie_card": "t_muz1j3y79b4b3c55"
+  },
+  "implementation_commit": "ef93454b9dd46eaf5e321e46698128425753b8fd",
+  "historical_implementation_commit_before_repair": "bb73b063957f2b6ccf0b0311e1770730faa8e2c0",
+  "historical_pre_repair_paths_sha256": {
+    "scoring.py": "f2c66835229fc70fbe543e6606364ec78d5bbbbb5849532f58165330ce3842ee",
+    "scoring_config.json": "e2e3fe28708fe6ac69dc3882a423228ee5c3de31f74c1f2990d9883cfb8d1216",
+    "eval.py": "875ef541075f9c716fd794aa3a23c2638110c0dc108845ed9ae01c3644dd63eb",
+    "hype_build.py": "06f4ac52614c73826604de073b46b2cf1f3613ef83693af176f37837d450f747",
+    "run.py": "e27015f506422264727cf609eb9931d326676ffc898d14ca777010830f66f984",
+    "tests/test_scoring.py": "afca62177176b23d8d7a8ab961db7138a536ab37de0f12e68820c55ef84dde19",
+    "web/index.html": "3e150cf7ae4b2f57235f3804783e86c2d7cf89085e5988c064bd0cceeeb4e632",
+    "web/data.json": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+    "web/hype.json": "3790ac7c024a978588e25345c846dc06a80a870a9f6c69c1dfb11b5c2a8f4784",
+    "METHODOLOGY.md": "2e8ab1024d9565911d0fc444acff596e38520d38418fad60632ab6411d99175f",
+    "web/METHODOLOGY.md": "2e8ab1024d9565911d0fc444acff596e38520d38418fad60632ab6411d99175f",
+    "CONTRIBUTING.md": "67f9c1489874a09178c7ae0da30f8abba3128ef46374d6c57989e23d32a858f3"
+  },
+  "historical_pre_repair_real_diff": {
+    "files": 12,
+    "insertions": 894,
+    "deletions": 393,
+    "mode_change": "eval.py 100644 -> 100755; independent reviewer must assess relevance"
+  },
+  "coordinator_gate": {
+    "specific_smoke": "python3 eval.py --issue11-smoke --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json --compare-v2",
+    "aggregate": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "exit_code": 0,
+    "tests": 43,
+    "warnings_observed": 0,
+    "method": "3.0",
+    "config_sha256": "e2e3fe28708fe6ac69dc3882a423228ee5c3de31f74c1f2990d9883cfb8d1216",
+    "observed": "Direct real-code metric-family/missingness/created-cohort scenarios and full fixture before/after/stability output. No accuracy, calibrated probability, financial validation or live-source collection claim."
+  },
+  "author_observations": {
+    "focused_tests": 26,
+    "original_code_regression": "2.0 != 0.4, permanent actual PR extraction scenario",
+    "historical_method": "Original v2 numerical output preserved across complete fixtures/HYPE windows",
+    "archive": "All7706 numeric rows preserved; full current feature reconstruction unavailable, archival v2 explicitly retained",
+    "browser": "Historical initial author1280px/390px Chromium source/unknown usage, archival PR and method checks; Orca1x1 excluded. Subsequent independent/coordinator actual wide+narrow acceptance and repaired artifact quality SHIP are attributed separately below."
+  },
+  "limits": [
+    "No whole-roadmap/deployed/CI/live-source acceptance",
+    "Source #3 original acceptance and quality now SHIP; DSH/Brain original live criteria remain BLOCKED",
+    "Initial original-code failure remains author ground truth, not rerun solely to confirm it. Independent exact v2 numerical compatibility and repaired actual CLI/browser acceptance now SHIP; author observations retain original attribution."
+  ],
+  "independent_acceptance": {
+    "dispatch": "ctx_979e8ff71396",
+    "verdict": "SHIP",
+    "reviewed_commit": "ef93454b9dd46eaf5e321e46698128425753b8fd",
+    "reviewed_manifest_sha256": "1431fd5c5e28f85454f60a0b67c74ec19df436a90df633a4df96bd9cad97a3ef",
+    "criterion_verdicts": ["PASS", "PASS", "PASS", "PASS"],
+    "raw_report_sha256": "3c87a99fa30d11c6a368b5b8de7309a44d1d506b6eedee7deb4466debf7d1a32",
+    "public_report": "group-10-acceptance-review.txt",
+    "identity": "All twelve original paths and modes pinned; repair changes only four descriptions. Initial implementation hashes above are historical."
+  },
+  "independent_quality": {
+    "dispatch": "ctx_2c608271c485",
+    "verdict": "SHIP",
+    "reviewed_commit": "ef93454b9dd46eaf5e321e46698128425753b8fd",
+    "reviewed_manifest_sha256": "1431fd5c5e28f85454f60a0b67c74ec19df436a90df633a4df96bd9cad97a3ef",
+    "confirmed_blocking_findings": 0,
+    "raw_report_sha256": "4a89ae6c5f6f86d8f13f92cee3a7d495148cb4f05a28134298d597ffd964ae99",
+    "public_report": "group-10-quality-review.txt",
+    "fresh": "Actual changed-path CLI smoke exit0/no warnings; all7706 archive rows and legacy config preserved; exact byte/mode bindings unchanged.",
+    "reused_with_attribution": "Coordinator exact-artifact43-test aggregate and independent actual wide/narrow browser acceptance; not a new quality full-suite/browser run.",
+    "limits": "No calibrated accuracy, live-source acquisition, live integrations, CI, deployment or whole-roadmap acceptance."
+  },
+  "coordinator_browser": {
+    "backend": "actual managed headless Chromium",
+    "service": "parent-owned loopback preview at127.0.0.1:8871 from exact reviewed worktree",
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "observations": [
+      "Actual HYPE overall82 rows rendered, current3.0/header and scientific qualifications visible",
+      "Claude Code expanded via row rank cell without navigating external source: npm download_operations52946380, usage outside discovery, exact period/scope unavailable; verification/freshness/source independence unqualified",
+      "Historical GitHub v2.0 archive explicitly identified, original scoring preserved, unknown merged-created intersection rendered as dash beside independent merged-event count",
+      "Current methodology rendered with version/missingness/cohort qualifications",
+      "Real wide/narrow screenshots captured, not the invalid Orca1x1; inherited horizontal scrolling remains at390px"
+    ],
+    "browser_errors": 0,
+    "coordinator_tab_released": true,
+    "public_deployed_acceptance": false
+  },
+  "initial_independent_review": {
+    "dispatch": "ctx_50beae4678b9",
+    "verdict": "FIX-FIRST",
+    "reviewed_commit": "bb73b063957f2b6ccf0b0311e1770730faa8e2c0",
+    "criterion_verdicts": ["PASS", "PASS", "FIX-FIRST", "PASS"],
+    "confirmed_gap": "Universal raw-score/reference-median descriptions contradicted percentile-based HYPE shrinkage toward fixed prior50.",
+    "historical_compatibility": "Independent exact v2 comparison passed1198 feature rows,25/82-project HYPE inputs across five windows;7706 archived numerical rows preserved."
+  },
+  "repair_1": {
+    "dispatch": "ctx_6289a6932205",
+    "attempts": "1/2",
+    "budget_source": "genie config get budgets.maxEscalationsPerGroup, exit0/output2",
+    "effort_escalations": "0/2",
+    "commit": "ef93454b9dd46eaf5e321e46698128425753b8fd",
+    "real_diff": {"files": 4, "insertions": 30, "deletions": 16},
+    "paths_sha256": {
+      "METHODOLOGY.md": "fb9a085bcb9d389899369726706770516e66628fbaa633c8752c00503f02f8cc",
+      "web/METHODOLOGY.md": "fb9a085bcb9d389899369726706770516e66628fbaa633c8752c00503f02f8cc",
+      "scoring.py": "cdbef85c92c5f431286a469a61d325efa789010297161c55b5d804604bd109a6",
+      "web/index.html": "09160d7453711a2fa90daf4795292c8d2d3a5bbbd16aed6703343335249c8816"
+    },
+    "scope": "Identical method overviews, module docstring and headline help only; no algorithms, numeric caches, configuration, tests or API change.",
+    "coordinator_stable_gate": {
+      "command": "python3 -B eval.py --issue11-smoke --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json --compare-v2 && python3 -B -m unittest discover tests && python3 -B eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+      "exit_code": 0,
+      "tests": 43,
+      "seconds": 0.108,
+      "warnings_observed": 0,
+      "method": "3.0",
+      "config_sha256": "e2e3fe28708fe6ac69dc3882a423228ee5c3de31f74c1f2990d9883cfb8d1216",
+      "boundary": "Actual CLI changed-path proof and complete fixture/stability output; no deployed, financial accuracy, source retention or live integration verdict."
+    },
+    "author_browser": "Actual rendered help and methodology/served SHA matched; owned tab closed, parent server retained.",
+    "probe_limit": "Initial strict one-decimal equality assertion from rounded Qwen inputs failed; corrected precision-interval probe passed. Rounded percentile99.4 yields87.05 versus displayed87; not exact full-precision replication.",
+    "independent_re_review": "SHIP, ctx_979e8ff71396; all four original criteria passed at the exact twelve-file manifest, raw report SHA above.",
+    "separate_quality": "SHIP, ctx_2c608271c485; zero blocking findings at identical artifact bytes/modes, raw report SHA above."
+  }
+}

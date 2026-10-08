@@ -1,0 +1,21 @@
+{
+  "issue": 3,
+  "group": 2,
+  "phase": "bounded_repair",
+  "attempt": 1,
+  "budget": 2,
+  "budget_source": "config: genie config get budgets.maxEscalationsPerGroup, exit0/output2",
+  "effort_escalations": 0,
+  "source_checkpoint": "bb73b063957f2b6ccf0b0311e1770730faa8e2c0",
+  "owned_files": {
+    "docs/sources/economics-panel.md": "f91b0eac648a3d1c18b7f0f7459bdb1b836209d1f183baeda8428b111ffbd14b",
+    "investigations/frontier-economics/sources.json": "49b60a5f8de1178155d60e108cf21492d23f26ab2034f31ba9f405858d0bd631"
+  },
+  "spec_sha256": "381cbbd82896f1a2ae3e04cabf9f6647b3781bb110a1bcf18d334b5f4e4362d2",
+  "original_readiness_preserved": "readiness/group-2.json",
+  "original_issue_disposition": "BLOCKED",
+  "validation_scope": "Focused safe published commands only after full slice; exact repaired Brain probe determined by authorized source writer and supplements final receipt, no author historical command rewrite; full aggregate deferred to coordinator after all writers settle",
+  "governing_wish_sha256": "ff8d8f2713b24b425746cab8d4bdaddf33120d0358cd9032f858f4c9aaec34a5",
+  "recorded_at": "2026-10-08T06:30:07.973508+00:00",
+  "prohibited": "No private/product/provider/spend/git/card/GitHub/service/namespace writes; no algorithm/numeric changes for #11; original DAG unchanged; only listed documentary repair scope."
+}

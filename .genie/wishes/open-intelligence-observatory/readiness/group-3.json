@@ -1,0 +1,123 @@
+{
+  "issue": 4,
+  "group": 3,
+  "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "original_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "owned_paths": [
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md",
+    "integrations/dsh/qualification/receipts.json"
+  ],
+  "estimate_files": 3,
+  "estimate_insertions": 500,
+  "accepted_dependencies": [
+    {
+      "issue": 2,
+      "artifact": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "design": "SHIP",
+      "quality": "SHIP",
+      "remote_evidence": "https://github.com/namastex888/trending-research/issues/2#issuecomment-6052666339"
+    }
+  ],
+  "input_artifacts": [
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "ff8d8f2713b24b425746cab8d4bdaddf33120d0358cd9032f858f4c9aaec34a5"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+      "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "revision": "1.0.0",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+      "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+      "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+    },
+    {
+      "path": "Orca integration scout report (local-only source; exact digest retained)",
+      "sha256": "dd23ce38587e4aba69d4736ba7fdc9d9b591d36e940c3b3aab9a143ec32904bf"
+    }
+  ],
+  "interfaces": {
+    "Scene": "contract_version 1.0.0: id, publication_revision_id nullable, assessment_ids, entity_ids, evidence_cutoff UTC instant, method_version; Claim/EvidenceSpan/PublicationRevision unchanged",
+    "launcher": "dsh --profile <name> --patch <path>; dedicated DSH_HOME required, patch order preserved; no launch authorization exists",
+    "SDK": "same-release initialize({cwd,provider,model,reasoningEffort?,maxTokens?}), session/prompt({sessionId,contentBlocks}), shutdown; session.event and session.status notifications; SDK-only cannot establish streaming/cancel/reconnect",
+    "Web": "rc1 generated ctx.remote.session.create(request), prompt({requestId,sessionId,mode,content},signal), cancel({sessionId}), follow({address,assistantStream:true},signal), page(request,signal), projections({sessionId},signal); exact request types will be documented from pinned source without invented implementation",
+    "Cordis": "Context.plugin/inject and Fiber.dispose/await/restart; effect reverse cleanup; isolate service scope is not authentication"
+  },
+  "runtime_identity": {
+    "binary": "installed @deepseek-ai/dsh/lib/bin.js (resolved machine path archived locally)",
+    "binary_sha256": "935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1",
+    "package": "@deepseek-ai/dsh@0.2.0-rc.1",
+    "package_sha256": "6c5d2b98ca97920fffe81eaff8455dfd1e97524c8b3a7a3b0cac4c960ebb363c",
+    "source": "https://github.com/deepseek-ai/deepseek-harness/tree/4878cdabd87d4041bdaff61d04c966883b9fd07a",
+    "source_equivalence": null,
+    "Cordis": "@deepseek-ai/cordis@4.0.4",
+    "cordis_binary_sha256": "6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e",
+    "profile": "web candidate, not provisioned or authorized",
+    "SDK_installed_identity": null
+  },
+  "prerequisites": {
+    "access": null,
+    "dedicated_home": null,
+    "patches": null,
+    "provider": null,
+    "model": null,
+    "approved_budget": null,
+    "storage": null,
+    "principal_A": null,
+    "principal_B": null,
+    "restricted_records_and_tools": null,
+    "authorized_rights": null,
+    "deployment": null,
+    "fixture": "Existing synthetic scene:example:1, entity:builder/entity:investor-a/entity:investor-b, cutoff 2020-02-03T00:00:00Z, method fixture-method/1; only contract fixture, never real evidence or restricted-principal fixture",
+    "permitted": "Read public upstream/installed code, help/version, unauthenticated localhost fence, in-memory Cordis lifecycle; no model call/private-memory/service mutation"
+  },
+  "smoke": {
+    "commands": [
+      "dsh --version && dsh --help",
+      "python3 -B tests/test_evidence_contracts.py --smoke tests/fixtures/evidence_contracts.json",
+      "python3 -B -c \"import json; import urllib.request; import urllib.error\nresults=[]\nfor method,path,data in [(\\\"GET\\\",\\\"/\\\",None),(\\\"POST\\\",\\\"/api/session/list\\\",b\\\"{\\\\\\\"args\\\\\\\":{\\\\\\\"_request\\\\\\\":{}}}\\\")]:\n req=urllib.request.Request(\\\"http://127.0.0.1:3080\\\"+path,data=data,method=method,headers={\\\"Content-Type\\\":\\\"application/json\\\"})\n try:\n  with urllib.request.urlopen(req,timeout=5) as response:\n   raise AssertionError(\\\"anonymous request admitted: \\\"+str(response.status))\n except urllib.error.HTTPError as error:\n  assert error.code==401,(method,path,error.code)\n  results.append({\\\"method\\\":method,\\\"path\\\":path,\\\"status\\\":error.code})\nprint(json.dumps({\\\"unauthenticated_fence\\\":results,\\\"tenantIsolationValidated\\\":False}))\"",
+      "node --input-type=module -e \"import {execFileSync} from \\\"node:child_process\\\"; import {realpathSync,readFileSync} from \\\"node:fs\\\"; import {createRequire} from \\\"node:module\\\"; import {pathToFileURL} from \\\"node:url\\\"; import {createHash} from \\\"node:crypto\\\"; import assert from \\\"node:assert/strict\\\"; const bin=realpathSync(execFileSync(\\\"which\\\",[\\\"dsh\\\"],{encoding:\\\"utf8\\\"}).trim()); const require=createRequire(pathToFileURL(bin)); const entry=require.resolve(\\\"@deepseek-ai/cordis\\\"); const hash=p=>createHash(\\\"sha256\\\").update(readFileSync(p)).digest(\\\"hex\\\"); assert.equal(hash(bin),\\\"935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1\\\"); assert.equal(hash(entry),\\\"6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e\\\"); const {Context}=await import(pathToFileURL(entry)); const root=new Context(); const retained=new Map([[\\\"fixture:accepted\\\",Object.freeze({value:null})]]); const accepted=retained.get(\\\"fixture:accepted\\\"); let activations=0; const cleanup=[]; function reader(ctx){activations++;assert.strictEqual(retained.get(\\\"fixture:accepted\\\"),accepted);ctx.effect(function*(){yield ()=>cleanup.push(1);yield ()=>cleanup.push(2);});} const first=root.plugin(reader);await first;await first.dispose();await first.dispose();assert.deepEqual(cleanup,[2,1]);const second=root.plugin(reader);await second;await second.dispose();assert.equal(activations,2);assert.deepEqual(cleanup,[2,1,2,1]);assert.strictEqual(retained.get(\\\"fixture:accepted\\\"),accepted);console.log(JSON.stringify({activations,cleanup,retainedFixtureUnchanged:true,durableEvidenceValidated:false,tenantIsolationValidated:false}));\""
+    ],
+    "expected": "Version rc1, supported named profile flags, same fixture IDs/cutoff, 401 fence only, actual Cordis lifecycle assertions; all original live DSH criteria remain BLOCKED absent approval",
+    "failure_assertions": "Unexpected runtime identity, any anonymous 2xx, lifecycle/order mismatch fail smoke; missing runtime remains failed/unavailable, never passed",
+    "unavailable_live_protocol": "When separately authorized: same-pin generated Web follow streaming with tool call and exact Scene citations; cancel during active tool/model and queued work then inspect no new work; reconnect carrier and cold session read compare cursor/status/history; A and B deny each other records/tools/history at server before model/tool dispatch. No raw operator file APIs to tenants. These are not authorized now and SDK close is not a substitute."
+  },
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "unavailable_disposition": "Produce explicit cited contract/verdict and runnable safe receipts; no adapter, fake probe, permanent test or external authorization. Entire #4 outcome failed/BLOCKED if any original criterion lacks direct runtime proof; runtime observations are null. No dependent #7/#9/#10 acceptance implied. Claim task only after acceptance, one blocked card report, no done.",
+  "injection_attempts": [],
+  "rulings": "Attributed issue-4-engineer rulings will cover pinning installed rc1 instead of newer alpha; Web candidate instead of insufficient SDK; reject operator surface tenancy; keep missing authority/live observations null; Cordis lifecycle proof only, not durable evidence or tenant isolation.",
+  "coordinator_decision": {
+    "state": "ACCEPTED_FOR_REACHABLE_QUALIFICATION_ONLY",
+    "scope_unchanged": true,
+    "all_original_criteria_required": true,
+    "completion_disposition": "BLOCKED unless every real live criterion is proved",
+    "private_path_normalization": "Only local machine source/binary locations omitted from public record; original immutable readiness archived locally."
+  },
+  "protocol_refinement": {
+    "source": "installed rc1 generated declaration, as supplied by pinned-runtime author",
+    "session_list_body": {
+      "args": {
+        "_request": {}
+      }
+    },
+    "proof_boundary": "Unauthenticated 401 is an access fence only, not a live authorized session-list or tenant proof.",
+    "command_sha256": {
+      "cordis": "0552cdeaf2848f0a349ff571f5c5e518847d5173769a7d656f94dceddece3511",
+      "anonymous_fence": "baea3c532fd8dcdf40c335875de062e412fb9395df241bc3a417ea9634050eef"
+    }
+  }
+}

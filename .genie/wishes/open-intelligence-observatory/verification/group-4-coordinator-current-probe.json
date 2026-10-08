@@ -1,0 +1,7 @@
+{
+  "command_sha256": "5f7e6f429f07769e0f9c3e999a60a5914b17076bbe816b157a053263ec7435c6",
+  "exit_code": 0,
+  "stdout_sha256": "4f4f5cfa8db54922ba8be65e12d409c311b71b82be763222788c53aa645317fd",
+  "observed_at": "2026-10-08T07:35:35.364919+00:00",
+  "proof_boundary": "Fresh exact published pure-component/documentary qualification only: six synthetic audit guards/seven component controls/ten descriptors, no native server/model/RLS/record/storage/restart evidence."
+}

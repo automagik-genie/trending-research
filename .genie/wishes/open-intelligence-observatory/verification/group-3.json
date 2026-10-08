@@ -1,0 +1,33 @@
+{
+  "issue": 4,
+  "group": 3,
+  "qualification_artifacts": "ACCEPTANCE_AND_SEPARATE_QUALITY_SHIP",
+  "original_issue": "BLOCKED",
+  "source_commit": "c5d1ab85331225007848dd60bc90086f79f6e965",
+  "paths_sha256": {
+    "docs/integrations/dsh.md": "ec056adff560dddea4bd0345743015904d2f438e8f2352542a4304967ee6008c",
+    "docs/integrations/cordis.md": "ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6",
+    "integrations/dsh/qualification/receipts.json": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb"
+  },
+  "acceptance_dispatch": "ctx_10422c4b80d0",
+  "quality_dispatch": "ctx_9b40871b57d6",
+  "quality_public_report": "group-3-quality-review.md",
+  "quality_raw_report_sha256": "97c9749bee8886f1bcca9bbb17a43c569f6cc83a2b5ce7f9f4cf2d043653c979",
+  "quality_fresh_smoke": "All four exact frozen safe commands exit0/empty stderr; no live model/tool product authority or cancellation/reconnect/persistence/tenant proof.",
+  "reviewer_familiarity": "Separate quality session reused prior acceptance reader; independent of author, not fresh/blind.",
+  "reviewer_evidence_correction": "Prior acceptance incorrectly inferred absent Cordis LICENSE from bounded inventory; full installed MIT LICENSE now verified SHA034fb52b1d57360ecbae6cb1632a88f86fd7c3d3f5631a5f082710203dda0be7. Candidate files unchanged.",
+  "criteria": [
+    "BLOCKED: A cited answer references the same entity IDs and evidence cutoff as the supplied scene.",
+    "BLOCKED: Cancellation stops new work; reconnect preserves the session and returns a clear status.",
+    "BLOCKED: Two isolated sessions cannot access each other's restricted records or tools.",
+    "Documentary-only PASS: Verdict names validated constraints and remaining blockers; probe code is labeled throwaway unless separately accepted."
+  ],
+  "remaining_prerequisites": [
+    "Approved dedicated provider/profile/model/spend ceiling and tools/principals",
+    "Authorized actual scene answer/citation under supported streaming route",
+    "Proven active+queue stop, reconnect/cold resume/durable ownership",
+    "Real restricted-principal/session/tenant boundary denial"
+  ],
+  "downstream": "No original task/card done or native DAG unlock; documentary/Map lifecycle probe is not live integration.",
+  "recorded_at": "2026-10-08T07:32:21.661722+00:00"
+}

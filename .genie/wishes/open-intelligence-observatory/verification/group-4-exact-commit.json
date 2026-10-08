@@ -1,0 +1,27 @@
+{
+  "before": "c5d1ab85331225007848dd60bc90086f79f6e965",
+  "commit": "51118d337d085ca1c9f29c48ee481a42c4f89fba",
+  "branch": "wish/open-intelligence-observatory",
+  "paths_sha256": {
+    "docs/integrations/brain.md": "33d2cd946532a88fca305b64e184100cb9a7a2641aafb7b1860727d76e612448",
+    "integrations/brain/qualification/native-tools.json": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+    "integrations/brain/qualification/evidence.json": "79c045ad0221dc5fec7856d6368906a13b593441209230736a00408085a09917"
+  },
+  "independent_acceptance": "ctx_b8bac21ca982 SHIP exact three bytes",
+  "separate_quality": "ctx_f32ba3018bb1 SHIP exact three bytes",
+  "coordinator_smoke": {
+    "command_sha256": "5f7e6f429f07769e0f9c3e999a60a5914b17076bbe816b157a053263ec7435c6",
+    "exit_code": 0,
+    "stdout_sha256": "4f4f5cfa8db54922ba8be65e12d409c311b71b82be763222788c53aa645317fd",
+    "observed_at": "2026-10-08T07:35:35.364919+00:00",
+    "proof_boundary": "Fresh exact published pure-component/documentary qualification only: six synthetic audit guards/seven component controls/ten descriptors, no native server/model/RLS/record/storage/restart evidence."
+  },
+  "exact_committed_pathset": [
+    "docs/integrations/brain.md",
+    "integrations/brain/qualification/evidence.json",
+    "integrations/brain/qualification/native-tools.json"
+  ],
+  "non_target_index_preserved": true,
+  "temporary_alternate_index_removed": true,
+  "limits": "Documentary qualification only, original #5 still BLOCKED; source writer concurrent disjoint paths not staged/reset/restored/discarded; no upstream issue closure or public push yet."
+}

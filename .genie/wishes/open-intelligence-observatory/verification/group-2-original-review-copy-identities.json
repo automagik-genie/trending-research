@@ -1,0 +1,12 @@
+{
+  "acceptance": {
+    "raw_sha256": "26413bfdaa197f2063ed548bdd5b52c55b03c07afbaf40e6e1fa7e73799b56d1",
+    "public_sha256": "f91672e98a8cbcd2e8161b4739658cac2f923b4db0f2fedbc9c75186f3e71aea",
+    "normalization": "Absolute target/home prefixes only, findings/criterion/evidence/verdict unchanged."
+  },
+  "quality": {
+    "raw_sha256": "f20891b3601a0df8cd50877bd2512c26f6345cff6f2acec6bcd4a678fa43f56c",
+    "public_sha256": "0f3ccab03cd21b1a4bb734f43d23c1350a802130e6fb0ba73caa8bc6bd1974fe",
+    "normalization": "Absolute worktree/home prefixes only; verdict/criteria/findings/evidence unchanged."
+  }
+}

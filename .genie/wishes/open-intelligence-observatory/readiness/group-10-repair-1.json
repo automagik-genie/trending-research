@@ -1,0 +1,23 @@
+{
+  "issue": 11,
+  "group": 10,
+  "phase": "bounded_repair",
+  "attempt": 1,
+  "budget": 2,
+  "budget_source": "config: genie config get budgets.maxEscalationsPerGroup, exit0/output2",
+  "effort_escalations": 0,
+  "source_checkpoint": "bb73b063957f2b6ccf0b0311e1770730faa8e2c0",
+  "owned_files": {
+    "METHODOLOGY.md": "2e8ab1024d9565911d0fc444acff596e38520d38418fad60632ab6411d99175f",
+    "web/METHODOLOGY.md": "2e8ab1024d9565911d0fc444acff596e38520d38418fad60632ab6411d99175f",
+    "scoring.py": "f2c66835229fc70fbe543e6606364ec78d5bbbbb5849532f58165330ce3842ee",
+    "web/index.html": "3e150cf7ae4b2f57235f3804783e86c2d7cf89085e5988c064bd0cceeeb4e632"
+  },
+  "spec_sha256": "8041ae12ab41a7b2f278d0d41dc11fd46223627e6fe73615eb844510f7e32ce3",
+  "original_readiness_preserved": "readiness/group-10.json",
+  "original_issue_disposition": "FIX-FIRST",
+  "validation_scope": "Focused safe published commands only after full slice; exact repaired Brain probe determined by authorized source writer and supplements final receipt, no author historical command rewrite; full aggregate deferred to coordinator after all writers settle",
+  "governing_wish_sha256": "ff8d8f2713b24b425746cab8d4bdaddf33120d0358cd9032f858f4c9aaec34a5",
+  "recorded_at": "2026-10-08T06:30:08.452890+00:00",
+  "prohibited": "No private/product/provider/spend/git/card/GitHub/service/namespace writes; no algorithm/numeric changes for #11; original DAG unchanged; only listed documentary repair scope."
+}

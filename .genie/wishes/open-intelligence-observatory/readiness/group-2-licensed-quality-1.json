@@ -1,0 +1,23 @@
+{
+  "issue": 3,
+  "group": 2,
+  "phase": "Original source quality gate after full original acceptanceSHIP",
+  "task": "task_de3e03e5cd5e",
+  "target_commit": "863f5eb1bc892044f5a778bfe503705c34170e42",
+  "manifest_sha256": "b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff",
+  "production_paths_sha256": {
+    "docs/sources/economics-panel.md": "f956945040da740109077e17d112df64fc2ea2223692e2cbda0b8a70c06fbcc5",
+    "investigations/frontier-economics/sources.json": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+    "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+    "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+    "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+    "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+    "investigations/frontier-economics/licensed-sources/NOTICE.md": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3"
+  },
+  "governing_wish_after_ledger_append_sha256": "ce82562fbde86230f799c8db75b835817692d26547464fc26d68def8be38de0c",
+  "ledger_change": "ReviewResults evidence only; all original scope/criteria/41edges/ownedpaths unchanged",
+  "acceptance": "ctx_5f2f73a70adf SHIP four original criteria/fullscope",
+  "original_scope_boundaries": "All original four entities/questions/priority original19rows/private gaps/common origins/rights/limits/source budget remain; new acquired CC0 financially useful subset is real four raw objects + financial selections, not metadata-directory workaround; secondary unverified corporate-wide values, no AI allocation/recognized accounting/fullcomparability/editorial/deployed claim.",
+  "validation": "Exact final immutable seven-path source consumer + attributed post-handoff43-test complete evaluator; no full-suite midflight",
+  "quality_repair_cap": 1
+}
