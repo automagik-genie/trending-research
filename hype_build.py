@@ -1,58 +1,43 @@
 #!/usr/bin/env python3
 """HYPE tab builder: hype/hype_research.json -> web/hype.json (compact) + rank history.
 
-Run standalone:  python3 /workspace/trending/hype_build.py [--no-history]
-run.py calls build(con=..., run_id=...) automatically when hype/hype_research.json exists,
-so dropping in a new research file updates the tab on the next run.
+Run standalone:  python3 hype_build.py [--no-history]
+run.py calls build(con=..., run_id=...) automatically when hype/hype_research.json exists.
 
-NEVER INVENTS NUMBERS. Unknown -> null (rendered '—'). All social counts are the research
-agent's *sampled* observations (purposive, not exhaustive, no global counts).
+NEVER INVENTS NUMBERS. Unknown -> null (rendered '—'). All social counts are the research agent's
+*sampled* observations (purposive, not exhaustive, no global counts).
 
-HYPE score (0-100) = attention velocity, a SAMPLED PROXY. Each component z is 0..1:
-  mention velocity   .35  sampled posts in window / effective days (min(window, days since first seen))
-  acceleration       .25  needs a growth series -> MISSING in this dataset (no repeated snapshots;
-                          HN sample is "first 100 hits by date", so a recent/older ratio would be biased)
-  unique voices      .20  sampled unique authors in window (summed over platforms)
-  cross-platform     .20  platforms with >=1 sampled post in window
-  Rates/counts are log-scaled vs the max in the window: z = log1p(v)/max log1p(v); spread = n/max n.
-  hype = 100 * sum(w*z over PRESENT components) / sum(w of present)  (weights renormalised)
-  hype_confidence = present components / 4.
-
-REAL score (0-100) = substance, window-independent:
-  GitHub trust index  .30  the GitHub tab's trust score for the same repo (run.py repo_trust map,
-                           else data.json GitHub rows 30d -> overall); repo not tracked -> missing
-  paper traction      .20  Hugging Face paper upvotes for the linked arXiv id (pipeline caches,
-                           else HF API); non-arXiv / not on HF -> missing
-  real usage          .30  largest sourced download/user count in real_traction_signals
-                           (platform observations preferred; vendor claims count at half weight)
-  developer discussion .20 comments on the sampled HN stories (research's HN sample)
-  Same log scaling within the HYPE set; weights renormalised over present ones; confidence = present/4.
-
-GAP = hype - real (per window). >= +15 likely hype, <= -15 underrated sleeper, else earned.
+Scoring is in scoring.py (hype_window / real_scores; weights in scoring_config.json; see METHODOLOGY.md):
+  Hype (0-100, per window) = velocity .35 + acceleration .25 (missing: no growth series) + unique voices .20
+        + platform spread .20, single-platform / few-voices penalties, shrunk toward the window median by
+        confidence (max 0.75 while acceleration is missing).
+  Real (0-100, window-independent) = GitHub trust .30 (weighted by its own confidence) + HF paper upvotes .20
+        + usage .30 (vendor claims count as half the evidence) + HN discussion .20, shrunk toward the median.
+  Gap = Hype - Real (shrunk values). Labelled hype (>= +15) / sleeper (<= -15) / earned only when both
+        confidences >= 0.5, otherwise 'insufficient evidence'.
 """
 import os, sys, re, json, math, time, sqlite3, glob, urllib.request, urllib.error
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-WEB, HIST, CACHE = (os.path.join(BASE, d) for d in ('web', 'history', 'cache'))
+sys.path.insert(0, BASE)
+import scoring
+WEB, HIST = (os.path.join(BASE, d) for d in ('web', 'history'))
+CACHE = os.environ.get('TRENDING_CACHE') or os.path.join(BASE, 'cache')
 RESEARCH = os.path.join(BASE, 'hype', 'hype_research.json')
 SUMMARY = os.path.join(BASE, 'hype', 'hype_summary.json')
 OUT = os.path.join(WEB, 'hype.json')
 TZ = ZoneInfo('America/Sao_Paulo')
-UA = 'felipe-ai-trend-tracker/1.0 (personal research dashboard)'
+UA = 'trending-research/2.0 (+https://github.com/namastex888/trending-research)'
 
 PLATFORMS = ['X', 'Reddit', 'LinkedIn', 'HN', 'YouTube', 'Discord', 'Telegram']
 RES_WINDOWS = [('1d', 1), ('7d', 7), ('30d', 30), ('90d', 90)]      # windows the research measured
 ALL_WINDOWS = ['1d', '7d', '30d', '90d', '180d', '1y', 'overall']
-HYPE_W = [('velocity', .35), ('acceleration', .25), ('voices', .20), ('spread', .20)]
-REAL_W = [('gh_trust', .30), ('paper', .20), ('usage', .30), ('discussion', .20)]
-GAP_HYPE, GAP_SLEEPER = 15, -15
 TOPN = 100
 USAGE_TYPES = {'npm_downloads', 'pypi_downloads', 'hf_model_downloads', 'representative_checkpoint_downloads',
                'extension_users', 'package_downloads', 'downloads', 'app_downloads',
                'claimed_monthly_active_users', 'reported_users', 'creators', 'business_clients'}
-VENDOR_DISCOUNT = 0.5
 
 def P(s):
     if not s: return None
@@ -86,20 +71,13 @@ def repo_name(u):
 
 # ---------------------------------------------------------------- joins with the other tabs
 def gh_trust_map(repo_trust=None):
-    """full_name(lower) -> (trust 0..100, confidence, source). Prefers run.py's all-repo map."""
+    """full_name(lower) -> dict(v, conf, v1, conf_v1, src). Prefers run.py's all-repo 30d trust map."""
     rt = repo_trust or (load(os.path.join(CACHE, 'repo_trust.json'), None) or {}).get('repos')
-    if rt:
-        return {k.lower(): (v['trust'], v.get('confidence'), 'GitHub tab trust index (30d)')
-                for k, v in rt.items() if v.get('trust') is not None and v.get('confidence')}
-    # Fallback: scores shown on the GitHub tab (any view; same score within a window). A row whose
-    # confidence is 0 had no trust signal at all, so it is treated as missing, not as a measured 0.
-    D = load(os.path.join(WEB, 'data.json'), {})
     out = {}
-    for w in ('30d', 'overall', '90d', '7d', '180d', '1y', '1d'):
-        for view in ((D.get('repos') or {}).get(w) or {}).values():
-            for r in view.get('rows', []):
-                if r.get('confidence'):
-                    out.setdefault(r['id'].lower(), (r['score'], r['confidence'], f'GitHub tab score ({w})'))
+    for k, v in (rt or {}).items():
+        if v.get('trust') is not None and v.get('confidence'):
+            out[k.lower()] = dict(v=v['trust'], conf=v['confidence'], v1=v.get('trust_v1'), conf_v1=v.get('confidence_v1'),
+                                  src='GitHub tab trust index (30d)')
     return out
 
 def hf_upvotes(ids):
@@ -130,23 +108,6 @@ def hf_upvotes(ids):
         out[pid] = ((c or {}).get('upvotes'), src)
     if fetched and os.path.isdir(CACHE): save(own_p, own)
     return out
-
-# ---------------------------------------------------------------- scoring helpers
-def lognorm(vals):
-    mx = max((math.log1p(v) for v in vals if v is not None and v > 0), default=0)
-    return [None if v is None else (math.log1p(v) / mx if v > 0 and mx > 0 else 0.0) for v in vals]
-
-def combine(zs, weights):
-    num = den = 0.0; present = 0
-    for (k, w) in weights:
-        z = zs.get(k)
-        if z is None: continue
-        num += w * z; den += w; present += 1
-    return (round(100 * num / den, 1) if den else None), round(present / len(weights), 2)
-
-def gap_label(g):
-    if g is None: return None
-    return 'hype' if g >= GAP_HYPE else ('sleeper' if g <= GAP_SLEEPER else 'earned')
 
 # ---------------------------------------------------------------- compact per-project record
 def likes_of(p):
@@ -236,21 +197,27 @@ def db_connect():
     CREATE TABLE IF NOT EXISTS runs(run_id INTEGER PRIMARY KEY AUTOINCREMENT, ts TEXT, ts_local TEXT, seconds REAL, sources TEXT);
     CREATE TABLE IF NOT EXISTS ranks(run_id INT, tab TEXT, win TEXT, item_id TEXT, rank INT, score REAL);
     CREATE INDEX IF NOT EXISTS i_ranks ON ranks(tab, win, run_id);''')
+    for col in ('scoring_version TEXT', 'kind TEXT', 'config_sha TEXT'):
+        try: con.execute(f'ALTER TABLE runs ADD COLUMN {col}')
+        except Exception: pass
     return con
 
 def prev_hype(con, before=None):
+    """-> ({(tab, win): {id: (rank, score)}}, ts_local, scoring_version of that run)."""
     q = "SELECT MAX(run_id) FROM ranks WHERE tab='hype'" + (' AND run_id < ?' if before else '')
     r = con.execute(q, (before,) if before else ()).fetchone()[0]
-    if r is None: return {}, None
+    if r is None: return {}, None, None
     out = {}
-    for tab, win, item, rank in con.execute("SELECT tab, win, item_id, rank FROM ranks WHERE run_id=? AND (tab='hype' OR tab LIKE 'hype|%')", (r,)):
-        out.setdefault((tab, win), {})[item] = rank
-    ts = con.execute('SELECT ts_local FROM runs WHERE run_id=?', (r,)).fetchone()
-    return out, ts[0] if ts else None
+    for tab, win, item, rank, score in con.execute("SELECT tab, win, item_id, rank, score FROM ranks WHERE run_id=? AND (tab='hype' OR tab LIKE 'hype|%')", (r,)):
+        out.setdefault((tab, win), {})[item] = (rank, score)
+    try: row = con.execute('SELECT ts_local, scoring_version FROM runs WHERE run_id=?', (r,)).fetchone()
+    except sqlite3.OperationalError: row = con.execute('SELECT ts_local, NULL FROM runs WHERE run_id=?', (r,)).fetchone()
+    return out, (row[0] if row else None), ((row[1] if row else None) or '1.x')
 
 # ---------------------------------------------------------------- main build
-def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record=True, log=print):
+def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record=True, log=print, cfg=None):
     t0 = time.time()
+    cfg = cfg or scoring.load_config()
     research = load(RESEARCH, None)
     if not isinstance(research, list) or not research:
         raise RuntimeError(f'{RESEARCH} missing or not a list of projects')
@@ -311,75 +278,56 @@ def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record
         hn_c = sum(((p.get('engagement') or {}).get('comments') or 0) for p in posts if p.get('platform') == 'HN') if hn_ok else None
         hn_n = sum(1 for p in posts if p.get('platform') == 'HN')
         rec['real_in'] = dict(
-            gh_trust=None if not t else dict(v=t[0], conf=t[1], src=t[2], repo=rn),
+            gh_trust=None if not t else dict(t, repo=rn),
             paper=None if up[0] is None else dict(v=up[0], id=pa, url=up[1]),
             usage=us,
             discussion=None if hn_c is None else dict(v=hn_c, stories=hn_n))
         raw_real.append(rec['real_in'])
         items[pid] = rec
 
-    # ---- REAL score (window independent)
-    zt = [None if r['gh_trust'] is None else max(0.0, min(1.0, r['gh_trust']['v'] / 100)) for r in raw_real]
-    zp = lognorm([None if r['paper'] is None else r['paper']['v'] for r in raw_real])
-    zu = lognorm([None if r['usage'] is None else r['usage']['value'] for r in raw_real])
-    zu = [None if z is None else z * (VENDOR_DISCOUNT if r['usage']['vendor'] else 1) for z, r in zip(zu, raw_real)]
-    zd = lognorm([None if r['discussion'] is None else r['discussion']['v'] for r in raw_real])
-    for i, pid in enumerate(ids):
-        zs = dict(gh_trust=zt[i], paper=zp[i], usage=zu[i], discussion=zd[i])
-        sc, cf = combine(zs, REAL_W)
-        items[pid]['real'] = sc if cf > 0 else None
-        items[pid]['real_conf'] = cf
-        items[pid]['real_z'] = {k: None if v is None else round(v, 3) for k, v in zs.items()}
+    # ---- scoring (scoring.py): Real is window-independent, Hype per window
+    PJ = {pid: dict(win=items[pid]['win'], age=items[pid]['age_at_cutoff'], real_in=items[pid]['real_in']) for pid in ids}
+    real, real_prior = scoring.real_scores(PJ, cfg)
+    for pid in ids:
+        items[pid].update(real=real[pid]['score'], real_conf=real[pid]['conf'], real_raw=real[pid]['raw'], real_pct=real[pid]['pct'],
+                          real_z=real[pid]['z'])
 
-    # ---- HYPE score per window
     if con is None and record: con = db_connect()
-    prev, prev_ts = prev_hype(con, run_id) if con is not None else ({}, None)
+    prev, prev_ts, prev_ver = prev_hype(con, run_id) if con is not None else ({}, None, None)
+    comparable = prev_ver == scoring.SCORING_VERSION
     views = ['all'] + list(tags)
     out_w, ranks_rows = {}, []
-    win_meta = {}
+    win_meta, priors = {}, {'real': scoring.r1(real_prior)}
     for w in ALL_WINDOWS:
         if w in ('180d', '1y'):
             win_meta[w] = dict(enabled=False, reason=f'not a research window (research measured 1d/7d/30d/90d; overall = {look_days}-day lookback)')
             continue
-        cand = [pid for pid in ids if items[pid]['win'].get(w) and items[pid]['win'][w]['mentions'] > 0]
-        if not cand:
+        scored, prior = scoring.hype_window(PJ, w, real, cfg)
+        if not scored:
             win_meta[w] = dict(enabled=False, reason='no sampled posts in this window'); continue
-        win_meta[w] = dict(enabled=True, days=items[cand[0]]['win'][w]['days'])
-        vel, voi, spr = [], [], []
-        for pid in cand:
-            m = items[pid]['win'][w]
-            age = items[pid]['age_at_cutoff']
-            eff = max(1.0, min(m['days'], age if age is not None and age > 0 else m['days']))
-            vel.append(m['mentions'] / eff); voi.append(m['voices']); spr.append(len(m['platforms']))
-        zv, zo = lognorm(vel), lognorm(voi)
-        mx_s = max(spr) or 1
-        scored = []
-        for i, pid in enumerate(cand):
-            zs = dict(velocity=zv[i], acceleration=None, voices=zo[i], spread=spr[i] / mx_s)
-            sc, cf = combine(zs, HYPE_W)
-            real = items[pid]['real']
-            gap = round(sc - real, 1) if real is not None else None
-            scored.append(dict(id=pid, score=sc, conf=cf, vel=round(vel[i], 3), gap=gap,
-                               z={k: None if v is None else round(v, 3) for k, v in zs.items()}))
-        scored.sort(key=lambda r: (-r['score'], -(items[r['id']]['win'][w]['mentions'])))
+        priors[w] = scoring.r1(prior)
+        win_meta[w] = dict(enabled=True, days=items[scored[0]['id']]['win'][w]['days'])
         vv = {}
         for v in views:
             sub = scored if v == 'all' else [r for r in scored if items[r['id']]['tag'] == v]
             hkey = 'hype' if v == 'all' else f'hype|{v}'
             pr = prev.get((hkey, w), {})
+            top = sub[:TOPN]
+            mvs = scoring.movement([(r['id'], r['score']) for r in top], pr, cfg, comparable=comparable)
             rows = []
-            for k, r in enumerate(sub[:TOPN], 1):
+            for k, (r, mv) in enumerate(zip(top, mvs), 1):
                 ranks_rows.append((hkey, w, r['id'], k, r['score']))
-                rows.append(dict(r, rank=k, prev=pr.get(r['id'])))
+                rows.append(dict(r, rank=k, prev=(pr.get(r['id']) or (None,))[0], mv=mv))
             vv[v] = dict(rows=rows, candidates=len(sub))
         out_w[w] = vv
 
     now = datetime.now(timezone.utc)
     if record and con is not None:
         if run_id is None:
-            cur = con.execute('INSERT INTO runs(ts, ts_local, seconds, sources) VALUES(?,?,?,?)',
+            cur = con.execute('INSERT INTO runs(ts, ts_local, seconds, sources, scoring_version, kind, config_sha) VALUES(?,?,?,?,?,?,?)',
                               (now.strftime('%Y-%m-%dT%H:%M:%SZ'), now.astimezone(TZ).isoformat(timespec='seconds'),
-                               round(time.time() - t0, 1), json.dumps({'hype_build': 'standalone'})))
+                               round(time.time() - t0, 1), json.dumps({'hype_build': 'standalone'}),
+                               scoring.SCORING_VERSION, 'hype', scoring.config_sha()))
             run_id = cur.lastrowid
         con.executemany('INSERT INTO ranks VALUES(?,?,?,?,?,?)', [(run_id,) + r for r in ranks_rows])
         con.commit()
@@ -393,8 +341,8 @@ def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record
         return next((c for c in cov if re.search(rx, c, re.I)), None)
     short = [c for c in (pick(r'not exhaustive'), pick(r'growth cannot'), pick(r'^HN')) if c] or cov[:3]
     comp_counts = {
-        'hype': {k: sum(1 for w in out_w.values() for r in w['all']['rows'] if r['z'].get(k) is not None) for k, _ in HYPE_W},
-        'real': {k: sum(1 for pid in ids if items[pid]['real_z'][k] is not None) for k, _ in REAL_W},
+        'hype': {k: sum(1 for w in out_w.values() for r in w['all']['rows'] if r['z'].get(k) is not None) for k in cfg['hype']['weights']},
+        'real': {k: sum(1 for pid in ids if items[pid]['real_z'][k] is not None) for k in cfg['real']['weights']},
     }
     data = dict(
         generated_at=now.strftime('%Y-%m-%dT%H:%M:%SZ'),
@@ -403,13 +351,18 @@ def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record
         lookback_days=look_days, run_id=run_id, previous_run=prev_ts,
         coverage_short=short, coverage=cov, ranking_interpretation=summ.get('ranking_interpretation'),
         gap_note=summ.get('gap_ranking_note'),
-        weights=dict(hype=dict(HYPE_W), real=dict(REAL_W)), gap_thresholds=[GAP_SLEEPER, GAP_HYPE],
+        scoring_version=scoring.SCORING_VERSION, config_sha=scoring.config_sha(), priors=priors,
+        movement_note=(None if comparable or not prev else f'movement reset: the previous HYPE run used scoring v{prev_ver}'),
+        weights=dict(hype=cfg['hype']['weights'], real=cfg['real']['weights']),
+        gap_thresholds=[cfg['gap']['sleeper'], cfg['gap']['hype']], gap_min_confidence=cfg['gap']['min_confidence'],
+        penalties=dict(single_platform=cfg['hype']['single_platform_penalty'], few_voices=cfg['hype']['few_voices'],
+                       few_voices_penalty=cfg['hype']['few_voices_penalty']),
         missing=dict(acceleration='No growth series in the research (no repeated snapshots; HN sample = first 100 hits by date, so a recent/older ratio would be biased). Weight renormalised over the other three.'),
         component_counts=comp_counts, n_projects=len(ids), views=views, windows=win_meta,
         items=items, **out_w)
     save(OUT, data)
     sz = os.path.getsize(OUT)
-    log(f'[HYPE] wrote {OUT} ({sz/1024:.0f} KB): {len(ids)} projects; windows ' +
+    log(f'[HYPE v{scoring.SCORING_VERSION}] wrote {OUT} ({sz/1024:.0f} KB): {len(ids)} projects; windows ' +
         ', '.join(f'{w}={len(out_w[w]["all"]["rows"])}' for w in out_w) + f'; prev hype run: {prev_ts}')
     return data
 

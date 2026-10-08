@@ -1,42 +1,26 @@
 #!/usr/bin/env python3
-"""AI-research trend tracker: fetch -> score -> write web/data.json + history.
+"""AI-research trend tracker: fetch -> features -> score (scoring.py) -> web/data.json + history.
 
-Run:  python3 /workspace/trending/run.py
+Run:   python3 run.py                full fetch + score (writes web/data.json, web/hype.json, history/)
+       python3 run.py --rescore      no network: re-score the cached inputs of the last full run with the
+                                     current scoring.py / scoring_config.json (handy for weight-change PRs)
+       python3 run.py --offline --asof <ISO> --features-only <out.json.gz>
+                                     write only the feature snapshot (used by eval.py; reads the DB read-only)
+Env:   TRENDING_CACHE=<dir>          use another cache directory (e.g. an archived one)
 
-Sources (all public, no auth): arXiv API, Hugging Face papers API (daily/month lists,
-search, per-paper), Hacker News Algolia API (social mentions), GitHub REST API
-(search + stargazers with timestamps, unauthenticated unless `gh` is logged in).
-Every source is wrapped: on failure the last good cached payload is reused and the
-failure is recorded in data.json["sources"]. No metric is ever invented: unknown -> null
-(rendered as '—').
+Sources (all public): arXiv API, Hugging Face papers API, Hacker News Algolia API, GitHub REST API
+(search, stargazer timestamps, contributors; the `gh auth` token is used when logged in). Every source
+is wrapped: on failure the last good cached payload is reused and the failure is recorded in
+data.json["sources"]. No metric is ever invented: unknown -> null (rendered as '—').
 
-TRUST / MOMENTUM SCORE (0-100), never star totals alone:
-  Normalise each present signal s as z_s = log1p(rate_s) / max(log1p(rate_s) in the window)
-  (ratios are 0..1; missing signals contribute 0 and lower confidence). Then
-  score = 100 * sum(w_s * z_s) / max(raw in window).
+Scoring lives in scoring.py (algorithm v2, weights in scoring_config.json, explained in METHODOLOGY.md).
+This file only builds per-item *features* (rates, momentum from history snapshots, activity) and stores
+them in history/runs/<stamp>-features.json.gz so eval.py can re-score any run under v1 or v2.
 
-  Papers: upvotes/day (.40), linked-repo trust (.35) when we have the repo's activity
-          (else linked-repo star growth/day when measured, else missing), HN mentions/day (.25).
-          Rates = value / max(days since release, 1).
-
-  Repos (trust index): star growth/day (.35) — stars gained in the window from our snapshots
-          or GitHub stargazer timestamps (repos born in-window use total stars as gain);
-          never lifetime star totals as a substitute.
-          issue activity/day (.20) = (issues opened + closed in lookback) / days;
-          PR volume/day (.15) = PRs opened / days;
-          PR merge rate (.15) = merged/opened in lookback (0..1, not log-scaled);
-          commit frequency/day (.15) = commits / days;
-          contributor count (.10) = log-scaled current contributors (explicitly allowed —
-          unlike star totals);
-          contributor growth/day (.15) = delta in contributor count from our snapshots
-          (or all contributors if the repo was born in-window).
-          Activity lookback ≈ 30d via GitHub Search API; contributor counts via
-          /contributors (Link: last). confidence = fraction of signals present.
-
-HYPE tab: if hype/hype_research.json exists, hype_build.build() turns it into web/hype.json
-  (compact; formula in hype_build.py) and stores HYPE ranks in the same history DB (tab 'hype').
+HYPE tab: if hype/hype_research.json exists, hype_build.build() turns it into web/hype.json and stores
+HYPE ranks in the same history DB (tab 'hype').
 """
-import os, sys, re, json, time, math, sqlite3, fcntl, threading, traceback
+import os, sys, re, json, time, math, sqlite3, fcntl, threading, traceback, gzip, bisect
 import urllib.request, urllib.parse, urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta, date
@@ -44,11 +28,40 @@ from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-WEB, HIST, CACHE = (os.path.join(BASE, d) for d in ('web', 'history', 'cache'))
+sys.path.insert(0, BASE)
+import scoring
+WEB, HIST = (os.path.join(BASE, d) for d in ('web', 'history'))
+CACHE = os.environ.get('TRENDING_CACHE') or os.path.join(BASE, 'cache')
 DB = os.path.join(HIST, 'trending.db')
 TZ = ZoneInfo('America/Sao_Paulo')
-UA = 'felipe-ai-trend-tracker/1.0 (personal research dashboard)'
-NOW = datetime.now(timezone.utc)
+UA = 'trending-research/2.0 (+https://github.com/namastex888/trending-research)'
+
+def _arg(name):
+    if name in sys.argv:
+        i = sys.argv.index(name)
+        return sys.argv[i + 1] if i + 1 < len(sys.argv) else None
+    return None
+
+_MAIN = __name__ == '__main__'
+RESCORE = _MAIN and '--rescore' in sys.argv
+OFFLINE = RESCORE or (_MAIN and '--offline' in sys.argv)
+FEATURES_ONLY = _arg('--features-only') if _MAIN else None
+ASOF = _arg('--asof') if _MAIN else None
+
+def _last_full_run_ts():
+    try:
+        con = sqlite3.connect(f'file:{DB}?mode=ro', uri=True)
+        cols = [r[1] for r in con.execute('PRAGMA table_info(runs)')]
+        q = "SELECT ts FROM runs WHERE sources NOT LIKE '{\"hype_build\"%'" + (" AND (kind IS NULL OR kind='full')" if 'kind' in cols else '')
+        row = con.execute(q + ' ORDER BY run_id DESC LIMIT 1').fetchone()
+        return row[0] if row else None
+    except Exception:
+        return None
+
+if RESCORE and not ASOF:
+    ASOF = _last_full_run_ts()
+NOW = (datetime.fromisoformat(ASOF.replace('Z', '+00:00')).astimezone(timezone.utc) if ASOF
+       else datetime.now(timezone.utc))
 TODAY_LOCAL = NOW.astimezone(TZ).date()
 WINDOWS = [('1d', 1), ('7d', 7), ('30d', 30), ('90d', 90), ('180d', 180), ('1y', 365), ('overall', None)]
 TOPN = 100
@@ -56,6 +69,9 @@ HF_PAPER_BUDGET = 400      # per-paper HF lookups per run (HF anon limit: 500 re
 HN_BUDGET = 900            # HN Algolia lookups per run (limit 10k/h)
 for d in (WEB, HIST, CACHE, os.path.join(HIST, 'runs')):
     os.makedirs(d, exist_ok=True)
+
+def nap(sec):
+    if not OFFLINE: time.sleep(sec)
 
 SOURCES = {}   # name -> {status, detail}
 def note(name, status, detail=''):
@@ -92,6 +108,7 @@ class HTTPErr(Exception):
         super().__init__(f'HTTP {code}: {msg}'); self.code = code; self.headers = headers or {}
 
 def http_get(url, headers=None, timeout=40):
+    if OFFLINE: raise HTTPErr(0, 'offline mode (no network)')
     h = {'User-Agent': UA}
     h.update(headers or {})
     req = urllib.request.Request(url, headers=h)
@@ -114,6 +131,7 @@ class Interval:
 ARXIV_RL = Interval(3.2)
 HN_RL = Interval(0.12)
 GH_SEARCH_RL = Interval(6.5)       # unauthenticated search: 10 req/min
+GH_SEARCH_RL_AUTH = Interval(2.1)  # authenticated search: 30 req/min
 
 class HFLimiter:
     """HF returns `ratelimit: "api";r=<remaining>;t=<seconds to reset>` (500 req / 300 s)."""
@@ -171,7 +189,7 @@ def gh_get(path, accept='application/vnd.github+json', search=False):
     h = {'Accept': accept, 'X-GitHub-Api-Version': '2022-11-28'}
     if GH_TOKEN: h['Authorization'] = 'Bearer ' + GH_TOKEN
     for attempt in range(3):
-        if search and not GH_TOKEN: GH_SEARCH_RL.wait()
+        if search and not OFFLINE: (GH_SEARCH_RL_AUTH if GH_TOKEN else GH_SEARCH_RL).wait()
         try:
             st, hd, body = http_get(url, h)
             return json.loads(body), hd
@@ -267,7 +285,8 @@ def fetch_arxiv():
                 if not entries and b'<entry>' in body: raise ValueError('parse failed')
                 break
             except Exception as e:
-                err = str(e); time.sleep(5 * (attempt + 1))
+                err = str(e); nap(5 * (attempt + 1))
+                if OFFLINE: break
         if entries is not None:
             save_json(cp, {'fetched_at': iso(datetime.now(timezone.utc)), 'entries': entries}); ok += 1
         else:
@@ -310,7 +329,7 @@ def fetch_hf_lists():
         cp = cpath('hf_month_' + mo)
         c = load_json(cp, None)
         ttl_h = 1 if i < 2 else 72          # current & previous month refreshed every run
-        if c and (time.time() - c.get('ts', 0)) < ttl_h * 3600:
+        if c and (OFFLINE or (time.time() - c.get('ts', 0)) < ttl_h * 3600):
             items = c['items']; cached += 1
         else:
             try:
@@ -392,6 +411,8 @@ def fetch_github_search():
 def fetch_stargazers(repos, order):
     """Star timestamps for repos (newest pages first) using the core API budget."""
     cache = load_json(cpath('stargazers'), {})
+    if OFFLINE:
+        note('GitHub stargazers API', 'cache', f'offline: {len(cache)} cached repos'); return cache
     rem, reset = gh_core_remaining()
     budget = max(0, rem - 3)
     used, done, consec_fail, last_err = 0, 0, 0, ''
@@ -425,7 +446,10 @@ def fetch_stargazers(repos, order):
         done += 1
         if used >= budget: break
     save_json(cpath('stargazers'), cache)
-    if consec_fail >= 3:
+    if consec_fail >= 3 and 'HTTP 404' in last_err:
+        note('GitHub stargazers API', 'unavailable', f'the stargazers endpoint answered HTTP 404 for every repo tried (even authenticated); '
+             f'star growth comes from our own snapshots instead. {len(cache)} cached')
+    elif consec_fail >= 3:
         note('GitHub stargazers API', 'failed', f'stopped after 3 consecutive errors ({last_err}); star timestamps for {done} repos this run, {len(cache)} cached')
     elif budget == 0:
         note('GitHub stargazers API', 'skipped', f'core rate limit exhausted (unauthenticated 60/h); resets {datetime.fromtimestamp(reset, TZ).strftime("%H:%M")} BRT. Using cached timestamps for {len(cache)} repos')
@@ -435,6 +459,7 @@ def fetch_stargazers(repos, order):
 
 ACTIVITY_LOOKBACK = 30   # days for cached activity snapshot; scaled into each window
 ACTIVITY_BUDGET = 30     # repos to enrich per run (4 search queries each ≈ 3–6 min)
+ACTIVITY_BUDGET_AUTH = 100  # with gh auth (30 search req/min): 5 queries/repo ≈ 17 min
 
 def _gh_search_count(q, commits=False):
     path = '/search/commits?' if commits else '/search/issues?'
@@ -449,13 +474,15 @@ def fetch_repo_activity(repos, order):
     Stores a 30-day lookback snapshot per repo. Missing fields stay null — never invented.
     """
     cache = load_json(cpath('repo_activity'), {})
+    if OFFLINE:
+        note('GitHub activity (issues/PRs/commits)', 'cache', f'offline: {len(cache)} cached'); return cache
     since = (TODAY_LOCAL - timedelta(days=ACTIVITY_LOOKBACK)).isoformat()
     todo, done, fail = [], 0, 0
     for fn in order:
         c = cache.get(fn)
         if c and time.time() - c.get('ts', 0) < 18 * 3600: continue
         todo.append(fn)
-        if len(todo) >= ACTIVITY_BUDGET: break
+        if len(todo) >= (ACTIVITY_BUDGET_AUTH if GH_TOKEN else ACTIVITY_BUDGET): break
     for fn in todo:
         try:
             issues_open = _gh_search_count(f'repo:{fn} type:issue created:>{since}')
@@ -508,6 +535,7 @@ def fetch_repo_activity(repos, order):
 
 def fill_contributor_counts(activity, order):
     """Backfill contributor counts on cached activity entries using core API budget."""
+    if OFFLINE: return activity
     rem, reset = gh_core_remaining()
     budget = max(0, rem - 5)
     filled = 0
@@ -545,6 +573,7 @@ def fill_contributor_counts(activity, order):
 # ---------------------------------------------------------------- per-paper HF + HN
 def hf_paper_lookups(ids_prio):
     cache = load_json(cpath('hf_papers'), {})
+    if OFFLINE: return cache
     todo = []
     for pid, age_days, kind in ids_prio:
         c = cache.get(pid)
@@ -569,6 +598,7 @@ def hf_paper_lookups(ids_prio):
 
 def hn_lookups(papers_prio):
     cache = load_json(cpath('hn'), {})
+    if OFFLINE: return cache
     todo = []
     for pid, age_days in papers_prio:
         c = cache.get(pid)
@@ -600,6 +630,7 @@ def hn_lookups(papers_prio):
     return cache
 
 def check_reddit():
+    if OFFLINE: return
     try:
         http_get('https://www.reddit.com/search.json?q=arxiv&limit=1', timeout=15)
         note('Reddit search JSON', 'not used', 'reachable but not wired in (HN used for mentions)')
@@ -607,7 +638,9 @@ def check_reddit():
         note('Reddit search JSON', 'failed', f'HTTP {getattr(e, "code", "error")} (blocked without auth) -> social mentions come from Hacker News only')
 
 # ---------------------------------------------------------------- history DB
-def db():
+def db(readonly=False):
+    if readonly:
+        return sqlite3.connect(f'file:{DB}?mode=ro', uri=True)
     con = sqlite3.connect(DB)
     con.executescript('''
     CREATE TABLE IF NOT EXISTS runs(run_id INTEGER PRIMARY KEY AUTOINCREMENT, ts TEXT, ts_local TEXT, seconds REAL, sources TEXT);
@@ -622,61 +655,190 @@ def db():
     CREATE INDEX IF NOT EXISTS i_paper ON paper_snap(arxiv_id);
     ''')
 
-    try: con.execute('ALTER TABLE repo_snap ADD COLUMN contributors INT')
-    except Exception: pass
+    for t, col in (('repo_snap', 'contributors INT'), ('runs', 'scoring_version TEXT'), ('runs', 'kind TEXT'),
+                   ('runs', 'config_sha TEXT')):
+        try: con.execute(f'ALTER TABLE {t} ADD COLUMN {col}')
+        except Exception: pass
     return con
 
+def run_version(con, run_id):
+    try:
+        row = con.execute('SELECT scoring_version FROM runs WHERE run_id=?', (run_id,)).fetchone()
+        return (row[0] if row and row[0] else '1.x')
+    except Exception:
+        return '1.x'
+
 def prev_ranks(con, tabs=('papers', 'repos')):
-    """Previous ranks per tab = the latest run that recorded that tab (hype_build.py can add
-    HYPE-only runs, so 'latest run overall' is not enough)."""
-    out, ts = {}, None
+    """Previous ranks+scores per tab = the latest run that recorded that tab (hype_build.py can add
+    HYPE-only runs). Returns ({(tab, win): {id: (rank, score)}}, ts_local, {tab: scoring_version})."""
+    out, ts, ver = {}, None, {}
     for t in tabs:
         r = con.execute('SELECT MAX(run_id) FROM ranks WHERE tab=?', (t,)).fetchone()[0]
         if r is None: continue
-        for tab, win, item, rank in con.execute('SELECT tab, win, item_id, rank FROM ranks WHERE run_id=? AND (tab=? OR tab LIKE ?)',
-                                                (r, t, t + '|%')):
-            out.setdefault((tab, win), {})[item] = rank
+        ver[t] = run_version(con, r)
+        for tab, win, item, rank, score in con.execute('SELECT tab, win, item_id, rank, score FROM ranks WHERE run_id=? AND (tab=? OR tab LIKE ?)',
+                                                       (r, t, t + '|%')):
+            out.setdefault((tab, win), {})[item] = (rank, score)
         if ts is None: ts = con.execute('SELECT ts_local FROM runs WHERE run_id=?', (r,)).fetchone()[0]
-    return out, ts
+    return out, ts, ver
 
 def repo_snapshot_gain(con, fn, stars_now, days):
     """Stars gained over ~`days` from our own snapshots: needs a snapshot observed near the window start."""
     start = NOW - timedelta(days=days)
     tol = timedelta(days=max(0.15 * days, 0.25))
-    row = con.execute('SELECT stars, observed_at FROM repo_snap WHERE full_name=? AND observed_at BETWEEN ? AND ? '
-                      'ORDER BY observed_at DESC LIMIT 1', (fn, iso(start - tol), iso(start + tol))).fetchone()
+    row = con.execute('SELECT stars, observed_at FROM repo_snap WHERE full_name=? AND observed_at BETWEEN ? AND ? AND observed_at <= ? '
+                      'ORDER BY observed_at DESC LIMIT 1', (fn, iso(start - tol), iso(start + tol), iso(NOW))).fetchone()
     if not row: return None
     span = (NOW - parse_dt(row[1])).total_seconds() / 86400
     if span < 0.25: return None
     return stars_now - row[0], span
 
-# ---------------------------------------------------------------- scoring
-def norm_scores(items, signals, ratio_keys=()):
-    """signals: list of (key, weight). rates use log1p; ratio_keys (e.g. merge rate) stay in [0,1]."""
-    mx = {}
-    for k, _ in signals:
-        if k in ratio_keys:
-            mx[k] = 1.0
-        else:
-            mx[k] = max((math.log1p(i['_rates'][k]) for i in items
-                         if i['_rates'].get(k) is not None and i['_rates'][k] > 0), default=0)
-    raws = []
-    for i in items:
-        raw = 0.0
-        present = 0
-        for k, w in signals:
-            v = i['_rates'].get(k)
-            if v is None: continue
-            present += 1
-            if k in ratio_keys:
-                raw += w * max(0.0, min(1.0, float(v)))
-            elif v > 0 and mx[k] > 0:
-                raw += w * math.log1p(v) / mx[k]
-        i['_confidence'] = round(present / max(len(signals), 1), 2)
-        raws.append(raw)
-    m = max(raws, default=0)
-    for i, raw in zip(items, raws):
-        i['_score'] = round(100 * raw / m, 1) if m > 0 else 0.0
+# ---------------------------------------------------------------- features (inputs to scoring.py)
+_DT = {}
+def pdt(s):
+    if not s: return None
+    v = _DT.get(s)
+    if v is None: v = _DT[s] = parse_dt(s)
+    return v
+
+def load_snapshots(con):
+    """All earlier observations from the history DB: papers (upvotes, stars, HN mentions) and repos (stars, contributors)."""
+    ps, rs = {}, {}
+    for row in con.execute('SELECT arxiv_id, upvotes, upvotes_at, stars, stars_at, mentions, mentions_at FROM paper_snap'):
+        ps.setdefault(row[0], []).append(row[1:])
+    for fn, st, obs, ct in con.execute('SELECT full_name, stars, observed_at, contributors FROM repo_snap'):
+        rs.setdefault(fn, []).append((obs, st, ct))
+    return ps, rs
+
+def snap_rate(series, now_val, now_at, target_days, min_span):
+    """Real delta from our own snapshots. series = [(observed_at_iso, value)]. Picks the earlier observation
+    closest to (now_at - target_days) that is at least min_span days old and not after NOW (as-of).
+    -> (rate/day >= 0, delta, span_days) or None."""
+    if not isinstance(now_val, (int, float)) or now_at is None: return None
+    target, best = now_at - timedelta(days=target_days), None
+    for at, v in series:
+        if v is None: continue
+        t = pdt(at)
+        if t is None or t > NOW: continue
+        span = (now_at - t).total_seconds() / 86400
+        if span < min_span: continue
+        key = abs((t - target).total_seconds())
+        if best is None or key < best[0]: best = (key, v, span)
+    if not best: return None
+    delta = now_val - best[1]
+    return max(delta, 0) / best[2], delta, best[2]
+
+def build_features(papers, repos, sg, activity, con, cfg):
+    """Everything scoring.py needs, per item and window. Missing stays None (never invented)."""
+    min_span = cfg['momentum']['min_snapshot_span_days']
+    pmd = cfg['momentum']['paper_momentum_days']
+    ps, rs = load_snapshots(con)
+    sgt = {}
+    for fn, z in sg.items():
+        if not z or z.get('times') is None: continue
+        fetched = datetime.fromtimestamp(z['ts'], timezone.utc)
+        if fetched > NOW + timedelta(hours=6): continue          # fetched after the as-of time
+        sgt[fn] = (fetched, z.get('complete'), pdt(z.get('oldest')),
+                   sorted(pdt(t).timestamp() for t in z['times'] if pdt(t)))
+
+    def stargazer_gain(fn, use):
+        z = sgt.get(fn)
+        if not z: return None
+        fetched, complete, oldest, ts = z
+        wstart = fetched - timedelta(days=use)
+        if not (complete or (oldest and oldest <= wstart)): return None
+        return bisect.bisect_right(ts, fetched.timestamp()) - bisect.bisect_left(ts, wstart.timestamp())
+
+    F = {'asof': iso(NOW), 'scoring_version': scoring.SCORING_VERSION, 'windows': WINDOWS, 'tags': TAGS,
+         'repos': {}, 'papers': {}}
+    for fn, r in repos.items():
+        a = activity.get(fn) or {}
+        lb = max(a.get('lookback_days') or ACTIVITY_LOOKBACK, 1)
+        act = {}
+        io, ic, po, pm, cm = (a.get(k) for k in ('issues_opened', 'issues_closed', 'prs_opened', 'prs_merged', 'commits'))
+        if io is not None and ic is not None: act.update(issues=(io + ic) / lb, issues_opened=io, issues_closed=ic)
+        if po is not None:
+            act.update(prs=po / lb, prs_opened=po)
+            if pm is not None: act.update(merge=(pm / po) if po > 0 else 0.0, prs_merged=pm)
+        if cm is not None: act.update(commits=cm / lb, commits_n=cm)
+        contributors = a.get('contributors')
+        rsn = rs.get(fn, [])
+        now_obs = pdt(r['observed_at'])
+        c_at = pdt(a.get('contributors_at') or a.get('observed_at')) or now_obs
+        h = {}
+        for hz in cfg['repos']['persistence_horizons']:
+            if r['created_dt'] and r['created_dt'] >= NOW - timedelta(days=hz): continue
+            g = stargazer_gain(fn, hz)
+            if g is not None: h[str(hz)] = round(g / hz, 4)
+        cands, win = [], {}
+        for wname, days in WINDOWS:
+            is_c = days is None or bool((r['created_dt'] and r['created_dt'] >= NOW - timedelta(days=days))
+                                        or (r['pushed_dt'] and r['pushed_dt'] >= NOW - timedelta(days=days)))
+            if not is_c and wname != '30d': continue       # 30d is always kept: it is the trust/reference window
+            if is_c: cands.append(wname)
+            use = 90 if days is None else days
+            ustart = NOW - timedelta(days=use)
+            born = bool(r['created_dt'] and r['created_dt'] >= ustart)
+            if born:
+                sr, gained, gspan, kind, src, mw = r['stars'] / max(r['age'], 1), r['stars'], round(r['age'], 1), 'measured', 'born-in-window', 1.0
+            else:
+                g = stargazer_gain(fn, use)
+                s = None if g is not None else snap_rate([(o, st) for o, st, _ in rsn], r['stars'], now_obs, use, min_span)
+                proxy = r['stars'] / max(r['age'], 1)
+                if g is not None: sr, gained, gspan, kind, src, mw = g / use, g, use, 'measured', 'stargazers', 1.0
+                elif s:      # real delta; if it spans less than the window, blend it with the since-creation rate
+                    mw = min(1.0, s[2] / use)
+                    sr, gained, gspan, src = mw * s[0] + (1 - mw) * proxy, s[1], round(s[2], 2), 'snapshots'
+                    kind = 'measured' if mw >= 1 else 'blended'
+                else: sr, gained, gspan, kind, src, mw = proxy, None, None, 'rate-proxy', 'stars/age', 0.0
+            if src in ('born-in-window', 'stargazers'): sr1, g1 = sr, gained          # legacy v1 rule, for eval.py
+            else:
+                g = repo_snapshot_gain(con, fn, r['stars'], use)
+                sr1, g1 = (max(g[0], 0) / max(g[1], 0.25), g[0]) if g else (None, None)
+            cr = cg = None
+            if contributors is not None:
+                if born: cg, cr = contributors, contributors / max(r['age'], 1)
+                else:
+                    s = snap_rate([(o, ct) for o, _, ct in rsn], contributors, c_at, use, min_span)
+                    if s: cr, cg = s[0], s[1]
+            win[wname] = dict(stars_rate=sr, stars_kind=kind, stars_mw=round(mw, 3), stars_src=src, gained=gained, gspan=gspan,
+                              stars_rate_v1=sr1, gained_v1=g1, contrib_rate=cr, contrib_gained=cg)
+        F['repos'][fn] = dict(tag=r['tag'], fav=r['fav'], stars=r['stars'], contributors=contributors, act=act,
+                              cands=cands, win=win, h=h, age=round(r['age'], 2))
+    by_url = {r['url'].lower().rstrip('/'): fn for fn, r in repos.items()}
+    for pid, p in papers.items():
+        if not p['pub_dt'] or p['age'] is None: continue
+        cands = [w for w, d in WINDOWS if in_window_date(local_date(p['pub_dt']), d)]
+        if not cands: continue
+        sn, age = ps.get(pid, []), p['age']
+        a1 = max(age, 1)
+
+        def rate(cur, cur_at, vi, ti):
+            # -> (rate, kind, momentum weight). Real delta over the momentum horizon when our snapshots span it;
+            # a shorter span is blended with the since-release rate in proportion span / horizon.
+            if cur is None: return None, None, 0.0
+            base, kind = cur / a1, ('since-release' if age <= pmd else 'rate-proxy')
+            s = snap_rate([(x[ti], x[vi]) for x in sn], cur, pdt(cur_at), pmd, min_span)
+            if not s: return base, kind, (1.0 if kind == 'since-release' else 0.0)
+            mw = min(1.0, s[2] / pmd)
+            if mw >= 1: return s[0], 'measured', 1.0
+            return mw * s[0] + (1 - mw) * base, ('since-release' if kind == 'since-release' else 'blended'), (1.0 if kind == 'since-release' else mw)
+        up_rate, up_kind, up_mw = rate(p['upvotes'], p['upvotes_at'], 0, 1)
+        ment_rate, ment_kind, ment_mw = rate(p['mentions'], p['mentions_at'], 4, 5)
+        st = snap_rate([(x[3], x[2]) for x in sn], p['githubStars'], pdt(p['stars_at']), pmd, min_span)
+        repo = by_url.get(p['githubRepo'].lower().rstrip('/').removesuffix('.git')) if p.get('githubRepo') else None
+        F['papers'][pid] = dict(tag=p['tag'], age=round(age, 2), cands=cands,
+                                upvotes=p['upvotes'], up_rate=up_rate, up_kind=up_kind, up_mw=round(up_mw, 3),
+                                up_rate_v1=p['upvotes'] / a1 if p['upvotes'] is not None else None,
+                                mentions=p['mentions'], ment_rate=ment_rate, ment_kind=ment_kind, ment_mw=round(ment_mw, 3),
+                                ment_rate_v1=p['mentions'] / a1 if p['mentions'] is not None else None,
+                                repo=repo, repo_star_rate=st[0] if st else None)
+    return F
+
+def save_features(F, path):
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    with gzip.open(path + '.tmp', 'wt') as f: json.dump(F, f, separators=(',', ':'))
+    os.replace(path + '.tmp', path)
 
 def in_window_date(d, days):
     if days is None: return True
@@ -687,11 +849,13 @@ def local_date(dt): return dt.astimezone(TZ).date() if dt else None
 # ---------------------------------------------------------------- main
 def main():
     t0 = time.time()
-    lockf = open(os.path.join(BASE, '.run.lock'), 'w')
-    try: fcntl.flock(lockf, fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except OSError: print('another run.py is in progress; exiting'); return 1
-    gh_token()
-    log('start', 'gh auth: ' + ('yes' if GH_TOKEN else 'no (unauthenticated GitHub API)'))
+    if not FEATURES_ONLY:     # feature-only replays write nothing shared, so they need no lock
+        lockf = open(os.path.join(BASE, '.run.lock'), 'w')
+        try: fcntl.flock(lockf, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError: print('another run.py is in progress; exiting'); return 1
+    if not OFFLINE: gh_token()
+    log('start', f'scoring v{scoring.SCORING_VERSION}; as of {iso(NOW)}; ' + ('OFFLINE (cached inputs only)' if OFFLINE else
+        'gh auth: ' + ('yes' if GH_TOKEN else 'no (unauthenticated GitHub API)')))
 
     def safe(fn, name, default):
         try: return fn()
@@ -813,177 +977,57 @@ def main():
                     load_json(cpath('repo_activity'), {}))
     activity = safe(lambda: fill_contributor_counts(activity, act_order), 'GitHub contributors', activity)
 
-    con = db()
-    prev, prev_ts = prev_ranks(con)
+    cfg = scoring.load_config()
+    con = db(readonly=bool(FEATURES_ONLY))
+    F = build_features(papers, repos, sg, activity, con, cfg)
+    if FEATURES_ONLY:
+        save_features(F, FEATURES_ONLY)
+        log(f'features only -> {FEATURES_ONLY}: {len(F["papers"])} papers, {len(F["repos"])} repos (as of {F["asof"]})')
+        return 0
+    S = scoring.score_run(F, cfg)                      # v2 (the published scores)
+    S1 = scoring.score_run(F, version='1.0')           # legacy v1, kept for transparency / eval.py
+    prev, prev_ts, prev_ver = prev_ranks(con)
     out = {'papers': {'items': {}}, 'repos': {'items': {}}}
     ranks_rows = []
-    VIEWS = ['all'] + TAGS     # 'all' = the spec'd top-100; per-paradigm views rank within that tag
+    VIEWS = ['all'] + TAGS     # 'all' = the top-100; per-paradigm views rank within that tag
+    tag_of = {'papers': {pid: f['tag'] for pid, f in F['papers'].items()},
+              'repos': {fn: f['tag'] for fn, f in F['repos'].items()}}
 
-    def emit(tab, wname, cand, key, extra):
-        """cand is sorted by score; writes top-N per view with movement vs previous run."""
+    def emit(tab, wname, rows, extra):
         views = {}
         for v in VIEWS:
-            sub = cand if v == 'all' else [c for c in cand if c['tag'] == v]
+            sub = rows if v == 'all' else [c for c in rows if tag_of[tab].get(c['id']) == v]
             hkey = tab if v == 'all' else f'{tab}|{v}'
             pr = prev.get((hkey, wname), {})
+            top = sub[:TOPN]
+            mvs = scoring.movement([(c['id'], c['score']) for c in top], pr, cfg,
+                                   comparable=prev_ver.get(tab) == scoring.SCORING_VERSION)
             lst = []
-            for i, c in enumerate(sub[:TOPN], 1):
-                ranks_rows.append((hkey, wname, c[key], i, c['_score']))
-                lst.append(dict(id=c[key], rank=i, prev=pr.get(c[key]), score=c['_score'], **extra(c)))
+            for i, (c, mv) in enumerate(zip(top, mvs), 1):
+                ranks_rows.append((hkey, wname, c['id'], i, c['score']))
+                lst.append(dict(id=c['id'], rank=i, prev=(pr.get(c['id']) or (None,))[0], mv=mv, score=c['score'],
+                                confidence=c['conf'], raw=c['raw'], flags=c['flags'] or None, kind=c['kind'], **extra(c, wname)))
             views[v] = {'rows': lst, 'candidates': len(sub)}
         out[tab][wname] = views
 
     # ---- repos per window (trust index)
-    def star_growth(r, days):
-        # (gained, rate/day) or (None, None). Never uses bare star totals for old repos.
-        use_days = 90 if days is None else days
-        start = NOW - timedelta(days=use_days)
-        if r['created_dt'] and r['created_dt'] >= start:
-            return r['stars'], r['stars'] / max(r['age'], 1)
-        sgz = sg.get(r['full_name'])
-        if sgz and sgz.get('times') is not None:
-            fetched = datetime.fromtimestamp(sgz['ts'], timezone.utc)
-            wstart = fetched - timedelta(days=use_days)
-            covered = sgz['complete'] or (sgz['oldest'] and parse_dt(sgz['oldest']) <= wstart)
-            if covered:
-                gained = sum(1 for t in sgz['times'] if parse_dt(t) >= wstart)
-                return gained, gained / max(use_days, 1)
-        g = repo_snapshot_gain(con, r['full_name'], r['stars'], use_days)
-        if g:
-            return g[0], max(g[0], 0) / max(g[1], 0.25)
-        return None, None
-
-    def contrib_growth(fn, current, days):
-        # Delta in contributor count vs a snapshot near window start. Missing -> None.
-        if current is None:
-            return None, None
-        use_days = 90 if days is None else days
-        start = NOW - timedelta(days=use_days)
-        # Repo born in window: all contributors are growth
-        r = repos[fn]
-        if r['created_dt'] and r['created_dt'] >= start:
-            return current, current / max(r['age'], 1)
-        tol = timedelta(days=max(0.15 * use_days, 0.25))
-        row = con.execute(
-            'SELECT contributors, observed_at FROM repo_snap WHERE full_name=? AND contributors IS NOT NULL '
-            'AND observed_at BETWEEN ? AND ? ORDER BY observed_at DESC LIMIT 1',
-            (fn, iso(start - tol), iso(start + tol))).fetchone()
-        if not row:
-            # fall back to oldest snapshot older than half the window
-            row = con.execute(
-                'SELECT contributors, observed_at FROM repo_snap WHERE full_name=? AND contributors IS NOT NULL '
-                'AND observed_at <= ? ORDER BY observed_at DESC LIMIT 1',
-                (fn, iso(start + tol))).fetchone()
-        if not row:
-            return None, None
-        span = (NOW - parse_dt(row[1])).total_seconds() / 86400
-        if span < 0.25:
-            return None, None
-        gained = current - row[0]
-        return gained, gained / span
-
-    def activity_bundle(r, days):
-        a = activity.get(r['full_name']) or {}
-        lb = max(a.get('lookback_days') or ACTIVITY_LOOKBACK, 1)
-        # Short windows: don't pretend 30d averages are 1d counts
-        apply_activity = (days is None) or (days >= lb / 2)
-        out = {'contributors': a.get('contributors')}
-        if apply_activity:
-            io, ic = a.get('issues_opened'), a.get('issues_closed')
-            po, pm = a.get('prs_opened'), a.get('prs_merged')
-            cm = a.get('commits')
-            if io is not None and ic is not None:
-                out['issues'] = (io + ic) / lb
-                out['issues_opened'] = io
-                out['issues_closed'] = ic
-            if po is not None:
-                out['prs'] = po / lb
-                out['prs_opened'] = po
-                if pm is not None:
-                    out['merge'] = (pm / po) if po > 0 else 0.0
-                    out['prs_merged'] = pm
-            if cm is not None:
-                out['commits'] = cm / lb
-                out['commits_n'] = cm
-        return out
-
-    TRUST_WEIGHTS = [('stars', .25), ('issues', .15), ('prs', .10), ('merge', .10),
-                     ('commits', .15), ('contribs', .10), ('contrib_growth', .15)]
-
-    # Precompute 30d trust so papers can use linked-repo trust
-    for r in repos.values():
-        g30, rate30 = star_growth(r, 30)
-        act = activity_bundle(r, 30)
-        cg, cgr = contrib_growth(r['full_name'], act.get('contributors'), 30)
-        r['_gained_30'] = g30
-        r['_star_rate_30'] = rate30
-        r['_contribs'] = act.get('contributors')
-        r['_contrib_gained_30'] = cg
-        r['_rates'] = {
-            'stars': rate30, 'issues': act.get('issues'), 'prs': act.get('prs'),
-            'merge': act.get('merge'), 'commits': act.get('commits'),
-            'contribs': act.get('contributors'),  # level signal (explicitly allowed)
-            'contrib_growth': cgr,
-        }
-    all_repos = list(repos.values())
-    norm_scores(all_repos, TRUST_WEIGHTS, ratio_keys={'merge'})
-    for r in all_repos:
-        has = any(r['_rates'].get(k) is not None for k, _ in TRUST_WEIGHTS)
-        r['_trust'] = r['_score'] if has else None
-        r['_trust_conf'] = r['_confidence']
-    # all-repo 30d trust map, reused by hype_build.py (HYPE 'Real' score joins on repo)
-    repo_trust = {fn: {'trust': r['_trust'], 'confidence': r['_trust_conf']} for fn, r in repos.items()}
-    save_json(os.path.join(CACHE, 'repo_trust.json'), {'generated_at': iso(NOW), 'repos': repo_trust})
-
-    by_url = {r['url'].lower().rstrip('/'): r for r in repos.values()}
-    for p in papers.values():
-        p['_repo_trust'] = None
-        p['_repo_star_growth'] = None
-        if not p.get('githubRepo'):
-            continue
-        key = p['githubRepo'].lower().rstrip('/').removesuffix('.git')
-        rr = by_url.get(key)
-        if not rr:
-            continue
-        p['_repo_trust'] = rr.get('_trust')
-        p['_repo_star_growth'] = rr.get('_star_rate_30')
-
-    for wname, days in WINDOWS:
-        if days is None:
-            cand = list(repos.values())
-        else:
-            start = NOW - timedelta(days=days)
-            cand = [r for r in repos.values()
-                    if (r['created_dt'] and r['created_dt'] >= start)
-                    or (r['pushed_dt'] and r['pushed_dt'] >= start)]
-        for r in cand:
-            gained, rate = star_growth(r, days)
-            act = activity_bundle(r, days if days is not None else 90)
-            cg, cgr = contrib_growth(r['full_name'], act.get('contributors'), days)
-            r['_gained'] = gained
-            r['_contrib_gained'] = cg
-            r['_act_w'] = act
-            r['_rates'] = {
-                'stars': rate, 'issues': act.get('issues'), 'prs': act.get('prs'),
-                'merge': act.get('merge'), 'commits': act.get('commits'),
-                'contribs': act.get('contributors'), 'contrib_growth': cgr,
-            }
-        norm_scores(cand, TRUST_WEIGHTS, ratio_keys={'merge'})
-        cand.sort(key=lambda r: (-r['_score'], -(r['_gained'] or -1), -r['stars']))
-
-        def extra(c, _act_key='_act_w'):
-            a = c.get('_act_w') or {}
-            return dict(
-                gained=c.get('_gained'), confidence=c.get('_confidence'),
-                issues_opened=a.get('issues_opened'), issues_closed=a.get('issues_closed'),
-                prs_opened=a.get('prs_opened'), prs_merged=a.get('prs_merged'),
-                merge_rate=a.get('merge'), commits=a.get('commits_n'),
-                contributors=a.get('contributors'), contrib_gained=c.get('_contrib_gained'),
-            )
-        emit('repos', wname, cand, 'full_name', extra)
-
-    used = {row['id'] for w in out['repos'] if w != 'items'
-            for v in out['repos'][w].values() for row in v['rows']}
+    def repo_extra(c, wname):
+        f = F['repos'][c['id']]
+        w = f['win'].get(wname) or {}
+        days = dict(WINDOWS)[wname]
+        a = f['act'] if (days is None or days >= cfg['momentum']['activity_min_window_days']) else {}
+        return dict(gained=w.get('gained'), gspan=w.get('gspan'), src=w.get('stars_src'),
+                    issues_opened=a.get('issues_opened'), issues_closed=a.get('issues_closed'),
+                    prs_opened=a.get('prs_opened'), prs_merged=a.get('prs_merged'), merge_rate=a.get('merge'),
+                    commits=a.get('commits_n'), contributors=f.get('contributors'), contrib_gained=w.get('contrib_gained'))
+    for wname, _ in WINDOWS:
+        emit('repos', wname, S['repos'][wname], repo_extra)
+    repo_trust = {fn: {'trust': S['trust'][fn][0], 'confidence': S['trust'][fn][1],
+                       'trust_v1': S1['trust'][fn][0], 'confidence_v1': S1['trust'][fn][1]} for fn in repos}
+    if not FEATURES_ONLY:
+        save_json(os.path.join(CACHE, 'repo_trust.json'), {'generated_at': iso(NOW), 'scoring_version': scoring.SCORING_VERSION,
+                                                           'repos': repo_trust})
+    used = {row['id'] for w in out['repos'] if w != 'items' for v in out['repos'][w].values() for row in v['rows']}
     for fn in used:
         r = repos[fn]
         pp = papers.get(r['paper']) if r['paper'] else None
@@ -991,22 +1035,11 @@ def main():
             url=r['url'], owner=r['owner'], desc=r['description'][:200], stars=r['stars'],
             forks=r['forks'], paper=r['paper'], paper_title=pp['title'] if pp else None,
             pushed=r['pushed_at'], created=r['created_at'][:10], tag=r['tag'], fav=r['fav'],
-            contributors=r.get('_contribs'))
+            contributors=F['repos'][fn].get('contributors'))
 
     # ---- papers per window
-    for wname, days in WINDOWS:
-        cand = [p for p in papers.values() if p['pub_dt'] and in_window_date(local_date(p['pub_dt']), days)]
-        for p in cand:
-            a = max(p['age'], 1)
-            trust = p.get('_repo_trust')
-            star_g = p.get('_repo_star_growth')
-            code_sig = trust if trust is not None else star_g
-            p['_rates'] = {'up': p['upvotes'] / a if p['upvotes'] is not None else None,
-                           'code': code_sig,
-                           'ment': p['mentions'] / a if p['mentions'] is not None else None}
-        norm_scores(cand, [('up', .40), ('code', .35), ('ment', .25)])
-        cand.sort(key=lambda p: (-p['_score'], p['age']))
-        emit('papers', wname, cand, 'id', lambda c: {'confidence': c.get('_confidence')})
+    for wname, _ in WINDOWS:
+        emit('papers', wname, S['papers'][wname], lambda c, w: {})
     used = {r['id'] for w in out['papers'] if w != 'items' for v in out['papers'][w].values() for r in v['rows']}
     for pid in used:
         p = papers[pid]
@@ -1015,52 +1048,72 @@ def main():
                                            mentions=p['mentions'], hn_points=p['hn_points'], days=round(p['age'], 1),
                                            published=p['published'][:10], tag=p['tag'], fav=p['fav'])
 
-
     # ---- history
     secs = round(time.time() - t0, 1)
     now_local = NOW.astimezone(TZ)
-    cur = con.execute('INSERT INTO runs(ts, ts_local, seconds, sources) VALUES(?,?,?,?)',
-                      (iso(NOW), now_local.isoformat(timespec='seconds'), secs, json.dumps(SOURCES)))
+    stamp = now_local.strftime('%Y%m%d-%H%M%S')
+    kind = 'rescore' if RESCORE else 'full'
+    if RESCORE:     # keep the source status of the run whose cached inputs we re-scored
+        try:
+            row = con.execute("SELECT sources FROM runs WHERE ts=? AND (kind IS NULL OR kind='full') ORDER BY run_id DESC LIMIT 1",
+                              (iso(NOW),)).fetchone()
+            prev_sources = json.loads(row[0]) if row else {}
+        except Exception:
+            prev_sources = {}
+        SOURCES.clear(); SOURCES.update(prev_sources)
+        note('Rescore', 'ok', f'offline re-score with scoring v{scoring.SCORING_VERSION} of the cached inputs of the run at '
+             f'{now_local.strftime("%Y-%m-%d %H:%M")} BRT; no network calls')
+    cur = con.execute('INSERT INTO runs(ts, ts_local, seconds, sources, scoring_version, kind, config_sha) VALUES(?,?,?,?,?,?,?)',
+                      (iso(NOW), now_local.isoformat(timespec='seconds'), secs, json.dumps(SOURCES),
+                       scoring.SCORING_VERSION, kind, scoring.config_sha()))
     run_id = cur.lastrowid
     con.executemany('INSERT INTO ranks VALUES(?,?,?,?,?,?)', [(run_id,) + r for r in ranks_rows])
-    con.executemany('INSERT INTO paper_snap VALUES(?,?,?,?,?,?,?,?,?)',
-                    [(run_id, p['id'], p['upvotes'], p['upvotes_at'], p['githubStars'], p['stars_at'],
-                      p['mentions'], p['mentions_at'], p['hn_points']) for p in papers.values()])
-    con.executemany('INSERT INTO repo_snap(run_id, full_name, stars, forks, observed_at, contributors) VALUES(?,?,?,?,?,?)',
-                    [(run_id, r['full_name'], r['stars'], r['forks'], r['observed_at'],
-                      (activity.get(r['full_name']) or {}).get('contributors')) for r in repos.values()])
-    con.executemany(
-        'INSERT INTO repo_activity_snap VALUES(?,?,?,?,?,?,?,?,?,?)',
-        [(run_id, fn, a.get('issues_opened'), a.get('issues_closed'), a.get('prs_opened'),
-          a.get('prs_merged'), a.get('commits'), a.get('contributors'), a.get('lookback_days'),
-          a.get('observed_at')) for fn, a in activity.items()])
+    if not OFFLINE:     # snapshots only for real observations (a rescore would duplicate them)
+        con.executemany('INSERT INTO paper_snap VALUES(?,?,?,?,?,?,?,?,?)',
+                        [(run_id, p['id'], p['upvotes'], p['upvotes_at'], p['githubStars'], p['stars_at'],
+                          p['mentions'], p['mentions_at'], p['hn_points']) for p in papers.values()])
+        con.executemany('INSERT INTO repo_snap(run_id, full_name, stars, forks, observed_at, contributors) VALUES(?,?,?,?,?,?)',
+                        [(run_id, r['full_name'], r['stars'], r['forks'], r['observed_at'],
+                          (activity.get(r['full_name']) or {}).get('contributors')) for r in repos.values()])
+        con.executemany(
+            'INSERT INTO repo_activity_snap VALUES(?,?,?,?,?,?,?,?,?,?)',
+            [(run_id, fn, a.get('issues_opened'), a.get('issues_closed'), a.get('prs_opened'),
+              a.get('prs_merged'), a.get('commits'), a.get('contributors'), a.get('lookback_days'),
+              a.get('observed_at')) for fn, a in activity.items()])
     con.commit()
+    save_features(F, os.path.join(HIST, 'runs', f'{stamp}-features.json.gz'))
     # ---- HYPE tab (web/hype.json) from the social-research dossier, if present
-    hype_rows = None
     if os.path.exists(os.path.join(BASE, 'hype', 'hype_research.json')):
         try:
             import hype_build
-            h = hype_build.build(con=con, run_id=run_id, repo_trust=repo_trust, tagger=tag_for, tags=TAGS, log=log)
+            h = hype_build.build(con=con, run_id=run_id, repo_trust=repo_trust, tagger=tag_for, tags=TAGS, log=log, cfg=cfg)
             hype_rows = {w: len(h[w]['all']['rows']) for w in h['windows'] if h['windows'][w].get('enabled')}
             note('HYPE (social research dossier)', 'ok', f'{h["n_projects"]} projects from hype/hype_research.json '
                  f'(research {h.get("research_generated_at") or "?"}); rows {hype_rows}')
         except Exception as e:
             traceback.print_exc(); note('HYPE (social research dossier)', 'failed', str(e)[:120])
-    stamp = now_local.strftime('%Y%m%d-%H%M%S')
-    save_json(os.path.join(HIST, 'runs', f'{stamp}.json'),
-              {'run_id': run_id, 'ts_local': now_local.isoformat(timespec='seconds'),
+        con.execute('UPDATE runs SET sources=? WHERE run_id=?', (json.dumps(SOURCES), run_id)); con.commit()
+    save_json(os.path.join(HIST, 'runs', f'{stamp}.json' if kind == 'full' else f'{stamp}-rescore-v{scoring.SCORING_VERSION}.json'),
+              {'run_id': run_id, 'ts_local': now_local.isoformat(timespec='seconds'), 'scoring_version': scoring.SCORING_VERSION,
                'ranks': {f'{t}/{w}': [[i, rk, sc] for (tt, ww, i, rk, sc) in ranks_rows if tt == t and ww == w]
                          for t in sorted({r[0] for r in ranks_rows}) for w, _ in WINDOWS}})
+    resets = sorted({t for t in ('papers', 'repos') if prev_ver.get(t) and prev_ver[t] != scoring.SCORING_VERSION})
     data = {'generated_at': iso(NOW), 'generated_local': now_local.strftime('%Y-%m-%d %H:%M:%S') + ' BRT (America/Sao_Paulo)',
-            'run_id': run_id, 'previous_run': prev_ts, 'run_seconds': secs, 'sources': SOURCES,
+            'run_id': run_id, 'run_kind': kind, 'previous_run': prev_ts, 'run_seconds': secs, 'sources': SOURCES,
+            'scoring_version': scoring.SCORING_VERSION, 'config_sha': scoring.config_sha(), 'priors': S['priors'],
+            'movement_note': (f'movement reset: the previous run used scoring v{prev_ver[resets[0]]}' if resets else None),
             'windows': [w for w, _ in WINDOWS], 'views': VIEWS, 'tracked': {'papers': len(papers), 'repos': len(repos)},
             'papers': out['papers'], 'repos': out['repos']}
     save_json(os.path.join(WEB, 'data.json'), data)
-    log(f'done run {run_id} in {secs}s; papers {len(papers)}, repos {len(repos)}')
+    try:    # the page renders web/METHODOLOGY.md; the repo-root METHODOLOGY.md is the source of truth
+        import shutil; shutil.copyfile(os.path.join(BASE, 'METHODOLOGY.md'), os.path.join(WEB, 'METHODOLOGY.md'))
+    except OSError:
+        pass
+    log(f'done run {run_id} ({kind}, scoring v{scoring.SCORING_VERSION}) in {secs}s; papers {len(papers)}, repos {len(repos)}')
     for t in ('papers', 'repos'):
         print(t, {w: len(out[t][w]['all']['rows']) for w, _ in WINDOWS})
-        print('  per paradigm (rows):', {v: [len(out[t][w][v]['rows']) for w, _ in WINDOWS] for v in TAGS})
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())
