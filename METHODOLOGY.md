@@ -10,15 +10,20 @@ The tracker ranks three things:
 - **GitHub**: repositories ranked by a multi-signal *activity discovery index*. The historical name “trust index” does not establish trustworthy code.
 - **HYPE**: sampled **Attention** and **Discovery** proxies for open and closed projects, with separate sourced usage families. Neither score measures technical capability, economic validation or truth.
 
-Every score is 0-100 and goes through the same five steps:
+Scores are 0-100 discovery proxies. They share weighted-signal and coverage stages, but the final shrinkage differs:
 
 ```
 1. normalise each present signal:   u = min(1, log1p(v) / log1p(P95_ref))      (0 stays 0)
 2. raw score:                       raw = 100 * sum(w_k * u_k) / sum(w_k)       over PRESENT signals
 3. evidence coverage:               c = sum(w_k * e_k over present) / sum(w_k over all signals)
 4. anti-noise multipliers:          raw = raw * m_1 * m_2 * ...                 (see Anti-noise rules)
-5. shrink toward the prior:         score = prior + c * (raw - prior)
+5. GitHub/Papers:                   score = prior + c * (raw - prior)
+                                   prior = median raw score of the reference population
+   HYPE Attention/Discovery:       score = 50 + c * (pct - 50)
+                                   pct = mid-rank percentile of raw, not raw itself
 ```
+
+HYPE Attention ranks raw scores among the window's sampled-post candidates; HYPE Discovery ranks within the available-proxy cohort. Both shrink the percentile toward a fixed neutral prior of 50, not a reference median. The detailed sections below define the signals, references and heuristics.
 
 **Missing stays missing**: `null`, displayed as —. No signal means no score. An unobserved closed-product user/customer metric is not zero or evidence of low value; observed zero remains a distinct measured value.
 
@@ -63,16 +68,15 @@ e_k = c_repo  linked repository evidence coverage
 Usage vendor claims are displayed separately, not discounted into a composite user magnitude.
 ```
 
-**Shrinkage** is a heuristic toward the reference prior. It has no validated Bayesian probability interpretation:
+**GitHub/Papers shrinkage** is a heuristic toward the reference median raw score. It has no validated Bayesian probability interpretation:
 
 ```
 score = prior + c * (raw - prior)
 prior = median raw score of the reference population in this run
-        (all repos at 30d for GitHub, all tracked papers for Papers,
-         HYPE: attention and cohort-relative discovery use prior 50)
+        (all repos at 30d for GitHub, all tracked papers for Papers)
 ```
 
-A row with 25% coverage moves a quarter of the way from the prior to its raw value. For prior 30 and raw 95 this is `30 + 0.25 * 65 = 46.3`. Tooltips expose raw value, coverage and prior separately from unqualified dimensions.
+A GitHub/Papers row with 25% coverage moves a quarter of the way from the reference prior to its raw value. For prior 30 and raw 95 this is `30 + 0.25 * 65 = 46.3`. HYPE instead moves from fixed prior 50 toward its percentile, as defined in the Attention and Discovery sections. Tooltips expose raw value, coverage and prior separately from unqualified dimensions.
 
 Every current row also exposes `verification: null`, `freshness: {assessed_at: null, newest_evidence_at: null}` and `independence: {origin_ids: [], rationale: null}`. These are unqualified, not negative findings. Counts, a platform-observed figure, a vendor label, cached generation time or multiple websites cannot establish independent replication, source clocks or common-origin independence. These discovery projections are not `Assessment.confidence` records: that contract requires admitted-evidence cohort counts and provenance qualification, which this pipeline has not acquired.
 

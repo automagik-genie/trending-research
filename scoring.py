@@ -5,12 +5,16 @@ Used by run.py (Papers + GitHub tabs), hype_build.py (HYPE tab) and eval.py.
 Pure functions, Python standard library only. Every weight and threshold lives in
 scoring_config.json; METHODOLOGY.md explains each formula.
 
-Pipeline for every discovery score:
+Discovery pipeline (final shrinkage depends on the score family):
   1. normalise each present compatible signal against its reference
   2. raw = 100 * sum(w_k * u_k) / sum(w_k) over PRESENT signals only
   3. coverage = sum(w_k * e_k over present) / sum(w_k over all)
   4. apply documented proxy heuristics
-  5. shrink toward the reference prior: score = prior + coverage * (raw - prior)
+  5. GitHub/Papers shrink raw toward the reference median raw score:
+       score = prior + coverage * (raw - prior)
+     HYPE Attention/Discovery shrink the mid-rank percentile of raw toward fixed 50:
+       score = 50 + coverage * (pct - 50)
+     Attention uses window candidates; Discovery uses the available-proxy cohort.
 Verification, freshness and source independence are separate, unqualified dimensions.
 Missing values are never filled in: no signal at all -> score None (shown as '—').
 
