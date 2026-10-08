@@ -1,0 +1,1124 @@
+{
+  "parent": {
+    "assignees": [],
+    "body": "<!-- open-intelligence-roadmap:parent -->\n\n# Approved product direction\n\nApproved by Felipe on 2026-10-08. Serve builders and research leads first, with accessible public exploration. Prove the product through \u201cAre frontier AI economics sustainable?\u201d Automate collection and routine metrics; retain editorial review of interpretations, disputes and money-trail conclusions. Compose the application through Cordis, connect the assistant through DSH and keep durable linked evidence in Brain.\n\n## Outcomes\n\n- [ ] M0 \u2014 Evidence and integration contracts: A reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n- [ ] M1 \u2014 First public investigation: frontier AI economics: One published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n- [ ] M2 \u2014 Reliable autonomous collection: Scheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n- [ ] M3 \u2014 Community investigation and correction: Contributions move through review; accepted corrections propagate with attribution; disputed claims remain inspectable; votes do not certify truth.\n- [ ] M4 \u2014 Broader lenses and controlled roadmap automation: At least one additional lens is accepted against real evidence; roadmap agents propose bounded work with acceptance criteria and cannot bypass publication or release gates.\n\n## Operating rules\n\nGitHub is the work-state authority. Child issues contain scope, dependencies and acceptance. Dates and owners are set at delivery intake, not invented. A closed item requires linked acceptance evidence. Public claims retain sources, uncertainty and correction history. Agent-generated roadmap proposals cannot bypass editorial, spending or release authorization.\n\n## Milestones and implementation issues\n\n### [M0 \u2014 Evidence and integration contracts](https://github.com/namastex888/trending-research/milestone/1)\n\nMake the first investigation bounded, auditable and technically feasible.\n\n**Exit gate:** A reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n\n- [ ] #2\n- [ ] #3\n- [ ] #4\n- [ ] #5\n\n### [M1 \u2014 First public investigation: frontier AI economics](https://github.com/namastex888/trending-research/milestone/2)\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n**Exit gate:** One published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\n- [ ] #6\n- [ ] #7\n- [ ] #8\n- [ ] #9\n- [ ] #10\n- [ ] #11\n- [ ] #12\n\n### [M2 \u2014 Reliable autonomous collection](https://github.com/namastex888/trending-research/milestone/3)\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n**Exit gate:** Scheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\n- [ ] #13\n- [ ] #14\n- [ ] #15\n- [ ] #16\n- [ ] #21\n\n### [M3 \u2014 Community investigation and correction](https://github.com/namastex888/trending-research/milestone/4)\n\nLet readers contribute useful evidence and corrections while preserving an auditable public record.\n\n**Exit gate:** Contributions move through review; accepted corrections propagate with attribution; disputed claims remain inspectable; votes do not certify truth.\n\n- [ ] #17\n- [ ] #18\n\n### [M4 \u2014 Broader lenses and controlled roadmap automation](https://github.com/namastex888/trending-research/milestone/5)\n\nExpand coverage when unanswered questions justify it and turn evidence gaps into reviewable implementation proposals.\n\n**Exit gate:** At least one additional lens is accepted against real evidence; roadmap agents propose bounded work with acceptance criteria and cannot bypass publication or release gates.\n\n- [ ] #19\n- [ ] #20\n\n## Product experience\n\nBuild an evidence atlas whose entity selection and evidence cutoff survive lens changes. Explore attention, demonstrated capability, adoption, money and infrastructure as distinct lenses. Start from an answerable question; move through a focused relationship view and timeline to a shared evidence inspector. Keep tables as precise inspection/export views. Share links preserve the investigation revision and filters. The DSH assistant uses exactly that scene and cites its evidence.\n\nThe first investigation asks **Are frontier AI economics sustainable?** Compare demand/retention, pricing, inference economics, training costs, financing, compute commitments and open-model substitutes. Show competing interpretations, strongest counterevidence and observable invalidation conditions. No unsupported bubble-burst date or inference of wrongdoing from a financial cycle.\n\n## Architecture and evidence boundaries\n\nSource plugins \u2192 preserved observations \u2192 entities/claims/measurements \u2192 Brain evidence relationships \u2192 shared queries \u2192 visual lenses and DSH tools. Cordis owns component lifetimes and dependencies; accepted evidence and publication history survive plugin replacement. Keep the existing Python pipeline behind an adapter while qualifying supported DSH and Brain contracts. One deployable application is the starting proposal; distribution and specialist stores need a measured requirement.\n\nClaims retain source revisions, evidence spans, units, scope, reporting party and event/observation/computation times. Support and contradiction are explicit. Equity, debt, cloud credits, commitments and recognized revenue remain distinct. Brain document links must not silently become asserted financial transactions. Session isolation and external-write/idempotency boundaries are acceptance gates.\n\n## Initial source plan\n\n| Lens | Sources to qualify | Interpretation rule |\n|---|---|---|\n| Research/capability | arXiv, HF, GitHub, model cards, evaluation artifacts, independent reproductions | Publication/popularity is not reproduced capability |\n| Capital/economics | Public filings, investor relations, funding/compute disclosures | Distinguish claims, commitments, cash and recognized revenue |\n| Prices | Dated provider price/terms pages and comparable workloads | Prefer cost per successful task; price alone does not prove subsidy |\n| Adoption | Disclosures, downloads and consented aggregate usage | Operations, users, customers and retention are different metrics |\n| Narrative/stance | HN plus a diverse multilingual panel; other platforms only after access qualification | Stance toward a claim, segmented by cohort; repeated reporting is not independent confirmation |\n\nEach source records acquisition method, rights, language/cohort, quota/cost, cadence, history, coverage interval, last success and failures. Missing private-company data stays unknown. Direct Chinese-language evidence retains originals and attributed translations.\n\n## Editorial, community and automation policy\n\nAutomate collection and routine metrics. Review interpretations, disputed claims and money-trail conclusions before publication. Keep correction/retraction history and explicit conflicts of interest. Community contributions attach evidence, reproduction results or corrections to specific claims; votes indicate interest, not truth. Source content is untrusted data, never agent instructions. Roadmap automation proposes bounded, deduplicated work and follows design/review/release gates; it does not authorize additional spending, access or deployment.\n\n## Work state and decisions still to resolve\n\nUse one `workflow::*` label per issue: backlog, ready, in-progress, review or blocked. Closed means acceptance evidence exists. Dependencies are linked natively and in issue bodies. Priorities express relative importance, not deadlines.\n\n- #3 selects the bounded source panel/languages and proposes a budget.\n- #4 and #5 qualify runtime, Brain namespace, deployment and privacy boundaries.\n- #8 selects the visual direction using real-evidence variants.\n- #12 establishes editorial ownership and proves the public release.\n\n## Baseline and references\n\nPlanning baseline: repository commit `65fe46e`. Existing product is a static research/HYPE tracker; 19 scoring tests passed during the baseline investigation. No implementation or fresh collection is claimed by this roadmap. Current Real/coverage semantics, heterogeneous usage units, mutable replay inputs and source bias are explicit roadmap work.\n\n- [Existing methodology](https://github.com/namastex888/trending-research/blob/65fe46e/METHODOLOGY.md)\n- [God\u2019s Eye View interaction reference](https://github.com/bilawalsidhu/gods-eye-view)\n- [Cordis paper](https://arxiv.org/abs/2608.25512)\n- [DSH architecture](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)\n- [SEC public data APIs](https://www.sec.gov/search-filings/edgar-application-programming-interfaces)\n",
+    "labels": [
+      {
+        "id": "LA_kwDOU-nzC88AAAAC7V924Q",
+        "name": "documentation",
+        "description": "Improvements or additions to documentation",
+        "color": "0075ca"
+      },
+      {
+        "id": "LA_kwDOU-nzC88AAAAC7n2PXQ",
+        "name": "type::roadmap",
+        "description": "Open intelligence roadmap: type / roadmap",
+        "color": "5319E7"
+      }
+    ],
+    "milestone": null,
+    "number": 1,
+    "state": "OPEN",
+    "title": "Roadmap: open AI intelligence observatory",
+    "url": "https://github.com/namastex888/trending-research/issues/1"
+  },
+  "issues": [
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-20 -->\n\n## Outcome\n\nThe repository has scoring tests but lacks the claimed workflow and end-to-end evidence integrity gates.\n\n## Scope\n\n- Run scoring and fixture evaluations, method-copy consistency and source-contract checks in the actual CI host.\n- Cover replay, stale/partial data, duplicate ingest, corrections, plugin teardown and session isolation.\n- Record selected visual workflow acceptance against the release revision.\n- Keep evaluation quality claims separate from test success; publish relevant artifacts.\n\n## Acceptance criteria\n\n- [ ] A real pipeline executes and its receipt is linked.\n- [ ] A deliberately broken provenance link or unexpected network replay fails the appropriate gate.\n- [ ] Documentation names checks that actually run.\n- [ ] Release completion requires verified deployed behavior in addition to CI.\n\n## Dependencies\n\n#4, #5, #12, #13\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M2\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Ebg",
+          "name": "area::quality",
+          "description": "Open intelligence roadmap: area / quality",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 3,
+        "title": "M2 \u2014 Reliable autonomous collection",
+        "description": "<!-- open-intelligence-milestone:M2 -->\n\n## Outcome\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n## Exit criteria\n\nScheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 21,
+      "state": "OPEN",
+      "title": "OI-20: Add CI gates for provenance, methodology and integration regressions",
+      "url": "https://github.com/namastex888/trending-research/issues/21"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-19 -->\n\n## Outcome\n\nContinuous roadmap improvement needs concrete evidence and release gates, not an agent that changes production opportunistically.\n\n## Scope\n\n- Generate issue proposals from recurring unanswered questions, source failures and reader feedback.\n- Require user value, evidence, bounded scope, dependencies, estimated cost and acceptance criteria.\n- Route approved work through existing design, implementation, independent review and verification skills.\n- Link issue -> MR -> pipeline -> release receipt and record rejected/deferred proposals.\n\n## Acceptance criteria\n\n- [ ] A real evidence gap produces one deduplicated, reviewable GitHub issue.\n- [ ] Unapproved work cannot alter scope, spend, publish interpretations or deploy code.\n- [ ] Accepted work links to independent review and deployed evidence before being labeled shipped.\n- [ ] The agent explains why a proposal matters and what proves it done.\n\n## Dependencies\n\n#16, #17\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M4\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n18PA",
+          "name": "area::automation",
+          "description": "Open intelligence roadmap: area / automation",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Lgg",
+          "name": "priority::P2",
+          "description": "Open intelligence roadmap: priority / P2",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 5,
+        "title": "M4 \u2014 Broader lenses and controlled roadmap automation",
+        "description": "<!-- open-intelligence-milestone:M4 -->\n\n## Outcome\n\nExpand coverage when unanswered questions justify it and turn evidence gaps into reviewable implementation proposals.\n\n## Exit criteria\n\nAt least one additional lens is accepted against real evidence; roadmap agents propose bounded work with acceptance criteria and cannot bypass publication or release gates.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 20,
+      "state": "OPEN",
+      "title": "OI-19: Turn research gaps into a governed GitHub delivery queue",
+      "url": "https://github.com/namastex888/trending-research/issues/20"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-18 -->\n\n## Outcome\n\nBroad coverage should follow important unanswered questions instead of accumulating connectors without purpose.\n\n## Scope\n\n- Prioritize research/capability, adoption, infrastructure/geography and additional language cohorts using actual unanswered investigations.\n- Require acquisition/rights/cost preflight for each added source.\n- Add one lens at a time with compatible units and explicit missingness.\n- Revisit whether specialist storage/search infrastructure is justified by measured requirements.\n\n## Acceptance criteria\n\n- [ ] Each expansion names the user question it unlocks.\n- [ ] At least one new lens passes reader tasks on real evidence.\n- [ ] New sources meet the shared adapter and provenance contracts.\n- [ ] Coverage improvements are measured without claiming internet-wide representativeness.\n\n## Dependencies\n\n#14, #15, #18\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M4\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Hzw",
+          "name": "area::sources",
+          "description": "Open intelligence roadmap: area / sources",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Lgg",
+          "name": "priority::P2",
+          "description": "Open intelligence roadmap: priority / P2",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2ORA",
+          "name": "type::research",
+          "description": "Open intelligence roadmap: type / research",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 5,
+        "title": "M4 \u2014 Broader lenses and controlled roadmap automation",
+        "description": "<!-- open-intelligence-milestone:M4 -->\n\n## Outcome\n\nExpand coverage when unanswered questions justify it and turn evidence gaps into reviewable implementation proposals.\n\n## Exit criteria\n\nAt least one additional lens is accepted against real evidence; roadmap agents propose bounded work with acceptance criteria and cannot bypass publication or release gates.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 19,
+      "state": "OPEN",
+      "title": "OI-18: Expand the source panel and lenses by demonstrated evidence gaps",
+      "url": "https://github.com/namastex888/trending-research/issues/19"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-17 -->\n\n## Outcome\n\nPeople should be able to learn from alternative interpretations without losing their common evidence base.\n\n## Scope\n\n- Allow saved investigations with explicit evidence cutoff, assumptions, lens/filter state and sources.\n- Support an alternative interpretation referencing the same evidence revision.\n- Expose differences and strongest counterevidence side by side.\n- Keep private drafts and public publications under explicit permissions.\n\n## Acceptance criteria\n\n- [ ] A shared investigation opens at its documented revision.\n- [ ] Alternative interpretations preserve source provenance and attribution.\n- [ ] A correction to underlying evidence is discoverable from dependent investigations.\n- [ ] Public links do not expose private drafts or sessions.\n\n## Dependencies\n\n#9, #16, #17\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M3\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n1-Og",
+          "name": "area::community",
+          "description": "Open intelligence roadmap: area / community",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Lgg",
+          "name": "priority::P2",
+          "description": "Open intelligence roadmap: priority / P2",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 4,
+        "title": "M3 \u2014 Community investigation and correction",
+        "description": "<!-- open-intelligence-milestone:M3 -->\n\n## Outcome\n\nLet readers contribute useful evidence and corrections while preserving an auditable public record.\n\n## Exit criteria\n\nContributions move through review; accepted corrections propagate with attribution; disputed claims remain inspectable; votes do not certify truth.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 18,
+      "state": "OPEN",
+      "title": "OI-17: Share and branch investigations with attributable disagreement",
+      "url": "https://github.com/namastex888/trending-research/issues/18"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-16 -->\n\n## Outcome\n\nCommunity value depends on attributable evidence contributions rather than popularity voting.\n\n## Scope\n\n- Provide contribution types for sources, missing evidence, reproductions and corrections.\n- Attach submissions to specific claims/entities/revisions and disclose conflicts of interest.\n- Define moderation, spam/abuse handling and rights checks.\n- Keep submitted material distinct from accepted evidence.\n\n## Acceptance criteria\n\n- [ ] A reader can submit a sourced correction against a specific claim.\n- [ ] Reviewers can accept/reject with an attributed reason.\n- [ ] Votes never upgrade a claim to verified status.\n- [ ] Restricted or malicious content cannot bypass the evidence/agent boundary.\n\n## Dependencies\n\n#12, #16\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M3\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n1-Og",
+          "name": "area::community",
+          "description": "Open intelligence roadmap: area / community",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Lgg",
+          "name": "priority::P2",
+          "description": "Open intelligence roadmap: priority / P2",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 4,
+        "title": "M3 \u2014 Community investigation and correction",
+        "description": "<!-- open-intelligence-milestone:M3 -->\n\n## Outcome\n\nLet readers contribute useful evidence and corrections while preserving an auditable public record.\n\n## Exit criteria\n\nContributions move through review; accepted corrections propagate with attribution; disputed claims remain inspectable; votes do not certify truth.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 17,
+      "state": "OPEN",
+      "title": "OI-16: Accept evidence, replication and correction submissions",
+      "url": "https://github.com/namastex888/trending-research/issues/17"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-15 -->\n\n## Outcome\n\nAutomated research must not silently publish new interpretations or flood readers with unchanged output.\n\n## Scope\n\n- Detect material changes against the published revision and identify affected claims.\n- Automatically refresh eligible routine metrics; send interpretations, disputes and sensitive conclusions to review.\n- Record approval/rejection/correction history and support rollback to a published revision.\n- Notify only for meaningful changes under user-selected subscriptions.\n\n## Acceptance criteria\n\n- [ ] A changed source produces a traceable assessment delta.\n- [ ] Unreviewed interpretation never appears as an accepted public conclusion.\n- [ ] Unchanged runs create no duplicate publication or notification.\n- [ ] Retractions/corrections remain visible and invalidate dependent conclusions when appropriate.\n\n## Dependencies\n\n#12, #14\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M2\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Dpw",
+          "name": "area::publishing",
+          "description": "Open intelligence roadmap: area / publishing",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 3,
+        "title": "M2 \u2014 Reliable autonomous collection",
+        "description": "<!-- open-intelligence-milestone:M2 -->\n\n## Outcome\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n## Exit criteria\n\nScheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 16,
+      "state": "OPEN",
+      "title": "OI-15: Route changed evidence into review and meaningful updates",
+      "url": "https://github.com/namastex888/trending-research/issues/16"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-14 -->\n\n## Outcome\n\nRaw post counts cannot establish representative sentiment or independent confirmation.\n\n## Scope\n\n- Classify stance toward explicit claims with rationale and evidence spans.\n- Keep language/cohort/platform coverage and sampling denominators visible.\n- Cluster exact/near duplicates and shared original sources; preserve uncertain attribution.\n- Evaluate extraction/classification against a reviewed multilingual sample and document error modes.\n\n## Acceptance criteria\n\n- [ ] Repeated reporting of one announcement does not count as multiple independent confirmations.\n- [ ] Outputs distinguish attention, stance, uncertainty and measured outcomes.\n- [ ] A reader can inspect examples and sampling limitations behind each aggregate.\n- [ ] Direct Chinese-language evidence retains originals and attributed translations where included.\n\n## Dependencies\n\n#2, #3, #14\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M2\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2FRA",
+          "name": "area::research",
+          "description": "Open intelligence roadmap: area / research",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Lgg",
+          "name": "priority::P2",
+          "description": "Open intelligence roadmap: priority / P2",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 3,
+        "title": "M2 \u2014 Reliable autonomous collection",
+        "description": "<!-- open-intelligence-milestone:M2 -->\n\n## Outcome\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n## Exit criteria\n\nScheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 15,
+      "state": "OPEN",
+      "title": "OI-14: Measure narrative stance and source independence",
+      "url": "https://github.com/namastex888/trending-research/issues/15"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-13 -->\n\n## Outcome\n\nFreshness and source failure need to be measured per observation, not inferred from a page build time.\n\n## Scope\n\n- Implement the selected adapters using their qualified access/rights contracts.\n- Use bounded scheduling, backoff, durable cursors and collection/model budgets.\n- Show successful coverage interval, partial pagination, stale cache fallback and blocked access.\n- Separate provider events from extraction results and publish routine metrics under the accepted policy.\n\n## Acceptance criteria\n\n- [ ] A failed source visibly ages or marks its layer instead of looking freshly collected.\n- [ ] Quota exhaustion backs off and preserves the last good evidence.\n- [ ] Observed/computed timestamps remain distinct.\n- [ ] Costs and request limits stay within the approved budget.\n\n## Dependencies\n\n#3, #13\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M2\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Hzw",
+          "name": "area::sources",
+          "description": "Open intelligence roadmap: area / sources",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 3,
+        "title": "M2 \u2014 Reliable autonomous collection",
+        "description": "<!-- open-intelligence-milestone:M2 -->\n\n## Outcome\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n## Exit criteria\n\nScheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 14,
+      "state": "OPEN",
+      "title": "OI-13: Automate the qualified source adapters with health and coverage",
+      "url": "https://github.com/namastex888/trending-research/issues/14"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-12 -->\n\n## Outcome\n\nThe current rescore path reads mutable caches and HYPE can perform network lookups outside the main offline guard.\n\n## Scope\n\n- Replay immutable feature/source manifests rather than current cache state.\n- Separate collection from extraction, scoring and publication; enforce network-free replay.\n- Provide licensed or redacted reproducibility fixtures for the uncommitted HYPE dossier.\n- Persist cursors and idempotency receipts across interrupted collection.\n\n## Acceptance criteria\n\n- [ ] Replay succeeds with network disabled and reproduces the same revision.\n- [ ] An interrupted job resumes without duplicate records.\n- [ ] Changing a source later cannot alter a prior published snapshot.\n- [ ] A clean checkout can execute the documented fixture pipeline.\n\n## Dependencies\n\n#7, #11\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M2\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2CIw",
+          "name": "area::pipeline",
+          "description": "Open intelligence roadmap: area / pipeline",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 3,
+        "title": "M2 \u2014 Reliable autonomous collection",
+        "description": "<!-- open-intelligence-milestone:M2 -->\n\n## Outcome\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n## Exit criteria\n\nScheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 13,
+      "state": "OPEN",
+      "title": "OI-12: Make ingestion and rescoring reproducible and network-independent on replay",
+      "url": "https://github.com/namastex888/trending-research/issues/13"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-11 -->\n\n## Outcome\n\nA completed UI or agent demo is not yet a credible public release.\n\n## Scope\n\n- Define reviewer role and review states; approve the exact assessment revision.\n- Publish the selected snapshot with source attribution, limitations, methodology, correction route and share links.\n- Keep collection/metric refresh distinct from approval of interpretations and disputed money-trail conclusions.\n- Run release checks and a newcomer task-based acceptance session.\n\n## Acceptance criteria\n\n- [ ] A newcomer explains the thesis and its strongest counterevidence using the product.\n- [ ] Every consequential displayed claim has resolvable evidence.\n- [ ] Publication records exact inputs, method, approval and deployed revision.\n- [ ] Failed publication can be recovered without duplicating or silently replacing accepted content.\n\n## Dependencies\n\n#9, #10, #11\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M1\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Dpw",
+          "name": "area::publishing",
+          "description": "Open intelligence roadmap: area / publishing",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "M1 \u2014 First public investigation: frontier AI economics",
+        "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 12,
+      "state": "OPEN",
+      "title": "OI-11: Publish the first investigation with editorial and release evidence",
+      "url": "https://github.com/namastex888/trending-research/issues/12"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-10 -->\n\n## Outcome\n\nCurrent Real/confidence labels and pooled usage units imply more comparability and certainty than the signals support.\n\n## Scope\n\n- Preserve scoring v2 as a versioned discovery method while documenting its limitations.\n- Label weighted completeness as evidence coverage; expose verification, freshness and independence separately.\n- Separate metric families and compatible cohorts; avoid treating discussion as technical/economic validation.\n- Repair the PR cohort ratio and document candidate search/enrichment bias.\n\n## Acceptance criteria\n\n- [ ] Download operations, users and business customers are not normalized as one comparable usage magnitude.\n- [ ] An unobserved closed-product metric remains missing rather than implying low value.\n- [ ] Labels and method descriptions match the implemented measurements.\n- [ ] Relevant regression tests and before/after fixture analysis explain changed behavior without claiming unvalidated accuracy.\n\n## Dependencies\n\n#2\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M1\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2A3A",
+          "name": "area::methodology",
+          "description": "Open intelligence roadmap: area / methodology",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "M1 \u2014 First public investigation: frontier AI economics",
+        "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 11,
+      "state": "OPEN",
+      "title": "OI-10: Separate attention, activity, adoption and capability semantics",
+      "url": "https://github.com/namastex888/trending-research/issues/11"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-09 -->\n\n## Outcome\n\nA generic chat over documents would detach answers from what the person is actually examining.\n\n## Scope\n\n- Expose scoped evidence search, relationship traversal, comparison and scene-query tools through the qualified DSH adapter.\n- Provide scene IDs, revision, filters and cutoff as explicit context.\n- Return citations and counterevidence; explain proposed view changes.\n- Keep publishing and privileged mutations outside ordinary answer tools.\n\n## Acceptance criteria\n\n- [ ] Assistant and UI use the same evidence revision.\n- [ ] Answer citations resolve in the inspector.\n- [ ] Unsupported causal or financial conclusions are identified as hypotheses or unknowns.\n- [ ] Cancellation, reconnect and session isolation pass the qualified scenarios.\n\n## Dependencies\n\n#4, #7, #9\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M1\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2GhA",
+          "name": "area::runtime",
+          "description": "Open intelligence roadmap: area / runtime",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "M1 \u2014 First public investigation: frontier AI economics",
+        "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 10,
+      "state": "OPEN",
+      "title": "OI-09: Connect the DSH assistant to the selected investigation",
+      "url": "https://github.com/namastex888/trending-research/issues/10"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-08 -->\n\n## Outcome\n\nReaders need to move between connections and evidence without losing their investigative context.\n\n## Scope\n\n- Implement the selected direction with stable entity focus and typed relationship filters.\n- Add a timeline with honest event/observation semantics and visible missingness.\n- Share the same evidence inspector across graph, timeline and table modes.\n- Keep keyboard navigation, readable labels and a reduced-motion path; serialize view state and published revision in share links.\n\n## Acceptance criteria\n\n- [ ] Switching lenses preserves the selected entities and cutoff.\n- [ ] Every displayed connection can be inspected and traced.\n- [ ] A share link restores the investigation revision and meaningful filters.\n- [ ] The defined reader tasks pass on desktop and a narrow viewport.\n\n## Dependencies\n\n#7, #8\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M1\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2JEA",
+          "name": "area::ui",
+          "description": "Open intelligence roadmap: area / ui",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "M1 \u2014 First public investigation: frontier AI economics",
+        "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 9,
+      "state": "OPEN",
+      "title": "OI-08: Ship the relationship lens, timeline and shared evidence inspector",
+      "url": "https://github.com/namastex888/trending-research/issues/9"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-07 -->\n\n## Outcome\n\nThe current tables make individual values visible but do not help people navigate relationships and competing explanations.\n\n## Scope\n\n- Produce two or three throwaway variants differing in exploration emphasis: relationship-first, narrative/timeline-first or guided-question-first.\n- Use the same real evidence pack in every variant; preserve uncertainty and source access.\n- Test stable entity selection, lens switching and overview-to-detail behavior.\n- Select one direction with Felipe and record why.\n\n## Acceptance criteria\n\n- [ ] Variants differ in interaction structure, not only colors.\n- [ ] A reader can find a source and strongest counterevidence in every variant.\n- [ ] The selected direction has responsive/accessibility expectations and observable acceptance tasks.\n- [ ] No variant represents missing or synthetic financial facts as real.\n\n## Dependencies\n\n#6\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M1\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2JEA",
+          "name": "area::ui",
+          "description": "Open intelligence roadmap: area / ui",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2MYQ",
+          "name": "type::design",
+          "description": "Open intelligence roadmap: type / design",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "M1 \u2014 First public investigation: frontier AI economics",
+        "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 8,
+      "state": "OPEN",
+      "title": "OI-07: Compare visual directions using the real investigation",
+      "url": "https://github.com/namastex888/trending-research/issues/8"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-06 -->\n\n## Outcome\n\nThe public UI needs stable IDs, exact provenance and reproducible inputs instead of mutable research summaries.\n\n## Scope\n\n- Implement accepted contracts for the first evidence pack and preserve source artifacts according to rights.\n- Connect Brain evidence references and create rebuildable projections for relationship, timeline and inspector queries.\n- Import current research snapshots as observations with clear collection/computation timestamps.\n- Keep source extraction and analyst interpretation separate.\n\n## Acceptance criteria\n\n- [ ] A displayed edge opens the correct dated evidence.\n- [ ] Duplicate import creates no duplicate observation.\n- [ ] Rebuilding from the same evidence/method revision reproduces the same view.\n- [ ] Plugin replacement preserves accepted evidence and identifiers.\n\n## Dependencies\n\n#2, #5, #6\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M1\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n1_Jw",
+          "name": "area::evidence",
+          "description": "Open intelligence roadmap: area / evidence",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2NjQ",
+          "name": "type::implementation",
+          "description": "Open intelligence roadmap: type / implementation",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "M1 \u2014 First public investigation: frontier AI economics",
+        "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 7,
+      "state": "OPEN",
+      "title": "OI-06: Preserve source revisions and implement the investigation read model",
+      "url": "https://github.com/namastex888/trending-research/issues/7"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-05 -->\n\n## Outcome\n\nThe experience needs one useful, bounded investigation before broad automatic coverage.\n\n## Scope\n\n- Build a dated evidence pack for \u201cAre frontier AI economics sustainable?\u201d using the qualified entity/source panel.\n- Separate demand/retention, price, inference economics, training costs, funding, compute commitments and open-model substitutes.\n- State competing interpretations, assumptions, strongest counterevidence and observable invalidation conditions.\n- Treat IPO timing, losses, subsidy and distillation as source-attributed claims requiring evidence.\n\n## Acceptance criteria\n\n- [ ] Every consequential factual statement has a dated source and classification.\n- [ ] Revenue/run rate, cash burn/loss and commitments/payments remain distinct.\n- [ ] Missing cost or retention data remains unknown; no unsupported bubble-burst date is generated.\n- [ ] The editorial reviewer can approve a precise investigation revision.\n\n## Dependencies\n\n#2, #3\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M1\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2FRA",
+          "name": "area::research",
+          "description": "Open intelligence roadmap: area / research",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2ORA",
+          "name": "type::research",
+          "description": "Open intelligence roadmap: type / research",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 2,
+        "title": "M1 \u2014 First public investigation: frontier AI economics",
+        "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 6,
+      "state": "OPEN",
+      "title": "OI-05: Curate the flagship economics investigation with counterevidence",
+      "url": "https://github.com/namastex888/trending-research/issues/6"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-04 -->\n\n## Outcome\n\nThe inspected Brain graph links documents, while temporal fact supersession and date granularity may not match an economic investigation.\n\n## Scope\n\n- Verify the chosen product namespace/access boundary without reusing personal memory implicitly.\n- Exercise evidence ingest, cited retrieval, read-back and explicit concurrent-relation semantics.\n- Map application entities/transactions to Brain evidence references; identify any required extension and ownership.\n- Define rebuildable query projections and durable records without a second competing semantic memory.\n\n## Acceptance criteria\n\n- [ ] A claim links back to its exact evidence span after restart.\n- [ ] Conflicting reports and multiple investors survive ingest and update.\n- [ ] Document graph relationships are not presented as verified entity transactions.\n- [ ] Supported time semantics and any unavailable bitemporal replay are documented.\n\n## Dependencies\n\n#2\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M0\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n19OQ",
+          "name": "area::brain",
+          "description": "Open intelligence roadmap: area / brain",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2QfQ",
+          "name": "type::spike",
+          "description": "Open intelligence roadmap: type / spike",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "M0 \u2014 Evidence and integration contracts",
+        "description": "<!-- open-intelligence-milestone:M0 -->\n\n## Outcome\n\nMake the first investigation bounded, auditable and technically feasible.\n\n## Exit criteria\n\nA reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 5,
+      "state": "OPEN",
+      "title": "OI-04: Qualify Brain evidence persistence and relationship semantics",
+      "url": "https://github.com/namastex888/trending-research/issues/5"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-03 -->\n\n## Outcome\n\nA Cordis-based preset or third-party wrapper does not establish supported application embedding or multi-user isolation.\n\n## Scope\n\n- Use the supported DSH launcher/SDK profile contract at a pinned revision; compare viable hosting options only where necessary.\n- Exercise streamed answers, tool calls, cancellation, reconnect, persistence and scoped scene context.\n- Define allowed tools and public/private session boundaries; source documents never authorize actions.\n- Record version compatibility and upgrade gates.\n\n## Acceptance criteria\n\n- [ ] A cited answer references the same entity IDs and evidence cutoff as the supplied scene.\n- [ ] Cancellation stops new work; reconnect preserves the session and returns a clear status.\n- [ ] Two isolated sessions cannot access each other's restricted records or tools.\n- [ ] Verdict names validated constraints and remaining blockers; probe code is labeled throwaway unless separately accepted.\n\n## Dependencies\n\n#2\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M0\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2GhA",
+          "name": "area::runtime",
+          "description": "Open intelligence roadmap: area / runtime",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2QfQ",
+          "name": "type::spike",
+          "description": "Open intelligence roadmap: type / spike",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "M0 \u2014 Evidence and integration contracts",
+        "description": "<!-- open-intelligence-milestone:M0 -->\n\n## Outcome\n\nMake the first investigation bounded, auditable and technically feasible.\n\n## Exit criteria\n\nA reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 4,
+      "state": "OPEN",
+      "title": "OI-03: Qualify a pinned DSH assistant integration and session boundary",
+      "url": "https://github.com/namastex888/trending-research/issues/4"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-02 -->\n\n## Outcome\n\nOverall internet sentiment and private-company economics cannot be inferred from the existing HN-heavy sample.\n\n## Scope\n\n- Choose a bounded set of entities and questions for the first investigation, and document exclusions.\n- Register each source with attribution, original/secondary role, language/cohort, access method, rights, quota/cost, cadence, history and freshness expectations.\n- Prioritize public filings, official price/terms pages, funding/compute disclosures and a small diverse narrative panel; preflight X/Reddit/LinkedIn access before promising it.\n- Present the collection/model budget and any paid access for an explicit spending decision.\n\n## Acceptance criteria\n\n- [ ] Each included source has a successful read receipt or a named blocked state.\n- [ ] Source coverage and missing private-company data are visible; no inaccessible or paid source is marked operational.\n- [ ] Repeated reporting is identified as common-source evidence rather than independent corroboration.\n- [ ] The first release can ship with the qualified subset.\n\n## Dependencies\n\n#2\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M0\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Hzw",
+          "name": "area::sources",
+          "description": "Open intelligence roadmap: area / sources",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2ORA",
+          "name": "type::research",
+          "description": "Open intelligence roadmap: type / research",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2Rwg",
+          "name": "workflow::backlog",
+          "description": "Open intelligence roadmap: workflow / backlog",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "M0 \u2014 Evidence and integration contracts",
+        "description": "<!-- open-intelligence-milestone:M0 -->\n\n## Outcome\n\nMake the first investigation bounded, auditable and technically feasible.\n\n## Exit criteria\n\nA reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 3,
+      "state": "OPEN",
+      "title": "OI-02: Qualify the first economics source panel and acquisition budget",
+      "url": "https://github.com/namastex888/trending-research/issues/3"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:OI-01 -->\n\n## Outcome\n\nCurrent rankings do not represent attributed claims, independent measurements or typed economic relationships.\n\n## Scope\n\n- Define stable entities and aliases; source revisions; observations with units, scope and periods; claims with evidence spans; supports/contradicts links; assessments and publication revisions.\n- Separate source publication, event validity, observation, ingestion and computation times; define what historical views can truthfully reconstruct.\n- Define equity, debt, cloud credits, commitments and recognized revenue as distinct relationship types, including currency, period, reporting party and status.\n- Specify immutable provenance, revision/correction/deletion semantics and confidence dimensions without turning coverage into probability.\n\n## Acceptance criteria\n\n- [ ] Examples represent two contradictory claims without overwriting either.\n- [ ] Examples preserve simultaneous investors and repeated transactions without accidental supersession.\n- [ ] A later source revision can be traced to the prior record; replay specifies both its evidence cutoff and method version.\n- [ ] An independent design review covers the contracts and records unresolved integration risks.\n\n## Dependencies\n\nNone; ready for delivery intake.\n\n## Delivery contract\n\nKeep source material as untrusted evidence. Preserve accepted observations across plugin/agent replacement. Link implementation and test/review evidence before closing; CI alone does not establish deployed acceptance. No invented dates, assignees, API access, measurements or budgets.\n\n## Ownership and scheduling\n\nUnassigned; dates intentionally unset. Assign at delivery intake. Dependencies and milestone exit criteria determine eligibility.\n\n\n## Roadmap\n\nParent: #1 \u00b7 Milestone: M0\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n1_Jw",
+          "name": "area::evidence",
+          "description": "Open intelligence roadmap: area / evidence",
+          "color": "1D76DB"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2KYg",
+          "name": "priority::P1",
+          "description": "Open intelligence roadmap: priority / P1",
+          "color": "D93F0B"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2MYQ",
+          "name": "type::design",
+          "description": "Open intelligence roadmap: type / design",
+          "color": "5319E7"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2WDA",
+          "name": "workflow::ready",
+          "description": "Open intelligence roadmap: workflow / ready",
+          "color": "0E8A16"
+        }
+      ],
+      "milestone": {
+        "number": 1,
+        "title": "M0 \u2014 Evidence and integration contracts",
+        "description": "<!-- open-intelligence-milestone:M0 -->\n\n## Outcome\n\nMake the first investigation bounded, auditable and technically feasible.\n\n## Exit criteria\n\nA reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+        "dueOn": null
+      },
+      "number": 2,
+      "state": "OPEN",
+      "title": "OI-01: Define the evidence, claim and temporal contracts",
+      "url": "https://github.com/namastex888/trending-research/issues/2"
+    },
+    {
+      "assignees": [],
+      "body": "<!-- open-intelligence-roadmap:parent -->\n\n# Approved product direction\n\nApproved by Felipe on 2026-10-08. Serve builders and research leads first, with accessible public exploration. Prove the product through \u201cAre frontier AI economics sustainable?\u201d Automate collection and routine metrics; retain editorial review of interpretations, disputes and money-trail conclusions. Compose the application through Cordis, connect the assistant through DSH and keep durable linked evidence in Brain.\n\n## Outcomes\n\n- [ ] M0 \u2014 Evidence and integration contracts: A reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n- [ ] M1 \u2014 First public investigation: frontier AI economics: One published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n- [ ] M2 \u2014 Reliable autonomous collection: Scheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n- [ ] M3 \u2014 Community investigation and correction: Contributions move through review; accepted corrections propagate with attribution; disputed claims remain inspectable; votes do not certify truth.\n- [ ] M4 \u2014 Broader lenses and controlled roadmap automation: At least one additional lens is accepted against real evidence; roadmap agents propose bounded work with acceptance criteria and cannot bypass publication or release gates.\n\n## Operating rules\n\nGitHub is the work-state authority. Child issues contain scope, dependencies and acceptance. Dates and owners are set at delivery intake, not invented. A closed item requires linked acceptance evidence. Public claims retain sources, uncertainty and correction history. Agent-generated roadmap proposals cannot bypass editorial, spending or release authorization.\n\n## Milestones and implementation issues\n\n### [M0 \u2014 Evidence and integration contracts](https://github.com/namastex888/trending-research/milestone/1)\n\nMake the first investigation bounded, auditable and technically feasible.\n\n**Exit gate:** A reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n\n- [ ] #2\n- [ ] #3\n- [ ] #4\n- [ ] #5\n\n### [M1 \u2014 First public investigation: frontier AI economics](https://github.com/namastex888/trending-research/milestone/2)\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n**Exit gate:** One published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\n- [ ] #6\n- [ ] #7\n- [ ] #8\n- [ ] #9\n- [ ] #10\n- [ ] #11\n- [ ] #12\n\n### [M2 \u2014 Reliable autonomous collection](https://github.com/namastex888/trending-research/milestone/3)\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n**Exit gate:** Scheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\n- [ ] #13\n- [ ] #14\n- [ ] #15\n- [ ] #16\n- [ ] #21\n\n### [M3 \u2014 Community investigation and correction](https://github.com/namastex888/trending-research/milestone/4)\n\nLet readers contribute useful evidence and corrections while preserving an auditable public record.\n\n**Exit gate:** Contributions move through review; accepted corrections propagate with attribution; disputed claims remain inspectable; votes do not certify truth.\n\n- [ ] #17\n- [ ] #18\n\n### [M4 \u2014 Broader lenses and controlled roadmap automation](https://github.com/namastex888/trending-research/milestone/5)\n\nExpand coverage when unanswered questions justify it and turn evidence gaps into reviewable implementation proposals.\n\n**Exit gate:** At least one additional lens is accepted against real evidence; roadmap agents propose bounded work with acceptance criteria and cannot bypass publication or release gates.\n\n- [ ] #19\n- [ ] #20\n\n## Product experience\n\nBuild an evidence atlas whose entity selection and evidence cutoff survive lens changes. Explore attention, demonstrated capability, adoption, money and infrastructure as distinct lenses. Start from an answerable question; move through a focused relationship view and timeline to a shared evidence inspector. Keep tables as precise inspection/export views. Share links preserve the investigation revision and filters. The DSH assistant uses exactly that scene and cites its evidence.\n\nThe first investigation asks **Are frontier AI economics sustainable?** Compare demand/retention, pricing, inference economics, training costs, financing, compute commitments and open-model substitutes. Show competing interpretations, strongest counterevidence and observable invalidation conditions. No unsupported bubble-burst date or inference of wrongdoing from a financial cycle.\n\n## Architecture and evidence boundaries\n\nSource plugins \u2192 preserved observations \u2192 entities/claims/measurements \u2192 Brain evidence relationships \u2192 shared queries \u2192 visual lenses and DSH tools. Cordis owns component lifetimes and dependencies; accepted evidence and publication history survive plugin replacement. Keep the existing Python pipeline behind an adapter while qualifying supported DSH and Brain contracts. One deployable application is the starting proposal; distribution and specialist stores need a measured requirement.\n\nClaims retain source revisions, evidence spans, units, scope, reporting party and event/observation/computation times. Support and contradiction are explicit. Equity, debt, cloud credits, commitments and recognized revenue remain distinct. Brain document links must not silently become asserted financial transactions. Session isolation and external-write/idempotency boundaries are acceptance gates.\n\n## Initial source plan\n\n| Lens | Sources to qualify | Interpretation rule |\n|---|---|---|\n| Research/capability | arXiv, HF, GitHub, model cards, evaluation artifacts, independent reproductions | Publication/popularity is not reproduced capability |\n| Capital/economics | Public filings, investor relations, funding/compute disclosures | Distinguish claims, commitments, cash and recognized revenue |\n| Prices | Dated provider price/terms pages and comparable workloads | Prefer cost per successful task; price alone does not prove subsidy |\n| Adoption | Disclosures, downloads and consented aggregate usage | Operations, users, customers and retention are different metrics |\n| Narrative/stance | HN plus a diverse multilingual panel; other platforms only after access qualification | Stance toward a claim, segmented by cohort; repeated reporting is not independent confirmation |\n\nEach source records acquisition method, rights, language/cohort, quota/cost, cadence, history, coverage interval, last success and failures. Missing private-company data stays unknown. Direct Chinese-language evidence retains originals and attributed translations.\n\n## Editorial, community and automation policy\n\nAutomate collection and routine metrics. Review interpretations, disputed claims and money-trail conclusions before publication. Keep correction/retraction history and explicit conflicts of interest. Community contributions attach evidence, reproduction results or corrections to specific claims; votes indicate interest, not truth. Source content is untrusted data, never agent instructions. Roadmap automation proposes bounded, deduplicated work and follows design/review/release gates; it does not authorize additional spending, access or deployment.\n\n## Work state and decisions still to resolve\n\nUse one `workflow::*` label per issue: backlog, ready, in-progress, review or blocked. Closed means acceptance evidence exists. Dependencies are linked natively and in issue bodies. Priorities express relative importance, not deadlines.\n\n- #3 selects the bounded source panel/languages and proposes a budget.\n- #4 and #5 qualify runtime, Brain namespace, deployment and privacy boundaries.\n- #8 selects the visual direction using real-evidence variants.\n- #12 establishes editorial ownership and proves the public release.\n\n## Baseline and references\n\nPlanning baseline: repository commit `65fe46e`. Existing product is a static research/HYPE tracker; 19 scoring tests passed during the baseline investigation. No implementation or fresh collection is claimed by this roadmap. Current Real/coverage semantics, heterogeneous usage units, mutable replay inputs and source bias are explicit roadmap work.\n\n- [Existing methodology](https://github.com/namastex888/trending-research/blob/65fe46e/METHODOLOGY.md)\n- [God\u2019s Eye View interaction reference](https://github.com/bilawalsidhu/gods-eye-view)\n- [Cordis paper](https://arxiv.org/abs/2608.25512)\n- [DSH architecture](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)\n- [SEC public data APIs](https://www.sec.gov/search-filings/edgar-application-programming-interfaces)\n",
+      "labels": [
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7V924Q",
+          "name": "documentation",
+          "description": "Improvements or additions to documentation",
+          "color": "0075ca"
+        },
+        {
+          "id": "LA_kwDOU-nzC88AAAAC7n2PXQ",
+          "name": "type::roadmap",
+          "description": "Open intelligence roadmap: type / roadmap",
+          "color": "5319E7"
+        }
+      ],
+      "milestone": null,
+      "number": 1,
+      "state": "OPEN",
+      "title": "Roadmap: open AI intelligence observatory",
+      "url": "https://github.com/namastex888/trending-research/issues/1"
+    }
+  ],
+  "native_dependencies": {
+    "2": [],
+    "3": [
+      2
+    ],
+    "4": [
+      2
+    ],
+    "5": [
+      2
+    ],
+    "6": [
+      2,
+      3
+    ],
+    "7": [
+      2,
+      5,
+      6
+    ],
+    "8": [
+      6
+    ],
+    "9": [
+      7,
+      8
+    ],
+    "10": [
+      4,
+      7,
+      9
+    ],
+    "11": [
+      2
+    ],
+    "12": [
+      9,
+      10,
+      11
+    ],
+    "13": [
+      7,
+      11
+    ],
+    "14": [
+      3,
+      13
+    ],
+    "15": [
+      2,
+      3,
+      14
+    ],
+    "16": [
+      12,
+      14
+    ],
+    "17": [
+      12,
+      16
+    ],
+    "18": [
+      9,
+      16,
+      17
+    ],
+    "19": [
+      14,
+      15,
+      18
+    ],
+    "20": [
+      16,
+      17
+    ],
+    "21": [
+      4,
+      5,
+      12,
+      13
+    ]
+  },
+  "milestones": [
+    {
+      "url": "https://api.github.com/repos/namastex888/trending-research/milestones/1",
+      "html_url": "https://github.com/namastex888/trending-research/milestone/1",
+      "labels_url": "https://api.github.com/repos/namastex888/trending-research/milestones/1/labels",
+      "id": 18402080,
+      "node_id": "MI_kwDOU-nzC84BGMsg",
+      "number": 1,
+      "title": "M0 \u2014 Evidence and integration contracts",
+      "description": "<!-- open-intelligence-milestone:M0 -->\n\n## Outcome\n\nMake the first investigation bounded, auditable and technically feasible.\n\n## Exit criteria\n\nA reviewed domain contract, qualified source panel and verified DSH/Brain integration paths exist. No unsupported embedding or historical replay guarantees remain implicit.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+      "creator": {
+        "login": "namastex888",
+        "id": 105755034,
+        "node_id": "U_kgDOBk2xmg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105755034?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namastex888",
+        "html_url": "https://github.com/namastex888",
+        "followers_url": "https://api.github.com/users/namastex888/followers",
+        "following_url": "https://api.github.com/users/namastex888/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namastex888/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namastex888/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namastex888/subscriptions",
+        "organizations_url": "https://api.github.com/users/namastex888/orgs",
+        "repos_url": "https://api.github.com/users/namastex888/repos",
+        "events_url": "https://api.github.com/users/namastex888/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namastex888/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 4,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-08T04:02:53Z",
+      "updated_at": "2026-10-08T04:03:16Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    {
+      "url": "https://api.github.com/repos/namastex888/trending-research/milestones/2",
+      "html_url": "https://github.com/namastex888/trending-research/milestone/2",
+      "labels_url": "https://api.github.com/repos/namastex888/trending-research/milestones/2/labels",
+      "id": 18402081,
+      "node_id": "MI_kwDOU-nzC84BGMsh",
+      "number": 2,
+      "title": "M1 \u2014 First public investigation: frontier AI economics",
+      "description": "<!-- open-intelligence-milestone:M1 -->\n\n## Outcome\n\nLet a builder explore whether frontier AI economics are sustainable, inspect counterevidence and ask cited questions.\n\n## Exit criteria\n\nOne published investigation has a working relationship view, timeline, evidence inspector, assistant and shareable revision; a newcomer can explain the thesis and strongest counterevidence.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+      "creator": {
+        "login": "namastex888",
+        "id": 105755034,
+        "node_id": "U_kgDOBk2xmg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105755034?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namastex888",
+        "html_url": "https://github.com/namastex888",
+        "followers_url": "https://api.github.com/users/namastex888/followers",
+        "following_url": "https://api.github.com/users/namastex888/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namastex888/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namastex888/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namastex888/subscriptions",
+        "organizations_url": "https://api.github.com/users/namastex888/orgs",
+        "repos_url": "https://api.github.com/users/namastex888/repos",
+        "events_url": "https://api.github.com/users/namastex888/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namastex888/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 7,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-08T04:02:56Z",
+      "updated_at": "2026-10-08T04:03:35Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    {
+      "url": "https://api.github.com/repos/namastex888/trending-research/milestones/3",
+      "html_url": "https://github.com/namastex888/trending-research/milestone/3",
+      "labels_url": "https://api.github.com/repos/namastex888/trending-research/milestones/3/labels",
+      "id": 18402082,
+      "node_id": "MI_kwDOU-nzC84BGMsi",
+      "number": 3,
+      "title": "M2 \u2014 Reliable autonomous collection",
+      "description": "<!-- open-intelligence-milestone:M2 -->\n\n## Outcome\n\nRefresh the accepted sources without silently changing the meaning, history or publication status of evidence.\n\n## Exit criteria\n\nScheduled collection survives failures/retries, exposes coverage and cost, reproduces published views and routes changed interpretations to editorial review.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+      "creator": {
+        "login": "namastex888",
+        "id": 105755034,
+        "node_id": "U_kgDOBk2xmg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105755034?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namastex888",
+        "html_url": "https://github.com/namastex888",
+        "followers_url": "https://api.github.com/users/namastex888/followers",
+        "following_url": "https://api.github.com/users/namastex888/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namastex888/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namastex888/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namastex888/subscriptions",
+        "organizations_url": "https://api.github.com/users/namastex888/orgs",
+        "repos_url": "https://api.github.com/users/namastex888/repos",
+        "events_url": "https://api.github.com/users/namastex888/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namastex888/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 5,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-08T04:02:58Z",
+      "updated_at": "2026-10-08T04:03:55Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    {
+      "url": "https://api.github.com/repos/namastex888/trending-research/milestones/4",
+      "html_url": "https://github.com/namastex888/trending-research/milestone/4",
+      "labels_url": "https://api.github.com/repos/namastex888/trending-research/milestones/4/labels",
+      "id": 18402083,
+      "node_id": "MI_kwDOU-nzC84BGMsj",
+      "number": 4,
+      "title": "M3 \u2014 Community investigation and correction",
+      "description": "<!-- open-intelligence-milestone:M3 -->\n\n## Outcome\n\nLet readers contribute useful evidence and corrections while preserving an auditable public record.\n\n## Exit criteria\n\nContributions move through review; accepted corrections propagate with attribution; disputed claims remain inspectable; votes do not certify truth.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+      "creator": {
+        "login": "namastex888",
+        "id": 105755034,
+        "node_id": "U_kgDOBk2xmg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105755034?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namastex888",
+        "html_url": "https://github.com/namastex888",
+        "followers_url": "https://api.github.com/users/namastex888/followers",
+        "following_url": "https://api.github.com/users/namastex888/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namastex888/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namastex888/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namastex888/subscriptions",
+        "organizations_url": "https://api.github.com/users/namastex888/orgs",
+        "repos_url": "https://api.github.com/users/namastex888/repos",
+        "events_url": "https://api.github.com/users/namastex888/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namastex888/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 2,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-08T04:03:00Z",
+      "updated_at": "2026-10-08T04:03:49Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    {
+      "url": "https://api.github.com/repos/namastex888/trending-research/milestones/5",
+      "html_url": "https://github.com/namastex888/trending-research/milestone/5",
+      "labels_url": "https://api.github.com/repos/namastex888/trending-research/milestones/5/labels",
+      "id": 18402084,
+      "node_id": "MI_kwDOU-nzC84BGMsk",
+      "number": 5,
+      "title": "M4 \u2014 Broader lenses and controlled roadmap automation",
+      "description": "<!-- open-intelligence-milestone:M4 -->\n\n## Outcome\n\nExpand coverage when unanswered questions justify it and turn evidence gaps into reviewable implementation proposals.\n\n## Exit criteria\n\nAt least one additional lens is accepted against real evidence; roadmap agents propose bounded work with acceptance criteria and cannot bypass publication or release gates.\n\nProduct direction approved by Felipe on 2026-10-08. Issues carry dependencies and acceptance checklists. Dates and assignees are intentionally unset until delivery intake. Closing work requires linked verification; implementation and public release are not implied by this planning milestone.",
+      "creator": {
+        "login": "namastex888",
+        "id": 105755034,
+        "node_id": "U_kgDOBk2xmg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105755034?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namastex888",
+        "html_url": "https://github.com/namastex888",
+        "followers_url": "https://api.github.com/users/namastex888/followers",
+        "following_url": "https://api.github.com/users/namastex888/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namastex888/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namastex888/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namastex888/subscriptions",
+        "organizations_url": "https://api.github.com/users/namastex888/orgs",
+        "repos_url": "https://api.github.com/users/namastex888/repos",
+        "events_url": "https://api.github.com/users/namastex888/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namastex888/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 2,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-08T04:03:02Z",
+      "updated_at": "2026-10-08T04:03:53Z",
+      "due_on": null,
+      "closed_at": null
+    }
+  ]
+}
