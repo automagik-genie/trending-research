@@ -1,0 +1,69 @@
+{
+  "command": "python3 -B -m unittest discover tests && python3 -B eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "exit_code": 0,
+  "stdout_sha256": "e1cc9a457e4068aa5e035aa36d989417b8514f94687c13a4b8ccabeadd1b8235",
+  "stderr_sha256": "c6ca7371609f19dedee9d751d12c1197fb864970eeb305f030a0dfc3d5218fc5",
+  "observed_at": "2026-10-08T07:42:51.117819+00:00",
+  "tests": 43,
+  "code_identity": "Accepted ef93454 scoring3.0/config e2e3fe28708fe6ac69dc3882a423228ee5c3de31f74c1f2990d9883cfb8d1216 unchanged; disjoint Brain-only commit51118d3",
+  "source_gate_snapshot": [
+    {
+      "path": "docs/sources/economics-panel.md",
+      "bytes": 53021,
+      "sha256": "dfc0810d3e8bf367563002a7d37ec78d3fc5dd4c9014a583a4dbb53eaeadda5b",
+      "insertions": 202,
+      "deletions": 114
+    },
+    {
+      "path": "investigations/frontier-economics/sources.json",
+      "bytes": 109773,
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+      "insertions": 355,
+      "deletions": 7
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "bytes": 92295,
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "insertions": 0,
+      "deletions": 0
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "bytes": 63002,
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+      "insertions": 0,
+      "deletions": 0
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "bytes": 9903,
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+      "insertions": 0,
+      "deletions": 0
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "bytes": 27251,
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+      "insertions": 0,
+      "deletions": 0
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/NOTICE.md",
+      "bytes": 5970,
+      "sha256": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3",
+      "insertions": 30,
+      "deletions": 0
+    }
+  ],
+  "snapshot_sequencing": "Initial status doc b9d381 stale; parent precheck failed before any aggregate/consumer execution; latest actual doc dfc081 frozen while writer waits in question msg_bc4c451337b8. This is not a source consumer/gate failure.",
+  "scope": "No live Brain/DSH/CI/deploy/editorial/source-accuracy approval; actual source consumer separate.",
+  "actual_source_consumer": {
+    "command": "python3 -B -c 'from pathlib import Path; text = Path(\"docs/sources/economics-panel.md\").read_text(); exec(compile(text.split(\"```python\\n\", 1)[1].split(\"\\n```\", 1)[0], \"economics-panel-smoke\", \"exec\"))'",
+    "exit_code": 0,
+    "stdout_sha256": "dd6a9f7e29edbed807cb602a1ece6fdfd9d36e9330b20e1eb6a3d5a8d81ac2bd",
+    "stderr": "",
+    "stdout": "{\n  \"registry_sha256\": \"b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41\",\n  \"registered\": 23,\n  \"body_qualified\": 15,\n  \"blocked\": 8,\n  \"eligible_financial_sources\": [\n    \"source:wikidata:Q2283\",\n    \"source:wikidata:Q3884\"\n  ],\n  \"first_release_source_state\": \"qualified_subset_available\",\n  \"financial_assertions\": [\n    {\n      \"statement\": \"Q2283$564CF0AD-3A7D-4250-AA0C-40518A8833D9\",\n      \"amount_decimal\": \"+281724000000\",\n      \"unit\": \"USD\",\n      \"rank\": \"normal\",\n      \"qualifiers\": {\n        \"P585\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P585\",\n            \"hash\": \"22efcef23f2150994668550a1f67ce544b2cab3b\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2025-00-00T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 9,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ],\n        \"P580\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P580\",\n            \"hash\": \"e4a8b72441917c817a77f67bf2d97d29e5daa23a\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2024-07-01T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 11,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ],\n        \"P582\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P582\",\n            \"hash\": \"17ee0c64500cd1da7c49017561902ee7244ce202\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2025-06-30T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 11,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ]\n      },\n      \"issuer_references\": [\n        \"https://www.sec.gov/Archives/edgar/data/0000789019/000095017025100235/msft-20250630.htm\"\n      ],\n      \"origin\": \"origin:msft:report25\"\n    },\n    {\n      \"statement\": \"Q2283$36342234-E848-496F-990C-6B97CC151BCC\",\n      \"amount_decimal\": \"+331839000000\",\n      \"unit\": \"USD\",\n      \"rank\": \"preferred\",\n      \"qualifiers\": {\n        \"P585\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P585\",\n            \"hash\": \"bd4e608fca97bfd620514f81e735833b9d96e34d\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2026-00-00T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 9,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ],\n        \"P580\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P580\",\n            \"hash\": \"bc236d6d4c64d566399b8154dd7d0650881125ca\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2025-07-01T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 11,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ],\n        \"P582\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P582\",\n            \"hash\": \"d452a94555a869a7ba91a314d56c78ff3157f022\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2026-06-30T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 11,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ]\n      },\n      \"issuer_references\": [\n        \"https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm\"\n      ],\n      \"origin\": \"origin:msft:report26\"\n    },\n    {\n      \"statement\": \"Q3884$5F15DD1E-D2B7-48FC-A005-0955CBA83D76\",\n      \"amount_decimal\": \"+637959000000\",\n      \"unit\": \"USD\",\n      \"rank\": \"normal\",\n      \"qualifiers\": {\n        \"P585\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P585\",\n            \"hash\": \"daee777a902fd7cd73351aa33ba07e0a22d4fb9b\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2024-00-00T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 9,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ]\n      },\n      \"issuer_references\": [\n        \"https://www.sec.gov/Archives/edgar/data/0001018724/000101872425000004/amzn-20241231.htm\"\n      ],\n      \"origin\": \"origin:amzn:report24\"\n    },\n    {\n      \"statement\": \"Q3884$722DAFD9-BCFA-47EB-99BC-9C02BC61B699\",\n      \"amount_decimal\": \"+716924000000\",\n      \"unit\": \"USD\",\n      \"rank\": \"preferred\",\n      \"qualifiers\": {\n        \"P585\": [\n          {\n            \"snaktype\": \"value\",\n            \"property\": \"P585\",\n            \"hash\": \"22efcef23f2150994668550a1f67ce544b2cab3b\",\n            \"datavalue\": {\n              \"value\": {\n                \"time\": \"+2025-00-00T00:00:00Z\",\n                \"timezone\": 0,\n                \"before\": 0,\n                \"after\": 0,\n                \"precision\": 9,\n                \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"\n              },\n              \"type\": \"time\"\n            },\n            \"datatype\": \"time\"\n          }\n        ]\n      },\n      \"issuer_references\": [\n        \"https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000004/amzn-20251231.htm\"\n      ],\n      \"origin\": \"origin:amzn:report25\"\n    }\n  ],\n  \"negative_controls\": [\n    {\n      \"control\": \"paid promotion\",\n      \"rejected_by\": \"paid source marked operational\"\n    },\n    {\n      \"control\": \"blocked promotion\",\n      \"rejected_by\": \"blocked source marked operational\"\n    },\n    {\n      \"control\": \"missing body\",\n      \"rejected_by\": \"operational source without body receipt\"\n    },\n    {\n      \"control\": \"common origin\",\n      \"rejected_by\": \"common-source evidence counted as independent corroboration\"\n    },\n    {\n      \"control\": \"private metric\",\n      \"rejected_by\": \"unknown private metric filled\"\n    },\n    {\n      \"control\": \"recurring budget\",\n      \"rejected_by\": \"unapproved recurring budget promoted\"\n    },\n    {\n      \"control\": \"unlicensed eligibility\",\n      \"rejected_by\": \"unqualified release eligibility\"\n    },\n    {\n      \"control\": \"missing original\",\n      \"rejected_by\": \"licensed original unavailable\"\n    },\n    {\n      \"control\": \"corrupt original\",\n      \"rejected_by\": \"encoded original mismatch\"\n    },\n    {\n      \"control\": \"wrong revision\",\n      \"rejected_by\": \"captured identity revision mismatch\"\n    },\n    {\n      \"control\": \"wrong namespace\",\n      \"rejected_by\": \"captured identity revision mismatch\"\n    },\n    {\n      \"control\": \"nonCC0 scope\",\n      \"rejected_by\": \"invalid licensed rights scope\"\n    },\n    {\n      \"control\": \"bad source binding\",\n      \"rejected_by\": \"financial source binding mismatch\"\n    },\n    {\n      \"control\": \"bad span\",\n      \"rejected_by\": \"financial span mismatch\"\n    },\n    {\n      \"control\": \"bad quantity\",\n      \"rejected_by\": \"financial quantity unit drift\"\n    },\n    {\n      \"control\": \"bad currency\",\n      \"rejected_by\": \"financial quantity unit drift\"\n    },\n    {\n      \"control\": \"reference lost\",\n      \"rejected_by\": \"financial provenance drift\"\n    },\n    {\n      \"control\": \"invented midnight\",\n      \"rejected_by\": \"precision recognition promoted\"\n    },\n    {\n      \"control\": \"origin laundering\",\n      \"rejected_by\": \"financial origin laundering\"\n    }\n  ]\n}\n"
+  }
+}

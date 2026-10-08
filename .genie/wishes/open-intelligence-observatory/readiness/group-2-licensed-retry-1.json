@@ -1,0 +1,58 @@
+{
+  "issue": 3,
+  "group": 2,
+  "phase": "original author retry with new licensed-material context",
+  "source_checkpoint": "c5d1ab85331225007848dd60bc90086f79f6e965",
+  "governing_wish_sha256": "272623d795c0ecee622f5bff3ad014acd3823cbcd054349dd9eb572b51c11d3b",
+  "amendment": "WISH Group2 line254: independently approved CC0 raw material path, not new questions or criteria",
+  "independent_route_review": {
+    "dispatch": "ctx_c4f0d45b6379",
+    "report_sha256": "7f3f8610c22b8208bc3f911ab9ee8199badb481922c3c00a331bc36d1b10a944",
+    "relative_report": "verification/licensed-alternative-route-review.md",
+    "scope": "ownership/source route only"
+  },
+  "previous_exact_artifacts": {
+    "docs/sources/economics-panel.md": "ab75486dc0eb0da8d1de32b59b45a2bb798fbf295f59be2309e8bfa89a65166e",
+    "investigations/frontier-economics/sources.json": "d5e473de5e067b8348e4c333e1fec81691787006d7812405e9e5c08050d357dd"
+  },
+  "owned_paths": [
+    "docs/sources/economics-panel.md",
+    "investigations/frontier-economics/sources.json",
+    "investigations/frontier-economics/licensed-sources/"
+  ],
+  "prior_qualification": "historical c5d1ab8: two-file qualification acceptance+quality SHIP, zero eligible; do not rewrite history",
+  "known_acquisition_targets": {
+    "Q2283": 2550576892,
+    "Q3884": 2546229470,
+    "P2139": 2547354403,
+    "Q4917": 2554037296
+  },
+  "acquisition_contract": "few anonymous serial GETs exact formatted .json?revision=; genuine project User-Agent/gzip; preserve complete encoded response bytes/encoding + decoded UTF8 SHA before canonicalization; verify payload id/ns/revision; actual local request start/end separate cached HTTP Date/Last-Modified; never retain cookies/secret headers; no retries/crawl/paid/model/credential calls",
+  "additional_discovery": "Only necessary genuine CC0 financial structured records/property metadata for ORIGINAL four entities/questions; no unrelated company/question; all unknown verification/period/accounting gaps preserved",
+  "external_paid_acquisition_ceiling": "USD0 one-off public free route; total active coding/session/hosting/storage cost unknown",
+  "cadence": "Existing56-intent/28day proposal historical/disabled/unapproved; new one-off reads separate; never silently fold into monthly budget or schedule it",
+  "frozen_original_acceptance": [
+    "Each included source has a successful read receipt or a named blocked state.",
+    "Source coverage and missing private-company data are visible; no inaccessible or paid source is marked operational.",
+    "Repeated reporting is identified as common-source evidence rather than independent corroboration.",
+    "The first release can ship with the qualified subset."
+  ],
+  "validation": "After entire slice: updated real existing document consumer smoke + offline actual captured bytes/decompression/identity/revision/CC0scope/property/unit/precision/financial statement/reference/span checks and meaningful fail-closed controls. No permanent wording/forwarding/mock echo test, no midflight build/lint/tests/formatter. Shared aggregate coordinator after settlement. Real usable financially relevant material, not metadata-directory release. No live Brain/DSH/editorial/newcomer/deploy/CI claim.",
+  "original_native_author_retry": {
+    "task": "task_43fba7c26509",
+    "retry_of": "ctx_d81030c403bb"
+  },
+  "genie_card": {
+    "id": "t_muz1j2jr4b6ecb03",
+    "worker": "issue-3-engineer",
+    "checkout": "coordinator resumed same owner: checkout exit0, before source writer dispatch; one new final worker report, no done/status mutation"
+  },
+  "budget": {
+    "repair_used": 1,
+    "B": 2,
+    "source": "config2",
+    "effort_escalations": 0,
+    "missing_context_route": "genuinely new licensed material context; not unchanged retry or reset"
+  },
+  "recorded_at": "2026-10-08T07:23:09.346227+00:00"
+}

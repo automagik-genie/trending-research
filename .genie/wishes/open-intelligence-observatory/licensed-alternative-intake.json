@@ -1,0 +1,38 @@
+{
+  "question": "Is a reachable actually licensed alternate financial original available for the original #3 usable-source gate, without paid access or invented retention permission?",
+  "kind": "coordinator_preliminary_primary-source_intake_not_completed_workflow_sweep",
+  "observed_at": "2026-10-08T06:39:54.363430+00:00",
+  "findings": [
+    {
+      "finding": "Wikidata licensing body explicitly releases all structured main/Property/Lexeme/EntitySchema data under CC0; other text namespaces have different licensing. This is a real candidate grant, not a blanket statement about corporate publisher webpages.",
+      "source": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "source_revision": "oldid=2548950862 in retrieved body",
+      "confidence": "high for published source licensing policy; not financial accuracy"
+    },
+    {
+      "finding": "Retrieved real Q2283 JSON ns0 identifies Microsoft, lastrevid2550576892, modified2026-09-28T17:59:51Z; actual P2139 quantity includes +331839000000, unitQ4917, qualifiers calendar2025-07-01 through2026-06-30 and year precision9, with SEC reference URL. A community assertion, not independently verified recognized revenue or issuer-original proof.",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q2283.json",
+      "retrieval": "artifact157 lines11278-11418 and entity header",
+      "confidence": "high for observed payload; financial truth unqualified"
+    },
+    {
+      "finding": "Wikimedia terms7 welcome reuse under underlying licence, require attribution for community text and consideration of imported notices; separately prohibit disruptive automated use and make no guarantee of community financial accuracy.",
+      "source": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en#7._Licensing_of_Content",
+      "retrieval": "artifact158 lines310-390 plus services/refrain clauses",
+      "confidence": "high for observed policy"
+    }
+  ],
+  "decision": "Do not settle source-rights blocker as unreachable: actual CC0 structured-data route now identified. Have original source implementation owner qualify exact-material scope, applicable source terms/legalcode, actual raw acquisition and immutable revision/digest/attribution; no source-directory-only release or financial truth upgrade. Do not alter existing safe clock repair while its review pending. Original #3 remains BLOCKED until full original acceptance+quality on real qualified subset.",
+  "open": [
+    "Raw JSON originals not yet captured as immutable public evidence files by authorized production writer; reader-rendered JSON is not an HTTP-byte snapshot.",
+    "Actual property/unit semantics and full financial coverage/counterevidence remain to qualify.",
+    "Source terms/CC0legalcode exact scope and any visible notices need final verification; third-party linked filings do not inherit CC0.",
+    "No new source approved operationally, recurring budget remains disabled/unapproved; no paid/model call or primary publisher original retention inferred."
+  ],
+  "unread": [
+    "CC0 legalcode/body not yet read",
+    "referred SEC filing not fetched and not declared licensed or verified"
+  ],
+  "not_convened": "No completed research-sweep workflow claim; direct coordinator prerequisite discovery only",
+  "injection_attempts": "No fetched request for credential/state mutation followed; policy text treated as data."
+}
