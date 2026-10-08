@@ -1,0 +1,185 @@
+{
+  "issue": 4,
+  "group": 3,
+  "worker": "issue-4-engineer",
+  "task_card": "t_muz1j2pr10192156",
+  "dispatch_id": "ctx_2ef16ba9beba",
+  "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "original_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "observed_at": "2026-10-08T05:25:00.964638+00:00",
+  "verdict": "BLOCKED",
+  "scope_unchanged": true,
+  "readiness": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-3.json",
+    "sha256": "cf14ff13bdabae4eb06b79bc550eaec1eda547bfbec49742a47ac27eb7b6c868",
+    "decision": "ACCEPTED_FOR_REACHABLE_QUALIFICATION_ONLY",
+    "exact_portable_commands_accepted": true,
+    "authority": "Coordinator blocking ask replies in dispatch ctx_2ef16ba9beba; no live acceptance authorized"
+  },
+  "changed_paths": [
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md",
+    "integrations/dsh/qualification/receipts.json"
+  ],
+  "document_artifacts": {
+    "docs/integrations/dsh.md": {
+      "sha256": "ec056adff560dddea4bd0345743015904d2f438e8f2352542a4304967ee6008c",
+      "lines": 123,
+      "bytes": 19335
+    },
+    "docs/integrations/cordis.md": {
+      "sha256": "ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6",
+      "lines": 54,
+      "bytes": 9930
+    }
+  },
+  "runtime_identity": {
+    "launcher_package": "@deepseek-ai/dsh@0.2.0-rc.1",
+    "launcher_manifest_sha256": "6c5d2b98ca97920fffe81eaff8455dfd1e97524c8b3a7a3b0cac4c960ebb363c",
+    "launcher_bin_relative": "@deepseek-ai/dsh/lib/bin.js",
+    "launcher_bin_sha256": "935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1",
+    "cordis_package": "@deepseek-ai/cordis@4.0.4",
+    "cordis_manifest_sha256": "41c9dee4715a89ef94f227384460c8445857c8faf33493eb545604a948828649",
+    "cordis_bin_relative": "@deepseek-ai/cordis/lib/index.js",
+    "cordis_bin_sha256": "6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e",
+    "source_repository": "https://github.com/deepseek-ai/deepseek-harness",
+    "source_revision": "4878cdabd87d4041bdaff61d04c966883b9fd07a",
+    "installed_to_source_equivalence": null,
+    "installed_dependency_closure": null,
+    "sdk_client_installed_identity": null,
+    "web_profile_candidate": "web",
+    "authorized_running_web_identity": null,
+    "serving_fence_revision_identity": null
+  },
+  "installed_contract_artifacts": {
+    "dsh-api-session-controller/package.json": "a85c0ae9e16b1811b4696238cb409f3d4747a36117ae17b58e97f7b6d2fee73b",
+    "dsh-api-session-controller/lib/typert.remote-client.d.ts": "e6f7d2b5a6b35d7b1a28edf3afe10dbf73289775622f326c104d1855f9342fc3",
+    "dsh-api-session-controller/lib/types/types.d.ts": "1b4d81ed8f89ccd5d3c477a38fe2ab8c993f24af0e21539d0e0b7d22d7c2e7b8",
+    "dsh-api-session-controller/lib/types/commands.js": "0fa37c1749ad68f5522ccdbca1ab50a74859c4ab5be9a30c76e15900c39b0ebb"
+  },
+  "accepted_dependency": {
+    "issue": 2,
+    "artifact": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+    "design_review": "SHIP",
+    "quality_review": "SHIP",
+    "remote_evidence": "https://github.com/namastex888/trending-research/issues/2#issuecomment-6052666339",
+    "schema_version": "1.0.0",
+    "schema_sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+    "fixture_sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+  },
+  "fixture": {
+    "notice": "Synthetic domain-contract examples only, not real economics or restricted principal fixtures",
+    "scene_id": "scene:example:1",
+    "entity_ids": ["entity:builder", "entity:investor-a", "entity:investor-b"],
+    "publication_revision_id": "publication:example:1",
+    "publication_status": "draft",
+    "evidence_cutoff": "2020-02-03T00:00:00Z",
+    "method_version": "fixture-method/1"
+  },
+  "safe_smoke": [
+    {
+      "command": "dsh --version && dsh --help",
+      "exit_code": 0,
+      "observed": {"version": "0.2.0-rc.1", "named_profile_flag": true, "repeatable_patch_flag": true},
+      "proof_boundary": "CLI identity and launcher help, no profile activation or model call"
+    },
+    {
+      "command": "python3 -B tests/test_evidence_contracts.py --smoke tests/fixtures/evidence_contracts.json",
+      "exit_code": 0,
+      "observed": {
+        "opposed_claims": ["claim:sustainable:1", "claim:unsustainable:1"],
+        "equity_transaction_parties": [["transaction:one", "entity:investor-a"], ["transaction:one", "entity:investor-b"], ["transaction:two", "entity:investor-a"]],
+        "source_revision_chain": ["source:a:1", "source:a:2"],
+        "evidence_cutoff": "2020-02-03T00:00:00Z",
+        "method_version": "fixture-method/1",
+        "later_correction_excluded": true,
+        "fixture_sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+      },
+      "proof_boundary": "Existing contract fixture exercised; not a live cited assistant answer"
+    },
+    {
+      "command_source": ".genie/wishes/open-intelligence-observatory/readiness/group-3.json#/smoke/commands/2",
+      "command_sha256": "baea3c532fd8dcdf40c335875de062e412fb9395df241bc3a417ea9634050eef",
+      "exit_code": 0,
+      "observed": {
+        "unauthenticated_fence": [{"method": "GET", "path": "/", "status": 401}, {"method": "POST", "path": "/api/session/list", "status": 401}],
+        "tenantIsolationValidated": false
+      },
+      "proof_boundary": "No cookie/body/records retained; anonymous HTTP fence only, serving revision and restricted-principal boundary unqualified",
+      "probe_code": "throwaway inline Python, no retained script"
+    },
+    {
+      "command_source": ".genie/wishes/open-intelligence-observatory/readiness/group-3.json#/smoke/commands/3",
+      "command_sha256": "0552cdeaf2848f0a349ff571f5c5e518847d5173769a7d656f94dceddece3511",
+      "exit_code": 0,
+      "observed": {
+        "activations": 2,
+        "cleanup": [2, 1, 2, 1],
+        "retainedFixtureUnchanged": true,
+        "durableEvidenceValidated": false,
+        "tenantIsolationValidated": false
+      },
+      "proof_boundary": "Real installed Cordis component activation/reverse-idempotent cleanup/replacement; external synthetic Map identity only, not storage/Brain/HMR/server isolation",
+      "probe_code": "throwaway inline Node, no retained script"
+    }
+  ],
+  "aggregate": {
+    "command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "disposition": "DEFERRED_TO_COORDINATOR_INTEGRATED_CHECKPOINT",
+    "authority": "Coordinator exact portable-command acceptance in dispatch ctx_2ef16ba9beba explicitly directed aggregate deferral",
+    "exit_code": null,
+    "proof_boundary": "No worker aggregate result claimed; passing repository tests cannot fill missing runtime acceptance"
+  },
+  "live_acceptance": {
+    "streamed_cited_answer": null,
+    "scene_scoped_tool_call": null,
+    "cancellation_stops_new_work": null,
+    "reconnect_preserves_session_status": null,
+    "durable_session_restart": null,
+    "cross_session_restricted_denials": null,
+    "real_application_plugin_replacement": null
+  },
+  "criteria": [
+    {"criterion": "A cited answer references the same entity IDs and evidence cutoff as the supplied scene.", "status": "BLOCKED", "observation": null},
+    {"criterion": "Cancellation stops new work; reconnect preserves the session and returns a clear status.", "status": "BLOCKED", "observation": null},
+    {"criterion": "Two isolated sessions cannot access each other's restricted records or tools.", "status": "BLOCKED", "observation": null},
+    {"criterion": "Verdict names validated constraints and remaining blockers; probe code is labeled throwaway unless separately accepted.", "status": "DOCUMENTED_NOT_INDEPENDENTLY_ACCEPTED", "artifact": "docs/integrations/dsh.md"}
+  ],
+  "prerequisites_missing": {
+    "dedicated_home_and_named_profile": null,
+    "ordered_patch_artifacts": null,
+    "authorized_web_cookie_access": null,
+    "provider": null,
+    "model": null,
+    "model_use_authorization": null,
+    "attributed_approved_budget": null,
+    "persistent_fixture_storage": null,
+    "isolated_lifecycle_restart_permission": null,
+    "principal_A": null,
+    "principal_B": null,
+    "restricted_records_and_tool_fixtures": null,
+    "server_enforced_principal_boundary": null,
+    "approved_fixture_rights_and_retention": null,
+    "supported_stop_queue_admission_semantics": null
+  },
+  "validated_contract_constraints": [
+    "Pinned SDK wire has no per-session cancel/history/reconnect or incremental assistant-stream method",
+    "SDK notifications cover every runtime Session; client filtering is not access control",
+    "Pinned Web authentication admits one operator Peer, not two tenant principals",
+    "Authenticated generic file reads are not workspace directory-contained",
+    "Pinned cancel retains queued inbox work with keepInbox:true; ack is not no-new-work proof",
+    "Cordis isolate resolves services, not security principals; pure lifecycle is not durable evidence"
+  ],
+  "independent_acceptance_review": null,
+  "independent_quality_review": null,
+  "injection_attempts": [],
+  "side_effects_excluded": ["model calls", "paid access", "authenticated private operator reads", "private memory", "installation", "shared-service mutation", "deployment", "Git state changes", "forge writes"],
+  "rulings": [
+    {"actor": "issue-4-engineer", "decision": "Pin installed rc1/Cordis 4.0.4 separately from upstream attestation", "why": "Safe exact installed-byte execution without unauthorized upgrade", "cost_if_wrong": "Stale release or drift requires full tuple requalification"},
+    {"actor": "issue-4-engineer", "decision": "Use supported Web/API path for future qualification, not SDK-only or wrapper", "why": "SDK lacks required streaming/cancel/reconnect", "cost_if_wrong": "Future supported SDK extension requires a fresh pinned comparison"},
+    {"actor": "issue-4-engineer", "decision": "Reject operator surface as tenant authorization", "why": "One Peer plus broad file API cannot prove restricted-principal isolation", "cost_if_wrong": "Integration waits for reviewed server-enforced boundary"},
+    {"actor": "issue-4-engineer", "decision": "Do not equate keepInbox cancellation with stop-new-work", "why": "Queued inputs survive cancellation", "cost_if_wrong": "Application stop/admission contract remains a blocker"},
+    {"actor": "issue-4-engineer", "decision": "Keep live/authority unknowns null and outcome BLOCKED", "why": "No real authorized model/principal/runtime fixtures supplied", "cost_if_wrong": "Dependent implementation cannot treat this as accepted runtime"},
+    {"actor": "issue-4-engineer", "decision": "Exercise pure real Cordis cleanup/replacement only", "why": "Safe installed component proof without provider/shared-service effects", "cost_if_wrong": "Real evidence persistence, application HMR and tenancy need their own probes"}
+  ]
+}
