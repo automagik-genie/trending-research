@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:open-intelligence:evidence:1.0.0",
+  "title": "Open intelligence evidence bundle 1.0.0",
+  "description": "Source text is untrusted evidence. Cross-record invariants are specified in docs/contracts/evidence.md; this schema does not enforce references or hashes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "fixture_notice", "entities", "source_revisions", "evidence_spans", "observations", "claims", "evidence_links", "economic_relationships", "assessments", "publication_revisions", "replay_manifests", "scenes"],
+  "properties": {
+    "contract_version": {"const": "1.0.0"},
+    "fixture_notice": {"type": ["string", "null"]},
+    "entities": {"type": "array", "items": {"$ref": "#/$defs/Entity"}},
+    "source_revisions": {"type": "array", "items": {"$ref": "#/$defs/SourceRevision"}},
+    "evidence_spans": {"type": "array", "items": {"$ref": "#/$defs/EvidenceSpan"}},
+    "observations": {"type": "array", "items": {"$ref": "#/$defs/Observation"}},
+    "claims": {"type": "array", "items": {"$ref": "#/$defs/Claim"}},
+    "evidence_links": {"type": "array", "items": {"$ref": "#/$defs/EvidenceLink"}},
+    "economic_relationships": {"type": "array", "items": {"$ref": "#/$defs/EconomicRelationship"}},
+    "assessments": {"type": "array", "items": {"$ref": "#/$defs/Assessment"}},
+    "publication_revisions": {"type": "array", "items": {"$ref": "#/$defs/PublicationRevision"}},
+    "replay_manifests": {"type": "array", "items": {"$ref": "#/$defs/ReplayManifest"}},
+    "scenes": {"type": "array", "items": {"$ref": "#/$defs/Scene"}}
+  },
+  "$defs": {
+    "Id": {"type": "string", "minLength": 1, "description": "Opaque immutable identifier, globally unique across record collections. Never a display name or party-pair key."},
+    "NullableId": {"anyOf": [{"$ref": "#/$defs/Id"}, {"type": "null"}]},
+    "Text": {"type": "string", "minLength": 1},
+    "Ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/Id"}},
+    "EvidenceIds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/Id"}},
+    "Instant": {"type": "string", "format": "date-time", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"},
+    "NullableInstant": {"anyOf": [{"$ref": "#/$defs/Instant"}, {"type": "null"}]},
+    "Digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "Interval": {
+      "type": "object", "additionalProperties": false, "required": ["start", "end"],
+      "properties": {"start": {"$ref": "#/$defs/NullableInstant"}, "end": {"$ref": "#/$defs/NullableInstant"}},
+      "description": "Half-open [start,end). Null is unknown, not unbounded. A known interval requires start < end."
+    },
+    "Entity": {
+      "type": "object", "additionalProperties": false, "required": ["id", "kind", "name", "aliases"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "kind": {"enum": ["organization", "person", "product", "project"]}, "name": {"$ref": "#/$defs/Text"},
+        "aliases": {"type": "array", "uniqueItems": true, "items": {
+          "type": "object", "additionalProperties": false, "required": ["value", "scheme", "source_revision_id"],
+          "properties": {"value": {"$ref": "#/$defs/Text"}, "scheme": {"$ref": "#/$defs/Text"}, "source_revision_id": {"$ref": "#/$defs/NullableId"}}
+        }}
+      }
+    },
+    "SourceRevision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "source_id", "revision_of", "change_kind", "uri", "content_sha256", "content_text", "media_type", "source_published_at", "observed_at", "ingested_at", "origin_id", "retention_status", "reason"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "source_id": {"$ref": "#/$defs/Id"}, "revision_of": {"$ref": "#/$defs/NullableId"},
+        "change_kind": {"enum": ["original", "revision", "correction", "deletion"]}, "uri": {"type": ["string", "null"], "format": "uri"},
+        "content_sha256": {"anyOf": [{"$ref": "#/$defs/Digest"}, {"type": "null"}]}, "content_text": {"type": ["string", "null"]}, "media_type": {"type": ["string", "null"]},
+        "source_published_at": {"$ref": "#/$defs/NullableInstant"}, "observed_at": {"$ref": "#/$defs/NullableInstant"}, "ingested_at": {"$ref": "#/$defs/Instant"},
+        "origin_id": {"$ref": "#/$defs/Id"}, "retention_status": {"enum": ["retained", "redacted", "unavailable"]}, "reason": {"type": ["string", "null"]}
+      }
+    },
+    "EvidenceSpan": {
+      "type": "object", "additionalProperties": false, "required": ["id", "source_revision_id", "selector", "quote"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "source_revision_id": {"$ref": "#/$defs/Id"}, "quote": {"$ref": "#/$defs/Text"},
+        "selector": {"type": "object", "additionalProperties": false, "required": ["kind", "start", "end"], "properties": {
+          "kind": {"const": "utf8_text"}, "start": {"type": "integer", "minimum": 0}, "end": {"type": "integer", "minimum": 1}
+        }}
+      }
+    },
+    "Observation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "entity_id", "metric", "value", "unit", "scope", "period", "event_validity", "observed_at", "ingested_at", "evidence_span_ids", "revision_of"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "entity_id": {"$ref": "#/$defs/Id"}, "metric": {"$ref": "#/$defs/Text"}, "value": {"type": ["number", "null"]},
+        "unit": {"$ref": "#/$defs/Text"}, "scope": {"$ref": "#/$defs/Text"}, "period": {"$ref": "#/$defs/Interval"}, "event_validity": {"$ref": "#/$defs/Interval"},
+        "observed_at": {"$ref": "#/$defs/NullableInstant"}, "ingested_at": {"$ref": "#/$defs/Instant"}, "evidence_span_ids": {"$ref": "#/$defs/EvidenceIds"}, "revision_of": {"$ref": "#/$defs/NullableId"}
+      }
+    },
+    "Claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "entity_ids", "proposition", "asserted_by_entity_id", "evidence_span_ids", "event_validity", "ingested_at", "revision_of", "status"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "entity_ids": {"$ref": "#/$defs/EvidenceIds"}, "proposition": {"$ref": "#/$defs/Text"}, "asserted_by_entity_id": {"$ref": "#/$defs/NullableId"},
+        "evidence_span_ids": {"$ref": "#/$defs/EvidenceIds"}, "event_validity": {"$ref": "#/$defs/Interval"}, "ingested_at": {"$ref": "#/$defs/Instant"}, "revision_of": {"$ref": "#/$defs/NullableId"}, "status": {"enum": ["asserted", "retracted"]}
+      }
+    },
+    "EvidenceLink": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "from_claim_id", "to_claim_id", "relation", "evidence_span_ids", "attributed_to_entity_id", "ingested_at"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "from_claim_id": {"$ref": "#/$defs/Id"}, "to_claim_id": {"$ref": "#/$defs/Id"}, "relation": {"enum": ["supports", "contradicts"]},
+        "evidence_span_ids": {"$ref": "#/$defs/EvidenceIds"}, "attributed_to_entity_id": {"$ref": "#/$defs/NullableId"}, "ingested_at": {"$ref": "#/$defs/Instant"}
+      }
+    },
+    "EconomicRelationship": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "transaction_id", "kind", "from_entity_id", "to_entity_id", "amount", "currency", "period", "reporting_party_entity_id", "status", "evidence_span_ids", "event_validity", "ingested_at", "revision_of"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "transaction_id": {"$ref": "#/$defs/Id"}, "kind": {"enum": ["equity", "debt", "cloud_credit", "commitment", "recognized_revenue"]},
+        "from_entity_id": {"$ref": "#/$defs/Id"}, "to_entity_id": {"$ref": "#/$defs/Id"}, "amount": {"type": ["number", "null"]}, "currency": {"type": ["string", "null"], "pattern": "^[A-Z]{3}$"},
+        "period": {"$ref": "#/$defs/Interval"}, "reporting_party_entity_id": {"$ref": "#/$defs/NullableId"}, "status": {"enum": ["announced", "committed", "completed", "recognized", "cancelled", "unknown"]},
+        "evidence_span_ids": {"$ref": "#/$defs/EvidenceIds"}, "event_validity": {"$ref": "#/$defs/Interval"}, "ingested_at": {"$ref": "#/$defs/Instant"}, "revision_of": {"$ref": "#/$defs/NullableId"}
+      }
+    },
+    "Confidence": {
+      "type": "object", "additionalProperties": false, "required": ["coverage", "verification", "freshness", "independence"],
+      "properties": {
+        "coverage": {"type": "object", "additionalProperties": false, "required": ["numerator", "denominator", "scope"], "properties": {
+          "numerator": {"type": ["integer", "null"], "minimum": 0}, "denominator": {"type": ["integer", "null"], "minimum": 1}, "scope": {"$ref": "#/$defs/Text"}
+        }},
+        "verification": {"enum": ["unverified", "source_checked", "independently_replicated", "disputed"]},
+        "freshness": {"type": "object", "additionalProperties": false, "required": ["assessed_at", "newest_evidence_at"], "properties": {
+          "assessed_at": {"$ref": "#/$defs/NullableInstant"}, "newest_evidence_at": {"$ref": "#/$defs/NullableInstant"}
+        }},
+        "independence": {"type": "object", "additionalProperties": false, "required": ["origin_ids", "rationale"], "properties": {
+          "origin_ids": {"$ref": "#/$defs/Ids"}, "rationale": {"type": ["string", "null"]}
+        }}
+      }
+    },
+    "Assessment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "claim_ids", "conclusion", "confidence", "evidence_cutoff", "method_version", "computed_at", "attributed_to_entity_id", "revision_of"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "claim_ids": {"$ref": "#/$defs/EvidenceIds"}, "conclusion": {"$ref": "#/$defs/Text"}, "confidence": {"$ref": "#/$defs/Confidence"},
+        "evidence_cutoff": {"$ref": "#/$defs/Instant"}, "method_version": {"$ref": "#/$defs/Text"}, "computed_at": {"$ref": "#/$defs/Instant"}, "attributed_to_entity_id": {"$ref": "#/$defs/NullableId"}, "revision_of": {"$ref": "#/$defs/NullableId"}
+      }
+    },
+    "PublicationRevision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "publication_id", "revision_of", "assessment_ids", "replay_manifest_id", "status", "editorial_actor_entity_id", "approved_at", "published_at"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "publication_id": {"$ref": "#/$defs/Id"}, "revision_of": {"$ref": "#/$defs/NullableId"}, "assessment_ids": {"$ref": "#/$defs/EvidenceIds"},
+        "replay_manifest_id": {"$ref": "#/$defs/Id"}, "status": {"enum": ["draft", "published", "corrected", "retracted"]}, "editorial_actor_entity_id": {"$ref": "#/$defs/NullableId"}, "approved_at": {"$ref": "#/$defs/NullableInstant"}, "published_at": {"$ref": "#/$defs/NullableInstant"}
+      }
+    },
+    "ReplayManifest": {
+      "type": "object", "additionalProperties": false, "required": ["id", "evidence_cutoff", "method_version", "input_records", "computed_at", "history_mode"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "evidence_cutoff": {"$ref": "#/$defs/Instant"}, "method_version": {"$ref": "#/$defs/Text"}, "computed_at": {"$ref": "#/$defs/Instant"}, "history_mode": {"const": "known_at_cutoff"},
+        "input_records": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {
+          "type": "object", "additionalProperties": false, "required": ["collection", "id", "sha256"], "properties": {
+            "collection": {"enum": ["entities", "source_revisions", "evidence_spans", "observations", "claims", "evidence_links", "economic_relationships"]},
+            "id": {"$ref": "#/$defs/Id"}, "sha256": {"$ref": "#/$defs/Digest"}
+          }
+        }}
+      }
+    },
+    "Scene": {
+      "type": "object", "additionalProperties": false, "required": ["id", "publication_revision_id", "assessment_ids", "entity_ids", "evidence_cutoff", "method_version"],
+      "properties": {
+        "id": {"$ref": "#/$defs/Id"}, "publication_revision_id": {"$ref": "#/$defs/NullableId"}, "assessment_ids": {"$ref": "#/$defs/EvidenceIds"}, "entity_ids": {"$ref": "#/$defs/EvidenceIds"}, "evidence_cutoff": {"$ref": "#/$defs/Instant"}, "method_version": {"$ref": "#/$defs/Text"}
+      }
+    }
+  }
+}
