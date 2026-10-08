@@ -1,0 +1,327 @@
+{
+  "issue": 3,
+  "group": 2,
+  "observed_at": "2026-10-08T07:48:46.241422+00:00",
+  "producer_settled": "ctx_97db8118e541 succeeded/released, no active writer",
+  "aggregate": {
+    "command": "python3 -B -m unittest discover tests && python3 -B eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "exit_code": 0,
+    "tests": 43,
+    "stderr": "...........................................\n----------------------------------------------------------------------\nRan 43 tests in 0.124s\n\nOK\n",
+    "stdout_sha256": "e1cc9a457e4068aa5e035aa36d989417b8514f94687c13a4b8ccabeadd1b8235",
+    "warnings_observed": 0
+  },
+  "actual_source_consumer": {
+    "command": "python3 -B -c 'from pathlib import Path; text = Path(\"docs/sources/economics-panel.md\").read_text(); exec(compile(text.split(\"```python\\n\", 1)[1].split(\"\\n```\", 1)[0], \"economics-panel-smoke\", \"exec\"))'",
+    "exit_code": 0,
+    "stdout_sha256": "dd6a9f7e29edbed807cb602a1ece6fdfd9d36e9330b20e1eb6a3d5a8d81ac2bd",
+    "actual_observations": {
+      "registry_sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+      "registered": 23,
+      "body_qualified": 15,
+      "blocked": 8,
+      "eligible_financial_sources": [
+        "source:wikidata:Q2283",
+        "source:wikidata:Q3884"
+      ],
+      "first_release_source_state": "qualified_subset_available",
+      "financial_assertions": [
+        {
+          "statement": "Q2283$564CF0AD-3A7D-4250-AA0C-40518A8833D9",
+          "amount_decimal": "+281724000000",
+          "unit": "USD",
+          "rank": "normal",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "22efcef23f2150994668550a1f67ce544b2cab3b",
+                "datavalue": {
+                  "value": {
+                    "time": "+2025-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "e4a8b72441917c817a77f67bf2d97d29e5daa23a",
+                "datavalue": {
+                  "value": {
+                    "time": "+2024-07-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 11,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P582": [
+              {
+                "snaktype": "value",
+                "property": "P582",
+                "hash": "17ee0c64500cd1da7c49017561902ee7244ce202",
+                "datavalue": {
+                  "value": {
+                    "time": "+2025-06-30T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 11,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "issuer_references": [
+            "https://www.sec.gov/Archives/edgar/data/0000789019/000095017025100235/msft-20250630.htm"
+          ],
+          "origin": "origin:msft:report25"
+        },
+        {
+          "statement": "Q2283$36342234-E848-496F-990C-6B97CC151BCC",
+          "amount_decimal": "+331839000000",
+          "unit": "USD",
+          "rank": "preferred",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "bd4e608fca97bfd620514f81e735833b9d96e34d",
+                "datavalue": {
+                  "value": {
+                    "time": "+2026-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "bc236d6d4c64d566399b8154dd7d0650881125ca",
+                "datavalue": {
+                  "value": {
+                    "time": "+2025-07-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 11,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P582": [
+              {
+                "snaktype": "value",
+                "property": "P582",
+                "hash": "d452a94555a869a7ba91a314d56c78ff3157f022",
+                "datavalue": {
+                  "value": {
+                    "time": "+2026-06-30T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 11,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "issuer_references": [
+            "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm"
+          ],
+          "origin": "origin:msft:report26"
+        },
+        {
+          "statement": "Q3884$5F15DD1E-D2B7-48FC-A005-0955CBA83D76",
+          "amount_decimal": "+637959000000",
+          "unit": "USD",
+          "rank": "normal",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "daee777a902fd7cd73351aa33ba07e0a22d4fb9b",
+                "datavalue": {
+                  "value": {
+                    "time": "+2024-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "issuer_references": [
+            "https://www.sec.gov/Archives/edgar/data/0001018724/000101872425000004/amzn-20241231.htm"
+          ],
+          "origin": "origin:amzn:report24"
+        },
+        {
+          "statement": "Q3884$722DAFD9-BCFA-47EB-99BC-9C02BC61B699",
+          "amount_decimal": "+716924000000",
+          "unit": "USD",
+          "rank": "preferred",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "22efcef23f2150994668550a1f67ce544b2cab3b",
+                "datavalue": {
+                  "value": {
+                    "time": "+2025-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "issuer_references": [
+            "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000004/amzn-20251231.htm"
+          ],
+          "origin": "origin:amzn:report25"
+        }
+      ],
+      "negative_controls": [
+        {
+          "control": "paid promotion",
+          "rejected_by": "paid source marked operational"
+        },
+        {
+          "control": "blocked promotion",
+          "rejected_by": "blocked source marked operational"
+        },
+        {
+          "control": "missing body",
+          "rejected_by": "operational source without body receipt"
+        },
+        {
+          "control": "common origin",
+          "rejected_by": "common-source evidence counted as independent corroboration"
+        },
+        {
+          "control": "private metric",
+          "rejected_by": "unknown private metric filled"
+        },
+        {
+          "control": "recurring budget",
+          "rejected_by": "unapproved recurring budget promoted"
+        },
+        {
+          "control": "unlicensed eligibility",
+          "rejected_by": "unqualified release eligibility"
+        },
+        {
+          "control": "missing original",
+          "rejected_by": "licensed original unavailable"
+        },
+        {
+          "control": "corrupt original",
+          "rejected_by": "encoded original mismatch"
+        },
+        {
+          "control": "wrong revision",
+          "rejected_by": "captured identity revision mismatch"
+        },
+        {
+          "control": "wrong namespace",
+          "rejected_by": "captured identity revision mismatch"
+        },
+        {
+          "control": "nonCC0 scope",
+          "rejected_by": "invalid licensed rights scope"
+        },
+        {
+          "control": "bad source binding",
+          "rejected_by": "financial source binding mismatch"
+        },
+        {
+          "control": "bad span",
+          "rejected_by": "financial span mismatch"
+        },
+        {
+          "control": "bad quantity",
+          "rejected_by": "financial quantity unit drift"
+        },
+        {
+          "control": "bad currency",
+          "rejected_by": "financial quantity unit drift"
+        },
+        {
+          "control": "reference lost",
+          "rejected_by": "financial provenance drift"
+        },
+        {
+          "control": "invented midnight",
+          "rejected_by": "precision recognition promoted"
+        },
+        {
+          "control": "origin laundering",
+          "rejected_by": "financial origin laundering"
+        }
+      ]
+    }
+  },
+  "final_paths_sha256": {
+    "docs/sources/economics-panel.md": "f956945040da740109077e17d112df64fc2ea2223692e2cbda0b8a70c06fbcc5",
+    "investigations/frontier-economics/sources.json": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+    "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+    "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+    "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+    "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+    "investigations/frontier-economics/licensed-sources/NOTICE.md": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3"
+  },
+  "measured_text_diff_against_c5d1ab8": {
+    "existing_docs_registry_insertions": 566,
+    "existing_docs_registry_deletions": 122,
+    "new_notice_insertions": 30,
+    "binary_bytes": 192451,
+    "note": "Actual git numstat differs author line-count estimate by one insertion/deletion; immutable bytes and behavior verified, no consumer/acceptance difference."
+  },
+  "limits": "Original source independent acceptance+separate quality pending; secondary source assertions are not verified issuer recognized revenue or AI economics; no private/global/period/recurring/editorial/runtime/deploy/CI approval."
+}

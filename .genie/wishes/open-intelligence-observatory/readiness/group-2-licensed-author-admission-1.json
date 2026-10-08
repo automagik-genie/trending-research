@@ -1,0 +1,183 @@
+{
+  "issue": 3,
+  "group": 2,
+  "base_sha": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "current_source_checkpoint": "c5d1ab85331225007848dd60bc90086f79f6e965 (coordinator supplied, no Git invoked)",
+  "acknowledgment": "Read new licensed retry, amended WISH, independent route SHIP and fresh coordinator directive; preserved prior clock repair and historical qualification; exclusively own source paths after reviewers settled. Repair1/2 unchanged.",
+  "owned_paths": [
+    "docs/sources/economics-panel.md",
+    "investigations/frontier-economics/sources.json",
+    "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+    "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+    "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+    "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+    "investigations/frontier-economics/licensed-sources/NOTICE.md"
+  ],
+  "estimate_files": 7,
+  "estimate_insertions": 1000,
+  "estimate_encoded_original_bytes": 200000,
+  "accepted_dependencies": [
+    {
+      "issue": 2,
+      "artifact_commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "independent_design": "SHIP",
+      "independent_quality": "SHIP",
+      "public_evidence": "https://github.com/namastex888/trending-research/issues/2#issuecomment-6052666339"
+    },
+    {
+      "ownership_source_route": "SHIP",
+      "report": ".genie/wishes/open-intelligence-observatory/verification/licensed-alternative-route-review.md",
+      "sha256": "7f3f8610c22b8208bc3f911ab9ee8199badb481922c3c00a331bc36d1b10a944"
+    }
+  ],
+  "input_artifacts": [
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "272623d795c0ecee622f5bff3ad014acd3823cbcd054349dd9eb572b51c11d3b"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+      "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-2-licensed-retry-1.json",
+      "sha256": "eab7554eb6d837166b26e8ef9ea3b561415acca848f8db83dbf76c2df107aa1c"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/licensed-alternative-route-review.md",
+      "sha256": "7f3f8610c22b8208bc3f911ab9ee8199badb481922c3c00a331bc36d1b10a944"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+      "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+      "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+    },
+    {
+      "path": "docs/sources/economics-panel.md",
+      "sha256": "ab75486dc0eb0da8d1de32b59b45a2bb798fbf295f59be2309e8bfa89a65166e"
+    },
+    {
+      "path": "investigations/frontier-economics/sources.json",
+      "sha256": "d5e473de5e067b8348e4c333e1fec81691787006d7812405e9e5c08050d357dd"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    }
+  ],
+  "interfaces": {
+    "registry_version": "1.1.0 clean registry cutover; original row fields unchanged, append acquired metadata rows and licensed_subset; docs consumer migrates",
+    "licensed_subset": [
+      "version",
+      "acquisitions",
+      "financial_statements",
+      "limitations"
+    ],
+    "acquisition_fields": [
+      "source_id",
+      "source_revision_id",
+      "entity_id",
+      "namespace",
+      "requested_revision",
+      "observed_revision",
+      "source_modified_at",
+      "request_url",
+      "response_url",
+      "request_started_at",
+      "request_finished_at",
+      "http_status",
+      "content_type",
+      "content_encoding",
+      "http_date",
+      "http_last_modified",
+      "original_path",
+      "original_bytes",
+      "original_sha256",
+      "decoded_utf8_bytes",
+      "decoded_utf8_sha256",
+      "license",
+      "rights_scope",
+      "property_datatype",
+      "unit_code"
+    ],
+    "financial_statement_fields": [
+      "id",
+      "source_id",
+      "source_revision_id",
+      "entity_id",
+      "property_id",
+      "rank",
+      "amount_decimal",
+      "unit_uri",
+      "currency",
+      "qualifiers",
+      "references",
+      "period",
+      "event_validity",
+      "recognition_basis",
+      "verification",
+      "origin_id",
+      "selector",
+      "quote_sha256"
+    ],
+    "selector": {
+      "kind": "decoded_utf8_json",
+      "start": "inclusive UTF8 byte offset",
+      "end": "exclusive UTF8 byte offset",
+      "decoded_sha256": "exact decompressed UTF8 bytes"
+    },
+    "domain_boundary": "acquisition registry semantic selection, not invented accepted EvidenceBundle/Brain ingestion; SourceRevision/Observation consumption preserves UTF8 hash/span/null period semantics; structured JSON media is explicitly identified, not v1 plain-text record fiction"
+  },
+  "runtime_identity": {
+    "binary": "/usr/bin/python3",
+    "version": "3.14.4",
+    "genie": "6.261005.4",
+    "profile": null,
+    "transport": "stdlib urllib anonymous serial GET"
+  },
+  "prerequisites": {
+    "access": "Four exact formatted EntityData GET URLs with revisions from group-2-licensed-retry-1; authentic project User-Agent AcceptJSON Accept-Encodinggzip; no retries/auth/cookies/crawl",
+    "fixtures": "actual acquired complete entity JSON, not reviewer scratch",
+    "storage": "only four immutable encoded response files in frozen licensed-sources directory",
+    "principal": "anonymous project client; issuer/editorial/spend actors null",
+    "rights": "reviewed structured main/Property CC0 grant + authored NOTICE links, not copied policy prose/issuer originals",
+    "budget": "USD0 external paid-access ceiling proposal; no new collection/model call; session/storage unknown",
+    "authorization": "bounded free one-off route only; recurring/edit/deploy/Brain/DSH forbidden"
+  },
+  "smoke": {
+    "command": "python3 -B -c 'from pathlib import Path; text = Path(\"docs/sources/economics-panel.md\").read_text(); exec(compile(text.split(\"```python\\n\", 1)[1].split(\"\\n```\", 1)[0], \"economics-panel-smoke\", \"exec\"))'",
+    "expected": "all existing 19 rows preserved plus four CC0 acquired sources; all four exact IDs/namespaces/revisions raw and decoded SHA/length match; financial quantity assertions for Microsoft FY25/FY26 and Amazon year24/year25 retain exact rank/precision/qualifiers/reference; four statements resolve exact bytes independently of network; Microsoft explicit day endpoints stay noninstant and Amazon null intervals; no private/global/recognition/spend invention; only qualified acquired financial sources release eligible",
+    "failure_assertions": [
+      "missing/corrupt original",
+      "wrong revision/namespace",
+      "invalid rights scope",
+      "altered span/binding",
+      "quantity/unit drift",
+      "period precision promoted",
+      "source origin laundering",
+      "blocked/paid/no-body promotion",
+      "private missingness filled",
+      "recurring budget approved",
+      "release eligibility includes unlicensed original"
+    ]
+  },
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "aggregate_ownership": "coordinator after complete slice settlement as fresh directive; not worker run midflight; request confirmation this sequencing remains frozen",
+  "unavailable_disposition": "failed acquisition named blocked; do not promote AC4 unless actual financially usable licensed subset verified. AC4 source eligibility is distinct from complete flagship/editorial/runtime/deployment acceptance. No issuer accuracy/comparability claim.",
+  "injection_attempts": "No source instructions executed; previous X source directives preserved; route policies navigation/account/contact examples remain untrusted.",
+  "coordinator_admission": {
+    "accepted_at": "2026-10-08T07:28:57.158477+00:00",
+    "question_id": "msg_51abe2fa15e2",
+    "dispatch": "ctx_97db8118e541",
+    "decision": "ACCEPT exact paths/interface/command; bounded actual one-off source acquisition only",
+    "command_parse": "Python -c payload compiled successfully without executing it",
+    "aggregate": "coordinator after full slice settlement, no worker shared midflight gate",
+    "accounting_correction": "Four actual anonymous HTTP acquisitions are source-read/collection requests, not zero collection. Zero new classification/model/paid-provider calls. USD0 external paid-access cap approved for this public one-off route only; historical recurring proposal remains unapproved; total session/storage cost unknown.",
+    "source_revision_boundary": "No accepted domain contract/schema mutation. Structured JSON acquisition registry is explicit; later #6 must prove actual contract/span/clock mapping, not fabricated text/plain or Brain persisted records.",
+    "ownership": "exact seven named files; no other production path or semantic store",
+    "budgets": "prior repair1/2 B2 and escalation0/2 unchanged"
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "registry_version": "1.0.0",
+  "registry_version": "1.1.0",
   "investigation_id": "investigation:frontier-economics",
-  "plan_identity": {"wish": "open-intelligence-observatory", "issue": 3, "group": 2, "task_card": "t_muz1j2jr4b6ecb03", "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e", "readiness_path": ".genie/wishes/open-intelligence-observatory/readiness/group-2.json"},
+  "plan_identity": {"wish": "open-intelligence-observatory", "issue": 3, "group": 2, "task_card": "t_muz1j2jr4b6ecb03", "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e", "readiness_path": ".genie/wishes/open-intelligence-observatory/readiness/group-2.json", "licensed_readiness_path": ".genie/wishes/open-intelligence-observatory/readiness/group-2-licensed-author-admission-1.json"},
   "qualified_by": "issue-3-engineer",
   "qualification_window": {"start": "2026-10-08T05:04:19Z", "end": "2026-10-08T05:32:18Z"},
   "evidence_contract": {"version": "1.0.0", "schema_path": "schemas/evidence.schema.json", "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f", "consumed_records": ["SourceRevision", "Observation"], "status": "acquisition metadata only; no EvidenceBundle, accepted ingestion, financial assessment or synthetic original/spans"},
@@ -484,12 +484,360 @@
       "freshness": {"last_success_window": {"start": "2026-10-08T05:04:19Z", "end": "2026-10-08T05:32:18Z"}, "source_update_instant": null, "stale_after_days": null, "expectation": "Requalify body/rights/date before acquisition or publishing; old disclosures stay historical, mutable prices need fresh capture."},
       "limitations": "No written research agreement, approved endpoint/principal or owner consent. No browser-cookie reuse, logged-in scraping, profile harvesting or private-memory access."
     }
+,
+{
+      "id": "source:wikidata:Q2283",
+      "title": "Microsoft — pinned Wikidata structured record",
+      "publisher": "Wikidata contributors",
+      "author": null,
+      "entity_ids": [
+        "entity:microsoft"
+      ],
+      "question_ids": [
+        "question:public-finances"
+      ],
+      "kind": "community_financial_assertion",
+      "role": "secondary",
+      "language": "en",
+      "cohort": "Community-edited structured dataset; English labels selected; not corporate audit or representative narrative sample",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2283.json?revision=2550576892",
+      "origin_ids": [
+        "origin:msft:report25",
+        "origin:msft:report26"
+      ],
+      "origin_rationale": "Selected assertions inherit linked issuer disclosure lineage; community restatement is not independent corroboration.",
+      "state": "operational",
+      "blocked": null,
+      "read_receipt": {
+        "request_url": "https://www.wikidata.org/wiki/Special:EntityData/Q2283.json?revision=2550576892",
+        "response_url": "https://www.wikidata.org/wiki/Special:EntityData/Q2283.json?revision=2550576892",
+        "method": "stdlib-urllib-anonymous-GET",
+        "result": "body_read",
+        "attempt_window": {
+          "start": "2026-10-08T07:29:26.918624Z",
+          "end": "2026-10-08T07:29:27.430930Z"
+        },
+        "http_status": 200,
+        "body_verified": true,
+        "body_markers": [
+          "complete entities object",
+          "Q2283",
+          "lastrevid=2550576892"
+        ],
+        "source_published_at": null,
+        "source_date_text": null,
+        "original_sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+        "retained_original": true
+      },
+      "access": {
+        "method": "anonymous serial pinned public EntityData GET; no supplied authentication/cookies",
+        "principal": null,
+        "recurring_enabled": false,
+        "operational_scope": "one-off acquired exact CC0 revision only",
+        "requires_paid_data_access": false
+      },
+      "rights": {
+        "terms_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "basis": "Reviewed CC0-1.0 structured main/Property grant; authored NOTICE specifies primary URLs, scope and caveats.",
+        "retention_permission": true,
+        "redistribution_permission": true,
+        "retention_days": null,
+        "disposition": "Complete encoded structured response retained; CC0 imposes no maximum retention period; null duration is not an inferred unlimited service promise. Linked materials are not acquired or licensed."
+      },
+      "quota_cost": {
+        "provider_quota_available": null,
+        "qualification_paid_access_usd": 0,
+        "recurring_cost_usd": null,
+        "published_rate_usd": null,
+        "published_rate_unit": null,
+        "provider_limit_note": "Free anonymous public GET; observed global limits are not allocated quota. Serial reads, 10-second spacing, no retries/crawl."
+      },
+      "cadence": {
+        "provider": "community edits; no fixed schedule",
+        "proposed_refresh": null,
+        "enabled": false
+      },
+      "history": {
+        "observed_scope": "One exact revision; four selected financial statements across two entities only; other content unadjudicated",
+        "earliest_available_at": null,
+        "complete": false
+      },
+      "freshness": {
+        "last_success_window": {
+          "start": "2026-10-08T07:29:26.918624Z",
+          "end": "2026-10-08T07:29:27.430930Z"
+        },
+        "source_update_instant": "2026-09-28T17:59:51Z",
+        "stale_after_days": null,
+        "expectation": "Pinned historical revision, not latest current state; next acquisition creates a new immutable revision."
+      },
+      "limitations": "Secondary community total revenue assertions, not verified recognized revenue/AI allocation; no same-currency period comparability."
+    },
+{
+      "id": "source:wikidata:Q3884",
+      "title": "Amazon — pinned Wikidata structured record",
+      "publisher": "Wikidata contributors",
+      "author": null,
+      "entity_ids": [
+        "entity:amazon"
+      ],
+      "question_ids": [
+        "question:public-finances"
+      ],
+      "kind": "community_financial_assertion",
+      "role": "secondary",
+      "language": "en",
+      "cohort": "Community-edited structured dataset; English labels selected; not corporate audit or representative narrative sample",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3884.json?revision=2546229470",
+      "origin_ids": [
+        "origin:amzn:report24",
+        "origin:amzn:report25"
+      ],
+      "origin_rationale": "Selected assertions inherit linked issuer disclosure lineage; community restatement is not independent corroboration.",
+      "state": "operational",
+      "blocked": null,
+      "read_receipt": {
+        "request_url": "https://www.wikidata.org/wiki/Special:EntityData/Q3884.json?revision=2546229470",
+        "response_url": "https://www.wikidata.org/wiki/Special:EntityData/Q3884.json?revision=2546229470",
+        "method": "stdlib-urllib-anonymous-GET",
+        "result": "body_read",
+        "attempt_window": {
+          "start": "2026-10-08T07:29:37.445710Z",
+          "end": "2026-10-08T07:29:37.651378Z"
+        },
+        "http_status": 200,
+        "body_verified": true,
+        "body_markers": [
+          "complete entities object",
+          "Q3884",
+          "lastrevid=2546229470"
+        ],
+        "source_published_at": null,
+        "source_date_text": null,
+        "original_sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+        "retained_original": true
+      },
+      "access": {
+        "method": "anonymous serial pinned public EntityData GET; no supplied authentication/cookies",
+        "principal": null,
+        "recurring_enabled": false,
+        "operational_scope": "one-off acquired exact CC0 revision only",
+        "requires_paid_data_access": false
+      },
+      "rights": {
+        "terms_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "basis": "Reviewed CC0-1.0 structured main/Property grant; authored NOTICE specifies primary URLs, scope and caveats.",
+        "retention_permission": true,
+        "redistribution_permission": true,
+        "retention_days": null,
+        "disposition": "Complete encoded structured response retained; CC0 imposes no maximum retention period; null duration is not an inferred unlimited service promise. Linked materials are not acquired or licensed."
+      },
+      "quota_cost": {
+        "provider_quota_available": null,
+        "qualification_paid_access_usd": 0,
+        "recurring_cost_usd": null,
+        "published_rate_usd": null,
+        "published_rate_unit": null,
+        "provider_limit_note": "Free anonymous public GET; observed global limits are not allocated quota. Serial reads, 10-second spacing, no retries/crawl."
+      },
+      "cadence": {
+        "provider": "community edits; no fixed schedule",
+        "proposed_refresh": null,
+        "enabled": false
+      },
+      "history": {
+        "observed_scope": "One exact revision; four selected financial statements across two entities only; other content unadjudicated",
+        "earliest_available_at": null,
+        "complete": false
+      },
+      "freshness": {
+        "last_success_window": {
+          "start": "2026-10-08T07:29:37.445710Z",
+          "end": "2026-10-08T07:29:37.651378Z"
+        },
+        "source_update_instant": "2026-09-15T14:38:34Z",
+        "stale_after_days": null,
+        "expectation": "Pinned historical revision, not latest current state; next acquisition creates a new immutable revision."
+      },
+      "limitations": "Secondary community total revenue assertions, not verified recognized revenue/AI allocation; no same-currency period comparability."
+    },
+{
+      "id": "source:wikidata:P2139",
+      "title": "total revenue — pinned Wikidata structured record",
+      "publisher": "Wikidata contributors",
+      "author": null,
+      "entity_ids": [],
+      "question_ids": [
+        "question:public-finances"
+      ],
+      "kind": "property_unit_metadata",
+      "role": "secondary",
+      "language": "en",
+      "cohort": "Community-edited structured dataset; English labels selected; not corporate audit or representative narrative sample",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/P2139.json?revision=2547354403",
+      "origin_ids": [
+        "origin:wikidata:P2139:metadata"
+      ],
+      "origin_rationale": "Property/unit semantics only, not independent financial evidence.",
+      "state": "operational",
+      "blocked": null,
+      "read_receipt": {
+        "request_url": "https://www.wikidata.org/wiki/Special:EntityData/P2139.json?revision=2547354403",
+        "response_url": "https://www.wikidata.org/wiki/Special:EntityData/P2139.json?revision=2547354403",
+        "method": "stdlib-urllib-anonymous-GET",
+        "result": "body_read",
+        "attempt_window": {
+          "start": "2026-10-08T07:29:47.660933Z",
+          "end": "2026-10-08T07:29:47.856744Z"
+        },
+        "http_status": 200,
+        "body_verified": true,
+        "body_markers": [
+          "complete entities object",
+          "P2139",
+          "lastrevid=2547354403"
+        ],
+        "source_published_at": null,
+        "source_date_text": null,
+        "original_sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+        "retained_original": true
+      },
+      "access": {
+        "method": "anonymous serial pinned public EntityData GET; no supplied authentication/cookies",
+        "principal": null,
+        "recurring_enabled": false,
+        "operational_scope": "one-off acquired exact CC0 revision only",
+        "requires_paid_data_access": false
+      },
+      "rights": {
+        "terms_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "basis": "Reviewed CC0-1.0 structured main/Property grant; authored NOTICE specifies primary URLs, scope and caveats.",
+        "retention_permission": true,
+        "redistribution_permission": true,
+        "retention_days": null,
+        "disposition": "Complete encoded structured response retained; CC0 imposes no maximum retention period; null duration is not an inferred unlimited service promise. Linked materials are not acquired or licensed."
+      },
+      "quota_cost": {
+        "provider_quota_available": null,
+        "qualification_paid_access_usd": 0,
+        "recurring_cost_usd": null,
+        "published_rate_usd": null,
+        "published_rate_unit": null,
+        "provider_limit_note": "Free anonymous public GET; observed global limits are not allocated quota. Serial reads, 10-second spacing, no retries/crawl."
+      },
+      "cadence": {
+        "provider": "community edits; no fixed schedule",
+        "proposed_refresh": null,
+        "enabled": false
+      },
+      "history": {
+        "observed_scope": "One exact revision; four selected financial statements across two entities only; other content unadjudicated",
+        "earliest_available_at": null,
+        "complete": false
+      },
+      "freshness": {
+        "last_success_window": {
+          "start": "2026-10-08T07:29:47.660933Z",
+          "end": "2026-10-08T07:29:47.856744Z"
+        },
+        "source_update_instant": "2026-09-18T08:23:40Z",
+        "stale_after_days": null,
+        "expectation": "Pinned historical revision, not latest current state; next acquisition creates a new immutable revision."
+      },
+      "limitations": "Necessary quantity/USD semantics; no extra entity panel or financial corroboration."
+    },
+{
+      "id": "source:wikidata:Q4917",
+      "title": "United States dollar — pinned Wikidata structured record",
+      "publisher": "Wikidata contributors",
+      "author": null,
+      "entity_ids": [],
+      "question_ids": [
+        "question:public-finances"
+      ],
+      "kind": "property_unit_metadata",
+      "role": "secondary",
+      "language": "en",
+      "cohort": "Community-edited structured dataset; English labels selected; not corporate audit or representative narrative sample",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4917.json?revision=2554037296",
+      "origin_ids": [
+        "origin:wikidata:Q4917:metadata"
+      ],
+      "origin_rationale": "Property/unit semantics only, not independent financial evidence.",
+      "state": "operational",
+      "blocked": null,
+      "read_receipt": {
+        "request_url": "https://www.wikidata.org/wiki/Special:EntityData/Q4917.json?revision=2554037296",
+        "response_url": "https://www.wikidata.org/wiki/Special:EntityData/Q4917.json?revision=2554037296",
+        "method": "stdlib-urllib-anonymous-GET",
+        "result": "body_read",
+        "attempt_window": {
+          "start": "2026-10-08T07:29:57.859819Z",
+          "end": "2026-10-08T07:29:58.336836Z"
+        },
+        "http_status": 200,
+        "body_verified": true,
+        "body_markers": [
+          "complete entities object",
+          "Q4917",
+          "lastrevid=2554037296"
+        ],
+        "source_published_at": null,
+        "source_date_text": null,
+        "original_sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+        "retained_original": true
+      },
+      "access": {
+        "method": "anonymous serial pinned public EntityData GET; no supplied authentication/cookies",
+        "principal": null,
+        "recurring_enabled": false,
+        "operational_scope": "one-off acquired exact CC0 revision only",
+        "requires_paid_data_access": false
+      },
+      "rights": {
+        "terms_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "basis": "Reviewed CC0-1.0 structured main/Property grant; authored NOTICE specifies primary URLs, scope and caveats.",
+        "retention_permission": true,
+        "redistribution_permission": true,
+        "retention_days": null,
+        "disposition": "Complete encoded structured response retained; CC0 imposes no maximum retention period; null duration is not an inferred unlimited service promise. Linked materials are not acquired or licensed."
+      },
+      "quota_cost": {
+        "provider_quota_available": null,
+        "qualification_paid_access_usd": 0,
+        "recurring_cost_usd": null,
+        "published_rate_usd": null,
+        "published_rate_unit": null,
+        "provider_limit_note": "Free anonymous public GET; observed global limits are not allocated quota. Serial reads, 10-second spacing, no retries/crawl."
+      },
+      "cadence": {
+        "provider": "community edits; no fixed schedule",
+        "proposed_refresh": null,
+        "enabled": false
+      },
+      "history": {
+        "observed_scope": "One exact revision; four selected financial statements across two entities only; other content unadjudicated",
+        "earliest_available_at": null,
+        "complete": false
+      },
+      "freshness": {
+        "last_success_window": {
+          "start": "2026-10-08T07:29:57.859819Z",
+          "end": "2026-10-08T07:29:58.336836Z"
+        },
+        "source_update_instant": "2026-10-06T16:57:23Z",
+        "stale_after_days": null,
+        "expectation": "Pinned historical revision, not latest current state; next acquisition creates a new immutable revision."
+      },
+      "limitations": "Necessary quantity/USD semantics; no extra entity panel or financial corroboration."
+    }
   ],
-  "origin_groups": [{"id": "origin:openai:funding26", "topic": "Common February 2026 funding/partner disclosure facts only", "source_ids": ["source:openai:funding26", "source:amzn:openai26", "source:techcrunch:funding26", "source:cnbc:funding26", "source:tecnoblog:funding26", "source:sec:amzn-exhibit26"], "upstream_url": "https://openai.com/index/scaling-ai-for-everyone/", "primary_body_status": "OpenAI issuer body blocked; Amazon partner leg successfully read", "basis": "TechCrunch and CNBC explicitly link issuer release; Tecnoblog explicitly cites CNBC/TechCrunch/Axios; Amazon joint partner announcement describes overlapping deal, SEC exhibit is an unqualified mirror.", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "This is not whole-article equivalence: separately reported interviews/unnamed-source forecasts need distinct claim-local origins and attribution before use."}, {"id": "origin:aws-anthropic:collaboration24", "topic": "Coordinated AWS/Anthropic investment and training announcement", "source_ids": ["source:anthropic:aws24", "source:amzn:anthropic24"], "upstream_url": "https://www.anthropic.com/news/anthropic-amazon-trainium", "primary_body_status": "Both party announcements read", "basis": "Both describe same additional investment/training partnership; Amazon includes Anthropic CEO statements. Two parties to one commercial deal are not independent audits.", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "No second transaction or extra invested amount inferred from duplicated coverage."}],
-  "coverage": {"denominator_scope": "Exactly the 19 registered candidate sources, not internet/market completeness", "registered_count": 19, "one_off_body_qualified_count": 11, "blocked_count": 8, "licensed_retained_original_count": 0, "narrative_source_ids": ["source:techcrunch:funding26", "source:cnbc:funding26", "source:tecnoblog:funding26", "source:ars:compute25"], "languages": ["en", "pt-BR"], "narrative_limitations": "Purposively selected startup, financial and Brazilian tech press plus first-party promotional discourse; skeptical Ars body blocked. No general users, workers/nonusers, platform posts or representative geography. Readability is not public excerpt clearance.", "global_sentiment": {"numerator": null, "denominator": null, "scope": "Not measured; finite panel cannot estimate internet sentiment"}, "entity_gaps": [{"entity_id": "entity:openai", "recognized_revenue": null, "realized_compute_cost": null, "operating_or_gross_margin": null, "net_retention": null, "reason": "No licensed retained primary private-company financial records; public partner revenue/announced financing, price lists and anonymous forecasts do not establish these metrics."}, {"entity_id": "entity:anthropic", "recognized_revenue": null, "realized_compute_cost": null, "operating_or_gross_margin": null, "net_retention": null, "reason": "No licensed retained primary private-company financial records; public partner revenue/announced financing, price lists and anonymous forecasts do not establish these metrics."}], "public_finances_limitations": "Microsoft FY ends June 30 and Amazon FY ends December 31; AWS and consolidated figures cannot stand in for AI-specific or private-lab profits; quarterly release not audited annual filing."},
-  "release": {"state": "blocked", "evidence_pack_available": false, "eligible_source_ids": [], "readable_candidate_source_ids": ["source:msft:ar25", "source:amzn:results25", "source:anthropic:api-pricing", "source:anthropic:consumer-pricing", "source:anthropic:terms", "source:amzn:openai26", "source:anthropic:aws24", "source:amzn:anthropic24", "source:techcrunch:funding26", "source:cnbc:funding26", "source:tecnoblog:funding26"], "blockers": [{"code": "source_specific_durable_evidence_rights_unqualified", "missing": "Attributed retention/excerpt/reuse decision for exact source bytes resolving applicable terms and publication jurisdiction, or actual licensed alternate acquisition.", "required_actor": null, "receipt": null}], "can_ship_with_qualified_subset": false, "disposition": "No first-release usable financial EvidenceSpan/SourceRevision pack certified. Eleven readable sources are acquisition candidates, not a release subset. Issue #3 original criterion4 remains BLOCKED; no source-directory replacement.", "downstream_gates": "#6 still needs licensed originals/spans, substantive evidence and editorial review; Brain/runtime/replay/deployment gates remain independent."},
-  "budget": {"currency": "USD", "proposal": {"external_spend_ceiling_usd": 0, "recurring_external_spend_ceiling_usd": 0, "cycle_days": 28, "refreshes_per_cycle": 4, "source_read_intents_per_refresh": 11, "platform_policy_read_intents_per_refresh": 3, "read_intents_per_cycle": 56, "data_api_calls_per_cycle": 0, "classification_model_calls_per_cycle": 0, "paid_resources_per_cycle": 0, "per_host_concurrency": 1, "minimum_host_interval_seconds": 10, "request_definition": "Top-level public document/policy read intent; redirect/internal tool requests are not measured. Stop on paywall/quota/denial, no automatic retry budget.", "hosting_storage_labor_usd": null, "model_provider_rate_usd": null, "term": "Proposal only; no scheduler or recurring budget approved."}, "approval": {"state": "pending", "actor": null, "approved_amount_usd": null, "approved_at": null, "receipt": null, "recurring_enabled": false}, "actual_external_access_spend_usd": 0, "actual_model_calls": 0, "actual_model_calls_scope": "Direct collection/classification API invocations only; not active coding-assistant or Orca model usage.", "total_session_cost_usd": null, "paid_options": [{"source_id": "source:x:preflight", "state": "not_requested", "known_published_rate_usd": 0.005, "unit": "per post read resource", "request_volume": null, "total_usd": null, "decision_needed": "Reject for zero-paid first subset unless actor approves access, spend, rights and exact volume; credits/auto-recharge disabled."}, {"source_id": "source:reddit:preflight", "state": "not_requested", "known_published_rate_usd": null, "unit": null, "request_volume": null, "total_usd": null, "decision_needed": "Approved use/app/OAuth, any separate commercial agreement, retention rights and quota/cost receipt."}, {"source_id": "source:linkedin:preflight", "state": "not_requested", "known_published_rate_usd": null, "unit": null, "request_volume": null, "total_usd": null, "decision_needed": "Written permitted research access and content rights; no rate or access invented."}]},
+  "origin_groups": [{"id": "origin:openai:funding26", "topic": "Common February 2026 funding/partner disclosure facts only", "source_ids": ["source:openai:funding26", "source:amzn:openai26", "source:techcrunch:funding26", "source:cnbc:funding26", "source:tecnoblog:funding26", "source:sec:amzn-exhibit26"], "upstream_url": "https://openai.com/index/scaling-ai-for-everyone/", "primary_body_status": "OpenAI issuer body blocked; Amazon partner leg successfully read", "basis": "TechCrunch and CNBC explicitly link issuer release; Tecnoblog explicitly cites CNBC/TechCrunch/Axios; Amazon joint partner announcement describes overlapping deal, SEC exhibit is an unqualified mirror.", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "This is not whole-article equivalence: separately reported interviews/unnamed-source forecasts need distinct claim-local origins and attribution before use."}, {"id": "origin:aws-anthropic:collaboration24", "topic": "Coordinated AWS/Anthropic investment and training announcement", "source_ids": ["source:anthropic:aws24", "source:amzn:anthropic24"], "upstream_url": "https://www.anthropic.com/news/anthropic-amazon-trainium", "primary_body_status": "Both party announcements read", "basis": "Both describe same additional investment/training partnership; Amazon includes Anthropic CEO statements. Two parties to one commercial deal are not independent audits.", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "No second transaction or extra invested amount inferred from duplicated coverage."}, {"id": "origin:msft:report25", "topic": "Selected community revenue assertions reference issuer annual disclosure", "source_ids": ["source:msft:ar25", "source:wikidata:Q2283"], "upstream_url": "https://www.sec.gov/Archives/edgar/data/0000789019/000095017025100235/msft-20250630.htm", "primary_body_status": "Linked issuer filing not acquired; existing report/read receipt remains unchanged", "basis": "P854/P248/P577 reference provenance in preserved raw statement; annual-disclosure lineage is common source, not a community audit", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "Issuer references unverified; conservative annual-disclosure grouping does not establish equality of every sentence/filing."}, {"id": "origin:msft:report26", "topic": "Selected community revenue assertions reference issuer annual disclosure", "source_ids": ["source:wikidata:Q2283"], "upstream_url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm", "primary_body_status": "Linked issuer filing not acquired; existing report/read receipt remains unchanged", "basis": "P854/P248/P577 reference provenance in preserved raw statement; annual-disclosure lineage is common source, not a community audit", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "Issuer references unverified; conservative annual-disclosure grouping does not establish equality of every sentence/filing."}, {"id": "origin:amzn:report24", "topic": "Selected community revenue assertions reference issuer annual disclosure", "source_ids": ["source:wikidata:Q3884"], "upstream_url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872425000004/amzn-20241231.htm", "primary_body_status": "Linked issuer filing not acquired; existing report/read receipt remains unchanged", "basis": "P854/P248/P577 reference provenance in preserved raw statement; annual-disclosure lineage is common source, not a community audit", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "Issuer references unverified; conservative annual-disclosure grouping does not establish equality of every sentence/filing."}, {"id": "origin:amzn:report25", "topic": "Selected community revenue assertions reference issuer annual disclosure", "source_ids": ["source:amzn:results25", "source:wikidata:Q3884"], "upstream_url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000004/amzn-20251231.htm", "primary_body_status": "Linked issuer filing not acquired; existing report/read receipt remains unchanged", "basis": "P854/P248/P577 reference provenance in preserved raw statement; annual-disclosure lineage is common source, not a community audit", "independent_corroboration_count": 0, "evidence_origin_count": 1, "limits": "Issuer references unverified; conservative annual-disclosure grouping does not establish equality of every sentence/filing."}],
+  "coverage": {"denominator_scope": "Exactly 23 registered candidates: original19 plus two licensed financial sources and two necessary metadata sources, not internet/market completeness", "registered_count": 23, "one_off_body_qualified_count": 15, "blocked_count": 8, "licensed_retained_original_count": 4, "narrative_source_ids": ["source:techcrunch:funding26", "source:cnbc:funding26", "source:tecnoblog:funding26", "source:ars:compute25"], "languages": ["en", "pt-BR"], "narrative_limitations": "Purposively selected startup, financial and Brazilian tech press plus first-party promotional discourse; skeptical Ars body blocked. No general users, workers/nonusers, platform posts or representative geography. Readability is not public excerpt clearance.", "global_sentiment": {"numerator": null, "denominator": null, "scope": "Not measured; finite panel cannot estimate internet sentiment"}, "entity_gaps": [{"entity_id": "entity:openai", "recognized_revenue": null, "realized_compute_cost": null, "operating_or_gross_margin": null, "net_retention": null, "reason": "No licensed retained primary private-company financial records; public partner revenue/announced financing, price lists and anonymous forecasts do not establish these metrics."}, {"entity_id": "entity:anthropic", "recognized_revenue": null, "realized_compute_cost": null, "operating_or_gross_margin": null, "net_retention": null, "reason": "No licensed retained primary private-company financial records; public partner revenue/announced financing, price lists and anonymous forecasts do not establish these metrics."}], "public_finances_limitations": "Microsoft FY ends June 30 and Amazon FY ends December 31; AWS and consolidated figures cannot stand in for AI-specific or private-lab profits; quarterly release not audited annual filing. Licensed Wikidata quantity assertions retain original qualifiers: Microsoft day-level fiscal endpoints, Amazon year-only labels without endpoints. Recognition basis/AI allocation/capex unqualified; no cross-company comparison.", "licensed_financial_source_count": 2, "licensed_selected_financial_statement_count": 4},
+  "release": {"state": "qualified_subset_available", "evidence_pack_available": true, "eligible_source_ids": ["source:wikidata:Q2283", "source:wikidata:Q3884"], "readable_candidate_source_ids": ["source:msft:ar25", "source:amzn:results25", "source:anthropic:api-pricing", "source:anthropic:consumer-pricing", "source:anthropic:terms", "source:amzn:openai26", "source:anthropic:aws24", "source:amzn:anthropic24", "source:techcrunch:funding26", "source:cnbc:funding26", "source:tecnoblog:funding26", "source:wikidata:Q2283", "source:wikidata:Q3884", "source:wikidata:P2139", "source:wikidata:Q4917"], "blockers": [], "can_ship_with_qualified_subset": true, "disposition": "Source qualification supports shipping a bounded licensed secondary revenue-assertion subset for both public-company entities, with exact originals/financial selectors/metadata and visible gaps. Not a directory-only substitute, issuer financial verification, complete four-entity investigation or authorized editorial/deployed release.", "downstream_gates": "#6 substantive curation and real evidence mapping; independent source acceptance/quality; #4/#5 runtime, #7 durable storage and #12 editorial/newcomer/deploy authorization remain independent.", "supporting_metadata_source_ids": ["source:wikidata:P2139", "source:wikidata:Q4917"]},
+  "budget": {"currency": "USD", "proposal": {"external_spend_ceiling_usd": 0, "recurring_external_spend_ceiling_usd": 0, "cycle_days": 28, "refreshes_per_cycle": 4, "source_read_intents_per_refresh": 11, "platform_policy_read_intents_per_refresh": 3, "read_intents_per_cycle": 56, "data_api_calls_per_cycle": 0, "classification_model_calls_per_cycle": 0, "paid_resources_per_cycle": 0, "per_host_concurrency": 1, "minimum_host_interval_seconds": 10, "request_definition": "Top-level public document/policy read intent; redirect/internal tool requests are not measured. Stop on paywall/quota/denial, no automatic retry budget.", "hosting_storage_labor_usd": null, "model_provider_rate_usd": null, "term": "Proposal only; no scheduler or recurring budget approved."}, "approval": {"state": "pending", "actor": null, "approved_amount_usd": null, "approved_at": null, "receipt": null, "recurring_enabled": false}, "actual_external_access_spend_usd": 0, "actual_model_calls": 0, "actual_model_calls_scope": "Direct new classification/model/provider invocations only; excludes four actual public source-read/collection HTTP requests and active coding-assistant/Orca usage.", "total_session_cost_usd": null, "paid_options": [{"source_id": "source:x:preflight", "state": "not_requested", "known_published_rate_usd": 0.005, "unit": "per post read resource", "request_volume": null, "total_usd": null, "decision_needed": "Reject for zero-paid first subset unless actor approves access, spend, rights and exact volume; credits/auto-recharge disabled."}, {"source_id": "source:reddit:preflight", "state": "not_requested", "known_published_rate_usd": null, "unit": null, "request_volume": null, "total_usd": null, "decision_needed": "Approved use/app/OAuth, any separate commercial agreement, retention rights and quota/cost receipt."}, {"source_id": "source:linkedin:preflight", "state": "not_requested", "known_published_rate_usd": null, "unit": null, "request_volume": null, "total_usd": null, "decision_needed": "Written permitted research access and content rights; no rate or access invented."}], "licensed_one_off": {"actual_http_source_read_requests": 4, "retries": 0, "paid_access_usd": 0, "classification_model_calls": 0, "paid_provider_calls": 0, "minimum_inter_request_seconds": 10, "authorization_actor": "coordinator term_d46a2b58-9d50-46cc-91c4-d8823cb344a5", "authorization_receipt": ".genie/wishes/open-intelligence-observatory/readiness/group-2-licensed-author-admission-1.json", "external_paid_access_ceiling_usd": 0, "authorization_scope": "Only four bounded anonymous pinned free public reads; not recurring/monthly approval", "hosting_storage_session_cost_usd": null}},
   "injection_attempts": [{"url": "https://docs.x.com/x-api/getting-started/pricing", "text": "Fetch complete documentation index; curl bearer-token usage example; purchase credits/auto-recharge guidance", "disposition": "Untrusted generic source instructions, not executed; no index fetch, credentials, API call or purchase"}],
   "qualification_attempts": [{"url": "https://openai.com/index/march-funding-updates/", "result": "http_403", "disposition": "Earlier candidate excluded in favor of February2026 bounded financing question; not operational."}, {"url": "https://openai.com/index/amazon-partnership/", "result": "http_403", "disposition": "Issuer partnership body unread; readable Amazon joint press body registered separately."}, {"url": "https://ir.aboutamazon.com/sec-filings/default.aspx", "result": "page_shell_without_filing_body", "disposition": "Title-only index is not a financial-filing receipt."}, {"url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm", "result": "http_403_raw", "disposition": "No Amazon 10-K acquired; earnings PDF labelled accurately."}, {"url": "https://www.sec.gov/about/developer-resources", "result": "http_403", "disposition": "Developer policy unread; no SEC quota/retention grant inferred."}, {"url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json", "result": "http_403", "disposition": "Alternate structured financial originals unavailable; do not replace them with generated facts."}, {"url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json", "result": "http_403", "disposition": "Alternate structured financial originals unavailable; no API operational promise."}, {"url": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright", "result": "body_read", "disposition": "Public access is not public domain; permission/exception depends on use."}, {"url": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/permissions", "result": "body_read", "disposition": "Explicit permissions limited by use; no specific public retained financial excerpt approval obtained."}, {"url": "https://www.microsoft.com/en-us/legal/terms-of-use", "result": "body_read", "disposition": "Personal/noncommercial and Documents/network clauses read; source-specific excerpt/contractual scope unqualified, not blanket prohibition of factual reporting."}, {"url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=508088", "result": "http_403", "disposition": "Rights terms unavailable; public press/earnings availability is not an archival licence."}, {"url": "https://www.copyright.gov/circs/circ33.pdf", "result": "body_read", "disposition": "Short labels/numbers can be uncopyrightable; this does not authorize full tables/prose/translation or resolve site contracts."}, {"url": "https://copyright.gov/comp3/chap300/ch300-copyrightable-authorship.pdf", "result": "body_read", "disposition": "313.3(C) facts excluded from copyright; creative compilation/expression remains protected. No attributed source-specific retention/reuse decision obtained."}],
-  "acceptance": [{"criterion": "Each included source has a successful read receipt or a named blocked state.", "state": "qualification_supported", "evidence": "All 19 rows have body receipts or exact blockers; policy-read and data-access status kept distinct."}, {"criterion": "Source coverage and missing private-company data are visible; no inaccessible or paid source is marked operational.", "state": "qualification_supported", "evidence": "19 candidate denominator, 11 body-qualified free reads, 8 blocked; explicit private nulls and finite language/cohort limits."}, {"criterion": "Repeated reporting is identified as common-source evidence rather than independent corroboration.", "state": "qualification_supported", "evidence": "Common funding-release origin for three press reports and overlapping partner/mirror; coordinated AWS/Anthropic event grouped once; claim-local exceptions explicit."}, {"criterion": "The first release can ship with the qualified subset.", "state": "blocked", "evidence": "No source-specific durable retention/excerpt/reuse clearance or acquired licensed alternative; readable candidates cannot certify financial pack."}]
+  "acceptance": [{"criterion": "Each included source has a successful read receipt or a named blocked state.", "state": "qualification_supported", "evidence": "All23 rows have successful target-body receipts or named blockers, including four actual pinned HTTP200 acquired originals."}, {"criterion": "Source coverage and missing private-company data are visible; no inaccessible or paid source is marked operational.", "state": "qualification_supported", "evidence": "23 candidates,15 free body-qualified,8 blocked; four retained CC0 originals, two financial sources; original private nulls/cohort limits unchanged."}, {"criterion": "Repeated reporting is identified as common-source evidence rather than independent corroboration.", "state": "qualification_supported", "evidence": "Original common funding/partner origins plus four claim-local issuer disclosure lineages; secondary restatement adds no independent audit."}, {"criterion": "The first release can ship with the qualified subset.", "state": "qualification_supported", "evidence": "Actually acquired CC0 financial statement bytes/quantity metadata/USD metadata support bounded source-qualified release subset for Microsoft and Amazon. Independent acceptance/quality and downstream curation/editorial/runtime/release proof remain required."}],
+  "licensed_subset": {"version": "1.0.0", "acquisitions": [{"source_id": "source:wikidata:Q2283", "source_revision_id": "acquisition:wikidata:Q2283:r2550576892", "entity_id": "Q2283", "namespace": 0, "requested_revision": 2550576892, "observed_revision": 2550576892, "source_modified_at": "2026-09-28T17:59:51Z", "request_url": "https://www.wikidata.org/wiki/Special:EntityData/Q2283.json?revision=2550576892", "response_url": "https://www.wikidata.org/wiki/Special:EntityData/Q2283.json?revision=2550576892", "request_started_at": "2026-10-08T07:29:26.918624Z", "request_finished_at": "2026-10-08T07:29:27.430930Z", "http_status": 200, "content_type": "application/json; charset=UTF-8", "content_encoding": "gzip", "http_date": "Wed, 30 Sep 2026 11:42:20 GMT", "http_last_modified": "Mon, 28 Sep 2026 17:59:51 GMT", "original_path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin", "original_bytes": 92295, "original_sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7", "decoded_utf8_bytes": 574126, "decoded_utf8_sha256": "d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea", "license": "CC0-1.0", "rights_scope": "Wikidata structured main/Property data only; no grant for linked issuer originals, images or project-policy prose", "property_datatype": null, "unit_code": null}, {"source_id": "source:wikidata:Q3884", "source_revision_id": "acquisition:wikidata:Q3884:r2546229470", "entity_id": "Q3884", "namespace": 0, "requested_revision": 2546229470, "observed_revision": 2546229470, "source_modified_at": "2026-09-15T14:38:34Z", "request_url": "https://www.wikidata.org/wiki/Special:EntityData/Q3884.json?revision=2546229470", "response_url": "https://www.wikidata.org/wiki/Special:EntityData/Q3884.json?revision=2546229470", "request_started_at": "2026-10-08T07:29:37.445710Z", "request_finished_at": "2026-10-08T07:29:37.651378Z", "http_status": 200, "content_type": "application/json; charset=UTF-8", "content_encoding": "gzip", "http_date": "Tue, 22 Sep 2026 04:50:00 GMT", "http_last_modified": "Tue, 15 Sep 2026 14:38:34 GMT", "original_path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin", "original_bytes": 63002, "original_sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae", "decoded_utf8_bytes": 380829, "decoded_utf8_sha256": "3074c91d8292f5ba66325e0328808eb2b7f80f06ebf83377ef171ef8926ae0e9", "license": "CC0-1.0", "rights_scope": "Wikidata structured main/Property data only; no grant for linked issuer originals, images or project-policy prose", "property_datatype": null, "unit_code": null}, {"source_id": "source:wikidata:P2139", "source_revision_id": "acquisition:wikidata:P2139:r2547354403", "entity_id": "P2139", "namespace": 120, "requested_revision": 2547354403, "observed_revision": 2547354403, "source_modified_at": "2026-09-18T08:23:40Z", "request_url": "https://www.wikidata.org/wiki/Special:EntityData/P2139.json?revision=2547354403", "response_url": "https://www.wikidata.org/wiki/Special:EntityData/P2139.json?revision=2547354403", "request_started_at": "2026-10-08T07:29:47.660933Z", "request_finished_at": "2026-10-08T07:29:47.856744Z", "http_status": 200, "content_type": "application/json; charset=UTF-8", "content_encoding": "gzip", "http_date": "Thu, 08 Oct 2026 07:29:47 GMT", "http_last_modified": "Fri, 18 Sep 2026 08:23:40 GMT", "original_path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin", "original_bytes": 9903, "original_sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16", "decoded_utf8_bytes": 44688, "decoded_utf8_sha256": "a91630eea85f0033af9129a0521d0c128f97753aabdbb169cd6655b75b942f79", "license": "CC0-1.0", "rights_scope": "Wikidata structured main/Property data only; no grant for linked issuer originals, images or project-policy prose", "property_datatype": "quantity", "unit_code": null}, {"source_id": "source:wikidata:Q4917", "source_revision_id": "acquisition:wikidata:Q4917:r2554037296", "entity_id": "Q4917", "namespace": 0, "requested_revision": 2554037296, "observed_revision": 2554037296, "source_modified_at": "2026-10-06T16:57:23Z", "request_url": "https://www.wikidata.org/wiki/Special:EntityData/Q4917.json?revision=2554037296", "response_url": "https://www.wikidata.org/wiki/Special:EntityData/Q4917.json?revision=2554037296", "request_started_at": "2026-10-08T07:29:57.859819Z", "request_finished_at": "2026-10-08T07:29:58.336836Z", "http_status": 200, "content_type": "application/json; charset=UTF-8", "content_encoding": "gzip", "http_date": "Thu, 08 Oct 2026 07:29:57 GMT", "http_last_modified": "Tue, 06 Oct 2026 16:57:23 GMT", "original_path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin", "original_bytes": 27251, "original_sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b", "decoded_utf8_bytes": 131954, "decoded_utf8_sha256": "37834698a9313fc87515ec009df10cbb102bdc32b53646cdabe65d9dfa8dc834", "license": "CC0-1.0", "rights_scope": "Wikidata structured main/Property data only; no grant for linked issuer originals, images or project-policy prose", "property_datatype": null, "unit_code": "USD"}], "financial_statements": [{"id": "Q2283$564CF0AD-3A7D-4250-AA0C-40518A8833D9", "source_id": "source:wikidata:Q2283", "source_revision_id": "acquisition:wikidata:Q2283:r2550576892", "entity_id": "entity:microsoft", "property_id": "P2139", "rank": "normal", "amount_decimal": "+281724000000", "unit_uri": "http://www.wikidata.org/entity/Q4917", "currency": "USD", "qualifiers": {"P585": [{"snaktype": "value", "property": "P585", "hash": "22efcef23f2150994668550a1f67ce544b2cab3b", "datavalue": {"value": {"time": "+2025-00-00T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 9, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P580": [{"snaktype": "value", "property": "P580", "hash": "e4a8b72441917c817a77f67bf2d97d29e5daa23a", "datavalue": {"value": {"time": "+2024-07-01T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P582": [{"snaktype": "value", "property": "P582", "hash": "17ee0c64500cd1da7c49017561902ee7244ce202", "datavalue": {"value": {"time": "+2025-06-30T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}]}, "references": [{"hash": "f56bb702beb177031f9e2fe4d8e58af60d37381c", "snaks": {"P854": [{"snaktype": "value", "property": "P854", "hash": "41a14911833c1f7f9160ad2fc20e135d0a4970ef", "datavalue": {"value": "https://www.sec.gov/Archives/edgar/data/0000789019/000095017025100235/msft-20250630.htm", "type": "string"}, "datatype": "url"}], "P577": [{"snaktype": "value", "property": "P577", "hash": "1088f4ae5e42f7c4b699edde45353e663f1763dd", "datavalue": {"value": {"time": "+2025-07-30T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P248": [{"snaktype": "value", "property": "P248", "hash": "b201b5e31599af662826994384a663df0c7e3504", "datavalue": {"value": {"entity-type": "item", "numeric-id": 5469880, "id": "Q5469880"}, "type": "wikibase-entityid"}, "datatype": "wikibase-item"}]}, "snaks-order": ["P854", "P577", "P248"]}], "period": {"start": null, "end": null}, "event_validity": {"start": null, "end": null}, "recognition_basis": null, "verification": "unverified", "origin_id": "origin:msft:report25", "selector": {"kind": "decoded_utf8_json", "start": 175540, "end": 177677, "decoded_sha256": "d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea"}, "quote_sha256": "fc51554505ea1720bf379d4a50cdad003ebd699a9bdb7acff52f792268009fd3"}, {"id": "Q2283$36342234-E848-496F-990C-6B97CC151BCC", "source_id": "source:wikidata:Q2283", "source_revision_id": "acquisition:wikidata:Q2283:r2550576892", "entity_id": "entity:microsoft", "property_id": "P2139", "rank": "preferred", "amount_decimal": "+331839000000", "unit_uri": "http://www.wikidata.org/entity/Q4917", "currency": "USD", "qualifiers": {"P585": [{"snaktype": "value", "property": "P585", "hash": "bd4e608fca97bfd620514f81e735833b9d96e34d", "datavalue": {"value": {"time": "+2026-00-00T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 9, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P580": [{"snaktype": "value", "property": "P580", "hash": "bc236d6d4c64d566399b8154dd7d0650881125ca", "datavalue": {"value": {"time": "+2025-07-01T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P582": [{"snaktype": "value", "property": "P582", "hash": "d452a94555a869a7ba91a314d56c78ff3157f022", "datavalue": {"value": {"time": "+2026-06-30T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}]}, "references": [{"hash": "789ee423e75dbdcc355ef9bc36af222f21bdc624", "snaks": {"P854": [{"snaktype": "value", "property": "P854", "hash": "b65ea434ed982023e3c817093c6120197bf78e21", "datavalue": {"value": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm", "type": "string"}, "datatype": "url"}], "P577": [{"snaktype": "value", "property": "P577", "hash": "165a3857e3a6ab3ebc5882d9886a425015b909d5", "datavalue": {"value": {"time": "+2026-07-29T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P248": [{"snaktype": "value", "property": "P248", "hash": "b201b5e31599af662826994384a663df0c7e3504", "datavalue": {"value": {"entity-type": "item", "numeric-id": 5469880, "id": "Q5469880"}, "type": "wikibase-entityid"}, "datatype": "wikibase-item"}]}, "snaks-order": ["P854", "P577", "P248"]}], "period": {"start": null, "end": null}, "event_validity": {"start": null, "end": null}, "recognition_basis": null, "verification": "unverified", "origin_id": "origin:msft:report26", "selector": {"kind": "decoded_utf8_json", "start": 177678, "end": 179818, "decoded_sha256": "d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea"}, "quote_sha256": "f0dcd2f687d2b94d8f605019a512fed76847fb48b0ad9efc16a0b40dd4986719"}, {"id": "Q3884$5F15DD1E-D2B7-48FC-A005-0955CBA83D76", "source_id": "source:wikidata:Q3884", "source_revision_id": "acquisition:wikidata:Q3884:r2546229470", "entity_id": "entity:amazon", "property_id": "P2139", "rank": "normal", "amount_decimal": "+637959000000", "unit_uri": "http://www.wikidata.org/entity/Q4917", "currency": "USD", "qualifiers": {"P585": [{"snaktype": "value", "property": "P585", "hash": "daee777a902fd7cd73351aa33ba07e0a22d4fb9b", "datavalue": {"value": {"time": "+2024-00-00T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 9, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}]}, "references": [{"hash": "4875d990f7184c8cc28d56e6acc22db36bceb4fc", "snaks": {"P854": [{"snaktype": "value", "property": "P854", "hash": "42dba1b96ad08e1e66fe4a2489d083d6849d618d", "datavalue": {"value": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872425000004/amzn-20241231.htm", "type": "string"}, "datatype": "url"}], "P577": [{"snaktype": "value", "property": "P577", "hash": "211bb9a94225c91e64798877adcb6f372249dd43", "datavalue": {"value": {"time": "+2025-02-07T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P248": [{"snaktype": "value", "property": "P248", "hash": "b201b5e31599af662826994384a663df0c7e3504", "datavalue": {"value": {"entity-type": "item", "numeric-id": 5469880, "id": "Q5469880"}, "type": "wikibase-entityid"}, "datatype": "wikibase-item"}]}, "snaks-order": ["P854", "P577", "P248"]}], "period": {"start": null, "end": null}, "event_validity": {"start": null, "end": null}, "recognition_basis": null, "verification": "unverified", "origin_id": "origin:amzn:report24", "selector": {"kind": "decoded_utf8_json", "start": 275737, "end": 277276, "decoded_sha256": "3074c91d8292f5ba66325e0328808eb2b7f80f06ebf83377ef171ef8926ae0e9"}, "quote_sha256": "8ed9434bc04066ba932f798b883b696f100e18249ef4e8064dab1e2458cfc2a2"}, {"id": "Q3884$722DAFD9-BCFA-47EB-99BC-9C02BC61B699", "source_id": "source:wikidata:Q3884", "source_revision_id": "acquisition:wikidata:Q3884:r2546229470", "entity_id": "entity:amazon", "property_id": "P2139", "rank": "preferred", "amount_decimal": "+716924000000", "unit_uri": "http://www.wikidata.org/entity/Q4917", "currency": "USD", "qualifiers": {"P585": [{"snaktype": "value", "property": "P585", "hash": "22efcef23f2150994668550a1f67ce544b2cab3b", "datavalue": {"value": {"time": "+2025-00-00T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 9, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}]}, "references": [{"hash": "4c4efc967d6979e46c4c405d4238ffab7f53d60d", "snaks": {"P854": [{"snaktype": "value", "property": "P854", "hash": "a3abde2eeafbedce010237e7e1bb63760492105f", "datavalue": {"value": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000004/amzn-20251231.htm", "type": "string"}, "datatype": "url"}], "P577": [{"snaktype": "value", "property": "P577", "hash": "989bebcb6cf3dcfc604232457a47537cf6db82ee", "datavalue": {"value": {"time": "+2026-02-06T00:00:00Z", "timezone": 0, "before": 0, "after": 0, "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727"}, "type": "time"}, "datatype": "time"}], "P248": [{"snaktype": "value", "property": "P248", "hash": "b201b5e31599af662826994384a663df0c7e3504", "datavalue": {"value": {"entity-type": "item", "numeric-id": 5469880, "id": "Q5469880"}, "type": "wikibase-entityid"}, "datatype": "wikibase-item"}]}, "snaks-order": ["P854", "P577", "P248"]}], "period": {"start": null, "end": null}, "event_validity": {"start": null, "end": null}, "recognition_basis": null, "verification": "unverified", "origin_id": "origin:amzn:report25", "selector": {"kind": "decoded_utf8_json", "start": 277277, "end": 278819, "decoded_sha256": "3074c91d8292f5ba66325e0328808eb2b7f80f06ebf83377ef171ef8926ae0e9"}, "quote_sha256": "dfe6ab34d177645ab25112c1f8389ffc8c2b13dc9b7be77c355a52fd448edbe3"}], "limitations": ["This is actual CC0 secondary community financial material, not verified issuer results or complete flagship investigation.", "Four selected corporate-wide P2139 quantities; capex, AI allocations, private finances, money-type/pricing/narrative durable evidence remain unavailable.", "Logical UTF8 byte selectors address exact gzip-decoded acquired JSON, not a fabricated text/plain SourceRevision or accepted Brain ingest.", "P585 precision9 year and P580/P582/P577 precision11 day are original assertions, never midnight UTC instants. Domain period/event boundaries and recognition_basis remain null.", "Future #6 maps exact original/extraction/span/clock contracts independently; no executable replay/deployed publication is certified."]}
 }
