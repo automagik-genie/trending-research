@@ -25,7 +25,7 @@ details{font-size:12px;color:#555;margin-top:16px}
 #hnote{display:none;background:#fffbea;border:1px solid #f0dc8c;border-radius:6px;padding:7px 10px;font-size:12px;color:#5a4a00;margin:6px 0;line-height:1.45}
 #hnote b{color:#3d3200}
 .gap{display:inline-block;min-width:44px;text-align:center;border-radius:10px;padding:1px 6px;font-weight:700;font-size:11.5px}
-.g-hype{background:#fdecea;color:#c62828}.g-earned{background:#e8f5e9;color:#1a7f2e}.g-sleeper{background:#e3f2fd;color:#1565c0}
+.g-attention_ahead{background:#fdecea;color:#c62828}.g-similar{background:#f1f1f1;color:#555}.g-evidence_ahead{background:#e3f2fd;color:#1565c0}
 .gap.low{opacity:.6;border:1px dashed currentColor}
 .lk{font-size:10.5px;color:#3b6fb6;border:1px solid #c9d7ee;border-radius:3px;padding:0 3px;margin-left:3px;text-decoration:none;white-space:nowrap}
 .ad{background:#fff3e0;color:#b25e00;border-radius:3px;padding:0 4px;font-size:10.5px;margin-left:4px}
@@ -51,12 +51,12 @@ a.sc{color:inherit;text-decoration:none;border-bottom:1px dotted #9ab}a.sc:hover
 #mdtoc{font-size:13px;margin:6px 0 10px;color:#555;line-height:1.8}#mdtoc a{margin-right:10px;white-space:nowrap}
 </style></head><body>
 <h1>AI research trend tracker <span class=help>?<span class=tip>
-<b>Scores are 0–100 signal scores (scoring v2), never star totals.</b> Full formulas: <a href="#methodology" style="color:#9cf">Methodology tab</a>.<br>
+<b>Scores are versioned 0–100 discovery proxies, never star totals or validated capability.</b> Full formulas: <a href="#methodology" style="color:#9cf">Methodology tab</a>.<br>
 Each present signal is log-scaled against the run-wide P95 (one outlier can't squash the rest), combined with the weights below over the signals present,
-then <b>shrunk toward the median by confidence</b> (share of evidence present), so thin evidence can't post extreme scores.<br>
-<b>Repos</b>: star growth/day 25% · issue activity 15% · PR volume 10% · merge rate 10% · commits 15% · contributors 10% · contributor growth 15%.
-Star spikes without matching issue/PR/commit activity are capped, solo repos and one-off spikes are discounted.<br>
-<b>Papers</b>: HF upvote momentum 40% · linked-repo trust 35% · HN mention momentum 25%. Momentum = real deltas between our snapshots when we have them, else per-day-since-release (<span class=px>~</span> = rate proxy).<br>
+then <b>shrunk toward the reference median by evidence coverage</b> (weighted completeness), not calibrated truth confidence.<br>
+<b>Repos</b>: star growth/day 25% · issue activity 15% · PR volume 10% · created-PR cohort merge fraction 10% · commits 15% · contributors 10% · contributor growth 15%.
+These are discovery activity proxies, not technical or economic validation. Historical v2 archives retain their original formulas.<br>
+<b>Papers</b>: HF upvote momentum 40% · linked-repo activity 35% · HN mention momentum 25%. <span class=px>~</span> = rate proxy.<br>
 Arrows compare ranks only among items in both runs and ignore tiny changes. — = no data.</span></span></h1>
 <div class=meta>Last updated: <b id=upd>…</b> · <span id=prevrun></span> · <span id=tracked></span> · <a href="#methodology" id=ver>scoring v2</a></div>
 <div class="tabs top" id=tabs></div>
@@ -87,25 +87,25 @@ const KIND={'rate-proxy':'rate proxy: per-day-since-release average (no earlier 
 const FLAG={'stars>activity':'star growth capped: not matched by issue/PR/commit activity','solo':'stars but ≤1 contributor (no outside contributors)','spike':'one-off spike: star rate not sustained across 7/30/90d','single-post':'HN attention is a single post','few-votes':'fewer than 10 upvotes: small sample, counts as part of a signal','single-platform':'all sampled attention on one platform','few-voices':'only a few unique authors in the sample'};
 function flags(f){return (f||[]).map(x=>`<span class=fl title="${esc(FLAG[x]||x)}">${esc(x)}</span>`).join('')}
 function sc(v,sec,r,prior){if(v==null)return '<span class=dim title="no signal present">—</span>';
- const t=`score ${v}${r&&r.pct!=null?` · percentile ${r.pct}`:''}${r&&r.raw!=null?` · raw ${r.raw} before shrinkage`:''}${r&&r.confidence!=null?` · confidence ${Math.round(100*r.confidence)}%`:''}${prior!=null?` · prior ${prior}`:''}${r&&r.kind?` · momentum: ${r.kind}`:''} · click for the formula`;
+ const t=`score ${v}${r&&r.pct!=null?` · percentile ${r.pct}`:''}${r&&r.raw!=null?` · raw ${r.raw} before shrinkage`:''}${r&&r.coverage!=null?` · evidence coverage ${Math.round(100*r.coverage)}%`:''}${prior!=null?` · prior ${prior}`:''}${r&&r.kind?` · momentum: ${r.kind}`:''} · verification: unqualified · freshness: unknown · source independence: unqualified · click for the formula`;
  return `<a class=sc href="#methodology/${sec}" title="${esc(t)}">${v}</a>`}
 function ago(iso){if(!iso)return '—';const d=(Date.now()-Date.parse(iso))/864e5;return d<1?Math.round(d*24)+'h ago':Math.round(d)+'d ago'}
-function conf(c,sec){if(c==null)return '<span class=dim>—</span>';const pct=Math.round(100*c);return `<a href="#methodology/${sec||'confidence-and-shrinkage'}" style="text-decoration:none;white-space:nowrap" title="confidence ${pct}%: evidence-weighted share of signals present; low confidence pulls the score toward the median"><span class=conf><i style="width:${pct}%"></i></span> <span class=dim>${pct}%</span></a>`}
-const PH=['#','Title','Lab / authors','Score','Conf.','HF ▲','Stars / code','Mentions (HN)','Days','Tag'];
-const RH=['#','Repo','Owner','Score','Conf.','Stars gained','Issues','PRs (merged)','Commits','Contributors','Paper','Last push','Tag'];
+function coverage(c,sec){if(c==null)return '<span class=dim>—</span>';const pct=Math.round(100*c);return `<a href="#methodology/${sec||'evidence-coverage-and-shrinkage'}" style="text-decoration:none;white-space:nowrap" title="evidence coverage ${pct}%: weighted signal completeness, not truth probability; verification, freshness and independence are separate"><span class=conf><i style="width:${pct}%"></i></span> <span class=dim>${pct}%</span></a>`}
+const PH=['#','Title','Lab / authors','Score','Coverage','HF ▲','Stars / code','Mentions (HN)','Days','Tag'];
+const RH=['#','Repo','Owner','Score','Coverage','Stars gained','Issues','PRs / merged cohort','Commits','Contributors','Paper','Last push','Tag'];
 function prow(r){const au=r.lab?esc(r.lab):esc((r.authors||[]).join(', '))+(r.n_authors>4?' et al.':'');
  return `<tr><td class=n>${r.rank} ${mv(r)}</td><td>${r.fav?'<span class=fav title="DeepSeek / MIT / RLM">★</span> ':''}<a href="https://arxiv.org/abs/${r.id}" target=_blank>${esc(r.title)}</a> <span class=dim>${r.id}</span></td>
- <td>${au||'—'}${flags(r.flags)}</td><td class="n score">${sc(r.score,'papers-score',r,D.priors&&D.priors.papers)}${r.kind=='rate-proxy'?`<span class=px title="${KIND['rate-proxy']}">~</span>`:''}</td><td class=n>${conf(r.confidence)}</td>
+ <td>${au||'—'}${flags(r.flags)}</td><td class="n score">${sc(r.score,'papers-score',r,D.priors&&D.priors.papers)}${r.kind=='rate-proxy'?`<span class=px title="${KIND['rate-proxy']}">~</span>`:''}</td><td class=n>${coverage(r.coverage)}</td>
  <td class=n>${r.upvotes==null?'<span class=dim>—</span>':`<a href="https://huggingface.co/papers/${r.id}" target=_blank>${num(r.upvotes)}</a>`}</td>
  <td class=n>${r.code?`<a href="${esc(r.code)}" target=_blank>${r.stars==null?'code':num(r.stars)+' ★'}</a>`:'<span class=dim>—</span>'}</td>
  <td class=n>${r.mentions==null?'<span class=dim>—</span>':`<a href="https://hn.algolia.com/?q=${r.id}" target=_blank title="${r.hn_points??0} story points">${r.mentions}</a>`}</td>
  <td class=n>${r.days}</td><td><span class="${tagc(r.tag)}">${esc(r.tag)}</span></td></tr>`}
 function rrow(r){
  const iss=(r.issues_opened==null&&r.issues_closed==null)?'<span class=dim>—</span>':`${num(r.issues_opened)}/${num(r.issues_closed)}`;
- const prs=r.prs_opened==null?'<span class=dim>—</span>':`${num(r.prs_opened)}${r.prs_merged==null?'':` (${num(r.prs_merged)} m)`}`;
+ const prs=r.prs_opened==null?'<span class=dim>—</span>':`${num(r.prs_opened)} / ${r.prs_merged_in_opened_cohort==null?'<span class=dim title="created-and-merged intersection unobserved">—</span>':num(r.prs_merged_in_opened_cohort)} <span class=dim title="merged events (may include PRs created before lookback); not the cohort numerator">(${nv(r.prs_merged)} events)</span>`;
  const cg=r.contrib_gained==null?'':` <span class=dim>(${r.contrib_gained>=0?'+':''}${num(r.contrib_gained)})</span>`;
  return `<tr><td class=n>${r.rank} ${mv(r)}</td><td>${r.fav?'<span class=fav>★</span> ':''}<a href="${esc(r.url)}" target=_blank>${esc(r.id)}</a><div class=dim>${esc(r.desc)}</div></td>
- <td>${esc(r.owner)}${flags(r.flags)}</td><td class="n score">${sc(r.score,'repo-trust-index',r,D.priors&&D.priors.repos)}${r.kind=='rate-proxy'?`<span class=px title="${KIND['rate-proxy']}">~</span>`:''}</td><td class=n>${conf(r.confidence)}</td>
+ <td>${esc(r.owner)}${flags(r.flags)}</td><td class="n score">${sc(r.score,'repo-trust-index',r,D.priors&&D.priors.repos)}${r.kind=='rate-proxy'?`<span class=px title="${KIND['rate-proxy']}">~</span>`:''}</td><td class=n>${coverage(r.coverage)}</td>
  <td class=n>${r.gained==null?`<span class=dim title="${r.kind=='rate-proxy'?'no stargazer timestamps or earlier snapshot: score uses stars/age as a rate proxy':'no growth history yet'}">—</span>`:`<span title="${esc((r.src||'')+(r.gspan?` over ${r.gspan} days`:''))}">${r.gained>=0?'+':''}${num(r.gained)}</span>${r.src=='snapshots'&&r.gspan?` <span class=dim>/${r.gspan}d</span>`:''}`}</td>
  <td class=n title="opened / closed in lookback">${iss}</td>
  <td class=n>${prs}</td><td class=n>${num(r.commits)}</td>
@@ -114,12 +114,13 @@ function rrow(r){
  <td class=n>${ago(r.pushed)}</td><td><span class="${tagc(r.tag)}">${esc(r.tag)}</span></td></tr>`}
 function render(){
  document.getElementById('tabs').innerHTML=[['papers','Papers'],['repos','GitHub'],['hype','HYPE'],['methodology','Methodology']].map(([k,l])=>`<button class="${k==tab?'on':''}" onclick="tab='${k}';msec='';render()">${l}</button>`).join('');
- document.getElementById('hnote').style.display=tab=='hype'?'block':'none';
+ document.getElementById('hnote').style.display=tab=='hype'||D.archive_note&&tab!='methodology'?'block':'none';
  const isM=tab=='methodology';
  for(const id of ['wins','views','tablewrap'])document.getElementById(id).style.display=isM?'none':'';
  document.getElementById('md').style.display=isM?'block':'none';
  if(isM)return renderMethod();
  if(tab=='hype')return renderHype();
+ document.getElementById('hnote').textContent=D.archive_note||'';
  document.getElementById('upd').textContent=D.generated_local;
  document.getElementById('tracked').textContent=`tracking ${D.tracked.papers} papers, ${D.tracked.repos} repos · run took ${D.run_seconds}s`;
  document.getElementById('prevrun').textContent=D.movement_note||(D.previous_run?'movement vs run of '+D.previous_run.replace('T',' '):'first run (all entries marked new)');
@@ -146,20 +147,20 @@ const A=(u,t,cls)=>safe(u)?`<a href="${safe(u)}" target=_blank${cls?` class=${cl
 const srcs=l=>(l||[]).filter(safe).map((u,i)=>`<a href="${safe(u)}" target=_blank title="${esc(u)}">[${i+1}]</a>`).join('');
 const day=s=>s?String(s).slice(0,10):null;
 function since(iso){if(!iso)return null;return Math.max(0,Math.floor((Date.now()-Date.parse(iso))/864e5))}
-function gapb(r,it){const g=r.gap;if(g==null)return `<span class="gap g-insufficient" title="no Real score (no substance signal present)">—</span>`;
- const c=r.label||(g>=H.gap_thresholds[1]?'hype':g<=H.gap_thresholds[0]?'sleeper':'earned');
- const lbl={hype:'likely hype',earned:'earned',sleeper:'underrated sleeper',insufficient:'insufficient evidence'}[c];
- const why=c=='insufficient'?` · needs Hype and Real confidence ≥ ${Math.round(100*(H.gap_min_confidence??.5))}% (now ${Math.round(100*r.conf)}% / ${Math.round(100*it.real_conf)}%)`:'';
- return `<a href="#methodology/hype-vs-real-gap" style="text-decoration:none"><span class="gap g-${c}" title="${lbl}: Hype − Real = ${g} (both shrunk)${why}">${g>0?'+':''}${g}${c=='insufficient'?' ?':''}</span></a>`}
-const HH=[['#'],['Project'],['Hype','score'],['Conf.'],['Real','real'],['Conf.'],['Gap','gap'],['Mentions'],['Voices'],['Platforms'],['First seen'],['Days'],['Tag']];
+function gapb(r,it){const g=r.gap;if(g==null)return `<span class="gap g-insufficient" title="no discovery proxy score; missing evidence is not low value">—</span>`;
+ const c=r.label;
+ const lbl={attention_ahead:'attention percentile ahead',similar:'similar proxy percentiles',evidence_ahead:'discovery percentile ahead',insufficient:'insufficient coverage'}[c];
+ const why=c=='insufficient'?` · requires both coverage values ≥ ${Math.round(100*H.gap_min_coverage)}%`:'';
+ return `<a href="#methodology/attention-discovery-gap" style="text-decoration:none"><span class="gap g-${c}" title="${lbl}: attention − discovery = ${g}; different proxy cohorts, heuristic only, not validation${why}">${g>0?'+':''}${g}${c=='insufficient'?' ?':''}</span></a>`}
+const HH=[['#'],['Project'],['Attention','score'],['Coverage'],['Discovery','discovery'],['Coverage'],['Gap','gap'],['Mentions'],['Voices'],['Platforms'],['First seen'],['Days'],['Tag']];
 function hrow(r){const it=H.items[r.id],m=it.win[win]||{},L=it.links;
  const main=L.site||L.repo||L.paper||L.hf||L.x_handle;
  const sm=[['x_handle','X'],['repo','repo'],['paper','paper'],['hf','HF']].filter(([k])=>L[k]).map(([k,t])=>A(L[k],t,'lk')).join('');
  const o=opened.has(r.id);
  return `<tr class="hr${o?' open':''}" onclick="tog('${r.id}')"><td class=n>${r.rank} ${mv(r)}</td>
  <td>${A(main,'<b>'+esc(it.name)+'</b>')}${sm}${it.coord.disclosed?'<span class=ad title="disclosed sponsored content — see card">sponsored (disclosed)</span>':''}<div class=dim>${esc(it.category||'')}</div></td>
- <td class="n score">${sc(r.score,'hype-hype-score',{raw:r.raw,pct:r.pct,confidence:r.conf},50)}${flags(r.flags)}</td><td class=n>${conf(r.conf)}</td>
- <td class="n score">${sc(it.real,'hype-real-score',{raw:it.real_raw,pct:it.real_pct,confidence:it.real_conf},50)}</td><td class=n>${conf(it.real_conf)}</td><td class=n>${gapb(r,it)}</td>
+ <td class="n score">${sc(r.score,'hype-attention-score',r,50)}${flags(r.flags)}</td><td class=n>${coverage(r.coverage)}</td>
+ <td class="n score">${sc(it.discovery.score,'hype-discovery-score',it.discovery,50)}</td><td class=n>${coverage(it.discovery.coverage)}</td><td class=n>${gapb(r,it)}</td>
  <td class=n title="sampled posts in window (not a global count)">${nv(m.mentions)}</td><td class=n>${nv(m.voices)}</td>
  <td class=n title="${esc((m.platforms||[]).join(', '))}">${m.platforms?m.platforms.length:dash}</td>
  <td class=n>${it.first_seen?A(it.first_seen_url,day(it.first_seen)):dash}</td><td class=n>${nv(since(it.first_seen))}</td>
@@ -167,7 +168,7 @@ function hrow(r){const it=H.items[r.id],m=it.win[win]||{},L=it.links;
 function tog(id){opened.has(id)?opened.delete(id):opened.add(id);renderHype()}
 function hs(k){hsort=k;renderHype()}
 function fmtv(v){return typeof v=='number'?num(v):esc(typeof v=='object'?JSON.stringify(v):String(v))}
-function card(r,it){const v=it.viral,c=it.coord,ri=it.real_in,m=it.win[win]||{};
+function card(r,it){const v=it.viral,c=it.coord,ri=it.evidence_in,d=it.discovery,m=it.win[win]||{};
  const z=x=>x==null?'<span class=dim>missing</span>':x.toFixed(2);
  const coord=(()=>{let h='';const measured=/coordinat/i.test(c.assessment||'')&&!/not assessed|^no /i.test(c.assessment||'');
   if(measured)h+=`<li><b>Pattern looks coordinated</b> (research assessment: ${esc(c.assessment)})</li>`;
@@ -178,11 +179,11 @@ function card(r,it){const v=it.viral,c=it.coord,ri=it.real_in,m=it.win[win]||{};
  const tr=it.traction.map(s=>`<li><b>${esc(s.type.replace(/_/g,' '))}</b>: ${fmtv(s.value)} <span class=dim>${esc(s.unit||'')}</span> · <i>${esc((s.ver||'').replace(/_/g,' '))}</i>${s.asof?' · '+esc(s.asof):''} ${A(s.url,'source')}${s.notes?`<div class=dim>${esc(s.notes)}</div>`:''}</li>`).join('')||'<li class=dim>none recorded</li>';
  const sk=it.skeptic.map(s=>`<li>${esc(s.claim)} <span class=dim>— ${esc(s.by||'')}${s.d?', '+esc(s.d):''}</span> ${A(s.url,'source')}</li>`).join('')||'<li class=dim>none recorded</li>';
  const po=it.posts.map(p=>`<tr><td>${esc(p.pl)}</td><td>${esc(p.au||'—')}</td><td style="white-space:nowrap">${esc(p.d)}</td><td class=n>${p.likes!=null?num(p.likes)+' ♥':p.score!=null?num(p.score)+' pts':'—'}</td><td class=n>${p.cm!=null?num(p.cm):p.rp!=null?num(p.rp):'—'}</td><td>${A(p.url,esc(p.t||'post'))}</td></tr>`).join('');
- const rl={gh_trust:'GitHub trust index',paper:'Paper traction (HF upvotes)',usage:'Real usage',discussion:'Dev discussion (HN comments, sampled)'};
- const rv={gh_trust:ri.gh_trust&&`${ri.gh_trust.v} <span class=dim>(${esc(ri.gh_trust.repo)}, ${esc(ri.gh_trust.src)}, confidence ${Math.round(100*(ri.gh_trust.conf||0))}%)</span>`,
+ const rl={gh_trust:'GitHub activity discovery index',paper:'Paper attention (HF upvotes)',discussion:'Discussion attention (sampled HN comments)'};
+ const rv={gh_trust:ri.gh_trust&&`${ri.gh_trust.v} <span class=dim>(${esc(ri.gh_trust.repo)}, ${esc(ri.gh_trust.src)}, coverage ${Math.round(100*(ri.gh_trust.coverage||0))}%)</span>`,
   paper:ri.paper&&A(ri.paper.url,num(ri.paper.v)+' upvotes')+` <span class=dim>arXiv ${esc(ri.paper.id)}</span>`,
-  usage:ri.usage&&`${num(ri.usage.value)} <span class=dim>${esc(ri.usage.unit)}${ri.usage.vendor?' · vendor claim, half evidence':''}</span> ${A(ri.usage.url,'source')}`,
   discussion:ri.discussion&&`${num(ri.discussion.v)} comments <span class=dim>on ${ri.discussion.stories} sampled HN stories</span>`};
+ const usage=d.metrics.map(s=>`<li><b>${esc(s.metric_family||'unknown family')}</b>: ${nv(s.value)} ${esc(s.unit||'unit unknown')} · ${esc(s.type)} ${A(s.url,'source')}<div class=dim>Period ${esc(s.period?.start||'—')} → ${esc(s.period?.end||'—')}; scope ${esc(s.scope||'—')}; compatible-cohort unit ${nv(s.normalized)}${s.cohort?'':' (unqualified cohort)'}${s.vendor?' · vendor claim':''}</div></li>`).join('')||'<li class=dim>— unobserved; not zero users or customers</li>';
  return `<tr class=card><td colspan=13><div class=cg><div>
  <h4>Summary</h4>${esc(it.summary||'—')} <span class=src>${srcs(it.summary_urls)}</span>
  <h4>Timeline</h4><ul><li><b>First seen</b>: ${it.first_seen?esc(day(it.first_seen))+' '+A(it.first_seen_url,'source'):'—'} <span class=dim>(${esc(it.first_seen_meaning||'')})</span></li>
@@ -201,20 +202,23 @@ function card(r,it){const v=it.viral,c=it.coord,ri=it.real_in,m=it.win[win]||{};
  <tr><td>Acceleration</td><td>${H.weights.hype.acceleration*100}%</td><td class=dim>no growth series</td><td>${z(r.z.acceleration)}</td></tr>
  <tr><td>Unique voices</td><td>${H.weights.hype.voices*100}%</td><td>${nv(m.voices)}</td><td>${z(r.z.voices)}</td></tr>
  <tr><td>Cross-platform spread</td><td>${H.weights.hype.spread*100}%</td><td>${m.platforms?m.platforms.length:'—'} <span class=dim>${esc((m.platforms||[]).join(', '))}</span></td><td>${z(r.z.spread)}</td></tr>
- <tr><th>Real component</th><th>weight</th><th>value</th><th>z</th></tr>
- ${Object.keys(rl).map(k=>`<tr><td>${rl[k]}</td><td>${H.weights.real[k]*100}%</td><td>${rv[k]||'<span class=dim>—</span>'}</td><td>${z(it.real_z[k])}</td></tr>`).join('')}
+ <tr><th>Discovery component</th><th>relative weight</th><th>value</th><th>z</th></tr>
+ ${Object.keys(rl).map(k=>`<tr><td>${rl[k]}</td><td>${Math.round(H.weights.discovery[k]/Object.values(H.weights.discovery).reduce((a,b)=>a+b,0)*100)}%</td><td>${rv[k]||'<span class=dim>—</span>'}</td><td>${z(d.z[k])}</td></tr>`).join('')}
  </table>
- <div class=dim style="margin-top:4px">Hype ${r.score} = 50 + ${Math.round(100*r.conf)}% × (percentile ${r.pct??'—'} − 50), from raw ${r.raw??'—'}${(r.flags||[]).length?' after penalties: '+esc(r.flags.join(', ')):''}.
- Real ${it.real??'—'} = 50 + ${Math.round(100*it.real_conf)}% × (percentile ${it.real_pct??'—'} − 50), from raw ${it.real_raw??'—'}. Gap ${r.gap??'—'} → <b>${esc(r.label||'—')}</b>. <a href="#methodology/hype-vs-real-gap">How</a></div>
+ <div class=dim style="margin-top:4px">Attention ${r.score} = 50 + ${Math.round(100*r.coverage)}% × (percentile ${r.pct??'—'} − 50), raw ${r.raw??'—'}.
+ Discovery ${d.score??'—'} = 50 + ${Math.round(100*d.coverage)}% × (percentile ${d.pct??'—'} − 50), raw ${d.raw??'—'}. Cohort: ${esc(d.cohort.join(', ')||'no observed proxy')} (${d.cohort_size} projects). Gap ${r.gap??'—'} → <b>${esc(r.label)}</b>; not technical/economic validation. <a href="#methodology/attention-discovery-gap">Method</a></div>
+ <h4>Evidence dimensions (separate from completeness)</h4><div>Verification: unqualified · Freshness: unknown · Source independence: unqualified. Coverage does not establish truth.</div>
+ <h4>Usage metric families (not in discovery score)</h4><ul>${usage}</ul>
  ${it.gh?`<div class=dim>GitHub snapshot (display only, not scored): ${num(it.gh.stars)} ★ · ${nv(it.gh.forks)} forks · created ${esc(it.gh.created||'—')} · pushed ${esc(it.gh.pushed||'—')} ${A(it.gh.url,'api')}</div>`:''}
  ${it.proxy?`<div class=dim>Research X-likes momentum proxy: rank ${nv(it.proxy.rank)}, score ${num(Math.round(it.proxy.score))}</div>`:''}
  <div class=dim>HN sample: ${nv(it.hn.accepted)} matching stories of ${nv(it.hn.returned)} hits${it.hn.capped?' (capped at first 100 hits)':''} ${A(it.hn.url,'query')}</div>
- <h4>Real-traction signals</h4><ul>${tr}</ul>
+ <h4>Sourced observations (not validated traction)</h4><ul>${tr}</ul>
  <h4>Skeptic signals</h4><ul>${sk}</ul>
  <h4>Top sampled posts</h4><table><tr><th>where</th><th>who</th><th>date</th><th>♥/pts</th><th>replies</th><th>post</th></tr>${po||'<tr><td colspan=6 class=dim>none</td></tr>'}</table>
  </div></div></td></tr>`}
 function renderHype(){
  if(!H){document.getElementById('tb').innerHTML='<tr><td class=dim>Loading HYPE data…</td></tr>';loadHype().then(()=>H&&renderHype());return}
+ document.getElementById('hnote').textContent='Sampled attention and discovery proxies are not capability, adoption or economic validation. Usage operations, users and customers remain separate. Evidence coverage is not truth confidence; verification, freshness and independence are unqualified.';
  const W=H.windows;if(!W[win]?.enabled)win='overall';if(!H.views.includes(view))view='all';
  history.replaceState(null,'','#hype/'+win+'/'+view);
  document.getElementById('upd').textContent=H.generated_local+' (HYPE build)';
@@ -227,7 +231,7 @@ function renderHype(){
  document.getElementById('th').innerHTML='<tr>'+HH.map(([h,k],i)=>`<th class="${i==0||(i>=2&&i<=11)?'n':''}${k?' s':''}"${k?` onclick="hs('${k}')" title="sort by ${h}"`:''}>${h}${k&&hsort==k?' ▼':''}</th>`).join('')+'</tr>';
  const q=document.getElementById('q').value.toLowerCase().trim();
  const cur=H[win][view]||{rows:[],candidates:0};
- const val=r=>hsort=='real'?(H.items[r.id].real??-1e9):hsort=='gap'?(r.gap??-1e9):r.score;
+ const val=r=>hsort=='discovery'?(H.items[r.id].discovery.score??-1e9):hsort=='gap'?(r.gap??-1e9):r.score;
  let rows=cur.rows.slice().sort((a,b)=>val(b)-val(a)||a.rank-b.rank);
  if(q)rows=rows.filter(r=>JSON.stringify(H.items[r.id]).toLowerCase().includes(q));
  document.getElementById('tb').innerHTML=rows.map(hrow).join('')||'<tr><td colspan=13 class=dim>No rows</td></tr>';
@@ -238,12 +242,6 @@ function renderHype(){
 async function loadHype(){
  try{const r=await fetch('hype.json?'+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);H=await r.json();}
  catch(e){document.getElementById('tb').innerHTML=`<tr><td class=dim>No HYPE data (web/hype.json): ${esc(e.message)}</td></tr>`;return}
- const g=H.research_generated_at?H.research_generated_at.slice(0,16).replace('T',' ')+' UTC':'—';
- const pc=v=>Math.round(100*v)+'%';
- document.getElementById('hnote').innerHTML=`<b>Data coverage</b>: social research generated ${esc(g)} (cutoff ${esc(H.content_cutoff.slice(0,10))}); ${H.coverage_short.map(esc).join(' ')}
- <br><b>Hype</b> (sampled attention proxy) = velocity ${pc(H.weights.hype.velocity)} · acceleration ${pc(H.weights.hype.acceleration)} (<i>not measurable yet: no growth series</i>) · unique voices ${pc(H.weights.hype.voices)} · platform spread ${pc(H.weights.hype.spread)}, minus single-platform / few-voices penalties.
- <b>Real</b> = GitHub trust ${pc(H.weights.real.gh_trust)} · paper traction ${pc(H.weights.real.paper)} · usage ${pc(H.weights.real.usage)} (vendor claims = half evidence) · HN discussion ${pc(H.weights.real.discussion)}.
- Both are <b>shrunk toward the median</b> in proportion to missing evidence. <b>Gap</b> = Hype − Real: ≥ +${H.gap_thresholds[1]} likely hype, ≤ ${H.gap_thresholds[0]} sleeper, labelled only when both confidences ≥ ${pc(H.gap_min_confidence??.5)}; otherwise <span class="gap g-insufficient">? insufficient</span>. — = no data. <a href="#methodology/hype-vs-real-gap">Methodology</a>`;
 }
 // ---------------------------------------------------------------- Methodology (renders METHODOLOGY.md, the repo's single source)
 const REPO='https://github.com/namastex888/trending-research/blob/main/';
@@ -266,6 +264,7 @@ function md2html(src){const L=src.replace(/\r/g,'').split('\n');let h='',i=0;con
   let p=[];while(i<L.length&&L[i].trim()&&!/^(#{1,4}\s|```|\s*\||>)/.test(L[i])&&!LI.test(L[i]))p.push(L[i++]);h+='<p>'+inl(p.join(' '))+'</p>'}
  return {html:h,toc}}
 async function renderMethod(){history.replaceState(null,'','#methodology'+(msec?'/'+msec:''));
+ document.getElementById('ver').textContent='Versioned discovery methods';
  const el=document.getElementById('md');
  if(!M){el.innerHTML='<p class=dim>Loading METHODOLOGY.md…</p>';
   try{let r=await fetch('METHODOLOGY.md?'+Date.now());if(!r.ok)r=await fetch('../METHODOLOGY.md?'+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);M=md2html(await r.text())}

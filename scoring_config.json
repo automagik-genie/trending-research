@@ -1,6 +1,6 @@
 {
-  "version": "2.0",
-  "_doc": "Every weight and threshold used by scoring.py. To propose a change: edit this file, run `python eval.py`, paste the output into your PR. Explained in METHODOLOGY.md.",
+  "version": "3.0",
+  "_doc": "Current discovery method 3.0. Historical v2.0 config frozen under legacy_v2 for explicit replay. See METHODOLOGY.md; run python3 eval.py.",
   "normalization": {
     "_doc": "log_p95: u = min(1, log1p(v) / log1p(P95 of the positive values of the run-wide reference)); 0 stays 0. 'percentile' is the rank-based alternative.",
     "method": "log_p95",
@@ -8,11 +8,10 @@
     "min_reference": 5
   },
   "shrinkage": {
-    "_doc": "score = prior + confidence * (raw - prior). prior 'median' = empirical-Bayes median raw score of the reference population.",
+    "_doc": "score = prior + evidence coverage * (raw - prior); heuristic, not calibrated truth probability.",
     "prior": "median",
     "rate_proxy_evidence": 0.5,
-    "stars_only_evidence": 0.5,
-    "vendor_claim_evidence": 0.5
+    "stars_only_evidence": 0.5
   },
   "momentum": {
     "min_snapshot_span_days": 0.5,
@@ -62,18 +61,10 @@
     "few_voices": 3,
     "few_voices_penalty": 0.2
   },
-  "real": {
-    "weights": {
-      "gh_trust": 0.3,
-      "paper": 0.2,
-      "usage": 0.3,
-      "discussion": 0.2
-    }
-  },
   "gap": {
-    "hype": 15,
-    "sleeper": -15,
-    "min_confidence": 0.5
+    "attention_ahead": 15,
+    "evidence_ahead": -15,
+    "min_coverage": 0.5
   },
   "movement": {
     "min_rank_change": 2,
@@ -81,12 +72,112 @@
     "min_overlap": 0.5
   },
   "eval": {
-    "confidence_threshold": 0.5,
     "top_n": 100,
     "windows": [
       "7d",
       "30d",
       "overall"
-    ]
+    ],
+    "coverage_threshold": 0.5
+  },
+  "legacy_v2": {
+    "version": "2.0",
+    "_doc": "Every weight and threshold used by scoring.py. To propose a change: edit this file, run `python eval.py`, paste the output into your PR. Explained in METHODOLOGY.md.",
+    "normalization": {
+      "_doc": "log_p95: u = min(1, log1p(v) / log1p(P95 of the positive values of the run-wide reference)); 0 stays 0. 'percentile' is the rank-based alternative.",
+      "method": "log_p95",
+      "winsor_quantile": 0.95,
+      "min_reference": 5
+    },
+    "shrinkage": {
+      "_doc": "score = prior + confidence * (raw - prior). prior 'median' = empirical-Bayes median raw score of the reference population.",
+      "prior": "median",
+      "rate_proxy_evidence": 0.5,
+      "stars_only_evidence": 0.5,
+      "vendor_claim_evidence": 0.5
+    },
+    "momentum": {
+      "min_snapshot_span_days": 0.5,
+      "paper_momentum_days": 7,
+      "activity_min_window_days": 15
+    },
+    "papers": {
+      "weights": {
+        "upvotes": 0.4,
+        "code": 0.35,
+        "mentions": 0.25
+      },
+      "single_post_factor": 0.5,
+      "upvote_evidence_k": 10,
+      "_doc_upvote_evidence_k": "upvote evidence is multiplied by n/(n+k): 6 votes -> 0.38, 40 -> 0.8, 400 -> 0.98"
+    },
+    "repos": {
+      "weights": {
+        "stars": 0.25,
+        "issues": 0.15,
+        "prs": 0.1,
+        "merge": 0.1,
+        "commits": 0.15,
+        "contribs": 0.1,
+        "contrib_growth": 0.15
+      },
+      "star_activity_max_gap": 0.4,
+      "solo_penalty": 0.2,
+      "solo_min_star_unit": 0.5,
+      "persistence_weight": 0.15,
+      "persistence_horizons": [
+        7,
+        30,
+        90
+      ],
+      "spike_flag_below": 0.25
+    },
+    "hype": {
+      "weights": {
+        "velocity": 0.35,
+        "acceleration": 0.25,
+        "voices": 0.2,
+        "spread": 0.2
+      },
+      "platforms_for_full_spread": 4,
+      "single_platform_penalty": 0.2,
+      "few_voices": 3,
+      "few_voices_penalty": 0.2
+    },
+    "real": {
+      "weights": {
+        "gh_trust": 0.3,
+        "paper": 0.2,
+        "usage": 0.3,
+        "discussion": 0.2
+      }
+    },
+    "gap": {
+      "hype": 15,
+      "sleeper": -15,
+      "min_confidence": 0.5
+    },
+    "movement": {
+      "min_rank_change": 2,
+      "min_score_change": 1.0,
+      "min_overlap": 0.5
+    },
+    "eval": {
+      "confidence_threshold": 0.5,
+      "top_n": 100,
+      "windows": [
+        "7d",
+        "30d",
+        "overall"
+      ]
+    }
+  },
+  "discovery": {
+    "weights": {
+      "gh_trust": 0.3,
+      "paper": 0.2,
+      "discussion": 0.2
+    },
+    "_doc": "Discovery activity and attention proxies only; usage metric families stay separate. Percentiles are within available-signal cohorts, not capability or economic validation."
   }
 }
