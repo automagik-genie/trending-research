@@ -1,0 +1,510 @@
+{
+  "kind": "shipped-not-live",
+  "source": {
+    "path": "@khal-os/brain artifact lib/brain/plugins/hermes_brain/mcp_client.py",
+    "sha256": "c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1",
+    "declared_source_commit": "3ed4ce88f1b9ca70373eecd05f4ed292641e3f58"
+  },
+  "attribution": {
+    "derived_from": "Exact names, descriptions and inputSchema objects of ten shipped snapshot_tools() descriptors; not live tools/list",
+    "upstream_repository": "https://git.namastex.io/khal/brain",
+    "source_commit": "3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+    "source_module": "plugins/hermes_brain/mcp_client.py",
+    "source_module_sha256": "c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1",
+    "observed_source_license": "MIT",
+    "upstream_copyright": "Copyright (c) 2026 automagik",
+    "full_notice": "../../../docs/integrations/brain.md#native-tools-snapshot-attribution-and-upstream-notice",
+    "redistribution_basis": "Observed declared-commit MIT LICENSE and package declaration, with byte-identical descriptor-source Python module; full upstream notice carried in linked documentation",
+    "compiled_binary_source_equivalence": null,
+    "installed_artifact_license_attestation": null
+  },
+  "tools": [
+    {
+      "name": "knowledge_search",
+      "description": "Read-only ranked search over the selected brain's knowledge base — returns the top matching document or chunk rows, never writes. Scope: the optional `brain_id`, otherwise BRAIN_ID or the nearest project `.brain/config.json`; with no project brain it soft-fails with guidance rather than erroring the session. No approval needed — it only reads. Trust: every hit carries a citation (file + heading) and a per-hit confidence, plus an overall confidence for the result set and its coverage verdict (gapDetected, uncovered, suggestedAction; uncovered=true means the hits are about something else, however high they score), in the text and in structuredContent. It never escalates on its own: a weak verdict comes back as it is, with a `hint` that points at `knowledge_ask`. Reversible by nature: a read changes nothing.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brain_id": {
+            "description": "Brain to search; defaults to BRAIN_ID or the nearest .brain/config.json from the caller-provided project working directory (or the MCP process working directory when absent).",
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_remember",
+      "description": "Native brain memory (core tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_remember`. Contract: [write] · scope=brain · approval=silent-ok · reversibility=reversible. Not recall-class: results carry no citations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scope": {
+            "description": "Memory scope. New memory: defaults to \"session\". Existing memory (same content): changed only when supplied.",
+            "type": "string",
+            "enum": [
+              "global",
+              "session"
+            ]
+          },
+          "importance": {
+            "description": "0-1. New memory: defaults to 0.5. Existing memory: changed only when supplied.",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "source": {
+            "description": "Provenance label. New memory: defaults to \"user\". Existing memory: changed only when supplied.",
+            "type": "string"
+          },
+          "veracity": {
+            "description": "New memory: defaults to \"unknown\". Existing memory: changed only when supplied.",
+            "type": "string",
+            "enum": [
+              "stated",
+              "inferred",
+              "tool",
+              "imported",
+              "unknown"
+            ]
+          },
+          "valid_until": {
+            "description": "Expiry date, ISO YYYY-MM-DD. Omit or \"\" for none; an existing expiry is changed only when a date is supplied.",
+            "type": "string",
+            "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$"
+          },
+          "metadata": {
+            "description": "Free-form metadata object. New memory: defaults to {}. Existing memory: replaced only when supplied.",
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {}
+          },
+          "extract": {
+            "default": false,
+            "type": "boolean"
+          },
+          "extract_entities": {
+            "default": false,
+            "type": "boolean"
+          },
+          "session_id": {
+            "description": "Session correlation id. Existing memory: changed only when supplied.",
+            "type": "string"
+          },
+          "operation_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "content"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "memory_recall",
+      "description": "Native brain memory (core tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_recall`. Contract: [read] · scope=brain · approval=silent-ok · reversibility=reversible. Recall-class: every result carries the trust contract (confidence + citations + trace_id).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limit": {
+            "default": 5,
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 100
+          },
+          "explain": {
+            "default": false,
+            "type": "boolean"
+          },
+          "query_time": {
+            "type": "string"
+          },
+          "temporal_halflife": {
+            "default": 24,
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "temporal_weight": {
+            "default": 0,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "vec_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "fts_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "importance_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "global",
+              "session"
+            ]
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_get",
+      "description": "Native brain memory (core tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_get`. Contract: [read] · scope=brain · approval=silent-ok · reversibility=reversible. Not recall-class: results carry no citations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "memory_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "memory_id"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_update",
+      "description": "Native brain memory (core tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_update`. Contract: [write] · scope=brain · approval=silent-ok · reversibility=reversible. Not recall-class: results carry no citations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "memory_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1
+          },
+          "importance": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected_revision": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "operation_key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "memory_id"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_fact_assert",
+      "description": "Native brain memory (triples tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_triple_add`. Contract: [write] · scope=brain · approval=silent-ok · reversibility=reversible. Not recall-class: results carry no citations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string",
+            "minLength": 1
+          },
+          "predicate": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "confidence": {
+            "default": 1,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "source": {
+            "default": "",
+            "type": "string"
+          },
+          "valid_from": {
+            "type": "string",
+            "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$"
+          },
+          "valid_until": {
+            "type": "string",
+            "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$"
+          },
+          "supersede": {
+            "default": true,
+            "type": "boolean"
+          },
+          "metadata": {
+            "default": {},
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {}
+          }
+        },
+        "required": [
+          "subject",
+          "predicate",
+          "object"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_fact_end",
+      "description": "Native brain memory (triples tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_triple_end`. Contract: [write] · scope=brain · approval=silent-ok · reversibility=reversible. Not recall-class: results carry no citations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string",
+            "minLength": 1
+          },
+          "predicate": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "const": ""
+              }
+            ]
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valid_until": {
+            "type": "string",
+            "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$"
+          }
+        },
+        "required": [
+          "subject",
+          "predicate"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_fact_query",
+      "description": "Native brain memory (triples tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_triple_query`. Contract: [read] · scope=brain · approval=silent-ok · reversibility=reversible. Recall-class: every result carries the trust contract (confidence + citations + trace_id).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "const": ""
+              }
+            ]
+          },
+          "predicate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "const": ""
+              }
+            ]
+          },
+          "object": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "const": ""
+              }
+            ]
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "as_of": {
+            "type": "string",
+            "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$"
+          }
+        },
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_graph_link",
+      "description": "Native brain memory (graph tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_graph_link`. Contract: [write] · scope=brain · approval=silent-ok · reversibility=reversible. Not recall-class: results carry no citations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Source brain KG document: its docid as knowledge_search / memory_recall return it (e.g. \"a1b2c3\" or \"#a1b2c3\"), \"doc-<id>\" as brain_graph_query cites it, or the numeric brain_documents id"
+          },
+          "target_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Target brain KG document: its docid as knowledge_search / memory_recall return it (e.g. \"a1b2c3\" or \"#a1b2c3\"), \"doc-<id>\" as brain_graph_query cites it, or the numeric brain_documents id"
+          },
+          "relationship": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "weight": {
+            "default": 0.5,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "source_id",
+          "target_id",
+          "relationship"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    },
+    {
+      "name": "brain_graph_query",
+      "description": "Native brain memory (graph tier), backed by brain's own Postgres substrate — at parity with the mnemosyne organ's `mnemosyne_graph_query`. Contract: [read] · scope=brain · approval=silent-ok · reversibility=reversible. Recall-class: every result carries the trust contract (confidence + citations + trace_id).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "seed_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Seed brain KG document: its docid as knowledge_search / memory_recall return it (e.g. \"a1b2c3\" or \"#a1b2c3\"), \"doc-<id>\" as brain_graph_query cites it, or the numeric brain_documents id"
+          },
+          "brain_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "edge_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "const": ""
+              }
+            ]
+          },
+          "max_hops": {
+            "default": 2,
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 6
+          },
+          "min_weight": {
+            "default": 0,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "seed_id"
+        ],
+        "$schema": "http://json-schema.org/draft-07/schema#"
+      }
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "qualification_version": "1.0.1",
+  "issue": 5,
+  "group": 4,
+  "worker": "issue-5-engineer",
+  "card": "t_muz1j2ww5a6ec7c7",
+  "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "readiness": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-4.json",
+    "state": "ACCEPTED_FOR_REACHABLE_QUALIFICATION_ONLY",
+    "scope_unchanged": true
+  },
+  "inputs": [
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "ff8d8f2713b24b425746cab8d4bdaddf33120d0358cd9032f858f4c9aaec34a5"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    },
+    {
+      "path": "tests/test_evidence_contracts.py",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "a6634faaeee1d354039392fb164e93e7e35200fdd30998482e3eb9e71b8616ef"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+    },
+    {
+      "path": "Orca integration scout report (local-only source; exact digest retained)",
+      "revision": null,
+      "sha256": "dd23ce38587e4aba69d4736ba7fdc9d9b591d36e940c3b3aab9a143ec32904bf"
+    },
+    {
+      "path": "installed Brain artifact manifest.json (machine location archived locally)",
+      "revision": "declared sourceCommit 3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+      "sha256": "ae99f4a72ddcc007a80063c22f32ea98dab08fe5ae216fe0af603c010d20a827"
+    },
+    {
+      "path": "installed Brain artifact lib/brain/plugins/hermes_brain/config.py (machine location archived locally)",
+      "revision": "shipped artifact 0.0",
+      "sha256": "df2bc0f155325ccde9a82ac84f7959ff24ef9234602e6e7fd877849575518c0d"
+    },
+    {
+      "path": "installed Brain artifact lib/brain/plugins/hermes_brain/mcp_client.py (machine location archived locally)",
+      "revision": "shipped artifact 0.0",
+      "sha256": "c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1"
+    },
+    {
+      "path": "installed Brain artifact lib/brain/plugins/hermes_brain/mapping.py (machine location archived locally)",
+      "revision": "shipped artifact 0.0",
+      "sha256": "940aea0ef5ff77cca422cde527cb2d179cb75c4cd42237adf7d28aa681f70ba4"
+    },
+    {
+      "path": "supporting Brain source src/lib/brain-memory/triples.ts",
+      "revision": null,
+      "sha256": "288b6b2d458a2052f1b11870e13fbcb757026a806c53daac06dfe9bcfa4854e9",
+      "qualification": "local source bytes only; not attested to installed artifact"
+    },
+    {
+      "path": "supporting Brain source src/lib/brain-memory/revisions.ts",
+      "revision": null,
+      "sha256": "16a9f299dbcd6be2fdd1cb76aefb9343d5fec5b67881b1d2602c238d9c0a9f3f",
+      "qualification": "local source bytes only; inspected MemoryRevisionSnapshot and conflict fields; no live replay proof"
+    }
+  ],
+  "runtime_identity": {
+    "binary": "installed brain CLI (resolved location archived locally)",
+    "contractSchemaVersion": 1,
+    "declared_source_commit": "3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+    "mcp_binary": "installed brain-mcp (resolved location archived locally)",
+    "package": "@khal-os/brain",
+    "profile": null,
+    "selected_product_brain_id": null,
+    "source_checkout": "reachable supporting Brain checkout; not attested identical to installed artifact",
+    "version": "0.0",
+    "artifact_kind": "compiled-customer-artifact",
+    "platform": "linux-x64",
+    "compile_target": "bun-linux-x64-baseline",
+    "mcp_protocol": "2026-07-28",
+    "live_server_identity": null,
+    "live_tools_schema_sha256": null,
+    "owner": null,
+    "principal": null
+  },
+  "prerequisites": {
+    "access": null,
+    "authorized_live_fixture": null,
+    "budget_approval": null,
+    "durable_storage": null,
+    "ingest_rights": null,
+    "isolated_restart_authorization": null,
+    "local_domain_fixture": "tests/fixtures/evidence_contracts.json synthetic only, no real financial finding",
+    "owner": null,
+    "principal": null,
+    "product_brn_authority": null,
+    "restart_target": null,
+    "safe_authorization": "request only local claimed scoped reports and read-only binary/help/health + pure shipped config/client functions; no personal reads, Brain creation/write/restart, paid model calls or credential reads",
+    "same_cluster_transport": null,
+    "denied_principal": null,
+    "grant_receipt": null,
+    "authorized_live_fixture_sha256": null,
+    "storage_identity": null,
+    "model_route": null
+  },
+  "owned_paths": [
+    "docs/integrations/brain.md",
+    "integrations/brain/qualification/native-tools.json",
+    "integrations/brain/qualification/evidence.json"
+  ],
+  "artifact_identity": {
+    "docs/integrations/brain.md": "33d2cd946532a88fca305b64e184100cb9a7a2641aafb7b1860727d76e612448",
+    "integrations/brain/qualification/native-tools.json": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+    "self_digest": "reported separately by worker handoff; no self-referential digest"
+  },
+  "observations": [
+    {
+      "kind": "cli_help",
+      "command": "brain --help",
+      "exit_code": 0,
+      "observed": "installed CLI reports version 0.0 and explicit --brain, native serve lifecycle, data-dir persistent precedence; no actions performed",
+      "proves": "CLI availability and supported help only"
+    },
+    {
+      "kind": "source_contract",
+      "live": false,
+      "tools": [
+        "knowledge_search",
+        "brain_remember",
+        "memory_recall",
+        "brain_get",
+        "brain_update",
+        "brain_fact_assert",
+        "brain_fact_end",
+        "brain_fact_query",
+        "brain_graph_link",
+        "brain_graph_query"
+      ],
+      "descriptor_kind": "shipped-not-live",
+      "observed": "fact supersede defaults true; explicit false supported; fact date inputs are date-only; graph endpoints are KG documents; metadata free-form",
+      "proves": "shipped contract only; no ingest, server RLS or restart"
+    },
+    {
+      "kind": "shipped_client_safety_smoke",
+      "evidence_period": "historical_initial_qualification",
+      "public_reproduction": "Original invocation was coordinator-archived and is not recovered here; the new executable repair command is repair.public_probe.command",
+      "command": "python3 -B -c (exact script coordinator-archived with readiness; pinned shipped parse_config, BrainMcpClient.scoped_arguments and build_child_env)",
+      "exit_code": 0,
+      "assertions": {
+        "missing_authority_rejected": true,
+        "malformed_authority_rejected": true,
+        "remote_plain_http_rejected": true,
+        "authority_override_denied_client_side": true,
+        "foreign_session_removed": true,
+        "same_cluster_variable_retained": true,
+        "unrelated_secret_removed": true,
+        "mcp_started": false,
+        "records_read": false
+      },
+      "proves": "Real shipped client rejection/pinning/environment behavior using synthetic values only; not server RLS, live tools/list or durable storage."
+    },
+    {
+      "kind": "installed_runtime_capabilities",
+      "command": "brain --version --capabilities",
+      "exit_code": 0,
+      "observed": {
+        "schemaVersion": 1,
+        "version": "0.0",
+        "sourceCommit": "3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+        "buildTarget": "bun-linux-x64-baseline",
+        "rls_per_brain_role_v1_advertised": true
+      },
+      "proves": "Installed declared identity and capability metadata only; no actual RLS denial was exercised."
+    },
+    {
+      "kind": "metadata_only_health",
+      "command": "curl --max-time 5 --fail-with-body -sS http://127.0.0.1:3847/healthz",
+      "exit_code": 0,
+      "observed": {
+        "status": "ok",
+        "version": "0.0",
+        "schema_version": "069-brain-receipts.sql",
+        "schema_scope": "control",
+        "selected_brain_readiness": "not_checked",
+        "pg_ok": true,
+        "mikro_ok": true,
+        "rlmx_ok": true,
+        "memory_consolidation_state": "deferred"
+      },
+      "proves": "Reported control-service health only; selected product Brain readiness explicitly not checked. No model, records, ingest or storage restart was exercised."
+    },
+    {
+      "kind": "local_domain_example_smoke",
+      "command": "python3 -B tests/test_evidence_contracts.py --smoke tests/fixtures/evidence_contracts.json",
+      "exit_code": 0,
+      "observed": {
+        "opposed_claims": ["claim:sustainable:1", "claim:unsustainable:1"],
+        "equity_transaction_parties": [["transaction:one", "entity:investor-a"], ["transaction:one", "entity:investor-b"], ["transaction:two", "entity:investor-a"]],
+        "source_revision_chain": ["source:a:1", "source:a:2"],
+        "evidence_cutoff": "2020-02-03T00:00:00Z",
+        "method_version": "fixture-method/1",
+        "later_correction_excluded": true,
+        "fixture_sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+      },
+      "proves": "Accepted synthetic domain examples only; not native Brain persistence or factual financial evidence."
+    },
+    {
+      "kind": "focused_contract_tests",
+      "command": "python3 -B -m unittest discover -s tests -p test_evidence_contracts.py",
+      "exit_code": 0,
+      "tests": 17,
+      "failures": 0,
+      "proves": "Existing contract guards pass; no new permanent tests or integration mock."
+    },
+    {
+      "kind": "frozen_aggregate",
+      "evidence_period": "historical_mid_wave",
+      "command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+      "exit_code": 0,
+      "tests": 42,
+      "failures": 0,
+      "observed": "Historical full feature and HYPE fixture evaluation completed; discovery method 3.0, config aabd43c46f; evaluation explicitly does not establish accuracy, truth probability, capability or business validation.",
+      "exercised_shared_artifact_sha256": {
+        "scoring.py": "f2c66835229fc70fbe543e6606364ec78d5bbbbb5849532f58165330ce3842ee",
+        "eval.py": "72d5c012ad2733fcc5522bea3d5c35f5f47ba1d48062dbe51f00512d312dda5c",
+        "scoring_config.json": "aabd43c46fae887a01e3305e0253504ecd03016467398ae7d894702434d59f02",
+        "tests/test_scoring.py": "af9722154e7ea571be7cc8f83725171ec207ea20b1f2fb88df4fb4de56e6e620"
+      },
+      "proves": "Historical mid-wave aggregate passed once against the listed shared-tree hashes, including another worker slice beyond intake base; not current checkpoint or repair verification and no Brain live acceptance follows."
+    }
+  ],
+  "acceptance": [
+    {
+      "criterion": "A claim links back to its exact evidence span after restart.",
+      "status": "BLOCKED",
+      "live_result": null,
+      "reason": "No approved product authority/principal/rights, same-cluster durable backing store or authorized isolated restart",
+      "evidence": "docs/integrations/brain.md: Required live acceptance protocol"
+    },
+    {
+      "criterion": "Conflicting reports and multiple investors survive ingest and update.",
+      "status": "BLOCKED",
+      "live_result": null,
+      "reason": "No authorized native ingest/update/read-back; shipped supersede:false and synthetic domain smoke are insufficient",
+      "evidence": "native-tools.json: brain_fact_assert; docs mapping and live protocol"
+    },
+    {
+      "criterion": "Document graph relationships are not presented as verified entity transactions.",
+      "status": "DOCUMENTED_CONTRACT_ONLY",
+      "live_result": null,
+      "reason": "Shipped document endpoints explicitly separated from typed EconomicRelationship; no application adapter/UI exercised",
+      "evidence": "native-tools.json: brain_graph_link/brain_graph_query; docs mapping"
+    },
+    {
+      "criterion": "Supported time semantics and any unavailable bitemporal replay are documented.",
+      "status": "DOCUMENTED_SOURCE_ONLY",
+      "live_result": null,
+      "native_bitemporal_replay": null,
+      "reason": "Date-only schemas/source half-open validity documented; no transaction-time selector or live temporal proof",
+      "evidence": "native-tools.json: brain_fact_assert/brain_fact_query; docs time section"
+    }
+  ],
+  "required_live_protocol": {
+    "authorized": false,
+    "brain_id": null,
+    "owner": null,
+    "principal": null,
+    "transport": null,
+    "fixture_sha256": null,
+    "restart_command": null,
+    "restart_executor": null,
+    "receipt": null,
+    "stages": [
+      {
+        "name": "namespace/live-schema",
+        "calls": [
+          "initialize protocolVersion=2026-07-28",
+          "notifications/initialized",
+          "tools/list"
+        ],
+        "assertions": [
+          "match approved runtime/schema identity",
+          "explicit product authority enforced",
+          "restricted principal denied other authority/records"
+        ]
+      },
+      {
+        "name": "immutable-ingest",
+        "calls": [
+          "brain_remember(content=<canonical bytes>, brain_id=<approved authority>, scope=global, veracity=imported, extract=false, extract_entities=false, metadata=<record reference>, operation_key=<approved idempotency key>, actor=<attributed principal>, reason=<approved fixture purpose>)",
+          "brain_get(memory_id=<real returned id>, brain_id=<approved authority>)"
+        ],
+        "assertions": [
+          "canonical bytes and domain IDs identical",
+          "source digest/span quote exact",
+          "identical import idempotent",
+          "unequal application-ID bytes rejected"
+        ]
+      },
+      {
+        "name": "cited-retrieval",
+        "calls": [
+          "memory_recall(query=<fixture-specific query>, brain_id=<approved authority>)",
+          "knowledge_search(query=<fixture-specific query>, brain_id=<approved authority>)"
+        ],
+        "assertions": [
+          "nonempty target-specific results/citations/trace",
+          "resolve exact revision/UTF8 byte span",
+          "reject wrong revision, unresolved citation, digest mismatch or empty recall"
+        ]
+      },
+      {
+        "name": "concurrent-update",
+        "calls": [
+          "brain_fact_assert(subject=<claim or transaction stable id>, predicate=<explicit reference relation>, object=<claim or investor stable id>, brain_id=<approved authority>, source=<canonical reference>, metadata=<span reference>, supersede=false)",
+          "brain_fact_query(brain_id=<approved authority>, subject=<fixture subject>, predicate=<fixture relation>)",
+          "brain_update(memory_id=<disposable mutable fixture only>, brain_id=<approved authority>, content=<authorized update>, expected_revision=<real read revision>, operation_key=<approved key>, actor=<principal>, reason=<fixture purpose>)"
+        ],
+        "assertions": [
+          "both opposing claims, both investors and repeated transaction original IDs retained",
+          "append correction preserves prior canonical evidence",
+          "stale mutable-fixture revision rejects",
+          "no unknown event date projected to database default validity"
+        ]
+      },
+      {
+        "name": "durable-restart",
+        "calls": [
+          "<exact isolated executor command awaits fresh readiness>",
+          "repeat exact getters and scoped queries"
+        ],
+        "assertions": [
+          "same native bindings and canonical bytes/source digest/UTF8 span",
+          "all original concurrent/revision IDs remain",
+          "no plugin-local persistence substitution"
+        ]
+      },
+      {
+        "name": "time/document-boundary",
+        "calls": [
+          "brain_fact_query(brain_id=<approved authority>, as_of=<real authorized date>)",
+          "application typed relationship projection after qualification"
+        ],
+        "assertions": [
+          "date-only interval boundaries and supersession honestly documented",
+          "document edges cannot become verified transactions",
+          "no unsupported knowledge-time/bitemporal replay claim"
+        ]
+      }
+    ]
+  },
+  "rulings": [
+    {
+      "id": "authority",
+      "attributed_to": "issue-5-engineer",
+      "decision": "Fail closed on missing product authority and grants",
+      "why": "No approved owner/principal/restart receipt; implicit active or personal memory violates issue scope",
+      "cost_if_wrong": "Qualification remains blocked until an actual owner supplies access"
+    },
+    {
+      "id": "contract_identity",
+      "attributed_to": "issue-5-engineer",
+      "decision": "Preserve ten exact canonical shipped descriptors as shipped-not-live",
+      "why": "Source snapshot is inspectable but no authorized MCP handshake or live tools/list was obtained",
+      "cost_if_wrong": "Snapshot drift requires live requalification; cannot claim server behavior"
+    },
+    {
+      "id": "immutability",
+      "attributed_to": "issue-5-engineer",
+      "decision": "Require canonical immutable records/bindings and separate disposable native memory updates",
+      "why": "Domain source/claim revision IDs and exact spans cannot be replaced by mutable row content",
+      "cost_if_wrong": "If native facilities cannot enforce it, a coordinator-frozen Brain-owned extension is required"
+    },
+    {
+      "id": "concurrency",
+      "attributed_to": "issue-5-engineer",
+      "decision": "Require explicit supersede:false for concurrent reports and investors",
+      "why": "Native default is single-valued; topic or party-pair overwrite loses independent records",
+      "cost_if_wrong": "No live persistence acceptance until all original IDs and corrections survive read-back"
+    },
+    {
+      "id": "document_semantics",
+      "attributed_to": "issue-5-engineer",
+      "decision": "Never promote Brain document edges into verified economic transactions",
+      "why": "Graph endpoints identify documents, while economic edges require typed attributed records/spans",
+      "cost_if_wrong": "Future UI/adapter must enforce this boundary or risk unsupported financial conclusions"
+    },
+    {
+      "id": "time",
+      "attributed_to": "issue-5-engineer",
+      "decision": "Preserve unknown dates/UTC precision and withhold bitemporal replay claims",
+      "why": "Date-only fact validity and native row revisions cannot express both application knowledge and event time",
+      "cost_if_wrong": "Some fact projections must be withheld; replay needs qualified immutable manifests/storage/methods"
+    },
+    {
+      "id": "scope",
+      "attributed_to": "issue-5-engineer",
+      "decision": "Deliver qualification docs and receipts only, without store or adapter scaffolds",
+      "why": "Missing access cannot be solved with synthetic success, a side database or fake calls",
+      "cost_if_wrong": "Original issue remains BLOCKED and downstream storage adoption remains ineligible"
+    }
+  ],
+  "repair": {
+    "worker": "task_4be9d56407a7",
+    "dispatch": "ctx_1464721b9ef1",
+    "source_checkpoint": "bb73b063957f2b6ccf0b0311e1770730faa8e2c0",
+    "frozen_supplement": ".genie/wishes/open-intelligence-observatory/readiness/group-4-repair-1.json",
+    "attempts": 1,
+    "budget": 2,
+    "budget_source": "config: returned 2 in coordinator-frozen repair supplement",
+    "effort_escalations": 0,
+    "original_readiness_mutated": false,
+    "independent_review_script": {
+      "report": "/tmp/brain-qualification-review-ctx_0694e5c88a63.md",
+      "attribution": "Independent reviewer full real-component script is prior independent evidence, not recovered author historical command and not this worker's execution",
+      "prior_verdict": "FIX-FIRST",
+      "re_review": null
+    },
+    "public_probe": {
+      "command": "python3 -B -I - <<'PY'\nimport os, sys\nos.environ = {\"HOME\": \"/nonexistent/qualification\", \"BRAIN_HOME\": \"/nonexistent/qualification\"}\nimport hashlib, importlib.util, json, pwd, sysconfig, types\nfrom pathlib import Path\n\nif len(sys.argv) > 2:\n    raise SystemExit(\"usage: python3 -B -I - [absolute-install-root]\")\nroot = Path(sys.argv[1]) if len(sys.argv) == 2 else Path(pwd.getpwuid(os.getuid()).pw_dir) / \".brain\"\nif not root.is_absolute():\n    raise SystemExit(\"installation root must be absolute\")\nlib = root / \"lib/brain/plugins/hermes_brain\"\nexpected = {\n    \"config\": \"df2bc0f155325ccde9a82ac84f7959ff24ef9234602e6e7fd877849575518c0d\",\n    \"mcp_client\": \"c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1\",\n}\nartifact_path = Path(\"integrations/brain/qualification/native-tools.json\").resolve()\nallowed = {artifact_path, *(lib / (name + \".py\") for name in expected)}\nallowed = {path.resolve() for path in allowed}\nstdlib = Path(sysconfig.get_path(\"stdlib\")).resolve()\nwrite_flags = os.O_WRONLY | os.O_RDWR | os.O_CREAT | os.O_TRUNC | os.O_APPEND\nmutations = {\n    \"os.system\", \"os.fork\", \"os.forkpty\", \"os.posix_spawn\", \"os.kill\", \"os.killpg\",\n    \"os.putenv\", \"os.unsetenv\", \"os.remove\", \"os.rename\", \"os.rmdir\", \"os.mkdir\",\n    \"os.chmod\", \"os.chown\", \"os.utime\", \"os.link\", \"os.symlink\", \"os.truncate\",\n    \"shutil.copyfile\", \"shutil.copymode\", \"shutil.copystat\", \"shutil.rmtree\",\n}\ndef safety(event, args):\n    if event in mutations or event.startswith((\"subprocess.\", \"socket.\", \"urllib.\", \"os.exec\", \"os.spawn\")):\n        raise PermissionError(\"probe guard: \" + event)\n    if event == \"open\":\n        if len(args) != 3 or not isinstance(args[2], int) or args[2] & write_flags:\n            raise PermissionError(\"probe guard: write or unknown open flags\")\n        path = Path(os.fsdecode(args[0])).resolve() if isinstance(args[0], (str, bytes, os.PathLike)) else None\n        if path is None or (path not in allowed and not (path.is_relative_to(stdlib) and path.suffix in {\".py\", \".pyc\", \".so\"})):\n            raise PermissionError(\"probe guard: unexpected file read\")\nsys.addaudithook(safety)\nguards = {}\nfor label, event, args in [\n    (\"process_rejected\", \"subprocess.Popen\", ()),\n    (\"network_rejected\", \"socket.connect\", ()),\n    (\"write_rejected\", \"open\", (str(artifact_path), \"w\", os.O_WRONLY)),\n    (\"unknown_open_flags_rejected\", \"open\", (str(artifact_path), \"r\", None)),\n    (\"private_file_read_rejected\", \"open\", (\"/nonexistent/private-env\", \"r\", os.O_RDONLY)),\n    (\"filesystem_mutation_rejected\", \"os.remove\", (\"/nonexistent/qualification\",)),\n]:\n    try:\n        sys.audit(event, *args)\n    except PermissionError:\n        guards[label] = True\n    else:\n        raise AssertionError(label)\n\npackage = types.ModuleType(\"_qualification_brain\")\npackage.__path__ = [str(lib)]\nsys.modules[package.__name__] = package\nmodules = {}\nfor name, digest in expected.items():\n    path = lib / (name + \".py\")\n    source = path.read_bytes()\n    if hashlib.sha256(source).hexdigest() != digest:\n        raise SystemExit(\"installed module digest drift: \" + name)\n    spec = importlib.util.spec_from_file_location(package.__name__ + \".\" + name, path)\n    mod = importlib.util.module_from_spec(spec)\n    sys.modules[spec.name] = mod\n    exec(compile(source, str(path), \"exec\"), mod.__dict__)\n    modules[name] = mod\nconfig, client = modules[\"config\"], modules[\"mcp_client\"]\nobserved = {}\nfor label, raw, message in [\n    (\"missing_authority_rejected\", {}, \"brain_id is required\"),\n    (\"malformed_authority_rejected\", {\"brain_id\": \"not-a-brain\"}, \"brain_id must look like\"),\n    (\"remote_plain_http_rejected\", {\"brain_id\": \"brn_repair_fixture\", \"endpoint\": \"http://example.invalid/mcp\"}, \"must use HTTPS\"),\n]:\n    try:\n        config.parse_config(raw)\n    except config.BrainConfigError as exc:\n        if message not in str(exc):\n            raise\n        observed[label] = True\n    else:\n        raise AssertionError(label)\nvalidated = config.parse_config({\"brain_id\": \"brn_repair_fixture\", \"command\": \"/nonexistent/qualification/brain-mcp\"})\ninstance = client.BrainMcpClient(validated)\nscoped = instance.scoped_arguments({\"brain_id\": \"brn_foreign_fixture\", \"query\": \"synthetic\"}, tool=\"memory_recall\")\nassert scoped[\"brain_id\"] == \"brn_repair_fixture\"\nobserved[\"authority_override_denied_client_side\"] = True\nchild = client.build_child_env(\"brn_repair_fixture\", base={\n    \"HOME\": \"/nonexistent/qualification\", \"BRAIN_HOME\": \"/nonexistent/qualification\",\n    \"BRAIN_KHORTEX_SESSION\": \"foreign-synthetic\", \"PGHOST\": \"synthetic-cluster.invalid\",\n    \"UNRELATED_SECRET\": \"synthetic-not-secret\",\n})\nassert \"BRAIN_KHORTEX_SESSION\" not in child\nassert child[\"PGHOST\"] == \"synthetic-cluster.invalid\"\nassert \"UNRELATED_SECRET\" not in child\nobserved.update(foreign_session_removed=True, same_cluster_variable_retained=True, unrelated_secret_removed=True)\nassert instance._channel is None\nobserved.update(mcp_started=False, records_read=False)\nartifact = json.loads(artifact_path.read_text())\nnames = {\"knowledge_search\", \"brain_remember\", \"memory_recall\", \"brain_get\", \"brain_update\", \"brain_fact_assert\", \"brain_fact_end\", \"brain_fact_query\", \"brain_graph_link\", \"brain_graph_query\"}\nassert len(artifact[\"tools\"]) == 10 and {tool[\"name\"] for tool in artifact[\"tools\"]} == names\nshipped = {tool[\"name\"]: tool for tool in client.snapshot_tools()}\nfor descriptor in artifact[\"tools\"]:\n    assert descriptor == shipped[descriptor[\"name\"]], descriptor[\"name\"]\nprint(json.dumps({\n    \"audit_guards\": guards, \"component_observations\": observed,\n    \"descriptor_provenance\": {\"exact_shipped_descriptors\": 10, \"live_tools_list\": False},\n    \"proof_boundary\": \"shipped pure functions and descriptor provenance only; no RLS, ingest, model, storage or restart proof\",\n}, indent=2))\nPY\n",
+      "command_sha256": "5f7e6f429f07769e0f9c3e999a60a5914b17076bbe816b157a053263ec7435c6",
+      "command_digest_basis": "UTF-8 shell command text including final newline",
+      "working_directory": "repository root",
+      "installed_root_discovery": "OS account home/.brain via pwd.getpwuid(os.getuid()), without reading inherited HOME/BRAIN_HOME",
+      "installed_root_override": "Optional absolute argv[1] after the Python stdin '-' argument; same digests required",
+      "environment": "Python os.environ mapping replaced with synthetic HOME/BRAIN_HOME before probe dependencies/shipped imports; child-env input is explicit synthetic dictionary",
+      "guards": "Deny process/network/filesystem mutation, unknown/write open flags and file reads outside two pinned module paths, descriptor snapshot and stdlib code; audit-event-only rejection checks",
+      "initializer": "Bypassed; execute verified source bytes in synthetic package without importing real provider",
+      "exit_code": 0,
+      "stdout": "{\n  \"audit_guards\": {\n    \"process_rejected\": true,\n    \"network_rejected\": true,\n    \"write_rejected\": true,\n    \"unknown_open_flags_rejected\": true,\n    \"private_file_read_rejected\": true,\n    \"filesystem_mutation_rejected\": true\n  },\n  \"component_observations\": {\n    \"missing_authority_rejected\": true,\n    \"malformed_authority_rejected\": true,\n    \"remote_plain_http_rejected\": true,\n    \"authority_override_denied_client_side\": true,\n    \"foreign_session_removed\": true,\n    \"same_cluster_variable_retained\": true,\n    \"unrelated_secret_removed\": true,\n    \"mcp_started\": false,\n    \"records_read\": false\n  },\n  \"descriptor_provenance\": {\n    \"exact_shipped_descriptors\": 10,\n    \"live_tools_list\": false\n  },\n  \"proof_boundary\": \"shipped pure functions and descriptor provenance only; no RLS, ingest, model, storage or restart proof\"\n}\n",
+      "stdout_sha256": "4f4f5cfa8db54922ba8be65e12d409c311b71b82be763222788c53aa645317fd",
+      "stderr": "",
+      "execution": "Exact published shell heredoc executed via shell eval wrapper after the complete documentary repair; tool returned success and complete stdout",
+      "proof_boundary": "Actual pinned shipped pure functions and exact descriptor provenance only; no native call, RLS, persistence, span, model, grant or restart proof"
+    },
+    "snapshot_provenance": {
+      "derived_artifact": "integrations/brain/qualification/native-tools.json",
+      "derivation": "Copied complete names/descriptions/inputSchema for ten canonical descriptors from installed shipped snapshot_tools()",
+      "upstream_repository": "https://git.namastex.io/khal/brain",
+      "source_commit": "3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+      "license": {
+        "command": "git -C /home/genie/workspace/repos/brain show 3ed4ce88f1b9ca70373eecd05f4ed292641e3f58:LICENSE",
+        "exit_code": 0,
+        "sha256": "f3bb4f51dbcd27e2acecc608d2627d87f47c0dcfaaa9f50798985fcafdc1a3ba",
+        "observed": "MIT License; Copyright (c) 2026 automagik; full permission/conditions/disclaimer carried adjacent to snapshot",
+        "full_notice": "docs/integrations/brain.md#native-tools-snapshot-attribution-and-upstream-notice"
+      },
+      "package": {
+        "command": "git -C /home/genie/workspace/repos/brain show 3ed4ce88f1b9ca70373eecd05f4ed292641e3f58:package.json",
+        "exit_code": 0,
+        "sha256": "1bfbf356de818cc117c61c4195cca142699f5eef950cce9905fb9f60597efcdf",
+        "observed": {"name": "@khal-os/brain", "version": "0.0.0", "author": "Namastex Labs", "license": "MIT", "repository": "https://git.namastex.io/khal/brain.git"},
+        "boundary": "Source package declaration, not installed artifact version/licence attestation"
+      },
+      "descriptor_source_correspondence": {
+        "command": "git -C /home/genie/workspace/repos/brain show 3ed4ce88f1b9ca70373eecd05f4ed292641e3f58:plugins/hermes_brain/mcp_client.py | sha256sum",
+        "exit_code": 0,
+        "stdout": "c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1  -\n",
+        "source_module_sha256": "c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1",
+        "installed_module_sha256": "c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1",
+        "verified_subset": "Whole descriptor-source Python module byte-identical; public probe checks all ten copied descriptor objects against shipped function output",
+        "compiled_binary_source_equivalence": null,
+        "live_tools_list": false
+      },
+      "redistribution_basis": "Observed declared-source MIT grant and verified descriptor-source correspondence; preserve copyright, permission and disclaimer notice beside snapshot",
+      "legal_scope": "Not a legal applicability/copyrightability opinion; no inferred rights for unrelated assets or whole compiled runtime; broader redistribution needs real applicable rights/owner confirmation",
+      "installed_artifact_license_attestation": null,
+      "compiled_binary_source_equivalence": null,
+      "root_license_modified": false,
+      "notice_verification": "Published full notice UTF-8 bytes including final newline SHA256 equals actual declared-commit LICENSE digest f3bb4f51dbcd27e2acecc608d2627d87f47c0dcfaaa9f50798985fcafdc1a3ba",
+      "discovery_failure": {
+        "command": "git -C /home/genie/workspace/repos/brain show 3ed4ce88f1b9ca70373eecd05f4ed292641e3f58:plugins/hermes-brain/mcp_client.py",
+        "exit_code": 128,
+        "stderr": "fatal: path 'plugins/hermes-brain/mcp_client.py' does not exist in '3ed4ce88f1b9ca70373eecd05f4ed292641e3f58'",
+        "resolution": "Path discovery located actual plugins/hermes_brain/mcp_client.py; successful source comparison recorded above"
+      }
+    },
+    "historical_receipts_preserved": "Author original commands and 42-test mid-wave aggregate retained as historical; independent reviewer script attributed separately, not recovered author history",
+    "aggregate_validation": "Deferred to coordinator until all writers settle; not run by repair worker",
+    "original_issue_state": "BLOCKED",
+    "criteria_1_2": "BLOCKED: no authorized native ingest/read-back/concurrency or isolated durable restart",
+    "criteria_3_4": "Documentary/source-only; no product-runtime/UI/time/replay acceptance",
+    "runtime_release_gates": {"issue_3": "BLOCKED", "issue_4": "BLOCKED", "issue_5": "BLOCKED"},
+    "resolved_findings": {
+      "R1": "Executable portable pinned shipped-function command published identically in docs/evidence and exercised; seven actual controls plus six audit rejection checks passed; no MCP/records",
+      "R2": "Verified exact source-commit MIT LICENSE/package declaration, full upstream notice and derived-snapshot provenance carried; only Python descriptor-source correspondence verified"
+    },
+    "remaining_findings": "Independent fresh acceptance/quality re-review pending; owner/principal/grants/live schema/fixture rights/same-cluster durable storage/native span/concurrency/restart receipts remain unavailable; native bitemporal replay unqualified"
+  },
+  "outcome": "BLOCKED",
+  "scope_limit": "Receipts qualify reachable contracts/client safety and local domain examples only; no product persistence, privacy grant, deployed acceptance or issue-close authority",
+  "injection_attempts": []
+}
