@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-"""scoring.py: the one shared scoring module (algorithm v2).
+"""Versioned discovery scoring; proxy rankings are not capability or truth measurements.
 
 Used by run.py (Papers + GitHub tabs), hype_build.py (HYPE tab) and eval.py.
 Pure functions, Python standard library only. Every weight and threshold lives in
 scoring_config.json; METHODOLOGY.md explains each formula.
 
-Pipeline for every score (papers, repo trust, Hype, Real):
-  1. normalise each present signal against a fixed run-wide reference:
-       u = min(1, log1p(v) / log1p(P95 of positive reference values)), 0 -> 0, ratios stay 0..1
-  2. raw = 100 * sum(w_k * u_k) / sum(w_k)   over PRESENT signals only
-  3. confidence c = sum(w_k * e_k over present) / sum(w_k over all)   (e_k = evidence quality 0..1)
-  4. anti-noise multipliers (star/activity mismatch cap, solo repo, persistence, single-source attention)
-  5. shrink toward the empirical-Bayes prior: score = prior + c * (raw - prior)
+Pipeline for every discovery score:
+  1. normalise each present compatible signal against its reference
+  2. raw = 100 * sum(w_k * u_k) / sum(w_k) over PRESENT signals only
+  3. coverage = sum(w_k * e_k over present) / sum(w_k over all)
+  4. apply documented proxy heuristics
+  5. shrink toward the reference prior: score = prior + coverage * (raw - prior)
+Verification, freshness and source independence are separate, unqualified dimensions.
 Missing values are never filled in: no signal at all -> score None (shown as '—').
 
 score_run(features, version='1.0') reproduces the legacy v1 algorithm for eval.py.
 """
 import bisect, hashlib, json, math, os
 
-SCORING_VERSION = '2.0'
+SCORING_VERSION = '3.0'
 HERE = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(HERE, 'scoring_config.json')
 PLATFORMS = ['X', 'Reddit', 'LinkedIn', 'HN', 'YouTube', 'Discord', 'Telegram']
@@ -94,7 +94,7 @@ class Ref:
 
 
 def combine(units, weights, evidence=None):
-    """Weighted mean of present units (0..1) -> (raw 0..100 | None, confidence 0..1)."""
+    """Weighted mean of present units -> (raw 0..100 | None, weighted evidence coverage)."""
     num = den = ev = 0.0
     total = sum(w for w in weights.values() if w > 0)
     for k, w in weights.items():
@@ -110,7 +110,7 @@ def combine(units, weights, evidence=None):
 
 
 def shrink(raw, conf, prior):
-    """Bayesian linear shrinkage: missing evidence pulls the score toward the prior."""
+    """Heuristic linear shrinkage; coverage is not a calibrated probability."""
     if raw is None:
         return None
     if prior is None:
@@ -151,6 +151,20 @@ def percentiles(raws):
     return out
 
 
+def coverage_dimensions():
+    """No source verification, clock or common-origin qualification is inferred from counts."""
+    return dict(verification=None, freshness=dict(assessed_at=None, newest_evidence_at=None),
+                independence=dict(origin_ids=[], rationale=None))
+
+
+def pr_cohort_ratio(activity):
+    opened = activity.get('prs_opened')
+    merged = activity.get('prs_merged_in_opened_cohort')
+    if not isnum(opened) or not isnum(merged) or opened <= 0 or not 0 <= merged <= opened:
+        return None
+    return merged / opened
+
+
 # ---------------------------------------------------------------- GitHub repos (trust index)
 ACTIVITY_KEYS = ('issues', 'prs', 'commits')
 
@@ -161,7 +175,8 @@ def _repo_values(rf, wname, days, cfg):
     act_on = days is None or days >= cfg['momentum']['activity_min_window_days']
     vals = {'stars': w.get('stars_rate'), 'contribs': rf.get('contributors'), 'contrib_growth': w.get('contrib_rate'),
             'issues': a.get('issues') if act_on else None, 'prs': a.get('prs') if act_on else None,
-            'merge': a.get('merge') if act_on else None, 'commits': a.get('commits') if act_on else None}
+            'merge': (a.get('merge') if cfg['version'] == '2.0' else pr_cohort_ratio(a)) if act_on else None,
+            'commits': a.get('commits') if act_on else None}
     return vals, w
 
 
@@ -177,7 +192,7 @@ def repo_refs(R, cfg):
 
 
 def repo_raw(rf, wname, days, refs, cfg):
-    """-> dict(raw, conf, flags, kind) or None when no signal is present."""
+    """-> dict(raw, coverage, flags, kind) or None when no signal is present."""
     c, sh = cfg['repos'], cfg['shrinkage']
     vals, w = _repo_values(rf, wname, days, cfg)
     u = {k: (None if v is None else clamp01(v)) if k == 'merge' else refs[k].unit(v) for k, v in vals.items()}
@@ -208,7 +223,7 @@ def repo_raw(rf, wname, days, refs, cfg):
         mult *= 1 - c['persistence_weight'] * (1 - s)
         if s < c['spike_flag_below']:
             flags.append('spike')
-    return dict(raw=raw * mult, conf=conf, flags=flags, kind=w.get('stars_kind'))
+    return dict(raw=raw * mult, coverage=conf, flags=flags, kind=w.get('stars_kind'))
 
 
 # ---------------------------------------------------------------- papers
@@ -246,22 +261,26 @@ def paper_raw(pf, refs, trust, cfg):
     raw, conf = combine(u, c['weights'], ev)
     if raw is None:
         return None
-    return dict(raw=raw, conf=conf, flags=flags, kind=pf.get('up_kind'))
+    return dict(raw=raw, coverage=conf, flags=flags, kind=pf.get('up_kind'))
 
 
 # ---------------------------------------------------------------- whole run (papers + repos)
 def score_run(F, cfg=None, version=SCORING_VERSION):
     """F = features written by run.py (history/runs/*-features.json.gz).
-    Returns {'trust': {repo: (score, conf)}, 'repos': {win: [rows]}, 'papers': {win: [rows]}, 'priors': {...}}
+    Returns trust tuples(score, coverage), repos/papers rows and priors.
     Rows are sorted best-first; rows without any evidence come last with score None."""
     if str(version).startswith('1'):
         return score_run_v1(F)
+    if version == '2.0':
+        cfg = load_config()['legacy_v2']
+    elif version != SCORING_VERSION:
+        raise ValueError(f'Unsupported scoring version: {version}')
     cfg = cfg or load_config()
     R, Pp = F['repos'], F['papers']
     rrefs = repo_refs(R, cfg)
     base = {fn: repo_raw(rf, '30d', 30, rrefs, cfg) for fn, rf in R.items()}
     prior_r = resolve_prior(cfg, [x['raw'] for x in base.values() if x])
-    trust = {fn: ((r1(shrink(x['raw'], x['conf'], prior_r)), round(x['conf'], 2)) if x else (None, 0.0))
+    trust = {fn: ((r1(shrink(x['raw'], x['coverage'], prior_r)), round(x['coverage'], 2)) if x else (None, 0.0))
              for fn, x in base.items()}
     out = {'trust': trust, 'repos': {}, 'papers': {}, 'priors': {'repos': r1(prior_r)}}
     for wname, days in F['windows']:
@@ -271,10 +290,10 @@ def score_run(F, cfg=None, version=SCORING_VERSION):
                 continue
             x = repo_raw(rf, wname, days, rrefs, cfg)
             w = (rf.get('win') or {}).get(wname) or {}
-            row = dict(id=fn, score=None, conf=0.0, raw=None, flags=[], kind=w.get('stars_kind'),
-                       gained=w.get('gained'), gspan=w.get('gspan'), stars=rf.get('stars'))
+            row = dict(id=fn, score=None, coverage=0.0, raw=None, flags=[], kind=w.get('stars_kind'),
+                       gained=w.get('gained'), gspan=w.get('gspan'), stars=rf.get('stars'), **coverage_dimensions())
             if x:
-                row.update(score=r1(shrink(x['raw'], x['conf'], prior_r)), conf=round(x['conf'], 2),
+                row.update(score=r1(shrink(x['raw'], x['coverage'], prior_r)), coverage=round(x['coverage'], 2),
                            raw=r1(x['raw']), flags=x['flags'])
             rows.append(row)
         rows.sort(key=lambda r: (r['score'] is None, -(r['score'] or 0), -(r['gained'] if isnum(r['gained']) else -1),
@@ -290,9 +309,10 @@ def score_run(F, cfg=None, version=SCORING_VERSION):
             if wname not in pf.get('cands', ()):
                 continue
             x = pbase[pid]
-            row = dict(id=pid, score=None, conf=0.0, raw=None, flags=[], kind=pf.get('up_kind'), age=pf.get('age'))
+            row = dict(id=pid, score=None, coverage=0.0, raw=None, flags=[], kind=pf.get('up_kind'), age=pf.get('age'),
+                       **coverage_dimensions())
             if x:
-                row.update(score=r1(shrink(x['raw'], x['conf'], prior_p)), conf=round(x['conf'], 2),
+                row.update(score=r1(shrink(x['raw'], x['coverage'], prior_p)), coverage=round(x['coverage'], 2),
                            raw=r1(x['raw']), flags=x['flags'])
             rows.append(row)
         rows.sort(key=lambda r: (r['score'] is None, -(r['score'] or 0), r['age'] if isnum(r['age']) else 1e9, r['id']))
@@ -370,14 +390,14 @@ def score_run_v1(F):
 
 
 # ---------------------------------------------------------------- HYPE (Hype vs Real)
-def gap_label(gap, hype_conf, real_conf, cfg):
+def legacy_v2_gap_label(gap, hype_conf, real_conf, cfg):
     g = cfg['gap']
     if gap is None or hype_conf is None or real_conf is None or hype_conf < g['min_confidence'] or real_conf < g['min_confidence']:
         return 'insufficient'
     return 'hype' if gap >= g['hype'] else ('sleeper' if gap <= g['sleeper'] else 'earned')
 
 
-def real_scores(P, cfg):
+def legacy_v2_real_scores(P, cfg):
     """P[pid]['real_in'] = {gh_trust: {v, conf}, paper: {v}, usage: {value, vendor}, discussion: {v}} (any may be None)."""
     n, sh = cfg['normalization'], cfg['shrinkage']
     ri = {pid: p.get('real_in') or {} for pid, p in P.items()}
@@ -408,7 +428,7 @@ def real_scores(P, cfg):
     return out, prior
 
 
-def hype_window(P, w, real, cfg):
+def legacy_v2_hype_window(P, w, real, cfg):
     """Hype score for one window. P[pid]['win'][w] = {mentions, voices, platforms, days}, P[pid]['age']."""
     c, n = cfg['hype'], cfg['normalization']
     cand = [pid for pid in P if (P[pid].get('win') or {}).get(w) and P[pid]['win'][w].get('mentions', 0) > 0]
@@ -441,9 +461,103 @@ def hype_window(P, w, real, cfg):
         rl = real.get(pid) or {}
         gap = r1(sc - rl['score']) if rl.get('score') is not None else None
         rows.append(dict(id=pid, score=sc, conf=round(conf, 2), raw=r1(raw), pct=r1(pct[pid]), vel=round(vel[pid], 3), gap=gap,
-                         label=gap_label(gap, conf, rl.get('conf'), cfg), flags=flags,
+                         label=legacy_v2_gap_label(gap, conf, rl.get('conf'), cfg), flags=flags,
                          z={k: None if v is None else round(v, 3) for k, v in u.items()}))
     rows.sort(key=lambda r: (-r['score'], -P[r['id']]['win'][w]['mentions'], r['id']))
+    return rows, prior
+
+
+METRIC_FAMILIES = {
+    **dict.fromkeys(('npm_downloads', 'pypi_downloads', 'hf_model_downloads',
+                     'representative_checkpoint_downloads', 'package_downloads', 'downloads',
+                     'app_downloads'), 'download_operations'),
+    **dict.fromkeys(('extension_users', 'claimed_monthly_active_users', 'reported_users'), 'users'),
+    'business_clients': 'business_customers', 'creators': 'creators',
+}
+
+
+def metric_cohort(metric):
+    period = metric.get('period') or {}
+    parts = (METRIC_FAMILIES.get(metric.get('type')), metric.get('type'), metric.get('unit'),
+             period.get('start'), period.get('end'), metric.get('scope'))
+    return parts if all(isinstance(p, str) and p for p in parts) else None
+
+
+def usage_metrics(inputs, cfg):
+    """Keep units and missingness; no mixed-family magnitude or unknown-cohort normalization."""
+    refs = {}
+    for metrics in inputs.values():
+        for metric in metrics:
+            key = metric_cohort(metric)
+            if key:
+                refs.setdefault(key, []).append(metric.get('value'))
+    refs = {key: Ref(values, cfg['normalization']) for key, values in refs.items()}
+    out = {}
+    for pid, metrics in inputs.items():
+        rows = []
+        for metric in metrics:
+            key = metric_cohort(metric)
+            value = metric.get('value')
+            observed = isnum(value) and value >= 0
+            rows.append(dict(metric, value=value if observed else None,
+                             metric_family=METRIC_FAMILIES.get(metric.get('type')),
+                             cohort=list(key) if key else None,
+                             normalized=refs[key].unit(value) if key and observed else None,
+                             missingness='observed' if observed else 'unobserved'))
+        out[pid] = rows
+    return out
+
+
+def discovery_scores(P, cfg):
+    """Discovery proxies only. Usage families remain separate from activity and discussion."""
+    inputs = {pid: p.get('evidence_in') or {} for pid, p in P.items()}
+    metrics = usage_metrics({pid: r.get('usage') or [] for pid, r in inputs.items()}, cfg)
+    refs = {k: Ref([(r.get(k) or {}).get('v') for r in inputs.values()], cfg['normalization'])
+            for k in ('paper', 'discussion')}
+    tmp, cohorts = {}, {}
+    for pid, r in inputs.items():
+        trust = r.get('gh_trust') or {}
+        u = dict(gh_trust=clamp01(trust['v'] / 100) if isnum(trust.get('v')) else None,
+                 paper=refs['paper'].unit((r.get('paper') or {}).get('v')),
+                 discussion=refs['discussion'].unit((r.get('discussion') or {}).get('v')))
+        ev = {'gh_trust': trust.get('coverage') if isnum(trust.get('coverage')) else 0.0}
+        raw, coverage = combine(u, cfg['discovery']['weights'], ev)
+        cohort = tuple(k for k, v in u.items() if v is not None)
+        cohorts.setdefault(cohort, {})[pid] = raw
+        tmp[pid] = (raw, coverage, u, cohort)
+    pct = {}
+    for values in cohorts.values():
+        pct.update(percentiles(values))
+    out = {}
+    for pid, (raw, coverage, u, cohort) in tmp.items():
+        out[pid] = dict(score=r1(shrink(pct[pid], coverage, 50)), raw=r1(raw), pct=r1(pct[pid]),
+                        coverage=round(coverage, 2), cohort=list(cohort), cohort_size=len(cohorts[cohort]),
+                        z={k: None if v is None else round(v, 3) for k, v in u.items()},
+                        metrics=metrics[pid], usage_missingness='observed' if any(
+                            m['missingness'] == 'observed' for m in metrics[pid]) else 'unobserved',
+                        **coverage_dimensions())
+    return out, 50.0
+
+
+def gap_label(gap, attention_coverage, discovery_coverage, cfg):
+    g = cfg['gap']
+    if gap is None or attention_coverage is None or discovery_coverage is None or (
+            min(attention_coverage, discovery_coverage) < g['min_coverage']):
+        return 'insufficient'
+    return ('attention_ahead' if gap >= g['attention_ahead'] else
+            'evidence_ahead' if gap <= g['evidence_ahead'] else 'similar')
+
+
+def hype_window(P, w, discovery, cfg):
+    """Sampled attention, not adoption, capability, economics or independent verification."""
+    # v2 attention arithmetic is unchanged; the current wire and comparison semantics are not.
+    old_cfg = dict(cfg, gap=cfg['legacy_v2']['gap'])
+    legacy = {pid: dict(score=r['score'], conf=r['coverage']) for pid, r in discovery.items()}
+    rows, prior = legacy_v2_hype_window(P, w, legacy, old_cfg)
+    for row in rows:
+        row['coverage'] = row.pop('conf')
+        row['label'] = gap_label(row['gap'], row['coverage'], discovery[row['id']]['coverage'], cfg)
+        row.update(coverage_dimensions())
     return rows, prior
 
 

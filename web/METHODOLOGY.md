@@ -1,26 +1,26 @@
 # Methodology
 
-Scoring version **2.0**. The code is [scoring.py](scoring.py) and every weight and threshold is in [scoring_config.json](scoring_config.json). The page's Methodology tab renders this same file, so the repo and the page always say the same thing.
+Current discovery method **3.0**; historical **2.0** remains executable with its frozen configuration. Code: [scoring.py](scoring.py); parameters: [scoring_config.json](scoring_config.json). The page renders `web/METHODOLOGY.md`, an identical copy.
 
 ## Overview
 
 The tracker ranks three things:
 
 - **Papers**: arXiv / Hugging Face papers on AI agents, harnesses and context layers, JEPA, JEV (decision models), world and action models, and a few non-LLM paradigms.
-- **GitHub**: repositories on the same subjects, ranked by a *trust index* (sustained, multi-signal activity), never by star totals.
-- **HYPE**: what the wider AI world is talking about (open and closed source), comparing **Hype** (sampled attention) with **Real** (evidence of substance).
+- **GitHub**: repositories ranked by a multi-signal *activity discovery index*. The historical name “trust index” does not establish trustworthy code.
+- **HYPE**: sampled **Attention** and **Discovery** proxies for open and closed projects, with separate sourced usage families. Neither score measures technical capability, economic validation or truth.
 
 Every score is 0-100 and goes through the same five steps:
 
 ```
 1. normalise each present signal:   u = min(1, log1p(v) / log1p(P95_ref))      (0 stays 0)
 2. raw score:                       raw = 100 * sum(w_k * u_k) / sum(w_k)       over PRESENT signals
-3. confidence:                      c = sum(w_k * e_k over present) / sum(w_k over all signals)
+3. evidence coverage:               c = sum(w_k * e_k over present) / sum(w_k over all signals)
 4. anti-noise multipliers:          raw = raw * m_1 * m_2 * ...                 (see Anti-noise rules)
 5. shrink toward the prior:         score = prior + c * (raw - prior)
 ```
 
-The rule that never changes: **numbers are never invented**. A missing value stays missing, shows as —, and lowers confidence. An item with no signal at all has no score.
+**Missing stays missing**: `null`, displayed as —. No signal means no score. An unobserved closed-product user/customer metric is not zero or evidence of low value; observed zero remains a distinct measured value.
 
 ## Data sources and their limits
 
@@ -36,7 +36,7 @@ Every source failure falls back to the last good cached payload and is reported 
 
 ## Normalization
 
-Version 1 divided each signal by the window maximum, so one outlier squashed everyone else and a small window inflated its few items. Version 2 compares every value with a **fixed run-wide reference**:
+Version 1 divided by the window maximum. The v2 discovery normalization remains in v3 for compatible proxy signals:
 
 ```
 P95_ref = 95th percentile of the positive values of that signal across ALL tracked items in this run
@@ -46,44 +46,46 @@ u(v)    = 0                               if v = 0
 
 - The reference does not depend on the window. GitHub uses each repo's 30-day values, papers use all tracked papers. A 1-day window with 8 candidates is scored on the same scale as the full list.
 - Values above the P95 are winsorized to 1, so one viral item only caps itself.
-- Ratios such as the PR merge rate are already 0..1 and are used as they are.
+- A PR fraction is used only with an observed, compatible created-and-merged cohort, never a clipped ratio of unrelated events.
 - If fewer than `min_reference` (5) positive values exist, the maximum is used.
 - `normalization.method = "percentile"` switches to rank-based percentiles (mid-rank among the positive reference values) for anyone who wants to test it in `eval.py`.
 
-## Confidence and shrinkage
+## Evidence coverage and shrinkage
 
-**Confidence** is the evidence-weighted share of signals that are present:
+**Evidence coverage** is weighted signal completeness with heuristic discounts. It is not verification, global sampling coverage, confidence in truth or calibrated accuracy:
 
 ```
 c = sum(w_k * e_k for present signals) / sum(w_k for all signals)
 e_k = 1    measured value
 e_k = 0.5  rate proxy (per-day-since-release average used because no earlier snapshot exists)
-e_k = 0.5  vendor claim (usage figures that come only from the vendor)
 e_k = 0.5  stars-only evidence for a paper's linked repo (no activity data)
-e_k = c_repo  a linked repo's own trust confidence (paper code signal, HYPE GitHub trust)
+e_k = c_repo  linked repository evidence coverage
+Usage vendor claims are displayed separately, not discounted into a composite user magnitude.
 ```
 
-**Shrinkage** is empirical-Bayes linear shrinkage toward a neutral prior, in proportion to missing evidence:
+**Shrinkage** is a heuristic toward the reference prior. It has no validated Bayesian probability interpretation:
 
 ```
 score = prior + c * (raw - prior)
 prior = median raw score of the reference population in this run
         (all repos at 30d for GitHub, all tracked papers for Papers,
-         HYPE: Hype and Real are percentiles, so their prior is 50; see below)
+         HYPE: attention and cohort-relative discovery use prior 50)
 ```
 
-So a row with 25% confidence moves at most a quarter of the way from the median toward its raw value. It cannot post an extreme score. With a median of 30, a raw 95 at 25% confidence becomes `30 + 0.25 * 65 = 46.3`. The page shows raw, confidence and prior in each score's tooltip.
+A row with 25% coverage moves a quarter of the way from the prior to its raw value. For prior 30 and raw 95 this is `30 + 0.25 * 65 = 46.3`. Tooltips expose raw value, coverage and prior separately from unqualified dimensions.
+
+Every current row also exposes `verification: null`, `freshness: {assessed_at: null, newest_evidence_at: null}` and `independence: {origin_ids: [], rationale: null}`. These are unqualified, not negative findings. Counts, a platform-observed figure, a vendor label, cached generation time or multiple websites cannot establish independent replication, source clocks or common-origin independence. These discovery projections are not `Assessment.confidence` records: that contract requires admitted-evidence cohort counts and provenance qualification, which this pipeline has not acquired.
 
 ## Papers score
 
 ```
 signals (weight):  upvotes   HF upvote momentum            0.40
-                   code      linked-repo trust / 100        0.35   (evidence = the repo's confidence)
+                   code      linked-repo activity / 100     0.35   (evidence = repo coverage)
                    mentions  HN mention momentum            0.25
 ```
 
 - **Upvote / mention momentum** = real delta between two of our snapshots (see Momentum). Without an earlier snapshot it is `value / max(age_days, 1)`: labelled *since-release* when the paper is younger than 7 days (that average is its whole life), otherwise *rate-proxy* (half evidence, `~` on the page).
-- **Code**: the linked repo's v2 trust index when the repo is tracked. If not, the measured star growth of the linked repo from HF snapshots, at half evidence. Otherwise missing.
+- **Code**: the linked repo's activity discovery index. Without tracked activity, linked-repo star momentum is half-weight evidence; otherwise missing. Code availability/popularity is not functional correctness or capability.
 - **Few-votes rule**: upvote evidence is multiplied by `n / (n + 10)`, where n is the paper's upvote count (`papers.upvote_evidence_k`). A paper one day old with 6 votes can have the highest upvote rate in the corpus. That is a small sample, so it counts as 0.38 of a signal and the score is shrunk toward the prior. Papers under 10 votes are flagged `few-votes`. Without this rule, fresh papers tied at the top of the upvote scale and reshuffled on every run.
 - **Single-post rule**: if a paper's HN attention is exactly one post or comment, the mentions signal is multiplied by 0.5.
 - Windows filter papers by release date. The score itself does not depend on the window.
@@ -94,16 +96,17 @@ signals (weight):  upvotes   HF upvote momentum            0.40
 signals (weight):  stars           star growth / day                      0.25
                    issues          (issues opened + closed) / 30 days     0.15
                    prs             PRs opened / 30 days                   0.10
-                   merge           PRs merged / PRs opened (0..1)         0.10
+                   merge           merged among PRs created in cohort     0.10
                    commits         commits / 30 days                      0.15
                    contribs        contributor count (level)              0.10
                    contrib_growth  contributors gained / day              0.15
 ```
 
 - Activity (issues, PRs, merge rate, commits) is a 30-day lookback and is used only in windows of 15 days or more (`activity_min_window_days`). Short windows don't pretend a 30-day average is a 1-day count.
+- **PR cohort repair**: denominator = PRs with `created:>since`; numerator = those same PRs satisfying `is:merged`. The separate `merged:>since` count is event volume and can include older PRs. Ten created, four of them merged, and twenty merge events gives **4/10 = 0.4**, not 20/10 clipped to 1. Empty, unavailable or invalid intersection counts give `null`. Legacy caches/fixtures without the intersection cannot reconstruct it, so current scoring omits that signal. Search calls are not atomic; inconsistent counts remain missing, not repaired by guessing.
 - **Star growth**, in order of preference: the repo was born inside the window (all its stars are in-window growth), or exact stargazer timestamps when GitHub serves them, or a real delta between our snapshots. As a last resort, `stars / age`, marked *rate-proxy* at half evidence.
 - Lifetime star totals are never a signal.
-- The 30-day trust index of every repo is saved to `cache/repo_trust.json`. The Papers score (code signal) and HYPE Real (GitHub trust) use it.
+- `cache/repo_trust.json` retains the historical filename but current fields are `trust` (activity discovery index) and `coverage`. Papers and HYPE consume this named activity proxy, not a code-safety verdict. Old caches lacking current coverage do not enter the current HYPE producer.
 - Windows: a repo is a candidate when it was created or pushed inside the window.
 
 ## Momentum
@@ -126,7 +129,7 @@ rate = w * delta_rate + (1 - w) * since_release_rate        (kind: "blended")
 evidence = 0.5 + 0.5 * w                                     (0.5 = rate_proxy_evidence)
 ```
 
-With no earlier snapshot at all, the row falls back to the per-day-since-release rate and is marked **rate-proxy** (`~`, half evidence). Papers younger than the horizon use their rate since release at full evidence (*since-release*). Snapshot deltas are only as old as our history (about 1.4 days between the first runs and the latest full run today), so most rates are still blended. As runs accumulate, `w` reaches 1 and the rates become true window deltas.
+Without earlier history, use the per-day-since-release rate, marked **rate-proxy** (half evidence). Young papers use their whole-life rate as *since-release*. History length is specific to the archived run; generation time is not proof that every source measurement is fresh.
 
 ## Anti-noise rules
 
@@ -148,7 +151,7 @@ Flags appear next to the item on the page. Persistence needs exact per-horizon c
 - **Hysteresis**: an arrow appears only if the rank among common items moved by at least 2 **and** the score moved by at least 1.0 point. Otherwise the row shows `=`.
 - When the scoring version changes, movement resets (`·`), because scores from two algorithms are not comparable.
 
-## HYPE: Hype score
+## HYPE: Attention score
 
 Per window (1d / 7d / 30d / 90d as measured by the research; *overall* = the 12-month lookback):
 
@@ -159,69 +162,129 @@ voices        sampled unique authors in window             0.20
 spread        (platforms with posts - 1) / (4 - 1), cap 1  0.20   fixed scale: one platform = 0, four or more = 1
 ```
 
-Velocity and voices use the log/P95 normalization against the window's candidates. Single-platform and few-voices penalties multiply the raw score. Then, so that Hype and Real can be subtracted, **both are put on the same percentile scale**:
+Velocity and voices use the window candidate reference. Platform/voice penalties are heuristics, not proof of coordination. Attention is a percentile among projects with sampled posts:
 
 ```
 pct   = mid-rank percentile of the raw score among the window's candidates (0..100)
-Hype  = 50 + c * (pct - 50)          (50 = the median by construction = the prior)
+Attention = 50 + c * (pct - 50)       (50 is the fixed neutral prior)
 ```
 
-Acceleration is always missing today, so Hype confidence is at most 0.75, and every Hype score is pulled at least a quarter of the way toward 50. Hype is a **sampled attention proxy**, not a platform-wide count.
+Acceleration is unobserved, so attention coverage is at most 0.75. This is a **sampled attention proxy**, not a platform-wide count, user population or validation measure.
 
-## HYPE: Real score
+## HYPE: Discovery score
 
-Window-independent evidence of substance:
-
-```
-gh_trust    the GitHub trust index of the project's repo / 100    0.30   evidence = that repo's trust confidence
-paper       HF upvotes of the linked arXiv paper                  0.20
-usage       largest sourced downloads / users figure              0.30   vendor-only claims = half evidence
-discussion  comments on the sampled HN stories                    0.20
-```
+Window-independent discovery components:
 
 ```
-pct   = mid-rank percentile of the raw Real score among all researched projects with any Real signal
-Real  = 50 + c * (pct - 50)
+gh_trust    linked GitHub activity index / 100       0.30   evidence = linked repo coverage
+paper       HF upvotes                              0.20   paper attention, not capability
+discussion  sampled HN comments                     0.20   discussion attention, not technical/economic validation
 ```
 
-Version 1 halved the *value* of vendor claims. Version 2 halves their *evidence* instead: a claim of 100M users is weaker evidence, not evidence of fewer users. In version 1, many rows had Real from HN discussion alone at "25% confidence" (for example Gemini app, Real 94.8). They now have confidence 0.20, so their Real stays within 10 points of 50.
-
-## Hype vs Real gap
+Weights total 0.70: coverage uses that denominator; the raw weighted mean uses present weights. Usage has no composite weight. The percentile reference cohort is the exact set of observed component families (`gh_trust`, `paper`, `discussion`), not the entire heterogeneous open/closed population. Zero discussion is observed, not missing. A singleton cohort has midpoint percentile 50, not proven middling quality. Cohort membership and size appear on each card.
 
 ```
-gap = Hype_shrunk - Real_shrunk
-label = "likely hype"          if gap >= +15
-        "underrated sleeper"   if gap <= -15
-        "earned"               otherwise
-        ...but only when Hype confidence >= 0.5 AND Real confidence >= 0.5;
-        else "insufficient evidence" (grey badge with "?")
+pct = mid-rank percentile within the available-proxy cohort
+Discovery = 50 + coverage * (pct - 50)
 ```
 
-Because Hype and Real are both percentiles shrunk toward 50, the gap reads as "attention percentile minus substance percentile", and a project with little evidence on either side drifts toward a gap of 0 instead of a spurious one. A large gap built on thin evidence is not a finding, so it stays unlabelled. The research team's qualitative shortlist (`five_qualitative_hype_vs_evidence_gaps`) is shown on each project card, and `eval.py` reports where it lands under v1 and v2.
+### Usage metric families
+
+Every sourced recognized usage record is retained, including observed zero and explicitly unknown values. No “largest downloads/users” selection:
+
+| Family | Types | What it does not establish |
+|---|---|---|
+| `download_operations` | npm/PyPI/HF/checkpoint/package/app download operations | Unique users, active installations or customers; CI/repeats/updates can count |
+| `users` | extension users, reported users, claimed monthly active users | Interchangeable user definitions, paying customers or economic outcomes |
+| `business_customers` | business clients | Individual users, downloads or recognized revenue |
+| `creators` | creator counts | Compatible general users or customers |
+
+Normalization requires an exact cohort tuple `(family, type, unit, period.start, period.end, scope)`, with every element observed. Even within one family, different platforms/types, periods or scopes are not pooled. Unknown cohort metadata means `normalized: null`; values and source URLs remain visible. Normalized units stay attached to their named cohort; they are not comparable across cohorts and never enter the discovery composite. No source-origin independence, licences or period dates are inferred from URLs. An empty list means unobserved usage, not zero adoption.
+
+## Attention-discovery gap
+
+```
+gap = Attention - Discovery
+label = attention_ahead   if gap >= +15
+        evidence_ahead    if gap <= -15
+        similar           otherwise
+        insufficient      if gap missing or either coverage < 0.5
+```
+
+This subtracts relative positions in **different proxy reference populations**, not comparable absolute magnitudes. It is a discovery heuristic, not “likely hype”, “earned”, “underrated”, technical validity or economic value. Coverage thresholds are not accuracy thresholds. Cards show research analyst observations separately; those are not independent acceptance receipts.
 
 ## Known biases
 
 - **HN dominance**: Papers mentions and most HYPE posts come from Hacker News, which over-represents developer tools and under-represents research-only and non-English work.
-- **HF selection**: only papers someone posted to Hugging Face have upvotes. Papers without them rely on code and HN, at lower confidence.
-- **Search recall**: keyword and topic queries miss items that use other words. JEV / decision-model work is sparse and easy to miss.
-- **Activity budget**: the Search API quota limits activity data to the most promising ~100 repos per run. The rest score on fewer signals, at lower confidence (shrunk, not zeroed).
+- **HF selection**: only papers posted to HF have upvotes; absent upvotes are missing, not poor research.
+- **Candidate search**: keyword/topic matching, source indexing and created/pushed-window filtering exclude relevant work with different vocabulary, languages or activity patterns. These are purposive discovered cohorts, not representative populations.
+- **Enrichment selection**: quota-limited activity fetches favor repos ordered as promising; 100 authenticated or 30 unauthenticated enrichment targets are not random samples. Coverage and shrinkage cannot remove this selection bias. Query counts and reference populations change rankings; no unvalidated accuracy claim follows.
 - **Young history**: snapshot deltas cover the time between our runs, not the full window, until enough runs accumulate. Rate proxies favour papers and repos that peaked early.
-- **Shrinkage toward the median** pulls thin-evidence items toward the middle in both directions, so a genuinely great item with little data can be under-ranked until evidence arrives. That is the intended trade-off.
+- **Shrinkage toward the reference prior** can under-rank genuinely strong but sparsely observed work. Closed/open observability is unequal; do not read missingness as weak capability or business value.
 - **Research sample (HYPE)**: purposive and public-only. Follower counts, peak dates and true viral origins are mostly unknown and shown as —.
 
 ## Versioning
 
-- `SCORING_VERSION` in `scoring.py` (currently 2.0) must equal `version` in `scoring_config.json`. Both are stamped into `web/data.json`, `web/hype.json` and every history run, together with a short hash of the config file (`config_sha`).
-- Bump the minor version (2.1) for weight or threshold changes, and the major version (3.0) for new signals or formula changes.
-- Every full run stores its inputs in `history/runs/<stamp>-features.json.gz`, so any run can be re-scored under any version (`eval.py`, `scoring.score_run(features, version='1.0')`).
-- `python run.py --rescore` re-scores the last full run's cached inputs with the current code and config, without network calls.
-- The page reads `web/METHODOLOGY.md`, a copy of this file that `run.py` refreshes on every run. Keep them identical (the CI workflow checks this): edit the root file and copy it (`cp METHODOLOGY.md web/`).
+- Current version is `3.0` in code/config; formula and cohort semantics changed, so the major version increments. Minor changes adjust weights/thresholds without changing measurements.
+- `score_run(features, version='2.0')` uses the complete frozen `legacy_v2` configuration, not mutable current parameters. `legacy_v2_real_scores` and `legacy_v2_hype_window` preserve historical arithmetic and labels for explicit evaluation only. V2 was a discovery method: its “Real”, “trust”, “confidence” and pooled usage labels did not establish capability, truth or compatible adoption magnitude.
+- `score_run(features, version='1.0')` remains historical evaluation. Unsupported versions fail rather than silently running current formulas.
+- `web/data.json` is an explicitly **archived v2.0 numeric artifact**. Its full input manifest and created-and-merged PR intersections are unavailable here. Scores, raw values, prior, original generation clocks and `config_sha` remain unchanged; renamed coverage and separate unknown dimensions clarify meaning. The old PR ratio is labeled historical, while the current cohort ratio is missing. No fabricated v3 rescore or serving/deployment receipt is implied.
+- `web/hype.json` is an offline method-3.0 projection of preserved published observations. Its upstream GitHub proxy, where present, is historical v2 activity, explicitly identified; no corrected cohort, new source freshness or source approval is invented.
+- Normal full runs retain feature snapshots. `python3 run.py --rescore` requires the actual cache/history inputs; publication views cannot recreate a complete immutable feature manifest.
+- The page reads `web/METHODOLOGY.md`; keep it identical to this file. There is no current upstream CI workflow proving that equality.
 
 ## How to propose changes
 
 1. Edit `scoring_config.json` (weights, thresholds) or `scoring.py` (formulas), and update this file in the same PR.
-2. Run `python -m unittest discover tests` and `python eval.py`.
-3. Paste the full `eval.py` output into the PR. Reviewers look at stability (Spearman of the top 100 between runs), the share of top rows with confidence >= 0.5, and how the HYPE shortlist moves.
-4. Explain why the change separates signal from noise better. "My favourite project moves up" is not a reason.
+2. Run `python3 -m unittest discover tests` and `python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json --compare-v2`.
+3. Report stability, cohort completeness, before/after missingness and changed descriptive labels; these do not validate accuracy.
+4. Explain the measurement correction, compatible cohort and missingness policy. “My favourite project moves up” is not a reason.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for data sources, seed lists and the never-invent-numbers rule.
+
+## Issue 11 change record and attributed rulings
+
+Before repair, the actual v2 code selected one million download operations over one hundred business customers and normalized downloads/users/customers into units 1.000/0.500/0.334. Actual `run.build_features` emitted merge 2.0 for ten opened/twenty merge events despite a known four-member intersection, and 0.0 for an empty PR denominator. Current code retains separate source records, leaves unknown cohorts unnormalized, uses the intersection fraction and keeps empty/unknown cohorts missing. Boundary fixtures are explicitly synthetic; the committed feature/HYPE fixtures are preserved subsets, not accuracy ground truth.
+
+Observed committed HYPE fixture comparison (`hype_small.json`, SHA256 `4eb7b06dcffaf937d88150254e031e19e378f702b910b2d403a54bf77bc72e7f`):
+
+| Project | Historical v2 score | Current discovery | Current usage treatment |
+|---|---|---|---|
+| Claude Code | 72.0 | 60.5 | 52,946,380 npm operations retained; period/scope cohort unknown, normalized missing; excluded from composite |
+| Higgsfield | 61.2 | 48.5 | 32,000,000 reported users retained as vendor claim; unknown compatible cohort; excluded from composite |
+| Gemini app | 59.6 | 62.0 | Usage remains unobserved; score is discussion discovery only, not a customer/capability finding |
+| Reflection Beam | 40.4 | 37.2 | Usage remains unobserved; observed zero sampled discussion stays zero |
+
+Scores change because usage is excluded, coverage denominator becomes 0.70 and percentiles use available-proxy cohorts. These are explained method effects, not evidence that rankings became more accurate. `eval.py --compare-v2` prints every fixture row; HYPE temporal stability remains unmeasured. Full-run feature fixtures lack PR intersections, so current repo coverage excludes their merge signal while explicit v2 replay preserves historical results.
+
+
+- **Ruling — issue-11-engineer:** Increment to method 3.0 and freeze complete executable v2 parameters — preserves honest historical discovery replay without relabeling old outputs — cost if wrong: historical code/config remains maintained for explicit evaluation.
+- **Ruling — issue-11-engineer:** Exclude usage from the composite and retain every recognized source metric with exact cohort metadata — operations/users/customers have no common magnitude — cost if wrong: fewer composite ranking signals and unnormalized records when metadata is missing.
+- **Ruling — issue-11-engineer:** Use available-proxy cohorts and descriptive attention/discovery labels — discussion/upvotes/activity cannot establish capability or business validity — cost if wrong: small cohorts provide limited ranking resolution.
+- **Ruling — issue-11-engineer:** Expose weighted completeness as coverage, with verification/freshness/independence unqualified — counts cannot fabricate provenance qualification — cost if wrong: consumers must inspect separate dimensions.
+- **Ruling — issue-11-engineer:** Measure the merged subset of the created-PR cohort; omit unobserved/empty/invalid cohorts rather than clipping events — fixes mismatched denominators — cost if wrong: one additional public Search query per enriched repo and less historical coverage.
+- **Ruling — issue-11-engineer:** Preserve `web/data.json` numeric v2 archive rather than reconstruct missing inputs; coordinator explicitly accepted this disposition — honest artifact identity beats fake current scores — cost if wrong: a complete corrected current GitHub projection awaits actual full-run inputs, not invented intersection counts.
+- **Ruling — issue-11-engineer:** Move runtime directory creation to `main`, leaving imports side-effect free for in-memory extraction fixtures — actual query/feature boundaries can be exercised without cache/history mutation — cost if wrong: consumers previously relying on import-created directories must use the existing runtime entrypoint.
+- **Ruling — issue-11-engineer:** Partial/missing Search totals stay unobserved and fresh legacy caches without a cohort intersection are requalified — otherwise an incomplete response can invent zero activity — cost if wrong: additional permitted reads on the next authorized collector run, never reads during this offline qualification.
+- **Ruling — issue-11-engineer:** Display coverage to two decimal places in evaluation and use a version-neutral Methodology header — avoids rounding 0.75 to 0.8 or presenting current docs as the archived method — cost if wrong: slightly wider evaluation tables.
+
+### Implementation qualification receipt
+
+The implementation worker exercised these local commands against the completed source/config slice, after bounded fixture-close and display-precision repairs:
+
+| Evidence | Observed result |
+|---|---|
+| `python3 -m unittest discover -s tests -p test_scoring.py` | Exit 0; 26 tests; zero failures, errors or warnings |
+| `python3 eval.py --issue11-smoke --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json --compare-v2` | Exit 0; direct family/missingness/PR/dimensional checks plus all 25 before/after fixture rows |
+| `python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json` | Exit 0; 43 tests and full evaluation; zero failures, errors or warnings |
+| Permanent PR extraction regression against captured original `run.py` | Fails at intended assertion: `2.0 != 0.4`; passes in current focused/full suite |
+| Explicit v2 execution against captured original `scoring.py` and original config | Exact equality of both complete feature fixtures, trust tuples and historical HYPE fields across overall/30d/7d |
+| Historical numeric artifact preservation | All 7,706 paper/repo view rows preserve original numeric scores, raw values, rank/movement; method/config/prior/generation clocks unchanged |
+| Actual browser at 1280px and 390px | Current HYPE rows/cards show source units, unobserved usage, missing period/scope cohorts and separate unqualified dimensions; archived GitHub and rendered Methodology inspected; no JavaScript errors observed |
+
+`PYTHONDONTWRITEBYTECODE=1` was ambient for Python gates, not a replacement command. Initial SQLite context-manager fixtures passed but emitted ResourceWarnings; using explicit connection close removed the leak before final qualification. The original PR regression was exercised with a synthetic date-aware public-API response fixture at the actual Search/extraction boundary, not query-string source inspection or a live collection claim.
+
+Browser screenshots were captured through the existing managed Chromium tool after the Orca screenshot command returned an unusable 1×1 image; that image was not treated as visual proof. At 390px the existing wide table/card requires horizontal scrolling; the right-hand units/dimensions were inspected after scrolling. No responsive redesign, accessibility audit, source verification, capability accuracy, live collection, editorial approval or deployment is claimed. Full immutable inputs for a corrected current GitHub rescore remain unavailable under the explicitly accepted historical-archive disposition.
+
+Independent acceptance/design and separate quality review are coordinator gates, not this implementer's verdict. Local evidence does not establish deployed acceptance or authorize issue closure. No new repository paths, paid/model calls, source acquisition, shared-service restart, Git state mutation, commit, forge mutation or deployment were performed by this worker.
+

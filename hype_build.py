@@ -7,14 +7,12 @@ run.py calls build(con=..., run_id=...) automatically when hype/hype_research.js
 NEVER INVENTS NUMBERS. Unknown -> null (rendered '—'). All social counts are the research agent's
 *sampled* observations (purposive, not exhaustive, no global counts).
 
-Scoring is in scoring.py (hype_window / real_scores; weights in scoring_config.json; see METHODOLOGY.md):
-  Hype (0-100, per window) = velocity .35 + acceleration .25 (missing: no growth series) + unique voices .20
-        + platform spread .20, single-platform / few-voices penalties, shrunk toward the window median by
-        confidence (max 0.75 while acceleration is missing).
-  Real (0-100, window-independent) = GitHub trust .30 (weighted by its own confidence) + HF paper upvotes .20
-        + usage .30 (vendor claims count as half the evidence) + HN discussion .20, shrunk toward the median.
-  Gap = Hype - Real (shrunk values). Labelled hype (>= +15) / sleeper (<= -15) / earned only when both
-        confidences >= 0.5, otherwise 'insufficient evidence'.
+Scoring is in scoring.py. Current method 3.0 separates sampled attention,
+activity/discussion discovery proxies and source usage metric families.
+Evidence coverage controls heuristic shrinkage, not truth probability.
+Verification, freshness and common-origin independence remain unqualified.
+Usage operations, users and customers never enter one pooled magnitude.
+The attention/discovery gap is a relative heuristic, not a validation verdict.
 """
 import os, sys, re, json, math, time, sqlite3, glob, urllib.request, urllib.error
 from datetime import datetime, timezone
@@ -35,9 +33,6 @@ PLATFORMS = ['X', 'Reddit', 'LinkedIn', 'HN', 'YouTube', 'Discord', 'Telegram']
 RES_WINDOWS = [('1d', 1), ('7d', 7), ('30d', 30), ('90d', 90)]      # windows the research measured
 ALL_WINDOWS = ['1d', '7d', '30d', '90d', '180d', '1y', 'overall']
 TOPN = 100
-USAGE_TYPES = {'npm_downloads', 'pypi_downloads', 'hf_model_downloads', 'representative_checkpoint_downloads',
-               'extension_users', 'package_downloads', 'downloads', 'app_downloads',
-               'claimed_monthly_active_users', 'reported_users', 'creators', 'business_clients'}
 
 def P(s):
     if not s: return None
@@ -71,13 +66,13 @@ def repo_name(u):
 
 # ---------------------------------------------------------------- joins with the other tabs
 def gh_trust_map(repo_trust=None):
-    """full_name(lower) -> dict(v, conf, v1, conf_v1, src). Prefers run.py's all-repo 30d trust map."""
+    """full_name(lower) -> current discovery activity input; no legacy-cache confidence inference."""
     rt = repo_trust or (load(os.path.join(CACHE, 'repo_trust.json'), None) or {}).get('repos')
     out = {}
     for k, v in (rt or {}).items():
-        if v.get('trust') is not None and v.get('confidence'):
-            out[k.lower()] = dict(v=v['trust'], conf=v['confidence'], v1=v.get('trust_v1'), conf_v1=v.get('confidence_v1'),
-                                  src='GitHub tab trust index (30d)')
+        if v.get('trust') is not None and v.get('coverage') is not None:
+            out[k.lower()] = dict(v=v['trust'], coverage=v['coverage'],
+                                  src='GitHub tab activity discovery index (30d)')
     return out
 
 def hf_upvotes(ids):
@@ -128,19 +123,22 @@ def top_posts(posts, n=6):
                         t=cut(p.get('title') or p.get('content_excerpt') or p.get('text_excerpt') or p.get('context'), 180)))
     return out
 
-def usage_signal(sigs):
-    best = None
+def usage_signals(sigs):
+    """Preserve sourced metrics, including observed zero; never choose a largest mixed unit."""
+    out = []
     for s in sigs:
-        if s.get('type') not in USAGE_TYPES: continue
-        v = s.get('value')
-        if isinstance(v, dict): v = v.get('last_month')
-        if not isinstance(v, (int, float)) or isinstance(v, bool) or v <= 0: continue
-        if not is_url(s.get('source_url')): continue
-        vendor = s.get('verification') == 'vendor_claim'
-        rank = (0 if vendor else 1, v)
-        if best is None or rank > best[0]:
-            best = (rank, dict(value=v, unit=s.get('unit'), type=s.get('type'), vendor=vendor, url=s['source_url']))
-    return best[1] if best else None
+        if s.get('type') not in scoring.METRIC_FAMILIES or not is_url(s.get('source_url')):
+            continue
+        value = s.get('value')
+        if isinstance(value, dict):
+            value = value.get('last_month')
+        observed = scoring.isnum(value) and value >= 0
+        out.append(dict(value=value if observed else None, unit=s.get('unit'), type=s['type'],
+                        metric_family=scoring.METRIC_FAMILIES[s['type']],
+                        period=dict(start=s.get('period_start_utc'), end=s.get('period_end_utc')),
+                        scope=s.get('scope'), vendor=s.get('verification') == 'vendor_claim',
+                        url=s['source_url'], missingness='observed' if observed else 'unobserved'))
+    return out
 
 def project(it, cutoff):
     L = it.get('links') or {}
@@ -237,7 +235,6 @@ def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record
         if pid: papers[pid] = None
     ups = hf_upvotes(list(papers))
     used_slugs = set()
-    raw_real = []
     for it in research:
         pid = slug(it['name'])
         while pid in used_slugs: pid += '-x'
@@ -272,37 +269,36 @@ def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record
         t = trust.get(rn) if rn else None
         pa = arxiv_id((it.get('links') or {}).get('paper'))
         up = ups.get(pa, (None, None)) if pa else (None, None)
-        us = usage_signal(it.get('real_traction_signals') or [])
+        us = usage_signals(it.get('real_traction_signals') or [])
         hn = it.get('hn_sampling') or {}
         hn_ok = bool(hn) and hn.get('error') is None
         hn_c = sum(((p.get('engagement') or {}).get('comments') or 0) for p in posts if p.get('platform') == 'HN') if hn_ok else None
         hn_n = sum(1 for p in posts if p.get('platform') == 'HN')
-        rec['real_in'] = dict(
+        rec['evidence_in'] = dict(
             gh_trust=None if not t else dict(t, repo=rn),
             paper=None if up[0] is None else dict(v=up[0], id=pa, url=up[1]),
             usage=us,
             discussion=None if hn_c is None else dict(v=hn_c, stories=hn_n))
-        raw_real.append(rec['real_in'])
         items[pid] = rec
 
-    # ---- scoring (scoring.py): Real is window-independent, Hype per window
-    PJ = {pid: dict(win=items[pid]['win'], age=items[pid]['age_at_cutoff'], real_in=items[pid]['real_in']) for pid in ids}
-    real, real_prior = scoring.real_scores(PJ, cfg)
+    # Current discovery composite excludes usage magnitudes and records independent dimensions.
+    PJ = {pid: dict(win=items[pid]['win'], age=items[pid]['age_at_cutoff'],
+                    evidence_in=items[pid]['evidence_in']) for pid in ids}
+    discovery, discovery_prior = scoring.discovery_scores(PJ, cfg)
     for pid in ids:
-        items[pid].update(real=real[pid]['score'], real_conf=real[pid]['conf'], real_raw=real[pid]['raw'], real_pct=real[pid]['pct'],
-                          real_z=real[pid]['z'])
+        items[pid]['discovery'] = discovery[pid]
 
     if con is None and record: con = db_connect()
     prev, prev_ts, prev_ver = prev_hype(con, run_id) if con is not None else ({}, None, None)
     comparable = prev_ver == scoring.SCORING_VERSION
     views = ['all'] + list(tags)
     out_w, ranks_rows = {}, []
-    win_meta, priors = {}, {'real': scoring.r1(real_prior)}
+    win_meta, priors = {}, {'discovery': scoring.r1(discovery_prior)}
     for w in ALL_WINDOWS:
         if w in ('180d', '1y'):
             win_meta[w] = dict(enabled=False, reason=f'not a research window (research measured 1d/7d/30d/90d; overall = {look_days}-day lookback)')
             continue
-        scored, prior = scoring.hype_window(PJ, w, real, cfg)
+        scored, prior = scoring.hype_window(PJ, w, discovery, cfg)
         if not scored:
             win_meta[w] = dict(enabled=False, reason='no sampled posts in this window'); continue
         priors[w] = scoring.r1(prior)
@@ -342,7 +338,8 @@ def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record
     short = [c for c in (pick(r'not exhaustive'), pick(r'growth cannot'), pick(r'^HN')) if c] or cov[:3]
     comp_counts = {
         'hype': {k: sum(1 for w in out_w.values() for r in w['all']['rows'] if r['z'].get(k) is not None) for k in cfg['hype']['weights']},
-        'real': {k: sum(1 for pid in ids if items[pid]['real_z'][k] is not None) for k in cfg['real']['weights']},
+        'discovery': {k: sum(1 for pid in ids if items[pid]['discovery']['z'][k] is not None)
+                      for k in cfg['discovery']['weights']},
     }
     data = dict(
         generated_at=now.strftime('%Y-%m-%dT%H:%M:%SZ'),
@@ -353,8 +350,9 @@ def build(con=None, run_id=None, repo_trust=None, tagger=None, tags=None, record
         gap_note=summ.get('gap_ranking_note'),
         scoring_version=scoring.SCORING_VERSION, config_sha=scoring.config_sha(), priors=priors,
         movement_note=(None if comparable or not prev else f'movement reset: the previous HYPE run used scoring v{prev_ver}'),
-        weights=dict(hype=cfg['hype']['weights'], real=cfg['real']['weights']),
-        gap_thresholds=[cfg['gap']['sleeper'], cfg['gap']['hype']], gap_min_confidence=cfg['gap']['min_confidence'],
+        weights=dict(hype=cfg['hype']['weights'], discovery=cfg['discovery']['weights']),
+        gap_thresholds=[cfg['gap']['evidence_ahead'], cfg['gap']['attention_ahead']],
+        gap_min_coverage=cfg['gap']['min_coverage'],
         penalties=dict(single_platform=cfg['hype']['single_platform_penalty'], few_voices=cfg['hype']['few_voices'],
                        few_voices_penalty=cfg['hype']['few_voices_penalty']),
         missing=dict(acceleration='No growth series in the research (no repeated snapshots; HN sample = first 100 hits by date, so a recent/older ratio would be biased). Weight renormalised over the other three.'),

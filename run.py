@@ -13,9 +13,9 @@ Sources (all public): arXiv API, Hugging Face papers API, Hacker News Algolia AP
 is wrapped: on failure the last good cached payload is reused and the failure is recorded in
 data.json["sources"]. No metric is ever invented: unknown -> null (rendered as '—').
 
-Scoring lives in scoring.py (algorithm v2, weights in scoring_config.json, explained in METHODOLOGY.md).
-This file only builds per-item *features* (rates, momentum from history snapshots, activity) and stores
-them in history/runs/<stamp>-features.json.gz so eval.py can re-score any run under v1 or v2.
+Scoring lives in scoring.py (current discovery method 3.0, frozen historical v2.0).
+This file builds item features (rates, momentum and compatible activity cohorts).
+Feature snapshots let eval.py compare explicit historical and current discovery methods.
 
 HYPE tab: if hype/hype_research.json exists, hype_build.build() turns it into web/hype.json and stores
 HYPE ranks in the same history DB (tab 'hype').
@@ -67,8 +67,6 @@ WINDOWS = [('1d', 1), ('7d', 7), ('30d', 30), ('90d', 90), ('180d', 180), ('1y',
 TOPN = 100
 HF_PAPER_BUDGET = 400      # per-paper HF lookups per run (HF anon limit: 500 req / 5 min)
 HN_BUDGET = 900            # HN Algolia lookups per run (limit 10k/h)
-for d in (WEB, HIST, CACHE, os.path.join(HIST, 'runs')):
-    os.makedirs(d, exist_ok=True)
 
 def nap(sec):
     if not OFFLINE: time.sleep(sec)
@@ -458,15 +456,16 @@ def fetch_stargazers(repos, order):
     return cache
 
 ACTIVITY_LOOKBACK = 30   # days for cached activity snapshot; scaled into each window
-ACTIVITY_BUDGET = 30     # repos to enrich per run (4 search queries each ≈ 3–6 min)
-ACTIVITY_BUDGET_AUTH = 100  # with gh auth (30 search req/min): 5 queries/repo ≈ 17 min
+ACTIVITY_BUDGET = 30       # enrichment targets without auth; not a representative sample
+ACTIVITY_BUDGET_AUTH = 100 # enrichment targets with auth; six Search queries per repo
 
 def _gh_search_count(q, commits=False):
     path = '/search/commits?' if commits else '/search/issues?'
     path += urllib.parse.urlencode({'q': q, 'per_page': 1})
     accept = 'application/vnd.github.cloak-preview+json' if commits else 'application/vnd.github+json'
     d, _ = gh_get(path, accept=accept, search=True)
-    return int(d.get('total_count') or 0)
+    total = d.get('total_count')
+    return total if isinstance(total, int) and not isinstance(total, bool) and total >= 0 and not d.get('incomplete_results') else None
 
 def fetch_repo_activity(repos, order):
     """Issue / PR / commit activity via GitHub Search (separate quota from core).
@@ -480,7 +479,7 @@ def fetch_repo_activity(repos, order):
     todo, done, fail = [], 0, 0
     for fn in order:
         c = cache.get(fn)
-        if c and time.time() - c.get('ts', 0) < 18 * 3600: continue
+        if c and 'prs_merged_in_opened_cohort' in c and time.time() - c.get('ts', 0) < 18 * 3600: continue
         todo.append(fn)
         if len(todo) >= (ACTIVITY_BUDGET_AUTH if GH_TOKEN else ACTIVITY_BUDGET): break
     for fn in todo:
@@ -488,6 +487,7 @@ def fetch_repo_activity(repos, order):
             issues_open = _gh_search_count(f'repo:{fn} type:issue created:>{since}')
             issues_closed = _gh_search_count(f'repo:{fn} type:issue is:closed closed:>{since}')
             prs_open = _gh_search_count(f'repo:{fn} type:pr created:>{since}')
+            prs_merged_cohort = _gh_search_count(f'repo:{fn} type:pr created:>{since} is:merged')
             prs_merged = _gh_search_count(f'repo:{fn} type:pr is:merged merged:>{since}')
             try:
                 commits = _gh_search_count(f'repo:{fn} committer-date:>{since}', commits=True)
@@ -510,7 +510,8 @@ def fetch_repo_activity(repos, order):
             cache[fn] = dict(ts=time.time(), lookback_days=ACTIVITY_LOOKBACK, since=since,
                              observed_at=iso(datetime.now(timezone.utc)),
                              issues_opened=issues_open, issues_closed=issues_closed,
-                             prs_opened=prs_open, prs_merged=prs_merged, commits=commits,
+                             prs_opened=prs_open, prs_merged=prs_merged,
+                             prs_merged_in_opened_cohort=prs_merged_cohort, commits=commits,
                              contributors=contributors)
             done += 1
             save_json(cpath('repo_activity'), cache)   # checkpoint
@@ -758,8 +759,9 @@ def build_features(papers, repos, sg, activity, con, cfg):
         io, ic, po, pm, cm = (a.get(k) for k in ('issues_opened', 'issues_closed', 'prs_opened', 'prs_merged', 'commits'))
         if io is not None and ic is not None: act.update(issues=(io + ic) / lb, issues_opened=io, issues_closed=ic)
         if po is not None:
-            act.update(prs=po / lb, prs_opened=po)
-            if pm is not None: act.update(merge=(pm / po) if po > 0 else 0.0, prs_merged=pm)
+            act.update(prs=po / lb, prs_opened=po, prs_merged=pm,
+                       prs_merged_in_opened_cohort=a.get('prs_merged_in_opened_cohort'),
+                       merge=scoring.pr_cohort_ratio(a))
         if cm is not None: act.update(commits=cm / lb, commits_n=cm)
         contributors = a.get('contributors')
         rsn = rs.get(fn, [])
@@ -848,6 +850,8 @@ def local_date(dt): return dt.astimezone(TZ).date() if dt else None
 
 # ---------------------------------------------------------------- main
 def main():
+    for d in (WEB, HIST, CACHE, os.path.join(HIST, 'runs')):
+        os.makedirs(d, exist_ok=True)
     t0 = time.time()
     if not FEATURES_ONLY:     # feature-only replays write nothing shared, so they need no lock
         lockf = open(os.path.join(BASE, '.run.lock'), 'w')
@@ -1006,7 +1010,8 @@ def main():
             for i, (c, mv) in enumerate(zip(top, mvs), 1):
                 ranks_rows.append((hkey, wname, c['id'], i, c['score']))
                 lst.append(dict(id=c['id'], rank=i, prev=(pr.get(c['id']) or (None,))[0], mv=mv, score=c['score'],
-                                confidence=c['conf'], raw=c['raw'], flags=c['flags'] or None, kind=c['kind'], **extra(c, wname)))
+                                coverage=c['coverage'], raw=c['raw'], flags=c['flags'] or None, kind=c['kind'],
+                                **scoring.coverage_dimensions(), **extra(c, wname)))
             views[v] = {'rows': lst, 'candidates': len(sub)}
         out[tab][wname] = views
 
@@ -1018,11 +1023,12 @@ def main():
         a = f['act'] if (days is None or days >= cfg['momentum']['activity_min_window_days']) else {}
         return dict(gained=w.get('gained'), gspan=w.get('gspan'), src=w.get('stars_src'),
                     issues_opened=a.get('issues_opened'), issues_closed=a.get('issues_closed'),
-                    prs_opened=a.get('prs_opened'), prs_merged=a.get('prs_merged'), merge_rate=a.get('merge'),
+                    prs_opened=a.get('prs_opened'), prs_merged=a.get('prs_merged'),
+                    prs_merged_in_opened_cohort=a.get('prs_merged_in_opened_cohort'), merge_rate=a.get('merge'),
                     commits=a.get('commits_n'), contributors=f.get('contributors'), contrib_gained=w.get('contrib_gained'))
     for wname, _ in WINDOWS:
         emit('repos', wname, S['repos'][wname], repo_extra)
-    repo_trust = {fn: {'trust': S['trust'][fn][0], 'confidence': S['trust'][fn][1],
+    repo_trust = {fn: {'trust': S['trust'][fn][0], 'coverage': S['trust'][fn][1],
                        'trust_v1': S1['trust'][fn][0], 'confidence_v1': S1['trust'][fn][1]} for fn in repos}
     if not FEATURES_ONLY:
         save_json(os.path.join(CACHE, 'repo_trust.json'), {'generated_at': iso(NOW), 'scoring_version': scoring.SCORING_VERSION,
