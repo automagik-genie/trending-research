@@ -21,6 +21,22 @@ th{background:#f3f6fb;position:sticky;top:0}td.n,th.n{text-align:right;white-spa
 .help .tip{display:none;position:absolute;left:20px;top:-4px;width:560px;background:#222;color:#eee;padding:10px;border-radius:6px;font-size:12px;line-height:1.45;text-align:left;z-index:9;font-weight:normal}
 .help:hover .tip{display:block}
 details{font-size:12px;color:#555;margin-top:16px}
+.tabs button:disabled{opacity:.35;cursor:not-allowed}
+#hnote{display:none;background:#fffbea;border:1px solid #f0dc8c;border-radius:6px;padding:7px 10px;font-size:12px;color:#5a4a00;margin:6px 0;line-height:1.45}
+#hnote b{color:#3d3200}
+.gap{display:inline-block;min-width:44px;text-align:center;border-radius:10px;padding:1px 6px;font-weight:700;font-size:11.5px}
+.g-hype{background:#fdecea;color:#c62828}.g-earned{background:#e8f5e9;color:#1a7f2e}.g-sleeper{background:#e3f2fd;color:#1565c0}
+.gap.low{opacity:.6;border:1px dashed currentColor}
+.lk{font-size:10.5px;color:#3b6fb6;border:1px solid #c9d7ee;border-radius:3px;padding:0 3px;margin-left:3px;text-decoration:none;white-space:nowrap}
+.ad{background:#fff3e0;color:#b25e00;border-radius:3px;padding:0 4px;font-size:10.5px;margin-left:4px}
+tr.hr{cursor:pointer}tr.hr:hover td{background:#f7f9fd}tr.hr.open td{background:#eef3fb}
+th.s{cursor:pointer;text-decoration:underline dotted}
+tr.card>td{background:#fbfcfe;padding:10px 14px 14px;border-bottom:2px solid #3b6fb6}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:6px 26px;font-size:12.5px;line-height:1.45}
+.cg h4{margin:8px 0 3px;font-size:12.5px;color:#3b6fb6;text-transform:uppercase;letter-spacing:.03em}
+.cg ul{margin:2px 0;padding-left:16px}.cg li{margin:2px 0}
+.cg table{font-size:11.5px}.cg td,.cg th{padding:2px 4px}
+.src a{font-size:10.5px;margin-right:4px}
 </style></head><body>
 <h1>AI research trend tracker <span class=help>?<span class=tip>
 <b>Trust / momentum score (0–100) — not star totals.</b><br>
@@ -36,12 +52,14 @@ Windows: papers by release date; repos created or pushed in window. Arrows vs pr
 <div class="tabs top" id=tabs></div>
 <div class=tabs id=wins></div>
 <div class=tabs id=views style="font-size:12px"></div>
-<input id=q placeholder="Filter rows: title, author, lab, repo, tag…"> <span id=cnt class=meta></span>
+<div id=hnote></div>
+<input id=q placeholder="Filter rows: title, author, lab, repo, project, tag…"> <span id=cnt class=meta></span>
 <table><thead id=th></thead><tbody id=tb></tbody></table>
 <details open><summary>Data sources (this run)</summary><ul id=src></ul></details>
 <script>
-let D=null, tab='papers', win='7d', view='all';
-{const h=decodeURIComponent(location.hash.slice(1)).split('/');if(h[0]=='papers'||h[0]=='repos')tab=h[0];if(h[1])win=h[1];if(h[2])view=h.slice(2).join('/');}
+let D=null, H=null, tab='papers', win='7d', view='all', hsort='score';const opened=new Set();
+{const h=decodeURIComponent(location.hash.slice(1)).split('/');if(['papers','repos','hype'].includes(h[0]))tab=h[0];if(h[1])win=h[1];if(h[2])view=h.slice(2).join('/');
+ const u=new URLSearchParams(location.search);if(u.get('open'))u.get('open').split(',').forEach(x=>opened.add(x));if(u.get('q'))document.getElementById('q').value=u.get('q');}
 const WN=['1d','7d','30d','90d','180d','1y','overall'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=v=>v==null?'<span class=dim>—</span>':Number(v).toLocaleString('en-US');
@@ -72,7 +90,14 @@ function rrow(r){
  <td>${r.paper?`<a href="https://arxiv.org/abs/${r.paper}" target=_blank title="${esc(r.paper_title||'')}">${r.paper}</a>`:'<span class=dim>—</span>'}</td>
  <td class=n>${ago(r.pushed)}</td><td><span class="${tagc(r.tag)}">${esc(r.tag)}</span></td></tr>`}
 function render(){
- document.getElementById('tabs').innerHTML=[['papers','Papers'],['repos','GitHub']].map(([k,l])=>`<button class="${k==tab?'on':''}" onclick="tab='${k}';render()">${l}</button>`).join('');
+ document.getElementById('tabs').innerHTML=[['papers','Papers'],['repos','GitHub'],['hype','HYPE']].map(([k,l])=>`<button class="${k==tab?'on':''}" onclick="tab='${k}';render()">${l}</button>`).join('');
+ document.getElementById('hnote').style.display=tab=='hype'?'block':'none';
+ if(tab=='hype')return renderHype();
+ document.getElementById('upd').textContent=D.generated_local;
+ document.getElementById('tracked').textContent=`tracking ${D.tracked.papers} papers, ${D.tracked.repos} repos · run took ${D.run_seconds}s`;
+ document.getElementById('prevrun').textContent=D.previous_run?'movement vs run of '+D.previous_run.replace('T',' '):'first run (all entries marked new)';
+ document.getElementById('src').innerHTML=Object.entries(D.sources).map(([k,v])=>`<li><b>${esc(k)}</b>: ${esc(v.status)} — ${esc(v.detail)}</li>`).join('');
+ if(!WN.includes(win))win='7d';
  if(!D.views.includes(view))view='all';history.replaceState(null,'','#'+tab+'/'+win+'/'+view);
  const V=D[tab][win];
  document.getElementById('wins').innerHTML=WN.map(w=>{const n=D[tab][w]?.[view]?.rows.length??0;return `<button class="${w==win?'on':''}" onclick="win='${w}';render()">${w} <span class=dim>(${n})</span></button>`}).join('');
@@ -85,6 +110,106 @@ function render(){
  document.getElementById('tb').innerHTML=rows.map(tab=='papers'?prow:rrow).join('')||'<tr><td colspan=14 class=dim>No rows</td></tr>';
  document.getElementById('cnt').textContent=`${rows.length} rows shown (top ${cur.rows.length} of ${cur.candidates} candidates in window${view=='all'?'':', ranked within '+view})`;
 }
+// ---------------------------------------------------------------- HYPE tab
+const dash='<span class=dim>—</span>';
+const nv=v=>v==null?dash:num(v);
+const safe=u=>/^https?:\/\//i.test(u||'')?esc(u):'';
+const A=(u,t,cls)=>safe(u)?`<a href="${safe(u)}" target=_blank${cls?` class=${cls}`:''}>${t}</a>`:t;
+const srcs=l=>(l||[]).filter(safe).map((u,i)=>`<a href="${safe(u)}" target=_blank title="${esc(u)}">[${i+1}]</a>`).join('');
+const day=s=>s?String(s).slice(0,10):null;
+function since(iso){if(!iso)return null;return Math.max(0,Math.floor((Date.now()-Date.parse(iso))/864e5))}
+function gapb(g,it){if(g==null)return dash;const c=g>=H.gap_thresholds[1]?'hype':g<=H.gap_thresholds[0]?'sleeper':'earned';
+ const low=it.real_conf<.5;const lbl={hype:'likely hype',earned:'earned',sleeper:'underrated sleeper'}[c];
+ return `<span class="gap g-${c}${low?' low':''}" title="${lbl}: hype − real = ${g}${low?` · low confidence: Real uses ${Math.round(it.real_conf*4)}/4 signals`:''}">${g>0?'+':''}${g}</span>`}
+const HH=[['#'],['Project'],['Hype','score'],['Conf.'],['Real','real'],['Conf.'],['Gap','gap'],['Mentions'],['Voices'],['Platforms'],['First seen'],['Days'],['Tag']];
+function hrow(r){const it=H.items[r.id],m=it.win[win]||{},L=it.links;
+ const main=L.site||L.repo||L.paper||L.hf||L.x_handle;
+ const sm=[['x_handle','X'],['repo','repo'],['paper','paper'],['hf','HF']].filter(([k])=>L[k]).map(([k,t])=>A(L[k],t,'lk')).join('');
+ const o=opened.has(r.id);
+ return `<tr class="hr${o?' open':''}" onclick="tog('${r.id}')"><td class=n>${r.rank} ${mv(r)}</td>
+ <td>${A(main,'<b>'+esc(it.name)+'</b>')}${sm}${it.coord.disclosed?'<span class=ad title="disclosed sponsored content — see card">sponsored (disclosed)</span>':''}<div class=dim>${esc(it.category||'')}</div></td>
+ <td class="n score" title="sampled attention proxy">${r.score}</td><td class=n>${conf(r.conf)}</td>
+ <td class="n score">${it.real==null?dash:it.real}</td><td class=n>${conf(it.real_conf)}</td><td class=n>${gapb(r.gap,it)}</td>
+ <td class=n title="sampled posts in window (not a global count)">${nv(m.mentions)}</td><td class=n>${nv(m.voices)}</td>
+ <td class=n title="${esc((m.platforms||[]).join(', '))}">${m.platforms?m.platforms.length:dash}</td>
+ <td class=n>${it.first_seen?A(it.first_seen_url,day(it.first_seen)):dash}</td><td class=n>${nv(since(it.first_seen))}</td>
+ <td><span class="${tagc(it.tag)}">${esc(it.tag)}</span></td></tr>`+(o?card(r,it):'')}
+function tog(id){opened.has(id)?opened.delete(id):opened.add(id);renderHype()}
+function hs(k){hsort=k;renderHype()}
+function fmtv(v){return typeof v=='number'?num(v):esc(typeof v=='object'?JSON.stringify(v):String(v))}
+function card(r,it){const v=it.viral,c=it.coord,ri=it.real_in,m=it.win[win]||{};
+ const z=x=>x==null?'<span class=dim>missing</span>':x.toFixed(2);
+ const coord=(()=>{let h='';const measured=/coordinat/i.test(c.assessment||'')&&!/not assessed|^no /i.test(c.assessment||'');
+  if(measured)h+=`<li><b>Pattern looks coordinated</b> (research assessment: ${esc(c.assessment)})</li>`;
+  else h+=`<li>No measured coordination signals — research status: <i>${esc(c.assessment||'—')}</i>.</li>`;
+  if(c.disclosed)h+=c.evidence.map(e=>`<li><b>Disclosed sponsorship:</b> “${esc(e.t)}” ${e.d?esc(e.d):''} ${A(e.url,'evidence')}</li>`).join('');
+  else if(c.evidence.length)h+='<li>Promotion context noted (not evidence of payment):<ul>'+c.evidence.map(e=>`<li>${esc(e.t)} ${A(e.url,'source')}</li>`).join('')+'</ul></li>';
+  return h+`<li class=dim>${esc(c.limitations||'')}</li>`})();
+ const tr=it.traction.map(s=>`<li><b>${esc(s.type.replace(/_/g,' '))}</b>: ${fmtv(s.value)} <span class=dim>${esc(s.unit||'')}</span> · <i>${esc((s.ver||'').replace(/_/g,' '))}</i>${s.asof?' · '+esc(s.asof):''} ${A(s.url,'source')}${s.notes?`<div class=dim>${esc(s.notes)}</div>`:''}</li>`).join('')||'<li class=dim>none recorded</li>';
+ const sk=it.skeptic.map(s=>`<li>${esc(s.claim)} <span class=dim>— ${esc(s.by||'')}${s.d?', '+esc(s.d):''}</span> ${A(s.url,'source')}</li>`).join('')||'<li class=dim>none recorded</li>';
+ const po=it.posts.map(p=>`<tr><td>${esc(p.pl)}</td><td>${esc(p.au||'—')}</td><td style="white-space:nowrap">${esc(p.d)}</td><td class=n>${p.likes!=null?num(p.likes)+' ♥':p.score!=null?num(p.score)+' pts':'—'}</td><td class=n>${p.cm!=null?num(p.cm):p.rp!=null?num(p.rp):'—'}</td><td>${A(p.url,esc(p.t||'post'))}</td></tr>`).join('');
+ const rl={gh_trust:'GitHub trust index',paper:'Paper traction (HF upvotes)',usage:'Real usage',discussion:'Dev discussion (HN comments, sampled)'};
+ const rv={gh_trust:ri.gh_trust&&`${ri.gh_trust.v} <span class=dim>(${esc(ri.gh_trust.repo)}, ${esc(ri.gh_trust.src)})</span>`,
+  paper:ri.paper&&A(ri.paper.url,num(ri.paper.v)+' upvotes')+` <span class=dim>arXiv ${esc(ri.paper.id)}</span>`,
+  usage:ri.usage&&`${num(ri.usage.value)} <span class=dim>${esc(ri.usage.unit)}${ri.usage.vendor?' · vendor claim, half weight':''}</span> ${A(ri.usage.url,'source')}`,
+  discussion:ri.discussion&&`${num(ri.discussion.v)} comments <span class=dim>on ${ri.discussion.stories} sampled HN stories</span>`};
+ return `<tr class=card><td colspan=13><div class=cg><div>
+ <h4>Summary</h4>${esc(it.summary||'—')} <span class=src>${srcs(it.summary_urls)}</span>
+ <h4>Timeline</h4><ul><li><b>First seen</b>: ${it.first_seen?esc(day(it.first_seen))+' '+A(it.first_seen_url,'source'):'—'} <span class=dim>(${esc(it.first_seen_meaning||'')})</span></li>
+ <li><b>Peak</b>: ${it.peak?esc(day(it.peak)):'—'} <span class=dim>${it.peak?'':'('+esc(it.peak_reason||'unknown')+')'}</span></li>
+ <li><b>Now</b>: ${esc(it.status||'—')} <span class=src>${srcs(it.status_urls)}</span></li></ul>
+ <h4>How it went viral</h4><ul><li>Origin platform: ${v.platform?esc(v.platform):'—'} · post: ${v.post?A(v.post,'link'):'—'} · account: ${v.account?esc(v.account):'—'} · followers: ${v.followers!=null?num(v.followers):'—'}${v.platform?'':` <span class=dim>(${esc(v.reason||'not established')})</span>`}</li>
+ ${v.cand_platform?`<li>Earliest post observed in the sample (not proven origin): ${esc(v.cand_platform)} · ${esc(v.cand_account||'—')} ${A(v.cand_post,'post')}</li>`:''}
+ <li class=dim>Platforms with sampled posts (overall): ${esc((it.win.overall.platforms||[]).join(', ')||'—')}</li></ul>
+ <h4>Was it intentional?</h4><ul>${coord}</ul>
+ ${it.qual_gap?`<h4>Research analyst: hype vs evidence (#${it.qual_gap.pos})</h4>${esc(it.qual_gap.text)} <span class=src>${srcs(it.qual_gap.urls)}</span>`:''}
+ ${it.notes.gap?`<div class=dim style="margin-top:4px">Research note: ${esc(it.notes.gap)}</div>`:''}
+ </div><div>
+ <h4>Score breakdown (${esc(win)})</h4><table>
+ <tr><th>Hype component</th><th>weight</th><th>value</th><th>z</th></tr>
+ <tr><td>Mention velocity</td><td>35%</td><td>${r.vel} posts/day <span class=dim>(${nv(m.mentions)} sampled)</span></td><td>${z(r.z.velocity)}</td></tr>
+ <tr><td>Acceleration</td><td>25%</td><td class=dim>no growth series</td><td>${z(r.z.acceleration)}</td></tr>
+ <tr><td>Unique voices</td><td>20%</td><td>${nv(m.voices)}</td><td>${z(r.z.voices)}</td></tr>
+ <tr><td>Cross-platform spread</td><td>20%</td><td>${m.platforms?m.platforms.length:'—'} <span class=dim>${esc((m.platforms||[]).join(', '))}</span></td><td>${z(r.z.spread)}</td></tr>
+ <tr><th>Real component</th><th>weight</th><th>value</th><th>z</th></tr>
+ ${Object.keys(rl).map(k=>`<tr><td>${rl[k]}</td><td>${H.weights.real[k]*100}%</td><td>${rv[k]||'<span class=dim>—</span>'}</td><td>${z(it.real_z[k])}</td></tr>`).join('')}
+ </table>
+ ${it.gh?`<div class=dim>GitHub snapshot (display only, not scored): ${num(it.gh.stars)} ★ · ${nv(it.gh.forks)} forks · created ${esc(it.gh.created||'—')} · pushed ${esc(it.gh.pushed||'—')} ${A(it.gh.url,'api')}</div>`:''}
+ ${it.proxy?`<div class=dim>Research X-likes momentum proxy: rank ${nv(it.proxy.rank)}, score ${num(Math.round(it.proxy.score))}</div>`:''}
+ <div class=dim>HN sample: ${nv(it.hn.accepted)} matching stories of ${nv(it.hn.returned)} hits${it.hn.capped?' (capped at first 100 hits)':''} ${A(it.hn.url,'query')}</div>
+ <h4>Real-traction signals</h4><ul>${tr}</ul>
+ <h4>Skeptic signals</h4><ul>${sk}</ul>
+ <h4>Top sampled posts</h4><table><tr><th>where</th><th>who</th><th>date</th><th>♥/pts</th><th>replies</th><th>post</th></tr>${po||'<tr><td colspan=6 class=dim>none</td></tr>'}</table>
+ </div></div></td></tr>`}
+function renderHype(){
+ if(!H){document.getElementById('tb').innerHTML='<tr><td class=dim>Loading HYPE data…</td></tr>';loadHype().then(()=>H&&renderHype());return}
+ const W=H.windows;if(!W[win]?.enabled)win='overall';if(!H.views.includes(view))view='all';
+ history.replaceState(null,'','#hype/'+win+'/'+view);
+ document.getElementById('upd').textContent=H.generated_local+' (HYPE build)';
+ document.getElementById('tracked').textContent=`${H.n_projects} researched projects (AI overall, open + closed source)`;
+ document.getElementById('prevrun').textContent=H.previous_run?'movement vs HYPE run of '+H.previous_run.replace('T',' '):'first HYPE run (all entries marked new)';
+ document.getElementById('wins').innerHTML=WN.map(w=>{const e=W[w]?.enabled;const n=e?H[w].all.rows.length:0;
+  return `<button class="${w==win?'on':''}" ${e?`onclick="win='${w}';renderHype()"`:`disabled title="${esc(W[w]?.reason||'no data')}"`}>${w} <span class=dim>(${e?n:'—'})</span></button>`}).join('');
+ document.getElementById('views').innerHTML='<span class=meta style="align-self:center">Paradigm:</span>'+H.views.map(v=>`<button class="${v==view?'on':''}" onclick="view='${v}';renderHype()">${v=='all'?'all':esc(v)}</button>`).join('');
+ document.getElementById('th').innerHTML='<tr>'+HH.map(([h,k],i)=>`<th class="${i==0||(i>=2&&i<=11)?'n':''}${k?' s':''}"${k?` onclick="hs('${k}')" title="sort by ${h}"`:''}>${h}${k&&hsort==k?' ▼':''}</th>`).join('')+'</tr>';
+ const q=document.getElementById('q').value.toLowerCase().trim();
+ const cur=H[win][view]||{rows:[],candidates:0};
+ const val=r=>hsort=='real'?(H.items[r.id].real??-1e9):hsort=='gap'?(r.gap??-1e9):r.score;
+ let rows=cur.rows.slice().sort((a,b)=>val(b)-val(a)||a.rank-b.rank);
+ if(q)rows=rows.filter(r=>JSON.stringify(H.items[r.id]).toLowerCase().includes(q));
+ document.getElementById('tb').innerHTML=rows.map(hrow).join('')||'<tr><td colspan=13 class=dim>No rows</td></tr>';
+ document.getElementById('cnt').textContent=`${rows.length} rows shown (${cur.rows.length} of ${H.n_projects} researched projects have sampled posts in ${win}${view=='all'?'':', ranked within '+view}) · click a row for details`;
+ document.getElementById('src').innerHTML=`<li><b>Social research dossier</b>: generated ${esc(H.research_generated_at||'—')} UTC, content cutoff ${esc(H.content_cutoff)}, ${H.n_projects} projects, ${H.lookback_days}-day lookback</li>`+H.coverage.map(c=>`<li>${esc(c)}</li>`).join('')+(H.gap_note?`<li>Research gap note: ${esc(H.gap_note)}</li>`:'');
+ if(opened.size){const el=document.querySelector('tr.card');if(el&&!renderHype.scrolled){renderHype.scrolled=1;el.previousElementSibling.scrollIntoView({block:'nearest'})}}
+}
+async function loadHype(){
+ try{const r=await fetch('hype.json?'+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);H=await r.json();}
+ catch(e){document.getElementById('tb').innerHTML=`<tr><td class=dim>No HYPE data (web/hype.json): ${esc(e.message)}</td></tr>`;return}
+ const g=H.research_generated_at?H.research_generated_at.slice(0,16).replace('T',' ')+' UTC':'—';
+ document.getElementById('hnote').innerHTML=`<b>Data coverage</b> — social research generated ${esc(g)} (cutoff ${esc(H.content_cutoff.slice(0,10))}); ${H.coverage_short.map(esc).join(' ')}
+ <br><b>Hype</b> is a <i>sampled proxy</i> of attention velocity: mention velocity 35%, acceleration 25% (<i>not measurable: no growth series → weights renormalised, confidence ≤ 75%</i>), unique voices 20%, cross-platform spread 20%.
+ <b>Real</b> = GitHub trust 30% · paper traction 20% · usage (downloads/users with source) 30% · HN discussion 20%, renormalised over present signals. <b>Gap</b> = Hype − Real: ≥ +${H.gap_thresholds[1]} likely hype, ≤ ${H.gap_thresholds[0]} underrated sleeper; dashed badge = Real from &lt;2 signals. 180d/1y are not research windows. — = no data.`;
+}
 async function load(){
  const r=await fetch('data.json?'+Date.now());D=await r.json();
  document.getElementById('upd').textContent=D.generated_local;
@@ -94,5 +219,5 @@ async function load(){
  render();
 }
 document.getElementById('q').oninput=render;
-load();setInterval(load,5*60*1000);
+load();setInterval(()=>{H=null;load()},5*60*1000);
 </script></body></html>

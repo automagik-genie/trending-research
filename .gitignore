@@ -5,3 +5,4 @@ __pycache__/
 *.log
 .run.lock
 run*.log
+hype/

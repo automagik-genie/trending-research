@@ -32,6 +32,9 @@ TRUST / MOMENTUM SCORE (0-100), never star totals alone:
           (or all contributors if the repo was born in-window).
           Activity lookback ≈ 30d via GitHub Search API; contributor counts via
           /contributors (Link: last). confidence = fraction of signals present.
+
+HYPE tab: if hype/hype_research.json exists, hype_build.build() turns it into web/hype.json
+  (compact; formula in hype_build.py) and stores HYPE ranks in the same history DB (tab 'hype').
 """
 import os, sys, re, json, time, math, sqlite3, fcntl, threading, traceback
 import urllib.request, urllib.parse, urllib.error
@@ -623,13 +626,17 @@ def db():
     except Exception: pass
     return con
 
-def prev_ranks(con):
-    out = {}
-    r = con.execute('SELECT MAX(run_id) FROM runs').fetchone()[0]
-    if r is None: return out, None
-    for tab, win, item, rank in con.execute('SELECT tab, win, item_id, rank FROM ranks WHERE run_id=?', (r,)):
-        out.setdefault((tab, win), {})[item] = rank
-    ts = con.execute('SELECT ts_local FROM runs WHERE run_id=?', (r,)).fetchone()[0]
+def prev_ranks(con, tabs=('papers', 'repos')):
+    """Previous ranks per tab = the latest run that recorded that tab (hype_build.py can add
+    HYPE-only runs, so 'latest run overall' is not enough)."""
+    out, ts = {}, None
+    for t in tabs:
+        r = con.execute('SELECT MAX(run_id) FROM ranks WHERE tab=?', (t,)).fetchone()[0]
+        if r is None: continue
+        for tab, win, item, rank in con.execute('SELECT tab, win, item_id, rank FROM ranks WHERE run_id=? AND (tab=? OR tab LIKE ?)',
+                                                (r, t, t + '|%')):
+            out.setdefault((tab, win), {})[item] = rank
+        if ts is None: ts = con.execute('SELECT ts_local FROM runs WHERE run_id=?', (r,)).fetchone()[0]
     return out, ts
 
 def repo_snapshot_gain(con, fn, stars_now, days):
@@ -923,6 +930,10 @@ def main():
     for r in all_repos:
         has = any(r['_rates'].get(k) is not None for k, _ in TRUST_WEIGHTS)
         r['_trust'] = r['_score'] if has else None
+        r['_trust_conf'] = r['_confidence']
+    # all-repo 30d trust map, reused by hype_build.py (HYPE 'Real' score joins on repo)
+    repo_trust = {fn: {'trust': r['_trust'], 'confidence': r['_trust_conf']} for fn, r in repos.items()}
+    save_json(os.path.join(CACHE, 'repo_trust.json'), {'generated_at': iso(NOW), 'repos': repo_trust})
 
     by_url = {r['url'].lower().rstrip('/'): r for r in repos.values()}
     for p in papers.values():
@@ -1024,6 +1035,17 @@ def main():
           a.get('prs_merged'), a.get('commits'), a.get('contributors'), a.get('lookback_days'),
           a.get('observed_at')) for fn, a in activity.items()])
     con.commit()
+    # ---- HYPE tab (web/hype.json) from the social-research dossier, if present
+    hype_rows = None
+    if os.path.exists(os.path.join(BASE, 'hype', 'hype_research.json')):
+        try:
+            import hype_build
+            h = hype_build.build(con=con, run_id=run_id, repo_trust=repo_trust, tagger=tag_for, tags=TAGS, log=log)
+            hype_rows = {w: len(h[w]['all']['rows']) for w in h['windows'] if h['windows'][w].get('enabled')}
+            note('HYPE (social research dossier)', 'ok', f'{h["n_projects"]} projects from hype/hype_research.json '
+                 f'(research {h.get("research_generated_at") or "?"}); rows {hype_rows}')
+        except Exception as e:
+            traceback.print_exc(); note('HYPE (social research dossier)', 'failed', str(e)[:120])
     stamp = now_local.strftime('%Y%m%d-%H%M%S')
     save_json(os.path.join(HIST, 'runs', f'{stamp}.json'),
               {'run_id': run_id, 'ts_local': now_local.isoformat(timespec='seconds'),
