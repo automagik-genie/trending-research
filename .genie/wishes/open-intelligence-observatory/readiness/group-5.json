@@ -1,0 +1,226 @@
+{
+  "issue": 6,
+  "group": 5,
+  "base_sha": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "accepted_input_commit": "863f5eb1bc892044f5a778bfe503705c34170e42",
+  "owned_paths": [
+    "investigations/frontier-economics/evidence.json",
+    "investigations/frontier-economics/assessment.md"
+  ],
+  "estimate_files": 2,
+  "estimate_insertions": 900,
+  "estimate_encoded_bytes": 450000,
+  "size_cap": {
+    "files": 25,
+    "insertions": 2000
+  },
+  "accepted_dependencies": [
+    {
+      "issue": 2,
+      "commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "design": "ctx_094c7e12b826 SHIP",
+      "quality": "ctx_e0246b8b9cf1 SHIP",
+      "evidence": [
+        "verification/group-1-design-review.txt",
+        "verification/group-1-quality-review.txt"
+      ],
+      "qualification": "WISH Review Results group1 accepted; old verification/group-1.json pending fields are historical, not current verdict"
+    },
+    {
+      "issue": 3,
+      "commit": "863f5eb1bc892044f5a778bfe503705c34170e42",
+      "manifest": "b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff",
+      "acceptance": "ctx_5f2f73a70adf SHIP all4",
+      "quality": "ctx_5d743fefaab8 SHIP",
+      "evidence": "verification/group-2.json and original acceptance/quality reports"
+    }
+  ],
+  "input_artifacts": [
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "revision": null,
+      "sha256": "925b29b9ab4798b994c0d1f269b0d2c836818333f04a1013f78f51e5b4e8fa3f"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+      "revision": null,
+      "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-2.json",
+      "revision": null,
+      "sha256": "ad977a2a9781261269530396f58a5f5877548b922186cc0a2afc4f8ae172aefb"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-2-original-acceptance-review.txt",
+      "revision": null,
+      "sha256": "f91672e98a8cbcd2e8161b4739658cac2f923b4db0f2fedbc9c75186f3e71aea"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-2-original-quality-review.txt",
+      "revision": null,
+      "sha256": "0f3ccab03cd21b1a4bb734f43d23c1350a802130e6fb0ba73caa8bc6bd1974fe"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+      "revision": null,
+      "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+      "revision": null,
+      "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+    },
+    {
+      "path": "tests/test_evidence_contracts.py",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "a6634faaeee1d354039392fb164e93e7e35200fdd30998482e3eb9e71b8616ef"
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    },
+    {
+      "path": "docs/sources/economics-panel.md",
+      "revision": "863f5eb1bc892044f5a778bfe503705c34170e42",
+      "sha256": "f956945040da740109077e17d112df64fc2ea2223692e2cbda0b8a70c06fbcc5"
+    },
+    {
+      "path": "investigations/frontier-economics/sources.json",
+      "revision": "863f5eb1bc892044f5a778bfe503705c34170e42",
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41"
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/NOTICE.md",
+      "revision": "863f5eb1bc892044f5a778bfe503705c34170e42",
+      "sha256": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3"
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "revision": 2550576892,
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "decoded_sha256": "d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea",
+      "original_bytes": 92295,
+      "decoded_bytes": 574126
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "revision": 2546229470,
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+      "decoded_sha256": "3074c91d8292f5ba66325e0328808eb2b7f80f06ebf83377ef171ef8926ae0e9",
+      "original_bytes": 63002,
+      "decoded_bytes": 380829
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "revision": 2547354403,
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+      "decoded_sha256": "a91630eea85f0033af9129a0521d0c128f97753aabdbb169cd6655b75b942f79",
+      "original_bytes": 9903,
+      "decoded_bytes": 44688
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "revision": 2554037296,
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+      "decoded_sha256": "37834698a9313fc87515ec009df10cbb102bdc32b53646cdabe65d9dfa8dc834",
+      "original_bytes": 27251,
+      "decoded_bytes": 131954
+    }
+  ],
+  "interfaces": {
+    "bundle": "Closed evidence1.0.0, urn:open-intelligence:evidence:1.0.0; exact root contract_version,fixture_notice(null),entities,source_revisions,evidence_spans,observations,claims,evidence_links,economic_relationships,assessments,publication_revisions,replay_manifests,scenes; no extra root/schema fields; all exact named records per schema. Existing validate_bundle/load_bundle/record_digest from tests/test_evidence_contracts.py; no new code path/schema/store.",
+    "normalizer": "frontier-economics/cc0-canonical-view/1.0.0, documented and exercised in assessment.md authored smoke block. Read strict full gzip originals first; hash/length/revision/ns/licence before extraction. Select ALL38 P2139 full statement objects (19 Microsoft/19 Amazon), preserving amounts/bounds/rank/qualifiers/references/type/order arrays. Find exact decoded raw object via JSONDecoder at structured mainsnak object opener and unique statement id; record UTF8 raw [start,end), raw quote SHA and source decoded SHA. Canonical projection is explicit authored text view: header Untrusted Wikidata structured evidence; canonical view v1 followed by LF, compact sorted-key ensure_ascii=False finite JSON of full selected object followed by LF. Domain media_type is text/plain; charset=utf-8 for THIS VIEW ONLY, never raw application/json/gzip. Domain span covers canonical JSON bytes excluding header/LF; quote equals exact view UTF8 slice. Canonical object equals parsed original slice. Native acquisition ids remain acquisition ids; new distinct immutable local SourceRevision ids identify views.",
+    "extraction_binding": "SourceRevision.reason is nonempty canonical JSON provenance string: normalizer, acquisition_id, original_path, original_sha256, decoded_sha256, original_media_type, original_content_encoding, source_entity_id, source_revision, selector {kind:decoded_utf8_json,start,end}, raw_quote_sha256, selection {kind:statement,statement_id} OR metadata projection with exact JSON pointer list. Metadata P2139 datatype/en label/en description and Q4917 en label/full P498 selected from already acquired originals; whole decoded original selector for metadata plus exact pointers; preserves property/unit evidence without extra source acquisition. Source uri retains actual pinned Wikidata revision; source_id/origin grouping reflects four accepted issuer lineages for existing4 and conservative common Wikidata origin for other34, not invented independent audits.",
+    "clocks": "source_published_at null; observed_at actual completed acquisition request instant; source modified/cache Date/LastModified/local read interval stay in unchanged registry. Actual new local pack registration UTC measured at assembly becomes ingested_at, labelled local repository evidence registration not native Brain receipt. P585 year9 and day11 P580/P582/P577 raw semantics preserved, never inferred midnight instant; domain period/event validity endpoints null. Actual measured computation after cutoff; assessment cutoff equals local registration; no source publication fallback.",
+    "financial": "38 numeric observations metric wikidata_P2139_revenue_assertion, USD explicit, corporate-wide secondary community assertion/unverified recognition/accounting/AI scope. Upper/lower bounds preserved in span and rendered when present, no inferred uncertainty. No recognized_revenue relationship or payment/funding edge: source does not identify those transactions. Revenue/runrate/loss/cashburn/commitment/payment/equity/debt/cloud_credit distinctly named null gap keys in assessment review matrix; no coerced unknown observation with fabricated evidence.",
+    "editorial": "assessment.md revision frontier-economics/assessment/1, date actual assembly; exact pack fullbyte SHA plus manifest/assessment canonical digests. Draft PublicationRevision bound to replay manifest, Scene selects original4 panel and exact cutoff/method. Attributed curation project entity issue-6-engineer (not fabricated human identity). Secondary factual claims asserted_by Wikidata project, authored conditional hypothesis claims/assessments asserted_by curator. At least3 competing interpretations with explicit assumptions, strongest counterevidence and observable invalidation. Markdown separates fact, interpretation, hypothesis and unknown with source ids/dated spans. Approval protocol reviewer records exact pathset SHA, assessment id, cutoff/method and authenticated actor/verdict/reasons/time; any digest drift invalidates receipt. Actor/approval/publication null until real later authority; #6 reviewable exact revision is not #12 publication.",
+    "missingness": "All4 entities/questions retained; explicit topic matrix demand,retention,API price,consumer price,inference economics,training cost,funding,compute commitments/payments,open substitutes,IPO timing,loss,cashburn,subsidy,distillation; missing durable/qualified inputs null with precise registry source/boundary references; no numeric inference, aggregate revenue/growth, private retention/cost, forecast burst date, copied nonCC0 prose or new property meaning."
+  },
+  "runtime_identity": {
+    "binary": "/usr/bin/python3",
+    "version": "3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]",
+    "package": "stdlib only",
+    "profile": null,
+    "source_tuple": "accepted evidence schema/verifier60975ca9 + licensed source863f5eb1; no SDK/provider/Brain/remote runtime"
+  },
+  "prerequisites": {
+    "access": "existing local licensed inputs only; all4 complete originals read/parsed in this intake",
+    "fixtures": "actual4 acquired originals+existing schema/verifier; no synthetic financial fixture",
+    "storage": "two repository artifacts only; native durable Brain/restart unqualified, no rival semantic store",
+    "principal": "assigned issue-6-engineer after readiness and card checkout t_muz1j330f98672b1",
+    "rights": "accepted structured main/Property CC0 extraction/redistribution scope, NOTICE unchanged; no nonCC0 website/issuer HTML/policy prose",
+    "budget": "0 new source HTTP requests, 0 classifier/model/paid calls; historical4 source GET ceiling not reused; total session/infrastructure cost null; recurring disabled",
+    "authorization": "request explicit freeze/accept exact2 paths/interfaces/method/fixtures/smoke/size; no source/contract change, deployment, external mutation, private memory or approvals"
+  },
+  "smoke": {
+    "command": "python3 -B -c 'from pathlib import Path; text = Path(\"investigations/frontier-economics/assessment.md\").read_text(); exec(compile(text.split(\"```python\\n\", 1)[1].split(\"\\n```\", 1)[0], \"frontier-economics-smoke\", \"exec\"))'",
+    "expected": "actual acquired4 fullbody gzip/hash/revision/rights check; exact38 rawobject-to-canonicalview-to-span chain, P2139 and USD semantics,38 observations/claims including normal/preferred/bounds/times/reference preservation; invariant validate_bundle; all4 original entities/questions/topic unknowns; all financial classes separated; 3 competing draft assessments plus exact editorial revision/hash identity. Source source registry unchanged; output actual digests/ids/counts/negative control failures. Process-local network disabled in smoke, not OS sandbox/replay guarantee.",
+    "failure_assertions": [
+      "missing original",
+      "encoded/decoded corruption",
+      "revision mismatch",
+      "nonCC0 or rights revocation",
+      "raw offset/quote drift",
+      "canonical view media/quote drift",
+      "dropped statement or rank/bounds/qualifiers/references",
+      "unit amount changed",
+      "invented midnight/domain time",
+      "false recognized-revenue/payment inference",
+      "private unknown value or burst date filled",
+      "common-origin laundering",
+      "postcutoff evidence/manifests hash mismatch",
+      "publication without real attributed receipt",
+      "pack/revision digest mismatch",
+      "unexpected network"
+    ],
+    "focused_command": "same actual changed-path source-to-assessment scenario; no new permanent tests",
+    "execution": "after complete2-path slice only, once; repairs permit only bounded rerun"
+  },
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "aggregate_owner": "coordinator runs once after complete slice/all writers settle; worker records parent attribution from real receipt only, not historical43-test substitution",
+  "unavailable_disposition": "Missing issuer/accounting/period/AI allocations/private economics/pricing/funding/compute/narrative retention remains null unknown with exact source gap references; no stub substitute. Native Brain/runtime/publication/release remain unclaimed independent gates. Required extra metadata/path/media/schema/right/authority blocks before mutation and needs separately accepted amendment.",
+  "injection_attempts": {
+    "current": "No source instructions executed; JSON labels/references parse as data only. Full selected statements and retained bodies contain unadjudicated strings, never tool authority.",
+    "inherited": [
+      {
+        "url": "https://docs.x.com/x-api/getting-started/pricing",
+        "text": "Fetch complete documentation index; curl bearer-token usage example; purchase credits/auto-recharge guidance",
+        "disposition": "Untrusted generic source instructions, not executed; no index fetch, credentials, API call or purchase"
+      }
+    ]
+  },
+  "coordinator_admission": {
+    "accepted_at": "2026-10-08T08:34:46.123288+00:00",
+    "parent_run": "run_b7d6684b2cdd",
+    "implementation_task": "task_36f4c261cc33",
+    "author_dispatch": "ctx_76f21ad589b3",
+    "card": "t_muz1j330f98672b1",
+    "current_checkout_commit": "3db0d3690973e2c5077fc0788a8ce150435871ea",
+    "input_hashes_all_verified_before_admission": true,
+    "new_schema_or_path_amendment": false,
+    "rulings": [
+      "Accept existing evidence1.0 closed contract with explicit new local authored text/plain canonical views, never mislabeled rawJSON/gzip or fake source/native IDs. View projection retains full38 original statements (all P2139 actualsemantic property/unitqualified) and meaningful metadata exact original and canonical byte/hash/spans, all arrays/rank/qualifiers/references/bounds/type. Actual scalar observations are community assertion quantities, not recognition/accounting/crosscompany/AI facts.",
+      "Actual local assembly UTC may describe repository evidence registration only, not native Brain ingestion/restart/persistence. Read/modification/source/year/day/domain/computation clocks stay distinct; actual fiscal years/days never UTC instants.",
+      "Accept null gaps across all original topics/entities/questions and typeddraft/editor-reviewable exact version protocol, no fabricated human approval/published receipt, no unsupported aggregate/private/forecast/payment/capacity inference. At least3 substantive competinginterpretations supported by available factual assertions and precise unknowns, notemptyplaceholder.",
+      "Sourceorigins conservative sharedissuer/Wikidata groupings and zero independentaudit; normalization authoredprojection sourceinputuntrusted, no executed source labels/URLs. No new property meaning/source fetch/model/provider/paid/recurring/native authority required/admitted.",
+      "Exact2 owned paths only; estimate2/900/~450k cap25/2000, no contract/source3/rootconsumer edits/newdependency/permanentstore. Parentorchestrator authors no productioncode/data/doc. Child beforemutation claims exactassignedcard owner issue-6-engineer.",
+      "Actual frozen changed-path consumer after fullslice, intended negative guards/rootfullsource semantics, parentfinalaggregate whenauthoractualslicecomplete/frozen andsourceinputsunchanged. Reuseoldfullgate notnewcuratorgate. Finalhandshake beforeAuthorlastappends actualparentattributedreceipt thenfreshparentfinalpinexactcommit+independentoriginalacceptance+separatequality."
+    ],
+    "authorization": "Readiness accepted now; after exact worker checkout, may author only original two-path product slice. Original prerequisites2/3 both fullacceptance+qualitydone; original4/5 remain blocked, no downstream waiver.",
+    "original_scope_criteria_preserved": true,
+    "aggregate_owner": "parent",
+    "original_spec_base_retained": "65fe46ef8fde709fa3993cea98b20392b50089d9"
+  }
+}

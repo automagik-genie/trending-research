@@ -1,6 +1,7 @@
 {
   "issue": 2,
   "group": 1,
+  "status": "ORIGINAL_ACCEPTANCE_AND_SEPARATE_QUALITY_SHIP_LOCAL",
   "implementation_head": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
   "parent_head": "1fe2a85853441690c89ef3e91731ed859afd7bcf",
   "paths": {
@@ -26,7 +27,20 @@
     "observed_warning": "Existing tests/test_scoring.py:213 unclosed-file ResourceWarning; not a test failure.",
     "identity_binding": "Command exercised the complete four-file candidate immediately before its exact-path commit; independent SHA256 receipts matched the committed pathset, with no source mutation between command and commit. Commit tool reported exactly four new files and 952 insertions."
   },
-  "independent_acceptance": "pending",
-  "separate_quality": "pending",
+  "independent_acceptance": {
+    "dispatch": "ctx_094c7e12b826",
+    "verdict": "SHIP",
+    "reviewed_commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+    "criteria": ["PASS", "PASS", "PASS", "PASS"],
+    "public_report": "group-1-design-review.txt",
+    "public_report_sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+  },
+  "separate_quality": {
+    "dispatch": "ctx_e0246b8b9cf1",
+    "verdict": "SHIP",
+    "reviewed_commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+    "public_report": "group-1-quality-review.txt",
+    "public_report_sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+  },
   "scope_limit": "This is a synthetic domain-contract example smoke, not Brain persistence, DSH isolation, economics evidence, public deployment, source rights, editorial approval or roadmap completion."
 }
