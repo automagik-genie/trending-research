@@ -37,42 +37,65 @@ tr.card>td{background:#fbfcfe;padding:10px 14px 14px;border-bottom:2px solid #3b
 .cg ul{margin:2px 0;padding-left:16px}.cg li{margin:2px 0}
 .cg table{font-size:11.5px}.cg td,.cg th{padding:2px 4px}
 .src a{font-size:10.5px;margin-right:4px}
+a.sc{color:inherit;text-decoration:none;border-bottom:1px dotted #9ab}a.sc:hover{color:#3b6fb6}
+.rs{color:#888;font-size:12px}.g-insufficient{background:#f1f1f1;color:#777;border:1px dashed #bbb}
+.fl{background:#fff3e0;color:#9a5300;border-radius:3px;padding:0 4px;font-size:10.5px;margin-left:3px;white-space:nowrap}
+.px{color:#b26a00;font-size:10.5px;margin-left:2px;cursor:help}
+#md{max-width:900px;line-height:1.55;font-size:14.5px;display:none}
+#md h1{font-size:22px;margin:18px 0 6px}#md h2{font-size:18px;margin:26px 0 6px;padding-top:6px;border-top:1px solid #e3e3e3}
+#md h3{font-size:15px;margin:18px 0 4px}#md code{background:#f3f4f6;padding:1px 4px;border-radius:3px;font-size:12.5px}
+#md pre{background:#f6f8fa;padding:10px 12px;border-radius:6px;overflow-x:auto;font-size:12.5px;line-height:1.45}
+#md pre code{background:none;padding:0}#md table{width:auto;font-size:13px;margin:6px 0}#md th,#md td{border:1px solid #e3e3e3;padding:4px 8px}
+#md th{position:static}
+#md blockquote{border-left:3px solid #c9d7ee;margin:8px 0;padding:2px 12px;color:#555}
+#mdtoc{font-size:13px;margin:6px 0 10px;color:#555;line-height:1.8}#mdtoc a{margin-right:10px;white-space:nowrap}
 </style></head><body>
 <h1>AI research trend tracker <span class=help>?<span class=tip>
-<b>Trust / momentum score (0–100) — not star totals.</b><br>
-<b>Repos</b> combine (log-scaled within the window, missing → — / 0 weight, lowers confidence):<br>
-• Star <i>growth</i>/day (25%) — from our snapshots or stargazer timestamps; born-in-window repos use all stars as growth. Never lifetime star totals.<br>
-• Issue activity/day (15%) — issues opened + closed in ~30d lookback<br>
-• PR volume/day (10%) + merge rate (10%) — PRs opened and merged/opened<br>
-• Commit frequency/day (15%)<br>
-• Contributor count (10%) + contributor growth/day (15%) — count from GitHub; growth from our snapshots<br>
-<b>Papers</b>: HF upvotes/day (40%), linked-repo trust score (35%) when available (else measured star growth), HN mentions/day (25%).<br>
-Windows: papers by release date; repos created or pushed in window. Arrows vs previous run. Paradigm buttons re-rank within a tag.</span></span></h1>
-<div class=meta>Last updated: <b id=upd>…</b> · <span id=prevrun></span> · <span id=tracked></span></div>
+<b>Scores are 0–100 signal scores (scoring v2), never star totals.</b> Full formulas: <a href="#methodology" style="color:#9cf">Methodology tab</a>.<br>
+Each present signal is log-scaled against the run-wide P95 (one outlier can't squash the rest), combined with the weights below over the signals present,
+then <b>shrunk toward the median by confidence</b> (share of evidence present), so thin evidence can't post extreme scores.<br>
+<b>Repos</b>: star growth/day 25% · issue activity 15% · PR volume 10% · merge rate 10% · commits 15% · contributors 10% · contributor growth 15%.
+Star spikes without matching issue/PR/commit activity are capped, solo repos and one-off spikes are discounted.<br>
+<b>Papers</b>: HF upvote momentum 40% · linked-repo trust 35% · HN mention momentum 25%. Momentum = real deltas between our snapshots when we have them, else per-day-since-release (<span class=px>~</span> = rate proxy).<br>
+Arrows compare ranks only among items in both runs and ignore tiny changes. — = no data.</span></span></h1>
+<div class=meta>Last updated: <b id=upd>…</b> · <span id=prevrun></span> · <span id=tracked></span> · <a href="#methodology" id=ver>scoring v2</a></div>
 <div class="tabs top" id=tabs></div>
 <div class=tabs id=wins></div>
 <div class=tabs id=views style="font-size:12px"></div>
 <div id=hnote></div>
-<input id=q placeholder="Filter rows: title, author, lab, repo, project, tag…"> <span id=cnt class=meta></span>
+<div id=tablewrap><input id=q placeholder="Filter rows: title, author, lab, repo, project, tag…"> <span id=cnt class=meta></span>
 <table><thead id=th></thead><tbody id=tb></tbody></table>
-<details open><summary>Data sources (this run)</summary><ul id=src></ul></details>
+<details open><summary>Data sources (this run)</summary><ul id=src></ul></details></div>
+<div id=md></div>
 <script>
-let D=null, H=null, tab='papers', win='7d', view='all', hsort='score';const opened=new Set();
-{const h=decodeURIComponent(location.hash.slice(1)).split('/');if(['papers','repos','hype'].includes(h[0]))tab=h[0];if(h[1])win=h[1];if(h[2])view=h.slice(2).join('/');
+let D=null, H=null, M=null, tab='papers', win='7d', view='all', hsort='score', msec='';const opened=new Set();
+function readHash(){const h=decodeURIComponent(location.hash.slice(1)).split('/');
+ if(h[0]=='methodology'){tab='methodology';msec=h[1]||'';return}
+ if(['papers','repos','hype'].includes(h[0]))tab=h[0];if(h[1])win=h[1];if(h[2])view=h.slice(2).join('/');}
+{readHash();
  const u=new URLSearchParams(location.search);if(u.get('open'))u.get('open').split(',').forEach(x=>opened.add(x));if(u.get('q'))document.getElementById('q').value=u.get('q');}
 const WN=['1d','7d','30d','90d','180d','1y','overall'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=v=>v==null?'<span class=dim>—</span>':Number(v).toLocaleString('en-US');
 const tagc=t=>'tag t-'+(t||'').split(/[\/ ]/)[0];
-function mv(r){if(r.prev==null)return '<span class=new>new</span>';const d=r.prev-r.rank;
- return d>0?`<span class=up>▲${d}</span>`:d<0?`<span class=dn>▼${-d}</span>`:'<span class=eq>=</span>'}
+function mv(r){const m=r.mv;
+ if(!m){if(r.prev==null)return '<span class=new>new</span>';const d=r.prev-r.rank;return d>0?`<span class=up>▲${d}</span>`:d<0?`<span class=dn>▼${-d}</span>`:'<span class=eq>=</span>'}
+ const t=m.why?` title="${esc(m.why)}"`:'';
+ return m.s=='up'?`<span class=up>▲${m.d}</span>`:m.s=='down'?`<span class=dn>▼${m.d}</span>`:m.s=='same'?`<span class=eq title="within hysteresis (rank or score change too small)">=</span>`:
+  m.s=='reset'?`<span class=rs${t}>·</span>`:`<span class=new${t}>new</span>`}
+const KIND={'rate-proxy':'rate proxy: per-day-since-release average (no earlier snapshot), counts as half evidence','since-release':'rate since release (younger than the momentum horizon)','measured':'real delta from snapshots / stargazer timestamps','blended':'real snapshot delta blended with the since-release rate (our history is shorter than the window)'};
+const FLAG={'stars>activity':'star growth capped: not matched by issue/PR/commit activity','solo':'stars but ≤1 contributor (no outside contributors)','spike':'one-off spike: star rate not sustained across 7/30/90d','single-post':'HN attention is a single post','few-votes':'fewer than 10 upvotes: small sample, counts as part of a signal','single-platform':'all sampled attention on one platform','few-voices':'only a few unique authors in the sample'};
+function flags(f){return (f||[]).map(x=>`<span class=fl title="${esc(FLAG[x]||x)}">${esc(x)}</span>`).join('')}
+function sc(v,sec,r,prior){if(v==null)return '<span class=dim title="no signal present">—</span>';
+ const t=`score ${v}${r&&r.pct!=null?` · percentile ${r.pct}`:''}${r&&r.raw!=null?` · raw ${r.raw} before shrinkage`:''}${r&&r.confidence!=null?` · confidence ${Math.round(100*r.confidence)}%`:''}${prior!=null?` · prior ${prior}`:''}${r&&r.kind?` · momentum: ${r.kind}`:''} · click for the formula`;
+ return `<a class=sc href="#methodology/${sec}" title="${esc(t)}">${v}</a>`}
 function ago(iso){if(!iso)return '—';const d=(Date.now()-Date.parse(iso))/864e5;return d<1?Math.round(d*24)+'h ago':Math.round(d)+'d ago'}
-function conf(c){if(c==null)return '<span class=dim>—</span>';const pct=Math.round(100*c);return `<span class=conf title="confidence ${pct}% — fraction of trust signals present"><i style="width:${pct}%"></i></span> <span class=dim>${pct}%</span>`}
-const PH=['#','Title','Lab / authors','Score','HF ▲','Stars / code','Mentions (HN)','Days','Tag'];
+function conf(c,sec){if(c==null)return '<span class=dim>—</span>';const pct=Math.round(100*c);return `<a href="#methodology/${sec||'confidence-and-shrinkage'}" style="text-decoration:none;white-space:nowrap" title="confidence ${pct}%: evidence-weighted share of signals present; low confidence pulls the score toward the median"><span class=conf><i style="width:${pct}%"></i></span> <span class=dim>${pct}%</span></a>`}
+const PH=['#','Title','Lab / authors','Score','Conf.','HF ▲','Stars / code','Mentions (HN)','Days','Tag'];
 const RH=['#','Repo','Owner','Score','Conf.','Stars gained','Issues','PRs (merged)','Commits','Contributors','Paper','Last push','Tag'];
 function prow(r){const au=r.lab?esc(r.lab):esc((r.authors||[]).join(', '))+(r.n_authors>4?' et al.':'');
  return `<tr><td class=n>${r.rank} ${mv(r)}</td><td>${r.fav?'<span class=fav title="DeepSeek / MIT / RLM">★</span> ':''}<a href="https://arxiv.org/abs/${r.id}" target=_blank>${esc(r.title)}</a> <span class=dim>${r.id}</span></td>
- <td>${au||'—'}</td><td class="n score">${r.score}</td>
+ <td>${au||'—'}${flags(r.flags)}</td><td class="n score">${sc(r.score,'papers-score',r,D.priors&&D.priors.papers)}${r.kind=='rate-proxy'?`<span class=px title="${KIND['rate-proxy']}">~</span>`:''}</td><td class=n>${conf(r.confidence)}</td>
  <td class=n>${r.upvotes==null?'<span class=dim>—</span>':`<a href="https://huggingface.co/papers/${r.id}" target=_blank>${num(r.upvotes)}</a>`}</td>
  <td class=n>${r.code?`<a href="${esc(r.code)}" target=_blank>${r.stars==null?'code':num(r.stars)+' ★'}</a>`:'<span class=dim>—</span>'}</td>
  <td class=n>${r.mentions==null?'<span class=dim>—</span>':`<a href="https://hn.algolia.com/?q=${r.id}" target=_blank title="${r.hn_points??0} story points">${r.mentions}</a>`}</td>
@@ -82,30 +105,35 @@ function rrow(r){
  const prs=r.prs_opened==null?'<span class=dim>—</span>':`${num(r.prs_opened)}${r.prs_merged==null?'':` (${num(r.prs_merged)} m)`}`;
  const cg=r.contrib_gained==null?'':` <span class=dim>(${r.contrib_gained>=0?'+':''}${num(r.contrib_gained)})</span>`;
  return `<tr><td class=n>${r.rank} ${mv(r)}</td><td>${r.fav?'<span class=fav>★</span> ':''}<a href="${esc(r.url)}" target=_blank>${esc(r.id)}</a><div class=dim>${esc(r.desc)}</div></td>
- <td>${esc(r.owner)}</td><td class="n score">${r.score}</td><td class=n>${conf(r.confidence)}</td>
- <td class=n>${r.gained==null?'<span class=dim title="no growth history yet">—</span>':'+'+num(r.gained)}</td>
+ <td>${esc(r.owner)}${flags(r.flags)}</td><td class="n score">${sc(r.score,'repo-trust-index',r,D.priors&&D.priors.repos)}${r.kind=='rate-proxy'?`<span class=px title="${KIND['rate-proxy']}">~</span>`:''}</td><td class=n>${conf(r.confidence)}</td>
+ <td class=n>${r.gained==null?`<span class=dim title="${r.kind=='rate-proxy'?'no stargazer timestamps or earlier snapshot: score uses stars/age as a rate proxy':'no growth history yet'}">—</span>`:`<span title="${esc((r.src||'')+(r.gspan?` over ${r.gspan} days`:''))}">${r.gained>=0?'+':''}${num(r.gained)}</span>${r.src=='snapshots'&&r.gspan?` <span class=dim>/${r.gspan}d</span>`:''}`}</td>
  <td class=n title="opened / closed in lookback">${iss}</td>
  <td class=n>${prs}</td><td class=n>${num(r.commits)}</td>
  <td class=n>${r.contributors==null?'<span class=dim>—</span>':num(r.contributors)}${cg}</td>
  <td>${r.paper?`<a href="https://arxiv.org/abs/${r.paper}" target=_blank title="${esc(r.paper_title||'')}">${r.paper}</a>`:'<span class=dim>—</span>'}</td>
  <td class=n>${ago(r.pushed)}</td><td><span class="${tagc(r.tag)}">${esc(r.tag)}</span></td></tr>`}
 function render(){
- document.getElementById('tabs').innerHTML=[['papers','Papers'],['repos','GitHub'],['hype','HYPE']].map(([k,l])=>`<button class="${k==tab?'on':''}" onclick="tab='${k}';render()">${l}</button>`).join('');
+ document.getElementById('tabs').innerHTML=[['papers','Papers'],['repos','GitHub'],['hype','HYPE'],['methodology','Methodology']].map(([k,l])=>`<button class="${k==tab?'on':''}" onclick="tab='${k}';msec='';render()">${l}</button>`).join('');
  document.getElementById('hnote').style.display=tab=='hype'?'block':'none';
+ const isM=tab=='methodology';
+ for(const id of ['wins','views','tablewrap'])document.getElementById(id).style.display=isM?'none':'';
+ document.getElementById('md').style.display=isM?'block':'none';
+ if(isM)return renderMethod();
  if(tab=='hype')return renderHype();
  document.getElementById('upd').textContent=D.generated_local;
  document.getElementById('tracked').textContent=`tracking ${D.tracked.papers} papers, ${D.tracked.repos} repos · run took ${D.run_seconds}s`;
- document.getElementById('prevrun').textContent=D.previous_run?'movement vs run of '+D.previous_run.replace('T',' '):'first run (all entries marked new)';
+ document.getElementById('prevrun').textContent=D.movement_note||(D.previous_run?'movement vs run of '+D.previous_run.replace('T',' '):'first run (all entries marked new)');
+ document.getElementById('ver').textContent='scoring v'+(D.scoring_version||'1');
  document.getElementById('src').innerHTML=Object.entries(D.sources).map(([k,v])=>`<li><b>${esc(k)}</b>: ${esc(v.status)} — ${esc(v.detail)}</li>`).join('');
  if(!WN.includes(win))win='7d';
  if(!D.views.includes(view))view='all';history.replaceState(null,'','#'+tab+'/'+win+'/'+view);
  const V=D[tab][win];
  document.getElementById('wins').innerHTML=WN.map(w=>{const n=D[tab][w]?.[view]?.rows.length??0;return `<button class="${w==win?'on':''}" onclick="win='${w}';render()">${w} <span class=dim>(${n})</span></button>`}).join('');
  document.getElementById('views').innerHTML='<span class=meta style="align-self:center">Paradigm:</span>'+D.views.map(v=>`<button class="${v==view?'on':''}" onclick="view='${v}';render()">${v=='all'?'all (top 100)':esc(v)}</button>`).join('');
- const H=tab=='papers'?PH:RH;document.getElementById('th').innerHTML='<tr>'+H.map((h,i)=>`<th class="${i==0||(tab=='repos'?i>=3&&i<=9:i>=3&&i<=7)?'n':''}">${h}</th>`).join('')+'</tr>';
+ const H=tab=='papers'?PH:RH;document.getElementById('th').innerHTML='<tr>'+H.map((h,i)=>`<th class="${i==0||(tab=='repos'?i>=3&&i<=9:i>=3&&i<=8)?'n':''}">${h=='Score'?`<a href="#methodology/${tab=='papers'?'papers-score':'repo-trust-index'}" title="how this score is computed">Score</a>`:h}</th>`).join('')+'</tr>';
  const q=document.getElementById('q').value.toLowerCase().trim();
  const cur=V?.[view]||{rows:[],candidates:0};
- let rows=cur.rows.map(v=>({...D[tab].items[v.id],...v})).sort((a,b)=>b.score-a.score);
+ let rows=cur.rows.map(v=>({...D[tab].items[v.id],...v})).sort((a,b)=>a.rank-b.rank);
  if(q)rows=rows.filter(r=>JSON.stringify(r).toLowerCase().includes(q));
  document.getElementById('tb').innerHTML=rows.map(tab=='papers'?prow:rrow).join('')||'<tr><td colspan=14 class=dim>No rows</td></tr>';
  document.getElementById('cnt').textContent=`${rows.length} rows shown (top ${cur.rows.length} of ${cur.candidates} candidates in window${view=='all'?'':', ranked within '+view})`;
@@ -118,9 +146,11 @@ const A=(u,t,cls)=>safe(u)?`<a href="${safe(u)}" target=_blank${cls?` class=${cl
 const srcs=l=>(l||[]).filter(safe).map((u,i)=>`<a href="${safe(u)}" target=_blank title="${esc(u)}">[${i+1}]</a>`).join('');
 const day=s=>s?String(s).slice(0,10):null;
 function since(iso){if(!iso)return null;return Math.max(0,Math.floor((Date.now()-Date.parse(iso))/864e5))}
-function gapb(g,it){if(g==null)return dash;const c=g>=H.gap_thresholds[1]?'hype':g<=H.gap_thresholds[0]?'sleeper':'earned';
- const low=it.real_conf<.5;const lbl={hype:'likely hype',earned:'earned',sleeper:'underrated sleeper'}[c];
- return `<span class="gap g-${c}${low?' low':''}" title="${lbl}: hype − real = ${g}${low?` · low confidence: Real uses ${Math.round(it.real_conf*4)}/4 signals`:''}">${g>0?'+':''}${g}</span>`}
+function gapb(r,it){const g=r.gap;if(g==null)return `<span class="gap g-insufficient" title="no Real score (no substance signal present)">—</span>`;
+ const c=r.label||(g>=H.gap_thresholds[1]?'hype':g<=H.gap_thresholds[0]?'sleeper':'earned');
+ const lbl={hype:'likely hype',earned:'earned',sleeper:'underrated sleeper',insufficient:'insufficient evidence'}[c];
+ const why=c=='insufficient'?` · needs Hype and Real confidence ≥ ${Math.round(100*(H.gap_min_confidence??.5))}% (now ${Math.round(100*r.conf)}% / ${Math.round(100*it.real_conf)}%)`:'';
+ return `<a href="#methodology/hype-vs-real-gap" style="text-decoration:none"><span class="gap g-${c}" title="${lbl}: Hype − Real = ${g} (both shrunk)${why}">${g>0?'+':''}${g}${c=='insufficient'?' ?':''}</span></a>`}
 const HH=[['#'],['Project'],['Hype','score'],['Conf.'],['Real','real'],['Conf.'],['Gap','gap'],['Mentions'],['Voices'],['Platforms'],['First seen'],['Days'],['Tag']];
 function hrow(r){const it=H.items[r.id],m=it.win[win]||{},L=it.links;
  const main=L.site||L.repo||L.paper||L.hf||L.x_handle;
@@ -128,8 +158,8 @@ function hrow(r){const it=H.items[r.id],m=it.win[win]||{},L=it.links;
  const o=opened.has(r.id);
  return `<tr class="hr${o?' open':''}" onclick="tog('${r.id}')"><td class=n>${r.rank} ${mv(r)}</td>
  <td>${A(main,'<b>'+esc(it.name)+'</b>')}${sm}${it.coord.disclosed?'<span class=ad title="disclosed sponsored content — see card">sponsored (disclosed)</span>':''}<div class=dim>${esc(it.category||'')}</div></td>
- <td class="n score" title="sampled attention proxy">${r.score}</td><td class=n>${conf(r.conf)}</td>
- <td class="n score">${it.real==null?dash:it.real}</td><td class=n>${conf(it.real_conf)}</td><td class=n>${gapb(r.gap,it)}</td>
+ <td class="n score">${sc(r.score,'hype-hype-score',{raw:r.raw,pct:r.pct,confidence:r.conf},50)}${flags(r.flags)}</td><td class=n>${conf(r.conf)}</td>
+ <td class="n score">${sc(it.real,'hype-real-score',{raw:it.real_raw,pct:it.real_pct,confidence:it.real_conf},50)}</td><td class=n>${conf(it.real_conf)}</td><td class=n>${gapb(r,it)}</td>
  <td class=n title="sampled posts in window (not a global count)">${nv(m.mentions)}</td><td class=n>${nv(m.voices)}</td>
  <td class=n title="${esc((m.platforms||[]).join(', '))}">${m.platforms?m.platforms.length:dash}</td>
  <td class=n>${it.first_seen?A(it.first_seen_url,day(it.first_seen)):dash}</td><td class=n>${nv(since(it.first_seen))}</td>
@@ -149,9 +179,9 @@ function card(r,it){const v=it.viral,c=it.coord,ri=it.real_in,m=it.win[win]||{};
  const sk=it.skeptic.map(s=>`<li>${esc(s.claim)} <span class=dim>— ${esc(s.by||'')}${s.d?', '+esc(s.d):''}</span> ${A(s.url,'source')}</li>`).join('')||'<li class=dim>none recorded</li>';
  const po=it.posts.map(p=>`<tr><td>${esc(p.pl)}</td><td>${esc(p.au||'—')}</td><td style="white-space:nowrap">${esc(p.d)}</td><td class=n>${p.likes!=null?num(p.likes)+' ♥':p.score!=null?num(p.score)+' pts':'—'}</td><td class=n>${p.cm!=null?num(p.cm):p.rp!=null?num(p.rp):'—'}</td><td>${A(p.url,esc(p.t||'post'))}</td></tr>`).join('');
  const rl={gh_trust:'GitHub trust index',paper:'Paper traction (HF upvotes)',usage:'Real usage',discussion:'Dev discussion (HN comments, sampled)'};
- const rv={gh_trust:ri.gh_trust&&`${ri.gh_trust.v} <span class=dim>(${esc(ri.gh_trust.repo)}, ${esc(ri.gh_trust.src)})</span>`,
+ const rv={gh_trust:ri.gh_trust&&`${ri.gh_trust.v} <span class=dim>(${esc(ri.gh_trust.repo)}, ${esc(ri.gh_trust.src)}, confidence ${Math.round(100*(ri.gh_trust.conf||0))}%)</span>`,
   paper:ri.paper&&A(ri.paper.url,num(ri.paper.v)+' upvotes')+` <span class=dim>arXiv ${esc(ri.paper.id)}</span>`,
-  usage:ri.usage&&`${num(ri.usage.value)} <span class=dim>${esc(ri.usage.unit)}${ri.usage.vendor?' · vendor claim, half weight':''}</span> ${A(ri.usage.url,'source')}`,
+  usage:ri.usage&&`${num(ri.usage.value)} <span class=dim>${esc(ri.usage.unit)}${ri.usage.vendor?' · vendor claim, half evidence':''}</span> ${A(ri.usage.url,'source')}`,
   discussion:ri.discussion&&`${num(ri.discussion.v)} comments <span class=dim>on ${ri.discussion.stories} sampled HN stories</span>`};
  return `<tr class=card><td colspan=13><div class=cg><div>
  <h4>Summary</h4>${esc(it.summary||'—')} <span class=src>${srcs(it.summary_urls)}</span>
@@ -167,13 +197,15 @@ function card(r,it){const v=it.viral,c=it.coord,ri=it.real_in,m=it.win[win]||{};
  </div><div>
  <h4>Score breakdown (${esc(win)})</h4><table>
  <tr><th>Hype component</th><th>weight</th><th>value</th><th>z</th></tr>
- <tr><td>Mention velocity</td><td>35%</td><td>${r.vel} posts/day <span class=dim>(${nv(m.mentions)} sampled)</span></td><td>${z(r.z.velocity)}</td></tr>
- <tr><td>Acceleration</td><td>25%</td><td class=dim>no growth series</td><td>${z(r.z.acceleration)}</td></tr>
- <tr><td>Unique voices</td><td>20%</td><td>${nv(m.voices)}</td><td>${z(r.z.voices)}</td></tr>
- <tr><td>Cross-platform spread</td><td>20%</td><td>${m.platforms?m.platforms.length:'—'} <span class=dim>${esc((m.platforms||[]).join(', '))}</span></td><td>${z(r.z.spread)}</td></tr>
+ <tr><td>Mention velocity</td><td>${H.weights.hype.velocity*100}%</td><td>${r.vel} posts/day <span class=dim>(${nv(m.mentions)} sampled)</span></td><td>${z(r.z.velocity)}</td></tr>
+ <tr><td>Acceleration</td><td>${H.weights.hype.acceleration*100}%</td><td class=dim>no growth series</td><td>${z(r.z.acceleration)}</td></tr>
+ <tr><td>Unique voices</td><td>${H.weights.hype.voices*100}%</td><td>${nv(m.voices)}</td><td>${z(r.z.voices)}</td></tr>
+ <tr><td>Cross-platform spread</td><td>${H.weights.hype.spread*100}%</td><td>${m.platforms?m.platforms.length:'—'} <span class=dim>${esc((m.platforms||[]).join(', '))}</span></td><td>${z(r.z.spread)}</td></tr>
  <tr><th>Real component</th><th>weight</th><th>value</th><th>z</th></tr>
  ${Object.keys(rl).map(k=>`<tr><td>${rl[k]}</td><td>${H.weights.real[k]*100}%</td><td>${rv[k]||'<span class=dim>—</span>'}</td><td>${z(it.real_z[k])}</td></tr>`).join('')}
  </table>
+ <div class=dim style="margin-top:4px">Hype ${r.score} = 50 + ${Math.round(100*r.conf)}% × (percentile ${r.pct??'—'} − 50), from raw ${r.raw??'—'}${(r.flags||[]).length?' after penalties: '+esc(r.flags.join(', ')):''}.
+ Real ${it.real??'—'} = 50 + ${Math.round(100*it.real_conf)}% × (percentile ${it.real_pct??'—'} − 50), from raw ${it.real_raw??'—'}. Gap ${r.gap??'—'} → <b>${esc(r.label||'—')}</b>. <a href="#methodology/hype-vs-real-gap">How</a></div>
  ${it.gh?`<div class=dim>GitHub snapshot (display only, not scored): ${num(it.gh.stars)} ★ · ${nv(it.gh.forks)} forks · created ${esc(it.gh.created||'—')} · pushed ${esc(it.gh.pushed||'—')} ${A(it.gh.url,'api')}</div>`:''}
  ${it.proxy?`<div class=dim>Research X-likes momentum proxy: rank ${nv(it.proxy.rank)}, score ${num(Math.round(it.proxy.score))}</div>`:''}
  <div class=dim>HN sample: ${nv(it.hn.accepted)} matching stories of ${nv(it.hn.returned)} hits${it.hn.capped?' (capped at first 100 hits)':''} ${A(it.hn.url,'query')}</div>
@@ -187,7 +219,8 @@ function renderHype(){
  history.replaceState(null,'','#hype/'+win+'/'+view);
  document.getElementById('upd').textContent=H.generated_local+' (HYPE build)';
  document.getElementById('tracked').textContent=`${H.n_projects} researched projects (AI overall, open + closed source)`;
- document.getElementById('prevrun').textContent=H.previous_run?'movement vs HYPE run of '+H.previous_run.replace('T',' '):'first HYPE run (all entries marked new)';
+ document.getElementById('prevrun').textContent=H.movement_note||(H.previous_run?'movement vs HYPE run of '+H.previous_run.replace('T',' '):'first HYPE run (all entries marked new)');
+ document.getElementById('ver').textContent='scoring v'+(H.scoring_version||'1');
  document.getElementById('wins').innerHTML=WN.map(w=>{const e=W[w]?.enabled;const n=e?H[w].all.rows.length:0;
   return `<button class="${w==win?'on':''}" ${e?`onclick="win='${w}';renderHype()"`:`disabled title="${esc(W[w]?.reason||'no data')}"`}>${w} <span class=dim>(${e?n:'—'})</span></button>`}).join('');
  document.getElementById('views').innerHTML='<span class=meta style="align-self:center">Paradigm:</span>'+H.views.map(v=>`<button class="${v==view?'on':''}" onclick="view='${v}';renderHype()">${v=='all'?'all':esc(v)}</button>`).join('');
@@ -206,12 +239,43 @@ async function loadHype(){
  try{const r=await fetch('hype.json?'+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);H=await r.json();}
  catch(e){document.getElementById('tb').innerHTML=`<tr><td class=dim>No HYPE data (web/hype.json): ${esc(e.message)}</td></tr>`;return}
  const g=H.research_generated_at?H.research_generated_at.slice(0,16).replace('T',' ')+' UTC':'—';
- document.getElementById('hnote').innerHTML=`<b>Data coverage</b> — social research generated ${esc(g)} (cutoff ${esc(H.content_cutoff.slice(0,10))}); ${H.coverage_short.map(esc).join(' ')}
- <br><b>Hype</b> is a <i>sampled proxy</i> of attention velocity: mention velocity 35%, acceleration 25% (<i>not measurable: no growth series → weights renormalised, confidence ≤ 75%</i>), unique voices 20%, cross-platform spread 20%.
- <b>Real</b> = GitHub trust 30% · paper traction 20% · usage (downloads/users with source) 30% · HN discussion 20%, renormalised over present signals. <b>Gap</b> = Hype − Real: ≥ +${H.gap_thresholds[1]} likely hype, ≤ ${H.gap_thresholds[0]} underrated sleeper; dashed badge = Real from &lt;2 signals. 180d/1y are not research windows. — = no data.`;
+ const pc=v=>Math.round(100*v)+'%';
+ document.getElementById('hnote').innerHTML=`<b>Data coverage</b>: social research generated ${esc(g)} (cutoff ${esc(H.content_cutoff.slice(0,10))}); ${H.coverage_short.map(esc).join(' ')}
+ <br><b>Hype</b> (sampled attention proxy) = velocity ${pc(H.weights.hype.velocity)} · acceleration ${pc(H.weights.hype.acceleration)} (<i>not measurable yet: no growth series</i>) · unique voices ${pc(H.weights.hype.voices)} · platform spread ${pc(H.weights.hype.spread)}, minus single-platform / few-voices penalties.
+ <b>Real</b> = GitHub trust ${pc(H.weights.real.gh_trust)} · paper traction ${pc(H.weights.real.paper)} · usage ${pc(H.weights.real.usage)} (vendor claims = half evidence) · HN discussion ${pc(H.weights.real.discussion)}.
+ Both are <b>shrunk toward the median</b> in proportion to missing evidence. <b>Gap</b> = Hype − Real: ≥ +${H.gap_thresholds[1]} likely hype, ≤ ${H.gap_thresholds[0]} sleeper, labelled only when both confidences ≥ ${pc(H.gap_min_confidence??.5)}; otherwise <span class="gap g-insufficient">? insufficient</span>. — = no data. <a href="#methodology/hype-vs-real-gap">Methodology</a>`;
 }
+// ---------------------------------------------------------------- Methodology (renders METHODOLOGY.md, the repo's single source)
+const REPO='https://github.com/namastex888/trending-research/blob/main/';
+const slug=t=>t.toLowerCase().replace(/<[^>]+>/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+function inl(t){return esc(t).replace(/`([^`]+)`/g,(m,c)=>'<code>'+c+'</code>').replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/(^|[\s(])\*([^*\s][^*]*?)\*(?=[\s).,;:]|$)/g,'$1<i>$2</i>')
+ .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g,(m,txt,u)=>{u=u.replace(/&amp;/g,'&');const h=u.startsWith('#')?'#methodology/'+u.slice(1):/^https?:/.test(u)?u:REPO+u;return `<a href="${esc(h)}"${h.startsWith('#')?'':' target=_blank'}>${txt}</a>`})}
+function md2html(src){const L=src.replace(/\r/g,'').split('\n');let h='',i=0;const toc=[];
+ const LI=/^\s*([-*]|\d+\.)\s+/;
+ while(i<L.length){let l=L[i];
+  if(/^```/.test(l)){let c=[];i++;while(i<L.length&&!/^```/.test(L[i]))c.push(L[i++]);i++;h+='<pre><code>'+esc(c.join('\n'))+'</code></pre>';continue}
+  let m=l.match(/^(#{1,4})\s+(.*)/);if(m){const id=slug(m[2]);if(m[1].length==2)toc.push([id,m[2]]);h+=`<h${m[1].length} id="${id}">${inl(m[2])}</h${m[1].length}>`;i++;continue}
+  if(/^\s*\|/.test(l)){let rows=[];while(i<L.length&&/^\s*\|/.test(L[i]))rows.push(L[i++]);
+   const cells=r=>r.trim().replace(/^\||\|$/g,'').split('|').map(c=>c.trim());
+   h+='<table><tr>'+cells(rows[0]).map(c=>'<th>'+inl(c)+'</th>').join('')+'</tr>'+rows.slice(2).map(r=>'<tr>'+cells(r).map(c=>'<td>'+inl(c)+'</td>').join('')+'</tr>').join('')+'</table>';continue}
+  if(LI.test(l)){const ol=/^\s*\d+\./.test(l);let it=[];
+   while(i<L.length&&(LI.test(L[i])||(/^\s{2,}\S/.test(L[i])&&it.length))){if(LI.test(L[i]))it.push(L[i].replace(LI,''));else it[it.length-1]+=' '+L[i].trim();i++}
+   h+=(ol?'<ol>':'<ul>')+it.map(x=>'<li>'+inl(x)+'</li>').join('')+(ol?'</ol>':'</ul>');continue}
+  if(/^>\s?/.test(l)){let q=[];while(i<L.length&&/^>\s?/.test(L[i]))q.push(L[i++].replace(/^>\s?/,''));h+='<blockquote>'+inl(q.join(' '))+'</blockquote>';continue}
+  if(!l.trim()){i++;continue}
+  let p=[];while(i<L.length&&L[i].trim()&&!/^(#{1,4}\s|```|\s*\||>)/.test(L[i])&&!LI.test(L[i]))p.push(L[i++]);h+='<p>'+inl(p.join(' '))+'</p>'}
+ return {html:h,toc}}
+async function renderMethod(){history.replaceState(null,'','#methodology'+(msec?'/'+msec:''));
+ const el=document.getElementById('md');
+ if(!M){el.innerHTML='<p class=dim>Loading METHODOLOGY.md…</p>';
+  try{let r=await fetch('METHODOLOGY.md?'+Date.now());if(!r.ok)r=await fetch('../METHODOLOGY.md?'+Date.now());if(!r.ok)throw new Error('HTTP '+r.status);M=md2html(await r.text())}
+  catch(e){el.innerHTML=`<p class=dim>Could not load METHODOLOGY.md (${esc(e.message)}). It lives in the repo root: <a href="${REPO}METHODOLOGY.md">read it on GitHub</a>.</p>`;return}}
+ el.innerHTML=`<div id=mdtoc><b>Sections:</b> ${M.toc.map(([id,t])=>`<a href="#methodology/${id}">${inl(t)}</a>`).join(' ')} · <a href="${REPO}METHODOLOGY.md" target=_blank>source: METHODOLOGY.md</a></div>`+M.html;
+ if(msec){const t=document.getElementById(msec);if(t){t.style.background='#fffbea';t.scrollIntoView()}}else window.scrollTo(0,0)}
+window.addEventListener('hashchange',()=>{const before=tab+'|'+msec;readHash();if(tab+'|'+msec!=before)render()});
 async function load(){
  const r=await fetch('data.json?'+Date.now());D=await r.json();
+ document.getElementById('ver').textContent='scoring v'+(D.scoring_version||'1');
  document.getElementById('upd').textContent=D.generated_local;
  document.getElementById('prevrun').textContent=D.previous_run?'movement vs run of '+D.previous_run.replace('T',' '):'first run (all entries marked new)';
  document.getElementById('tracked').textContent=`tracking ${D.tracked.papers} papers, ${D.tracked.repos} repos · run took ${D.run_seconds}s`;
@@ -219,5 +283,5 @@ async function load(){
  render();
 }
 document.getElementById('q').oninput=render;
-load();setInterval(()=>{H=null;load()},5*60*1000);
+load();setInterval(()=>{if(tab!='methodology'){H=null;load()}},5*60*1000);
 </script></body></html>
