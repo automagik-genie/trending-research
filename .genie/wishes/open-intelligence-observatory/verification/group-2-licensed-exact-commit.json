@@ -1,0 +1,30 @@
+{
+  "issue": 3,
+  "group": 2,
+  "commit": "863f5eb1bc892044f5a778bfe503705c34170e42",
+  "before": "51118d337d085ca1c9f29c48ee481a42c4f89fba",
+  "governing_wish_sha256": "272623d795c0ecee622f5bff3ad014acd3823cbcd054349dd9eb572b51c11d3b",
+  "production_paths_sha256": {
+    "docs/sources/economics-panel.md": "f956945040da740109077e17d112df64fc2ea2223692e2cbda0b8a70c06fbcc5",
+    "investigations/frontier-economics/sources.json": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+    "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+    "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+    "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+    "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+    "investigations/frontier-economics/licensed-sources/NOTICE.md": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3"
+  },
+  "coordinator_paths_sha256": {
+    ".genie/wishes/open-intelligence-observatory/WISH.md": "272623d795c0ecee622f5bff3ad014acd3823cbcd054349dd9eb572b51c11d3b",
+    ".genie/wishes/open-intelligence-observatory/licensed-alternative-intake.json": "2dd3ac20eb0639d66b300a894726df91bb6bc5742a5cef972d247f2c5faaeb29",
+    ".genie/wishes/open-intelligence-observatory/readiness/group-2-licensed-retry-1.json": "eab7554eb6d837166b26e8ef9ea3b561415acca848f8db83dbf76c2df107aa1c",
+    ".genie/wishes/open-intelligence-observatory/readiness/group-2-licensed-author-admission-1.json": "9f9b09031bc7dc86418d6fec643195a7c7e9c5d42c1826421d280afa8be7d097",
+    ".genie/wishes/open-intelligence-observatory/verification/licensed-alternative-route-review.md": "7f3f8610c22b8208bc3f911ab9ee8199badb481922c3c00a331bc36d1b10a944",
+    ".genie/wishes/open-intelligence-observatory/verification/licensed-alternative-route.json": "4f82dc88acc8121e0a412901ec72b3b30082d27a0049b38c0f1cc56f54c0a9f7",
+    ".genie/wishes/open-intelligence-observatory/verification/group-2-licensed-coordinator-settled-gate.json": "69dbc6f93710724f2e2a596b426f4579661dbb12997f20e469b827c0c2dd1566",
+    ".genie/wishes/open-intelligence-observatory/verification/group-2-licensed-final-gate.json": "6a94f3254ef2e73130f0f40fc9ec5264ca1109e63491d971b27b94bbd3e63441"
+  },
+  "non_target_shared_index_preserved": true,
+  "alternate_index_removed": true,
+  "gate": "group-2-licensed-final-gate.json: fresh full aggregate43 tests plus actual acquired originals/financial spans/19 fail-closed guards, exit0",
+  "review_state": "Original native independent acceptance and quality pending; source/scoring runtime/editorial/deploy/CI gates not waived."
+}

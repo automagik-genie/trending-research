@@ -1,0 +1,22 @@
+{
+  "group-10-acceptance-review.txt": {
+    "raw_sha256": "3c87a99fa30d11c6a368b5b8de7309a44d1d506b6eedee7deb4466debf7d1a32",
+    "public_sha256": "78854f34d805b6cc9ef8c4a40d21cd3987949fbdcef1b747b2b2376db3f42f75",
+    "normalization": "Only absolute local worktree/home/primary-source checkout prefixes normalized; raw authoritative report digest retained; findings/verdict/criteria/evidence unchanged."
+  },
+  "group-10-quality-review.txt": {
+    "raw_sha256": "4a89ae6c5f6f86d8f13f92cee3a7d495148cb4f05a28134298d597ffd964ae99",
+    "public_sha256": "3f643b406e1495e19eec1c0f376c0787f3d5ed4aa3d4dffafff546fafabc99e9",
+    "normalization": "Only absolute local worktree/home/primary-source checkout prefixes normalized; raw authoritative report digest retained; findings/verdict/criteria/evidence unchanged."
+  },
+  "group-3-quality-review.md": {
+    "raw_sha256": "97c9749bee8886f1bcca9bbb17a43c569f6cc83a2b5ce7f9f4cf2d043653c979",
+    "public_sha256": "97c9749bee8886f1bcca9bbb17a43c569f6cc83a2b5ce7f9f4cf2d043653c979",
+    "normalization": "Only absolute local worktree/home/primary-source checkout prefixes normalized; raw authoritative report digest retained; findings/verdict/criteria/evidence unchanged."
+  },
+  "group-4-quality-review.md": {
+    "raw_sha256": "fe198c57392eb1272b0a6281cb566c655fc895ea7c2aa9acc814aec94f88f3e2",
+    "public_sha256": "9d3a5c12db15f958ab8d8d2199e09163de288eb219f3b15b5dbec5328aeede19",
+    "normalization": "Only absolute local worktree/home/primary-source checkout prefixes normalized; raw authoritative report digest retained; findings/verdict/criteria/evidence unchanged."
+  }
+}

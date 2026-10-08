@@ -1,0 +1,328 @@
+{
+  "issue": 11,
+  "group": 10,
+  "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "original_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "owned_paths": [
+    "scoring.py",
+    "scoring_config.json",
+    "eval.py",
+    "hype_build.py",
+    "run.py",
+    "tests/test_scoring.py",
+    "web/index.html",
+    "web/data.json",
+    "web/hype.json",
+    "METHODOLOGY.md",
+    "web/METHODOLOGY.md",
+    "CONTRIBUTING.md"
+  ],
+  "estimate_files": 12,
+  "estimate_insertions": 1050,
+  "accepted_dependencies": [
+    {
+      "issue": 2,
+      "group": 1,
+      "artifact": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "design": "verification/group-1-design-review.txt: SHIP",
+      "quality": "verification/group-1-quality-review.txt: SHIP",
+      "coordinator_gate": "36 tests and full fixture evaluation, exit 0",
+      "remote": "https://github.com/namastex888/trending-research/issues/2#issuecomment-6052666339"
+    }
+  ],
+  "input_artifacts": [
+    {
+      "path": "scoring.py",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "f784b69e70fda92a3cafbc386d6f551e0d4a17c13db3a008616d9c8cd8ce7006"
+    },
+    {
+      "path": "scoring_config.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "64d65407555c5841a3b93a662ca4273030a77438cba3bede5aea20c3375aa065"
+    },
+    {
+      "path": "eval.py",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "7d855874d6cb1028808f45aa9f67c2ce34e1b2593f7920248d390e3e6f8922b0"
+    },
+    {
+      "path": "hype_build.py",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "bdb099f35fa0d6f060681091a948e60c980a2abc04111447f337559f5e03c1da"
+    },
+    {
+      "path": "run.py",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "abf86625cd5df5e7839c8cf454782762f2de08d49d5dbb7a973a3f69247a76c3"
+    },
+    {
+      "path": "tests/test_scoring.py",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "9d58b54ce7639b114f75582407be5e574ed69b7f3a4c367f027e53c8155fad6c"
+    },
+    {
+      "path": "web/index.html",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "4c4e43802c1088967f82a364a283d7aa4e5075e23ddbdaac60aa2d814eb4f968"
+    },
+    {
+      "path": "web/data.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "7d2e764c882d134157a81ee122ae26cd519d505e2fcc7a89c3e24eebb1e92f88"
+    },
+    {
+      "path": "web/hype.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "e4489ab1f9c916b3c7c1fe43594b2107c836842c7868165b7338d3f0c0ae8ac8"
+    },
+    {
+      "path": "METHODOLOGY.md",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "1e352c31f95a946b647f7905b92ceb96f55ca6138841633e34ae64a9ecc4efc8"
+    },
+    {
+      "path": "web/METHODOLOGY.md",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "1e352c31f95a946b647f7905b92ceb96f55ca6138841633e34ae64a9ecc4efc8"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "79e1c749938ee8ecbbcb0de753c254fd8025b71e972d7dccdc15b6e0b20027bc"
+    },
+    {
+      "path": "tests/fixtures/features_a.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7"
+    },
+    {
+      "path": "tests/fixtures/features_b.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f"
+    },
+    {
+      "path": "tests/fixtures/hype_small.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "4eb7b06dcffaf937d88150254e031e19e378f702b910b2d403a54bf77bc72e7f"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+    }
+  ],
+  "interfaces": {
+    "method_policy": "Current method 3.0 because removing mixed-unit usage from composite changes formula; retain v2.0 discovery numerics via version=2.0 and explicit legacy_v2_real_scores/legacy_v2_hype_window evaluation paths, v1 evaluation remains. Never claim calibrated Bayesian accuracy.",
+    "score_run": "score_run(F,cfg=None,version=SCORING_VERSION) -> trust tuples(score,coverage), repos/papers rows {score,raw,coverage,verification:null,freshness:{assessed_at:null,newest_evidence_at:null},independence:{origin_ids:[],rationale:null}, flags,kind}; v1 retains legacy conf only for comparison.",
+    "usage": "usage_signals(sigs) -> list[{value:number|null,type,metric_family:download_operations|users|business_customers|creators,unit,period:{start:null|string,end:null|string},scope:null|string,vendor,url,missingness:observed|unobserved}]; retain every qualified source record, no largest-value selection. metric_cohort requires exact type/unit/period/scope; unknown cohort yields normalized:null. No usage score, user/download/customer composite or imputation.",
+    "discovery": "discovery_scores(P,cfg) consumes evidence_in {gh_trust:{v,coverage},paper:{v},discussion:{v},usage:list}; composite {gh_trust:.30,paper:.20,discussion:.20} normalized by total .70, usage displayed separately not combined; available-signal fingerprint defines discovery percentile cohort. Returns score/raw/pct/coverage/z/cohort/metrics/verification:null/freshness unknown/independence unknown. No technical/economic validation from discussion.",
+    "hype": "hype_window returns coverage not conf, gap labels attention_ahead|evidence_ahead|similar|insufficient; comparison is heuristic between attention percentile and discovery proxy percentile, explicitly not hype/earned/truth/accuracy verdict.",
+    "PR": "fetch_repo_activity queries prs_opened by created:>since and prs_merged_in_opened_cohort using BOTH created:>since is:merged; separately prs_merged retains event volume merged:>since. build_features computes ratio ONLY explicit cohort numerator/denominator with denominator>0 and 0<=numerator<=denominator. Legacy cached act.merge without cohort counts is missing under current method, preserved under explicit v2 replay. No clipping mismatched cohorts and zero denominator -> null.",
+    "artifacts": "web/hype.json migrated offline from preserved accepted observations only, updated method identity, normalized usage only when metadata complete. web/data.json has no full feature snapshot in this worktree: preserve historic v2 score/raw and scoring_version=2.0, rename completeness fields and mark archived method plus unqualified PR cohort; do NOT label old numeric results v3. Current v3 production run emits correct semantics. Coordinator must accept this honest archive treatment or provide immutable full-run features/cache snapshot before current data re-score.",
+    "evaluation": "eval.py retains legacy comparisons and adds --issue11-smoke for actual current boundary checks and --compare-v2 fixture analysis; no source-text tests or accuracy claim."
+  },
+  "runtime_identity": {
+    "binary": "python3",
+    "version": "3.14.4",
+    "packages": "stdlib only; no installation",
+    "profile": "local worktree offline",
+    "source": "owned paths pinned above",
+    "browser": "Orca embedded browser or existing browser tool; local only"
+  },
+  "prerequisites": {
+    "access": "existing local fixtures/artifacts only",
+    "fixtures": "committed real subset fixtures plus explicitly synthetic boundary inputs in tests/test_scoring.py",
+    "storage": "no Brain or new persistent storage",
+    "principal": "issue-11-engineer task card claimant after acceptance",
+    "rights": "existing committed observations reused, no new source acquisition/licence claims",
+    "budget": {
+      "external_spend": 0,
+      "recurring_budget": null
+    },
+    "authorization": "coordinator readiness acceptance pending; no network fetch/model/forge/deploy/service restart permitted; local ephemeral HTTP server authorized only for smoke",
+    "unavailable_full_features": null
+  },
+  "before_observations": {
+    "actual_code_probe": "python3 -B -c import scoring,hype_build; usage_signal and real_scores with operations/users/customers; source-informed ratio 20/10 and clamp01",
+    "selected_operations_over_customers": 1000000,
+    "pooled_units": {
+      "downloads": 1.0,
+      "users": 0.5,
+      "customers": 0.334
+    },
+    "closed_unobserved_with_zero_discussion": {
+      "raw": 0,
+      "score": 42.5,
+      "usage": null,
+      "conf": 0.2
+    },
+    "PR_mismatched_events": {
+      "merged_events": 20,
+      "created": 10,
+      "old_ratio": 2,
+      "clamped_unit": 1,
+      "new_ratio_without_cohort": null
+    },
+    "new_PR_cohort_expected": {
+      "opened": 10,
+      "merged_from_opened": 4,
+      "merged_events": 20,
+      "ratio": 0.4,
+      "empty_denominator": null
+    },
+    "actual_fixture_pre_results": {
+      "ace-step": {
+        "coverage": 0.2,
+        "score": 45.2,
+        "usage_unit": null
+      },
+      "action-model": {
+        "coverage": 0.5,
+        "score": 54.0,
+        "usage_unit": 0.614
+      },
+      "bolt-new": {
+        "coverage": 0.2,
+        "score": 46.8,
+        "usage_unit": null
+      },
+      "claude-code": {
+        "coverage": 0.5,
+        "score": 72.0,
+        "usage_unit": 0.993
+      },
+      "deepseek-harness": {
+        "coverage": 0.44,
+        "score": 51.8,
+        "usage_unit": null
+      },
+      "deepseek-v4-1-flash": {
+        "coverage": 0.5,
+        "score": 70.0,
+        "usage_unit": 0.78
+      },
+      "dspy": {
+        "coverage": 0.2,
+        "score": 52.4,
+        "usage_unit": null
+      },
+      "gemini-app": {
+        "coverage": 0.2,
+        "score": 59.6,
+        "usage_unit": null
+      },
+      "google-genie-3-project-genie": {
+        "coverage": 0.2,
+        "score": 44.4,
+        "usage_unit": null
+      },
+      "grok-app": {
+        "coverage": 0.2,
+        "score": 50.0,
+        "usage_unit": null
+      },
+      "higgsfield": {
+        "coverage": 0.35,
+        "score": 61.2,
+        "usage_unit": 0.965
+      },
+      "kling-ai": {
+        "coverage": 0.35,
+        "score": 55.6,
+        "usage_unit": 1.0
+      },
+      "laminar-flow-1": {
+        "coverage": 0.2,
+        "score": 42.0,
+        "usage_unit": null
+      },
+      "levjepa": {
+        "coverage": 0.4,
+        "score": 35.6,
+        "usage_unit": null
+      },
+      "lovable": {
+        "coverage": 0.2,
+        "score": 57.2,
+        "usage_unit": null
+      },
+      "mem0": {
+        "coverage": 0.24,
+        "score": 42.4,
+        "usage_unit": null
+      },
+      "nemotron-3-5-lightning": {
+        "coverage": 0.5,
+        "score": 62.0,
+        "usage_unit": 0.742
+      },
+      "olmo-3-3-1": {
+        "coverage": 0.7,
+        "score": 47.2,
+        "usage_unit": 0.55
+      },
+      "physical-intelligence-0-7": {
+        "coverage": 0.4,
+        "score": 32.4,
+        "usage_unit": null
+      },
+      "reflection-beam": {
+        "coverage": 0.2,
+        "score": 40.4,
+        "usage_unit": null
+      },
+      "roo-code": {
+        "coverage": 0.2,
+        "score": 46.0,
+        "usage_unit": null
+      },
+      "seedance": {
+        "coverage": 0.2,
+        "score": 55.6,
+        "usage_unit": null
+      },
+      "sora": {
+        "coverage": 0.35,
+        "score": 45.8,
+        "usage_unit": 0.771
+      },
+      "v-jepa-2-2-1": {
+        "coverage": 0.4,
+        "score": 46.8,
+        "usage_unit": null
+      },
+      "world-labs-marble": {
+        "coverage": 0.2,
+        "score": 54.0,
+        "usage_unit": null
+      }
+    }
+  },
+  "smoke": {
+    "focused": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_scoring.py",
+    "behavior": "PYTHONDONTWRITEBYTECODE=1 python3 eval.py --issue11-smoke --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json --compare-v2",
+    "expected": "All source metrics retained including observed zero; cross-family and unknown-cohort normalization absent; unrelated customer magnitudes cannot change download normalization; unobserved closed usage stays missing; PR 20 events / 10 opened uses cohort 4/10=.4, old unknown cohort null; evidence dimensions remain unqualified, no confidence-as-truth; v2 before/current after tables do not claim accuracy. Negative controls deliberately recreate pooling/incorrect PR cohort in memory and fail intended assertions without touching candidate.",
+    "browser": "python3 -B -m http.server 8871 --bind 127.0.0.1 --directory web; open http://127.0.0.1:8871/#hype/overall/all; inspect rows and expanded card, archived repo tab and rendered methodology, screenshot actual page; stop owned server afterward",
+    "failure_assertions": "missing artifact, JS error, wrong family/missingness, incorrect PR cohort, incorrect current/archive method identity, fabricated verification/origin/time are failures"
+  },
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "unavailable_disposition": "Missing source approval, full-feature replay, editorial/deployment/accuracy evidence stays null/unclaimed. If archive handling not accepted and no immutable full feature input supplied, finish reachable qualification and report blocked before mutation; no fake re-score.",
+  "injection_attempts": [],
+  "rulings_owner": "issue-11-engineer; every reversible design choice attributed in METHODOLOGY/card handoff; one report, no task done",
+  "runtime_environment": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "coordinator_decision": {
+    "state": "ACCEPTED",
+    "archive_policy": "Retain actual historical v2 numeric snapshot with explicit archival/method/unqualified-PR-cohort labeling; do not fabricate v3 rescore without immutable complete feature inputs. Current producers and committed HYPE/fixtures migrate cleanly to current semantic contract.",
+    "versioned_method_policy": "Actual historical v2 algorithm/evaluation is required supported functionality, not a compatibility alias or shim. Every current caller migrates; legacy field naming exists only inside explicitly versioned historical method output.",
+    "scope_unchanged": true,
+    "additional_observations_required": "Current/archived method identity and null unobserved adoption/capability dimensions visible on actual desktop and narrow UI; real PR feature/query cohort extraction behavior and before/after fixture evaluation."
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "issue": 3,
+  "group": 2,
+  "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "discovery_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "worker": "issue-3-engineer",
+  "task_card": "t_muz1j2jr4b6ecb03",
+  "owned_paths": [
+    "docs/sources/economics-panel.md",
+    "investigations/frontier-economics/sources.json"
+  ],
+  "estimate_files": 2,
+  "estimate_insertions": 1400,
+  "accepted_dependencies": [
+    {
+      "issue": 2,
+      "artifact_commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "acceptance": "SHIP",
+      "quality": "SHIP",
+      "remote_evidence": "https://github.com/namastex888/trending-research/issues/2#issuecomment-6052666339",
+      "evidence": "WISH.md Group 1 local acceptance; design and quality receipts hashed below; source contracts unchanged"
+    }
+  ],
+  "input_artifacts": [
+    {
+      "path": "schemas/evidence.schema.json",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "revision": null,
+      "sha256": "ff8d8f2713b24b425746cab8d4bdaddf33120d0358cd9032f858f4c9aaec34a5"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+      "revision": null,
+      "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+      "revision": null,
+      "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+      "revision": null,
+      "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+    },
+    {
+      "path": "eval.py",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "7d855874d6cb1028808f45aa9f67c2ce34e1b2593f7920248d390e3e6f8922b0",
+      "role": "Immutable intake aggregate baseline only; source migration belongs to parallel #11. Actual shared gate is deferred and must identify final integrated artifact."
+    },
+    {
+      "path": "tests/fixtures/features_a.json",
+      "revision": null,
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7"
+    },
+    {
+      "path": "tests/fixtures/features_b.json",
+      "revision": null,
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f"
+    },
+    {
+      "path": "tests/fixtures/hype_small.json",
+      "revision": null,
+      "sha256": "4eb7b06dcffaf937d88150254e031e19e378f702b910b2d403a54bf77bc72e7f"
+    }
+  ],
+  "interfaces": {
+    "registry_version": "1.0.0",
+    "top_level_fields": [
+      "registry_version",
+      "investigation_id",
+      "plan_identity",
+      "qualified_by",
+      "qualification_window",
+      "evidence_contract",
+      "entities",
+      "questions",
+      "exclusions",
+      "sources",
+      "origin_groups",
+      "coverage",
+      "release",
+      "budget",
+      "injection_attempts",
+      "qualification_attempts",
+      "acceptance"
+    ],
+    "source_fields": [
+      "id",
+      "title",
+      "publisher",
+      "author",
+      "entity_ids",
+      "question_ids",
+      "kind",
+      "role",
+      "language",
+      "cohort",
+      "url",
+      "origin_ids",
+      "origin_rationale",
+      "state",
+      "blocked",
+      "read_receipt",
+      "access",
+      "rights",
+      "quota_cost",
+      "cadence",
+      "history",
+      "freshness",
+      "limitations"
+    ],
+    "read_receipt_fields": [
+      "request_url",
+      "response_url",
+      "method",
+      "result",
+      "attempt_window",
+      "http_status",
+      "body_verified",
+      "body_markers",
+      "source_published_at",
+      "source_date_text",
+      "original_sha256",
+      "retained_original"
+    ],
+    "state_enum": [
+      "operational",
+      "blocked"
+    ],
+    "operational_semantics": "Only successfully body-qualified free one-off public read; not a collector, retained original, approval or future uptime. Platforms remain blocked even with successful policy reads.",
+    "rights_fields": [
+      "terms_url",
+      "basis",
+      "retention_permission",
+      "redistribution_permission",
+      "retention_days",
+      "disposition"
+    ],
+    "budget_fields": [
+      "currency",
+      "proposal",
+      "approval",
+      "actual_external_access_spend_usd",
+      "actual_model_calls",
+      "total_session_cost_usd"
+    ],
+    "consumes": "Evidence 1.0.0 SourceRevision/Observation. No fake ingestion, source-original hash or evidence spans. Source registry acquisition metadata cannot certify original criterion4 or replace the financial evidence pack."
+  },
+  "runtime_identity": {
+    "binary": "/usr/bin/python3",
+    "version": "3.14.4",
+    "packages": "stdlib only",
+    "profile": null,
+    "source": "existing local runtime; Genie 6.261005.4; Orca 1.4.222 for lifecycle only"
+  },
+  "prerequisites": {
+    "access": "Anonymous free one-off HTTP qualification authorized by coordinator intake; no credential checks or gated API calls",
+    "fixtures": "Real successful tool.read bodies and named failed/preflight reads of exact URLs below; metadata-only read receipts. Existing feature/HYPE fixtures for aggregate, hashes above. No new fixture path. Rights fixtures: https://www.microsoft.com/en-us/legal/terms-of-use (Documents + personal/noncommercial restrictions), https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/permissions (requires express permission), https://copyright.gov/comp3/chap300/ch300-copyrightable-authorship.pdf (313.3(C) Facts; source access succeeds), https://www.copyright.gov/circs/circ33.pdf (short labels), https://www.amazon.com/gp/help/customer/display.html?nodeId=508088 (HTTP403), https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json and CIK0000789019.json (both HTTP403; not operational). These are rights/acquisition qualification notes only, not new economic-panel source rows.",
+    "storage": "Only two owned Git worktree documents; source originals not retained; Brain authority/replay/persistence not claimed",
+    "principal": "issue-3-engineer for source qualification; no editorial/deployment/paid principal",
+    "rights": "Actual rights intake now read Microsoft copyright/permissions AND terms-of-use: permitted informational documents cannot be posted to network computers and modification/public redistribution is not granted. Anthropic commercial F reserves content IP. Amazon conditions HTTP403; news PDFs/public prose have no qualified retention licence. U.S. Copyright Office Compendium 313.3(C) confirms facts not copyrighted, 313.4(C)/Circular33 short labels not protected; this is not website contract consent or a source-specific legal/jurisdiction decision. SEC structured companyfacts for AMZN+MSFT both HTTP403. No lawful durable excerpt route claimed without attributed authority resolving contracts/jurisdiction. Keep retention and redistribution permissions null, no full bodies/translated quotations retained.",
+    "budget": "One-off no paid acquisition/model calls; proposed external-spend ceiling USD 0. Proposed recurring 28-day cycle at most 56 top-level read intents (11 qualified sources plus 3 platform policies, 4 refreshes), no API data/model calls. Provider quota, hosting/labor/model/provider rates not qualified remain null. Recurring/paid approval actor, approved amount and decision time null.",
+    "authorization": "Readiness acceptance and task checkout before scoped writes. No forge/git/root/environment/service/paid/model mutations. No recurring collection enabled."
+  },
+  "entities": [
+    "Microsoft",
+    "Amazon",
+    "OpenAI",
+    "Anthropic"
+  ],
+  "questions": [
+    "What do public company reports disclose about revenue/capex, with AI-specific allocation unknown?",
+    "Which announced funding/compute relationships are equity/debt/credits/commitments/recognized revenue, and what remains unproven?",
+    "What do published API/consumer prices and commercial terms establish versus private unit economics?",
+    "How does this bounded en/pt-BR narrative cohort frame the same disclosures without global sentiment or independent-website counting?"
+  ],
+  "exact_sources": [
+    {
+      "id": "source:msft:ar25",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:amzn:results25",
+      "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2025/q4/earnings-result/AMZN-Q4-2025-Earnings-Release.pdf",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:openai:pricing",
+      "url": "https://openai.com/api/pricing/",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:anthropic:api-pricing",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:anthropic:consumer-pricing",
+      "url": "https://www.anthropic.com/pricing",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:openai:terms",
+      "url": "https://openai.com/policies/business-terms/",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:anthropic:terms",
+      "url": "https://www.anthropic.com/legal/commercial-terms",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:openai:funding26",
+      "url": "https://openai.com/index/scaling-ai-for-everyone/",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:amzn:openai26",
+      "url": "https://press.aboutamazon.com/2026/2/openai-and-amazon-announce-strategic-partnership",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:anthropic:aws24",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-trainium",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:amzn:anthropic24",
+      "url": "https://www.aboutamazon.com/news/aws/amazon-invests-additional-4-billion-anthropic-ai",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:techcrunch:funding26",
+      "url": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:cnbc:funding26",
+      "url": "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:tecnoblog:funding26",
+      "url": "https://tecnoblog.net/noticias/openai-esta-avaliada-em-r-38-trilhoes-apos-nova-rodada-de-investimentos/",
+      "intake_state": "operational",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:ars:compute25",
+      "url": "https://arstechnica.com/ai/2025/09/why-does-openai-need-six-giant-data-centers/",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:sec:amzn-exhibit26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926021050/tm267374d1_ex99-1.htm",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:x:preflight",
+      "url": "https://docs.x.com/x-api/getting-started/pricing",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:reddit:preflight",
+      "url": "https://redditinc.com/policies/data-api-terms",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    },
+    {
+      "id": "source:linkedin:preflight",
+      "url": "https://www.linkedin.com/legal/user-agreement",
+      "intake_state": "blocked",
+      "revision": null,
+      "original_sha256": null
+    }
+  ],
+  "smoke": {
+    "focused_command": "python3 -B -c 'from pathlib import Path; text = Path(\"docs/sources/economics-panel.md\").read_text(); exec(compile(text.split(\"```python\\n\", 1)[1].split(\"\\n```\", 1)[0], \"economics-panel-smoke\", \"exec\"))'",
+    "expected_observations": "19 sources = 11 body-qualified free one-off reads + 8 named blocked. Derive successfully readable candidates only, but release.state=blocked and evidence_pack_available=false until durable original/minimal excerpt rights qualified. acceptance original criteria1-3 qualification_supported; criterion4=blocked with exact missing attributed rights/contract decision. No metadata-directory release relabel. TechCrunch/CNBC/Tecnoblog single common funding-announcement origin, joint AWS/Anthropic original statements common announcement not two audits. Private values null, global sentiment denominator null, English/pt-BR cohort visible. Recurring false, approval null, proposed 56 intents/28days, external paid/model0; total session cost null.",
+    "failure_assertions": "In-memory negative controls reject paid/blocked-source promotion, missing body receipt, repeated-origin independent counting, filled private metrics, invented recurring approval, or changing first release to ready without licensed retained source bytes/spans and supported source-specific rights disposition. No permanent tests or new code files.",
+    "real_read_protocol": "Inspect actual primary financial/pricing/compute body markers and explicit narrator upstream hyperlinks retrieved during read-only intake; preserve request/response URLs, tool method, observed clock interval, failed status/empty body and primary-unread caveats; no search-snippet-only operational source."
+  },
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "unavailable_disposition": "Original criterion4 BLOCKED, not SHIP: no licensed acquired original or qualified minimal factual excerpt permitted for durable publicly reproducible evidence pack. Exact blocker: attributed source-retention/excerpt/redistribution authority resolving source terms and publication jurisdiction, or alternate actual licensed original acquisition; none available in dispatch/repo. Explicitly retain every original criterion unchanged. Readability supports only criteria1-3; no deploy/editorial/replay claims. Additional failed qualification: SEC companyfacts AMZN/MSFT HTTP403, SEC developer resources HTTP403, Amazon conditions HTTP403. Government facts doctrine is evidenced but not fabricated source-specific permission. Finish reachable registry/docs without financial stubs after corrected readiness accepted.",
+  "injection_attempts": [
+    {
+      "url": "https://docs.x.com/x-api/getting-started/pricing",
+      "text": "Fetch complete documentation index; curl bearer-token usage example; purchase credits/auto-recharge guidance",
+      "disposition": "Untrusted generic source instructions, not executed; no index fetch, credentials, API call or purchase"
+    }
+  ],
+  "aggregate_disposition": "Coordinator explicitly defers shared unittest/eval aggregate until same-wave #11 source migration settles; worker runs only independent frozen registry/direct-source probes after complete two-file slice, names aggregate deferred and receives coordinator-bound result if available. Aggregate remains required, not waived.",
+  "coordinator_decision": {
+    "state": "ACCEPTED_FOR_REACHABLE_QUALIFICATION_ONLY",
+    "scope_unchanged": true,
+    "original_criterion4": "BLOCKED, not a directory-only substitute release",
+    "rights_interpretation": "Conservative source-specific permission remains unqualified. This record is not a categorical legal determination that factual reporting is forbidden.",
+    "shared_aggregate": "Required coordinator integrated gate after complete wave source checkpoint, not a mid-edit worker pass."
+  }
+}

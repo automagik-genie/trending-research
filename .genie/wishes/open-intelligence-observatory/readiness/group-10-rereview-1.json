@@ -1,0 +1,46 @@
+{
+  "issue": 11,
+  "group": 10,
+  "phase": "fresh independent review after bounded repair1",
+  "source_checkpoint": "ef93454b9dd46eaf5e321e46698128425753b8fd",
+  "paths_sha256": {
+    "scoring.py": "cdbef85c92c5f431286a469a61d325efa789010297161c55b5d804604bd109a6",
+    "scoring_config.json": "e2e3fe28708fe6ac69dc3882a423228ee5c3de31f74c1f2990d9883cfb8d1216",
+    "eval.py": "875ef541075f9c716fd794aa3a23c2638110c0dc108845ed9ae01c3644dd63eb",
+    "hype_build.py": "06f4ac52614c73826604de073b46b2cf1f3613ef83693af176f37837d450f747",
+    "run.py": "e27015f506422264727cf609eb9931d326676ffc898d14ca777010830f66f984",
+    "tests/test_scoring.py": "afca62177176b23d8d7a8ab961db7138a536ab37de0f12e68820c55ef84dde19",
+    "web/index.html": "09160d7453711a2fa90daf4795292c8d2d3a5bbbd16aed6703343335249c8816",
+    "web/data.json": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+    "web/hype.json": "3790ac7c024a978588e25345c846dc06a80a870a9f6c69c1dfb11b5c2a8f4784",
+    "METHODOLOGY.md": "fb9a085bcb9d389899369726706770516e66628fbaa633c8752c00503f02f8cc",
+    "web/METHODOLOGY.md": "fb9a085bcb9d389899369726706770516e66628fbaa633c8752c00503f02f8cc",
+    "CONTRIBUTING.md": "67f9c1489874a09178c7ae0da30f8abba3128ef46374d6c57989e23d32a858f3"
+  },
+  "original_review_task": "task_9f9c39090fb8",
+  "original_failed_dispatch": "ctx_50beae4678b9",
+  "criteria_frozen": "All four original WISH/issue11 criteria unchanged; initial C1/C2/C4 PASS, C3 confirmed description mismatch; re-review must clear C3 and preserve alloriginalcriteria",
+  "repair_scope": [
+    "METHODOLOGY.md",
+    "web/METHODOLOGY.md",
+    "scoring.py",
+    "web/index.html"
+  ],
+  "validation": {
+    "coordinator_final_gate": {
+      "exit": 0,
+      "tests": 43,
+      "warnings": 0,
+      "specific_and_aggregate": "same exact -B CLI chain recorded verification/group-10.json repair_1"
+    },
+    "author_focused": 26,
+    "actual_preview": "parent-owned http://127.0.0.1:8871; serve repaired files, close owned tabs, do not stop server"
+  },
+  "budget": {
+    "used": 1,
+    "B": 2,
+    "source": "config2",
+    "effort_escalations": 0
+  },
+  "state": "review pending; original downstream DAG blocked until successful original review and separate quality"
+}

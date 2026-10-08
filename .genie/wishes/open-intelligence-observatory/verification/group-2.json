@@ -1,0 +1,51 @@
+{
+  "issue": 3,
+  "group": 2,
+  "status": "ORIGINAL_ACCEPTANCE_AND_SEPARATE_QUALITY_SHIP_LOCAL",
+  "implementation_commit": "863f5eb1bc892044f5a778bfe503705c34170e42",
+  "reviewed_manifest_sha256": "b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff",
+  "final_paths_sha256": {
+    "docs/sources/economics-panel.md": "f956945040da740109077e17d112df64fc2ea2223692e2cbda0b8a70c06fbcc5",
+    "investigations/frontier-economics/sources.json": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+    "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+    "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+    "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+    "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+    "investigations/frontier-economics/licensed-sources/NOTICE.md": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3"
+  },
+  "author_dispatch": "ctx_97db8118e541",
+  "independent_acceptance": {
+    "dispatch": "ctx_5f2f73a70adf",
+    "verdict": "SHIP",
+    "criteria": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "public_report": "group-2-original-acceptance-review.txt",
+    "raw_sha256": "26413bfdaa197f2063ed548bdd5b52c55b03c07afbaf40e6e1fa7e73799b56d1",
+    "public_sha256": "f91672e98a8cbcd2e8161b4739658cac2f923b4db0f2fedbc9c75186f3e71aea",
+    "normalization": "Absolute target/home prefixes only, findings/criterion/evidence/verdict unchanged.",
+    "fresh": "Actual original consumer nineteen denial guards and separate independent ten-guard semantic/complete-original/statement span validation, both exit0.",
+    "reused": "Exact final coordinator43-test/full-eval aggregate, explicitly attributed."
+  },
+  "separate_quality": {
+    "dispatch": "ctx_5d743fefaab8",
+    "verdict": "SHIP",
+    "independent_of_author_and_acceptance_reviewer": true,
+    "raw_report_sha256": "f20891b3601a0df8cd50877bd2512c26f6345cff6f2acec6bcd4a678fa43f56c",
+    "public_report": "group-2-original-quality-review.txt",
+    "fresh": "Actual complete-source document consumer exit0 nineteen denial controls; separate independent whole-object semantic/rights/authorization smoke exit0 twelve additional meaningful controls; final seven-path bytes/modes unchanged.",
+    "reused": "Exact final parent43-test/full evaluator gate with explicit attribution, not reviewer fresh suite.",
+    "quality_repair_loops_used": 0,
+    "quality_repair_cap": 1
+  },
+  "limits": "Actual financially useful acquired source subset only; secondary assertions not issuer/accounting/AI/comparability truth. Original #3 source gate accepted; #6 canonical schema/byte/time mapping and #4/#5/runtime/editorial/Felipe/CI/deploy still unaccepted. No recurring/paid/model/infra authority or whole-roadmap/public-release acceptance.",
+  "budgets": {
+    "repair_used": 1,
+    "B": 2,
+    "source": "config2",
+    "effort_escalations": 0
+  }
+}

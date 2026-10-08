@@ -1,0 +1,85 @@
+Separate original Group 2 / GitHub #3 quality review — SHIP
+
+Reviewer: term_3d6518bd-327d-4169-9ab4-fa54f75b68ca; task task_de3e03e5cd5e; dispatch ctx_5d743fefaab8. Independent of implementation/repair authors and original acceptance reviewer.
+Assessment time: 2026-10-08T08:18:11.091097+00:00.
+Target: ..
+Exact commit: 863f5eb1bc892044f5a778bfe503705c34170e42; comparison baseline c5d1ab85331225007848dd60bc90086f79f6e965.
+
+1. Frozen criteria and immutable identity
+
+Before candidate access I read skill://review and froze the criteria/triggers in coordinator ACK msg_56b4ee37a880: authorization/credential isolation; primary-source trust, applicable CC0 grant and retention; fail-closed acquisition byte/encoding/time/origin/cost/missingness semantics; four financial selections plus all original entities/questions/rows without inferred private financial truth; boring bounded interfaces, avoidable allocation/computation and consumer regression; attributable aggregate and fresh changed-path/guard evidence. No criterion was added after candidate access and no original criterion was waived.
+SHIP requires no confirmed HIGH/CRITICAL gaps and exact-artifact validation. FIX-FIRST requires a confirmed actionable security/correctness/major performance/regression defect or failed required validation. BLOCKED requires missing scope, identity, decision or attributable evidence preventing assessment; seven-path drift invalidates a verdict.
+
+reviewed-manifest-sha256: b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff
+Algorithm: SHA256 of UTF8 sorted path NUL four-digit octal POSIX permission NUL full-byte SHA256 LF. Seven files; every mode 0600. Explicit pathset excludes all unrelated/untracked files outside these paths, not any file inside it.
+
+0600 docs/sources/economics-panel.md f956945040da740109077e17d112df64fc2ea2223692e2cbda0b8a70c06fbcc5
+0600 investigations/frontier-economics/licensed-sources/NOTICE.md 20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3
+0600 investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin 666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16
+0600 investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7
+0600 investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin 0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae
+0600 investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin 268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b
+0600 investigations/frontier-economics/sources.json b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41
+
+Fresh pathlib/hashlib/stat comparison verified all working bytes equal both manifest pins and git show <exact-SHA>:<path> committed blobs. Read-only git rev-parse HEAD returned the exact target. Read-only git diff --stat baseline target -- <seven paths> showed 596 insertions/122 deletions, seven files, including four new binaries; no state-changing Git command was run. Final post-validation manifest independently recomputed unchanged at the assessment time.
+Current WISH SHA256 ce82562fbde86230f799c8db75b835817692d26547464fc26d68def8be38de0c matches coordinator disclosure; historical author/acceptance WISH 272623d795c0ecee622f5bff3ad014acd3823cbcd054349dd9eb572b51c11d3b is not silently substituted. Native roadmap snapshot SHA256 7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816 matched. Governing original #3 scope/criteria were read from WISH:244-270 and complete native issue3 body.
+
+2. Coverage, security and maintainability
+
+All original four acceptance criteria are supported in this quality pass, following the separate acceptance SHIP rather than replacing it:
+AC1: each of 23 sources has a successful target-body receipt or named blocker; four actual pinned acquisitions resolve complete local originals. Earlier reader statuses remain null/coarse rather than invented per-request observations.
+AC2: 15 body-qualified/8 blocked, finite en/pt-BR cohort, null private-company revenue/compute-cost/margins/retention and null global-sentiment numerator/denominator. Platform policy bodies do not qualify platform data. Only two financial sources are release eligible; two metadata records support semantics.
+AC3: original claim-local funding/collaboration common origins and four issuer-disclosure financial lineages preserve raw references; six groups each carry one evidence origin and zero established independent corroborations. Community restatement/preferred rank supplies no issuer audit.
+AC4: actual retained licensed financial material exists, not merely a metadata directory: four complete CC0 structured objects, quantity datatype and USD metadata, four exact financial selectors for Microsoft/Amazon. This is source qualification, not completed investigation or editorial/deployed release.
+
+Exact baseline comparison verified the original nineteen complete source rows are byte-equivalent as parsed values, including original clocks/rights/access/blocked receipts, and original entities/questions/exclusions/qualification window/qualification attempts/injection dispositions are unchanged. Public filings, price/terms, funding/compute and narrative priorities and all four bounded questions remain present.
+
+Authorization/credentials: admission:171-181 attributes the USD0 paid-access cap to four anonymous pinned one-off GETs only. Registry records four actual source-read/collection requests, zero retries/new classification/model/paid-provider calls; recurring 56-intent proposal stays pending/disabled and total session/storage/hosting cost unknown. No credential-bearing acquisition machinery, scheduler, private-memory/MCP access, paid-provider route or service was added by these seven data/document paths. Fixed source URLs have HTTPS Wikidata origin, exact entity/revision query and no URL credentials. Source-provided labels/URLs/claims are parsed as JSON, not executed. The reviewed document Python block is repository-authored verification code, not source code execution. Financial reference URLs are compared/printed, never fetched or invoked by this consumer.
+
+Rights/retention: freshly read official Copyright revision1523614187 and Licensing revision2548950862 explicitly cover structured main and Property namespaces with CC0; actual originals are ns0/ns120. Full CC0 legal code sections1-4 cover data extraction/database rights, waiver/fallback and disclaim accuracy/title/third-party/trademark/patent clearance. NOTICE:7-9,20-30 and docs:143-160 preserve those limits. Retained material is complete structured JSON, not policy HTML/prose, linked issuer originals, images or translated articles. Null retention_days is no imposed maximum term, not provider storage assurance; unknown rights on original nineteen rows are not promoted. Both retention and redistribution revocation controls deny eligibility.
+
+Provenance/semantics: all four originals were completely gzip-decoded, strict UTF8-decoded and duplicate-key/nonfinite-aware parsed; independent traversal covered 53,553 JSON nodes, not only a label shell. Original bytes total192451; decoded UTF8 bytes1131597. Actual ID/ns/revision/modified/date binding, decoded-source/selected-span hashes, full statement membership, quantity snak/datatype/type, signed decimal, unit URI, rank, qualifiers and complete references were examined. Microsoft assertions +281724000000 normal/year2025 and +331839000000 preferred/year2026 retain day-precision fiscal qualifiers; Amazon +637959000000 normal/year2024 and +716924000000 preferred/year2025 have no P580/P582. P585 year9 and P577/P580/P582 day11 are not midnight instants; period/event boundaries and recognition_basis stay null. Reference links match registered upstream origins without claiming issuer verification, recognized revenue, AI allocation or cross-company comparability. HTTP cache Date, source modification and actual acquisition interval remain distinct; publication/ingestion/computation are not invented.
+
+Maintainability/regression: one acquisition registry with explicit version1.1.0 and licensed_subset1.0.0, four immutable encoded originals, authored NOTICE and one migrated offline doc consumer; no dependency, compiled runtime, adapter, duplicate semantic store, daemon, cache or fallback abstraction added. The sole current registry consumer found in the scoped docs/investigations/tests/Python search is the reviewed document smoke. Documentation expressly requires later #6/#7 real canonical original/extraction/schema/UTF8/span/five-clock mapping; acquisition IDs are not accepted v1 text/plain SourceRevision/EvidenceBundle or native Brain records. Consumer hash validation precedes gzip decompression, and fixed verified inputs are bounded; it is not a generic hostile-upload/runtime validator.
+
+Performance: no compiled source change or production hot path exists in this slice, so avoidable compiled allocation/copy/computation is not applicable. Fresh complete document consumer took0.467s; independent extra semantic/12-denial smoke took0.832s (single observed subprocess runs, not a median/latency guarantee). Complete originals remain preserved rather than optimized into lossy extracts. Repeated decoding during finite negative controls is smoke work, not a measured runtime regression; no production-scale throughput or future unbounded-input performance claim is made.
+
+3. Direct and reused verification
+
+FRESH actual consumer, after complete scoped artifact reading:
+python3 -B -c 'from pathlib import Path; text = Path("docs/sources/economics-panel.md").read_text(); exec(compile(text.split("```python\n", 1)[1].split("\n```", 1)[0], "economics-panel-smoke", "exec"))'
+Exit0; empty stderr;0.467s. Stdout SHA256 dd6a9f7e29edbed807cb602a1ece6fdfd9d36e9330b20e1eb6a3d5a8d81ac2bd. Observed23/15/8/two eligible, all four actual parsed financial spans, and19 controls rejecting at exactly expected guards: paid/blocked/body/origin/private metric/recurring budget/unlicensed eligibility/missing original/corrupt original/revision/namespace/nonCC0/source binding/span/quantity/currency/reference/midnight/origin laundering.
+
+FRESH independent reviewer-authored in-memory scenario:
+python3 -B -c <reviewer code>, subprocess.run(cwd=target,capture_output=True).
+Code payload SHA256 9e48f9c44aca1fbe56143b79679c3cf8b88f3276f6b398b0e5a1a907a5503568; exit0; empty stderr;0.832s; stdout SHA256 946777227eb5189ef7d35a57f135d5389db1aa3f2fe3fcc07211eb9abc5d6c23. No saved script/permanent tests. It ran the actual reviewed consumer with process-local socket creation denied, independently parsed/traversed all complete originals and checked the semantic/date/origin/budget invariants above. Process-local network denial is evidence about this consumer, not an OS-wide sandbox guarantee.
+Twelve independent in-memory corruptions reached exactly these intended guards, not a wrong exception or mock echo:
+- retention grant removed / redistribution grant removed -> invalid licensed rights scope
+- gzip hash substituted with decoded hash -> encoded original mismatch
+- decoded digest altered -> decoded original mismatch
+- source modification forged as read time / response target replaced -> capture receipt binding mismatch
+- preferred rank asserted verified / accounting recognition invented / reference publication turned into event instant -> precision recognition promoted
+- year precision promoted to day -> financial provenance drift
+- property metadata promoted to release -> unqualified release eligibility
+- source row collection enabled -> unapproved recurring acquisition enabled
+Candidates were in-memory deep copies only. No observed candidate defect or failed check required rerun.
+
+REUSED coordinator aggregate, explicitly not my own fresh test-suite run:
+verification/group-2-licensed-final-gate.json SHA256 6a94f3254ef2e73130f0f40fc9ec5264ca1109e63491d971b27b94bbd3e63441, observed2026-10-08T07:48:46.241422+00:00 after producer settled, records final seven pins and:
+python3 -B -m unittest discover tests && python3 -B eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json
+Exit0;43 tests; fixture evaluator completed; warnings0; aggregate stdout SHA256 e1cc9a457e4068aa5e035aa36d989417b8514f94687c13a4b8ccabeadd1b8235. Its final consumer exit0/19 expected rejections carries the same stdout hash as my fresh consumer. No historical zero-eligible gate or earlier document hash is used as current validation. The coordinator explicitly authorized this exact-artifact aggregate reuse.
+
+Fresh primary policy reads, no financial reacquisition:
+https://www.wikidata.org/wiki/Wikidata:Copyright?oldid=1523614187
+https://www.wikidata.org/wiki/Wikidata:Licensing?oldid=2548950862
+https://creativecommons.org/publicdomain/zero/1.0/legalcode.en
+https://www.wikidata.org/wiki/Wikidata:Data_access#Revisions_and_caching
+These corroborate structured-namespace grant, full limitations and exact-revision route; page navigation/edit/contact/example instructions were not executed. Independently approved acquisition-route report SHA2567f3f8610c22b8208bc3f911ab9ee8199badb481922c3c00a331bc36d1b10a944 was verified as separately attributable route/ownership evidence, not a substitute for this quality assessment or original acceptance.
+
+4. Findings and limits
+
+Confirmed CRITICAL/HIGH quality findings: none. No blocking correction requested; separate one-loop quality repair budget unused. No demonstrated current consumer/security/rights/maintainability/performance regression was found, and no unresolved current blocking hypothesis remains. Evidence provenance is fresh code/data read and command output at the exact seven-path manifest, with the explicitly named attributable aggregate reused above.
+
+Unchanged downstream requirements are limits, not waived acceptance or new current defects: #4/#5 live runtime gates remain BLOCKED; #6/#7 must independently prove substantive curation and real canonical/schema/original/extraction/UTF8/span/five-clock/native-Brain mapping; public financial interpretation needs qualified issuer/accounting/period evidence and attributed editorial approval. Preferred rank/year labels never confer truth or comparable recognized revenue. Pricing/terms/funding/compute/narrative retention, capex/AI allocation, private finances, representative cohorts and linked SEC originals remain missing/unqualified. Recurring collection and any paid/model/infrastructure spend need distinct authority. Felipe visual selection, offline replay, newcomer/recovery, deployment and actual CI/publication approval remain untouched.
+
+Read-only scope maintained: no repo/code/doc/environment/forge/task/Git-state mutation; only this requested /tmp report and Orca coordination/check/liveness messages were written. Read-only git object/ref/diff queries were used for identity/baseline inspection, never checkout/index/commit/push. No build/lint/test-suite/formatter run, new financial acquisition, service, credentials/cookies, model/paid calls, native namespace or private memory access. No remote checks/mergeability, issuer truth, legal opinion or deployed completion claim. SHIP is evidence of this separate bounded original-source quality assessment only; it neither closes GitHub #3 nor accepts other groups or public release. Any seven-path byte/mode drift invalidates this verdict.

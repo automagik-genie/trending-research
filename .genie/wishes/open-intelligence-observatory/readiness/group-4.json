@@ -1,0 +1,163 @@
+{
+  "accepted_dependencies": [
+    {
+      "authority_message": "msg_47f771d64f33",
+      "commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "design": "SHIP",
+      "issue": 2,
+      "quality": "SHIP",
+      "receipts": [
+        ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+        ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt"
+      ],
+      "remote": "https://github.com/namastex888/trending-research/issues/2#issuecomment-6052666339"
+    }
+  ],
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "base_sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "estimate_files": 3,
+  "estimate_insertions": 1050,
+  "group": 4,
+  "injection_attempts": [],
+  "input_artifacts": [
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "ff8d8f2713b24b425746cab8d4bdaddf33120d0358cd9032f858f4c9aaec34a5"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    },
+    {
+      "path": "tests/test_evidence_contracts.py",
+      "revision": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "sha256": "a6634faaeee1d354039392fb164e93e7e35200fdd30998482e3eb9e71b8616ef"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+      "revision": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+      "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+    },
+    {
+      "path": "Orca integration scout report (local-only source; exact digest retained)",
+      "revision": null,
+      "sha256": "dd23ce38587e4aba69d4736ba7fdc9d9b591d36e940c3b3aab9a143ec32904bf"
+    },
+    {
+      "path": "installed Brain artifact manifest.json (machine location archived locally)",
+      "revision": "declared sourceCommit 3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+      "sha256": "ae99f4a72ddcc007a80063c22f32ea98dab08fe5ae216fe0af603c010d20a827"
+    },
+    {
+      "path": "installed Brain artifact lib/brain/plugins/hermes_brain/config.py (machine location archived locally)",
+      "revision": "shipped artifact 0.0",
+      "sha256": "df2bc0f155325ccde9a82ac84f7959ff24ef9234602e6e7fd877849575518c0d"
+    },
+    {
+      "path": "installed Brain artifact lib/brain/plugins/hermes_brain/mcp_client.py (machine location archived locally)",
+      "revision": "shipped artifact 0.0",
+      "sha256": "c7077b67661ff7970ffb9f77740281c43c0eb62986add262e1f9bb7b1b1608f1"
+    },
+    {
+      "path": "installed Brain artifact lib/brain/plugins/hermes_brain/mapping.py (machine location archived locally)",
+      "revision": "shipped artifact 0.0",
+      "sha256": "940aea0ef5ff77cca422cde527cb2d179cb75c4cd42237adf7d28aa681f70ba4"
+    }
+  ],
+  "interfaces": {
+    "callable": "BrainMcpClient.call(tool:str,arguments:Optional[Dict[str,Any]]=None,*,timeout_ms:Optional[int]=None)->BrainToolResponse; not invoked. initialize protocolVersion=2026-07-28 -> notifications/initialized -> tools/list -> tools/call",
+    "domain_contract": "urn:open-intelligence:evidence:1.0.0; Entity, SourceRevision, Claim, EvidenceSpan, EconomicRelationship; exact UTF8 byte selectors and independent UTC clocks",
+    "evidence_output": "evidence.json={qualification_version,issue,group,worker,base_sha,readiness,inputs,runtime_identity,prerequisites,observations,acceptance,required_live_protocol,rulings}; consequential missing access/identity/measurements null",
+    "native": "shipped snapshot inputSchema draft-07, not live; knowledge_search(query,brain_id); brain_remember(content,brain_id,scope,source,veracity,metadata,extract,extract_entities,operation_key,actor,reason); memory_recall(query,brain_id,limit,explain,query_time); brain_get(memory_id,brain_id); brain_update(memory_id,brain_id,content,expected_revision,operation_key,actor,reason); brain_fact_assert(subject,predicate,object,brain_id,source,metadata,valid_from,valid_until,supersede); brain_fact_query(brain_id,subject,predicate,object,as_of); brain_fact_end(subject,predicate,brain_id,object,valid_until); brain_graph_link(source_id,target_id,relationship,brain_id,weight); brain_graph_query(seed_id,brain_id,edge_type,max_hops,min_weight)",
+    "snapshot_output": "native-tools.json={kind:shipped-not-live,source:{path,sha256,declared_source_commit},tools:[{name,description,inputSchema}]} copied exact ten canonical descriptors; no adapter or substitute runtime"
+  },
+  "issue": 5,
+  "original_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "owned_paths": [
+    "docs/integrations/brain.md",
+    "integrations/brain/qualification/native-tools.json",
+    "integrations/brain/qualification/evidence.json"
+  ],
+  "prerequisites": {
+    "access": null,
+    "authorized_live_fixture": null,
+    "budget_approval": null,
+    "durable_storage": null,
+    "ingest_rights": null,
+    "isolated_restart_authorization": null,
+    "local_domain_fixture": "tests/fixtures/evidence_contracts.json synthetic only, no real financial finding",
+    "owner": null,
+    "principal": null,
+    "product_brn_authority": null,
+    "restart_target": null,
+    "safe_authorization": "request only local claimed scoped reports and read-only binary/help/health + pure shipped config/client functions; no personal reads, Brain creation/write/restart, paid model calls or credential reads",
+    "same_cluster_transport": null
+  },
+  "runtime_identity": {
+    "binary": "installed brain CLI (resolved location archived locally)",
+    "contractSchemaVersion": 1,
+    "declared_source_commit": "3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+    "mcp_binary": "installed brain-mcp (resolved location archived locally)",
+    "package": "@khal-os/brain",
+    "profile": null,
+    "selected_product_brain_id": null,
+    "source_checkout": "reachable supporting Brain checkout; not attested identical to installed artifact",
+    "version": "0.0"
+  },
+  "smoke": [
+    {
+      "command": null,
+      "local_exact_invocation_record": "group-4-readiness-original.json, smoke[0], archived by coordinator; not an executable public artifact",
+      "public_reproducibility": "The worker must supply an actual portable installed-library invocation before its public qualification receipt is accepted; no substituted or simulated command.",
+      "expected": "seven explicit safety assertions true; mcp_started=false and records_read=false; missing/malformed namespace and unsafe HTTP fail closed; client pin and filtered env only",
+      "failure": "config accepts missing ID/plain remote HTTP or caller overrides ID or foreign session/secret retained or PGHOST lost"
+    },
+    {
+      "command": "brain --version --capabilities",
+      "expected": "real installed reported version/capabilities; not native live tools or RLS proof",
+      "failure": "nonzero or identity drift => blocker"
+    },
+    {
+      "command": "curl --max-time 5 --fail-with-body -sS http://127.0.0.1:3847/healthz",
+      "expected": "HTTP 200 JSON status/pg/mikro/schema metadata only; no records read; health not proof",
+      "failure": "non200/timeout/invalid metadata => runtime health unavailable"
+    },
+    {
+      "command": "python3 -B tests/test_evidence_contracts.py --smoke tests/fixtures/evidence_contracts.json",
+      "expected": "synthetic contradictory claims + both investors + repeated transaction + correction/cutoff intact; not Brain ingest"
+    },
+    {
+      "command": "python3 -B -m unittest discover -s tests -p test_evidence_contracts.py",
+      "expected": "existing focused contract guards pass; no new tests"
+    }
+  ],
+  "unavailable_disposition": "BLOCKED original acceptance #1/#2: no approved real product namespace/principal/rights/live schema fixture or isolated durable restart. Deliver all reachable source-qualified mapping/durable-vs-rebuildable/time limits and actual zero-spend client/health/contract evidence; no live ingest/citation/restart fabrication, adapter stubs or competing store. Exact future calls use explicit approved brain_id, immutable canonical source/claim records scope=global extract=false extract_entities=false; assert concurrent claim refs and investor refs with supersede=false; read before/after isolated authorized restart; native as_of date cannot imply bitemporal replay. Frozen protocol can retain domain IDs, selector/digest and null dates in metadata without authorizing a write.",
+  "coordinator_decision": {
+    "state": "ACCEPTED_FOR_REACHABLE_QUALIFICATION_ONLY",
+    "scope_unchanged": true,
+    "live_acceptance": "BLOCKED until approved authority/access/rights/durable isolated restart",
+    "private_path_normalization": "Machine-specific input/probe locations archived locally; public record retains source digests and supported callable/protocol contracts."
+  }
+}
