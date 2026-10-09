@@ -1,5 +1,6 @@
 {
   "qualification_version": "1.0.1",
+  "record_scope": "Historical documentary 1.0.1 and historical_native_qualification_1_0_2 are retained unchanged for attribution; current_native_qualification 1.0.3 supersedes their missing-prerequisite/call/identity/outcome statements. Native smoke passed; independent original acceptance, separate quality and current aggregate remain pending.",
   "issue": 5,
   "group": 4,
   "worker": "issue-5-engineer",
@@ -514,5 +515,250 @@
   },
   "outcome": "BLOCKED",
   "scope_limit": "Receipts qualify reachable contracts/client safety and local domain examples only; no product persistence, privacy grant, deployed acceptance or issue-close authority",
-  "injection_attempts": []
+  "injection_attempts": [],
+  "historical_native_qualification_1_0_2": {
+    "version": "1.0.2",
+    "status": "BLOCKED_NATIVE_QUALIFICATION_INCOMPLETE",
+    "task": "task_1ee57daded7e",
+    "dispatch": "ctx_ed2a28fd3625",
+    "worker": "issue-5-engineer",
+    "card": "t_muz1j2ww5a6ec7c7",
+    "intake_baseline": "1e1d91f509b4862e09076fcacd7c751008db866b",
+    "current_wish_sha256": "4a96b55e5eaf4f63e74356a62cd3279871cf1d586ed89c3afaceae047a9f5135",
+    "historical_native_gate_wish_sha256": "1d0f9ee9a628b3c04439dfa5c9169314d9c6e79c46d4f6b9c8ed5188c4911163",
+    "admission": {
+      "human": "Fresh isolated sandbox; shared USD20 validation ceiling; exclusive USD8 Brain reservation; no paid/model route admitted",
+      "repair_budget": {"configuration": 3, "used": 3, "human_exception": "third repair only", "effort": 0, "fourth_repair_admitted": false},
+      "evidence_scenarios": {
+        "path": ".genie/wishes/open-intelligence-observatory/readiness/group-4-native-evidence-scenarios.json",
+        "sha256": "592a46dd2e7fc0d2f73ca722373ddc6703cd62145f7c5b9090e15e1d30d59acb"
+      },
+      "sync_corpus": {
+        "path": ".genie/wishes/open-intelligence-observatory/readiness/group-4-native-sync-corpus-amendment.json",
+        "sha256": "f9d99279f90f0f9ff1634cb37390fbd91fc6de4ecd71b834d436f40db3de2095"
+      }
+    },
+    "actual_native": {
+      "brain_id": "brn_63n8pr",
+      "slug": "oi5-qualification",
+      "registry_owner": {"type": "agent", "id": "local"},
+      "acting_lab_custodian": "issue-5-engineer",
+      "control_database": "brain",
+      "product_database": "brain_oi5_qualification",
+      "pg_owner_role": "oi5_owner",
+      "pg_denied_role": "oi5_denied",
+      "postgres_version": "17.11",
+      "requested_mcp_protocol": "2026-07-28",
+      "negotiated_mcp_protocol": "2025-11-25",
+      "mcp_server": {"name": "brain", "version": "0.0"},
+      "live_tool_count": 86,
+      "live_tools_canonical_sha256": "387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b",
+      "ten_shipped_input_schemas_equal_live": true,
+      "binary_sha256": "631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78",
+      "compiled_binary_source_equivalence": null,
+      "native_manifest_raw_sha256": "2e7d3aca21c7224d906835100531adb34ff86faf602f82ad3e86094269f3f7af",
+      "native_manifest_canonical_sha256": "dbcccb51a05541b94eb361c1b910998f769921932c192a3b1b650a3621d7cc86",
+      "manifest_embeddings": {"enabled": true, "dims": 768},
+      "provider": null,
+      "paid_calls": 0,
+      "model_route": null,
+      "http_tenant_authentication": null,
+      "server_rls": null,
+      "deployed_acceptance": null
+    },
+    "durable_binding": {
+      "authority": "Native Brain canonical content and metadata; no sidecar semantic authority",
+      "native_receipt_path": "integrations/brain/qualification/native-receipts.json",
+      "records": 26,
+      "financial_claim": {"application_id": "claim:brain:Q2283:P2139:1", "memory_id": "24", "span_memory_id": "23", "source_memory_id": "22", "verification": "unverified"},
+      "disposable_memory_id": "27",
+      "exact_canonical_readback_before_restart": true,
+      "claim_span_source_utf8_quote_equality_before_restart": true,
+      "identical_operation_key_same_id_revision": true,
+      "unequal_operation_key_payload_rejected": true,
+      "application_id_uniqueness_beyond_operation_key": null,
+      "universal_append_only_enforcement": null,
+      "after_native_storage_restart": null,
+      "extension_ownership": "Actual universal uniqueness/immutability/rights-erasure extension, if needed, requires Brain-owner/coordinator freeze; issue5/7 own mapping, issue7/13 own rebuild/replay, not a second database."
+    },
+    "financial_source": {
+      "rights": "Actual accepted CC0 Wikidata structured data; secondary/unverified; no grant for linked issuer originals",
+      "statement": "Q2283$564CF0AD-3A7D-4250-AA0C-40518A8833D9",
+      "original_gzip_sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "extraction": "identity-decode-gzip-utf8-json-as-text/1; original JSON/gzip preserved as provenance, exact decoded bytes retained as v1 text representation",
+      "decoded_utf8_sha256": "d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea",
+      "selector": {"kind": "utf8_text", "start": 175540, "end": 177677},
+      "quote_sha256": "fc51554505ea1720bf379d4a50cdad003ebd699a9bdb7acff52f792268009fd3",
+      "original_precision": "Year9/day11 preserved verbatim in native metadata, not normalized into invented UTC instants",
+      "source_published_at": null,
+      "event_validity": {"start": null, "end": null},
+      "period": {"start": null, "end": null},
+      "recognition_basis": null,
+      "real_conflicts_or_investor_measurements": null,
+      "synthetic_boundary": "Conflicts/investors/repeated transactions and their dates are LAB fixtures, never real financial findings."
+    },
+    "verification": {
+      "focused_native_smoke": {
+        "command": "python3 -B integrations/brain/qualification/native_qualification.py --smoke",
+        "exit_code": 1,
+        "status": "BLOCKED_NEXT_UNEXPECTED_FAILURE_REPAIR_CAP_EXHAUSTED",
+        "blocker": "'citations'",
+        "actual_tool_calls": 73,
+        "repeat": false
+      },
+      "reached": ["actual registry/product database identity", "real PG-denied principal read/write", "26 canonical native imports and stable bindings", "idempotent reimport and unequal-byte rejection", "opposing reports and both investors/repeated transaction", "append correction and disposable update/stale revision/history", "all26 exact canonical/source/span readback", "cited memory recall claim24/source22 trace8", "bounded native no-embedding document sync", "first actual LAB document search"],
+      "native_sync": {"exit_code": 0, "indexed": 3, "failed": 0, "embedded": 0, "frozen_input_markdown_files": 8, "authored_lab_markdown_files": 2, "native_generated_markdown_files": 6},
+      "search_envelope": {
+        "response_canonical_sha256": "e9c2d0e8154c5d086d3c08b7d9b8c266900175ae0c4c1d4687a7753ec9399156",
+        "actual_docid": "7e2738",
+        "actual_path": "lab-graph-source.md",
+        "actual_heading": null,
+        "complete": true,
+        "text_utf8_bytes": 68,
+        "text_sha256": "7e2738dc6516c4df5adab8aa9f6b42faff331594b68c76e1a4d08ed070f58a9f",
+        "confidence": {"score": 0.825, "level": "PARTIAL", "gapDetected": false, "uncovered": false, "suggestedAction": "supplement"},
+        "top_level_citations": "ABSENT in actual knowledge_search structuredContent, not an empty array",
+        "trace_id": "ABSENT in actual knowledge_search structuredContent",
+        "failure_owner": "issue-5-engineer qualifier assumed memory_recall's flat citation envelope; native result itself retrieved target"
+      },
+      "not_reached": ["second LAB document search", "native document graph link/query", "actual date-boundary/default-supersession/RFC3339-rejection controls", "native storage restart", "after-restart exact records/facts/history/cited retrieval"],
+      "negative_error_body_limit": "Expected error substrings checked against actual native bodies during execution, but receipt stores textSHA/length only; no verbatim negative body or invented recovery is claimed.",
+      "aggregate": {"command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json", "exit_code": null, "state": "NOT_RUN_CURRENT_NATIVE_CHECKPOINT", "owner": "coordinator after all writers freeze; historical suite results not substituted"},
+      "independent_original_acceptance": null,
+      "separate_native_quality": null
+    },
+    "acceptance": [
+      {"criterion": "A claim links back to its exact evidence span after restart.", "status": "BLOCKED", "observed": "Exact source/span/canonical equality before restart only", "after_restart": null},
+      {"criterion": "Conflicting reports and multiple investors survive ingest and update.", "status": "OBSERVED_NATIVE_BEFORE_RESTART_NOT_INDEPENDENTLY_ACCEPTED", "observed": "Exact native facts1/2 conflicting reports,3/4 concurrent investors,5 repeated transaction; retained after correction/disposable update", "after_restart": null},
+      {"criterion": "Document graph relationships are not presented as verified entity transactions.", "status": "DOCUMENTED_BOUNDARY_GRAPH_RUNTIME_NOT_REACHED", "observed": "Actual LAB document sync/search; no typed verified financial edge admitted", "graph_query": null},
+      {"criterion": "Supported time semantics and any unavailable bitemporal replay are documented.", "status": "DOCUMENTED_NATIVE_BOUNDARY_CONTROLS_NOT_REACHED", "native_bitemporal_replay": null, "replay_disposition": "Unavailable: inspected native API has no knowledge-time selector; revision history is not bitemporal replay."}
+    ],
+    "custody": {
+      "container_id": "845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af",
+      "container_name": "oi5-ctx-ed2a28fd3625",
+      "last_observed_running": false,
+      "network": "none",
+      "pgdata_path": "integrations/brain/qualification/sandbox/pgdata",
+      "pgdata_deleted": false,
+      "ignored_secrets_logs_and_storage_committed": false,
+      "handoff_owner": "coordinator; stopped container and retained ignored native PGDATA",
+      "authorized_next_mutation": null
+    },
+    "repair_admission_blocker": {
+      "authoritative_question_id": "msg_b16039a397b2",
+      "question_outcome": "No answer/admission observed; same question resumed, not duplicated",
+      "interrupted_request_id": "776e094f-efcc-4460-b6b4-41f765b7b486",
+      "recovery_request_show": {"exit_code": 1, "error_code": "runtime_unavailable", "message": "Could not read Orca runtime metadata; app must be available before authoritative recovery"},
+      "coordinator_check": {"exit_code": 1, "error_code": "runtime_unavailable"},
+      "fourth_readiness_record": null,
+      "fourth_repair_or_rerun_performed": false,
+      "shared_runtime_started_or_restarted": false,
+      "next": "Explicit human cap exception plus coordinator-frozen actual envelope/residual native proof; no reingest/reset, original four criteria and independent acceptance/quality unchanged."
+    },
+    "current_artifact_identity": {
+      "docs/integrations/brain.md": "9998eaddef773365126efb797f7715c7a1fdcce560672777e67b4379cba9983e",
+      "integrations/brain/qualification/native_qualification.py": "59d253698b89daf91e73bfd5546c54bdefc3ca3988cdd879af823514ee2957d3",
+      "integrations/brain/qualification/native-receipts.json": "4b7cd8c3ee6e2d1267f4de2ca698683f552f932783feb913be77230e834ba019",
+      "integrations/brain/qualification/native-tools.json": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "integrations/brain/qualification/sandbox/.gitignore": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "self_digest": "Reported separately by final task-card handoff; no self-referential hash"
+    },
+    "rulings": [
+      {"id": "native-authority", "attributed_to": "issue-5-engineer", "decision": "Use only human-admitted fresh isolated native authority and actual PG principals", "why": "No personal/default memory reuse; actual agent:local owner must not be relabeled", "cost_if_wrong": "Lab grant proof cannot be promoted to HTTP tenancy/RLS or production admission"},
+      {"id": "native-identity", "attributed_to": "issue-5-engineer", "decision": "Pin actual binary, live86 schemas and negotiated older protocol separately from shipped10 snapshot", "why": "Manifest/source declarations are not deployed binary attestation", "cost_if_wrong": "Any drift requires requalification, not assumed same server"},
+      {"id": "native-canonical-binding", "attributed_to": "issue-5-engineer", "decision": "Store exact canonical bytes in native Brain with stable operation keys; append corrections, use disposable memory for mutation controls", "why": "Original spans and ancestry must not redirect", "cost_if_wrong": "Universal immutable/application-ID enforcement remains a Brain-owned extension gate, not claimed from metadata alone"},
+      {"id": "native-extraction", "attributed_to": "issue-5-engineer", "decision": "Use explicitly admitted lossless gzip-to-UTF8 text representation while retaining original media/precision/rights", "why": "JSON byte selectors must not be invented text offsets or normalized dates", "cost_if_wrong": "Unsupported event/period/publication boundaries remain null; secondary quantity is unverified"},
+      {"id": "native-concurrency", "attributed_to": "issue-5-engineer", "decision": "Use explicit supersede:false and stable claim/transaction IDs with LAB date labels", "why": "Default supersession would erase conflicting reports or simultaneous investors", "cost_if_wrong": "No truthful relationship/persistence acceptance if original IDs/provenance disappear"},
+      {"id": "native-document-corpus", "attributed_to": "issue-5-engineer", "decision": "Sync only six admitted native-generated Markdown files plus two LAB notes, no embeddings/links", "why": "Actual vault scope and input hashes must be frozen without deleting native scaffolds", "cost_if_wrong": "Input cardinality must not be equated with native indexed-row count"},
+      {"id": "native-search-envelope", "attributed_to": "issue-5-engineer", "decision": "Stop on the actual knowledge_search envelope mismatch rather than fabricate flat citations", "why": "The qualifier incorrectly assumed memory_recall response fields", "cost_if_wrong": "Graph/time/restart proof stays incomplete until explicit fourth-repair admission"},
+      {"id": "native-time", "attributed_to": "issue-5-engineer", "decision": "Preserve source year/day precision and null unknown clocks; do not claim bitemporal replay", "why": "Date-only fact API and revision history lack knowledge-time selection", "cost_if_wrong": "Some projections are withheld; native temporal controls remain unexercised"},
+      {"id": "native-receipts", "attributed_to": "issue-5-engineer", "decision": "Keep losslessly compact bootstrap fields and hashed canonical-content summaries, not a second semantic memory", "why": "Receipts prove identities/digests while authoritative content remains native", "cost_if_wrong": "Hashed negative bodies limit independent review; original full acceptance is not claimed"},
+      {"id": "native-cap-and-custody", "attributed_to": "issue-5-engineer", "decision": "Stop at cap3/3, preserve stopped native storage, finish scoped blocked report without starting unavailable Orca", "why": "No fourth admission arrived and shared-service restart was not authorized", "cost_if_wrong": "Coordinator must recover authoritative pending question/custody and obtain human exception; no downstream waiver"}
+    ]
+  },
+  "current_native_qualification": {
+    "version": "1.0.3",
+    "status": "NATIVE_SMOKE_PASS_ORIGINAL_REVIEW_AND_AGGREGATE_PENDING",
+    "task": "task_1ee57daded7e",
+    "dispatch": "ctx_f79253ca87d2",
+    "retry_of": "ctx_ed2a28fd3625",
+    "worker": "issue-5-engineer",
+    "card": "t_muz1j2ww5a6ec7c7",
+    "roadmap_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "native_intake_baseline": "1e1d91f509b4862e09076fcacd7c751008db866b",
+    "current_binding_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+    "admission": {
+      "human": "Actual Allow one bounded continuation; original Fresh isolated sandbox authority retained",
+      "human_readiness": {"path": ".genie/wishes/open-intelligence-observatory/readiness/group-4-native-graph-envelope-continuation-4.json", "sha256": "a1cb342641cd2804f4205ce3f39be3f84a60d5ac243108c87761a2638a173c1d"},
+      "current_binding": {"path": ".genie/wishes/open-intelligence-observatory/readiness/group-4-native-continuation-4-current-binding.json", "sha256": "d2b9d2999f111a45723510a378b8863ff3685bb0874fa625dd63485dcc6bb521", "question_id": "msg_2b478ca131b4", "accepted_before_checkout_and_mutation": true},
+      "budget": {"configured_repairs": 2, "human_exceptions": [3,4], "repair_cap": 4, "repairs_used": 4, "effort_escalations": 0, "reservation_usd": 8, "shared_ceiling_usd": 20, "paid_calls_admitted": false, "extra_spend_authorized": 0},
+      "mutations_excluded": ["reingest", "resync", "roles or grants", "namespace/database reset", "scaffold changes", "shared-service restart", "personal memory", "paid/model calls", "Git/forge/deployment"],
+      "next_unexpected_failure": "STOP4/4; no fifth repair, rerun or reset"
+    },
+    "actual_native": {
+      "brain_id": "brn_63n8pr", "slug": "oi5-qualification", "registry_owner": {"type": "agent", "id": "local"},
+      "acting_lab_custodian": "issue-5-engineer", "control_database": "brain", "product_database": "brain_oi5_qualification",
+      "pg_owner_role": "oi5_owner", "pg_denied_role": "oi5_denied", "postgres_version": "17.11",
+      "binary_sha256": "631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78",
+      "mcp_server": {"name": "brain", "version": "0.0"}, "negotiated_mcp_protocol": "2025-11-25",
+      "live_tools_count": 86, "live_tools_canonical_sha256": "387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b",
+      "native_manifest_raw_sha256": "2e7d3aca21c7224d906835100531adb34ff86faf602f82ad3e86094269f3f7af",
+      "provider": null, "model_route": null, "paid_calls": 0, "http_tenant_authentication": null, "server_rls": null, "compiled_binary_source_equivalence": null, "deployed_acceptance": null
+    },
+    "durable_mapping": {
+      "authority": "Existing native Brain canonical bytes; qualifier/receipts are not a second semantic memory",
+      "bindings": 26, "all_native_ids_and_canonical_hashes_unchanged": true,
+      "claim_memory_id": "24", "span_memory_id": "23", "source_memory_id": "22", "disposable_memory_id": "27",
+      "after_native_storage_restart": true, "all_claim_span_source_utf8_quote_chains_equal": true,
+      "source_sha256": "d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea",
+      "original_gzip_sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "quote_sha256": "fc51554505ea1720bf379d4a50cdad003ebd699a9bdb7acff52f792268009fd3", "selector": {"kind": "utf8_text", "start": 175540, "end": 177677},
+      "source_rights": "Accepted CC0 secondary Wikidata structured data; original JSON/gzip and year/day precision retained in provenance; financial quantity unverified",
+      "native_claim_original_ingested_at": "2026-10-08T17:49:08.257114Z", "new_ingestion_timestamp_minted": false,
+      "source_published_at": null, "event_validity": {"start": null, "end": null}, "period": {"start": null, "end": null}, "recognition_basis": null,
+      "concurrent_fact_ids": ["1","2","3","4","5"], "concurrent_semantics": "Explicit supersede:false; both LAB reports, both investors in transaction:one, repeated investor in transaction:two remain distinct",
+      "application_id_uniqueness_beyond_operation_key": null, "universal_append_only_enforcement": null,
+      "required_extension_ownership": "Brain owner/coordinator must freeze any universal uniqueness/immutability/rights-erasure extension; issue5/7 own canonical mapping, issue7/13 rebuild and manifest replay",
+      "projections": "Entity/alias index, claim-span index, typed economic view, document adjacency, rankings and cutoff selections rebuild from native canonical records and pinned manifest/method; not competing memory"
+    },
+    "verification": {
+      "focused_native_smoke": {"command": "python3 -B integrations/brain/qualification/native_qualification.py --resume-smoke", "exit_code": 0, "status": "PASS_ISOLATED_NATIVE_QUALIFICATION_NOT_DEPLOYMENT", "executions": 1, "actual_tool_calls": 150, "continuation_calls": 77},
+      "preserved_prior_failure": {"raw_receipt_sha256": "4b7cd8c3ee6e2d1267f4de2ca698683f552f932783feb913be77230e834ba019", "code_sha256": "59d253698b89daf91e73bfd5546c54bdefc3ca3988cdd879af823514ee2957d3", "original_exit_code": 1, "original_blocker": "'citations'", "complete_object_in_continuation_history": true, "original_73_calls_equal": true, "original_26_bindings_equal": true},
+      "negative_controls": {"count": 4, "same_original_ids_and_arguments": true, "all_raw_response_hashes_match_original": true, "guards": ["IDEMPOTENCY_CONFLICT", "permission denied read", "permission denied write", "REVISION_CONFLICT"], "error_capture": "Actual safely redacted JSON body plus raw canonical responseSHA; complete, bounded16384 UTF8bytes, not canonical economic evidence"},
+      "native_document_graph": {"source_docid": "7e2738", "target_docid": "1ff54e", "target_native_citation_id": "doc-3", "citation_source": "brain_document", "relationship": "lab_document_reference", "trace_id": "16", "economic_transactions_inferred": false},
+      "knowledge_search": {"actual_fields": ["confidence","totalResults","results[].path","results[].heading","results[].docid","results[].chunkIndex","results[].score","results[].text","results[].complete"], "exact_frozen_source_target_text_equal": true, "confidence": {"level": "PARTIAL", "score": 0.825}, "top_level_citations": null, "trace_id": null, "absence": "Fields absent in actual structuredContent; use native document citation, not invented recall envelope"},
+      "temporal_controls": {"date_only": true, "half_open": true, "default_supersedes": true, "explicit_concurrent_facts_unchanged": true, "rfc3339_as_of_rejected": true, "bitemporal_replay": null, "disposition": "Unavailable: native fact API exposes no knowledge-time selector; memory revisions are not bitemporal replay"},
+      "storage_restart": {"command": "docker restart --time 20 oi5-ctx-ed2a28fd3625", "exit_code": 0, "postmaster_before": "2026-10-09 17:08:09.28138+00", "postmaster_after": "2026-10-09 17:08:23.277682+00", "same_mcp_identity_and_schema": true, "same_26_exact_canonical_records": true, "same_five_fact_ids_and_provenance": true, "same_disposable_revision_history": true},
+      "after_restart_cited_recall": {"claim_memory_id": "24", "source_memory_id": "22", "trace_id": "22", "exact_span_verified_by_brain_get": true},
+      "aggregate": {"command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json", "exit_code": null, "state": "PENDING_COORDINATOR_AFTER_ALL_AUTHORS_FREEZE"},
+      "independent_original_acceptance": null, "separate_native_quality": null
+    },
+    "acceptance": [
+      {"criterion": "A claim links back to its exact evidence span after restart.", "status": "OBSERVED_NATIVE_PASS_PENDING_INDEPENDENT_ACCEPTANCE", "proof": "Same26 canonical native IDs/bytes/hashes, all claim-span-source UTF8 chains after actualPGrestart; real licensed claim24/span23/source22"},
+      {"criterion": "Conflicting reports and multiple investors survive ingest and update.", "status": "OBSERVED_NATIVE_PASS_PENDING_INDEPENDENT_ACCEPTANCE", "proof": "Both originalLAB reports, multipleinvestors, repeatedtransaction, appendedcorrection/disposableupdate and old/newhistory survive exact readback and native restart"},
+      {"criterion": "Document graph relationships are not presented as verified entity transactions.", "status": "OBSERVED_NATIVE_DOCUMENT_BOUNDARY_AND_DOCUMENTED_CONSUMER_CONTRACT_PENDING_REVIEW", "proof": "Actual graph outputs brain_document citation doc-3 only; typed canonical EconomicRelationship stays distinct; no shipped applicationview/deployedenforcement claim"},
+      {"criterion": "Supported time semantics and any unavailable bitemporal replay are documented.", "status": "OBSERVED_NATIVE_PASS_AND_DOCUMENTED_REPLAY_LIMIT_PENDING_REVIEW", "proof": "LAB halfopen dateboundary/defaultsupersession/concurrentfalse/instantrejection; original sourceprecision and nullunknownclocks retained", "native_bitemporal_replay": null}
+    ],
+    "custody": {"container_id": "845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af", "container_name": "oi5-ctx-ed2a28fd3625", "last_observed_running": false, "network": "none", "os_user": "1001:1001", "ports_published": false, "root_readonly": true, "exact_four_admitted_binds": true, "pgdata_deleted": false, "handoff_owner": "coordinator; stopped native container and retained ignoredPGDATA", "authorized_next_mutation": null},
+    "current_artifact_identity": {
+      "docs/integrations/brain.md": "128af5e6afd153cbdd945bd16bf2114887bdf9ca58be154c7bfacd2d75a08b1e",
+      "integrations/brain/qualification/native_qualification.py": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "integrations/brain/qualification/native-receipts.json": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "integrations/brain/qualification/native-tools.json": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "integrations/brain/qualification/sandbox/.gitignore": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "self_digest": "Freeze/report separately; no self-referential hash"
+    },
+    "size": {"admitted_permanent_paths": 6, "modified_this_continuation": 4, "estimated_total_group_insertions": 1400, "hard_insertion_cap": 2000, "exact_git_diff_not_run": "Worker prohibitedGit; current scoped line/byte counts and patch ranges supplied to coordinator for exactdiff"},
+    "injection_attempts": [],
+    "rulings": [
+      {"id": "continuation-authority", "attributed_to": "issue-5-engineer", "decision": "Require actual human4/4 exception and fresh sameTask/Dispatch binding before checkout/mutation", "why": "Prior failed Dispatch and unanswered question do not authorize a retry", "cost_if_wrong": "No fifthrepair/reset or scope/cap waiver"},
+      {"id": "continuation-search", "attributed_to": "issue-5-engineer", "decision": "Use native search path/heading/docid and complete exact text/hash with coverage; leave absent trace/citations null", "why": "Actual search differs from memoryrecall trust envelope", "cost_if_wrong": "Incomplete/wrongdocument fails; native confidence never proves financial truth"},
+      {"id": "continuation-receipts", "attributed_to": "issue-5-engineer", "decision": "Capture actual bounded safely redacted error bodies and repeat only four sameID/args already-passing negatives", "why": "Independent review needs direct reasons, not hashed-only bodies", "cost_if_wrong": "Wrongrejection/unsafeoroversizecapture stops; no fabricated recovery"},
+      {"id": "continuation-existing-records", "attributed_to": "issue-5-engineer", "decision": "Reconstruct original licensed record with original native ingestionclock; preserve failedobject/73calls/26bindings and avoid reingest/resync", "why": "Restart proof must concern actual previously accepted bytes/IDs", "cost_if_wrong": "Any hash/provenance/selector mismatch fails; no newdate/reset"},
+      {"id": "continuation-document-boundary", "attributed_to": "issue-5-engineer", "decision": "Qualify real native documentlink/query without converting it to entitytransaction", "why": "KG endpoints and citations are documents, typed economic semantics remain canonical records", "cost_if_wrong": "Consumers must enforce documentedtypedview; this qualifier is not a productadapter"},
+      {"id": "continuation-time", "attributed_to": "issue-5-engineer", "decision": "Exercise only frozenLAB date/supersession controls and preserve consequential nulls/sourceprecision", "why": "Dateonly fact API lacks knowledge-time replay", "cost_if_wrong": "No bitemporal/defaultclock/calendar guarantee beyond actually exercised controls"},
+      {"id": "continuation-restart", "attributed_to": "issue-5-engineer", "decision": "Restart only the exact owned nativePGcontainer once and require changedpostmaster plus sameIDs/spans/facts/history/recall", "why": "Clientrestart alone cannot prove storagepersistence", "cost_if_wrong": "Any missing/redirected evidence blocks; no shared restart/deployment"},
+      {"id": "continuation-handoff", "attributed_to": "issue-5-engineer", "decision": "Stop owncontainer retainingignoredPGDATA, freeze artifacts and require originalindependentreview/separatequality/currentaggregate before success", "why": "Native assertions and worker notification are not independent delivery proof", "cost_if_wrong": "Issueclosure/deployedacceptance remain unclaimed; coordinator owns disposition"}
+    ]
+  }
 }
