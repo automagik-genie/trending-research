@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-09T21:46:22.202315+00:00",
+  "actual_status_command_exit": 0,
+  "original_card": "t_muz1j3f7944dc064",
+  "actual_status": "done",
+  "observed_status_line": "Status:     done",
+  "positive_acceptance": ".genie/wishes/open-intelligence-observatory/verification/group-7-full-original-author-handoff-positive-parent-acceptance.json",
+  "settlement": ".genie/wishes/open-intelligence-observatory/verification/group-7-full-original-author-settled-released-local-card-completion.json",
+  "local_original_accepted": 6,
+  "roadmap20_complete": false,
+  "forge_issue_open_notmutated": true,
+  "WISH3b2_intentionally_notchanged_while_finalplanpending": true
+}

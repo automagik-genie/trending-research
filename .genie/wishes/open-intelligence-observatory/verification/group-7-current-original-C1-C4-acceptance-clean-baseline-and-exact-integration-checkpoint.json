@@ -1,0 +1,176 @@
+{
+  "at": "2026-10-09T23:05:26.022919+00:00",
+  "purpose": "scopedoriginal8integrationcheckpoint; NOTcompletewhole20 ornative4/7 ordeploy/CI/merge",
+  "original_issue": 8,
+  "native_source_task": "task_8f2a067b113f / ctx_a45e75e8c6bc",
+  "original_criteria": "all4 scopeaccepted per fullC09e pluscurrentDocbinding67a; no narrower human-only/dossier-only replacement",
+  "local_Genie_card": "t_muz1j3f7944dc064 ACTUALdone, NativeauthorACTUALreleased beforeparentdeliveryACK; GitHubissueOPEN untilauthorizedremote reconciliation",
+  "frozen_full12_source_scope_content_metadata": {
+    "web/prototypes/explorer.css": {
+      "bytes": 5754,
+      "mode": "0600",
+      "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad"
+    },
+    "web/prototypes/explorer.js": {
+      "bytes": 23172,
+      "mode": "0600",
+      "sha256": "7f39db9ef42fae3b728a57374e11dd28e8d3045dad8a432a686013eeb66deb48"
+    },
+    "web/prototypes/index.html": {
+      "bytes": 2403,
+      "mode": "0600",
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478"
+    },
+    "web/prototypes/preview.py": {
+      "bytes": 3934,
+      "mode": "0600",
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513"
+    },
+    "docs/design/frontier-economics.md": {
+      "bytes": 27702,
+      "mode": "0600",
+      "sha256": "78a8b419e16b3439dd7f564848b12a60635ba342f92cf56f270e6b47f9aa6c7e"
+    },
+    "web/prototypes/proof/smoke.json": {
+      "bytes": 277492,
+      "mode": "0600",
+      "sha256": "8038617b2783f0fbb599901598a7ca0820b49fcfbe517be0209dde03e02fbefc"
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "bytes": 114519,
+      "mode": "0600",
+      "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31"
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "bytes": 63444,
+      "mode": "0600",
+      "sha256": "f59d738f1312765a3ed3a73ec6773536f2d17ab156a7ac49b55c55391884d5c6"
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "bytes": 138665,
+      "mode": "0600",
+      "sha256": "af4eff4701eaaa11745be18775057cba8ed6e9756827526b9354101d91d36321"
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "bytes": 79872,
+      "mode": "0600",
+      "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4"
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "bytes": 134452,
+      "mode": "0600",
+      "sha256": "9bac25b986e00ccddf22a53d82a3d3307db4127ef355d97af076d1fcc31124f7"
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "bytes": 77091,
+      "mode": "0600",
+      "sha256": "1815a7e40fb2d1bc01d1fc6c7b51753e7e680b439e9ea5025d0ab5790e9d34d3"
+    }
+  },
+  "actual_user_choice": "Felipe actualdirectuseridentity/Guidedquestionsfirst/rationalecompareexplanations->inspectevidence->missingpremises plusrelationship/timeline retained; exactb654 receipt. Not externallyauthenticatedidentity, editor/newcomer/deploy grant.",
+  "prototype_defaults": "relationship-first unchanged; guided-first production integration belongs tooriginal9 gated7. Studycomparison isaccepted8, notalreadyshippedatlas9.",
+  "old_scope_doc_stage_sentence": "Doc78a8 frozen150LF sourcephase closes beforecoordinatoracceptance, lastsentencepending ishistoricalauthoredstage. CurrentC09e/67a/full14d/Genieactualdone governanceinthischeckpoint supersedesPENDING status WITHOUTthirdsource/docrepair orhistoricalrewrite.",
+  "source_repair_cap": "2/2 exhausted; separatequalityrepair1/1 exhausted, no thirdsource/secondquality orreset",
+  "governing_exact_public_nonsensitive_artifact_pins": {
+    "readiness/group-7-felipe-direct-user-selection.json": {
+      "sha256": "b65454df0354a8ece8e421825c7d3dee5273482ff87a6a9eecdc5c8e819e80cf",
+      "bytes": 1437,
+      "mode": "0600"
+    },
+    "verification/group-7-actual-human-doc-only-final-author-freeze.json": {
+      "sha256": "c84f63ed1c454dd83967ff3f7e6b8f44ef6e73335a9fa15990ca98c127b5e69f",
+      "bytes": 3245,
+      "mode": "0600"
+    },
+    "verification/group-7-final-actual-human-original-acceptance-1.txt": {
+      "sha256": "c09eaf0d1a470ecf474d10ce1a0dc511b79a1303ab149c3ccc6e3293421c6605",
+      "bytes": 25799,
+      "mode": "0600"
+    },
+    "verification/group-7-final-actual-human-doc-quality-rebind-1.txt": {
+      "sha256": "67a62e512e7e0fec23d5de9fba52750d8090b449759680ed75801a6eba5789d9",
+      "bytes": 27385,
+      "mode": "0600"
+    },
+    "verification/group-7-final-actual-human-doc-quality-rebind-accepted-settlement.json": {
+      "sha256": "c3322e2796ac3b164fde83390b51f21f781e1f1bdef78eac06b8d5da56f87a38",
+      "bytes": 2220,
+      "mode": "0600"
+    },
+    "verification/group-7-parent-final-native-focus-proof.json": {
+      "sha256": "201409891910145bcf3d604d2bd73c61dd9c370cf9044e3134900301c1a18e09",
+      "bytes": 54967,
+      "mode": "0600"
+    },
+    "verification/group-7-parent-final-focus-and-six-reader-proof.json": {
+      "sha256": "0f8bfcd9bc928a1c3321dd8b5527c739948a3b26c90bbd827f375f304ce994b2",
+      "bytes": 77886,
+      "mode": "0600"
+    },
+    "verification/group-7-original-complete-engineering-claim-span-handoff.txt": {
+      "sha256": "14d65cec5190f8e8c145ec68be2bb037af888be042cdf92c8bc73b95e38717b1",
+      "bytes": 27413,
+      "mode": "0600"
+    },
+    "verification/group-7-original-full-span-3853byte-timeline-index-admitted.txt": {
+      "sha256": "68fc016dc807630fec4c4ed9bee3265e4a2234b82b605e1a024f568940f2730b",
+      "bytes": 3853,
+      "mode": "0600"
+    },
+    "verification/group-7-original-one-span-stored-timeline-exact-readback.json": {
+      "sha256": "b178ab2913668f8e3349d63b7d7c85abdfce6119e1196e0e0cac7334d02c6671",
+      "bytes": 5140,
+      "mode": "0600"
+    },
+    "verification/group-7-full-original-author-handoff-positive-parent-acceptance.json": {
+      "sha256": "acafc72e15f285e3519c52636e902e0200fa353bcedad8c854c22f0ef19224e8",
+      "bytes": 2697,
+      "mode": "0600"
+    },
+    "verification/group-7-full-original-author-settled-released-local-card-completion.json": {
+      "sha256": "f194a1fc427fb5ceaefa26d42b852c9f6c41b0648494d2bbb2a43229bb365ccb",
+      "bytes": 3225,
+      "mode": "0600"
+    },
+    "verification/group-7-original-local-card-done-actual-readback.json": {
+      "sha256": "c185bc0797ee91a832429b792320e5a1b5f7520d2aed1a91689e7725d9179e92",
+      "bytes": 668,
+      "mode": "0600"
+    }
+  },
+  "native_actual_UI_proof": "parent14Enter/Tab forwardfocus at1280x900/390x844 plus6lens/size reader/source/counter/overview keyboardtasks; actual6PNGs openedbyparent/reviewers. Content-equal12 candidateactualhashcomparison; passingpaths NOT rerun. Step3closeoverview SECTIONfallback notallsameBUTTON.",
+  "actual_addressable_preliminary_clean_tree_smoke": {
+    "candidate_tree_NOTCOMMIT": "a04fb194d94977f343b2fff74f749dda4705f30a",
+    "base_HEAD": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+    "existing_unittest_actual": {
+      "exit": 0,
+      "tests": 43,
+      "duration_seconds": 0.106
+    },
+    "actual_evaluator_exit": 0,
+    "actual_lint_exit": 0,
+    "scope": "accepted15 includingqualifiedblockedDSHdisclosure, excludinguncommittedoriginal7 code/tests andcurrentWISHdc6 changes. Thispreliminarytree isNOTfinalcommittedSHA/CI and mustnotbe renamedfinalpublication.",
+    "receipt": "verification/accepted-visual-disclosure-only-clean-tree-actual-aggregate-not-unaccepted-source7.json"
+  },
+  "current_worktree45_scope": "45tests/eval/lint actual0/0/0aa3d historicalcurrentworkingtree includesunaccepted7; distinctfromclean43 baseline, NOTremoteCI/fullyqualifiednewnative7.",
+  "all_study_total_source12_948500bytes340457textbytes1286textLF": "exactfinalsource3443/source4_28c1_document78a8 documentedinC09e/67a/14d",
+  "nativeSDK4": "BLOCKED withfaithfulfull85LF411handoff/cap2/actualonceunknowncause; newstaticclosure127c andsupportedseams774a auxiliaryfacts donotqualifynative. Currentfactualrootfs/newreleasefollowup NOT3rdattempt.",
+  "nativeReadmodel7": "UNACCEPTED. Currentbaseline11d75/0b0 frozen, fullsnapshot ReplayManifest6.24MBactualfailure61649tools/causeUNKNOWN/SceneRootunattempted. Solecompletecorrective4 DATAae20 reviewedunderexplicit216insertions/Safeobserver gateca1/freshquality1of1; prospective\u2014notproduct/runtimepermission.",
+  "local_original_accepted_issues": [
+    2,
+    3,
+    5,
+    6,
+    8,
+    11
+  ],
+  "all20_completed": false,
+  "dates_and_GitHub_assignees_unset_intentionally": true,
+  "product_model_calls": 0,
+  "coding_storage_all_cost": "UNKNOWN",
+  "private_BWS_auth_OR_productAPIkey_value_hashpath_OR_accountbalance_records_NOTinthispubliccheckpoint_or_productpaths": true,
+  "parent_role": "no authoredproduct/test/sourceDocs/SDK/data/integrationcode; orchestration/metadata/opaquebytehash/actualCLI/UIobservation/exactPathGitonly",
+  "commit_permission_scope": "onlyexactfrozenaccepted8product12+namedgoverningevidence+THIScoordinatorcheckpoint; CurrentWISHdc6/source7files/SDKdocs+readiness3/BWSrelatedfiles/userchanges NOTautomaticallystaged",
+  "commit_pending_NOTcreated": true,
+  "final_commit_needs": "exactprivateindexpathcheck/nonTargetpreservation+normalcommit/hooks+target-onlyrealindexsync+actualaddressableSHAaggregate+scope-boundedreviewSHAattribution beforepublish; no sourcebytechanges allowed"
+}

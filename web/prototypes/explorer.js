@@ -157,7 +157,10 @@ function questionView(parent) {
   parent.append(sectionHead('Start with a question, then challenge an explanation', 'Choose a bounded research question. Compare conditional explanations before opening the same underlying evidence. No automated answer or private inference.'));
   const list = node('ol', undefined, 'question-list');
   for (const q of revision.questions) {
-    const li = node('li'); const b = button(q.text, () => { question = q.id; questionStep = 'hypotheses'; render(); }, q.id);
+    const li = node('li'); const b = button(q.text, () => {
+      question = q.id; questionStep = 'hypotheses'; render();
+      $('overview').querySelector('.question-list [data-action="' + q.id + '"]').focus();
+    }, q.id);
     b.setAttribute('aria-pressed', String(question === q.id)); li.append(b); list.append(li);
   }
   parent.append(list);
@@ -167,7 +170,10 @@ function questionView(parent) {
   step.append(node('h3', selected.text));
   const nav = node('nav'); nav.setAttribute('aria-label', 'Question exploration step');
   for (const [key, label] of [['hypotheses', '1 · Compare explanations'], ['evidence', '2 · Inspect evidence'], ['gaps', '3 · Identify missing premises']]) {
-    const b = button(label, () => { questionStep = key; render(); }); b.setAttribute('aria-pressed', String(questionStep === key)); nav.append(b);
+    const b = button(label, () => {
+      questionStep = key; render();
+      $('overview').querySelector('.step nav [aria-pressed=true]').focus();
+    }); b.setAttribute('aria-pressed', String(questionStep === key)); nav.append(b);
   }
   step.append(nav);
   if (questionStep === 'hypotheses') { alternatives(step); counterweight(step); }
