@@ -1,0 +1,845 @@
+{
+  "recorded_at": "2026-10-09T19:04:29.764862+00:00",
+  "status": "ACTUAL_CURRENT_UI_FOCUS_AND_SIX_READER_TASKS_PASS",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "candidate12_sha256": "00cfaf1dd043d2790b7ff744a2019a8d653f6b977652420ec0a87fe5ee032549",
+  "current_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "parent_owned_tab": "original8-parent-final-guided-focus",
+  "preview": "http://127.0.0.1:8879/web/prototypes/index.html",
+  "actual_focus_receipt": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-parent-final-native-focus-proof.json",
+    "sha256": "201409891910145bcf3d604d2bd73c61dd9c370cf9044e3134900301c1a18e09",
+    "native_Enter_Tab": 14,
+    "wide": 7,
+    "narrow": 7
+  },
+  "actual_six_source_counter_overview_paths": [
+    {
+      "lens": "relationship",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Relationships first",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Timeline first",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "counter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": "assessment:issue6:fragility:1"
+        },
+        "text": "Return to overview\nFinancing-dependent fragility\n\nAuthored conditional interpretation \u00b7 issue-6-engineer \u00b7 assessment:issue6:fragility:1\n\nInterpretation\nif realized paid demand does not cover serving/training outlay and payable compute obligations without new finance, apparent expansion could mask fragile cash economics. No current loss, subsidy or bubble is declared.\nAssumptions (not measured)\nunfavorable retained-demand contribution; material cash obligations distinct from announcements; limited ability to reduce/restructure spending; financing not guaranteed. All remain unknown.\nStrongest available counterevidence / limit\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\nObservable invalidation\nobtain qualified retained-customer cohorts with positive realized contribution plus same-period completed cash receipts/available liquidity sufficient for training outlay and contractual payments without uncommitted future funding. Announced rounds, run rates, cloud credits or a promised IPO alone do not invalidate B.\nEvidence cutoff\n2026-10-08T08:36:34.105385Z\nComputation\n2026-10-08T08:36:34.126791Z\nMethod\nfrontier-economics/curation/1.0.0\nVerification\nsource_checked (text/bytes only)\nCoverage numerator\nUnknown (null)\nCoverage denominator\nUnknown (null)\nNewest financial evidence\nUnknown (null)\nIndependence rationale\nWikidata community assertions and underlying referenced issuer lineages are not independent financial audits; other opaque references are unqualified. Metadata is common-source semantics, not corroboration.\nInspect the baseline cited by this explanation\nSecondary P2139 corporate revenue assertions \u00b7 unverified financial meaning\nEntity\tSource label\tSigned quantity USD\tRaw bounds USD\tCommunity rank\tEvidence\nMicrosoft\t2015 (source year)\t+93580000000\t+93579000000 / +93581000000\tnormal\tInspect source \u00b7 001\nMicrosoft\t2014 (source year)\t+86833000000\t+86832000000 / +86834000000\tnormal\tInspect source \u00b7 002\nMicrosoft\t2013 (source year)\t+77849000000\t+77848000000 / +77850000000\tnormal\tInspect source \u00b7 003\nMicrosoft\t2012 (source year)\t+73723000000\t+73722000000 / +73724000000\tnormal\tInspect source \u00b7 004\nMicrosoft\t2011 (source year)\t+69943000000\t+69942000000 / +69944000000\tnormal\tInspect source \u00b7 005\nMicrosoft\t2016 (source year)\t+85320000000\tnull / null\tnormal\tInspect source \u00b7 006\nMicrosoft\t2017 (source year)\t+89950000000\tnull / null\tnormal\tInspect source \u00b7 007\nMicrosoft\t2018 (source year)\t+110360000000\tnull / null\tnormal\tInspect source \u00b7 008\nMicrosoft\t2019 (source year)\t+125843000000\tnull / null\tnormal\tInspect source \u00b7 009\nMicrosoft\t2020 (source year)\t+143015000000\tnull / null\tnormal\tInspect source \u00b7 010\nMicrosoft\t2021 (source year)\t+168088000000\tnull / null\tnormal\tInspect source \u00b7 011\nMicrosoft\t2022 (source year)\t+198270000000\tnull / null\tnormal\tInspect source \u00b7 012\nMicrosoft\t2008 (source year)\t+60420000000\tnull / null\tnormal\tInspect source \u00b7 013\nMicrosoft\t2009 (source year)\t+58437000000\tnull / null\tnormal\tInspect source \u00b7 014\nMicrosoft\t2010 (source year)\t+62484000000\tnull / null\tnormal\tInspect source \u00b7 015\nMicrosoft\t2023 (source year)\t+211915000000\tnull / null\tnormal\tInspect source \u00b7 016\nMicrosoft\t2024 (source year)\t+245122000000\tnull / null\tnormal\tInspect source \u00b7 017\nMicrosoft\t2025 (source year)\t+281724000000\tnull / null\tnormal\tInspect source \u00b7 018\nMicrosoft\t2026 (source year)\t+331839000000\tnull / null\tpreferred\tInspect source \u00b7 019\nAmazon\t2007 (source year)\t+14835000000\tnull / null\tnormal\tInspect source \u00b7 020\nAmazon\t2008 (source year)\t+19166000000\tnull / null\tnormal\tInspect source \u00b7 021\nAmazon\t2009 (source year)\t+24509000000\tnull / null\tnormal\tInspect source \u00b7 022\nAmazon\t2010 (source year)\t+34204000000\tnull / null\tnormal\tInspect source \u00b7 023\nAmazon\t2011 (source year)\t+48077000000\tnull / null\tnormal\tInspect source \u00b7 024\nAmazon\t2012 (source year)\t+61093000000\tnull / null\tnormal\tInspect source \u00b7 025\nAmazon\t2013 (source year)\t+74452000000\tnull / null\tnormal\tInspect source \u00b7 026\nAmazon\t2014 (source year)\t+88988000000\tnull / null\tnormal\tInspect source \u00b7 027\nAmazon\t2015 (source year)\t+107006000000\tnull / null\tnormal\tInspect source \u00b7 028\nAmazon\t2016 (source year)\t+135987000000\tnull / null\tnormal\tInspect source \u00b7 029\nAmazon\t2017 (source year)\t+177866000000\tnull / null\tnormal\tInspect source \u00b7 030\nAmazon\t2018 (source year)\t+232887000000\tnull / null\tnormal\tInspect source \u00b7 031\nAmazon\t2019 (source year)\t+280522000000\tnull / null\tnormal\tInspect source \u00b7 032\nAmazon\t2020 (source year)\t+386064000000\tnull / null\tnormal\tInspect source \u00b7 033\nAmazon\t2021-12-31 (civil source day)\t+469822000000\tnull / null\tnormal\tInspect source \u00b7 034\nAmazon\t2022 (source year)\t+513983000000\tnull / null\tnormal\tInspect source \u00b7 035\nAmazon\t2023 (source year)\t+574785000000\tnull / null\tnormal\tInspect source \u00b7 036\nAmazon\t2024 (source year)\t+637959000000\tnull / null\tnormal\tInspect source \u00b7 037\nAmazon\t2025 (source year)\t+716924000000\tnull / null\tpreferred\tInspect source \u00b7 038",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "source": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": "observation:issue6:001"
+        },
+        "text": "Return to overview\nMicrosoft \u00b7 2015 (source year)\n\nSource-attributed secondary community assertion, not issuer-verified recognized revenue or AI revenue.\n\nObservation\nobservation:issue6:001\nClaim\nclaim:issue6:reported:001\nEvidence span\nspan:issue6:view:003\nRaw signed quantity\n+93580000000 USD\nRaw lower bound\n+93579000000\nRaw upper bound\n+93581000000\nCommunity rank (not truth)\nnormal\nScope\nCorporate-wide secondary community total-revenue assertion; accounting basis, comparability and AI allocation unknown; raw bounds/qualifiers/rank/references in cited statement.\nSource publication instant\nUnknown (null)\nObserved at\n2026-10-08T07:29:27.430930Z\nIngested at (local registration)\n2026-10-08T08:36:34.105385Z\nEvent start\nUnknown (null)\nEvent end\nUnknown (null)\nAccounting period start\nUnknown (null)\nAccounting period end\nUnknown (null)\nAssessment cutoff\n2026-10-08T08:36:34.105385Z\nAssessment computation\n2026-10-08T08:36:34.126791Z\nSource access \u00b7 exact canonical view \u2192 complete original\nOpen pinned Wikidata source revision\nCanonical source revision\nsource:issue6:view:003\nCanonical content SHA256\nec005786be4ff6b34bac8750f725d43e3cff5bce7591c4ecaa51f3194cdce228\nCanonical span selector\n{\"end\":1990,\"kind\":\"utf8_text\",\"start\":58}\nOrigin (not independent corroboration)\norigin:wikidata:structured\nOriginal encoded SHA256\ne42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7\nOriginal decoded SHA256\nd066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea\nExact decoded-original selector\n{\"end\":149098,\"kind\":\"decoded_utf8_json\",\"start\":147166}\nRaw original quote SHA256\nbec9cb999a10ad99f3dc3a00494bd1d2b7f4ba1c40d0a8a326d99333e7fc4e4f\nNormalizer\nfrontier-economics/cc0-canonical-view/1.0.0\nOriginal source revision\n2550576892\nDownload complete licensed gzip original \u00b7 Q2283-r2550576892.json.bin\nFull canonical statement \u00b7 amount, bounds, rank, qualifiers and references\nExact cited span text (untrusted evidence)\nFull canonical source-view text (untrusted evidence)\nReferenced URLs \u00b7 unacquired and unverified\nhttps://web.archive.org/web/20220412010754/https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nhttps://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nStrongest available counterweight to a collapse story\n\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\n\nAgainst the buffer explanation: the entire numeric baseline is corporate-wide secondary revenue, while AI allocation, cash conversion, retention, training outlay and payment schedule are null. Preferred rank and repeated issuer-linked reporting do not rescue these premises. No observed negative margin is asserted.\n\nInspect counterevidence and its limits",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "after_overview": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 150
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:001",
+          "text": "Inspect source \u00b7 001",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:002",
+          "text": "Inspect source \u00b7 002",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "lens": "timeline",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Timeline first",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Questions first",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "counter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": "assessment:issue6:fragility:1"
+        },
+        "text": "Return to overview\nFinancing-dependent fragility\n\nAuthored conditional interpretation \u00b7 issue-6-engineer \u00b7 assessment:issue6:fragility:1\n\nInterpretation\nif realized paid demand does not cover serving/training outlay and payable compute obligations without new finance, apparent expansion could mask fragile cash economics. No current loss, subsidy or bubble is declared.\nAssumptions (not measured)\nunfavorable retained-demand contribution; material cash obligations distinct from announcements; limited ability to reduce/restructure spending; financing not guaranteed. All remain unknown.\nStrongest available counterevidence / limit\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\nObservable invalidation\nobtain qualified retained-customer cohorts with positive realized contribution plus same-period completed cash receipts/available liquidity sufficient for training outlay and contractual payments without uncommitted future funding. Announced rounds, run rates, cloud credits or a promised IPO alone do not invalidate B.\nEvidence cutoff\n2026-10-08T08:36:34.105385Z\nComputation\n2026-10-08T08:36:34.126791Z\nMethod\nfrontier-economics/curation/1.0.0\nVerification\nsource_checked (text/bytes only)\nCoverage numerator\nUnknown (null)\nCoverage denominator\nUnknown (null)\nNewest financial evidence\nUnknown (null)\nIndependence rationale\nWikidata community assertions and underlying referenced issuer lineages are not independent financial audits; other opaque references are unqualified. Metadata is common-source semantics, not corroboration.\nInspect the baseline cited by this explanation\nSecondary P2139 corporate revenue assertions \u00b7 unverified financial meaning\nEntity\tSource label\tSigned quantity USD\tRaw bounds USD\tCommunity rank\tEvidence\nMicrosoft\t2015 (source year)\t+93580000000\t+93579000000 / +93581000000\tnormal\tInspect source \u00b7 001\nMicrosoft\t2014 (source year)\t+86833000000\t+86832000000 / +86834000000\tnormal\tInspect source \u00b7 002\nMicrosoft\t2013 (source year)\t+77849000000\t+77848000000 / +77850000000\tnormal\tInspect source \u00b7 003\nMicrosoft\t2012 (source year)\t+73723000000\t+73722000000 / +73724000000\tnormal\tInspect source \u00b7 004\nMicrosoft\t2011 (source year)\t+69943000000\t+69942000000 / +69944000000\tnormal\tInspect source \u00b7 005\nMicrosoft\t2016 (source year)\t+85320000000\tnull / null\tnormal\tInspect source \u00b7 006\nMicrosoft\t2017 (source year)\t+89950000000\tnull / null\tnormal\tInspect source \u00b7 007\nMicrosoft\t2018 (source year)\t+110360000000\tnull / null\tnormal\tInspect source \u00b7 008\nMicrosoft\t2019 (source year)\t+125843000000\tnull / null\tnormal\tInspect source \u00b7 009\nMicrosoft\t2020 (source year)\t+143015000000\tnull / null\tnormal\tInspect source \u00b7 010\nMicrosoft\t2021 (source year)\t+168088000000\tnull / null\tnormal\tInspect source \u00b7 011\nMicrosoft\t2022 (source year)\t+198270000000\tnull / null\tnormal\tInspect source \u00b7 012\nMicrosoft\t2008 (source year)\t+60420000000\tnull / null\tnormal\tInspect source \u00b7 013\nMicrosoft\t2009 (source year)\t+58437000000\tnull / null\tnormal\tInspect source \u00b7 014\nMicrosoft\t2010 (source year)\t+62484000000\tnull / null\tnormal\tInspect source \u00b7 015\nMicrosoft\t2023 (source year)\t+211915000000\tnull / null\tnormal\tInspect source \u00b7 016\nMicrosoft\t2024 (source year)\t+245122000000\tnull / null\tnormal\tInspect source \u00b7 017\nMicrosoft\t2025 (source year)\t+281724000000\tnull / null\tnormal\tInspect source \u00b7 018\nMicrosoft\t2026 (source year)\t+331839000000\tnull / null\tpreferred\tInspect source \u00b7 019\nAmazon\t2007 (source year)\t+14835000000\tnull / null\tnormal\tInspect source \u00b7 020\nAmazon\t2008 (source year)\t+19166000000\tnull / null\tnormal\tInspect source \u00b7 021\nAmazon\t2009 (source year)\t+24509000000\tnull / null\tnormal\tInspect source \u00b7 022\nAmazon\t2010 (source year)\t+34204000000\tnull / null\tnormal\tInspect source \u00b7 023\nAmazon\t2011 (source year)\t+48077000000\tnull / null\tnormal\tInspect source \u00b7 024\nAmazon\t2012 (source year)\t+61093000000\tnull / null\tnormal\tInspect source \u00b7 025\nAmazon\t2013 (source year)\t+74452000000\tnull / null\tnormal\tInspect source \u00b7 026\nAmazon\t2014 (source year)\t+88988000000\tnull / null\tnormal\tInspect source \u00b7 027\nAmazon\t2015 (source year)\t+107006000000\tnull / null\tnormal\tInspect source \u00b7 028\nAmazon\t2016 (source year)\t+135987000000\tnull / null\tnormal\tInspect source \u00b7 029\nAmazon\t2017 (source year)\t+177866000000\tnull / null\tnormal\tInspect source \u00b7 030\nAmazon\t2018 (source year)\t+232887000000\tnull / null\tnormal\tInspect source \u00b7 031\nAmazon\t2019 (source year)\t+280522000000\tnull / null\tnormal\tInspect source \u00b7 032\nAmazon\t2020 (source year)\t+386064000000\tnull / null\tnormal\tInspect source \u00b7 033\nAmazon\t2021-12-31 (civil source day)\t+469822000000\tnull / null\tnormal\tInspect source \u00b7 034\nAmazon\t2022 (source year)\t+513983000000\tnull / null\tnormal\tInspect source \u00b7 035\nAmazon\t2023 (source year)\t+574785000000\tnull / null\tnormal\tInspect source \u00b7 036\nAmazon\t2024 (source year)\t+637959000000\tnull / null\tnormal\tInspect source \u00b7 037\nAmazon\t2025 (source year)\t+716924000000\tnull / null\tpreferred\tInspect source \u00b7 038",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "source": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": "observation:issue6:001"
+        },
+        "text": "Return to overview\nMicrosoft \u00b7 2015 (source year)\n\nSource-attributed secondary community assertion, not issuer-verified recognized revenue or AI revenue.\n\nObservation\nobservation:issue6:001\nClaim\nclaim:issue6:reported:001\nEvidence span\nspan:issue6:view:003\nRaw signed quantity\n+93580000000 USD\nRaw lower bound\n+93579000000\nRaw upper bound\n+93581000000\nCommunity rank (not truth)\nnormal\nScope\nCorporate-wide secondary community total-revenue assertion; accounting basis, comparability and AI allocation unknown; raw bounds/qualifiers/rank/references in cited statement.\nSource publication instant\nUnknown (null)\nObserved at\n2026-10-08T07:29:27.430930Z\nIngested at (local registration)\n2026-10-08T08:36:34.105385Z\nEvent start\nUnknown (null)\nEvent end\nUnknown (null)\nAccounting period start\nUnknown (null)\nAccounting period end\nUnknown (null)\nAssessment cutoff\n2026-10-08T08:36:34.105385Z\nAssessment computation\n2026-10-08T08:36:34.126791Z\nSource access \u00b7 exact canonical view \u2192 complete original\nOpen pinned Wikidata source revision\nCanonical source revision\nsource:issue6:view:003\nCanonical content SHA256\nec005786be4ff6b34bac8750f725d43e3cff5bce7591c4ecaa51f3194cdce228\nCanonical span selector\n{\"end\":1990,\"kind\":\"utf8_text\",\"start\":58}\nOrigin (not independent corroboration)\norigin:wikidata:structured\nOriginal encoded SHA256\ne42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7\nOriginal decoded SHA256\nd066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea\nExact decoded-original selector\n{\"end\":149098,\"kind\":\"decoded_utf8_json\",\"start\":147166}\nRaw original quote SHA256\nbec9cb999a10ad99f3dc3a00494bd1d2b7f4ba1c40d0a8a326d99333e7fc4e4f\nNormalizer\nfrontier-economics/cc0-canonical-view/1.0.0\nOriginal source revision\n2550576892\nDownload complete licensed gzip original \u00b7 Q2283-r2550576892.json.bin\nFull canonical statement \u00b7 amount, bounds, rank, qualifiers and references\nExact cited span text (untrusted evidence)\nFull canonical source-view text (untrusted evidence)\nReferenced URLs \u00b7 unacquired and unverified\nhttps://web.archive.org/web/20220412010754/https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nhttps://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nStrongest available counterweight to a collapse story\n\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\n\nAgainst the buffer explanation: the entire numeric baseline is corporate-wide secondary revenue, while AI allocation, cash conversion, retention, training outlay and payment schedule are null. Preferred rank and repeated issuer-linked reporting do not rescue these premises. No observed negative margin is asserted.\n\nInspect counterevidence and its limits",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "after_overview": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 2841
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:001",
+          "text": "Microsoft \u00b7 001\n+93580000000 USD \u00b7 normal community rank \u00b7 secondary assertion",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:028",
+          "text": "Amazon \u00b7 028\n+107006000000 USD \u00b7 normal community rank \u00b7 secondary assertion",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "lens": "questions",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Questions first",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "SUMMARY",
+          "action": null,
+          "text": "Inspect exact Scene, cutoff, method, revision and pack digest",
+          "type": null,
+          "name": null
+        },
+        "overflow": false
+      },
+      "counter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": "assessment:issue6:fragility:1"
+        },
+        "text": "Return to overview\nFinancing-dependent fragility\n\nAuthored conditional interpretation \u00b7 issue-6-engineer \u00b7 assessment:issue6:fragility:1\n\nInterpretation\nif realized paid demand does not cover serving/training outlay and payable compute obligations without new finance, apparent expansion could mask fragile cash economics. No current loss, subsidy or bubble is declared.\nAssumptions (not measured)\nunfavorable retained-demand contribution; material cash obligations distinct from announcements; limited ability to reduce/restructure spending; financing not guaranteed. All remain unknown.\nStrongest available counterevidence / limit\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\nObservable invalidation\nobtain qualified retained-customer cohorts with positive realized contribution plus same-period completed cash receipts/available liquidity sufficient for training outlay and contractual payments without uncommitted future funding. Announced rounds, run rates, cloud credits or a promised IPO alone do not invalidate B.\nEvidence cutoff\n2026-10-08T08:36:34.105385Z\nComputation\n2026-10-08T08:36:34.126791Z\nMethod\nfrontier-economics/curation/1.0.0\nVerification\nsource_checked (text/bytes only)\nCoverage numerator\nUnknown (null)\nCoverage denominator\nUnknown (null)\nNewest financial evidence\nUnknown (null)\nIndependence rationale\nWikidata community assertions and underlying referenced issuer lineages are not independent financial audits; other opaque references are unqualified. Metadata is common-source semantics, not corroboration.\nInspect the baseline cited by this explanation\nSecondary P2139 corporate revenue assertions \u00b7 unverified financial meaning\nEntity\tSource label\tSigned quantity USD\tRaw bounds USD\tCommunity rank\tEvidence\nMicrosoft\t2015 (source year)\t+93580000000\t+93579000000 / +93581000000\tnormal\tInspect source \u00b7 001\nMicrosoft\t2014 (source year)\t+86833000000\t+86832000000 / +86834000000\tnormal\tInspect source \u00b7 002\nMicrosoft\t2013 (source year)\t+77849000000\t+77848000000 / +77850000000\tnormal\tInspect source \u00b7 003\nMicrosoft\t2012 (source year)\t+73723000000\t+73722000000 / +73724000000\tnormal\tInspect source \u00b7 004\nMicrosoft\t2011 (source year)\t+69943000000\t+69942000000 / +69944000000\tnormal\tInspect source \u00b7 005\nMicrosoft\t2016 (source year)\t+85320000000\tnull / null\tnormal\tInspect source \u00b7 006\nMicrosoft\t2017 (source year)\t+89950000000\tnull / null\tnormal\tInspect source \u00b7 007\nMicrosoft\t2018 (source year)\t+110360000000\tnull / null\tnormal\tInspect source \u00b7 008\nMicrosoft\t2019 (source year)\t+125843000000\tnull / null\tnormal\tInspect source \u00b7 009\nMicrosoft\t2020 (source year)\t+143015000000\tnull / null\tnormal\tInspect source \u00b7 010\nMicrosoft\t2021 (source year)\t+168088000000\tnull / null\tnormal\tInspect source \u00b7 011\nMicrosoft\t2022 (source year)\t+198270000000\tnull / null\tnormal\tInspect source \u00b7 012\nMicrosoft\t2008 (source year)\t+60420000000\tnull / null\tnormal\tInspect source \u00b7 013\nMicrosoft\t2009 (source year)\t+58437000000\tnull / null\tnormal\tInspect source \u00b7 014\nMicrosoft\t2010 (source year)\t+62484000000\tnull / null\tnormal\tInspect source \u00b7 015\nMicrosoft\t2023 (source year)\t+211915000000\tnull / null\tnormal\tInspect source \u00b7 016\nMicrosoft\t2024 (source year)\t+245122000000\tnull / null\tnormal\tInspect source \u00b7 017\nMicrosoft\t2025 (source year)\t+281724000000\tnull / null\tnormal\tInspect source \u00b7 018\nMicrosoft\t2026 (source year)\t+331839000000\tnull / null\tpreferred\tInspect source \u00b7 019\nAmazon\t2007 (source year)\t+14835000000\tnull / null\tnormal\tInspect source \u00b7 020\nAmazon\t2008 (source year)\t+19166000000\tnull / null\tnormal\tInspect source \u00b7 021\nAmazon\t2009 (source year)\t+24509000000\tnull / null\tnormal\tInspect source \u00b7 022\nAmazon\t2010 (source year)\t+34204000000\tnull / null\tnormal\tInspect source \u00b7 023\nAmazon\t2011 (source year)\t+48077000000\tnull / null\tnormal\tInspect source \u00b7 024\nAmazon\t2012 (source year)\t+61093000000\tnull / null\tnormal\tInspect source \u00b7 025\nAmazon\t2013 (source year)\t+74452000000\tnull / null\tnormal\tInspect source \u00b7 026\nAmazon\t2014 (source year)\t+88988000000\tnull / null\tnormal\tInspect source \u00b7 027\nAmazon\t2015 (source year)\t+107006000000\tnull / null\tnormal\tInspect source \u00b7 028\nAmazon\t2016 (source year)\t+135987000000\tnull / null\tnormal\tInspect source \u00b7 029\nAmazon\t2017 (source year)\t+177866000000\tnull / null\tnormal\tInspect source \u00b7 030\nAmazon\t2018 (source year)\t+232887000000\tnull / null\tnormal\tInspect source \u00b7 031\nAmazon\t2019 (source year)\t+280522000000\tnull / null\tnormal\tInspect source \u00b7 032\nAmazon\t2020 (source year)\t+386064000000\tnull / null\tnormal\tInspect source \u00b7 033\nAmazon\t2021-12-31 (civil source day)\t+469822000000\tnull / null\tnormal\tInspect source \u00b7 034\nAmazon\t2022 (source year)\t+513983000000\tnull / null\tnormal\tInspect source \u00b7 035\nAmazon\t2023 (source year)\t+574785000000\tnull / null\tnormal\tInspect source \u00b7 036\nAmazon\t2024 (source year)\t+637959000000\tnull / null\tnormal\tInspect source \u00b7 037\nAmazon\t2025 (source year)\t+716924000000\tnull / null\tpreferred\tInspect source \u00b7 038",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "source": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": "observation:issue6:001"
+        },
+        "text": "Return to overview\nMicrosoft \u00b7 2015 (source year)\n\nSource-attributed secondary community assertion, not issuer-verified recognized revenue or AI revenue.\n\nObservation\nobservation:issue6:001\nClaim\nclaim:issue6:reported:001\nEvidence span\nspan:issue6:view:003\nRaw signed quantity\n+93580000000 USD\nRaw lower bound\n+93579000000\nRaw upper bound\n+93581000000\nCommunity rank (not truth)\nnormal\nScope\nCorporate-wide secondary community total-revenue assertion; accounting basis, comparability and AI allocation unknown; raw bounds/qualifiers/rank/references in cited statement.\nSource publication instant\nUnknown (null)\nObserved at\n2026-10-08T07:29:27.430930Z\nIngested at (local registration)\n2026-10-08T08:36:34.105385Z\nEvent start\nUnknown (null)\nEvent end\nUnknown (null)\nAccounting period start\nUnknown (null)\nAccounting period end\nUnknown (null)\nAssessment cutoff\n2026-10-08T08:36:34.105385Z\nAssessment computation\n2026-10-08T08:36:34.126791Z\nSource access \u00b7 exact canonical view \u2192 complete original\nOpen pinned Wikidata source revision\nCanonical source revision\nsource:issue6:view:003\nCanonical content SHA256\nec005786be4ff6b34bac8750f725d43e3cff5bce7591c4ecaa51f3194cdce228\nCanonical span selector\n{\"end\":1990,\"kind\":\"utf8_text\",\"start\":58}\nOrigin (not independent corroboration)\norigin:wikidata:structured\nOriginal encoded SHA256\ne42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7\nOriginal decoded SHA256\nd066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea\nExact decoded-original selector\n{\"end\":149098,\"kind\":\"decoded_utf8_json\",\"start\":147166}\nRaw original quote SHA256\nbec9cb999a10ad99f3dc3a00494bd1d2b7f4ba1c40d0a8a326d99333e7fc4e4f\nNormalizer\nfrontier-economics/cc0-canonical-view/1.0.0\nOriginal source revision\n2550576892\nDownload complete licensed gzip original \u00b7 Q2283-r2550576892.json.bin\nFull canonical statement \u00b7 amount, bounds, rank, qualifiers and references\nExact cited span text (untrusted evidence)\nFull canonical source-view text (untrusted evidence)\nReferenced URLs \u00b7 unacquired and unverified\nhttps://web.archive.org/web/20220412010754/https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nhttps://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nStrongest available counterweight to a collapse story\n\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\n\nAgainst the buffer explanation: the entire numeric baseline is corporate-wide secondary revenue, while AI allocation, cash conversion, retention, training outlay and payment schedule are null. Preferred rank and repeated issuer-linked reporting do not rescue these premises. No observed negative margin is asserted.\n\nInspect counterevidence and its limits",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "after_overview": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 572
+        },
+        "focus": {
+          "tag": "SECTION",
+          "action": null,
+          "text": "Start with a question, then challenge an explanation\n\nChoose a bounded research question. Compare conditional explanations before opening the same underlying evidence. No automated answer or private inference.\n\nWhat revenue, segment results",
+          "type": null,
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "A",
+          "action": null,
+          "text": "Skip to exploration",
+          "type": null,
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "lens": "relationship",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Relationships first",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Timeline first",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "counter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": "assessment:issue6:fragility:1"
+        },
+        "text": "Return to overview\nFinancing-dependent fragility\n\nAuthored conditional interpretation \u00b7 issue-6-engineer \u00b7 assessment:issue6:fragility:1\n\nInterpretation\nif realized paid demand does not cover serving/training outlay and payable compute obligations without new finance, apparent expansion could mask fragile cash economics. No current loss, subsidy or bubble is declared.\nAssumptions (not measured)\nunfavorable retained-demand contribution; material cash obligations distinct from announcements; limited ability to reduce/restructure spending; financing not guaranteed. All remain unknown.\nStrongest available counterevidence / limit\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\nObservable invalidation\nobtain qualified retained-customer cohorts with positive realized contribution plus same-period completed cash receipts/available liquidity sufficient for training outlay and contractual payments without uncommitted future funding. Announced rounds, run rates, cloud credits or a promised IPO alone do not invalidate B.\nEvidence cutoff\n2026-10-08T08:36:34.105385Z\nComputation\n2026-10-08T08:36:34.126791Z\nMethod\nfrontier-economics/curation/1.0.0\nVerification\nsource_checked (text/bytes only)\nCoverage numerator\nUnknown (null)\nCoverage denominator\nUnknown (null)\nNewest financial evidence\nUnknown (null)\nIndependence rationale\nWikidata community assertions and underlying referenced issuer lineages are not independent financial audits; other opaque references are unqualified. Metadata is common-source semantics, not corroboration.\nInspect the baseline cited by this explanation\nSecondary P2139 corporate revenue assertions \u00b7 unverified financial meaning\nMicrosoft\n2015 (source year)\n+93580000000\n+93579000000 / +93581000000\nnormal\nInspect source \u00b7 001\nMicrosoft\n2014 (source year)\n+86833000000\n+86832000000 / +86834000000\nnormal\nInspect source \u00b7 002\nMicrosoft\n2013 (source year)\n+77849000000\n+77848000000 / +77850000000\nnormal\nInspect source \u00b7 003\nMicrosoft\n2012 (source year)\n+73723000000\n+73722000000 / +73724000000\nnormal\nInspect source \u00b7 004\nMicrosoft\n2011 (source year)\n+69943000000\n+69942000000 / +69944000000\nnormal\nInspect source \u00b7 005\nMicrosoft\n2016 (source year)\n+85320000000\nnull / null\nnormal\nInspect source \u00b7 006\nMicrosoft\n2017 (source year)\n+89950000000\nnull / null\nnormal\nInspect source \u00b7 007\nMicrosoft\n2018 (source year)\n+110360000000\nnull / null\nnormal\nInspect source \u00b7 008\nMicrosoft\n2019 (source year)\n+125843000000\nnull / null\nnormal\nInspect source \u00b7 009\nMicrosoft\n2020 (source year)\n+143015000000\nnull / null\nnormal\nInspect source \u00b7 010\nMicrosoft\n2021 (source year)\n+168088000000\nnull / null\nnormal\nInspect source \u00b7 011\nMicrosoft\n2022 (source year)\n+198270000000\nnull / null\nnormal\nInspect source \u00b7 012\nMicrosoft\n2008 (source year)\n+60420000000\nnull / null\nnormal\nInspect source \u00b7 013\nMicrosoft\n2009 (source year)\n+58437000000\nnull / null\nnormal\nInspect source \u00b7 014\nMicrosoft\n2010 (source year)\n+62484000000\nnull / null\nnormal\nInspect source \u00b7 015\nMicrosoft\n2023 (source year)\n+211915000000\nnull / null\nnormal\nInspect source \u00b7 016\nMicrosoft\n2024 (source year)\n+245122000000\nnull / null\nnormal\nInspect source \u00b7 017\nMicrosoft\n2025 (source year)\n+281724000000\nnull / null\nnormal\nInspect source \u00b7 018\nMicrosoft\n2026 (source year)\n+331839000000\nnull / null\npreferred\nInspect source \u00b7 019\nAmazon\n2007 (source year)\n+14835000000\nnull / null\nnormal\nInspect source \u00b7 020\nAmazon\n2008 (source year)\n+19166000000\nnull / null\nnormal\nInspect source \u00b7 021\nAmazon\n2009 (source year)\n+24509000000\nnull / null\nnormal\nInspect source \u00b7 022\nAmazon\n2010 (source year)\n+34204000000\nnull / null\nnormal\nInspect source \u00b7 023\nAmazon\n2011 (source year)\n+48077000000\nnull / null\nnormal\nInspect source \u00b7 024\nAmazon\n2012 (source year)\n+61093000000\nnull / null\nnormal\nInspect source \u00b7 025\nAmazon\n2013 (source year)\n+74452000000\nnull / null\nnormal\nInspect source \u00b7 026\nAmazon\n2014 (source year)\n+88988000000\nnull / null\nnormal\nInspect source \u00b7 027\nAmazon\n2015 (source year)\n+107006000000\nnull / null\nnormal\nInspect source \u00b7 028\nAmazon\n2016 (source year)\n+135987000000\nnull / null\nnormal\nInspect source \u00b7 029\nAmazon\n2017 (source year)\n+177866000000\nnull / null\nnormal\nInspect source \u00b7 030\nAmazon\n2018 (source year)\n+232887000000\nnull / null\nnormal\nInspect source \u00b7 031\nAmazon\n2019 (source year)\n+280522000000\nnull / null\nnormal\nInspect source \u00b7 032\nAmazon\n2020 (source year)\n+386064000000\nnull / null\nnormal\nInspect source \u00b7 033\nAmazon\n2021-12-31 (civil source day)\n+469822000000\nnull / null\nnormal\nInspect source \u00b7 034\nAmazon\n2022 (source year)\n+513983000000\nnull / null\nnormal\nInspect source \u00b7 035\nAmazon\n2023 (source year)\n+574785000000\nnull / null\nnormal\nInspect source \u00b7 036\nAmazon\n2024 (source year)\n+637959000000\nnull / null\nnormal\nInspect source \u00b7 037\nAmazon\n2025 (source year)\n+716924000000\nnull / null\npreferred\nInspect source \u00b7 038",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "source": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": "observation:issue6:001"
+        },
+        "text": "Return to overview\nMicrosoft \u00b7 2015 (source year)\n\nSource-attributed secondary community assertion, not issuer-verified recognized revenue or AI revenue.\n\nObservation\nobservation:issue6:001\nClaim\nclaim:issue6:reported:001\nEvidence span\nspan:issue6:view:003\nRaw signed quantity\n+93580000000 USD\nRaw lower bound\n+93579000000\nRaw upper bound\n+93581000000\nCommunity rank (not truth)\nnormal\nScope\nCorporate-wide secondary community total-revenue assertion; accounting basis, comparability and AI allocation unknown; raw bounds/qualifiers/rank/references in cited statement.\nSource publication instant\nUnknown (null)\nObserved at\n2026-10-08T07:29:27.430930Z\nIngested at (local registration)\n2026-10-08T08:36:34.105385Z\nEvent start\nUnknown (null)\nEvent end\nUnknown (null)\nAccounting period start\nUnknown (null)\nAccounting period end\nUnknown (null)\nAssessment cutoff\n2026-10-08T08:36:34.105385Z\nAssessment computation\n2026-10-08T08:36:34.126791Z\nSource access \u00b7 exact canonical view \u2192 complete original\nOpen pinned Wikidata source revision\nCanonical source revision\nsource:issue6:view:003\nCanonical content SHA256\nec005786be4ff6b34bac8750f725d43e3cff5bce7591c4ecaa51f3194cdce228\nCanonical span selector\n{\"end\":1990,\"kind\":\"utf8_text\",\"start\":58}\nOrigin (not independent corroboration)\norigin:wikidata:structured\nOriginal encoded SHA256\ne42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7\nOriginal decoded SHA256\nd066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea\nExact decoded-original selector\n{\"end\":149098,\"kind\":\"decoded_utf8_json\",\"start\":147166}\nRaw original quote SHA256\nbec9cb999a10ad99f3dc3a00494bd1d2b7f4ba1c40d0a8a326d99333e7fc4e4f\nNormalizer\nfrontier-economics/cc0-canonical-view/1.0.0\nOriginal source revision\n2550576892\nDownload complete licensed gzip original \u00b7 Q2283-r2550576892.json.bin\nFull canonical statement \u00b7 amount, bounds, rank, qualifiers and references\nExact cited span text (untrusted evidence)\nFull canonical source-view text (untrusted evidence)\nReferenced URLs \u00b7 unacquired and unverified\nhttps://web.archive.org/web/20220412010754/https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nhttps://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nStrongest available counterweight to a collapse story\n\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\n\nAgainst the buffer explanation: the entire numeric baseline is corporate-wide secondary revenue, while AI allocation, cash conversion, retention, training outlay and payment schedule are null. Preferred rank and repeated issuer-linked reporting do not rescue these premises. No observed negative margin is asserted.\n\nInspect counterevidence and its limits",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "after_overview": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "relationship",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1117
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:001",
+          "text": "Inspect source \u00b7 001",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:002",
+          "text": "Inspect source \u00b7 002",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "lens": "timeline",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Timeline first",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Questions first",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "counter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": "assessment:issue6:fragility:1"
+        },
+        "text": "Return to overview\nFinancing-dependent fragility\n\nAuthored conditional interpretation \u00b7 issue-6-engineer \u00b7 assessment:issue6:fragility:1\n\nInterpretation\nif realized paid demand does not cover serving/training outlay and payable compute obligations without new finance, apparent expansion could mask fragile cash economics. No current loss, subsidy or bubble is declared.\nAssumptions (not measured)\nunfavorable retained-demand contribution; material cash obligations distinct from announcements; limited ability to reduce/restructure spending; financing not guaranteed. All remain unknown.\nStrongest available counterevidence / limit\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\nObservable invalidation\nobtain qualified retained-customer cohorts with positive realized contribution plus same-period completed cash receipts/available liquidity sufficient for training outlay and contractual payments without uncommitted future funding. Announced rounds, run rates, cloud credits or a promised IPO alone do not invalidate B.\nEvidence cutoff\n2026-10-08T08:36:34.105385Z\nComputation\n2026-10-08T08:36:34.126791Z\nMethod\nfrontier-economics/curation/1.0.0\nVerification\nsource_checked (text/bytes only)\nCoverage numerator\nUnknown (null)\nCoverage denominator\nUnknown (null)\nNewest financial evidence\nUnknown (null)\nIndependence rationale\nWikidata community assertions and underlying referenced issuer lineages are not independent financial audits; other opaque references are unqualified. Metadata is common-source semantics, not corroboration.\nInspect the baseline cited by this explanation\nSecondary P2139 corporate revenue assertions \u00b7 unverified financial meaning\nMicrosoft\n2015 (source year)\n+93580000000\n+93579000000 / +93581000000\nnormal\nInspect source \u00b7 001\nMicrosoft\n2014 (source year)\n+86833000000\n+86832000000 / +86834000000\nnormal\nInspect source \u00b7 002\nMicrosoft\n2013 (source year)\n+77849000000\n+77848000000 / +77850000000\nnormal\nInspect source \u00b7 003\nMicrosoft\n2012 (source year)\n+73723000000\n+73722000000 / +73724000000\nnormal\nInspect source \u00b7 004\nMicrosoft\n2011 (source year)\n+69943000000\n+69942000000 / +69944000000\nnormal\nInspect source \u00b7 005\nMicrosoft\n2016 (source year)\n+85320000000\nnull / null\nnormal\nInspect source \u00b7 006\nMicrosoft\n2017 (source year)\n+89950000000\nnull / null\nnormal\nInspect source \u00b7 007\nMicrosoft\n2018 (source year)\n+110360000000\nnull / null\nnormal\nInspect source \u00b7 008\nMicrosoft\n2019 (source year)\n+125843000000\nnull / null\nnormal\nInspect source \u00b7 009\nMicrosoft\n2020 (source year)\n+143015000000\nnull / null\nnormal\nInspect source \u00b7 010\nMicrosoft\n2021 (source year)\n+168088000000\nnull / null\nnormal\nInspect source \u00b7 011\nMicrosoft\n2022 (source year)\n+198270000000\nnull / null\nnormal\nInspect source \u00b7 012\nMicrosoft\n2008 (source year)\n+60420000000\nnull / null\nnormal\nInspect source \u00b7 013\nMicrosoft\n2009 (source year)\n+58437000000\nnull / null\nnormal\nInspect source \u00b7 014\nMicrosoft\n2010 (source year)\n+62484000000\nnull / null\nnormal\nInspect source \u00b7 015\nMicrosoft\n2023 (source year)\n+211915000000\nnull / null\nnormal\nInspect source \u00b7 016\nMicrosoft\n2024 (source year)\n+245122000000\nnull / null\nnormal\nInspect source \u00b7 017\nMicrosoft\n2025 (source year)\n+281724000000\nnull / null\nnormal\nInspect source \u00b7 018\nMicrosoft\n2026 (source year)\n+331839000000\nnull / null\npreferred\nInspect source \u00b7 019\nAmazon\n2007 (source year)\n+14835000000\nnull / null\nnormal\nInspect source \u00b7 020\nAmazon\n2008 (source year)\n+19166000000\nnull / null\nnormal\nInspect source \u00b7 021\nAmazon\n2009 (source year)\n+24509000000\nnull / null\nnormal\nInspect source \u00b7 022\nAmazon\n2010 (source year)\n+34204000000\nnull / null\nnormal\nInspect source \u00b7 023\nAmazon\n2011 (source year)\n+48077000000\nnull / null\nnormal\nInspect source \u00b7 024\nAmazon\n2012 (source year)\n+61093000000\nnull / null\nnormal\nInspect source \u00b7 025\nAmazon\n2013 (source year)\n+74452000000\nnull / null\nnormal\nInspect source \u00b7 026\nAmazon\n2014 (source year)\n+88988000000\nnull / null\nnormal\nInspect source \u00b7 027\nAmazon\n2015 (source year)\n+107006000000\nnull / null\nnormal\nInspect source \u00b7 028\nAmazon\n2016 (source year)\n+135987000000\nnull / null\nnormal\nInspect source \u00b7 029\nAmazon\n2017 (source year)\n+177866000000\nnull / null\nnormal\nInspect source \u00b7 030\nAmazon\n2018 (source year)\n+232887000000\nnull / null\nnormal\nInspect source \u00b7 031\nAmazon\n2019 (source year)\n+280522000000\nnull / null\nnormal\nInspect source \u00b7 032\nAmazon\n2020 (source year)\n+386064000000\nnull / null\nnormal\nInspect source \u00b7 033\nAmazon\n2021-12-31 (civil source day)\n+469822000000\nnull / null\nnormal\nInspect source \u00b7 034\nAmazon\n2022 (source year)\n+513983000000\nnull / null\nnormal\nInspect source \u00b7 035\nAmazon\n2023 (source year)\n+574785000000\nnull / null\nnormal\nInspect source \u00b7 036\nAmazon\n2024 (source year)\n+637959000000\nnull / null\nnormal\nInspect source \u00b7 037\nAmazon\n2025 (source year)\n+716924000000\nnull / null\npreferred\nInspect source \u00b7 038",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "source": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": "observation:issue6:001"
+        },
+        "text": "Return to overview\nMicrosoft \u00b7 2015 (source year)\n\nSource-attributed secondary community assertion, not issuer-verified recognized revenue or AI revenue.\n\nObservation\nobservation:issue6:001\nClaim\nclaim:issue6:reported:001\nEvidence span\nspan:issue6:view:003\nRaw signed quantity\n+93580000000 USD\nRaw lower bound\n+93579000000\nRaw upper bound\n+93581000000\nCommunity rank (not truth)\nnormal\nScope\nCorporate-wide secondary community total-revenue assertion; accounting basis, comparability and AI allocation unknown; raw bounds/qualifiers/rank/references in cited statement.\nSource publication instant\nUnknown (null)\nObserved at\n2026-10-08T07:29:27.430930Z\nIngested at (local registration)\n2026-10-08T08:36:34.105385Z\nEvent start\nUnknown (null)\nEvent end\nUnknown (null)\nAccounting period start\nUnknown (null)\nAccounting period end\nUnknown (null)\nAssessment cutoff\n2026-10-08T08:36:34.105385Z\nAssessment computation\n2026-10-08T08:36:34.126791Z\nSource access \u00b7 exact canonical view \u2192 complete original\nOpen pinned Wikidata source revision\nCanonical source revision\nsource:issue6:view:003\nCanonical content SHA256\nec005786be4ff6b34bac8750f725d43e3cff5bce7591c4ecaa51f3194cdce228\nCanonical span selector\n{\"end\":1990,\"kind\":\"utf8_text\",\"start\":58}\nOrigin (not independent corroboration)\norigin:wikidata:structured\nOriginal encoded SHA256\ne42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7\nOriginal decoded SHA256\nd066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea\nExact decoded-original selector\n{\"end\":149098,\"kind\":\"decoded_utf8_json\",\"start\":147166}\nRaw original quote SHA256\nbec9cb999a10ad99f3dc3a00494bd1d2b7f4ba1c40d0a8a326d99333e7fc4e4f\nNormalizer\nfrontier-economics/cc0-canonical-view/1.0.0\nOriginal source revision\n2550576892\nDownload complete licensed gzip original \u00b7 Q2283-r2550576892.json.bin\nFull canonical statement \u00b7 amount, bounds, rank, qualifiers and references\nExact cited span text (untrusted evidence)\nFull canonical source-view text (untrusted evidence)\nReferenced URLs \u00b7 unacquired and unverified\nhttps://web.archive.org/web/20220412010754/https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nhttps://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nStrongest available counterweight to a collapse story\n\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\n\nAgainst the buffer explanation: the entire numeric baseline is corporate-wide secondary revenue, while AI allocation, cash conversion, retention, training outlay and payment schedule are null. Preferred rank and repeated issuer-linked reporting do not rescue these premises. No observed negative margin is asserted.\n\nInspect counterevidence and its limits",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "after_overview": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "timeline",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 4583
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:001",
+          "text": "Microsoft \u00b7 001\n+93580000000 USD \u00b7 normal community rank \u00b7 secondary assertion",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "observation:issue6:028",
+          "text": "Amazon \u00b7 028\n+107006000000 USD \u00b7 normal community rank \u00b7 secondary assertion",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "lens": "questions",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 30
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Questions first",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "SUMMARY",
+          "action": null,
+          "text": "Inspect exact Scene, cutoff, method, revision and pack digest",
+          "type": null,
+          "name": null
+        },
+        "overflow": false
+      },
+      "counter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": "assessment:issue6:fragility:1"
+        },
+        "text": "Return to overview\nFinancing-dependent fragility\n\nAuthored conditional interpretation \u00b7 issue-6-engineer \u00b7 assessment:issue6:fragility:1\n\nInterpretation\nif realized paid demand does not cover serving/training outlay and payable compute obligations without new finance, apparent expansion could mask fragile cash economics. No current loss, subsidy or bubble is declared.\nAssumptions (not measured)\nunfavorable retained-demand contribution; material cash obligations distinct from announcements; limited ability to reduce/restructure spending; financing not guaranteed. All remain unknown.\nStrongest available counterevidence / limit\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\nObservable invalidation\nobtain qualified retained-customer cohorts with positive realized contribution plus same-period completed cash receipts/available liquidity sufficient for training outlay and contractual payments without uncommitted future funding. Announced rounds, run rates, cloud credits or a promised IPO alone do not invalidate B.\nEvidence cutoff\n2026-10-08T08:36:34.105385Z\nComputation\n2026-10-08T08:36:34.126791Z\nMethod\nfrontier-economics/curation/1.0.0\nVerification\nsource_checked (text/bytes only)\nCoverage numerator\nUnknown (null)\nCoverage denominator\nUnknown (null)\nNewest financial evidence\nUnknown (null)\nIndependence rationale\nWikidata community assertions and underlying referenced issuer lineages are not independent financial audits; other opaque references are unqualified. Metadata is common-source semantics, not corroboration.\nInspect the baseline cited by this explanation\nSecondary P2139 corporate revenue assertions \u00b7 unverified financial meaning\nMicrosoft\n2015 (source year)\n+93580000000\n+93579000000 / +93581000000\nnormal\nInspect source \u00b7 001\nMicrosoft\n2014 (source year)\n+86833000000\n+86832000000 / +86834000000\nnormal\nInspect source \u00b7 002\nMicrosoft\n2013 (source year)\n+77849000000\n+77848000000 / +77850000000\nnormal\nInspect source \u00b7 003\nMicrosoft\n2012 (source year)\n+73723000000\n+73722000000 / +73724000000\nnormal\nInspect source \u00b7 004\nMicrosoft\n2011 (source year)\n+69943000000\n+69942000000 / +69944000000\nnormal\nInspect source \u00b7 005\nMicrosoft\n2016 (source year)\n+85320000000\nnull / null\nnormal\nInspect source \u00b7 006\nMicrosoft\n2017 (source year)\n+89950000000\nnull / null\nnormal\nInspect source \u00b7 007\nMicrosoft\n2018 (source year)\n+110360000000\nnull / null\nnormal\nInspect source \u00b7 008\nMicrosoft\n2019 (source year)\n+125843000000\nnull / null\nnormal\nInspect source \u00b7 009\nMicrosoft\n2020 (source year)\n+143015000000\nnull / null\nnormal\nInspect source \u00b7 010\nMicrosoft\n2021 (source year)\n+168088000000\nnull / null\nnormal\nInspect source \u00b7 011\nMicrosoft\n2022 (source year)\n+198270000000\nnull / null\nnormal\nInspect source \u00b7 012\nMicrosoft\n2008 (source year)\n+60420000000\nnull / null\nnormal\nInspect source \u00b7 013\nMicrosoft\n2009 (source year)\n+58437000000\nnull / null\nnormal\nInspect source \u00b7 014\nMicrosoft\n2010 (source year)\n+62484000000\nnull / null\nnormal\nInspect source \u00b7 015\nMicrosoft\n2023 (source year)\n+211915000000\nnull / null\nnormal\nInspect source \u00b7 016\nMicrosoft\n2024 (source year)\n+245122000000\nnull / null\nnormal\nInspect source \u00b7 017\nMicrosoft\n2025 (source year)\n+281724000000\nnull / null\nnormal\nInspect source \u00b7 018\nMicrosoft\n2026 (source year)\n+331839000000\nnull / null\npreferred\nInspect source \u00b7 019\nAmazon\n2007 (source year)\n+14835000000\nnull / null\nnormal\nInspect source \u00b7 020\nAmazon\n2008 (source year)\n+19166000000\nnull / null\nnormal\nInspect source \u00b7 021\nAmazon\n2009 (source year)\n+24509000000\nnull / null\nnormal\nInspect source \u00b7 022\nAmazon\n2010 (source year)\n+34204000000\nnull / null\nnormal\nInspect source \u00b7 023\nAmazon\n2011 (source year)\n+48077000000\nnull / null\nnormal\nInspect source \u00b7 024\nAmazon\n2012 (source year)\n+61093000000\nnull / null\nnormal\nInspect source \u00b7 025\nAmazon\n2013 (source year)\n+74452000000\nnull / null\nnormal\nInspect source \u00b7 026\nAmazon\n2014 (source year)\n+88988000000\nnull / null\nnormal\nInspect source \u00b7 027\nAmazon\n2015 (source year)\n+107006000000\nnull / null\nnormal\nInspect source \u00b7 028\nAmazon\n2016 (source year)\n+135987000000\nnull / null\nnormal\nInspect source \u00b7 029\nAmazon\n2017 (source year)\n+177866000000\nnull / null\nnormal\nInspect source \u00b7 030\nAmazon\n2018 (source year)\n+232887000000\nnull / null\nnormal\nInspect source \u00b7 031\nAmazon\n2019 (source year)\n+280522000000\nnull / null\nnormal\nInspect source \u00b7 032\nAmazon\n2020 (source year)\n+386064000000\nnull / null\nnormal\nInspect source \u00b7 033\nAmazon\n2021-12-31 (civil source day)\n+469822000000\nnull / null\nnormal\nInspect source \u00b7 034\nAmazon\n2022 (source year)\n+513983000000\nnull / null\nnormal\nInspect source \u00b7 035\nAmazon\n2023 (source year)\n+574785000000\nnull / null\nnormal\nInspect source \u00b7 036\nAmazon\n2024 (source year)\n+637959000000\nnull / null\nnormal\nInspect source \u00b7 037\nAmazon\n2025 (source year)\n+716924000000\nnull / null\npreferred\nInspect source \u00b7 038",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "source": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": "observation:issue6:001"
+        },
+        "text": "Return to overview\nMicrosoft \u00b7 2015 (source year)\n\nSource-attributed secondary community assertion, not issuer-verified recognized revenue or AI revenue.\n\nObservation\nobservation:issue6:001\nClaim\nclaim:issue6:reported:001\nEvidence span\nspan:issue6:view:003\nRaw signed quantity\n+93580000000 USD\nRaw lower bound\n+93579000000\nRaw upper bound\n+93581000000\nCommunity rank (not truth)\nnormal\nScope\nCorporate-wide secondary community total-revenue assertion; accounting basis, comparability and AI allocation unknown; raw bounds/qualifiers/rank/references in cited statement.\nSource publication instant\nUnknown (null)\nObserved at\n2026-10-08T07:29:27.430930Z\nIngested at (local registration)\n2026-10-08T08:36:34.105385Z\nEvent start\nUnknown (null)\nEvent end\nUnknown (null)\nAccounting period start\nUnknown (null)\nAccounting period end\nUnknown (null)\nAssessment cutoff\n2026-10-08T08:36:34.105385Z\nAssessment computation\n2026-10-08T08:36:34.126791Z\nSource access \u00b7 exact canonical view \u2192 complete original\nOpen pinned Wikidata source revision\nCanonical source revision\nsource:issue6:view:003\nCanonical content SHA256\nec005786be4ff6b34bac8750f725d43e3cff5bce7591c4ecaa51f3194cdce228\nCanonical span selector\n{\"end\":1990,\"kind\":\"utf8_text\",\"start\":58}\nOrigin (not independent corroboration)\norigin:wikidata:structured\nOriginal encoded SHA256\ne42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7\nOriginal decoded SHA256\nd066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea\nExact decoded-original selector\n{\"end\":149098,\"kind\":\"decoded_utf8_json\",\"start\":147166}\nRaw original quote SHA256\nbec9cb999a10ad99f3dc3a00494bd1d2b7f4ba1c40d0a8a326d99333e7fc4e4f\nNormalizer\nfrontier-economics/cc0-canonical-view/1.0.0\nOriginal source revision\n2550576892\nDownload complete licensed gzip original \u00b7 Q2283-r2550576892.json.bin\nFull canonical statement \u00b7 amount, bounds, rank, qualifiers and references\nExact cited span text (untrusted evidence)\nFull canonical source-view text (untrusted evidence)\nReferenced URLs \u00b7 unacquired and unverified\nhttps://web.archive.org/web/20220412010754/https://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nhttps://c.s-microsoft.com/en-us/CMSFiles/MSFT_FY15Q4_10K.docx?version=9fe5e8b6-2e7b-847e-d3e3-a3ba0035973e\nStrongest available counterweight to a collapse story\n\nthe acquired secondary revenue baseline supplies a concrete alternative to \u201cno economic activity\u201d; diversified partners could provide a buffer under A\u2019s unmeasured premises. This is a source-backed reason not to equate absent private numbers with a proved collapse. There is no direct measured counterexample for private-lab fragility in this pack.\n\nAgainst the buffer explanation: the entire numeric baseline is corporate-wide secondary revenue, while AI allocation, cash conversion, retention, training outlay and payment schedule are null. Preferred rank and repeated issuer-linked reporting do not rescue these premises. No observed negative margin is asserted.\n\nInspect counterevidence and its limits",
+        "focus": "ASIDE",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "overflow": false
+      },
+      "after_overview": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 2016
+        },
+        "focus": {
+          "tag": "SECTION",
+          "action": null,
+          "text": "Start with a question, then challenge an explanation\n\nChoose a bounded research question. Compare conditional explanations before opening the same underlying evidence. No automated answer or private inference.\n\nWhat revenue, segment results",
+          "type": null,
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "A",
+          "action": null,
+          "text": "Skip to exploration",
+          "type": null,
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    }
+  ],
+  "actual_frames": {
+    "1280": "/var/tmp/sofia-agents/omp-sshots-159fcce92f2878d8.webp",
+    "390": "/var/tmp/sofia-agents/omp-sshots-159fccec122878d9.webp"
+  },
+  "console": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "errors": {
+    "entries": [],
+    "nextSeq": 0,
+    "dropped": 0
+  },
+  "verifier_scaffold_failures_preserved": [
+    "All43data-actioncontrols includeunrelatedsourcebuttons, filteractualquestion:prefix4beforeEnter",
+    "Wide4questionspassed thenASCIIunicodeescapedstepselector matchednone; literalUnicodecorrectonlyfailedfocus+remaining3wide/7narrow",
+    "FirstcounterIDguard wronglyomitted:1; acceptedpublicpack actualIDassessment:issue6:fragility:1 reread, correctedonlyfailedguard thenremaining5readerpaths. No sourcechange."
+  ],
+  "human_Felipe": null,
+  "original_acceptance": null,
+  "current_aggregate": "pendingallwriterfreeze; previous5dfehistoricalnotcurrent",
+  "DPR": "Actual1.25allparentrows CSS1280x900/390x844, fullPage rasterwidthcapturesdocumentnotCSSviewport"
+}

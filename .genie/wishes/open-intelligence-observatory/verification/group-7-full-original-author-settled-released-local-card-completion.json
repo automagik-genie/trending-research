@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-09T21:45:49.712411+00:00",
+  "positive_full_original_parent_acceptance": ".genie/wishes/open-intelligence-observatory/verification/group-7-full-original-author-handoff-positive-parent-acceptance.json",
+  "release_invalid_RUN_flag_failed_before_mutation": {
+    "exit_code": 1,
+    "stdout": "{\n  \"id\": \"local\",\n  \"ok\": false,\n  \"error\": {\n    \"code\": \"invalid_argument\",\n    \"message\": \"Unknown flag --run for command: orchestration worker-release\",\n    \"data\": {\n      \"validFlags\": [\n        \"dispatch\",\n        \"environment\",\n        \"help\",\n        \"json\",\n        \"pairing-code\",\n        \"retry-request\"\n      ],\n      \"suggestions\": [\n        \"json\"\n      ],\n      \"nextSteps\": [\n        \"Did you mean: --json\",\n        \"Valid flags: --dispatch, --environment, --help, --json, --pairing-code, --retry-request\"\n      ]\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": null\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "local",
+      "ok": false,
+      "error": {
+        "code": "invalid_argument",
+        "message": "Unknown flag --run for command: orchestration worker-release",
+        "data": {
+          "validFlags": [
+            "dispatch",
+            "environment",
+            "help",
+            "json",
+            "pairing-code",
+            "retry-request"
+          ],
+          "suggestions": [
+            "json"
+          ],
+          "nextSteps": [
+            "Did you mean: --json",
+            "Valid flags: --dispatch, --environment, --help, --json, --pairing-code, --retry-request"
+          ]
+        }
+      },
+      "_meta": {
+        "runtimeId": null
+      }
+    }
+  },
+  "native_author_release_supported_actual": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"335a6f97-feca-4f99-b052-30dab3f7146e\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_a45e75e8c6bc\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"a78de8c6-c2ea-4838-8eca-33076723895f\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "335a6f97-feca-4f99-b052-30dab3f7146e",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_a45e75e8c6bc",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "a78de8c6-c2ea-4838-8eca-33076723895f",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "original_card_done_actual": {
+    "exit": 0,
+    "stdout": "Task t_muz1j3f7944dc064 marked done.\n",
+    "stderr": ""
+  },
+  "release_after_positive_fullread_before_delivery_ACK": true,
+  "local_original_acceptances_if_done": 6,
+  "original_issues_total": 20,
+  "forge_issue_closed": false,
+  "git_mutation": false,
+  "whole_roadmap_complete": false
+}

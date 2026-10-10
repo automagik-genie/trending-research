@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-10-09T21:31:32.513960+00:00",
+  "worker_done_message": "msg_1636c1d3bd2f",
+  "task": "task_75ef116df36d",
+  "dispatch": "ctx_9034fe8beb77",
+  "positive_full_report_assessment": true,
+  "full_121line_report_read": true,
+  "report_metadata": {
+    "sha256": "67a62e512e7e0fec23d5de9fba52750d8090b449759680ed75801a6eba5789d9",
+    "bytes": 27385,
+    "mode": "0600"
+  },
+  "parent_copy": ".genie/wishes/open-intelligence-observatory/verification/group-7-final-actual-human-doc-quality-rebind-1.txt",
+  "verdict": "SHIPboundedcurrentDoc/UIquality all8criteria0HIGH0CRITICAL, MEDIUMhistoricalaggregatewording, exactdiff6removed11addedNET5; originalC1C4separatec09e",
+  "new12_sha256": "3443be140200d08355cc21e1a11bcfb29d18cc83a0c519e306d913970a0a27ae",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"f71e0744-42a3-46bd-bc49-98e964ed46c8\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_9034fe8beb77\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"transcript\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"9326607c-689b-4cd1-bb08-03ba1d5136e7\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "f71e0744-42a3-46bd-bc49-98e964ed46c8",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_9034fe8beb77",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "transcript",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "9326607c-689b-4cd1-bb08-03ba1d5136e7",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "original_card_done": false,
+  "before_delivery_ACK": true,
+  "repair_caps": "source2/2quality1/1effort0 unchanged",
+  "current_aggregate_sha256": "aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c"
+}
