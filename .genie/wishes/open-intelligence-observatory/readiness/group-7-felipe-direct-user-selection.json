@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-09T20:33:01.308005+00:00",
+  "issue": "https://github.com/namastex888/trending-research/issues/8",
+  "authority": "Direct actual conversation response, user attests I am Felipe; not inferred from GitHub account",
+  "user_answers": {
+    "direction_actor": "I am Felipe",
+    "primary_direction": "Guided questions first",
+    "fresh_key_file": "Fresh file ready"
+  },
+  "selected_primary": "questions",
+  "rationale_explicitly_adopted_from_option": "Compare explanations, inspect evidence, then identify missing premises before drawing conclusions. Relationship and timeline lenses remain available.",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "candidate12_sha256_before_human_doc": "00cfaf1dd043d2790b7ff744a2019a8d653f6b977652420ec0a87fe5ee032549",
+  "bounded_quality_report_sha256": "9d369bab178f010641e3b3a7d1de5d796793893d93b0a9f51f67a57fc213dcd7",
+  "six_real_candidate_images": "1280x900 and390x844 originalPNG visually shown beforechoice",
+  "actual_source_counter_path_proof_sha256": "0f8bfcd9bc928a1c3321dd8b5527c739948a3b26c90bbd827f375f304ce994b2",
+  "human_decision_not_roadmap_or_deployment_acceptance": true,
+  "fresh_key_local_path": null,
+  "fresh_key_value_received": false,
+  "paid_or_provider_access_admitted": false,
+  "remaining": "Doc-onlyhumanrecord/fresh12binding/original8review/currentaggregate; keyPATH still missing not key text"
+}

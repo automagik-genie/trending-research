@@ -1,0 +1,1825 @@
+{
+  "recorded_at": "2026-10-09T18:52:43.451011+00:00",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "candidate12_sha256": "00cfaf1dd043d2790b7ff744a2019a8d653f6b977652420ec0a87fe5ee032549",
+  "native_actual_rows": [
+    {
+      "kind": "question",
+      "control": "question:public-finances",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:public-finances",
+          "text": "What revenue, segment results and capital investment do public reports disclose, and which AI-specific allocations remain unavailable?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:public-finances",
+          "text": "What revenue, segment results and capital investment do public reports disclose, and which AI-specific allocations remain unavailable?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "question",
+      "control": "question:money-types",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "question",
+      "control": "question:pricing-economics",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 23
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "question",
+      "control": "question:narrative",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 23
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 23
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 594
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "step",
+      "control": "1 \u00b7 Compare explanations",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "step",
+      "control": "2 \u00b7 Inspect evidence",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "counterevidence",
+          "text": "Inspect counterevidence and its limits",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "step",
+      "control": "3 \u00b7 Identify missing premises",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "counterevidence",
+          "text": "Inspect counterevidence and its limits",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 246
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Go to unknown economics",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 900,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 257
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Go to unknown economics",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "counterevidence",
+          "text": "Inspect counterevidence and its limits",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "question",
+      "control": "question:public-finances",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:public-finances",
+          "text": "What revenue, segment results and capital investment do public reports disclose, and which AI-specific allocations remain unavailable?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:public-finances",
+          "text": "What revenue, segment results and capital investment do public reports disclose, and which AI-specific allocations remain unavailable?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "question",
+      "control": "question:money-types",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:money-types",
+          "text": "What funding and compute relationships are announced, and what evidence distinguishes equity, debt, cloud credits, commitments and recognized revenue?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "question",
+      "control": "question:pricing-economics",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 732
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:pricing-economics",
+          "text": "What do official API/consumer prices and commercial terms establish, without inferring private margins, realized compute costs or retention?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 818
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "question",
+      "control": "question:narrative",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 818
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 818
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": "question:narrative",
+          "text": "How do selected English and Brazilian Portuguese reports frame common disclosures, without counting repeated reporting as independent financial corroboration or internet-wide sentiment?",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1504
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "step",
+      "control": "1 \u00b7 Compare explanations",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "1 \u00b7 Compare explanations",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "step",
+      "control": "2 \u00b7 Inspect evidence",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "2 \u00b7 Inspect evidence",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "counterevidence",
+          "text": "Inspect counterevidence and its limits",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    },
+    {
+      "kind": "step",
+      "control": "3 \u00b7 Identify missing premises",
+      "before": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "counterevidence",
+          "text": "Inspect counterevidence and its limits",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Enter": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "3 \u00b7 Identify missing premises",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Go to unknown economics",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "after_Tab": {
+        "scene": {
+          "scene_id": "scene:issue6:1",
+          "entity_ids": [
+            "entity:microsoft",
+            "entity:amazon",
+            "entity:openai",
+            "entity:anthropic"
+          ],
+          "evidence_cutoff": "2026-10-08T08:36:34.105385Z",
+          "method_version": "frontier-economics/curation/1.0.0",
+          "publication_revision_id": "publication:issue6:draft:1",
+          "lens": "questions",
+          "detail_id": null
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.25
+        },
+        "scroll": {
+          "x": 0,
+          "y": 1451
+        },
+        "focus": {
+          "tag": "BUTTON",
+          "action": null,
+          "text": "Go to unknown economics",
+          "type": "button",
+          "name": null
+        },
+        "focused_visible": true,
+        "next": {
+          "tag": "BUTTON",
+          "action": "counterevidence",
+          "text": "Inspect counterevidence and its limits",
+          "type": "button",
+          "name": null
+        },
+        "overflow": false
+      },
+      "pass": true
+    }
+  ],
+  "actual_Enter_Tab_controls": 14,
+  "wide": 7,
+  "narrow": 7,
+  "actual_CSS_sizes": [
+    [
+      1280,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "actual_DPR": 1.25,
+  "frames": {
+    "1280": "/var/tmp/sofia-agents/omp-sshots-159fcce92f2878d8.webp",
+    "390": "/var/tmp/sofia-agents/omp-sshots-159fccec122878d9.webp"
+  },
+  "status": "PASS actualall14nativefocusandforwardTab; sixreaderproofstillinprogress",
+  "no_actual_Felipe": true,
+  "source_repair_cap_used": "2/2 separatequality1/1",
+  "verifier_scaffold_failures": [
+    "data-actionincludedunrelatedcounter/observationcontrols, narrowedtoobservedquestion:prefix beforeEnter",
+    "Wide4questionpasses retained; firststepselectorASCIIescapedliteralunicode matchednone; correctedonlyfailedselector/resumedremainingsteps/narrow, no sourcechanges"
+  ],
+  "parent_lease": "exclusiveoriginal8-parent-final-guided-focus untilownclose"
+}
