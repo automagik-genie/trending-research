@@ -1,0 +1,81 @@
+{
+  "recorded_at": "2026-10-09T20:54:45.440621+00:00",
+  "author_status": "msg_63de483f15ba",
+  "task": "task_8f2a067b113f",
+  "dispatch": "ctx_a45e75e8c6bc",
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "manifest12_sha256": "3443be140200d08355cc21e1a11bcfb29d18cc83a0c519e306d913970a0a27ae",
+  "manifest12": {
+    "web/prototypes/explorer.css": {
+      "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad",
+      "bytes": 5754,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.js": {
+      "sha256": "7f39db9ef42fae3b728a57374e11dd28e8d3045dad8a432a686013eeb66deb48",
+      "bytes": 23172,
+      "mode": "0600"
+    },
+    "web/prototypes/index.html": {
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+      "bytes": 2403,
+      "mode": "0600"
+    },
+    "web/prototypes/preview.py": {
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+      "bytes": 3934,
+      "mode": "0600"
+    },
+    "docs/design/frontier-economics.md": {
+      "sha256": "78a8b419e16b3439dd7f564848b12a60635ba342f92cf56f270e6b47f9aa6c7e",
+      "bytes": 27702,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/smoke.json": {
+      "sha256": "8038617b2783f0fbb599901598a7ca0820b49fcfbe517be0209dde03e02fbefc",
+      "bytes": 277492,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31",
+      "bytes": 114519,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "sha256": "f59d738f1312765a3ed3a73ec6773536f2d17ab156a7ac49b55c55391884d5c6",
+      "bytes": 63444,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "sha256": "af4eff4701eaaa11745be18775057cba8ed6e9756827526b9354101d91d36321",
+      "bytes": 138665,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4",
+      "bytes": 79872,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "sha256": "9bac25b986e00ccddf22a53d82a3d3307db4127ef355d97af076d1fcc31124f7",
+      "bytes": 134452,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "sha256": "1815a7e40fb2d1bc01d1fc6c7b51753e7e680b439e9ea5025d0ab5790e9d34d3",
+      "bytes": 77091,
+      "mode": "0600"
+    }
+  },
+  "only_doc_changed_from00cf": true,
+  "lines_added": 5,
+  "cumulative_text_lines": 1286,
+  "human_receipt_sha256": "b65454df0354a8ece8e421825c7d3dee5273482ff87a6a9eecdc5c8e819e80cf",
+  "selected_primary": "questions",
+  "actual_rationale": "Compare explanations, inspect evidence, then identify missing premises before drawing conclusions. Relationship and timeline lenses remain available.",
+  "prior_UI_quality_scope": "9d369exactold00cf historical12, unchangedsource4/runtime14+6 evidence stillattributednotnewrun",
+  "original_and_doc_rebind_current_aggregate": "PENDING",
+  "source_caps": "2/2 quality1/1 no newsourcebugrepair",
+  "no_card_done": true
+}
