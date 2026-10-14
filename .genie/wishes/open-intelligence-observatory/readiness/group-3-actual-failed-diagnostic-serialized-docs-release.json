@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-09T20:43:45.495463+00:00",
+  "task": "task_0a936d713c67",
+  "dispatch": "ctx_a979a9a2c022",
+  "question": "msg_813742bf0345",
+  "source7_temporary_freeze_status": "msg_2e43e3c2f07b exact11sourcefrozen/noruntime mutation parentaggregate permitted",
+  "owned_paths": [
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md"
+  ],
+  "prior_pinned_docs": {
+    "dsh": {
+      "sha256": "ec056adff560dddea4bd0345743015904d2f438e8f2352542a4304967ee6008c",
+      "snapshot": ".genie/wishes/open-intelligence-observatory/verification/group-3-DSH-prerequisite-doc-before-diagnostic-disposition.txt"
+    },
+    "cordis": {
+      "sha256": "ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6",
+      "snapshot": ".genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt"
+    }
+  },
+  "status": "ADMITTED_SERIALIZED_DOC_ONLY_FAILED_ONCE_AND_CUSTODY_DISPOSITION",
+  "scope": "actualexit1/2.17s/broadABIclass122/exactcauseUNKNOWN/no metadata/catalog/C1-C3/globalcompletion; qualified review636bf, custody/throwaways removed/readiness e6f4; historicalprospective/quality limits and freshuserBWSkeylocator stillqualificationpending",
+  "forbidden": "No code3/repair/reset/runtime/provider/key/value/Git/tests/source7files/publication/originalcarddone; no guessingABI/globaldisposal/originalacceptance",
+  "next": "Docreadback exacthashes/freeze; parentcurrentaggregate/fulloriginalblockedhandoffreview; no originaldone",
+  "source7_source_inputs": "oldCordisce917 exactsnapshot preserved; installed4.0.4API/indexpin unchanged; newdoc describesdiagnosticconstraints onlynot method/provider/API changes"
+}

@@ -1,0 +1,193 @@
+{
+  "issue": 4,
+  "group": 3,
+  "task": "task_0a936d713c67",
+  "dispatch": "ctx_a979a9a2c022",
+  "worker": "issue-4-engineer",
+  "task_card": "t_muz1j2pr10192156",
+  "base_sha": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "current_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "scope": "SEPARATE once-only no-model actualmetadata diagnostic, NOT successful stagedbootstrap/fullS2/originalacceptance; prospective repairs exhausted2/2config2effort0.",
+  "owned_paths": [
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md",
+    "integrations/dsh/qualification/sandbox-readiness.json",
+    "integrations/dsh/qualification/policy.mjs",
+    "integrations/dsh/qualification/probe.mjs",
+    ".gitignore"
+  ],
+  "estimate_files": 6,
+  "estimate_insertions": 952,
+  "measured_code": {
+    "policy_lines": 65,
+    "probe_lines": 485,
+    "code_total": 550
+  },
+  "input_artifacts": {
+    "frozen_plan": {
+      "path": "/tmp/issue4-native-bootstrap-plan-repaired-2.txt",
+      "sha256": "2398f73b1f1a919695e2c3e45d5eaf69d456bf171965a61dfae1046f8e96c4a0"
+    },
+    "review": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-native-bootstrap-byte-review-4.txt",
+      "sha256": "dc0c8b1a6d2fd6ac01d40d1b3a50ac91ce3ac0dfa2ef659e058642dba5d9bed8"
+    },
+    "schema": {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    "fixture": {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    }
+  },
+  "accepted_dependencies": [
+    {
+      "issue": 2,
+      "implementation": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+      "acceptance": "SHIP",
+      "quality": "SHIP",
+      "artifact": ".genie/wishes/open-intelligence-observatory/verification/group-1.json",
+      "sha256": "3f65d9a86bf1f6847e284e90b96181240b59b7b65d1ea71f6fd7d5b60f67a2a6"
+    }
+  ],
+  "runtime_identity": {
+    "node": "/home/genie/.hermes/node/bin/node@26.7.0",
+    "node_sha256": "ad19784f7e90ba789a099eccba77ede8dc90a778c424f1c10a70fed3ff903fdc",
+    "dsh": "@deepseek-ai/dsh@0.2.0-rc.1",
+    "dsh_bin_sha256": "935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1",
+    "cordis": "@deepseek-ai/cordis@4.0.4",
+    "cordis_bin_sha256": "6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e",
+    "source": "4878cdabd87d4041bdaff61d04c966883b9fd07a",
+    "installed_source_attestation": null,
+    "docker": "Engine29.7.2/API1.55/containerd2.3.3/runc1.4.3",
+    "image": "sha256:43ac6c60b8f89723f746e8a92ce91abd5017e627ce1ddfe4238355d3a30b772c linux/amd64 cached node22-slim, no Config.Volumes",
+    "profile": "oi4-a created from supported web, exact embedded overlay"
+  },
+  "interfaces": {
+    "launcher": "/opt/node /opt/dsh/node_modules/@deepseek-ai/dsh/lib/bin.js --profile oi4-a --from-default-profile web --patch /work/bootstrap.patch.yml --no-open --port 3080",
+    "policy_sha256": "e747c39d530d561d8a25b4e08f82b1fa5b09c6ef7d644a8e4efec8fc58443f21",
+    "probe_sha256": "64e9bb85104c15e61d392aab68cd8894437fc1fd85293654e424c8c7e55cb29d",
+    "public_exports": [
+      "@deepseek-ai/dsh-credentials credentialRef/credentialKey",
+      "ctx.credentials.describe/describeRecord/listRecords(metadata only)",
+      "ctx.llm.listModels(deepseek-official)",
+      "ctx.tools.guard",
+      "ctx.appReady.onReady",
+      "ctx.effect",
+      "@deepseek-ai/dsh/profile-boot (contract only, NOT alternate runtime)"
+    ],
+    "catalog": "owned GET /?token=memory redirect:manual HTTP303 + singlecookie; POST /api/session/modelCatalog {type:client-request,rpcId,method:session/modelCatalog,payload:{args:{}}}; HTTP200 server-response echoRPC result.ok. No credential value read/model prompt.",
+    "receipt": "stage/bootstrap-failed failure{phase,reason,code},cleanupFailures,nativeLifecycle{status:UNAVAILABLE,completed:null,reason,processExit,wrapperForcedKill,forcedExitReason},ownedCleanupObserved,diagnostics,privateDiagnosticCustody,originalCriteria:[null,null,null]"
+  },
+  "ownership": {
+    "actual_actor": "task_0a936d713c67/ctx_a979a9a2c022 issue-4-engineer uid1001gid1001",
+    "historical_code_label": "ctx_c6c545d20063 is only reviewed immutable lab-asset label, NOT live Orca dispatch authority; current readiness binds those exact names/CID to actual current actor and runner refuses matching preexisting containers/roots",
+    "container": "oi4-c6c545d20063-a",
+    "labels": [
+      "oi4.dispatch=ctx_c6c545d20063 (lablabel only)",
+      "oi4.principal=A (asset only, not authenticated principal)"
+    ],
+    "root": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a",
+    "cidfile": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/container.id",
+    "reserve_unexecuted_B": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-b",
+    "read_only_conflict_observations": "No roots/policy/probe/readiness files present via scopedglob; exact-name A+B Docker listings empty; re-refuse inside runner before creation."
+  },
+  "seven_binds": [
+    [
+      "/home/genie/.hermes/node/bin/node",
+      "/opt/node",
+      "RO"
+    ],
+    [
+      "/home/genie/.dsh/runtime/0.2.0-rc.1/node_modules",
+      "/opt/dsh/node_modules",
+      "RO"
+    ],
+    [
+      "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/state",
+      "/state",
+      "RW"
+    ],
+    [
+      "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/work",
+      "/work",
+      "RW"
+    ],
+    [
+      "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/evidence_contracts.json",
+      "/case-fixture.json",
+      "RO"
+    ],
+    [
+      "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/policy.mjs",
+      "/policy.mjs",
+      "RO"
+    ],
+    [
+      "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/probe.mjs",
+      "/probe.mjs",
+      "RO"
+    ]
+  ],
+  "confinement": "Exact frozen dockerargv: --pull=never --network none --read-only --cap-drop ALL --security-opt no-new-privileges --user1001:1001 --pids-limit128 --memory512m --cpus1 --ulimit nofile=1024:1024 --tmpfs /tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777 --workdir /work --entrypoint /usr/bin/env image -i HOME=/state DSH_HOME=/state PATH=/usr/local/bin:/usr/bin:/bin LANG=C.UTF-8 NODE_ENV=production /opt/node /probe.mjs --inside --bootstrap --principal A. No image default env/entrypoint, hostports, Docker socket, foreign home/state, operator key, external network.",
+  "prerequisites": {
+    "access": "Fresh isolatedsandbox userauthority plus explicit parent admission required; no paid/native until ACK. Docker metadata current/uid1001 observed; namespace/ABI unknown until once run.",
+    "fixtures": "Synthetic accepted immutable Scene fixture only; not economics/sourceapproval. No source instruction acted on.",
+    "storage": "Ownroot/state/work0700; overlay and classified custody0600; native generated signing secret remains inside ignored scopedstate, never inspect values/headers/launchURL/cookie.",
+    "ignore_gate": "Existing .gitignore does NOT ignore sandbox-a/b. Parent must freeze/perform exact root ignore addition before runtime; worker fivepaths unchanged, no sixth .gitignore write granted. No gitindex/info mutation.",
+    "principal": "A labasset only; actual restricted/productprincipal A/B null",
+    "rights": "Existing synthetic fixture supports no-model domainmetadata only; real source/tenant retention null",
+    "budget": "No-model/externalspend USD0 for this once diagnostic; existing DSHUSD12/Brain8/total20 remains reserved not paid-call admission. Actual freshkey/currenttariff/hardusagecap/modeluse null, no key supplied/read.",
+    "authorization": "Only frozen fivepaths + own ephemeral Astate/CID/container, no Bexecution unless separately admitted, no SDK/dependency/sharedservice/config/Git/forge/deploy changes; docs serialized by parent and appended after classified actual proof."
+  },
+  "smoke": {
+    "exact_command": "/usr/bin/env -i HOME=/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/state PATH=/usr/bin:/bin LANG=C.UTF-8 NODE_ENV=production /home/genie/.hermes/node/bin/node integrations/dsh/qualification/probe.mjs --bootstrap --principal A --root integrations/dsh/qualification/sandbox-a",
+    "run_limit": "once; builtin timer120s + bounded ownedcleanup, external tool deadline240s; stop unexpectedfailure, no repair3/fallback/retry",
+    "expected_if_reachable": "Native ready absentkey/alternativegrant, zero modelCalls and tenantIsolationfalse; exactSceneIDs/cutoff, supported303/RPCcatalog verified; inspect exactownCID+labels/resources/sevenmounts while inner waits; SIGTERM/close recorded onlyprocessExit; nonzero1 GLOBAL_DISPOSAL_COMPLETION_UNOBSERVABLE/completednull, owncontainer exited/removed.",
+    "failure_assertions": "Any prior actual failure nonzero with original phase/reason/allowlistedcode, secondarycleanup separately, privateclassifiedcustody only; no promotion of missing metadata/exit0/globalcompletion. No original citations/cancel/reconnect/tenancy success inferred.",
+    "cleanup": "Runner verifies CID/labels beforestop5s/reinspect/kill onlystillrunningowned CID/reinspect/remove afterpositiveexit; refusesforeign or unclearcustody, no broadcontainer cleanup. Failure root preserved0700/custody0600 for explicitparent transfer; no reading nativekey values; deletion only after approvedcustodytransfer, not automatic secretpublishing. policy/probe throwaway remove after proof unless parentseparately accepts retention."
+  },
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "aggregate_disposition": "Parent already reports current43tests/fixture exits0/0 on disjointcurrentcandidate; no worker aggregate midflight. After documentary changes parent runs/reuses only applicable exact finalgate; passingtests neverfill nativeacceptance.",
+  "unavailable_disposition": "Expected diagnostic nonzero is not successfulbootstrap; global lifecycle unavailable. C1citedmodel/tool/stream,C2queuedstop/reconnect/durablestop,C3realrestrictedprincipals remainnull; C4 constraints documented not fullacceptance. Any unexpectedfailure ends run at exhaustedcap, preciseBLOCKED outcome.",
+  "injection_attempts": [],
+  "recorded_at": "2026-10-09T18:27:09.390799+00:00",
+  "status": "ADMITTED_ONCE_ZERO_MODEL_NATIVE_DIAGNOSTIC_NOT_BOOTSTRAP_OR_ORIGINAL_ACCEPTANCE",
+  "current_head": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "historical_original_base": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+  "initial_readiness_question": "msg_67709902bd63",
+  "supplement_ACK": "msg_59bf0de8ee7c",
+  "root_ignore_extension": {
+    "before": {
+      "sha256": "d8304ce9e50c89f06fce9040935bed372f8709ca0e9553c479311477de7b3895",
+      "bytes": 110,
+      "mode": "0600"
+    },
+    "only_append": [
+      "/integrations/dsh/qualification/sandbox-a/",
+      "/integrations/dsh/qualification/sandbox-b/"
+    ],
+    "must_verify_both_paths_ignored_before_any_private_state": true,
+    "owner": "sameDSHworker parentorchestratorno sourceedit"
+  },
+  "shared_doc_hold": [
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md"
+  ],
+  "shared_doc_release_condition": "Parent explicit release afterissue7writerfreeze; currentCordis docce917 inputunchangeduntilthen",
+  "actual_actor": "task_0a936d713c67/ctx_a979a9a2c022",
+  "old_lab_actor_label": "ctx_c6c545d20063 LABASSETONLY NOTliveDispatch",
+  "scope_qualification": "Fivequalification source/doc paths unchanged, rootGitignore metadata prerequisite separatelysequenced; rawprospectiveplan2398/code/pins unchanged; no thirdprospectiverepair and noS4/fullS1-S4/originalruntime promotion",
+  "runtime_admission": "OwnfreshA only, refuseexisting/foreignroot/CID/labels; exactcachedimage/networknone/nonroot/readOnly7binds; cleanENV no inheritedkey/home, model0; one120s boundedrun external240s, cleanupownershipinspect stopkillonlyverifiedown thenexit/remove",
+  "expectation": "If reachesmetadata thenexplicitUNAVAILABLE/completednull/nonzero1; earlier genuinefailureclassified primarynoterased, stopunexpectedfailure no repair3/retry",
+  "budget": {
+    "DSH_USD_reserved": 12,
+    "Brain_USD_reserved": 8,
+    "total_USD_reserved": 20,
+    "model_calls_allowed": 0,
+    "all_coding_storage_cost": "UNKNOWN"
+  },
+  "scope_not_original_feature_delivery": true,
+  "raw_worker_readiness": "BLOCKING SEPARATE ONCE-ONLY ZERO-MODEL DIAGNOSTIC READINESS; no execution or newproduction mutation performed. Please freeze and explicitly accept exact record including parent-owned ignore prerequisite and ownership-label distinction, or name precise blocker: {\"issue\":4,\"group\":3,\"task\":\"task_0a936d713c67\",\"dispatch\":\"ctx_a979a9a2c022\",\"worker\":\"issue-4-engineer\",\"task_card\":\"t_muz1j2pr10192156\",\"base_sha\":\"65fe46ef8fde709fa3993cea98b20392b50089d9\",\"current_wish_sha256\":\"3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad\",\"scope\":\"SEPARATE once-only no-model actualmetadata diagnostic, NOT successful stagedbootstrap/fullS2/originalacceptance; prospective repairs exhausted2/2config2effort0.\",\"owned_paths\":[\"docs/integrations/dsh.md\",\"docs/integrations/cordis.md\",\"integrations/dsh/qualification/sandbox-readiness.json\",\"integrations/dsh/qualification/policy.mjs\",\"integrations/dsh/qualification/probe.mjs\"],\"estimate_files\":5,\"estimate_insertions\":950,\"measured_code\":{\"policy_lines\":65,\"probe_lines\":485,\"code_total\":550},\"input_artifacts\":{\"frozen_plan\":{\"path\":\"/tmp/issue4-native-bootstrap-plan-repaired-2.txt\",\"sha256\":\"2398f73b1f1a919695e2c3e45d5eaf69d456bf171965a61dfae1046f8e96c4a0\"},\"review\":{\"path\":\".genie/wishes/open-intelligence-observatory/verification/group-3-native-bootstrap-byte-review-4.txt\",\"sha256\":\"dc0c8b1a6d2fd6ac01d40d1b3a50ac91ce3ac0dfa2ef659e058642dba5d9bed8\"},\"schema\":{\"path\":\"schemas/evidence.schema.json\",\"sha256\":\"aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f\"},\"fixture\":{\"path\":\"tests/fixtures/evidence_contracts.json\",\"sha256\":\"48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5\"}},\"accepted_dependencies\":[{\"issue\":2,\"implementation\":\"60975ca9c66efaa8f8284d37897c5e5d5f8a2f68\",\"acceptance\":\"SHIP\",\"quality\":\"SHIP\",\"artifact\":\".genie/wishes/open-intelligence-observatory/verification/group-1.json\",\"sha256\":\"3f65d9a86bf1f6847e284e90b96181240b59b7b65d1ea71f6fd7d5b60f67a2a6\"}],\"runtime_identity\":{\"node\":\"/home/genie/.hermes/node/bin/node@26.7.0\",\"node_sha256\":\"ad19784f7e90ba789a099eccba77ede8dc90a778c424f1c10a70fed3ff903fdc\",\"dsh\":\"@deepseek-ai/dsh@0.2.0-rc.1\",\"dsh_bin_sha256\":\"935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1\",\"cordis\":\"@deepseek-ai/cordis@4.0.4\",\"cordis_bin_sha256\":\"6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e\",\"source\":\"4878cdabd87d4041bdaff61d04c966883b9fd07a\",\"installed_source_attestation\":null,\"docker\":\"Engine29.7.2/API1.55/containerd2.3.3/runc1.4.3\",\"image\":\"sha256:43ac6c60b8f89723f746e8a92ce91abd5017e627ce1ddfe4238355d3a30b772c linux/amd64 cached node22-slim, no Config.Volumes\",\"profile\":\"oi4-a created from supported web, exact embedded overlay\"},\"interfaces\":{\"launcher\":\"/opt/node /opt/dsh/node_modules/@deepseek-ai/dsh/lib/bin.js --profile oi4-a --from-default-profile web --patch /work/bootstrap.patch.yml --no-open --port 3080\",\"policy_sha256\":\"e747c39d530d561d8a25b4e08f82b1fa5b09c6ef7d644a8e4efec8fc58443f21\",\"probe_sha256\":\"64e9bb85104c15e61d392aab68cd8894437fc1fd85293654e424c8c7e55cb29d\",\"public_exports\":[\"@deepseek-ai/dsh-credentials credentialRef/credentialKey\",\"ctx.credentials.describe/describeRecord/listRecords(metadata only)\",\"ctx.llm.listModels(deepseek-official)\",\"ctx.tools.guard\",\"ctx.appReady.onReady\",\"ctx.effect\",\"@deepseek-ai/dsh/profile-boot (contract only, NOT alternate runtime)\"],\"catalog\":\"owned GET /?token=memory redirect:manual HTTP303 + singlecookie; POST /api/session/modelCatalog {type:client-request,rpcId,method:session/modelCatalog,payload:{args:{}}}; HTTP200 server-response echoRPC result.ok. No credential value read/model prompt.\",\"receipt\":\"stage/bootstrap-failed failure{phase,reason,code},cleanupFailures,nativeLifecycle{status:UNAVAILABLE,completed:null,reason,processExit,wrapperForcedKill,forcedExitReason},ownedCleanupObserved,diagnostics,privateDiagnosticCustody,originalCriteria:[null,null,null]\"},\"ownership\":{\"actual_actor\":\"task_0a936d713c67/ctx_a979a9a2c022 issue-4-engineer uid1001gid1001\",\"historical_code_label\":\"ctx_c6c545d20063 is only reviewed immutable lab-asset label, NOT live Orca dispatch authority; current readiness binds those exact names/CID to actual current actor and runner refuses matching preexisting containers/roots\",\"container\":\"oi4-c6c545d20063-a\",\"labels\":[\"oi4.dispatch=ctx_c6c545d20063 (lablabel only)\",\"oi4.principal=A (asset only, not authenticated principal)\"],\"root\":\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a\",\"cidfile\":\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/container.id\",\"reserve_unexecuted_B\":\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-b\",\"read_only_conflict_observations\":\"No roots/policy/probe/readiness files present via scopedglob; exact-name A+B Docker listings empty; re-refuse inside runner before creation.\"},\"seven_binds\":[[\"/home/genie/.hermes/node/bin/node\",\"/opt/node\",\"RO\"],[\"/home/genie/.dsh/runtime/0.2.0-rc.1/node_modules\",\"/opt/dsh/node_modules\",\"RO\"],[\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/state\",\"/state\",\"RW\"],[\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/work\",\"/work\",\"RW\"],[\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/evidence_contracts.json\",\"/case-fixture.json\",\"RO\"],[\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/policy.mjs\",\"/policy.mjs\",\"RO\"],[\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/probe.mjs\",\"/probe.mjs\",\"RO\"]],\"confinement\":\"Exact frozen dockerargv: --pull=never --network none --read-only --cap-drop ALL --security-opt no-new-privileges --user1001:1001 --pids-limit128 --memory512m --cpus1 --ulimit nofile=1024:1024 --tmpfs /tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777 --workdir /work --entrypoint /usr/bin/env image -i HOME=/state DSH_HOME=/state PATH=/usr/local/bin:/usr/bin:/bin LANG=C.UTF-8 NODE_ENV=production /opt/node /probe.mjs --inside --bootstrap --principal A. No image default env/entrypoint, hostports, Docker socket, foreign home/state, operator key, external network.\",\"prerequisites\":{\"access\":\"Fresh isolatedsandbox userauthority plus explicit parent admission required; no paid/native until ACK. Docker metadata current/uid1001 observed; namespace/ABI unknown until once run.\",\"fixtures\":\"Synthetic accepted immutable Scene fixture only; not economics/sourceapproval. No source instruction acted on.\",\"storage\":\"Ownroot/state/work0700; overlay and classified custody0600; native generated signing secret remains inside ignored scopedstate, never inspect values/headers/launchURL/cookie.\",\"ignore_gate\":\"Existing .gitignore does NOT ignore sandbox-a/b. Parent must freeze/perform exact root ignore addition before runtime; worker fivepaths unchanged, no sixth .gitignore write granted. No gitindex/info mutation.\",\"principal\":\"A labasset only; actual restricted/productprincipal A/B null\",\"rights\":\"Existing synthetic fixture supports no-model domainmetadata only; real source/tenant retention null\",\"budget\":\"No-model/externalspend USD0 for this once diagnostic; existing DSHUSD12/Brain8/total20 remains reserved not paid-call admission. Actual freshkey/currenttariff/hardusagecap/modeluse null, no key supplied/read.\",\"authorization\":\"Only frozen fivepaths + own ephemeral Astate/CID/container, no Bexecution unless separately admitted, no SDK/dependency/sharedservice/config/Git/forge/deploy changes; docs serialized by parent and appended after classified actual proof.\"},\"smoke\":{\"exact_command\":\"/usr/bin/env -i HOME=/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/state PATH=/usr/bin:/bin LANG=C.UTF-8 NODE_ENV=production /home/genie/.hermes/node/bin/node integrations/dsh/qualification/probe.mjs --bootstrap --principal A --root integrations/dsh/qualification/sandbox-a\",\"run_limit\":\"once; builtin timer120s + bounded ownedcleanup, external tool deadline240s; stop unexpectedfailure, no repair3/fallback/retry\",\"expected_if_reachable\":\"Native ready absentkey/alternativegrant, zero modelCalls and tenantIsolationfalse; exactSceneIDs/cutoff, supported303/RPCcatalog verified; inspect exactownCID+labels/resources/sevenmounts while inner waits; SIGTERM/close recorded onlyprocessExit; nonzero1 GLOBAL_DISPOSAL_COMPLETION_UNOBSERVABLE/completednull, owncontainer exited/removed.\",\"failure_assertions\":\"Any prior actual failure nonzero with original phase/reason/allowlistedcode, secondarycleanup separately, privateclassifiedcustody only; no promotion of missing metadata/exit0/globalcompletion. No original citations/cancel/reconnect/tenancy success inferred.\",\"cleanup\":\"Runner verifies CID/labels beforestop5s/reinspect/kill onlystillrunningowned CID/reinspect/remove afterpositiveexit; refusesforeign or unclearcustody, no broadcontainer cleanup. Failure root preserved0700/custody0600 for explicitparent transfer; no reading nativekey values; deletion only after approvedcustodytransfer, not automatic secretpublishing. policy/probe throwaway remove after proof unless parentseparately accepts retention.\"},\"aggregate_command\":\"python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json\",\"aggregate_disposition\":\"Parent already reports current43tests/fixture exits0/0 on disjointcurrentcandidate; no worker aggregate midflight. After documentary changes parent runs/reuses only applicable exact finalgate; passingtests neverfill nativeacceptance.\",\"unavailable_disposition\":\"Expected diagnostic nonzero is not successfulbootstrap; global lifecycle unavailable. C1citedmodel/tool/stream,C2queuedstop/reconnect/durablestop,C3realrestrictedprincipals remainnull; C4 constraints documented not fullacceptance. Any unexpectedfailure ends run at exhaustedcap, preciseBLOCKED outcome.\",\"injection_attempts\":[]}"
+}

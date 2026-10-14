@@ -1,0 +1,62 @@
+{
+  "delivery_id": "delivery_53cbe7cb5b29",
+  "whole_done_message": {
+    "id": "msg_00928b1be5ff",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_73efab3e-3944-4b27-9210-38af9f26f1dd",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "Full quality review: SHIP bounded static proposal only",
+    "body": "Completed the independent full quality review of all A1-A10/C1-C4/K1-K4, fourteen bidirectional carrier families, H1/both QH1 owners/precursor, and F1-F6 footprints using all 42 guarded inputs and 37 whole immutable sources; the sole full report SHA74da73de79bfd405a3b4a98b67ba0af26267912e5db96ba9d086ebbca1f2e6ef115040B172LF0600 includes both complete lossless canonical diff bodies and received whole positive coordinator intake before this native completion. Verdict is SHIP bounded STATIC PROPOSAL ONLY with CRITICAL0/HIGH0 and own check-design exit0/findings[] plus digest exit0/498ca1fa848739d0e32211b3b45cc578e4288e3668494671fa9125d976be3586; full stored-byte readback and all42 unchanged guards passed. All original C1-C4 remain BLOCKED_NOTRUN with actual0of14 carriers, WRS90PROPOSED/fourPENDING/INDEXSimmering and real accepted Source7 reader/F5 unavailable, so no implementation/runtime/paid/FeatureDone authority follows; Parent must release this exact dispatch after observing actual Done and before delivery ACK.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_2f6f824e3557\",\"dispatchId\":\"ctx_4ecf5c41ac09\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi4-native-extension-design-repair3-quality-full-review.txt\"],\"reportPath\":\"/tmp/oi4-native-extension-design-repair3-quality-full-review.txt\"}",
+    "created_at": "2026-10-13T19:58:16Z",
+    "delivered_at": null
+  },
+  "payload": {
+    "taskId": "task_2f6f824e3557",
+    "dispatchId": "ctx_4ecf5c41ac09",
+    "outcome": "succeeded",
+    "filesModified": [
+      "/tmp/oi4-native-extension-design-repair3-quality-full-review.txt"
+    ],
+    "reportPath": "/tmp/oi4-native-extension-design-repair3-quality-full-review.txt"
+  },
+  "fresh_report_metadata": {
+    "path": "/tmp/oi4-native-extension-design-repair3-quality-full-review.txt",
+    "bytes": 115040,
+    "LF": 172,
+    "sha256": "74da73de79bfd405a3b4a98b67ba0af26267912e5db96ba9d086ebbca1f2e6ef",
+    "mode": "0600"
+  },
+  "positive_intake_message": "msg_533256802ea6",
+  "release_AFTER_actualDone_BEFORE_deliveryACK": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"d8009547-896b-4b7d-8d29-49ea95f5783f\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_4ecf5c41ac09\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"3a175449-c49f-4520-8a39-1bf3d4ec06a5\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "d8009547-896b-4b7d-8d29-49ea95f5783f",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_4ecf5c41ac09",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "3a175449-c49f-4520-8a39-1bf3d4ec06a5",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "C1_C4": "BLOCKED_NOTRUN; actual0of14 carriers",
+  "no_implementation_runtime_paid_grant": true
+}

@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-09T21:22:48.163085+00:00",
+  "native_worker_done_message": "msg_6a79f69c5c9a",
+  "task": "task_e1932b516101",
+  "dispatch": "ctx_1055a49c08fd",
+  "outcome_assessment": "POSITIVE thatindependentreviewdeliverablecomplete/fullreportverified; exactverdictboundsretained NOTunconditionalfeaturesuccess",
+  "review_verdict": "FIX-FIRST confirmed4HIGH H1-H4 plusP1 unresolvedexacthelper/receipt prerequisite; oldclaimednewlinebug independentlyREJECTED; NOcode/runtimegate",
+  "full_report_read": true,
+  "actual_report": {
+    "sha256": "b3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc",
+    "bytes": 22442,
+    "mode": "0600"
+  },
+  "report_lines": 154,
+  "parent_copy": ".genie/wishes/open-intelligence-observatory/verification/group-6-prospective-diagnostic-repair-1-independent-review.txt",
+  "release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"f99ec88e-0171-431c-af64-cf5dc1c1de79\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_1055a49c08fd\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"transcript\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"313d622c-76cf-4f71-967f-8780db32f5f6\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "f99ec88e-0171-431c-af64-cf5dc1c1de79",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_1055a49c08fd",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "transcript",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "313d622c-76cf-4f71-967f-8780db32f5f6",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "original_card_done": false,
+  "before_delivery_ACK": true,
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "current_aggregate_sha256": "aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c"
+}

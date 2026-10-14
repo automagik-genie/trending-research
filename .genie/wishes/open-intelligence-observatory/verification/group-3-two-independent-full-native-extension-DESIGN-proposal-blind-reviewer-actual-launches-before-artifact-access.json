@@ -1,0 +1,301 @@
+{
+  "at": "2026-10-10T01:29:34.686158+00:00",
+  "exactFrozenProposal3filePins": [
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DRAFT.md",
+      "actual": {
+        "sha256": "116c0faed479f3f03d6ae97c5183d9c158adab787552915e802a276e21bca7a1",
+        "bytes": 10689,
+        "mode": "0600"
+      },
+      "actualLF": 130,
+      "UID": 1001,
+      "parentFULLread": "actualspecializedread DRAFTraw1-130,DESIGNraw1-70/71-140/141-210/211-284,fullhandoffraw1-53; trailingextractorphantomsnotmissedcontent"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DESIGN.md",
+      "actual": {
+        "sha256": "d68909d5f8285aa9c52b9b1929a2e166c240990c51be6c4b555b4f6441544097",
+        "bytes": 65211,
+        "mode": "0600"
+      },
+      "actualLF": 283,
+      "UID": 1001,
+      "parentFULLread": "actualspecializedread DRAFTraw1-130,DESIGNraw1-70/71-140/141-210/211-284,fullhandoffraw1-53; trailingextractorphantomsnotmissedcontent"
+    },
+    {
+      "path": "/tmp/oi4-native-extension-original-full-design-handoff.txt",
+      "actual": {
+        "sha256": "0054732d9ca8a85a3173c732fdb9e4d5c3208765f80f634347da1bed7f6d203f",
+        "bytes": 26151,
+        "mode": "0600"
+      },
+      "actualLF": 53,
+      "UID": 1001,
+      "parentFULLread": "actualspecializedread DRAFTraw1-130,DESIGNraw1-70/71-140/141-210/211-284,fullhandoffraw1-53; trailingextractorphantomsnotmissedcontent"
+    }
+  ],
+  "current8inputs": [
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+      "bytes": 126131,
+      "mode": 384,
+      "lines": 1157
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec",
+      "bytes": 2956,
+      "mode": 384
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-readonly-pinned-supported-lifecycle-principal-stop-egress-seams-scout.txt",
+      "sha256": "774accebe8456f3314de428d4735b3361e333b5f7c107af7b32ebfe7f9089025",
+      "bytes": 21643,
+      "lines": 101,
+      "mode": 384
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-new-official-alpha2-bounded-supported-contract-seams-factual-scout.txt",
+      "sha256": "501a8fc97f0ab1f72dc4b8f0b4ae360fea4c0b97fa586a51630a8afb56529c34",
+      "bytes": 24217,
+      "lines": 107,
+      "mode": 384
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-complete-static-ELF-availability-closure-factual-scout.txt",
+      "sha256": "6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2",
+      "bytes": 20258,
+      "lines": 88,
+      "mode": 384
+    },
+    {
+      "path": "docs/integrations/dsh.md",
+      "sha256": "626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da",
+      "bytes": 24841,
+      "lines": 138,
+      "mode": 384
+    },
+    {
+      "path": "docs/integrations/cordis.md",
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "bytes": 12132,
+      "lines": 62,
+      "mode": 384
+    },
+    {
+      "path": "integrations/dsh/qualification/sandbox-readiness.json",
+      "sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+      "bytes": 28091,
+      "lines": 275,
+      "mode": 384
+    }
+  ],
+  "parentFullHandoffCoverageOnly": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-full-original-native-extension-PROPOSED-design-handoff-positive-parent-intake-assessment.json",
+    "sha256": "0132ae39d9f1ace50503ff903f6dd1d64adeb88c4eeb166852dd6950a6d06389"
+  },
+  "allA1-A10fullmethodContractBeforeANYaccess": "# Role and PREACCESS contract\nYouare a NEWindependent READONLY original#4 nativeDSHarchitecture proposal reviewer, notauthorctx_5a853e66bc72/cardt_mv1nxer60fedac1d/originalissue4Engineer/otherNEWreviewer/factscouts. Runrun_b7d6684b2cdd, worktree/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory; parentOrchestratorNOdirectSourcecode. OwnerpermittedONLYindependentlyreviewed nativeextensionDESIGN preservingeveryoriginalcriterion, nativeDSH+Cordis+Brain/USD20/paidhold. NoSource/SDK/install/fork/newruntime/qualification/paid admission. BEFOREanyDRAFT/DESIGN/handoff/source/doc/factreport/wish/owner/artifact/code access READskill://review/brainstorm/wish/work/verify/research+versionmatchednativeguide, thenFULL nativeblockingmethod/risk/criteria/inventory/report/lifecycleACK. DoNOTartifactaccessuntilparentFULLreadandEXPLICITexactpathsreply. Queue/readiness isnotACK. NopeerNEWreport access/noagent/nestedscouts/council. FullIndependentReview notnarrowproxy/ABIreview.\n# Frozen complete scope/criteria beforeartifactaccess\nProposalONLYMdesignauthor2repositorydocs1000LFforecast/2000hard25files+1authorized/tmpfullhandoff, actual413ins0deletions; futurecompleteimplementationG6dependentgroups76touchslots10250ins, eachhard25files2000ins, noONEoverlargewish. Alloriginal20issues80criteria41deps5milestonesdatesassigneesunset. Original#4enforcedblocked; historicalstockprospective2/2EXHAUSTED andONEactualzeroModelstartupFAILED exit1/2.17s beforemetadata/catalog/classifier122B causeUNKNOWN/globalcompletionUNAVAILABLE. NativeBrainactual4/4locallyaccepted no5th, owned845PGstopped/retainednoenv/PGdata access. DSHbaseRC1 source4878cdabd87d4041bdaff61d04c966883b9fd07a/Cordis4.0.4/Node26.7 SHAad19784f...; proposedpatchFUTUREMEASURED notinstalled/sourceequivalence/buildfake. Officialalpha2d743...readonlynotupgrade; stocknormalnaturalcompletionreal NOTuniversalforced. CachedfullBookworm all8providersSTATICnotloader/IFUNC/appSDKproof oroldcause. BrainsoleevidenceSemanticMemory/nativeSessionconversationAuthority retained; nativecontrolstopmoneyrefsNOTalternateSemanticstore. Genericchat/proxy/reapedPID/socket/plugin alone cannotnativeSuccess; outsideRepoappendPluginRecordprohibited notsecurityledger.\n# Exact frozen 10 review criteria / severity and falsifiable methods ACKallBEFOREaccess\nA1 HIGH fulloriginalC1 citedanswer sameSceneentityIDs/evidencecutoff: exactnativeRemoteResult/namedargs/mux/assistantStream/follow/page/control+actualfuturechunks/tool/finalcites Claim/span/revision/Scene inspector. Scene1.0fields id/publication_revision_id/assessment_ids/entity_ids/evidence_cutoff/method_version notinventSchema; financialnulls/conflict/cutoff/provenancesourceASDATA no texttoolauthority. No fakeChatSSE/RESTfollow/alternatecompletion/modelstub success. Testexactconsumer composition accepted#7reader +#9/#10actual integration dependencies true, no artificialGitHubedge orclaimalreadyaccepted.\nA2 HIGH originalC2 cancellationstopsnewwork+sameSessionreconnectclearstatus: actualnativeactiveprovider/tool/queuedprompt boundaryT no actuallater model/tool/queued/new/resume/fork/background dispatch includingstaleprepared/innerretry/directwork; noarchive semantics as atomicstop. IndependentallOwnerdrain distinct STOPPEDcommit/quiescence pending/rejection/deadline/forced/unknown; realnative historycursors/coldrestart/carrier reauth retained, noautomaticreopen/generation/orphanwork/crashrefund. Raceprotocol actualstartnotintent only, no crossSession/controlDBatomicity assumption/unknownreplay.\nA3 HIGH originalC3 actualtwo restrictedissuer principals ownpositive/foreign negative alltransportsandrestrictedrecords/tools; per-principalOS/native isolation meansprivacyreduction NOTcookies/processIDauthentication orBrainRLS. Full14classes policy14/qualified0: unarygenerated; muxuplinks; nestedIDs; exactattachments; rawGET/HEAD; workspace/cwd/adoption; modeltools; event/controlbaseline; coldhistory/follow/page/reconnect; inprocessdirectbusiness; create/resume/fork/importlineage; Brainreader/search/spans; providerFilesancillary/background; operator/config/profile/plugin/launch. Exhaustiveactualbuiltgenerated/exact/event/toolinventory startupunknownMountdeny. Actualissuer signaturealg/keyid/aud/exp/subject/instanceimmutablecapability includingmodeltools/directservercall/refresh/revocation. BothAtoB/BtoA encoded/traversal/missingmalformed/knownforeign/expired/revoked/forgedsubject/audience+postcold. Bound404/notfoundno bytes/meta/effects;raw/privileged403/missingauth401/malformed400/ownStopped409 explicit, don'tallowambientoperator orrawFilesystem headsLeaks beforeACL. Approvedrestrictedfixturesindependentfutureauthority no private operator reuse.\nA4 HIGH originalC4 honestfutureconstraintverdict/probeownership: retainsalloldlimits/runtimeCauseUNKNOWN; no static/pricingGET/Nodeexit/formalcheck/readinessWRS score fake acceptance. ProbeCodeTHROWAWAY unlessseparatepermanentreview; index/reportoneclaimspan/fullstandalone evidence/currentdigesttruthful. WRS90PROPOSED/noncrystallized emptySettled/reviews/councils not100/Ready/Designapproval/Sourceimplementation, technicalreviewmayqualifyPROPOSAL but NEVERformalReadybeforefullopenCriteriaandownerrealdecisions. No implementationQuestionpreapprovedbyownerdesignOnly. SuccessCriteriafuturechecklistsuncrossed nothighjustbecauseexecutionoutofscope; qualificationadmission mustremainlater gates.\nA5 HIGH NativecompleteLauncherownedappANDproxy success/rejection/deadline/forced outcomes: actualprivateappFiber THENcapturedProxyClose, processshutdown normalnatural preserved andinterrupt/rejection/deadline force branches/startup/fail-loud treatedexplicitly. Actualregistryseal/drain/appProxyattestation/privateboundedsequence/toplevelindependentParentwitness actualOwnedhandles/Sessionwrites/transport/listenerchildretirement. Receipt/persistence-beforeintentionalForce has boundednoBlockinglostprimary; no externalKilldetail invented/nobodywatcher substitute nativeowner/all-workreceipt. Separateprimary/cleanup failures/timerdeadline, testfouractualnativechangedpaths/negativeforged/plugin/socket/reapedexit0/blockedWitness/missingowner. Feasiblepatchnecessityownerseam minimal; supportedcompositionbeforebroadnativefork.\nA6 HIGH Durableatomicstop +nativeworkobligationcontrol: actualsingleRootqueue/arbiter transactionTsameactual initiationboundary/presendreservedmay_have_sent; asynchronousdispatchunderarbiter mustnotdecoupled fromrealfetch/acquisition andTOCTOU startsafterT. AllnativeAgent/Session/controller/tool/retry/title/compaction/queue/background/Fork acquisition registeredbeforepublication and independentlydrain, unknownheld. Noautoemptycontrolstore/staleSocketPIDs/budgetreset; nativeNode26.7 documentedSQLiteDatabaseSync/not26.11Database, actualmodulebuild/storage fsync/WAL/integrity/singlewriter/mount schema admissionrequired. CrashbarriersnonAtomicSession/controlreconciliationREADONLYneverduplicateunknown modelsend. No GCunknownmoney/stoppedtombstones/history/evidence, bound2principals4sessions32attempts/recoveryheld.\nA7 HIGH Hardtotalcurrency BEFORE everyactualnativephysicalegress inclinnerMessagesretry/Files/ancillary/titlecompaction/queuebackground/allpurpose notmerelyllm-hook; nativeRoottransportcredentialowner andchildprivateBridge networknone/no genericproxy/modelreplacement/alternate directfetch/socket/credentials. Modeldeepseek-official+exactdeepseek-flash/V4.1Flash+actualnativeAnthropicMessages path pinnednativeSerializer/translatortoolExtensions rawactualUsage presence vsdefault0. Publicmutable tariffcachedmisspeakinput.30/out1.20USD per1M noPriceeffectiveDate/cache/offpeak/fundingAuthority; contextinventory1048576vspricing1M boundMUSTqualifiedbeforepay. Enforced4096TOTALoutputinclthinking despitebudget_tokensignored/max_tokens supported; final65,536Bboundtext/evidenceJSON no tokenizerheuristic/no images/remotefiles/truncatingvidence; exactmodeloutputrequestextensionscanNOTbypass. DSH12,000,000microUSD acrossTWOhosts not20perhost; parentBrain8 unchanged shared20. Formula ceiling319488microUSD/attempt and32includingALLphysicalcalls reserves10.223616 leaving1.776384; retry<=1 queued1 active1/principal rootserial hardattemptCounterpostrefund. DenyUNPRICEDFiles/allHTTPotherendpoints including64vs128MiB uploaddiscrepancy; unknownusage/partial/cancelled/truncated retainedfullreserveglobalfreeze; completeactualterminalrawschema tokens/inputcachecomponentsno doublecount/attemptid+immutabletariff once reconciled; neverclaim0frommissing/default/tokenmeter/balancedelta. Price/billing-bound/APIcompatibility gates explicitnotsupposedprovedbyGET inventory. Breachtruthfullystoredfreeze. Currencyguardalone lacksnativeA1-6acceptance.\nA8 HIGH Cordisownership/cutover: realctx.plugin/inject/effect/fiber.dispose dependencywithdrawal/activation/RemoteReader/nativeallownwork lifetime notmaptoy. Seal/drainoldowner/readers/handles beforemountreplacement same acceptedBrain IDs/nativehistory/cursor/STOPPED/reserves, stalehandlefails/noSRCshim/controlabsencefallback. Exactpublicsrcownership/references freezeBEFOREexportchanges/LSPifavailable; generatedHostClient/nativeadapterFiles/Agent/controller/gatewayexact/events/inprocess+appconsumers ALLmigrate no aliasesdeprecatedpaths. No orphannativeworkproxy replacingCordis/minimalCompositionfalseRuntime.\nA9 HIGH Simplicity/feasibleminimalpatch/licensing/build/scope: onlynecessarycontrolidentity/generation/reserve/usage/obligation/outcome refs forcurrent4invariants, nosemanticevidencecopied/distributedscheduler/caches/privateconfig. SupportedrunProfile/namedprofiles+orderedpatches retained, rootexplicitMODIFIEDnative notstocktuple. Freezeactualimmutablepatch/generated/lock/build/toolchain/binarymodules/profiles/isolationmanifest beforeactualnativeproof; nottag/sourceinstalled-byteinference. FullMIT2026DeepSeek/permission/disclaimer+CordisNodeallnotices; noupstreamwriting/automaticfork/sourcepermission. SixgroupsF1(10/1700)->F2(14/1800)->F3(15/1850)->F4(15/1850)->F5(12/1650+accepted#7)->F6(10/1400), commonrootwritersserialized true deps; owner/scopedactualreferences/fullpaths precode ifforecastfalse resplit beforemutation <=25/2000. Rollbackcloseingress/drain preservesSTOPPED/uncertainmoney/BrainnativeSession accepted/history no oldoperatorprivate-store exposure, no historicalfailure erased. EveryoriginalcriterioncompleteFuture observable scenario notmock echo/source defaults/inventAPIs orscaffoldsubstitute. Sourceinventorystillprovisional meansnoCODEadmission, revieweridentifyifproposalnotcompleteenough toapprove notfakereadunknown.\nA10 HIGH Formalchain/reviewboundarywholeevidence: allcompleteDRAFT130/Design283/Original53LFfullhandoff, all8immutableInputs/3FULLfactualreports+2publicDSH/Cordisdocs andactualnativeR publicowningbodies needed primaryreader. No first800/ellipsis/footer/schemaonly/searchsnippets. FormalcurrentWRS90ScopeG/emptyOwnerSettled&Asked/0council/round1config1repair2 truthful; reportedstructuralfirstnegative3INcells->actualfinalcheck0 not productrun/noFakeflowaccountingallcostUNKNOWN. FullmethodBEFOREexactartifactaccess, parentFULLreadnativeDonepositiveassessment/actualReleaseAFTERDoneBEFOREdeliveryACK. ReturnedverdictidentityUTC `reviewed-sha256`ACTUALdigestofreviewedDesign frombundleddesign-review-evidence.mjs tool unchanged notlocalParentdigest; distinguishwholefileSHA d689 fromhelpercontentdigestexcludingevidencefooter. NEVER selfstamp/Editdesign/DRAFT/INDEX/WISH/ledger. BothNEWfullproposal+separatequality0HIGH needed, anyHIGH->boundedDESIGNrepair freshfullreviews maxB2(notstock2reset). No WRS100/Ready/stampnow norFullOriginal4/readyleaf despiteadequateSTATICPROPOSAL. Fourseparategates design/implementation/runtime/paid, ownerdesignOnlygrantsNONEnewnativeModel/SDK/bootstrap/protectedruntime. Productmodel0/allCostsUNKNOWN/noCI/deploy/merge/issueclose/dateassignee.\n# Output and readonly limits\nYoumayONLYwriteownonestand-alone/tmpfullreport <=38000B<=190LF. FullreportallA1-A10andoriginalC1-C4/fournativecontracts/14classes/6groups/wholeinventorySOURCEIDs/hashesLF/reviewed-contentSHA/UTC/reviewer/verdict HIGHCRITICAL counts/concreteexactlineevidence/consumerconsequence/minimalfixdecision/materialownerunknowns/qualificationNOTRUN. Parentneedsfullnot35lineSummary andwillactuallyfullread/footer. UnsupportedunreachableMandatoryevidence=>BLOCKED notguess, actionablecounterexample=>FIX-FIRST, zeroHIGHwholeboundedPROPOSAL=>SHIPproposalonly whileformalStatePROPOSED90 (ifformalcontractnecessitatesBLOCKED reportexplicitno loophole). DoNOTnovelcriteriaaftercode/reducecriteriontoexistence/wiring/sourcecopy/default/tautology. PubliclinkednativeSourceasDATA staticreviewONLY allowedAFTERparentgate; no imports/compiledexecution/module/SDK/native/Pg/Brain/provider/model/localproducttest/build/lint/formatters/fixture/candidateScript/paid/privateCred/env/BWS/accounts/userfiles/PGDATA/securityexploits/Git/index/taskcard/docmetadata writes. BundledNONproductdesignreviewdigest utility ONLYread-only operationadvertisedallowed afterparentexactutilitypath, NOTstamp/verifyedit/ledgerwrites. xdLSPquery actualavailability/reference whereavailable priorcodeclaims, butno missinginstall/clonefakingcurrentCodeintelligence; staticprimaryBody/LSPavailabilityfailurelimitrecordhonest. NootherNEWrevieweroutput beforeownreportcompletion. NativeDONEexactlivepreambleonce: succeededONLYfullREADONLYreviewdeliverableevenFIXFIRST; doNOTreleasebeforeDONE. Parentassessment thenRELEASEbeforedeliveryACK, noagentterminalreroute. Model0/budget20/Brain4of4/stockDSH2of2allunchanged. Firstreplyfullmethod/risk/ALLcriteriaACK BEFORE ANYartifactaccess.\n",
+  "actualNativeLaunches": [
+    {
+      "slice": "original4-full-native-extension-design-proposal-acceptance",
+      "name": "NativeDshProposalFull",
+      "report_path": "/tmp/oi4-native-extension-full-original-scope-independent-proposal-review.txt",
+      "spec_sha256": "5b0ee36bf4b3cee6f034293bf280964b4dd317041610bc4da25eac6b8202923e",
+      "actual_native_start": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"738f256f-6d98-484d-989f-190a5e3e67b4\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_1645c57f0f73\",\n    \"dispatchId\": \"ctx_9afd3bc78835\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_190d15b2-c3d5-4375-96e8-f498fe38469a\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_190d15b2-c3d5-4375-96e8-f498fe38469a\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"948af433-979d-45a9-a3c0-5345672c835b\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"7c2a0b19-e60e-4c10-8dd6-aa140a7846a5\",\n      \"generation\": 90,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"948af433-979d-45a9-a3c0-5345672c835b\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "738f256f-6d98-484d-989f-190a5e3e67b4",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_1645c57f0f73",
+            "dispatchId": "ctx_9afd3bc78835",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_190d15b2-c3d5-4375-96e8-f498fe38469a",
+                "surface": "background",
+                "warning": "Terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_190d15b2-c3d5-4375-96e8-f498fe38469a",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "948af433-979d-45a9-a3c0-5345672c835b",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "7c2a0b19-e60e-4c10-8dd6-aa140a7846a5",
+              "generation": 90,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_190d15b2-c3d5-4375-96e8-f498fe38469a` to reveal and focus it.",
+            "mutation": {
+              "requestId": "948af433-979d-45a9-a3c0-5345672c835b",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "slice": "original4-separate-native-extension-design-privacy-maintainability-performance-quality",
+      "name": "NativeDshProposalQuality",
+      "report_path": "/tmp/oi4-native-extension-separate-security-maintainability-performance-proposal-quality-review.txt",
+      "spec_sha256": "a2b9dbd2d20e7bed9c20e7c63eea3237dda7f7f0f5a07f84c6b9bb6178f7d4d2",
+      "actual_native_start": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"3f4218dc-90db-4198-8444-719deff656de\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_a3b52d967ed5\",\n    \"dispatchId\": \"ctx_b5fc45311019\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_6f4e02a9-49c2-4058-b229-92d2bde244e8\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_6f4e02a9-49c2-4058-b229-92d2bde244e8\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"a518aec6-51d5-4646-964c-216fd9f3fb9e\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"92fee2f2-b706-4592-ba33-6f433e74a306\",\n      \"generation\": 91,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"a518aec6-51d5-4646-964c-216fd9f3fb9e\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "3f4218dc-90db-4198-8444-719deff656de",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_a3b52d967ed5",
+            "dispatchId": "ctx_b5fc45311019",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_6f4e02a9-49c2-4058-b229-92d2bde244e8",
+                "surface": "background",
+                "warning": "Terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_6f4e02a9-49c2-4058-b229-92d2bde244e8",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "a518aec6-51d5-4646-964c-216fd9f3fb9e",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "92fee2f2-b706-4592-ba33-6f433e74a306",
+              "generation": 91,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f4e02a9-49c2-4058-b229-92d2bde244e8` to reveal and focus it.",
+            "mutation": {
+              "requestId": "a518aec6-51d5-4646-964c-216fd9f3fb9e",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    }
+  ],
+  "FULLReviewerMethodACKsNOTyetreceived/ArtifactAccessNOTgranted": true,
+  "WRS90notReady/source4originalstillBlocked/stock2Of2ActualOneFailure/Budget20models0": true,
+  "ScopeDifferentFromSource7FinalCycle2andSource8Publishedf429": "no rewrite/handoff/code access inparent/noScope8reset/7NoRuntime"
+}

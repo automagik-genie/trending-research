@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-09T22:27:36.704962+00:00",
+  "candidate_tree_NOTCOMMIT": "a04fb194d94977f343b2fff74f749dda4705f30a",
+  "based_on_HEAD": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "private_index_exact_accepted15paths_only": [
+    "docs/design/frontier-economics.md",
+    "docs/integrations/cordis.md",
+    "docs/integrations/dsh.md",
+    "integrations/dsh/qualification/sandbox-readiness.json",
+    "web/prototypes/explorer.js",
+    "web/prototypes/proof/questions-narrow.png",
+    "web/prototypes/proof/questions-wide.png",
+    "web/prototypes/proof/relationship-narrow.png",
+    "web/prototypes/proof/smoke.json",
+    "web/prototypes/proof/timeline-wide.png"
+  ],
+  "actual_results": [
+    {
+      "args": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "tests"
+      ],
+      "cwd": "OWN_GIT_ARCHIVE_CLEAN_CANDIDATE_NO_SOURCE7_WORKTREE_OVERLAY",
+      "started_at": "2026-10-09T22:27:35.811964+00:00",
+      "ended_at": "2026-10-09T22:27:36.256134+00:00",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "...........................................\n----------------------------------------------------------------------\nRan 43 tests in 0.106s\n\nOK\n"
+    },
+    {
+      "args": [
+        "python3",
+        "-B",
+        "eval.py",
+        "--features",
+        "tests/fixtures/features_a.json",
+        "tests/fixtures/features_b.json",
+        "--hype",
+        "tests/fixtures/hype_small.json"
+      ],
+      "cwd": "OWN_GIT_ARCHIVE_CLEAN_CANDIDATE_NO_SOURCE7_WORKTREE_OVERLAY",
+      "started_at": "2026-10-09T22:27:36.256202+00:00",
+      "ended_at": "2026-10-09T22:27:36.483636+00:00",
+      "exit": 0,
+      "stdout": "# Discovery evaluation: current 3.0, config e2e3fe2870\nStability, completeness and relative gaps are descriptive; no validated accuracy or truth probability.\n\nFeature cutoffs: 2026-10-06T17:22:49Z \u2192 2026-10-08T02:00:49Z\n| tab | window | method | Spearman | pairs/top | overlap | coverage \u2265 0.5 |\n|---|---|---|---|---|---|---|\n| papers | 7d | 1.0 | 0.942 | 23/23 | 1.00 | 0.91 |\n| papers | 7d | 2.0 | 0.314 | 21/22 | 0.95 | 0.91 |\n| papers | 7d | 3.0 | 0.322 | 21/22 | 0.95 | 0.91 |\n| papers | 30d | 1.0 | 0.975 | 38/38 | 1.00 | 0.89 |\n| papers | 30d | 2.0 | 0.612 | 35/36 | 0.97 | 0.83 |\n| papers | 30d | 3.0 | 0.617 | 35/36 | 0.97 | 0.83 |\n| papers | overall | 1.0 | 0.960 | 60/60 | 1.00 | 0.60 |\n| papers | overall | 2.0 | 0.783 | 54/55 | 0.98 | 0.55 |\n| papers | overall | 3.0 | 0.783 | 54/55 | 0.98 | 0.55 |\n| repos | 7d | 1.0 | 0.510 | 27/29 | 0.93 | 0.00 |\n| repos | 7d | 2.0 | 0.859 | 27/29 | 0.93 | 0.00 |\n| repos | 7d | 3.0 | 0.833 | 27/29 | 0.93 | 0.00 |\n| repos | 30d | 1.0 | 0.574 | 48/49 | 0.98 | 0.24 |\n| repos | 30d | 2.0 | 0.927 | 48/49 | 0.98 | 0.24 |\n| repos | 30d | 3.0 | 0.949 | 48/49 | 0.98 | 0.24 |\n| repos | overall | 1.0 | 0.693 | 60/60 | 1.00 | 0.22 |\n| repos | overall | 2.0 | 0.931 | 60/60 | 1.00 | 0.22 |\n| repos | overall | 3.0 | 0.953 | 60/60 | 1.00 | 0.22 |\nOld feature merge ratios lack the created-and-merged intersection: current method excludes that signal; v2 preserves it.\n\n## HYPE overall: 25 current, 25 historical v2, 25 historical v1\nCurrent descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 2, 'insufficient': 20, 'similar': 2}\n| project | attention | coverage | discovery | gap | label |\n|---|---|---|---|---|---|\n| Gemini app | 86.0 | 0.75 | 62.0 | 24.0 | insufficient |\n| DeepSeek-V4.1-Flash | 83.0 | 0.75 | 63.5 | 19.5 | insufficient |\n| Nemotron 3.5 Lightning | 80.0 | 0.75 | 56.0 | 24.0 | insufficient |\n| DeepSeek Harness | 77.0 | 0.75 | 50.0 | 27.0 | attention_ahead |\n| Seedance | 74.0 | 0.75 | 57.5 | 16.5 | insufficient |\n| shortlist | project | gap | label |\n|---|---|---|---|\n| 1 | Reflection Beam | -14.2 | insufficient |\n| 2 | DeepSeek Harness | 27.0 | attention_ahead |\n| 3 | Action Model | 12.0 | insufficient |\n| 4 | Higgsfield | 4.5 | insufficient |\n| 5 | Laminar flow-1 | 4.5 | insufficient |\n\n## HYPE 30d: 17 current, 17 historical v2, 17 historical v1\nCurrent descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 1, 'insufficient': 15}\n| project | attention | coverage | discovery | gap | label |\n|---|---|---|---|---|---|\n| Gemini app | 85.3 | 0.75 | 62.0 | 23.3 | insufficient |\n| Claude Code | 80.9 | 0.75 | 60.5 | 20.4 | insufficient |\n| DeepSeek-V4.1-Flash | 76.5 | 0.75 | 63.5 | 13.0 | insufficient |\n| Lovable | 72.1 | 0.75 | 59.0 | 13.1 | insufficient |\n| DeepSeek Harness | 67.6 | 0.75 | 50.0 | 17.6 | attention_ahead |\n| shortlist | project | gap | label |\n|---|---|---|---|\n| 1 | Reflection Beam | -4.8 | insufficient |\n| 2 | DeepSeek Harness | 17.6 | attention_ahead |\n| 3 | Action Model | -16.2 | insufficient |\n| 4 | Higgsfield | 5.9 | insufficient |\n| 5 | Laminar flow-1 | 6.1 | insufficient |\n\n## HYPE 7d: 15 current, 15 historical v2, 15 historical v1\nCurrent descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 1, 'insufficient': 13}\n| project | attention | coverage | discovery | gap | label |\n|---|---|---|---|---|---|\n| Claude Code | 85.0 | 0.75 | 60.5 | 24.5 | insufficient |\n| Gemini app | 80.0 | 0.75 | 62.0 | 18.0 | insufficient |\n| DeepSeek Harness | 75.0 | 0.75 | 50.0 | 25.0 | attention_ahead |\n| Grok app | 70.0 | 0.75 | 50.0 | 20.0 | insufficient |\n| Seedance | 65.0 | 0.75 | 57.5 | 7.5 | insufficient |\n| shortlist | project | gap | label |\n|---|---|---|---|\n| 1 | Reflection Beam | 7.8 | insufficient |\n| 2 | DeepSeek Harness | 25.0 | attention_ahead |\n| 3 | Action Model | 2.0 | insufficient |\n| 4 | Higgsfield | -21.0 | insufficient |\n| 5 | Laminar flow-1 | 20.5 | insufficient |\n\nHYPE temporal stability: unavailable (single dossier snapshot). Capability, business validation, verification and independence: unqualified.\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "genie",
+        "wish",
+        "lint"
+      ],
+      "cwd": "OWN_GIT_ARCHIVE_CLEAN_CANDIDATE_NO_SOURCE7_WORKTREE_OVERLAY",
+      "started_at": "2026-10-09T22:27:36.483663+00:00",
+      "ended_at": "2026-10-09T22:27:36.704933+00:00",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "wishes-lint: OK (4 files scanned, 0 broken brainstorm links, template validator green)\n"
+    }
+  ],
+  "frozenUI12contents_equal_parent_NATIVE14plus6_proofs": "content-equality against exactcurrent3443/source28c1; no repeatpassingUIpaths",
+  "real_index_preserved": true,
+  "actual_index_entry_equality": true,
+  "currentWISHdc6andSource7d75newtests_unaccepted_notcopied": true,
+  "workingtree45gate_aa3d_NOT_renamed_clean_candidate": true,
+  "native4_or7_accepted": false,
+  "whole20_done": false,
+  "privateAPIcredentials_BWSrecords_accountbalances_NOT_INCLUDED": true,
+  "Git_head_NOmove": true,
+  "actual_smoke_boundary": "existingcleanPythonconsumer/evaluator/lint gate ofaccepted-only tree; UIactualprevioussamebytes. NativeSDK/models/CI/deploy NOTexecuted."
+}

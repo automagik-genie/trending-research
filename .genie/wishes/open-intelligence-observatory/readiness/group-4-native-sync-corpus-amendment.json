@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-10-08T17:43:11.453026+00:00",
+  "status": "ADMITTED_BOUNDED_NATIVE_GENERATED_SCAFFOLD_PLUS_TWO_LAB_DOC_SYNC",
+  "task": "task_1ee57daded7e",
+  "dispatch": "ctx_ed2a28fd3625",
+  "question_id": "msg_74bcd1ede153",
+  "prior_evidence_admission_sha256": "592a46dd2e7fc0d2f73ca722373ddc6703cd62145f7c5b9090e15e1d30d59acb",
+  "actual_vault_root": "/qualification/sandbox/vault",
+  "verified_preexisting_scaffold_markdown": {
+    "_index.md": {
+      "sha256": "9ede957b78442b09ea3f2f5db9290a80fa1b435c7317df8788d825019e20b0f5",
+      "bytes": 313
+    },
+    "_Templates/daily.md": {
+      "sha256": "da05aa6de5334a2866070b99e31fd1f2885b0edb3aa2642eeaef1b2940aedbb5",
+      "bytes": 99
+    },
+    "_Templates/domain.md": {
+      "sha256": "8085852850eba5c4220b35da4cba1fdd0d6168b91e4d5a7ad7c46a53e483371d",
+      "bytes": 191
+    },
+    "_Templates/entity.md": {
+      "sha256": "d241fc0c190af9039e452d68e0a421c014535522da1915261b752e4fc8f0b03a",
+      "bytes": 205
+    },
+    "_Templates/intel.md": {
+      "sha256": "16b62f4aa69ff33025b62057ddcf0b5f41492d05a77918c017481fc56046c4b2",
+      "bytes": 197
+    },
+    "_Templates/playbook.md": {
+      "sha256": "64d56ca9410fa4bb605ea4c690596dd48631fb6929ae15c5042dae9c460859ac",
+      "bytes": 157
+    }
+  },
+  "additional_authored_lab_notes": [
+    "lab-graph-source.md",
+    "lab-graph-target.md"
+  ],
+  "exact_command": "brain sync --brain brn_63n8pr --no-embed --no-links --path /qualification/sandbox/vault",
+  "guards": "Pin exact corpus paths+hashes before sync, no symlink/traversal or other Markdown acquired/runtime/secrets/files; ownbrainbrn_63n8pr/actualDB only, no embeddings/links/model/network/scheduler/autoschema, native scaffold is bootstrap generated not sourceeconomictruth or a new memory. Preserve scaffold no destructive deletion; use actualtwoLABdoc nativeIDs for graph assertion, not generatedtemplate matches or count. Exact historical/livecalls unchanged, no cap reset, same6permanentpaths and1250estimate, one normal qualification scenario not repair.",
+  "fixture_untrusted": true,
+  "paid_calls_admitted": false,
+  "repair_cap": 3,
+  "repairs_used": 3,
+  "effort_escalations": 0
+}

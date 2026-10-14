@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-10-09T17:49:01.755437+00:00",
+  "status": "ADMITTED_INDEPENDENT_READ_ONLY_STATIC_REVIEW",
+  "task": "task_7155c3262573",
+  "dispatch": "ctx_60cca09682a9",
+  "blind_ack": "msg_30ea42a6f59c",
+  "candidate": {
+    "path": "/tmp/issue4-native-bootstrap-plan-repaired-2.txt",
+    "sha256": "2398f73b1f1a919695e2c3e45d5eaf69d456bf171965a61dfae1046f8e96c4a0",
+    "bytes": 52515,
+    "mode": "0600"
+  },
+  "expected_lines": 722,
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "frozen_criteria": [
+    "S1 public Connection/rpcId/load/actualHTTP303",
+    "S2 isolatedDocker/environment/binds/network/resources/cleanup/globaldisposal",
+    "S3 truthful no-model metadata/failures",
+    "S4 same fivepathscope"
+  ],
+  "separate_verdicts": [
+    "R1/H1/H2 actualclosure",
+    "fullS1-S4readiness",
+    "safeexplicitUNAVAILABLE/nonzero/no-modeldiagnosticplan",
+    "originalruntimeBLOCKED"
+  ],
+  "execution_permission": false
+}

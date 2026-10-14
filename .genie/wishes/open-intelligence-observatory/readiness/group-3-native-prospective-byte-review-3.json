@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-10-09T16:59:02.920039+00:00",
+  "status": "ADMITTED_READ_ONLY_EXACT_S1_S4_RE_REVIEW",
+  "run": "run_b7d6684b2cdd",
+  "task": "task_fc6e95ba1833",
+  "dispatch": "ctx_d7192100118b",
+  "blind_question": "msg_2a47a256724f",
+  "candidate": {
+    "sha256": "d897a73f07b0bfaf4fefcff2fcbfd479467d5382eb83fb544654dfb58da084d5",
+    "bytes": 52515,
+    "mode": "0600"
+  },
+  "prior_review_sha256": "95be1d068604f4b1e6e5576a7a1b456a2312aadb3f0fbd145d1b1e5816aaea2d",
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "criteria": [
+    "S1 supported public Connection/rpcId/load closure",
+    "S2 isolated Docker env/mount/network/resources/cleanup/disposal",
+    "S3 honest no-model metadata/failures",
+    "S4 five owned paths/no extras"
+  ],
+  "distinct_rulings": [
+    "H1/H2 actual repair closure",
+    "full staged-bootstrap S1-S4 readiness",
+    "safe expressly-unavailable/nonzero no-model diagnostic execution plan",
+    "original runtime BLOCKED"
+  ],
+  "scope": "Read-only exact candidates/public installed pins/static validation only, no execution/import/bootstrap/model/network/browser/test/build/lint/formatter/source/Git mutation; report only /tmp/dsh-native-bootstrap-byte-review-3.txt."
+}

@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-10-09T17:05:47.268632+00:00",
+  "status": "ADMITTED_ACTUAL_USER_CONTINUATION_4_OF_4_CURRENT_SAME_TASK_BINDING",
+  "task": "task_1ee57daded7e",
+  "dispatch": "ctx_f79253ca87d2",
+  "retry_of": "ctx_ed2a28fd3625",
+  "question_id": "msg_2b478ca131b4",
+  "human_admission_path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-4-native-graph-envelope-continuation-4.json",
+  "human_admission_sha256": "a1cb342641cd2804f4205ce3f39be3f84a60d5ac243108c87761a2638a173c1d",
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "exact_author_readiness": "BLIND ACK and readiness for task task_1ee57daded7e dispatch ctx_f79253ca87d2, same original issue5/group4/card t_muz1j2ww5a6ec7c7 claimant issue-5-engineer. Received current WISH metadata f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872 and frozen human continuation readiness group-4-native-graph-envelope-continuation-4.json SHA a1cb342641cd2804f4205ce3f39be3f84a60d5ac243108c87761a2638a173c1d; preserved failed receipt4b7cd8c3ee6e2d1267f4de2ca698683f552f932783feb913be77230e834ba019 and qualifier59d253698b89daf91e73bfd5546c54bdefc3ca3988cdd879af823514ee2957d3. Bounded read-only initial intake read WISH, existing Brain doc, qualifier declarations and admission before receiving FIRST blind ACK redirect; no runtime/source module/native access, tests or file/environment mutation occurred. Freeze this new dispatch binding before further access or mutation. owned_paths docs/integrations/brain.md and integrations/brain/qualification/, exact same six already-admitted permanent files only; estimate_files6 estimate_insertions1400 maximum2000, no additional path/dependency/schema/SDK. accepted_dependencies existing group1 independent design and quality SHIP at60975ca9c66efaa8f8284d37897c5e5d5f8a2f68. Inputs/interfaces/runtime/fixtures/rights retain exact frozen native-evidence-scenarios, native-sync-corpus-amendment and continuation4 records and all original hashes; actual brain_remember/get/recall/fact/query/update/graph supported live86tool schema387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b, search structuredContent confidence,totalResults,results path/heading/docid/chunkIndex/score/text/complete with citations/trace unavailable null. Same binary631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78, actual brn_63n8pr owneragent:local, same stopped container845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af and four binds/noports/networknone/nonroot/readonlyroot, manifest raw2e7d3aca21c7224d906835100531adb34ff86faf602f82ad3e86094269f3f7af canonicaldbcccb51a05541b94eb361c1b910998f769921932c192a3b1b650a3621d7cc86. Sole implementation correct actual search envelope and bounded safely redacted actual error bodies/raw responseSHA; one new --resume-smoke preserving failed73calls/26bindings/history without reingest, resync, createRole/grantchange/reset/scaffoldchange. Same four already-passing negative args capture direct denial/keyconflict/stalerevision bodies; verify all original exact canonical IDs/spans/hash/licensed bytes; source+target graph search/link/query never finance; frozenLAB temporal boundary/supersession controls; one real samePG restart with records/concurrency/repeatedtransaction/history/citedrecall afterward; final ownstop/custody. smoke python3 -B integrations/brain/qualification/native_qualification.py --resume-smoke, expected all four original acceptance paths proven, fail missing/mismatched IDs/bytes/spans, lostconflicts/investors/history, unresolved graph or time semantics, wrong isolation, unsafeerror/secret capture. aggregate_command parent-owned existing full43suite+fixture evaluator once authorsfreeze; no midflight check. Human cap4/4 config2 plus exceptions3and4 effort0; no paid/modelcalls or extra reservation beyond8USD of20. unavailable_disposition STOP nextunexpected failure4/4 preserve reached proof originalacceptance BLOCKED, no fifthrepair/retry; bitemporal replay/HTTPRLS/unknown facts remain null/unavailable. injection_attempts none observed, source/tool evidence untrusted. Please explicitly accept/freeze binding and exact inherited six paths, fixture/interfaces/smoke/size/authorization and aggregate before checkout/implementation; I will later freeze artifact hashes and block for originalcriteria independent acceptance plus separatequality/currentaggregate before successful worker_done.",
+  "permanent_paths": [
+    "docs/integrations/brain.md",
+    "integrations/brain/qualification/evidence.json",
+    "integrations/brain/qualification/native-tools.json",
+    "integrations/brain/qualification/native_qualification.py",
+    "integrations/brain/qualification/native-receipts.json",
+    "integrations/brain/qualification/sandbox/.gitignore"
+  ],
+  "current_input_manifest": {
+    "docs/integrations/brain.md": {
+      "sha256": "9998eaddef773365126efb797f7715c7a1fdcce560672777e67b4379cba9983e",
+      "bytes": 40799,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/evidence.json": {
+      "sha256": "41e6e34168a552cdbfce9b1d23a476928a51ce1fea864e66c3b6d7832e8cbe61",
+      "bytes": 49514,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native-tools.json": {
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "bytes": 17422,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native_qualification.py": {
+      "sha256": "59d253698b89daf91e73bfd5546c54bdefc3ca3988cdd879af823514ee2957d3",
+      "bytes": 38818,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native-receipts.json": {
+      "sha256": "4b7cd8c3ee6e2d1267f4de2ca698683f552f932783feb913be77230e834ba019",
+      "bytes": 245685,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/sandbox/.gitignore": {
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14,
+      "mode": "0600"
+    }
+  },
+  "intake_provenance": "Author read-only WISH/doc/declarations/admission intake preceded follow-up; not represented as wholly blind. No source/runtime/environment mutation or native access before this gate. Original Task explicitly permitted read-only intake.",
+  "same_card_new_span": "Same claimant issue-5-engineer checkout t_muz1j2ww5a6ec7c7; retain past report, no reset/reclaim/force; one final newspan report.",
+  "scope": "Exactly inherited human-admitted correction/resume; same sandbox/container/brn/schema/rights/fixtures/26bindings/73calls. No reingest/resync/reinit/roles/grants/scaffold/deps/schema/provider/model/payout/Git/forge; preserve failure history; next unexpected failure STOP4/4.",
+  "aggregate": "Parent after all authors freeze; original four criteria independent acceptance plus separate quality required before original done."
+}

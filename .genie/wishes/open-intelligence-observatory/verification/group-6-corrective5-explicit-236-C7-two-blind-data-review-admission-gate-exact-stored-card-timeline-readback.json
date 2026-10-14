@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-10T01:29:34.905336+00:00",
+  "actualExportExit": 0,
+  "actualStoredGateEvent": {
+    "author": "orchestrator",
+    "author_kind": "pi",
+    "created_at": 1791594594496,
+    "id": 83,
+    "kind": "comment",
+    "note": "review: final owner-authorized quality cycle2/2 prospective DATA gate \u2014 complete corrective5c97db392/exactcompact89c2/native20732439 retained; explicit236true insertions/32deletions/204net C7 review-only admission before fresh artifact access, same11/two mutation paths/1700forecast2000hard25files. Currentd75/0b0+19input/owner guards match; no code/vector/native execution. Two NEW blind fullC1-C8 and separate quality reviewers launched; bothfullmethods ACK before access, both0HIGH and production-byte/safe-smoke/new runtime gate required. Original#7 unaccepted; sourceB2used0, quality first1/1exhausted retained nowcap2total, no reset/third. Exact readiness/group-6-owner-cycle2-corrective5-explicit-236insertions-C7-and-two-blind-DATA-review-admission.json/WISHactual-owner-continuation.",
+    "task_id": "t_muz1j39160558b4b"
+  },
+  "exactSubmittedBodyEqualsStored": true,
+  "actualNativeMethods_74cdf_bd562FULLread_BEFOREAccess_reply0": true,
+  "SourceCurrentD75Receipts0b0WISH260f_models0unchanged": "scopeONLYData notcode/runtime",
+  "originalClaimantexpected": "issue-7-engineer",
+  "actualOriginal7Card": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": null,
+    "blocked_by": null,
+    "blocked_reason": null,
+    "board_id": null,
+    "claimed_at": 1791570256479,
+    "claimed_by": "issue-7-engineer",
+    "created_at": 1791433966645,
+    "group_name": "group-6",
+    "heartbeat_at": 1791570256479,
+    "id": "t_muz1j39160558b4b",
+    "lane": null,
+    "status": "in_progress",
+    "title": "OI-06: Preserve source revisions and implement the investigation read model",
+    "updated_at": 1791570256479,
+    "wish": "open-intelligence-observatory"
+  }
+}

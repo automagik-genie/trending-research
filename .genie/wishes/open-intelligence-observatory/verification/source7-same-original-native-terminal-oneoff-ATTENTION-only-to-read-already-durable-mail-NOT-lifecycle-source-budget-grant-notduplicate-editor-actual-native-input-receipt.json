@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-10T10:51:59.673023+00:00",
+  "reason": "actualboundednativeworker-read showsoriginalsamePTYrunning andHOLDownerdispositionTUI, noexacttranscript/agentstatusproof; nativeOrcasend0onlydurableenqueue notread. OneOFFattentioninput onlynoSpec/cap/lifecycle/bodycopy. Usesexistingexacthandle614 andnoagentcreation/retry/fence. NativeGuides/help read beforeaction.",
+  "exactAttentionOnlyText": "Coordinator native Orca mailbox has a new actual-owner ruling and a whole before-access method request. Please read your exact injected Orca inbox now and respond through its native blocking ask. This is ATTENTION ONLY, not an access, source, runtime or budget grant. Preserve your existing Dispatch and claim; do not create another agent or treat this terminal prompt as lifecycle authority. All authoritative limits and decisions are in your already durably queued native messages.",
+  "actualNativeTerminalInputReceipt": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"0330658d-3012-4344-a78a-674e68f9f6fd\",\n  \"ok\": true,\n  \"result\": {\n    \"send\": {\n      \"handle\": \"term_61425050-f58f-4771-8cbf-af43d00ef05f\",\n      \"accepted\": true,\n      \"bytesWritten\": 484,\n      \"prompt\": {\n        \"requestId\": \"77de667d-eb51-48fd-a6b5-51cad32724eb\",\n        \"stages\": [\n          \"input_accepted\"\n        ],\n        \"provider\": \"unsupported\",\n        \"observation\": \"unsupported\",\n        \"processIncarnation\": \"0932c79f-4d51-4812-93a7-3913bc7bac29\",\n        \"generation\": 16,\n        \"baselineWorkingSequence\": 0\n      }\n    },\n    \"mutation\": {\n      \"requestId\": \"77de667d-eb51-48fd-a6b5-51cad32724eb\",\n      \"replayed\": false\n    },\n    \"warnings\": [\n      \"input was accepted, but this provider cannot report delivery. Inspect the terminal before retrying.\"\n    ]\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "0330658d-3012-4344-a78a-674e68f9f6fd",
+      "ok": true,
+      "result": {
+        "send": {
+          "handle": "term_61425050-f58f-4771-8cbf-af43d00ef05f",
+          "accepted": true,
+          "bytesWritten": 484,
+          "prompt": {
+            "requestId": "77de667d-eb51-48fd-a6b5-51cad32724eb",
+            "stages": [
+              "input_accepted"
+            ],
+            "provider": "unsupported",
+            "observation": "unsupported",
+            "processIncarnation": "0932c79f-4d51-4812-93a7-3913bc7bac29",
+            "generation": 16,
+            "baselineWorkingSequence": 0
+          }
+        },
+        "mutation": {
+          "requestId": "77de667d-eb51-48fd-a6b5-51cad32724eb",
+          "replayed": false
+        },
+        "warnings": [
+          "input was accepted, but this provider cannot report delivery. Inspect the terminal before retrying."
+        ]
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "pendingNativeAuthorityUnchanged": "actualcap4ruling c2b3andwholemethodrequest0e999 ALREADYinownnativeDispatchmail; onlythat+parentfullmethodreplycouldauthorizeDATAprepare. No source/runtime/paid orcodebyattention; noActualRead/Turn/CLAIMprooffrominputaccepted. NOresendonsilence."
+}

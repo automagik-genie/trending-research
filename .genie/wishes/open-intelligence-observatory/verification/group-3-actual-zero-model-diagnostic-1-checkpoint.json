@@ -1,0 +1,87 @@
+{
+  "recorded_at": "2026-10-09T18:33:44.967059+00:00",
+  "status": "ACTUAL_NATIVE_DIAGNOSTIC_FAILED_BEFORE_METADATA_ORIGINAL_RUNTIME_BLOCKED",
+  "task": "task_0a936d713c67",
+  "dispatch": "ctx_a979a9a2c022",
+  "question": "msg_b6b947792500",
+  "admitted_gate_sha256": "0636caa297c6309b0fb49227ed9f16bbf446d49f5fc0ed73b3bcaadc0bfc2ea7",
+  "actual_command": "/usr/bin/env -i HOME=/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-a/state PATH=/usr/bin:/bin LANG=C.UTF-8 NODE_ENV=production /home/genie/.hermes/node/bin/node integrations/dsh/qualification/probe.mjs --bootstrap --principal A --root integrations/dsh/qualification/sandbox-a",
+  "observed_exit": 1,
+  "elapsed_seconds_attributed": 2.17,
+  "primary": {
+    "phase": "docker-startup",
+    "reason": "DOCKER_EXIT_BEFORE_METADATA",
+    "code": null
+  },
+  "classified_diagnostic": {
+    "phase": "docker-stderr",
+    "reason": "ABI_LOAD_FAILED",
+    "code": null,
+    "raw_bytes": 122,
+    "raw_body_retained": false,
+    "exact_library_ABI_cause": null
+  },
+  "metadata": null,
+  "catalog": null,
+  "inner_confinement_inspection": null,
+  "native_global_completion": {
+    "status": "UNAVAILABLE",
+    "completed": null,
+    "processExit": null
+  },
+  "original_C1_C2_C3": [
+    null,
+    null,
+    null
+  ],
+  "actual_model_calls": 0,
+  "all_coding_storage_cost": "UNKNOWN",
+  "cleanup": {
+    "failures": [],
+    "owned_cleanup_observed": true,
+    "author_exact_name_Docker_listing_empty_exit": 0,
+    "A_state_root_work_mode": "0700",
+    "classified_custody_mode": "0600",
+    "B_created": false
+  },
+  "private_classified_custody": {
+    "path": "integrations/dsh/qualification/sandbox-a/work/bootstrap-diagnostics.json",
+    "sha256": "7a830a2aae61a3a74b0b9c0815f388fecc220a4a482c3d37123f383babf9f7ed",
+    "transfer": "parent accepts only classifiedmetadata custody; native generated secrets remain unread ignored"
+  },
+  "repo_freeze": {
+    ".gitignore": {
+      "sha256": "c5f8082f7d8bbac6fa2748b7f2a6dcba5afc68fd23351d2b78e85ac9843df711",
+      "bytes": 196,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/sandbox-readiness.json": {
+      "sha256": "bb3894871dbb16bcec2e8f1e4188e4c6d67b981d5874d3626f7a4f09ad136118",
+      "bytes": 26263,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/policy.mjs": {
+      "sha256": "e747c39d530d561d8a25b4e08f82b1fa5b09c6ef7d644a8e4efec8fc58443f21",
+      "bytes": 3743,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/probe.mjs": {
+      "sha256": "64e9bb85104c15e61d392aab68cd8894437fc1fd85293654e424c8c7e55cb29d",
+      "bytes": 24490,
+      "mode": "0600"
+    }
+  },
+  "hold_docs": {
+    "docs/integrations/dsh.md": {
+      "sha256": "ec056adff560dddea4bd0345743015904d2f438e8f2352542a4304967ee6008c",
+      "bytes": 19335,
+      "mode": "0600"
+    },
+    "docs/integrations/cordis.md": {
+      "sha256": "ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6",
+      "bytes": 9930,
+      "mode": "0600"
+    }
+  },
+  "decision": "No failedcommand rerun/no thirdrepair; readonlystaticABI evidence allowed, preciseimage/librarycause remainsunknown; outcomeindependentreview beforethrowawaydisposal/docsrelease after7freeze"
+}

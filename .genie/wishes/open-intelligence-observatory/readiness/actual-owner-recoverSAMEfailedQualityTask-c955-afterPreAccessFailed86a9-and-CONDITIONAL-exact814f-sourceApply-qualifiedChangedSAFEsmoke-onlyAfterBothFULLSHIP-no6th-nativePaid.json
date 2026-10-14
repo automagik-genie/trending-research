@@ -1,0 +1,63 @@
+{
+  "state": "ACTUAL_OWNER_RECOVER_SAME_QUALITY_TASK_AND_CONDITIONALLY_ADMIT_EXACT_SOURCE_APPLY_SAFE_SMOKE",
+  "actual_question": "The quality reviewer ended with an explicit FAILED outcome before artifact access; it produced no review or report. The sealed candidate is unchanged, and the original reviewer has now received its access grant. Which recovery scope do you authorize?",
+  "actual_answer": "Recover and gate apply/smoke",
+  "selected_description": "Resume the same failed quality task with a new native attempt and a fresh full before-access method. Only if both complete reviews pass, allow worker-owned application of that exact candidate and separately qualified changed-path smoke. No sixth repair cycle, new candidate, native activation, paid calls, or feature acceptance without its original evidence.",
+  "operational_recovery": {
+    "taskId": "task_c9554e33a920",
+    "failedDispatch": "ctx_822f06332736",
+    "actualFailedDone": "msg_86a9a43f6349",
+    "actualRelease": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"7c12d3f2-c89d-447d-8eba-1dbfb60436aa\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_822f06332736\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"05f9c218-39eb-4ea9-b3bc-33cc361d25b4\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "7c12d3f2-c89d-447d-8eba-1dbfb60436aa",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_822f06332736",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "terminal",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "05f9c218-39eb-4ea9-b3bc-33cc361d25b4",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    },
+    "no_prior_artifact_access_or_report_or_semantic_review": true,
+    "same_existing_one_fifth_cycle_not_extra_panel": true
+  },
+  "candidate_exact": {
+    "path": "/tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+    "bytes": 318376,
+    "LF": 1,
+    "sha256": "814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7",
+    "mode": "0600"
+  },
+  "source_original_actual_FAILED_only": "task2bb/ctx1b2/msgc11d operational failed preparation-only handoff; no originalfeature acceptance; releasedAFTERactualDone before217ACK; oldGenieclaim remainsunaccepted held",
+  "conditional_apply_smoke": {
+    "only_after": "BOTH FULL independent original+quality reviews SHIP noHIGHCRITICAL with entire Parent report intake and actual orderly lifecycles; exact source-before-mutation/full source qualification methods and opaque scopeguards required",
+    "exact_candidate_only": true,
+    "worker_owned_code_no_parent_direct_code": true,
+    "changed_safe_paths": "separately qualified smoke after changed source, actual changed path and negative behavior proof",
+    "no_activation_or_original_acceptance": true
+  },
+  "no_new_candidate_cycle6_reset_native_paid": true,
+  "original_C1_C8_F1_F4": "ALL original criteria maintained; all4 originalfeature acceptance stillBLOCKED_NOTRUN until actual fullnative/Cordis/evidence/readmodel/restart/view/integration/aggregate/remote proofs",
+  "all_roadmap_and_money": "20/80/41/5/sixhistorical local/unsetdatesassignees/frozenWISH260f/f429draftPR22nofreshCI; stock2no3 Brain4no5 productmodel0USD20DSH12Brain8codingstorageallinUNKNOWN unchanged",
+  "DSH_new_owner_scope_independent": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-afterDSHrepair3-bothFULL-staticSHIP-AUTHORIZE-gatedImplementation-readonlyCompleteClosure-planIndependentReview-beforeApprovedScopedCode-noRuntimePaid.json",
+    "bytes": 2261,
+    "LF": 31,
+    "sha256": "1adb1417ab066cef04eba8fd665e3dc4506292f02dd7432ff4e7ce4894c49624",
+    "mode": "0600"
+  }
+}

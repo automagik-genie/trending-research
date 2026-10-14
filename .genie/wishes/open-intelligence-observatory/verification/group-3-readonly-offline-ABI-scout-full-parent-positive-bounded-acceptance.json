@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-09T22:39:10.887950+00:00",
+  "task": "task_093f1bcec0d1",
+  "dispatch": "ctx_050e7534d9b0",
+  "native_worker_done_message": "msg_e7ca44d74a03",
+  "worker_outcome": "succeeded meansSCOUTonly",
+  "method_fivehypotheses_beforeinventory_and_absolute_pins_actualACK": "msg_2a29c8d3ff2d",
+  "actual_parent_full_report_read": "functions.read exact1-98 noomittedreportlines",
+  "actual_report": {
+    "sha256": "127c214737a908848983bd6c96334c0d7753bfe4cb63985d8b4a23c0d9b8921c",
+    "bytes": 17362,
+    "mode": "0600"
+  },
+  "actual_LF": 98,
+  "LF_metadata_actual_exit": 0,
+  "exact_parent_copy": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-readonly-offline-cached-stock-image-native-ELF-ABI-closure-scout.txt",
+  "positive_scope_bounded_parent_acceptance": "ACCEPT completedfactualstaticABIclosureofEXACTcachedstock43ac and nativeNodead19 withoutnative/container/imagebytesexecution. Effective5layers+whiteouts/symlinks parsed withactualcompressed/uncompresseddigests, exactloader+arch+8SONAME+version/strongimportsets. Strongunresolved__atomic_compare_exchange@LIBATOMIC_1.0 withlibatomic.so.1 ABSENT final7293entryroot. Sevenavailableproviderspresent/supportinspectedrequirements. StaticincompatibilityfactNOThistoricalstderrrootcause; no alternateclosure/runtime/nativeapp/globalcompletionpaidacceptance.",
+  "minimum_unqualified_prerequisite": "immutableAMD64providerlibatomic.so.1 correctSONAME/LIBATOMIC_1.0/export+owncompleteDT_NEEDED/version/symbolclosure alongside7+Nodead19. No specificproviderbuildSHAqualified. Cachednode22bookworm363/debian7c7/trixiea99/rusta8 tagsmetadataONLY, no alternativesaved/executed/qualified.",
+  "actual_old_red": "onceexit1/2.17s classifierABI_LOAD_FAILED122B exactbodyUNKNOWN; preservednotreconstructed/rerun",
+  "worker_reported_own_scoped_cleanup": "only own0700scratch/tmp/oi4-stock-ABI-m1h8v_jj removed afterboundedstockexport+metadata; reportexplicitactuallexistsfalse, no user/PGDATA/runtime cleanup. No stage/code/source/docs/Git/task/SDK/model actions.",
+  "original4_enforcedblocked_unclaimed_NOTdone": true,
+  "source_prospective_cap2of2_NOTRESET": true,
+  "no_runtime3rd_permission": true,
+  "product_model_calls_byaux": 0,
+  "coding_storage_allcost": "UNKNOWN",
+  "parent_full_positive_acceptance_BEFOREreleaseanddeliveryACK": true,
+  "release_NOTYETattempted": true
+}

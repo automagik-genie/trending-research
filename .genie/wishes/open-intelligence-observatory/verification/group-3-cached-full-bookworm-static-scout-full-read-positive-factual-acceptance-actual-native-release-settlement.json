@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-09T23:21:26.271002+00:00",
+  "worker_done": "msg_a64682409a59",
+  "delivery": "delivery_40d2fd4b08f7",
+  "parent_full_positiveassessment": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-static-scout-full-positive-parent-factual-acceptance.json",
+    "sha256": "e115e40f09d7cbae73a438289d6b8e9804708f14d6f27735db01e8fb2ff083a7"
+  },
+  "actualReport": {
+    "sha256": "6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2",
+    "bytes": 20258,
+    "mode": "0600"
+  },
+  "actualRelease": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"1f0fc775-450d-44f7-bac5-fb7d89a3c780\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_528608c658a5\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"c2fa4c17-183e-45a1-b6cf-3b8b8ebb3ab1\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "1f0fc775-450d-44f7-bac5-fb7d89a3c780",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_528608c658a5",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "c2fa4c17-183e-45a1-b6cf-3b8b8ebb3ab1",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "beforeDeliveryACK": true,
+  "staticOnly_notruntime_orall4_nativeContractSHIP": true,
+  "original4source2/2noreset": true
+}

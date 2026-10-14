@@ -1,0 +1,127 @@
+{
+  "at": "2026-10-10T00:37:20.511271+00:00",
+  "auxGeniecard": "t_mv1nxer60fedac1d",
+  "createactual": {
+    "exit": 0,
+    "stdout": "Created task t_mv1nxer60fedac1d \"Design the bounded native DSH extension architecture \u2014 design only\" (ready).\n",
+    "stderr": ""
+  },
+  "dispatchCommentactual": {
+    "exit": 0,
+    "stdout": "Commented on task t_mv1nxer60fedac1d as orchestrator.\n",
+    "stderr": "",
+    "intendedbody": "dispatch: native-dsh-extension-designer (architecture designer) \u2014 original#4 auxiliary design-only lane; own new native-dsh-extension DRAFT.md/DESIGN.md and one full /tmp handoff. Actual owner approves only independently reviewed native-extension proposal incl pinned patch if necessary; originalruntimecard blocked/source2/2 unchanged, no implementation/SDK/native/paid grant. Claim this auxiliary card before docs mutation; full original criteria/native Brain+Cordis/USD20 retained. Exact readiness/group-3-owner-authorized-native-extension-design-only-worker-spec.txt; original#4 remains unaccepted."
+  },
+  "native_start_actual": {
+    "slice": "owner-approved-native-dsh-extension-design-only",
+    "name": "NativeDshExtensionDesign",
+    "report_path": "/tmp/oi4-native-extension-original-full-design-handoff.txt",
+    "spec_sha256": "92fc567f14a0706c70179674178ed231c784f71d9ac60bdf7ec4d2fb71780552",
+    "actual_native_start": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"14fbd256-f39e-44bb-960a-5ab0f317c5d0\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_c4e7f3d2891b\",\n    \"dispatchId\": \"ctx_5a853e66bc72\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_86723a18-ae07-435f-9feb-ac79ca5b5bf8\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_86723a18-ae07-435f-9feb-ac79ca5b5bf8\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"a9af15b4-a047-44b8-843f-16c2f40803a4\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"ede9350b-5c6c-4179-9b4f-706eb1dabc08\",\n      \"generation\": 78,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"a9af15b4-a047-44b8-843f-16c2f40803a4\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "14fbd256-f39e-44bb-960a-5ab0f317c5d0",
+        "ok": true,
+        "result": {
+          "runId": "run_b7d6684b2cdd",
+          "taskId": "task_c4e7f3d2891b",
+          "dispatchId": "ctx_5a853e66bc72",
+          "state": "ready",
+          "stage": "input_accepted",
+          "turnStart": "unsupported",
+          "setup": {
+            "requested": "not_applicable",
+            "effective": "not_applicable",
+            "source": "existing_worktree",
+            "hookFound": false,
+            "startupPolicy": "start-immediately",
+            "state": "not_applicable"
+          },
+          "launch": {
+            "requested": {
+              "agent": "omp",
+              "model": null,
+              "effort": null
+            },
+            "effective": {
+              "agent": "omp",
+              "model": null,
+              "effort": null
+            }
+          },
+          "mode": {
+            "mode": "terminal",
+            "preferred": "terminal",
+            "reason": "user_default",
+            "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+          },
+          "timeoutMs": 60000,
+          "effects": [
+            {
+              "kind": "worktree",
+              "action": "reused",
+              "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+            },
+            {
+              "kind": "setup",
+              "action": "not_applicable",
+              "state": "not_applicable"
+            },
+            {
+              "kind": "terminal",
+              "role": "agent",
+              "action": "created",
+              "id": "term_86723a18-ae07-435f-9feb-ac79ca5b5bf8",
+              "surface": "background",
+              "warning": "Terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8` to reveal and focus it."
+            },
+            {
+              "kind": "dispatch_input",
+              "role": "agent",
+              "id": "term_86723a18-ae07-435f-9feb-ac79ca5b5bf8",
+              "state": "accepted"
+            }
+          ],
+          "prompt": {
+            "requestId": "a9af15b4-a047-44b8-843f-16c2f40803a4",
+            "stages": [
+              "input_accepted"
+            ],
+            "provider": "unsupported",
+            "observation": "unsupported",
+            "processIncarnation": "ede9350b-5c6c-4179-9b4f-706eb1dabc08",
+            "generation": 78,
+            "baselineWorkingSequence": 0,
+            "baselineExplicitWorkingStartedAt": null,
+            "baselinePermissionSequence": 0
+          },
+          "residualResources": [],
+          "warning": "Terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_86723a18-ae07-435f-9feb-ac79ca5b5bf8` to reveal and focus it.",
+          "mutation": {
+            "requestId": "a9af15b4-a047-44b8-843f-16c2f40803a4",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+        }
+      }
+    }
+  },
+  "scope": "DESIGNONLY notcode/runtime/grant/C4/source reset/all20",
+  "source7simultaneousindependentcycle2DATAgate": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+    "sha256": "aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20"
+  },
+  "source7_card_exactstoredcomment_readback_event": {
+    "author": "orchestrator",
+    "author_kind": "pi",
+    "created_at": 1791592478493,
+    "id": 79,
+    "kind": "comment",
+    "note": "review: FIX-FIRST \u2014 corrective4 independent full C1-C8 35f912c9 and separate quality1caa2079, union3 HIGH (F1=H1 completeness, H2 outer pre-cleanup primary custody, H3 parser failure received-byte retention), plus bool RPC-id medium. First quality1/1 exhausted retained, sourceB2used0. ACTUAL owner authorizes one additional quality cycle: cap1\u21922 total, not reset; ONLY complete corrective5 prospective DATA then fresh blind full+quality re-review. No source/vector/native/model activation. NativeDSH extension DESIGN only separately authorized, no runtime3/patch. Governing readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json and WISH.md#actual-owner-continuation. Original #7 unaccepted, original failure cause UNKNOWN.",
+    "task_id": "t_muz1j39160558b4b"
+  }
+}

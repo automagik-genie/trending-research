@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-10-08T17:27:21.170771+00:00",
+  "actual_user_choices": {
+    "brain_repair_cap": "Allow one additional repair",
+    "dsh_product_auth": "Fresh DeepSeek credential"
+  },
+  "authority": "Explicit functions.ask answers in current conversation; no secret supplied or permission to use private operator grants.",
+  "brain_repair": {
+    "issue": 5,
+    "task": "task_1ee57daded7e",
+    "dispatch": "ctx_ed2a28fd3625",
+    "repairs_used_before": 2,
+    "repair_cap_before": 2,
+    "repair_cap_after": 3,
+    "repairs_used_on_admission": 3,
+    "budget_source": "config2 plus explicit actual-human single-attempt extension",
+    "effort_escalations": 0,
+    "exact_changed_plan": {
+      "size": "same six frozen permanent paths, <=1250 inserted lines; no newdependency/upstreamschema/semantics/model/network/profile",
+      "container": "Preserve STOPPED845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af exact4binds/networkNone/UID1001/readonlyroot/noports; no recreate/delete/reset/chmod outside sandbox. Existing process arguments customsocket are correct for product Brain DSN; failed entrypoint init must not be implicitly assumed repaired.",
+      "step1": "After explicit human cap extension + coordinator freeze ONLY: docker start --attach oi5-ctx-ed2a28fd3625 in owned lifecycle subprocess, capture stdout/stderr -> existing sandbox/bootstrap.log redacted; preserve priorhistory. Existing PG_VERSION makes image skip init, so unchanged state is expected and measured not hidden.",
+      "step2": "Bounded read-only psql -X -v ON_ERROR_STOP=1 -h /qualification/sandbox/socket -U oi5_owner -d postgres -At SELECT current_user,current_database(),version(),pg_postmaster_start_time(); and SELECT datname FROM pg_database WHERE datname=brain. postgres is actual initdb-created admin maintenanceDB per pinned entrypoint lines65; no host/global/default namespace. Explicit PG socket/credential only owncluster.",
+      "step3": "If actual own admin query reports no brain database, one explicit bootstrap-only SQL CREATE DATABASE brain OWNER oi5_owner on this dedicatednativePG, no semantic rows/schema extension/side memory. If brain exists verify owner, never drop/recreate. Readiness requires actual psql -d brain SELECT currentdatabase/currentuser/version successful and matching own product cluster start identity BEFORE native brain init. This is standard nativePG controlDB provisioning not an application semantic store.",
+      "native_contract": "Supporting Brain db.ts SHAafa61fd... lines472-475 admin DSN connects its existing maintenance database; CREATE own perbrainDB lines497-505. Freeze DATABASE_URL ownsecret@127.0.0.1:5432/brain BRAIN_CONTROL_DATABASE=brain; BRAIN_ADMIN_DATABASE_URL ownsecret@127.0.0.1:5432/postgres (correct existing adminDB, rather than missingbrain). Native init.ts getControlSql+migrations/upsert lines390-395 needs controlDB alreadylive. No TypeScript/sourcepatch.",
+      "step4": "Native installed brain init name oi5-qualification/path sandboxvault; actualmanifest/registry identity readback. initialize/tools-list only; second blocking actualbrn+live schemas+deniedPGgrant admission before any evidence calls remains mandatory.",
+      "rest": "Complete original exactspan/citedretrieve/concurrency/multipleinvestors/update+stalerevision/restart/deniedPGnativeproduct scenarios, allsameactual native namespace/IDs; no partialpass or fabricated date. Genuine PG denylab narrowerthan HTTP tenancy documented. Capture no-model networkNone evidence; ownstoppedcustody+aggregatecoordinator once."
+    },
+    "diagnosis_sha256": "4bdf7f8438e5d3ecd9ecf362d78e110f1584c6b5fd2cc2e418f005d047ea51de",
+    "prior_admission_sha256": "089d9ad1e4d0314dfe18281dd003d9628a388d5c4bc52836e7a5a796fb8b7207",
+    "stage_limit": "Bootstrap/log capture/controlDB provisioning/native init/initialize/tools-list only. Mandatory actual brn+live schema/principal grant blocking readiness before any evidence tool. No third repair reenactment or new attempt if failed.",
+    "same_exact_permanent_scope": true
+  },
+  "dsh_auth": {
+    "issue": 4,
+    "route": "Fresh product-owned DeepSeek credential, configured out of band after isolated profile freeze",
+    "credential_supplied": false,
+    "credential_copy_authorized": false,
+    "profile_or_model_or_paid_mutation_admitted": false,
+    "next": "Author freeze exact native isolated profile plus bootstrap; current tariff/date/model/provider/request+token caps/usage and conservative cost below USD12 separately reviewed before call. Provide safe out-of-band configuration instructions only when exact credential location/ownership are frozen."
+  },
+  "spend": {
+    "total_cap_usd": 20,
+    "issue4_reservation_usd": 12,
+    "issue5_reservation_usd": 8,
+    "extra_spend_authorized": 0,
+    "paid_call_admission": false
+  },
+  "unchanged_constraints": "All original acceptance criteria/native DAG preserved; no default/personal/production/shared state/global config/source/SDK schema changes, no new dependencies, no publication/deployment/recurring collection/CI or human visual choice inferred; parent orchestrator only."
+}

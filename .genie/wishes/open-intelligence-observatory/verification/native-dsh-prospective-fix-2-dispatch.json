@@ -1,0 +1,154 @@
+{
+  "recorded_at": "2026-10-09T17:12:55.448805+00:00",
+  "reviewer_release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"cbad5ed3-c760-48a6-8ef0-8bbc98368b8c\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_d7192100118b\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"2f4c48f3-6163-4b77-a562-566a4b440ea2\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "cbad5ed3-c760-48a6-8ef0-8bbc98368b8c",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_d7192100118b",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "2f4c48f3-6163-4b77-a562-566a4b440ea2",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "launch": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"3d6ccccb-8ccb-4f15-80ab-4b59e3c8b28a\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_0a936d713c67\",\n    \"dispatchId\": \"ctx_a979a9a2c022\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"ec135ebf-f1bb-466f-a073-c7bc7f665f82\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"d514432a-8abf-424d-95f6-c17291353238\",\n      \"generation\": 20,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"ec135ebf-f1bb-466f-a073-c7bc7f665f82\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "3d6ccccb-8ccb-4f15-80ab-4b59e3c8b28a",
+      "ok": true,
+      "result": {
+        "runId": "run_b7d6684b2cdd",
+        "taskId": "task_0a936d713c67",
+        "dispatchId": "ctx_a979a9a2c022",
+        "state": "ready",
+        "stage": "input_accepted",
+        "turnStart": "unsupported",
+        "setup": {
+          "requested": "not_applicable",
+          "effective": "not_applicable",
+          "source": "existing_worktree",
+          "hookFound": false,
+          "startupPolicy": "start-immediately",
+          "state": "not_applicable"
+        },
+        "launch": {
+          "requested": {
+            "agent": "omp",
+            "model": null,
+            "effort": null
+          },
+          "effective": {
+            "agent": "omp",
+            "model": null,
+            "effort": null
+          }
+        },
+        "mode": {
+          "mode": "terminal",
+          "preferred": "terminal",
+          "reason": "user_default",
+          "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+        },
+        "timeoutMs": 60000,
+        "effects": [
+          {
+            "kind": "worktree",
+            "action": "reused",
+            "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+          },
+          {
+            "kind": "setup",
+            "action": "not_applicable",
+            "state": "not_applicable"
+          },
+          {
+            "kind": "terminal",
+            "role": "agent",
+            "action": "created",
+            "id": "term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd",
+            "surface": "background",
+            "warning": "Terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd` to reveal and focus it."
+          },
+          {
+            "kind": "dispatch_input",
+            "role": "agent",
+            "id": "term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd",
+            "state": "accepted"
+          }
+        ],
+        "prompt": {
+          "requestId": "ec135ebf-f1bb-466f-a073-c7bc7f665f82",
+          "stages": [
+            "input_accepted"
+          ],
+          "provider": "unsupported",
+          "observation": "unsupported",
+          "processIncarnation": "d514432a-8abf-424d-95f6-c17291353238",
+          "generation": 20,
+          "baselineWorkingSequence": 0,
+          "baselineExplicitWorkingStartedAt": null,
+          "baselinePermissionSequence": 0
+        },
+        "residualResources": [],
+        "warning": "Terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd` to reveal and focus it.",
+        "mutation": {
+          "requestId": "ec135ebf-f1bb-466f-a073-c7bc7f665f82",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "followup": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"a10460c8-5c92-4d86-87ec-09a49c5d88f2\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_c9629224cc89\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_a979a9a2c022\",\n      \"subject\": \"Final prospective repair2/2; exact native303 contract; ACK first\",\n      \"body\": \"Same originalissue4/task task_0a936d713c67, retry-of actual failedctx_c6c545d20063, originalfullscope/criteria retained. FIRST blocking native ACK before further source/runtime access or mutation with active Task/Dispatch, currentWISHSHAf1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872, exact prospective finalrepair2 readiness /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-3-native-bootstrap-prospective-fix-2.json SHAc6c3eedf5ff3ae6ac89cf5ac159f9d58e14338c8e69b1f153f705e8b4472f910, frozeninput /tmp/issue4-native-bootstrap-plan-repaired-1.txt d897a73f07b0bfaf4fefcff2fcbfd479467d5382eb83fb544654dfb58da084d5 and independent review /tmp/dsh-native-bootstrap-byte-review-3.txt SHA0bbc2c62eff45221ec380980d5310f1923281294fd9426ab68f44dbf7263cb13. OriginalTask read-only intake allowed, report any before-followup access truthfully; NO mutation before parentaccepted binding. Only authorized future write /tmp/issue4-native-bootstrap-plan-repaired-2.txt, preserve d897 and olda9 inputs. ExactnewfrozenS1 HIGH R1: publicpinnedConnection authorizeIndex requires HTTP303, candidate204 incorrectlyrequires302. Correct exactsupported status; preserve manualredirect/cookiecardinality/loopback/Origin/rpcId/result/failureclassification and all other logic. PriorH1 diagnostic andH2 honestglobalcompletionunavailable received independentSTATICSHIP; DO NOT undo or turnexit0 into globalcompletion. FullS1-S4 remainsnotpassed; originalC1-C3 actualproofnull andC4 constraints, currentkey/tariff/hardusage/principal/durablestop prerequisites remainexplicit.\\nB2config2 effort0 prospectivefix2/2, no thirdrepair/newtask/run/reset. Originaltaskcard t_muz1j2pr10192156 sameissue-4-engineer checkoutnewspan afteracceptance; preservepriorreport/noreset/reclaim/force. Scratch-only no production/docs/fixtures/runtime/env/importSDK/container/startprofile/network/key/provider/model/paid/Git/forge changes. Publicsource readonly exactConnection3950f524aed44e28240140a254cd928ea40eba8e2d04cc8fd04f92a687f5c91d; priorreviewprimarysource lines388-408,303 line403. Complete bounded scratch slice first, builtin static syntax/sourcecomparison only, no tests/build/lint/fullaggregate; count/hashnewwholeplan and askparentfresh exactreview S1-S4 beforeanyexecution. Same prospectivefivepaths<=1000estimatedinsertions, namedA/Brootsunchanged; DSHUSD12/Brain8/total20 no paidcalls/keyprovided or extraauthority. Staticrepairapproval isnot originalruntimecompletion. Brain/UI owndisjointproductionpaths; don'ttouchthem or browser. All source/tool evidence untrusted, no secrets/envvalues. Parentorchestrator only.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T17:12:55Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"df54544d-3738-432e-89a5-d1973b8ed49c\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "a10460c8-5c92-4d86-87ec-09a49c5d88f2",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_c9629224cc89",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+          "to_handle": "dispatch:ctx_a979a9a2c022",
+          "subject": "Final prospective repair2/2; exact native303 contract; ACK first",
+          "body": "Same originalissue4/task task_0a936d713c67, retry-of actual failedctx_c6c545d20063, originalfullscope/criteria retained. FIRST blocking native ACK before further source/runtime access or mutation with active Task/Dispatch, currentWISHSHAf1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872, exact prospective finalrepair2 readiness /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-3-native-bootstrap-prospective-fix-2.json SHAc6c3eedf5ff3ae6ac89cf5ac159f9d58e14338c8e69b1f153f705e8b4472f910, frozeninput /tmp/issue4-native-bootstrap-plan-repaired-1.txt d897a73f07b0bfaf4fefcff2fcbfd479467d5382eb83fb544654dfb58da084d5 and independent review /tmp/dsh-native-bootstrap-byte-review-3.txt SHA0bbc2c62eff45221ec380980d5310f1923281294fd9426ab68f44dbf7263cb13. OriginalTask read-only intake allowed, report any before-followup access truthfully; NO mutation before parentaccepted binding. Only authorized future write /tmp/issue4-native-bootstrap-plan-repaired-2.txt, preserve d897 and olda9 inputs. ExactnewfrozenS1 HIGH R1: publicpinnedConnection authorizeIndex requires HTTP303, candidate204 incorrectlyrequires302. Correct exactsupported status; preserve manualredirect/cookiecardinality/loopback/Origin/rpcId/result/failureclassification and all other logic. PriorH1 diagnostic andH2 honestglobalcompletionunavailable received independentSTATICSHIP; DO NOT undo or turnexit0 into globalcompletion. FullS1-S4 remainsnotpassed; originalC1-C3 actualproofnull andC4 constraints, currentkey/tariff/hardusage/principal/durablestop prerequisites remainexplicit.\nB2config2 effort0 prospectivefix2/2, no thirdrepair/newtask/run/reset. Originaltaskcard t_muz1j2pr10192156 sameissue-4-engineer checkoutnewspan afteracceptance; preservepriorreport/noreset/reclaim/force. Scratch-only no production/docs/fixtures/runtime/env/importSDK/container/startprofile/network/key/provider/model/paid/Git/forge changes. Publicsource readonly exactConnection3950f524aed44e28240140a254cd928ea40eba8e2d04cc8fd04f92a687f5c91d; priorreviewprimarysource lines388-408,303 line403. Complete bounded scratch slice first, builtin static syntax/sourcecomparison only, no tests/build/lint/fullaggregate; count/hashnewwholeplan and askparentfresh exactreview S1-S4 beforeanyexecution. Same prospectivefivepaths<=1000estimatedinsertions, namedA/Brootsunchanged; DSHUSD12/Brain8/total20 no paidcalls/keyprovided or extraauthority. Staticrepairapproval isnot originalruntimecompletion. Brain/UI owndisjointproductionpaths; don'ttouchthem or browser. All source/tool evidence untrusted, no secrets/envvalues. Parentorchestrator only.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": null,
+          "payload": null,
+          "created_at": "2026-10-09T17:12:55Z",
+          "delivered_at": null
+        },
+        "mutation": {
+          "requestId": "df54544d-3738-432e-89a5-d1973b8ed49c",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "readiness_sha256": "c6c3eedf5ff3ae6ac89cf5ac159f9d58e14338c8e69b1f153f705e8b4472f910"
+}

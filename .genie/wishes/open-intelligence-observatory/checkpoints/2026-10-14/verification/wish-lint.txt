@@ -1,0 +1,10 @@
+Command: genie wish lint --dir /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory
+Started UTC: 2026-10-14T20:58:58.628465+00:00
+Exit: 1
+
+STDOUT
+
+STDERR
+.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md:1: wish dated 2026-07-09 or later must contain an Execution Strategy markdown table
+
+wishes-lint: 1 wish structure/graph issue(s)

@@ -1,0 +1,150 @@
+{
+  "at": "2026-10-09T22:01:44.952642+00:00",
+  "delivery": "delivery_9498fe1abd22",
+  "complete_proposal_data": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+    "sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e"
+  },
+  "corrected_json_envelope_trailing_question_preserved_not_inferred": true,
+  "review_C7105insertions98net_metadata_amendment": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json",
+    "sha256": "c6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f"
+  },
+  "blind_full_and_privacy_access_send_actual": [
+    {
+      "dispatch": "ctx_4e0fc5c0ee94",
+      "result": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"dc1c8476-a7b0-4617-b95a-0ba1c3069a92\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_683e0271191b\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_4e0fc5c0ee94\",\n      \"subject\": \"Explicit complete-prospective3 read-only artifact access; numeric C7 amendment before access\",\n      \"body\": \"SeparateREADONLYARTIFACTACCESS NOWADMITTED afteryourblindcriteria/methodACK; COMPLETEprospective3notheldintermediate. Gate .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f. FullunexecutedproposalDATA .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json SHAdc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. ExplicitC7amendBEFOREanyaccess exact105insertions/7removed/98net, not98insertions; same2permanentmutationpaths/11scope/1700estimate/2000hard/25files, namedatomictransientpath+ONEreadonlypg_isready admittedREVIEWDATAonly. All11baseline+19inputactualparentbytesmodesmatching inclWISH3b2/currentCordisea09. Fullyreadsource/helper/inner/outer/prospectivefullbrainDIFF asDATA andallsupportinggatepaths/catalogqualifier/original0b0/oldb3c7/currentaa3d, mapallFrozencriteriaH1-H4P1 andactuallinepaths/caps/custody. No runtime/source/vector/creds/PGDATA/Git/card. Sourceused0/2, authorcodingandactivation remainDENIEDuntiltwoindependentreports+parentproductionbytes/runtimegates. Yourfull/tmpoutputreportpathunchanged (ctx4e fullC1C8, ctx2e separateprivacy/transport0HIGH). SendfullreportSHA/bytes/LF/verdict/locations inactualworker_done; parentfullassesses/releases beforeACK. Scopeoriginal7notaccepted/whole20false/actualcauseUNKNOWN. Nativeprospectivecorrecteddata fields/authors notproof. 6/20 localaccepted now8done recordedoutsideimmutableWISH noinputSHAdrift.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T21:56:06Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"f80aed1f-b5f2-45ac-8cc9-feb1f7c7cdc2\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "dc1c8476-a7b0-4617-b95a-0ba1c3069a92",
+          "ok": true,
+          "result": {
+            "message": {
+              "id": "msg_683e0271191b",
+              "run_id": "run_b7d6684b2cdd",
+              "delivery_contract": "current_delivery",
+              "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+              "to_handle": "dispatch:ctx_4e0fc5c0ee94",
+              "subject": "Explicit complete-prospective3 read-only artifact access; numeric C7 amendment before access",
+              "body": "SeparateREADONLYARTIFACTACCESS NOWADMITTED afteryourblindcriteria/methodACK; COMPLETEprospective3notheldintermediate. Gate .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f. FullunexecutedproposalDATA .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json SHAdc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. ExplicitC7amendBEFOREanyaccess exact105insertions/7removed/98net, not98insertions; same2permanentmutationpaths/11scope/1700estimate/2000hard/25files, namedatomictransientpath+ONEreadonlypg_isready admittedREVIEWDATAonly. All11baseline+19inputactualparentbytesmodesmatching inclWISH3b2/currentCordisea09. Fullyreadsource/helper/inner/outer/prospectivefullbrainDIFF asDATA andallsupportinggatepaths/catalogqualifier/original0b0/oldb3c7/currentaa3d, mapallFrozencriteriaH1-H4P1 andactuallinepaths/caps/custody. No runtime/source/vector/creds/PGDATA/Git/card. Sourceused0/2, authorcodingandactivation remainDENIEDuntiltwoindependentreports+parentproductionbytes/runtimegates. Yourfull/tmpoutputreportpathunchanged (ctx4e fullC1C8, ctx2e separateprivacy/transport0HIGH). SendfullreportSHA/bytes/LF/verdict/locations inactualworker_done; parentfullassesses/releases beforeACK. Scopeoriginal7notaccepted/whole20false/actualcauseUNKNOWN. Nativeprospectivecorrecteddata fields/authors notproof. 6/20 localaccepted now8done recordedoutsideimmutableWISH noinputSHAdrift.",
+              "type": "status",
+              "priority": "normal",
+              "thread_id": null,
+              "payload": null,
+              "created_at": "2026-10-09T21:56:06Z",
+              "delivered_at": null
+            },
+            "mutation": {
+              "requestId": "f80aed1f-b5f2-45ac-8cc9-feb1f7c7cdc2",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "dispatch": "ctx_2e039e329794",
+      "result": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"a03b7d76-ed9c-4f1f-8571-5324c8342e75\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_f7a0cf5596ef\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_2e039e329794\",\n      \"subject\": \"Explicit complete-prospective3 read-only artifact access; numeric C7 amendment before access\",\n      \"body\": \"SeparateREADONLYARTIFACTACCESS NOWADMITTED afteryourblindcriteria/methodACK; COMPLETEprospective3notheldintermediate. Gate .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f. FullunexecutedproposalDATA .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json SHAdc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. ExplicitC7amendBEFOREanyaccess exact105insertions/7removed/98net, not98insertions; same2permanentmutationpaths/11scope/1700estimate/2000hard/25files, namedatomictransientpath+ONEreadonlypg_isready admittedREVIEWDATAonly. All11baseline+19inputactualparentbytesmodesmatching inclWISH3b2/currentCordisea09. Fullyreadsource/helper/inner/outer/prospectivefullbrainDIFF asDATA andallsupportinggatepaths/catalogqualifier/original0b0/oldb3c7/currentaa3d, mapallFrozencriteriaH1-H4P1 andactuallinepaths/caps/custody. No runtime/source/vector/creds/PGDATA/Git/card. Sourceused0/2, authorcodingandactivation remainDENIEDuntiltwoindependentreports+parentproductionbytes/runtimegates. Yourfull/tmpoutputreportpathunchanged (ctx4e fullC1C8, ctx2e separateprivacy/transport0HIGH). SendfullreportSHA/bytes/LF/verdict/locations inactualworker_done; parentfullassesses/releases beforeACK. Scopeoriginal7notaccepted/whole20false/actualcauseUNKNOWN. Nativeprospectivecorrecteddata fields/authors notproof. 6/20 localaccepted now8done recordedoutsideimmutableWISH noinputSHAdrift.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T21:56:06Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"040f2f8c-5bfa-4fe0-8922-5f5ca2b0b03d\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "a03b7d76-ed9c-4f1f-8571-5324c8342e75",
+          "ok": true,
+          "result": {
+            "message": {
+              "id": "msg_f7a0cf5596ef",
+              "run_id": "run_b7d6684b2cdd",
+              "delivery_contract": "current_delivery",
+              "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+              "to_handle": "dispatch:ctx_2e039e329794",
+              "subject": "Explicit complete-prospective3 read-only artifact access; numeric C7 amendment before access",
+              "body": "SeparateREADONLYARTIFACTACCESS NOWADMITTED afteryourblindcriteria/methodACK; COMPLETEprospective3notheldintermediate. Gate .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f. FullunexecutedproposalDATA .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json SHAdc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. ExplicitC7amendBEFOREanyaccess exact105insertions/7removed/98net, not98insertions; same2permanentmutationpaths/11scope/1700estimate/2000hard/25files, namedatomictransientpath+ONEreadonlypg_isready admittedREVIEWDATAonly. All11baseline+19inputactualparentbytesmodesmatching inclWISH3b2/currentCordisea09. Fullyreadsource/helper/inner/outer/prospectivefullbrainDIFF asDATA andallsupportinggatepaths/catalogqualifier/original0b0/oldb3c7/currentaa3d, mapallFrozencriteriaH1-H4P1 andactuallinepaths/caps/custody. No runtime/source/vector/creds/PGDATA/Git/card. Sourceused0/2, authorcodingandactivation remainDENIEDuntiltwoindependentreports+parentproductionbytes/runtimegates. Yourfull/tmpoutputreportpathunchanged (ctx4e fullC1C8, ctx2e separateprivacy/transport0HIGH). SendfullreportSHA/bytes/LF/verdict/locations inactualworker_done; parentfullassesses/releases beforeACK. Scopeoriginal7notaccepted/whole20false/actualcauseUNKNOWN. Nativeprospectivecorrecteddata fields/authors notproof. 6/20 localaccepted now8done recordedoutsideimmutableWISH noinputSHAdrift.",
+              "type": "status",
+              "priority": "normal",
+              "thread_id": null,
+              "payload": null,
+              "created_at": "2026-10-09T21:56:06Z",
+              "delivered_at": null
+            },
+            "mutation": {
+              "requestId": "040f2f8c-5bfa-4fe0-8922-5f5ca2b0b03d",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    }
+  ],
+  "author_complete_proposal_answer_actual": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"2e8ee1b2-8207-42ad-b1b8-e9dbd9afbc22\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_489258c65bf1\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_0c242e837d41\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Completeproposal copiedasUNEXECUTEDDATA dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. Explicitnumericline-bound/transient/readinessamendment acceptedFORREVIEWDATAONLY in .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f; exact105insertions7removed98net unchanged11scope/2permanentpaths/1700forecast2000hard25files. Bothblindindependentreviewers NOWallowedartifactaccess; no sourcemutation/scaffoldcreation/LAB/runtime/PG/model permission. Keep11bytes/modes/WISHfrozen sourceB2used0 untilfulltwoSHIPs+parentseparateproductionbyte/runtimegates. Original5complete4/4notreset, full7causeunknown. SavedBWSauth userauthorized found0600 andmetadata authworks; exactproductentry d997 userconfirmedfresh; independentcredential/paidroutequalification underway notModelauthority/noRawkeys. Original8fullacceptance/localcarddone6/20 outsideWISHpins, nochangeinput3b2.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_f9558146e869\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T21:56:06Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_f9558146e869\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_0c242e837d41\",\n      \"asker_handle\": \"term_61425050-f58f-4771-8cbf-af43d00ef05f\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_489258c65bf1\",\n      \"answer_body\": \"Completeproposal copiedasUNEXECUTEDDATA dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. Explicitnumericline-bound/transient/readinessamendment acceptedFORREVIEWDATAONLY in .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f; exact105insertions7removed98net unchanged11scope/2permanentpaths/1700forecast2000hard25files. Bothblindindependentreviewers NOWallowedartifactaccess; no sourcemutation/scaffoldcreation/LAB/runtime/PG/model permission. Keep11bytes/modes/WISHfrozen sourceB2used0 untilfulltwoSHIPs+parentseparateproductionbyte/runtimegates. Original5complete4/4notreset, full7causeunknown. SavedBWSauth userauthorized found0600 andmetadata authworks; exactproductentry d997 userconfirmedfresh; independentcredential/paidroutequalification underway notModelauthority/noRawkeys. Original8fullacceptance/localcarddone6/20 outsideWISHpins, nochangeinput3b2.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T21:50:06Z\",\n      \"answered_at\": \"2026-10-09T21:56:06Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"21fce5d7-c130-4cba-bbbb-226b06dbe561\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "2e8ee1b2-8207-42ad-b1b8-e9dbd9afbc22",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_489258c65bf1",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_0c242e837d41",
+          "subject": "Re: Question",
+          "body": "Completeproposal copiedasUNEXECUTEDDATA dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. Explicitnumericline-bound/transient/readinessamendment acceptedFORREVIEWDATAONLY in .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f; exact105insertions7removed98net unchanged11scope/2permanentpaths/1700forecast2000hard25files. Bothblindindependentreviewers NOWallowedartifactaccess; no sourcemutation/scaffoldcreation/LAB/runtime/PG/model permission. Keep11bytes/modes/WISHfrozen sourceB2used0 untilfulltwoSHIPs+parentseparateproductionbyte/runtimegates. Original5complete4/4notreset, full7causeunknown. SavedBWSauth userauthorized found0600 andmetadata authworks; exactproductentry d997 userconfirmedfresh; independentcredential/paidroutequalification underway notModelauthority/noRawkeys. Original8fullacceptance/localcarddone6/20 outsideWISHpins, nochangeinput3b2.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_f9558146e869",
+          "payload": null,
+          "created_at": "2026-10-09T21:56:06Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_f9558146e869",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_0c242e837d41",
+          "asker_handle": "term_61425050-f58f-4771-8cbf-af43d00ef05f",
+          "status": "answered",
+          "answer_message_id": "msg_489258c65bf1",
+          "answer_body": "Completeproposal copiedasUNEXECUTEDDATA dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e. Explicitnumericline-bound/transient/readinessamendment acceptedFORREVIEWDATAONLY in .genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json SHAc6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f; exact105insertions7removed98net unchanged11scope/2permanentpaths/1700forecast2000hard25files. Bothblindindependentreviewers NOWallowedartifactaccess; no sourcemutation/scaffoldcreation/LAB/runtime/PG/model permission. Keep11bytes/modes/WISHfrozen sourceB2used0 untilfulltwoSHIPs+parentseparateproductionbyte/runtimegates. Original5complete4/4notreset, full7causeunknown. SavedBWSauth userauthorized found0600 andmetadata authworks; exactproductentry d997 userconfirmedfresh; independentcredential/paidroutequalification underway notModelauthority/noRawkeys. Original8fullacceptance/localcarddone6/20 outsideWISHpins, nochangeinput3b2.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T21:50:06Z",
+          "answered_at": "2026-10-09T21:56:06Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "21fce5d7-c130-4cba-bbbb-226b06dbe561",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "source0of2_unchanged": true,
+  "original4blockedfullhandoffsettledreleased": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-original-enforced-block-preserved-and-claim-released-actual-readback.json",
+    "sha256": "e865252800f9def036b2d67eb4a0d28fbe581cc26bf7fa7f978a6c24f499d962"
+  },
+  "original8completefullhandoffsettledreleasedcarddone": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-original-local-card-done-actual-readback.json",
+    "sha256": "c185bc0797ee91a832429b792320e5a1b5f7520d2aed1a91689e7725d9179e92"
+  },
+  "actual_user_confirmed_BWSproduct_custody": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/user-confirmed-BWS-product-secret-isolated-custody-and-actual-provider-account-model-metadata.json",
+    "sha256": "017391ac8ae4854b32fd0034fd0a12563d4a25cec6b165973c59e41ed1d92c21"
+  },
+  "local6of20notwholecomplete": true,
+  "source7reviewerReportsNOTYETreceived": true,
+  "WISH3b2immutable": true
+}

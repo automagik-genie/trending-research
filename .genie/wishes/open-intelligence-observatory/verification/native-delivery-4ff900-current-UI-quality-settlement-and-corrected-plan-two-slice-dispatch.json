@@ -1,0 +1,110 @@
+{
+  "recorded_at": "2026-10-09T21:36:26.716110+00:00",
+  "processed_delivery": "delivery_4ff900a92e45",
+  "UI_current_quality_fullreport_settlement": ".genie/wishes/open-intelligence-observatory/verification/group-7-final-actual-human-doc-quality-rebind-accepted-settlement.json",
+  "UI_original_source_final_handoff_gate": ".genie/wishes/open-intelligence-observatory/readiness/group-7-original-accepted-current-quality-final-claim-span-handoff-gate.json",
+  "UI_source_final_handoff_send": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"6d4deab0-d5c4-4c4d-9a8e-f3188917a92b\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_992a9742ba06\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_a45e75e8c6bc\",\n      \"subject\": \"Original8 and currentquality accepted; final claim-span handoff admitted\",\n      \"body\": \"OriginalfullC1C4c09e andseparatecurrent67a62 fullreports positivelyassessed/SHAsverified/reviewersreleased. Exact12 3443/source4 28c1 immutable, current45/eval/lintnumeric0/0/0 aa3d andactualFelipe b654 gatecomplete. READ .genie/wishes/open-intelligence-observatory/readiness/group-7-original-accepted-current-quality-final-claim-span-handoff-gate.json SHAc9d1f91346eb45cbf016ef4935f7ed8d1501049fe7c02c504abaea77418ea160 forONEcompleteoriginalclaimspanworkerreport/timeline-readback/standalonefullartifact/nativeworker_donesucceeded. DoNOTmarkcarddone/sourceDoc12/proof/modes/browser/code/Git/forge/provider/model mutate; Source2/2quality1/1effort0. Parentfullhandoffassessment/release/localcarddone ownsnext. No UIdefaultalreadychanged/nativeatlas/financialtruth/deploy/newcomer/editorial/wholeRoadmapclaim. Finalreportaa3d supersedesoldauthorfreezeNULL withoutrewritinghistory.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T21:32:09Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"7e1818aa-37d1-4389-9236-b4f17f196e12\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "6d4deab0-d5c4-4c4d-9a8e-f3188917a92b",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_992a9742ba06",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+          "to_handle": "dispatch:ctx_a45e75e8c6bc",
+          "subject": "Original8 and currentquality accepted; final claim-span handoff admitted",
+          "body": "OriginalfullC1C4c09e andseparatecurrent67a62 fullreports positivelyassessed/SHAsverified/reviewersreleased. Exact12 3443/source4 28c1 immutable, current45/eval/lintnumeric0/0/0 aa3d andactualFelipe b654 gatecomplete. READ .genie/wishes/open-intelligence-observatory/readiness/group-7-original-accepted-current-quality-final-claim-span-handoff-gate.json SHAc9d1f91346eb45cbf016ef4935f7ed8d1501049fe7c02c504abaea77418ea160 forONEcompleteoriginalclaimspanworkerreport/timeline-readback/standalonefullartifact/nativeworker_donesucceeded. DoNOTmarkcarddone/sourceDoc12/proof/modes/browser/code/Git/forge/provider/model mutate; Source2/2quality1/1effort0. Parentfullhandoffassessment/release/localcarddone ownsnext. No UIdefaultalreadychanged/nativeatlas/financialtruth/deploy/newcomer/editorial/wholeRoadmapclaim. Finalreportaa3d supersedesoldauthorfreezeNULL withoutrewritinghistory.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": null,
+          "payload": null,
+          "created_at": "2026-10-09T21:32:09Z",
+          "delivered_at": null
+        },
+        "mutation": {
+          "requestId": "7e1818aa-37d1-4389-9236-b4f17f196e12",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "source7_corrected_data_record": ".genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json",
+  "source7_corrected_data_SHA": "3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021",
+  "source7_final_two_independent_slices": [
+    {
+      "slice": "oi7-corrected-final-plan-C1C8-2",
+      "taskId": "task_6e8420cfedc4",
+      "dispatchId": "ctx_4e0fc5c0ee94",
+      "state": "ready",
+      "report_path": "/tmp/oi7-corrected-prospective-final-byte-review-2.txt"
+    },
+    {
+      "slice": "oi7-corrected-diag-privacy-quality-2",
+      "taskId": "task_7bf858467e33",
+      "dispatchId": "ctx_2e039e329794",
+      "state": "ready",
+      "report_path": "/tmp/oi7-corrected-diagnostic-privacy-and-transport-quality-2.txt"
+    }
+  ],
+  "source7_corrected_data_freeze_reply": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"cacaeb10-ca74-4332-a3a3-29bc53c7f3c6\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_d40b34b894c6\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_0c242e837d41\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Accepted FREEZECORRECTEDPROSPECTIVEDATAONLY. Parentrecord .genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json SHA3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021 fulloriginalbody+decodedplanpreservedold844/b3c7. TwoGENUINEindependentreadonlyslicesdispatched: fullC1C8finalbyteplanacceptance andseparateprivacy/transportfailurequality, eachblindACKbeforeaccess. No source11/code/helper/scaffoldexecution/PG/runtime/model/schema/paging/reimport/cardreport/Git orbudgetreset yet; used0/2 remains. Waittheirfreshfullreportsandparentexplicitproductionmutation/finalbyte/oneactivationgate, neverclaimplanCodeEXECUTED/LABvectorspassed. Current45baselineaa3d notnewinstrumentationproof. CatalognoMaxcauseUNKNOWN andoldnewlinehypothesisrejected retained.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_3c6c115ff502\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T21:34:42Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_3c6c115ff502\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_0c242e837d41\",\n      \"asker_handle\": \"term_61425050-f58f-4771-8cbf-af43d00ef05f\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_d40b34b894c6\",\n      \"answer_body\": \"Accepted FREEZECORRECTEDPROSPECTIVEDATAONLY. Parentrecord .genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json SHA3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021 fulloriginalbody+decodedplanpreservedold844/b3c7. TwoGENUINEindependentreadonlyslicesdispatched: fullC1C8finalbyteplanacceptance andseparateprivacy/transportfailurequality, eachblindACKbeforeaccess. No source11/code/helper/scaffoldexecution/PG/runtime/model/schema/paging/reimport/cardreport/Git orbudgetreset yet; used0/2 remains. Waittheirfreshfullreportsandparentexplicitproductionmutation/finalbyte/oneactivationgate, neverclaimplanCodeEXECUTED/LABvectorspassed. Current45baselineaa3d notnewinstrumentationproof. CatalognoMaxcauseUNKNOWN andoldnewlinehypothesisrejected retained.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T21:19:04Z\",\n      \"answered_at\": \"2026-10-09T21:34:42Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"a0c0543c-51a0-4e26-aff1-9203bb932984\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "cacaeb10-ca74-4332-a3a3-29bc53c7f3c6",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_d40b34b894c6",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_0c242e837d41",
+          "subject": "Re: Question",
+          "body": "Accepted FREEZECORRECTEDPROSPECTIVEDATAONLY. Parentrecord .genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json SHA3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021 fulloriginalbody+decodedplanpreservedold844/b3c7. TwoGENUINEindependentreadonlyslicesdispatched: fullC1C8finalbyteplanacceptance andseparateprivacy/transportfailurequality, eachblindACKbeforeaccess. No source11/code/helper/scaffoldexecution/PG/runtime/model/schema/paging/reimport/cardreport/Git orbudgetreset yet; used0/2 remains. Waittheirfreshfullreportsandparentexplicitproductionmutation/finalbyte/oneactivationgate, neverclaimplanCodeEXECUTED/LABvectorspassed. Current45baselineaa3d notnewinstrumentationproof. CatalognoMaxcauseUNKNOWN andoldnewlinehypothesisrejected retained.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_3c6c115ff502",
+          "payload": null,
+          "created_at": "2026-10-09T21:34:42Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_3c6c115ff502",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_0c242e837d41",
+          "asker_handle": "term_61425050-f58f-4771-8cbf-af43d00ef05f",
+          "status": "answered",
+          "answer_message_id": "msg_d40b34b894c6",
+          "answer_body": "Accepted FREEZECORRECTEDPROSPECTIVEDATAONLY. Parentrecord .genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json SHA3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021 fulloriginalbody+decodedplanpreservedold844/b3c7. TwoGENUINEindependentreadonlyslicesdispatched: fullC1C8finalbyteplanacceptance andseparateprivacy/transportfailurequality, eachblindACKbeforeaccess. No source11/code/helper/scaffoldexecution/PG/runtime/model/schema/paging/reimport/cardreport/Git orbudgetreset yet; used0/2 remains. Waittheirfreshfullreportsandparentexplicitproductionmutation/finalbyte/oneactivationgate, neverclaimplanCodeEXECUTED/LABvectorspassed. Current45baselineaa3d notnewinstrumentationproof. CatalognoMaxcauseUNKNOWN andoldnewlinehypothesisrejected retained.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T21:19:04Z",
+          "answered_at": "2026-10-09T21:34:42Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "a0c0543c-51a0-4e26-aff1-9203bb932984",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "own_BWS_exit1_missing_auth_metadata": ".genie/wishes/open-intelligence-observatory/verification/user-BWS-managed-login-shell-actual-presence-exit-result.json",
+  "BWS_all3_contexts_missing": true,
+  "no_product_code_or_native_runtime_by_parent": true,
+  "source7_original_card_done": false,
+  "source8_original_card_done": false,
+  "source4_original_card_done": false
+}

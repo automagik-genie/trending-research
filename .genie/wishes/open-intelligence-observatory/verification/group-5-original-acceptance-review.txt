@@ -1,0 +1,870 @@
+Independent original acceptance/design review — SHIP
+
+Reviewer: independent read-only acceptance/design worker term_e95e78ef-3d20-425a-a256-b1d6fa25f917; task task_3d72b01ee05a; dispatch ctx_c73d9cdb99fe; not implementation author ctx_76f21ad589b3.
+Assessment time: 2026-10-08T08:56:55.325133+00:00.
+Target: Group 5 / original GitHub #6; ..
+Reviewed commit: 1e1d91f509b4862e09076fcacd7c751008db866b.
+Comparison baseline: 3db0d3690973e2c5077fc0788a8ce150435871ea.
+
+1. Frozen criteria and artifact identity
+
+Read skill://review and evidence-identity first. Before candidate access froze the four original criteria and SHIP/FIX-FIRST/BLOCKED triggers, then froze all four original scope bullets on receiving the coordinator message, still before reading candidate artifacts. Read readiness/group-5-review-1.json, WISH:340–368 and complete issue6 body from github-roadmap.json; sent ACK msg_5f1c38f176c7 with actual byte/mode/commit/WISH pins before opening assessment.md or evidence.json. No criterion was added after candidate reading.
+SHIP: all four original criteria and scope met, current attributable required validation, no confirmed HIGH/CRITICAL current-slice gap; applicable authority/privacy/source/spending/editorial/visual/newcomer/deployment gates never waived. FIX-FIRST: established actionable criterion defect or failed gate. BLOCKED: missing/stale identity, scope, necessary decision/environment or validation prevents assessment. Original AC4 is precise draft-review capability, not the later #12 requirement for actual authorized human publication approval.
+
+reviewed-manifest-sha256: c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783
+Algorithm: SHA256 of UTF8 sorted path NUL four-digit octal POSIX permission NUL full-byte SHA256 LF. Exact two-path production identity:
+0600 investigations/frontier-economics/assessment.md 1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa (52115 bytes, 544 lines)
+0600 investigations/frontier-economics/evidence.json e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93 (294150 bytes, 200 lines)
+Exclusions: every file outside these two production paths, including unrelated/untracked work. Untracked files inside the two named paths are not silently excluded: their full current bytes are hashed and compared with committed blobs. Governing/source/domain/validation inputs have separate pins below.
+Governing WISH SHA256: 925b29b9ab4798b994c0d1f269b0d2c836818333f04a1013f78f51e5b4e8fa3f.
+Actual read-only git rev-parse HEAD matched exact target; git show <target>:<each production path> full-byte hashes matched. git diff --name-status <baseline> <target> exited0 and showed exactly the two new production files plus five coordinator metadata paths named in verification/group-5-exact-commit.json; no other production change. No Git state/index/commit operation occurred.
+Independently recomputed production identity and all18 input hashes/modes after fresh smoke: unchanged. Independently reconstructed the seven-path source manifest b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff. Any later production-byte/mode or governing-WISH drift invalidates this verdict; require a freshly pinned review, not silent rebaselining.
+
+2. Criterion-by-criterion coverage
+
+AC1 PASS — Every consequential factual statement has a dated source and classification.
+Evidence: assessment.md:3–24 separates interpretation, acquired metadata, local artifact provenance, panel missingness and secondary financial assertion; :26–69 renders all38 actual financial assertions with full span IDs, rank and raw bounds; :73–101 classifies unknowns and authored reporting rules; :103–124 labels conditional interpretations, not measured conclusions. evidence.json:13–52/55–94 binds all40 original-derived views/spans, :97–134 all38 observations, :137–179 all43 claims with Wikidata-versus-curator assertion identity. No issuer recognition, accounting comparability, AI allocation or independent audit is inferred. All source dates are actual acquisition completion, with publication unknown; modified/cache/source-year/day clocks are distinct. Fresh actual consumer exercised every full raw-object/canonical/span chain. Independent reviewer smoke also checked every rendered table row against the actual complete originals: signed amount, lower/upper bounds, entity, rank, P585 raw label/precision, claim entity/attribution, acquisition URL and chronology. P2139 quantity/English total-revenue label/full description and Q4917/P498 USD derive from acquired metadata. Non-numeric source-coverage/rights/readability statements were traced to pinned registry/NOTICE/domain contract; definitions, engineering rulings and hypotheses remain explicitly authored policies rather than new financial facts. Retained extra raw properties remain uninterpreted.
+
+AC2 PASS — Revenue/run rate, cash burn/loss and commitments/payments remain distinct.
+Evidence: assessment.md:24/67/77–95 explicitly forbids corporate revenue→cash conversion/AI/private-lab/comparable-period inference, separates list prices from realized inference margin, API from consumer prices, training from inference, accounting loss from cash burn, equity/debt/cloud-credit finance from obligations/settlements. :202–294 preserves all21 financial/operating unknown fields independently for each original entity. evidence.json:97–134 uses only wikidata_P2139_revenue_assertion, explicit USD and unknown domain accounting/event endpoints; :183–185 has no fabricated relationship or transaction edge. All38 asserted original amounts are preserved without pooled totals, growth or annualization. Fresh altered-quantity/currency/recognized-payment/unknown-financial controls rejected at intended guards; independent zero-debt and consumer-price promotions also rejected. This is substantive financial classification over real quantities, not only schema shape or renamed fixture fields.
+
+AC3 PASS — Missing cost or retention data remains unknown; no unsupported bubble-burst date is generated.
+Evidence: assessment.md:73–97/202–294 makes unknown ≠ zero/false/no event, specifies missing cohorts, effective price records, fully loaded cost denominators, funding status, contracts/payments and substitute comparisons; all four entities retain explicit null retention, inference/training cost, loss/burn, IPO, subsidy, distillation and bubble_burst_date. :105–122 qualifies every missing hypothesis premise and requires named same-period/cohort/comparability evidence to decide it. source publication stays null and source year/day precision is not promoted to midnight accounting intervals. Fresh consumer denied twelve unknown-field promotions, fabricated midnight/publication and postcutoff claims. Independent entity/question/method/future-observation denials passed. No unsupported burst date, private company estimate, inferred AI revenue/cost or allegations are present.
+
+AC4 PASS — The editorial reviewer can approve a precise investigation revision.
+Evidence: assessment.md:134–165 names exact revision frontier-economics/assessment/1, immutable pack path/hash, all three assessment digests, replay manifest digest82177312064e99a6549bf2262a64a4646a6adb3c5af2fd6b0963146c5c5fec17, actual cutoff2026-10-08T08:36:34.105385Z and method frontier-economics/curation/1.0.0. :136–142 provides a concrete full provenance/economics review and attributable receipt protocol requiring both repository-relative paths and both externally computed full-byte SHA256s, authenticated reviewer/time/decision/reasons and invalidation on drift. No self-referential assessment.md digest is invented. evidence.json:187–198 preserves attributed assessments, draft publication bound to exact manifest and four-entity Scene/cutoff/method. Authorship is an actual curation project, not fake human editorial identity. Current actor/approval/publication remain null; this permits an exact draft decision, not public release. Fresh unchanged pack/assessment/manifest hash and unauthenticated-publication rejection checks passed; independent fabricated-reviewer and method-drift controls rejected. Original capability criterion is satisfied without inventing a real human approval or substituting it for later #12 acceptance.
+
+Required fourth independent-review criterion where applicable: upstream #2 AC4 is supported by the distinct pinned Group1 independent report verification/group-1-design-review.txt:17,32–41 at reviewed60975ca9c66efaa8f8284d37897c5e5d5f8a2f68, not author tests. Group2's independent source acceptance report:41 names the same requirement; source/schema bytes remain exactly admitted. This report is the independent original #6 acceptance/design review, not its author quality self-assessment or a replacement for the separately required quality reviewer. Coordinator owns recording/linking receipts and closure; I mutated neither WISH nor card.
+
+3. Every original scope item
+
+S1 PASS — Dated pack for sustainable-frontier-AI question using qualified panel: full four original entities and four original public-finances/money-types/pricing-economics/narrative questions retained, all38 existing company P2139 objects admitted plus necessary metadata, no alternate panel or fabricated private originals. Complete four licensed encoded originals are actually opened/decoded/checked, not directory names or URL references. The bounded answer is not established either way, correctly distinguished from a sustainability measurement.
+S2 PASS — Demand/retention, price, inference, training, funding, compute and open-model substitutes: assessment.md:75–91 covers all dimensions with separate nulls, source-specific access/rights limits and concrete discriminating evidence. API/consumer, commitment/payment and equity/debt/credit distinctions are explicit; no skipped topic masked by a placeholder or empty measurement.
+S3 PASS — Competing interpretations, assumptions, strongest counterevidence and invalidation: :103–122 supplies diversified-partner buffer, financing-dependent fragility and substitution/value migration. Each has named assumptions, strongest available source-grounded counterweight or explicit lack of a direct measured counterexample, and observable same-entity/period/cohort/workload conditions. The acquired corporate baseline is a counterweight to “no economic activity,” not evidence that private fragility is false or commoditization happened. A/C explicitly acknowledge the absence of discriminating margin/substitute observations rather than fabricating contradictory evidence. A/B/C can coexist; empty evidence_links deliberately avoids false contradictions. All assessments and hypotheses are attributed and dated.
+S4 PASS — IPO/loss/subsidy/distillation sourced only: :87–90/97/112/120 and exact per-entity null fields keep these claims unestablished, require dated attributable original/period/mechanism/procedure before adoption, and never infer financing = subsidy, open substitution = distillation or a possible IPO = a failure clock. No illicit allegation, financial deal, cash-loss claim or projected date is manufactured.
+
+4. Exercised versus reused validation
+
+FRESH A, after complete artifact/prose/code reading, repository cwd:
+python3 -B -c 'from pathlib import Path; text = Path("investigations/frontier-economics/assessment.md").read_text(); exec(compile(text.split("```python\n", 1)[1].split("\n```", 1)[0], "frontier-economics-smoke", "exec"))'
+Exit0, observed2.08s, actual stdout all38 raw-original→canonical→domain financial chains; four complete originals, four entities, three exact assessments, unchanged production hashes/cutoff. All39 negative controls observed expected rejection messages: missing/corrupt original, decoded digest/revision/licence/retention/redistribution, raw offset/media/span/rank/bounds/qualifiers/references/publication/cohort, quantity/currency/midnight/recognition/common-origin, twelve financial unknowns, omitted topic, manifest/input cutoff, unauthenticated publication, review revision and unexpected process-local network. Executed reviewed repository-authored code only; no source/reference string executed. Importing the existing contract helper did not run its unittest suite.
+
+FRESH B, independently authored in-memory semantic/denial smoke, actual subprocess python3 -B -c <Appendix A payload>, cwd target, capture_output=True; exit0 and empty stderr. Source bytes below. Checked complete decoded identities/namespaces/revisions/hash/length/strict UTF8, actual P2139/P498 semantics, exact full-original object membership, all38 rendered rows/claims/observations with source URL, entity, raw amount/bounds/rank/year or day precision and exact dates. Then exercised the actual consumer with eight additional plausible consumer-visible invalid candidates: omitted Anthropic, rewritten original question, fake editorial principal, false contradiction, method drift, debt=0, consumer price=20 and future source observation. All rejected at named intended guards. Actual output preserved in Appendix B. These are throwaway in-memory fault scenarios, not permanent tests, mock echoes, source-text-only assertions or count/non-empty proofs.
+
+REUSED, explicitly attributable coordinator post-full-slice frozen evidence:
+verification/group-5-coordinator-frozen-gate.json SHA25612d3dc56490cfbfc8a9fff60b855a8beae5539690421c41c4409ad7070b3fdba, recorded2026-10-08T08:46:18.571842+00:00→08:46:21.138387+00:00, same two production bytes/modes and source input identity unchanged before/after; commit association in verification/group-5-exact-commit.json.
+python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json
+Coordinator exit0, complete43 tests OK, fixture evaluator completed, no warning text in actual stderr; stdout SHA256e1cc9a457e4068aa5e035aa36d989417b8514f94687c13a4b8ccabeadd1b8235. Also records actual document consumer exit0/39 guards, stdout SHA256b75ddcf29241f2ea6cb565e7c9727b836d621f66aa29de3431f2f2d75e42032f. Both stored stdout digests independently recomputed; gate file hash matched admitted pin. This is current coordinator-run full-gate reuse, not my own full-suite run and not a historical source-only gate/worker assertion. No build/lint/tests/formatter mid-flight or narrowed substitute.
+
+5. Findings, closure and limitations
+
+Current Group5 confirmed gaps: none; no CRITICAL/HIGH defect, failed required gate or stale identity. No current unresolved defect hypothesis promoted into a confirmed finding; no repair requested in the owned two paths. Hypotheses A/B/C remain unresolved economic questions by design, not demonstrated financial conclusions. No extra criterion was retroactively introduced.
+
+Preserved downstream risks — conditional HIGH if claimed accepted without closure, not current Group5 waivers:
+R1 Financial truth/coverage. Provenance: read of assessment.md:9/24/67/69/73–101 and actual four-original independent smoke at exact reviewed SHA. Corporate assertions, including preferred/future-year labels, are not issuer audit/accounting recognition, comparable fiscal periods, AI allocation, cash availability or private retention/cost. Owner source/editorial; closure requires authorized retained qualified originals and exact accounting/cohort/period lineage before stronger claims; keep nulls until then.
+R2 Authority/privacy/native durability. Provenance: WISH:175–178/196–198 and assessment.md:18/132/142; local registration is not native Brain ingestion, RLS, restart, concurrent-claims/investors or plugin replacement persistence. Original #4/#5 remain BLOCKED; #7 native read model and #10 actual Scene assistant are unaccepted. Owners those groups/coordinator; closure requires original authorized live runtime/principal/transport/readback/concurrency/restart/replacement and tenant/session denial receipts. No product namespace/private memory/provider/credential access occurred here.
+R3 Editorial/visual/newcomer/deployment. Provenance: WISH:179–183/202–208 and assessment.md:134–144/evidence.json:191–198. No authenticated human editorial approval, Felipe selection, newcomer/recovery experiment, public host or exact serving revision proved. Owners #8/#12/coordinator; closure requires their original attributed human/operator/browser/runtime/recovery/deployment receipts and effective release checks. Local consumer and protocol cannot substitute for these gates.
+R4 Replay/CI. Provenance: domain contract:51–57/72–76, WISH:184/192/208, assessment.md:128–132/310/523–529. Input identity/canonical hashes and process-local socket guard are not portable canonicalization, enforceable OS/network isolation, published executable offline replay or actual CI. Owners #7/#13/#21; closure requires qualified executable/schema/cross-language boundaries, clean-checkout real offline/fault/resume/revision proof, real CI and deployed-revision regression evidence. Neither replay nor pipeline is marked complete by this review.
+R5 Source rights/spending. Provenance: NOTICE:7–9/20–30 and pinned registry budget/rights/exclusions. Existing CC0 structured originals authorize their bounded retained reuse, not linked issuer/price/news translations/private data or new recurring/paid/model infrastructure calls; session/storage cost stays unknown. Owner acquisition/coordinator; closure requires source-specific grants/access/actor/amount/cadence/quota decision before enabling such work. The historical four bounded public GETs are not zero collection, and no new GET/model/paid call was made in this assessment.
+
+Read-only maintained: no repository source/doc/environment/forge/card/task/Git-state/index/commit/push mutation, no build/lint/suite/formatter, no new source financial acquisition, service/daemon/provider/model/paid/namespace/private-memory operation. Only requested /tmp report plus allowed Orca coordination/liveness messages were written. Full aggregate evidence reused with attribution, not rerun. No remote-check/mergeability/public-delivery claim. Review pertains to full original Group5/#6 acceptance/design slice, not whole roadmap or public-release acceptance. Separate independent quality, coordinator receipt linkage and downstream authority/runtime/public-release closure remain outside this verdict.
+
+6. Independently matched input identities (all0600)
+{
+  ".genie/wishes/open-intelligence-observatory/WISH.md": {
+    "sha256": "925b29b9ab4798b994c0d1f269b0d2c836818333f04a1013f78f51e5b4e8fa3f",
+    "mode": "0600"
+  },
+  ".genie/wishes/open-intelligence-observatory/github-roadmap.json": {
+    "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816",
+    "mode": "0600"
+  },
+  ".genie/wishes/open-intelligence-observatory/verification/group-2.json": {
+    "sha256": "ad977a2a9781261269530396f58a5f5877548b922186cc0a2afc4f8ae172aefb",
+    "mode": "0600"
+  },
+  ".genie/wishes/open-intelligence-observatory/verification/group-2-original-acceptance-review.txt": {
+    "sha256": "f91672e98a8cbcd2e8161b4739658cac2f923b4db0f2fedbc9c75186f3e71aea",
+    "mode": "0600"
+  },
+  ".genie/wishes/open-intelligence-observatory/verification/group-2-original-quality-review.txt": {
+    "sha256": "0f3ccab03cd21b1a4bb734f43d23c1350a802130e6fb0ba73caa8bc6bd1974fe",
+    "mode": "0600"
+  },
+  ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt": {
+    "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297",
+    "mode": "0600"
+  },
+  ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt": {
+    "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a",
+    "mode": "0600"
+  },
+  "schemas/evidence.schema.json": {
+    "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+    "mode": "0600"
+  },
+  "docs/contracts/evidence.md": {
+    "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f",
+    "mode": "0600"
+  },
+  "tests/test_evidence_contracts.py": {
+    "sha256": "a6634faaeee1d354039392fb164e93e7e35200fdd30998482e3eb9e71b8616ef",
+    "mode": "0600"
+  },
+  "tests/fixtures/evidence_contracts.json": {
+    "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5",
+    "mode": "0600"
+  },
+  "docs/sources/economics-panel.md": {
+    "sha256": "f956945040da740109077e17d112df64fc2ea2223692e2cbda0b8a70c06fbcc5",
+    "mode": "0600"
+  },
+  "investigations/frontier-economics/sources.json": {
+    "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+    "mode": "0600"
+  },
+  "investigations/frontier-economics/licensed-sources/NOTICE.md": {
+    "sha256": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3",
+    "mode": "0600"
+  },
+  "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin": {
+    "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+    "mode": "0600"
+  },
+  "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin": {
+    "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+    "mode": "0600"
+  },
+  "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin": {
+    "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+    "mode": "0600"
+  },
+  "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin": {
+    "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+    "mode": "0600"
+  }
+}
+
+Appendix A — exact independent subprocess payload
+Payload SHA256: 6160fc6372baf755c57444e0c5a5a41d724c45bb4560dfdc7adc0fbb9460255b
+Command argv: [python3, -B, -c, payload]; cwd: .
+
+from pathlib import Path
+import json,gzip,hashlib,re,copy,importlib.util,contextlib,io
+base=Path('investigations/frontier-economics')
+doc=(base/'assessment.md').read_text(); pack=json.loads((base/'evidence.json').read_bytes()); registry=json.loads((base/'sources.json').read_bytes())
+review=json.loads(doc.split('```json\n',1)[1].split('\n```',1)[0])
+sha=lambda b:hashlib.sha256(b).hexdigest()
+canonical=lambda o:json.dumps(o,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False)
+raws={}; originals={}
+for a in registry['licensed_subset']['acquisitions']:
+ raw=(Path(a['original_path'])).read_bytes(); decoded=gzip.decompress(raw); e=json.loads(decoded.decode('utf-8',errors='strict'))['entities'][a['entity_id']]
+ assert sha(raw)==a['original_sha256'] and sha(decoded)==a['decoded_utf8_sha256']
+ assert len(raw)==a['original_bytes'] and len(decoded)==a['decoded_utf8_bytes']
+ assert e['ns']==a['namespace'] and e['lastrevid']==a['requested_revision']==a['observed_revision']
+ originals[e['id']]=e; raws[e['id']]=(decoded,a)
+spans={s['id']:s for s in pack['evidence_spans']}; sources={s['id']:s for s in pack['source_revisions']}
+rows=[line for line in doc.splitlines() if re.match(r'\| \d{3} \|',line)]
+by_sid={s['id']:(eid,s) for eid,e in originals.items() if eid in ('Q2283','Q3884') for s in e['claims']['P2139']}
+seen=set(); raw_metadata=[]
+for row in rows:
+ fields=[f.strip() for f in row.strip('|').split('|')]; n=int(fields[0]); obs=pack['observations'][n-1]; claim=next(c for c in pack['claims'] if c['id']==f'claim:issue6:reported:{n:03d}')
+ span=spans[fields[6].strip('`')]; source=sources[span['source_revision_id']]; binding=json.loads(source['reason']); eid=binding['source_entity_id']; decoded,a=raws[eid]
+ raw=decoded[binding['selector']['start']:binding['selector']['end']]; st=json.loads(raw); assert by_sid[st['id']]==(eid,st)
+ assert st['id'] not in seen; seen.add(st['id']); v=st['mainsnak']['datavalue']['value']; t=st['qualifiers']['P585'][0]['datavalue']['value']; entity='entity:microsoft' if eid=='Q2283' else 'entity:amazon'
+ assert st['mainsnak']['property']=='P2139' and st['mainsnak']['datatype']=='quantity' and st['mainsnak']['datavalue']['type']=='quantity' and v['unit']=='http://www.wikidata.org/entity/Q4917'
+ assert fields[1]==('Microsoft' if eid=='Q2283' else 'Amazon') and obs['entity_id']==entity and claim['entity_ids']==[entity]
+ assert fields[3]==v['amount'] and obs['value']==int(v['amount'])
+ assert fields[4]==f"{v.get('lowerBound','null')} / {v.get('upperBound','null')}" and fields[5]==st['rank']
+ label=t['time'][1:5] if t['precision']==9 else t['time'][1:11]+' (day)'; assert fields[2]==label
+ assert t['time'] in claim['proposition'] and f"precision {t['precision']}" in claim['proposition']
+ assert claim['asserted_by_entity_id']=='entity:issue6:wikidata' and claim['status']=='asserted'
+ assert obs['evidence_span_ids']==claim['evidence_span_ids']==[span['id'],'span:issue6:view:001','span:issue6:view:002']
+ assert source['uri']==a['request_url'] and source['source_published_at'] is None and source['observed_at']==a['request_finished_at']
+ assert a['request_started_at']<=a['request_finished_at']<=source['ingested_at']==review['evidence_cutoff']<=review['dated_at']
+ assert sha(raw)==binding['raw_quote_sha256'] and source['content_text']=='Untrusted Wikidata structured evidence; canonical view v1\n'+canonical(st)+'\n'
+ assert span['quote']==canonical(st) and source['content_text'].encode()[span['selector']['start']:span['selector']['end']].decode()==span['quote']
+ raw_metadata.append({'row':fields[0],'entity':eid,'rank':st['rank'],'precision':t['precision'],'amount':v['amount'],'bounds':[v.get('lowerBound'),v.get('upperBound')],'qualifiers':sorted(st['qualifiers']),'reference_count':len(st.get('references',[]))})
+assert seen==set(by_sid)
+for eid,e in originals.items():
+ if eid=='P2139': assert e['datatype']=='quantity' and e['labels']['en']['value']=='total revenue' and 'Not to be confused with fiscal revenue' in e['descriptions']['en']['value']
+ if eid=='Q4917': assert e['labels']['en']['value']=='United States dollar' and e['claims']['P498'][0]['mainsnak']['datavalue']['value']=='USD'
+namespace={}
+with contextlib.redirect_stdout(io.StringIO()):exec(compile(doc.split('```python\n',1)[1].split('\n```',1)[0],'reviewed-consumer','exec'),namespace)
+extra=[]
+def fail(label,mutator,message):
+ p,r,g,m=copy.deepcopy(pack),copy.deepcopy(review),copy.deepcopy(registry),dict(namespace['originals']); mutator(p,r,g,m)
+ try: namespace['consume'](p,r,g,m)
+ except ValueError as e: assert message in str(e),(label,str(e)); extra.append({'label':label,'rejected_by':str(e)})
+ else: raise AssertionError('failed open '+label)
+fail('entity omitted',lambda p,r,g,m:p['scenes'][0]['entity_ids'].remove('entity:anthropic'),'qualified entity panel narrowed')
+fail('question rewritten',lambda p,r,g,m:r['questions'][0].update(text='renamed private-finances only'),'investigation scope narrowed')
+fail('invented editorial principal',lambda p,r,g,m:r.update(editorial_actor='human:invented'),'editorial authority invented')
+fail('false logical contradiction',lambda p,r,g,m:p['evidence_links'].append({'kind':'contradicts'}),'conditional alternatives promoted to contradiction')
+fail('computed wrong method',lambda p,r,g,m:r.update(method_version='different-method'),'assessment identity attribution drift')
+fail('debt as measured',lambda p,r,g,m:r['unknowns']['entity:amazon'].update(debt_funding=0),'unknown financial value invented')
+fail('consumer price as measured',lambda p,r,g,m:r['unknowns']['entity:microsoft'].update(consumer_subscription_price=20),'unknown financial value invented')
+fail('future observation',lambda p,r,g,m:p['source_revisions'][0].update(observed_at='2099-01-01T00:00:00Z'),'source clocks promoted')
+print(json.dumps({'originals':{eid:{'revision':e['lastrevid'],'namespace':e['ns'],'bytes':len(raws[eid][0])} for eid,e in originals.items()},'all_editorial_rows_verified':raw_metadata,'additional_semantic_denials':extra,'exact_review_revision':review['revision'],'result':'PASS actual complete financial and editorial chain'},indent=2))
+
+Appendix B — actual independent subprocess output
+Exit status: 0
+stdout SHA256: 53a33e2557a4d7e44626251db2516c487c7ebf0a3ef78af547429cee220a2f34
+stderr: empty
+{
+  "originals": {
+    "Q2283": {
+      "revision": 2550576892,
+      "namespace": 0,
+      "bytes": 574126
+    },
+    "Q3884": {
+      "revision": 2546229470,
+      "namespace": 0,
+      "bytes": 380829
+    },
+    "P2139": {
+      "revision": 2547354403,
+      "namespace": 120,
+      "bytes": 44688
+    },
+    "Q4917": {
+      "revision": 2554037296,
+      "namespace": 0,
+      "bytes": 131954
+    }
+  },
+  "all_editorial_rows_verified": [
+    {
+      "row": "001",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+93580000000",
+      "bounds": [
+        "+93579000000",
+        "+93581000000"
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "002",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+86833000000",
+      "bounds": [
+        "+86832000000",
+        "+86834000000"
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "003",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+77849000000",
+      "bounds": [
+        "+77848000000",
+        "+77850000000"
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "004",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+73723000000",
+      "bounds": [
+        "+73722000000",
+        "+73724000000"
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "005",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+69943000000",
+      "bounds": [
+        "+69942000000",
+        "+69944000000"
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "006",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+85320000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "007",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+89950000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "008",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+110360000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "009",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+125843000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "010",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+143015000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 2
+    },
+    {
+      "row": "011",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+168088000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "012",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+198270000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "013",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+60420000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P580",
+        "P582",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "014",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+58437000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P580",
+        "P582",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "015",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+62484000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P580",
+        "P582",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "016",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+211915000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P580",
+        "P582",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "017",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+245122000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P580",
+        "P582",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "018",
+      "entity": "Q2283",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+281724000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P580",
+        "P582",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "019",
+      "entity": "Q2283",
+      "rank": "preferred",
+      "precision": 9,
+      "amount": "+331839000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P580",
+        "P582",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "020",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+14835000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "021",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+19166000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "022",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+24509000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "023",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+34204000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "024",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+48077000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "025",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+61093000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "026",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+74452000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "027",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+88988000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "028",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+107006000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "029",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+135987000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "030",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+177866000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "031",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+232887000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "032",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+280522000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "033",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+386064000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 3
+    },
+    {
+      "row": "034",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 11,
+      "amount": "+469822000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P1013",
+        "P459",
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "035",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+513983000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "036",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+574785000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "037",
+      "entity": "Q3884",
+      "rank": "normal",
+      "precision": 9,
+      "amount": "+637959000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    },
+    {
+      "row": "038",
+      "entity": "Q3884",
+      "rank": "preferred",
+      "precision": 9,
+      "amount": "+716924000000",
+      "bounds": [
+        null,
+        null
+      ],
+      "qualifiers": [
+        "P585"
+      ],
+      "reference_count": 1
+    }
+  ],
+  "additional_semantic_denials": [
+    {
+      "label": "entity omitted",
+      "rejected_by": "qualified entity panel narrowed"
+    },
+    {
+      "label": "question rewritten",
+      "rejected_by": "investigation scope narrowed"
+    },
+    {
+      "label": "invented editorial principal",
+      "rejected_by": "editorial authority invented"
+    },
+    {
+      "label": "false logical contradiction",
+      "rejected_by": "conditional alternatives promoted to contradiction"
+    },
+    {
+      "label": "computed wrong method",
+      "rejected_by": "assessment identity attribution drift"
+    },
+    {
+      "label": "debt as measured",
+      "rejected_by": "unknown financial value invented"
+    },
+    {
+      "label": "consumer price as measured",
+      "rejected_by": "unknown financial value invented"
+    },
+    {
+      "label": "future observation",
+      "rejected_by": "source clocks promoted"
+    }
+  ],
+  "exact_review_revision": "frontier-economics/assessment/1",
+  "result": "PASS actual complete financial and editorial chain"
+}

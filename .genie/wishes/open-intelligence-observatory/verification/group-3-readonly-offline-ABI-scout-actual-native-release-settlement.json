@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-09T22:39:12.229476+00:00",
+  "assessment": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-readonly-offline-ABI-scout-full-parent-positive-bounded-acceptance.json",
+    "sha256": "d5321ecfca90d1aaf07512fc934ccb7efc04571f3ca2e937916afa6f69756040"
+  },
+  "report": {
+    "sha256": "127c214737a908848983bd6c96334c0d7753bfe4cb63985d8b4a23c0d9b8921c",
+    "bytes": 17362,
+    "mode": "0600"
+  },
+  "actualLF": 98,
+  "release_actual": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"3fcb4f6b-2830-4ffa-a0d0-b072d313d5d7\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_050e7534d9b0\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"transcript\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"e0e3b6ee-5521-4398-a7cf-90eff6c10aa8\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "3fcb4f6b-2830-4ffa-a0d0-b072d313d5d7",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_050e7534d9b0",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "transcript",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "e0e3b6ee-5521-4398-a7cf-90eff6c10aa8",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "delivery76b_NOTyetACK": "fullassessment+actualsupportedreleasecompletebeforeACK",
+  "original4acceptance": "BLOCKED unchanged"
+}

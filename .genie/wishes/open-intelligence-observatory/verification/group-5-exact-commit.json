@@ -1,0 +1,36 @@
+{
+  "commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+  "comparison_baseline": "3db0d3690973e2c5077fc0788a8ce150435871ea",
+  "production_candidate_paths": {
+    "investigations/frontier-economics/evidence.json": {
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "mode": "0600",
+      "bytes": 294150,
+      "lines": 200
+    },
+    "investigations/frontier-economics/assessment.md": {
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "mode": "0600",
+      "bytes": 52115,
+      "lines": 544
+    }
+  },
+  "production_manifest_sha256": "c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783",
+  "exact_commit_paths_sha256": {
+    "investigations/frontier-economics/evidence.json": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+    "investigations/frontier-economics/assessment.md": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+    ".genie/wishes/open-intelligence-observatory/readiness/group-5.json": "327df6d555de2f8f8d10b88fe3241648f60a930690e8a94288624cf7d3d304f7",
+    ".genie/wishes/open-intelligence-observatory/verification/group-5-coordinator-frozen-gate.json": "12d3dc56490cfbfc8a9fff60b855a8beae5539690421c41c4409ad7070b3fdba",
+    ".genie/wishes/open-intelligence-observatory/verification/coordinator-accepted-gates-exact-commit.json": "96b6f166deb4721c7019fae958bcb499b265d236f86dfbda5ffef0c23e471535",
+    ".genie/wishes/open-intelligence-observatory/verification/group-1.json": "3f65d9a86bf1f6847e284e90b96181240b59b7b65d1ea71f6fd7d5b60f67a2a6",
+    ".genie/wishes/open-intelligence-observatory/verification/licensed-alternative-route.json": "41262c31fb449445539df41a1211ef050d8e0e4d12b7d6901049b5dc15d6521d"
+  },
+  "actual_production_numstat": "544\t0\tinvestigations/frontier-economics/assessment.md\n200\t0\tinvestigations/frontier-economics/evidence.json\n",
+  "original_input_bytes_unchanged": true,
+  "all_non_target_index_rows_preserved": true,
+  "all_non_target_existing_file_bytes_preserved": true,
+  "temporary_index_removed": true,
+  "attributed_gate": "group-5-coordinator-frozen-gate.json at 12d3dc56490cfbfc8a9fff60b855a8beae5539690421c41c4409ad7070b3fdba",
+  "acceptance_and_quality": "PENDING; commit is addressable review target, not groupdone or public release",
+  "recorded_at": "2026-10-08T08:48:42.947100+00:00"
+}

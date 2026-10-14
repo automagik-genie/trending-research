@@ -1,0 +1,37 @@
+{
+  "kind": "safe_portable_derivative_not_original",
+  "source_record": ".genie/wishes/open-intelligence-observatory/readiness/user-confirmed-private-product-key-parent-stat-only-custody-and-paid-admission-hold.json",
+  "source_identity": {
+    "opaque_id": "private-original-05",
+    "content_digest": null,
+    "note": "Private original retained locally unchanged; no private-content hashes exported"
+  },
+  "omitted_fields": [
+    "path",
+    "user_confirmed_product_ID"
+  ],
+  "not_execution_authority": true,
+  "local_only_prerequisite": "Fresh authorized operator must separately qualify private product credential custody, account access, spend controls and runtime admission; do not replay this record.",
+  "safe_record": {
+    "at": "2026-10-09T22:01:44.952214+00:00",
+    "path": "[OMITTED: private custody/account/identifier or source-content identity]",
+    "mode": "0600",
+    "owner_uid": 1001,
+    "no_symlink": true,
+    "parent_stat_only_no_read_or_hash": true,
+    "outsideRepo": true,
+    "user_confirmed_product_ID": "[OMITTED: private custody/account/identifier or source-content identity]",
+    "provider_metadata_balance_models_both200": true,
+    "model_calls": 0,
+    "allcostsUNKNOWN": true,
+    "current_tariff_public_evidence_ref": "https://api-docs.deepseek.com/quick_start/pricing",
+    "actual_route": "https://api.deepseek.com",
+    "actual_available_model_choices": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ],
+    "conservative_selected_future_candidate": "deepseek-flash",
+    "native_runtime_not_admitted": true,
+    "proposed_worstcase_policy_NOT_IMPLEMENTED_OR_PASS": "Peak-cachemiss/outputrates only, reserve all background/retry/queued/cancellation-uncertain sends BEFORE actualegress; defaultthinking/output unknowns mustbe hardbounded usingactualAPIcontext/outputmetadata or explicitownedegresslimits. Nevercharge metadataauth calls asmodelusage or allcost0; allpaidruntimeblockeduntilenforcement+supportednativecompletion+tenantsqualified."
+  }
+}

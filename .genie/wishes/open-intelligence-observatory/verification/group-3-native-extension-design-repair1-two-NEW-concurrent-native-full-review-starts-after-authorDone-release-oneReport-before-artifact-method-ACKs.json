@@ -1,0 +1,246 @@
+{
+  "at": "2026-10-10T06:40:33.984924+00:00",
+  "actualTwoNativeConcurrentStarts": [
+    {
+      "title": "Native DSH repair1 full original A1-A10 C1-C4 architecture review",
+      "ownFullReport": "/tmp/oi4-native-extension-repair1-full-original-A1-A10-C1-C4-review.txt",
+      "actualNativeStart": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"9eb56e40-e641-4cc3-a6c5-c2440895c8d3\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_b011514ad230\",\n    \"dispatchId\": \"ctx_2f8487091d79\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"fa607920-5445-4a74-b676-cf0ec85f4991\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"5816265b-444e-480b-a34d-6aeaada3574e\",\n      \"generation\": 102,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"fa607920-5445-4a74-b676-cf0ec85f4991\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "9eb56e40-e641-4cc3-a6c5-c2440895c8d3",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_b011514ad230",
+            "dispatchId": "ctx_2f8487091d79",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465",
+                "surface": "background",
+                "warning": "Terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "fa607920-5445-4a74-b676-cf0ec85f4991",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "5816265b-444e-480b-a34d-6aeaada3574e",
+              "generation": 102,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_8c1e42b3-c44d-48ad-a73e-775bdc9f3465` to reveal and focus it.",
+            "mutation": {
+              "requestId": "fa607920-5445-4a74-b676-cf0ec85f4991",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "title": "Native DSH repair1 separate full security maintainability performance review",
+      "ownFullReport": "/tmp/oi4-native-extension-repair1-full-independent-quality-review.txt",
+      "actualNativeStart": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"e095c7a1-300e-4915-adab-ed85347de10b\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_6b4bc5da611e\",\n    \"dispatchId\": \"ctx_25039c13ad74\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"07daedb6-89a5-402b-a8e3-5a746cc4bc53\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"b9152e3b-9182-48c3-85fe-e162f045a168\",\n      \"generation\": 103,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"07daedb6-89a5-402b-a8e3-5a746cc4bc53\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "e095c7a1-300e-4915-adab-ed85347de10b",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_6b4bc5da611e",
+            "dispatchId": "ctx_25039c13ad74",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7",
+                "surface": "background",
+                "warning": "Terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "07daedb6-89a5-402b-a8e3-5a746cc4bc53",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "b9152e3b-9182-48c3-85fe-e162f045a168",
+              "generation": 103,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_e49b26cb-3a50-4f50-8bd6-82139ac2e8e7` to reveal and focus it.",
+            "mutation": {
+              "requestId": "07daedb6-89a5-402b-a8e3-5a746cc4bc53",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    }
+  ],
+  "fullSpecs": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-3-native-extension-design-repair1-TWO-new-blind-full-original-A1-A10-C1-C4-and-separate-quality-before-artifact-access-specs.json",
+  "wholeScope": {
+    "worktree": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory",
+    "run": "run_b7d6684b2cdd",
+    "designSHA": "4e89524c84d14479a2cf77f9614383286e231f3a1a010b43852a75742789a7a7",
+    "draftSHA": "b4913fbc63db6c23f14c0d09d47f908c0d996010a4879120f92acafa45c70e63",
+    "handoffSHA": "66c8ebd3c1438bf341fa1e1515667539d100a725249b903720e670637c954895",
+    "sourceRevision": "4878cdabd87d4041bdaff61d04c966883b9fd07a",
+    "oldPairContentDigest": "0290bb51bb48c7d85778a05b1ee12f0e9726b1a4f9411e585cb9548a32772ce6",
+    "B": 2,
+    "repairUsed": 1,
+    "councilsUsed": 0,
+    "currentOriginalFeatureQualified": false,
+    "modelCalls": 0
+  },
+  "priorActualAcceptedAuthorDoneAndRelease": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-design-repair1-ACTUALnative-release-AFTERDone-beforeACK-and-old-claim-release-enforced-review-hold.json",
+  "actualBeforeDispatchCommentExit0": 0,
+  "actualWholeStoredDispatchEvent": {
+    "author": "orchestrator",
+    "author_kind": "pi",
+    "created_at": 1791614424171,
+    "id": 96,
+    "kind": "comment",
+    "note": "dispatch: native original4-repair1 full acceptance/architecture reviewer + separately independent full security/maintainability/performance reviewer \u2014 originalGitHub4/group3 native-extension DESIGN repair1; scope: WHOLE DRAFTb491155LF/DESIGN4e895333LF/70LFhandoff66c8/old53LF005 and full original104LFe459+quality122LFb614/eight frozen inputs (readiness metadata ONLY)/allA1-A10C1-C4/fourcontracts/14classes/sixfuturegroups/causalH1 before-swallow ownership and actualR17source locators. Frozen specs readiness/group-3-native-extension-design-repair1-TWO-new-blind-full-original-A1-A10-C1-C4-and-separate-quality-before-artifact-access-specs.json. Both NEW full blind METHOD/RISK ACK BEFOREANYartifactaccess; exact grant then entire independent reports/actual utility reviewed-sha256, no NEWpeerreport/subagents/council. SoleownTMP reports40000B190LF600; readonly source/byte/docutility only aftergrant; no doc/ledger/WISH/INDEX/card/Git/native/SDK/PG/private/model/test/build/runtime edits/actions. ParentFULLpositiveintake actual110TRUEins35del2docs8pins + ONE3641B reportevent93 exact3b6dd2 + actualworkerDone8a10ctx7ef + actualnativeRelease0 AFTERDonebefore4e593deliveryACK, oldclaimreleased/enforcedhold. B2repair1/council0/WRS90PROPOSED/footerPENDING/INDEXSimmering notReady100/whole4acceptance; oldpairFIXFIRST1HIGHquality0doesnotapprove repaired4e. Model0USD20DSH12Brain8costUNKNOWN/stockDSH2of2ABIUNKNOWN/Brain4of4/source7cap3DATA separate retained. ParentnoDirectSourceCode review; all-sourceintelligence delegated; original20/80/41/5 datesassigneesunset unchanged.",
+    "task_id": "t_mv1nxer60fedac1d"
+  },
+  "sourceBodyEqualsStoredNote": true,
+  "actualAuxClaimNULLWithEnforcedHold": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": "hold",
+    "blocked_by": "cli",
+    "blocked_reason": "Designrepair1 completeoneevent93/nativeDone8a10ctx7ef/parentFULLpositiveintakeandactualrelease0. CurrentwholeDRAFTb491155LF/DESIGN4e895333LF/70LFhandoff66c8 actual110TRUEins35del2docs/8pins unchanged. AwaitTWO NEWblindFULLOriginalA1-A10C1-C4 andseparatequality FULLmethodBEFOREartifactaccess/bothwhole0HIGH/actualutilitydigests. WRS90PROPOSED/PENDINGfooter/INDEXSimmering notReady100 ororiginal4acceptance. Owner7520DESIGNONLY B2used1council0, no implementation/runtime/paid approval. All4originalcriteria/fourcontracts/14classes/6futuregroups/20issues80criteria41links5milestones unchanged; stockDSH2of2exhaustedABIcauseUNKNOWN/globalcompletionunavailable/Brain4of4/source7cap3DATAonly separate. NativeSourceGitsourceprivatePGModelactionsDENIED/model0USD20allcostUNKNOWN. Currentdocwriter releasednoclaim; parentalonecontrolsreviewevidence/stamps/INDEX later.",
+    "board_id": null,
+    "claimed_at": null,
+    "claimed_by": null,
+    "created_at": 1791592518642,
+    "group_name": "group-3-native-extension-design",
+    "heartbeat_at": null,
+    "id": "t_mv1nxer60fedac1d",
+    "lane": null,
+    "status": "ready",
+    "title": "Design the bounded native DSH extension architecture \u2014 design only",
+    "updated_at": 1791614353420,
+    "wish": "open-intelligence-observatory"
+  },
+  "readyInputAcceptedNotReadMethodACK": "BothmustWHOLEbeforeartifactfullMethodask thenparentFULLread/explicitexactscopepermission. No sourceCode/SDK/runtime/producttests/build/model/PG/code edits/networkprivate.DeclaredreadonlypublicR17source/officialdocread aftergrant only. All20/80/41/5 notshrunk",
+  "proposedNotReadyOrRuntimeApproval": "Whole architecture0HIGHtwofullreviews+bundeledutilitydigests later, formalWRS90/PENDING/INDEXSimmering stays; ownerdesignonly noF1implementation/runtime/paid.Alreadyoriginal#4taskBLOCKED nottaskreadyproof. Models0allcostUNKNOWN"
+}

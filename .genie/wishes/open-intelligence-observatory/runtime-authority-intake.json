@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-08T12:45:03.592000+00:00",
+  "actual_user_choices": {
+    "native_runtime": "Fresh isolated sandbox",
+    "validation_spend": "USD 20 total cap"
+  },
+  "authority": "User choice in functions.ask, current conversation; authorizes fresh disposable worktree-owned actual native DSH/Brain runtimes, distinct product namespaces and test principals.",
+  "exclusive_boundaries": [
+    "Never personal memory or production records/default namespace/shared service restart/foreign worktree/global config/system-wide package manager",
+    "No recurring collection/deployment/publication/editorial/visual-selection/CI/infrastructure purchase or human-identity substitution authority",
+    "Original full original scopes/criteria/41nativeedges preserved; installed SDK constraints not waived or hidden"
+  ],
+  "paid_validation_total_usd_cap": 20,
+  "reservations_usd": {
+    "original_issue4_dsh": 12,
+    "original_issue5_brain": 8
+  },
+  "source_collection_monthly_budget_unchanged_disabled": true,
+  "spend_control": "No paid call before exact provider/profile/tariff/date/runtime+authority/principal/sourcebudget/usage capture/token+request hardlimits and worst-casecost below ownreservation frozen in original readonly readiness. Eachworker no >ownexclusive reservation; parentonly reallocates afteractualreceipt. Unknownrates/usage/bounds: stopbeforecall notassume0. Approvedmodel/embeddingvalidationonly notinfra/sessioncostclaim.",
+  "new_context": "Previous originalsfailedmissingapprovedproductauthority/providerbudget/runtime; nowactualusergrants isolatedsandbox+boundedpaidtest. This is changed context, not unchanged retry or capacity escalation; preserves all repair/effort counters.",
+  "parent_orchestrator_only": true,
+  "working_commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+  "governing_wish_sha256": "925b29b9ab4798b994c0d1f269b0d2c836818333f04a1013f78f51e5b4e8fa3f",
+  "lane_ownership": "#4 integrations/dsh/qualification/, docs/integrations/dsh.md, docs/integrations/cordis.md; #5 integrations/brain/qualification/, docs/integrations/brain.md; exact filepaths/prerequisites before mutation. No wider integrations prefix or scope amendment authorized.",
+  "source_inputs": "Accepted source3 realCC0 originals863f5/b58e1177 and evidence-schema60975ca9. Curated1e1d91f/c6bca1f2 candidate NOT accepted untiloriginal6 gates; do not depend on candidateonly or add originalDAGdependency#6 to#5."
+}

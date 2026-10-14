@@ -1,0 +1,131 @@
+{
+  "recorded_at": "2026-10-09T16:48:34.064676+00:00",
+  "status": "PROPOSED_EXACT_SAME_TASK_RETRY_REQUIRES_FRESH_ACK_BEFORE_MUTATION",
+  "issue": 8,
+  "group": 7,
+  "task": "task_8f2a067b113f",
+  "retry_of": "ctx_d5453628d3df",
+  "originating_question": "msg_2c698742f185",
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "before_manifest_sha256": "ef2942aed65de21a24be418e16418bc538841a95beb2493c1e24a253de2d8341",
+  "before_manifest": {
+    "docs/design/frontier-economics.md": {
+      "sha256": "0e8bca346ce7606220e3d6418aa9907c2fd854283bfb90834e4e7fa402b058bc",
+      "bytes": 19917,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.css": {
+      "sha256": "c143d53697f21026880f564e1b1c0775f7878f9802bd1c762d721a9974f906d4",
+      "bytes": 5729,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.js": {
+      "sha256": "a028906f9b01d737aa7bb075833ee0e45c903126bb2883c3eeb9320f9d988cea",
+      "bytes": 22986,
+      "mode": "0600"
+    },
+    "web/prototypes/index.html": {
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+      "bytes": 2403,
+      "mode": "0600"
+    },
+    "web/prototypes/preview.py": {
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+      "bytes": 3934,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "sha256": "d487b8a6611742415a2f01da92155700bbff42d50ec0a86d9e4257e2b6de5401",
+      "bytes": 115821,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "sha256": "6d2f20d90ef1c14e4f200371f39dcb56aef59fc59b2489bf63328e0fcf797469",
+      "bytes": 207641,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "sha256": "8699ce790b472dc9ca23d988cb9341cfc04a775014a01310421d9b9773693533",
+      "bytes": 107516,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "sha256": "433f3879cd9b0d748b7f3e9cf72d73514ceaad778117eea3fe3a7147258b424b",
+      "bytes": 210897,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/smoke.json": {
+      "sha256": "06e6770515b432fe57c5dc74480a222faf602e5082f1adf7b5ffd83c25e9798a",
+      "bytes": 51519,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "sha256": "f49546a09c114f74fc1b47bafe2fa451af0413ff50c9fa273b023d359266f0ff",
+      "bytes": 99461,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "sha256": "a9b7bbc15f5a81101f84473e2d64250b5ae023e6d75b3560ace6834289869705",
+      "bytes": 139028,
+      "mode": "0600"
+    }
+  },
+  "source4_sha256": "5f14a1eb2aacd384b0aafe131f2dec0eb8decaef15705b022df03b0fd5866b01",
+  "author_proposed_exact_correction": "Only web/prototypes/explorer.css line11: exclude aria-pressed=true buttons from the existing hover rule; selected buttons retain the existing blue/white treatment. No other source edits.",
+  "ground_truth_before_failure": {
+    "question": "msg_2c698742f185",
+    "foreground": "rgb(255,255,255)",
+    "background": "rgb(243,246,251)",
+    "pressed": true,
+    "hover": true,
+    "png": "web/prototypes/proof/questions-wide.png",
+    "png_sha256": "6d2f20d90ef1c14e4f200371f39dcb56aef59fc59b2489bf63328e0fcf797469"
+  },
+  "mutable_paths": [
+    "web/prototypes/explorer.css",
+    "web/prototypes/proof/questions-narrow.png",
+    "web/prototypes/proof/questions-wide.png",
+    "web/prototypes/proof/relationship-narrow.png",
+    "web/prototypes/proof/relationship-wide.png",
+    "web/prototypes/proof/timeline-narrow.png",
+    "web/prototypes/proof/timeline-wide.png",
+    "web/prototypes/proof/smoke.json",
+    "docs/design/frontier-economics.md"
+  ],
+  "immutable_sources": [
+    "web/prototypes/index.html",
+    "web/prototypes/explorer.js",
+    "web/prototypes/preview.py"
+  ],
+  "size": {
+    "cumulative_paths": 12,
+    "estimated_insertions": 1450,
+    "hard_insertions": 2000,
+    "additional_text_bound": 220,
+    "current_text_lines": 1250,
+    "new_selector_lines": 1
+  },
+  "repair": {
+    "source_bug_repair": 1,
+    "cap": 2,
+    "budget_source": "config2",
+    "effort_escalations": 0,
+    "prior_retry": "runtime/proof correction, not source bug repair; group-7-browser-runtime-retry-2.json field94"
+  },
+  "runtime": {
+    "chrome": "/home/genie/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+    "existing_version": "153.0.8010.12",
+    "args": [
+      "--no-sandbox",
+      "--disable-dev-shm-usage"
+    ],
+    "allow_domains": [
+      "127.0.0.1"
+    ],
+    "preview": "http://127.0.0.1:8878/web/prototypes/index.html",
+    "lease": "exclusive new worker lease after exact ACK; parent no browser actions until frozen handoff"
+  },
+  "proof": "Preserve frozen failure as before evidence, do not rerun unchanged to confirm. Confirm selected hover after correction; six actual source/counter/overview tasks and six guarded before/after target/Scene/CSSviewport PNG captures at1280x900 and390x844; keyboard/reduced motion and unchanged source-loading/error/nullable expectations. Re-pin source4 and all12 outputs after actual observations.",
+  "human_and_reviews": "Actual Felipe choice/rationale, independent original acceptance+separate quality and fresh parent aggregate remain null. No worker preference or fabricated human approval.",
+  "prohibited": "No other source/schema/fixture/dependency/install/private profile/CDP/relay/port/shared restart/deploy/Git/forge/paid/model/source acquisition changes; preserve historical white/interference and actual hover provenance."
+}

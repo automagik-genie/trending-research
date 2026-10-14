@@ -1,0 +1,168 @@
+{
+  "recorded_at": "2026-10-09T17:34:44.151150+00:00",
+  "status": "CANDIDATES_COMMITTED_PENDING_INDEPENDENT_REVIEW_AND_HUMAN",
+  "brain": {
+    "sha": "5e0f8b0bcf556f43762da8cdfd4e733381c4dcbc",
+    "previous": "1e1d91f509b4862e09076fcacd7c751008db866b",
+    "branch": "wish/open-intelligence-observatory",
+    "allowed_paths": [
+      "docs/integrations/brain.md",
+      "integrations/brain/qualification/evidence.json",
+      "integrations/brain/qualification/native-tools.json",
+      "integrations/brain/qualification/native_qualification.py",
+      "integrations/brain/qualification/native-receipts.json",
+      "integrations/brain/qualification/sandbox/.gitignore"
+    ],
+    "changed_paths": [
+      "docs/integrations/brain.md",
+      "integrations/brain/qualification/evidence.json",
+      "integrations/brain/qualification/native-receipts.json",
+      "integrations/brain/qualification/native_qualification.py",
+      "integrations/brain/qualification/sandbox/.gitignore"
+    ],
+    "numstat": "76\t13\tdocs/integrations/brain.md\n247\t1\tintegrations/brain/qualification/evidence.json\n43\t0\tintegrations/brain/qualification/native-receipts.json\n825\t0\tintegrations/brain/qualification/native_qualification.py\n2\t0\tintegrations/brain/qualification/sandbox/.gitignore\n",
+    "insertions": 1193,
+    "manifest": {
+      "docs/integrations/brain.md": {
+        "sha256": "128af5e6afd153cbdd945bd16bf2114887bdf9ca58be154c7bfacd2d75a08b1e",
+        "bytes": 45572,
+        "mode": "0600"
+      },
+      "integrations/brain/qualification/evidence.json": {
+        "sha256": "b169b97ffb1029ea1a4ee26c4f42675166fe170f7f20cd753f2be8df7aa952a9",
+        "bytes": 63216,
+        "mode": "0600"
+      },
+      "integrations/brain/qualification/native-tools.json": {
+        "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+        "bytes": 17422,
+        "mode": "0600"
+      },
+      "integrations/brain/qualification/native_qualification.py": {
+        "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+        "bytes": 48211,
+        "mode": "0600"
+      },
+      "integrations/brain/qualification/native-receipts.json": {
+        "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+        "bytes": 550314,
+        "mode": "0600"
+      },
+      "integrations/brain/qualification/sandbox/.gitignore": {
+        "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+        "bytes": 14,
+        "mode": "0600"
+      }
+    },
+    "non_target_index_preserved": true,
+    "non_target_working_bytes_preserved": true,
+    "message": "Qualify native Brain evidence custody and real restart\n\nFrozen candidate for independent original-criteria and separate quality review. Native smoke and source-surface evidence observed; no original acceptance, human direction, deployment, paid calls or GitHub closure inferred.\n\n",
+    "alternate_index_removed": true
+  },
+  "visual": {
+    "sha": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+    "previous": "5e0f8b0bcf556f43762da8cdfd4e733381c4dcbc",
+    "branch": "wish/open-intelligence-observatory",
+    "allowed_paths": [
+      "docs/design/frontier-economics.md",
+      "web/prototypes/explorer.css",
+      "web/prototypes/explorer.js",
+      "web/prototypes/index.html",
+      "web/prototypes/preview.py",
+      "web/prototypes/proof/questions-narrow.png",
+      "web/prototypes/proof/questions-wide.png",
+      "web/prototypes/proof/relationship-narrow.png",
+      "web/prototypes/proof/relationship-wide.png",
+      "web/prototypes/proof/timeline-narrow.png",
+      "web/prototypes/proof/timeline-wide.png",
+      "web/prototypes/proof/smoke.json"
+    ],
+    "changed_paths": [
+      "docs/design/frontier-economics.md",
+      "web/prototypes/explorer.css",
+      "web/prototypes/explorer.js",
+      "web/prototypes/index.html",
+      "web/prototypes/preview.py",
+      "web/prototypes/proof/questions-narrow.png",
+      "web/prototypes/proof/questions-wide.png",
+      "web/prototypes/proof/relationship-narrow.png",
+      "web/prototypes/proof/relationship-wide.png",
+      "web/prototypes/proof/smoke.json",
+      "web/prototypes/proof/timeline-narrow.png",
+      "web/prototypes/proof/timeline-wide.png"
+    ],
+    "numstat": "135\t0\tdocs/design/frontier-economics.md\n34\t0\tweb/prototypes/explorer.css\n305\t0\tweb/prototypes/explorer.js\n40\t0\tweb/prototypes/index.html\n89\t0\tweb/prototypes/preview.py\n-\t-\tweb/prototypes/proof/questions-narrow.png\n-\t-\tweb/prototypes/proof/questions-wide.png\n-\t-\tweb/prototypes/proof/relationship-narrow.png\n-\t-\tweb/prototypes/proof/relationship-wide.png\n661\t0\tweb/prototypes/proof/smoke.json\n-\t-\tweb/prototypes/proof/timeline-narrow.png\n-\t-\tweb/prototypes/proof/timeline-wide.png\n",
+    "insertions": 1264,
+    "manifest": {
+      "docs/design/frontier-economics.md": {
+        "sha256": "4bddd2f52bcbf45461f542c7455abafdd003c99350a812c36940ca4647ce96dd",
+        "bytes": 22986,
+        "mode": "0600"
+      },
+      "web/prototypes/explorer.css": {
+        "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad",
+        "bytes": 5754,
+        "mode": "0600"
+      },
+      "web/prototypes/explorer.js": {
+        "sha256": "a028906f9b01d737aa7bb075833ee0e45c903126bb2883c3eeb9320f9d988cea",
+        "bytes": 22986,
+        "mode": "0600"
+      },
+      "web/prototypes/index.html": {
+        "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+        "bytes": 2403,
+        "mode": "0600"
+      },
+      "web/prototypes/preview.py": {
+        "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+        "bytes": 3934,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/questions-narrow.png": {
+        "sha256": "04fca6ba1c6be30f3374e35052cb96ae89654d6d689300379df82d360600e4c2",
+        "bytes": 77066,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/questions-wide.png": {
+        "sha256": "d001fa304de52332f63b62dfd068a5b8376221994b0fa0a6edbced35b6bd5f77",
+        "bytes": 157002,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/relationship-narrow.png": {
+        "sha256": "d8080e98f831e91582e15e38308553b10991c6cad3d19285ffd631e5c8ff6b92",
+        "bytes": 63448,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/relationship-wide.png": {
+        "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31",
+        "bytes": 114519,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/smoke.json": {
+        "sha256": "3eda4657865794ed011110756c5d1bd3ee70a2d3919d89253804c6995a37b015",
+        "bytes": 204896,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/timeline-narrow.png": {
+        "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4",
+        "bytes": 79872,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/timeline-wide.png": {
+        "sha256": "dcc880ad2d38f4a1a3a1e3286330bd7f78a5353b4316e50338f23d6b007d34e0",
+        "bytes": 138665,
+        "mode": "0600"
+      }
+    },
+    "non_target_index_preserved": true,
+    "non_target_working_bytes_preserved": true,
+    "message": "Freeze real-pack visual variants and selected hover proof\n\nFrozen candidate for independent original-criteria and separate quality review. Native smoke and source-surface evidence observed; no original acceptance, human direction, deployment, paid calls or GitHub closure inferred.\n\n",
+    "alternate_index_removed": true
+  },
+  "current_head": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "source_head_before": "1e1d91f509b4862e09076fcacd7c751008db866b",
+  "aggregate_before_commit": "Completed43testsOK+fixtureevaluator; after-commit explicit-exit proof still required",
+  "no_push": true,
+  "no_original_done": true
+}

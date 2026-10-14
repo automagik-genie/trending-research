@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-13T19:37:54.786918+00:00",
+  "actualBeforeReleaseCompletionIntakeProof": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/DSHrepair3-currentOriginal88fd-ACTUALtypedDoneaeb-onlyOriginalFULL89938B148LF3583-after01fWHOLEpositive-beforeNativeRelease-beforeB25ACK-notFeatureDone.json",
+    "bytes": 4471,
+    "LF": 75,
+    "sha256": "9c87cacf90d8b5866ca1707171e2f27cbc03d2d90daff4bcf1e03beeb0216115",
+    "mode": "0600"
+  },
+  "actualNativeRelease0": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"38ee8b38-0e85-4d71-8f75-d6ed656c0ff1\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_88fd36a2ecfd\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"4b1fd3da-fcf8-4028-b7f4-064e1663b9a2\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "38ee8b38-0e85-4d71-8f75-d6ed656c0ff1",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_88fd36a2ecfd",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "4b1fd3da-fcf8-4028-b7f4-064e1663b9a2",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "actualNativeCurrentOriginalBeforeReleaseWHOLE": {
+    "task": "task_f5042956077e",
+    "dispatch": "ctx_88fd36a2ecfd",
+    "terminal": "term_30ac43e9-5b98-499c-9a7c-fdf5e04c66b2",
+    "DoneMessage": "msg_aeb9910fe026",
+    "deliveryStillUnACKedAtCreation": "delivery_b25e04e6e52a"
+  },
+  "entireReportIdentity": {
+    "path": "/tmp/oi4-native-extension-design-repair3-original-full-review.txt",
+    "bytes": 89938,
+    "LF": 148,
+    "sha256": "3583e83c50773c7fa1632a91731af818d5d9789b016ef95975fc62c55bd85f24",
+    "mode": "0600"
+  },
+  "verdict": "OriginalsemanticONLYboundedPROPOSEDSHIPC0H0current498c; ParentdeliverableScope+metadata+fullreportintake. NoC1C4acceptance/Ready/SDK/runtime/paid/code/Source7nativeclaimpromotion",
+  "quality4ecfNotReleasedOrDone": "Actualfull166LF433cquestionWHOLEread/uncompressedfullLiteral2DocDiffBodiesmissingreportoutputDELIVERYonlyHOLDaaabd0; originalC0H0qualityownsemantics preserved. Wholeamended42/37/matrix/sole125KB250LFbeforeANYsameReportrewrite awaits. Bothfullreports remainmandatory",
+  "sourceCurrent": "1b2static72minimalPRIVATEACKoneinert8/cap5used4no6/sourceB0CONFIG2/noSource/runtime/paid/Rootcode; exact105460Bc67 custodyresend2fa16groundtruthkernelLOSS notReset. Whole sealed8+newTRUEC7stillpending",
+  "all20FrozenScopeUnchanged": "20/80/41/5/unsetdatesassignees/sixhistorical local/14stillunaccepted/f429draftPR22nofreshCI/stock2no3/Brain4no5/model0USD20allcostUNKNOWN",
+  "nativeDeliveryACKNotYetSentAtCreation": true
+}

@@ -1,0 +1,155 @@
+Original Group 5 / GitHub #6 — independent quality review
+Reviewer: term_99bf05b8-ceb0-4b72-a228-78e9920d7ef5, dispatch ctx_70f07d06bb43; independent of implementation ctx_76f21ad589b3 and acceptance ctx_c73d9cdb99fe.
+
+FROZEN BEFORE CANDIDATE ACCESS (2026-10-08)
+Identity acknowledged from coordinator; not yet independently verified:
+- Target 1e1d91f509b4862e09076fcacd7c751008db866b; comparison 3db0d3690973e2c5077fc0788a8ce150435871ea.
+- Sole production paths investigations/frontier-economics/evidence.json (0600, SHA256 e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93) and investigations/frontier-economics/assessment.md (0600, SHA256 1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa); manifest c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783.
+- Current WISH SHA256 52c774493a61dc61a47be522db12e32ad8372414ff598672be02af2490875c54; historical acceptance WISH prefix 925b29b9. Current disclosure adds acceptance and human runtime authority only, not a scope/source/contract/criteria rebaseline.
+- Source #3 seven-file manifest prefix b58e1177; contract prefix 60975ca9. Immutable inputs, no source acquisition/native/credential/paid/model/Memory actions authorized for reviewer.
+- Original full four-company, hypothesis/assumption, topic-link/source-trail, editor-reviewable investigation scope and all four WISH/immutable-issue criteria remain unchanged; precise wording to be read from governing scope before scoring.
+
+Frozen quality checks:
+1. Authorization, credentials, instruction isolation, source trust, CC0 structured namespace/retention rights without inferred issuer/prose/media rights.
+2. Complete four acquired UTF8 originals, revisions/namespaces/hashes, P2139/Q4917 metadata, selected 38 full statements, raw selector to authored canonical view to v1 source/span byte/hash binding; no fake native IDs or rival semantic store.
+3. Financial meaning and uncertainty: amount/unit/rank/bounds/qualifiers/references/date precision; statement/source/cache/registration/computation clocks kept distinct; no invented midnight, ingestion, periods, issuer audit, private AI revenue, accounting, cash or sustainability facts. All rendered claims classified and public unknowns not silently zeroed.
+4. Substantive assumptions, counterweights, invalidation and alternatives; full four original acceptance criteria; exact draft revision/two hashes/manifest approvable without fabricated human publication.
+5. Maintainable bounded existing-schema normalization, no new dependencies, needless state or avoidable hot-path allocation/computation/regression.
+6. Exact attributable full gate and changed-path consumer evidence, plus fresh independent substantive guard/semantic exercise; no suite/build/lint/formatter mid-flight.
+
+Verdict triggers frozen:
+SHIP: exact identity verified, full original criteria covered, no confirmed HIGH/CRITICAL quality gaps, required current attributable validation and fresh substantive smoke evidence pass.
+FIX-FIRST: concrete security/correctness/criterion/performance defect or failed required validation with bounded correction.
+BLOCKED: missing immutable identity/scope/contract/source/evidence or unresolved decision/environment prevents valid assessment; drift requires coordinator resolution, never silent rebaseline.
+No future native/runtime/editorial/publication/deployment/CI/spending gate waived; separately unaccepted future gates are not current two-path defects.
+
+VERDICT: SHIP — separate independent quality assessment only.
+Assessed UTC: 2026-10-08T12:56:54.177359+00:00.
+Confirmed CRITICAL/HIGH findings: none. Confirmed nonblocking findings: none.
+Unresolved blocking hypotheses: none for the exact bounded two-path artifact. No quality repair is requested; separate quality cap1 remains unused.
+No criterion was added or changed after candidate access. Exact original wording below elaborates the frozen unchanged four-criterion/full-scope contract, not a new requirement.
+
+IDENTITY VERIFIED BEFORE AND AFTER EXERCISES
+Target 1e1d91f509b4862e09076fcacd7c751008db866b versus 3db0d3690973e2c5077fc0788a8ce150435871ea. Both production files matched the immutable target Git blobs, supplied full SHA256 and actual POSIX0600 before reading/scoring; final production byte/mode verification also passed.
+Two-path manifest c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783 uses SHA256 of UTF8 sorted path NUL four-digit octal permissions NUL full-file SHA256 LF. Only the two production paths are included; all untracked and governing/receipt files are excluded from this production identity and assessed separately where named.
+assessment.md: 544 lines/52115 bytes; evidence.json: 200 lines/294150 bytes. Total346265 bytes.
+The immutable comparison also contains five coordinator-owned readiness/gate/binding receipt changes, explicitly disclosed in verification/group-5-exact-commit.json: readiness/group-5.json; verification/coordinator-accepted-gates-exact-commit.json; verification/group-1.json; verification/group-5-coordinator-frozen-gate.json; verification/licensed-alternative-route.json. These are not undisclosed production additions or author-owned expanded scope.
+Current WISH SHA25652c774493a61dc61a47be522db12e32ad8372414ff598672be02af2490875c54 verified before/after. Historical admission WISH925b29b9ab4798b994c0d1f269b0d2c836818333f04a1013f78f51e5b4e8fa3f remains historical, not silently substituted. WISH340–368 matches the immutable issue6 snapshot in github-roadmap.json. WISH938–950 discloses original acceptance and separate native-runtime authority without changing original scope/criteria; that authority was not used by this reviewer.
+Source seven-path manifest b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff recomputed with the same byte/mode algorithm and matched before/after. All four contract files matched both supplied SHA256 and immutable60975ca9c66efaa8f8284d37897c5e5d5f8a2f68 blobs: schema aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f; contract doc b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f; verifier a6634faaeee1d354039392fb164e93e7e35200fdd30998482e3eb9e71b8616ef; examples48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5.
+Original acceptance report rawSHA5de48095877e792ddf348f5656d63fe4144db6209144724af70f32ba89c5f903 and portableSHA39b8b666d6d8920124a2ad8d71adeebbd00da4310c03a46ceeff735add79ea91 are recorded in verification/group-5.json. This quality verdict does not merely inherit that acceptance verdict: criteria/code/prose/originals and fresh substantive scenarios were independently assessed.
+
+ORIGINAL FOUR CRITERIA — QUALITY COVERAGE
+AC1 “Every consequential factual statement has a dated source and classification.” PASS. assessment.md7–69,126–132 and evidence.json source_revisions/evidence_spans/observations/claims preserve full selected statement, P2139 semantics, USD metadata, acquired dates, source modification versus unknown publication, raw/decoded hashes and authored extraction bindings. All38 rendered rows independently compared to complete actual originals, including entity, amount, bounds, rank and date precision. Metadata claims explicitly secondary; authored decisions/hypotheses explicitly attributed/classified. All43 claim propositions and all3 assessment conclusions/confidence records inspected; no issuer audit or native-ingestion promotion.
+AC2 “Revenue/run rate, cash burn/loss and commitments/payments remain distinct.” PASS. assessment.md24,71–97 and unknowns202–294 separate community corporate revenue observations from recognized revenue, annual run rate, cash burn, accounting loss, equity/debt/cloud credits, obligations and payments. economic_relationships is empty rather than invented zero-dollar or funding-to-revenue edges. No aggregate/growth/annualization/comparable-period inference.
+AC3 “Missing cost or retention data remains unknown; no unsupported bubble-burst date is generated.” PASS. Four entities retain separate nulls for all21 unknown financial/operating fields; fourteen topics/four original questions remain visible. No private company numeric observation, forecast date, cohort-cost estimate or fake null measurement is generated. Independent guard exercises distinguish unknown coverage from an invalid0/0 measured cohort and reject freshness invention.
+AC4 “The editorial reviewer can approve a precise investigation revision.” PASS. assessment.md134–299 identifies revisionfrontier-economics/assessment/1, pack SHA, three assessment hashes, manifest82177312064e99a6549bf2262a64a4646a6adb3c5af2fd6b0963146c5c5fec17, methodfrontier-economics/curation/1.0.0 and cutoff2026-10-08T08:36:34.105385Z. Protocol requires authenticated reviewer receipt over both externally computed full-file hashes, method/cutoff and revision; any drift invalidates receipt. Draft publication192 has actor/approval/publication null. Actual human publication is neither fabricated nor incorrectly required as an extra current criterion; later#12 remains required.
+
+FULL ORIGINAL FOUR SCOPE BULLETS — COVERAGE
+1. Dated sustainability evidence pack using qualified panel: PASS, original Microsoft/Amazon/OpenAI/Anthropic preserved, all38 actually acquired public-company community assertions plus property/unit evidence; unknowns do not disguise private coverage.
+2. Separate demand/retention, price, inference economics, training costs, funding, compute commitments, open-model substitutes: PASS, assessment.md75–91 identifies the exact unqualified input and next discriminating evidence; API and consumer prices, realized receipts, costs, commitments and settlements remain distinct.
+3. Competing interpretations/assumptions/strongest counterevidence/observable invalidation: PASS, assessment.md99–124 provides diversified-partner buffer, financing-dependent fragility and substitution/value-migration hypotheses with substantive premises, strongest available counterweights/limits and observable disconfirmation. Alternatives may coexist; no fake contradiction edge or truth probability.
+4. IPO timing/losses/subsidy/distillation source-attributed and evidence-required: PASS, explicit nulls and boundaries at87–90,95–97 and hypotheses distinguish rumor/filing/listing, cash versus accounting, subsidy mechanism versus finance, lawful substitutes versus allegations. None is promoted from opaque source properties.
+
+SECURITY/AUTHORIZATION/SOURCE TRUST/RETENTION
+Read at exact target: assessment.md128–132,310–520; evidence.json all envelopes/provenance; accepted NOTICE1–30 and registry rights/acquisitions. The source-to-domain path consumes hash-pinned local data, never executes source labels, reference URLs, financial propositions or source-provided commands. The only exec is the coordinator-specified, reviewed authored Markdown Python consumer; no sourced text enters it as executable authority. Paths are supplied by pinned accepted registry/schema, not live attacker-controlled network intake. No credential/provider/native Brain/DSH principal or token introduced in production slice. No new collector, source request, model call, service, environment change or semantic store.
+CC0 scope is actual structured main0/Property120 originals, not linked SEC/issuer/media/translated prose rights. Reused accepted route review (licensed-alternative-route-review.md35–43) records primary licensing revisions2548950862/1523614187 and full CC0 legal-code limitations; NOTICE7–9 preserves no warranty/third-party clearance and no maximum retention period. This assessment does not newly fetch policy pages or independently re-acquire sources. Complete gzip originals are not mislabeled text/plain: authored canonical views alone have that media type; encoded/decoded identity and exact raw-selector/canonical-object/domain-span chain verified.
+All four originals strictly UTF8-decoded and namespace/property/unit verified afresh;192451 encoded bytes/1131597 decoded bytes. Entire selected statement objects retain arrays, rank, bounds, qualifiers, references and reference dates. Other properties remain uninterpreted. Source modification/cache/source-publication/read/local-registration/computation/year9/day11 remain separate; no accounting/native clock is invented.
+Fresh consumer rejects missing/corrupt originals, rights withdrawal, changed original revision, offset/media/quote/rank/bounds/qualifier/reference changes, financial/unit/period promotion, common-origin laundering, post-cutoff evidence and unattributed publication. Independent verifier scenarios show redaction cannot expose retained text and erased content cannot falsely certify old spans. This proves fail-closed validation, not implemented native erasure/storage machinery or OS isolation.
+
+MAINTAINABILITY/PERFORMANCE/REGRESSION
+Two bounded artifacts reuse closed evidence1.0.0 records and the accepted stdlib verifier. No additional dependency, schema/store, daemon, scheduled job, root consumer, SDK, compiled function or hot-path callback changed. Extraction method and Python-reference serialization limitations are explicit; no rival JCS/native-ID convention.
+The authored local consumer re-decodes/revalidates originals for each negative candidate and scans statements; deep copies serve isolated in-memory corruptions, not a compiled/request production hot path. Fresh real consumer observed2.05s wall time, exit0 (single smoke observation, not a production latency benchmark). No unsupported scalability guarantee or cleanup recommendation. Exact parent full43-test/evaluator receipt supports current regression risk; this reviewer did not rerun suites under concurrent writers.
+No avoidable compiled allocation/copy/computation change exists in this data/prose slice. Future native ingestion, adapter, UI, storage and offline replay performance remain unmeasured and unqualified.
+
+VALIDATION — EXACT ATTRIBUTION AND EXITS
+Fresh assessment command:
+python3 -B -c 'from pathlib import Path; text = Path("investigations/frontier-economics/assessment.md").read_text(); exec(compile(text.split("```python\n", 1)[1].split("\n```", 1)[0], "frontier-economics-smoke", "exec"))'
+Exit0; complete four acquired originals, all38 original-to-canonical-to-contract-span observations, four entities, all3 assessments, exact two artifact hashes and revision; all39 intended denial controls passed. Output reviewed in full, not merely counts/not-throw. Process-local socket control is not an OS sandbox.
+Fresh independent substantive scenario: subprocess.run(['python3','-B','-c',scenario], capture_output=True,text=True), exit0/empty stderr; source included below. Reads real source/originals/pack and checks every row's entity/property/quantity/bounds/rank/year9/day11 against actual full original statements, not copied expected quantities or source-text assertions. Seven additional meaningful independent security/semantic denials:
+- redacted source with exposed content -> unretained source cannot expose content;
+- erased content with extant spans -> span content unavailable; exact replay cannot be certified;
+- omitted transitive original-view input -> replay dependency omitted;
+- unknown coverage changed to0/0 -> invalid coverage cohort ratio;
+- Scene method drift -> scene assessment identity mismatch;
+- known actor approving before computation -> publication approval chronology;
+- future freshness -> freshness after computation.
+Reused current coordinator-owned frozen whole aggregate:
+python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json
+Parent exit0,43 tests/OK plus complete evaluator stdout; run2026-10-08T08:46:18.571842+00:00 through08:46:21.138387+00:00. Source verification/group-5-coordinator-frozen-gate.json full SHA25612d3dc56490cfbfc8a9fff60b855a8beae5539690421c41c4409ad7070b3fdba matched both target immutable blob and current bytes. candidate_manifest and source seven-manifest bind the exact two production artifacts/source pins; stdout SHA e1cc9a457e4068aa5e035aa36d989417b8514f94687c13a4b8ccabeadd1b8235 independently checked. Reused parent consumer exit0 stdoutSHA b75ddcf29241f2ea6cb565e7c9727b836d621f66aa29de3431f2f2d75e42032f checked and full output inspected. These are attributable parent results, not this reviewer's fresh suite or historical source-only gate.
+Fresh identity/provenance cells completed with successful assertions; no separate shell exit claimed for Eval-only hash cells. Read-only git show/diff observed exact immutable blob identity/disclosed pathset; no checkout/index/worktree/Git-state mutation.
+
+LIMITS AND HANDOFF
+This SHIP is only independent quality evidence for this exact local draft pack after separate original acceptance, not GitHub closure/card promotion/deployed completion. #4/#5 actual native runtime proof, #8 Felipe choice, #7/#13 native/read-model/production network-free offline replay, #12 real authorized editorial publication/newcomer/recovery/deployment, #21 real CI and recurring source spending remain unaccepted; no waiver. No issuer audit, private economic truth, period comparability, truth probability, native persistence/restart or storage-erasure execution was verified.
+Existing schema verifier validates structural identities/closure, not authenticated runtime authorization or arbitrary proposition truth. The hash-pinned fixed artifact's semantics were independently compared; arbitrary future new records need their own qualification/review. No current blocking hypothesis was confirmed; these explicit future limits are not incorrectly classified as two-path defects.
+Concurrent #4/#5 changing qualification files were not opened; no tests/build/lint/formatters were run. Repository/code/doc/environment/source/forge/card/task/git state remained read-only. Only this requested /tmp report and Orca lifecycle messages were written. Implementation repairs0/2, effort0, separate quality repair cap1 unused.
+Coordinator may record this SHIP against exact manifest/SHA with original acceptance; later human editorial publication and all other delivery gates still required.
+
+APPENDIX — EXACT INDEPENDENT SCENARIO SOURCE
+Executed via subprocess.run(['python3','-B','-c',scenario],text=True,capture_output=True); returncode0. No persistent script was created.
+```python
+import sys, json, gzip, importlib.util, copy, hashlib
+from pathlib import Path
+from decimal import Decimal
+spec=importlib.util.spec_from_file_location('contracts','tests/test_evidence_contracts.py')
+contracts=importlib.util.module_from_spec(spec); spec.loader.exec_module(contracts)
+pack=contracts.load_bundle('investigations/frontier-economics/evidence.json')
+registry=json.loads(Path('investigations/frontier-economics/sources.json').read_text(encoding='utf-8'))
+text=Path('investigations/frontier-economics/assessment.md').read_text(encoding='utf-8')
+orig={}
+for acquisition in registry['licensed_subset']['acquisitions']:
+    encoded=Path(acquisition['original_path']).read_bytes()
+    decoded=gzip.decompress(encoded)
+    decoded_text=decoded.decode('utf-8',errors='strict')
+    entity=json.loads(decoded_text)['entities'][acquisition['entity_id']]
+    assert entity['ns']==({'P2139':120}.get(entity['id'],0))
+    assert hashlib.sha256(encoded).hexdigest()==acquisition['original_sha256']
+    assert hashlib.sha256(decoded).hexdigest()==acquisition['decoded_utf8_sha256']
+    orig[entity['id']]=(decoded,entity)
+assert orig['P2139'][1]['datatype']=='quantity'
+assert orig['Q4917'][1]['claims']['P498'][0]['mainsnak']['datavalue']['value']=='USD'
+spans={s['id']:s for s in pack['evidence_spans']}
+sources={s['id']:s for s in pack['source_revisions']}
+claims={c['id']:c for c in pack['claims']}
+entity_map={'Q2283':('entity:microsoft','Microsoft'),'Q3884':('entity:amazon','Amazon')}
+rows={x.split('|')[1].strip():[v.strip() for v in x.split('|')[1:-1]] for x in text.splitlines() if x.startswith('| ') and x.split('|')[1].strip().isdigit()}
+precision_seen=set(); bounds_seen=False
+for obs in pack['observations']:
+    span=spans[obs['evidence_span_ids'][0]]; source=sources[span['source_revision_id']]
+    binding=json.loads(source['reason']); raw,entity=orig[binding['source_entity_id']]
+    start,end=binding['selector']['start'],binding['selector']['end']
+    statement=json.loads(raw[start:end].decode('utf-8'))
+    actual=next(s for s in entity['claims']['P2139'] if s['id']==statement['id'])
+    assert statement==actual and json.loads(span['quote'])==actual
+    expected_entity,expected_name=entity_map[entity['id']]
+    assert obs['entity_id']==expected_entity
+    assert statement['mainsnak']['property']=='P2139' and statement['mainsnak']['snaktype']=='value' and statement['mainsnak']['datatype']=='quantity'
+    val=statement['mainsnak']['datavalue']['value']
+    assert Decimal(str(obs['value']))==Decimal(val['amount'])
+    claim=claims['claim:issue6:reported:'+obs['id'].rsplit(':',1)[1]]
+    assert claim['entity_ids']==[expected_entity]
+    times=[s['datavalue']['value'] for s in statement['qualifiers']['P585']]
+    t=times[0]; precision_seen.add(t['precision'])
+    row=rows[obs['id'].rsplit(':',1)[1]]
+    expected_date=t['time'][1:5] if t['precision']==9 else t['time'][1:11]+' (day)'
+    assert row[1]==expected_name and row[2]==expected_date and row[3]==val['amount']
+    assert row[4]==str(val.get('lowerBound','null'))+' / '+str(val.get('upperBound','null'))
+    assert row[5]==statement['rank'] and row[6]=='`'+span['id']+'`'
+    bounds_seen |= 'lowerBound' in val
+assert precision_seen=={9,11} and bounds_seen
+contracts.validate_bundle(pack)
+print('PASS independent originals->all38 exact rows; entity, property, amount, bounds, rank, year9/day11, references/qualifiers match original full statement objects')
+def deny(name, mutation, expected):
+    p=copy.deepcopy(pack); mutation(p)
+    try: contracts.validate_bundle(p)
+    except ValueError as error:
+        assert str(error)==expected,(name,str(error)); print('PASS',name,'->',str(error))
+    else: raise AssertionError('failed open: '+name)
+deny('redacted source cannot continue exposing licensed text',lambda p:p['source_revisions'][0].update(retention_status='redacted'),'unretained source cannot expose content')
+deny('erased source cannot falsely certify exact spans',lambda p:p['source_revisions'][0].update(retention_status='redacted',content_text=None),'span content unavailable; exact replay cannot be certified')
+deny('manifest cannot omit transitive original-view provenance',lambda p:p['replay_manifests'][0].update(input_records=[r for r in p['replay_manifests'][0]['input_records'] if r['id']!=p['source_revisions'][0]['id']]),'replay dependency omitted')
+deny('unknown coverage cannot be a zero-sized measured cohort',lambda p:p['assessments'][0]['confidence']['coverage'].update(numerator=0,denominator=0),'invalid coverage cohort ratio')
+deny('scene cannot silently substitute a new method',lambda p:p['scenes'][0].update(method_version='unauthorized-new-method'),'scene assessment identity mismatch')
+deny('identified actor cannot approve before computation',lambda p:p['publication_revisions'][0].update(status='published',editorial_actor_entity_id='entity:issue6:curation',approved_at='2026-10-08T07:00:00Z',published_at='2026-10-08T09:00:00Z'),'publication approval chronology')
+deny('unknown precision must not masquerade as future freshness',lambda p:p['assessments'][0]['confidence']['freshness'].update(newest_evidence_at='2099-01-01T00:00:00Z'),'freshness after computation')
+print('PASS independent substantive semantic/security scenario; no repository writes, network/source acquisition, native calls or suite invocation')
+```

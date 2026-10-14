@@ -1,0 +1,366 @@
+{
+  "observed_at": "2026-10-14T21:02:35.968495+00:00",
+  "pr": {
+    "baseRefName": "main",
+    "body": "## Scope and verified state\n\nTracks #1: five milestones, twenty original child issues, eighty acceptance criteria, and forty-one native dependencies. Dates and GitHub assignees remain unset.\n\n**Draft / IN_PROGRESS \u2014 six of twenty issues have local original acceptance and separate quality acceptance: #2, #3, #5, #6, #8, and #11. This is not whole-roadmap completion, M0 completion, a deployed investigation, CI acceptance, merge authorization, or SHIPPED.** The coordinator performs orchestration, evidence observation, and exact-path Git integration; workers author implementation.\n\n## Accepted checkpoints\n\n- **#2:** evidence, claim, provenance, and temporal contracts; opposing claims and concurrent investors remain distinct; observation/validity/publication/ingestion/computation clocks do not collapse.\n- **#3:** qualified licensed financial-original route, precise Microsoft/Amazon spans and retained CC0 originals; source rights and bounded acquisition are recorded, not internet-wide coverage.\n- **#5:** actual native Brain qualification with owner/denied roles, append-only conflicting records, exact spans, restart/recall/history and concurrency. The fourth authorized continuation is retained with earlier failures; no fifth qualifier. Document relationships are not financial-transaction proof.\n- **#6:** real dated frontier-economics pack and assessment, strongest counterevidence, explicit assumptions/invalidation conditions and inspectable precise revision. Missing financial quantities remain unknown.\n- **#8:** three structurally distinct explorers over the same real pack. Felipe chose guided questions first, followed by evidence and missing premises, retaining relationship/timeline lenses. Actual desktop/narrow-reader and keyboard-focus receipts cover all variants; the unchanged relationship prototype default is not a claim that production #9 is integrated.\n- **#11:** attention/activity/adoption/capability semantics and honest descriptive evaluator; coverage is not accuracy or truth probability.\n\nThese are local issue acceptance checkpoints, not authority to close upstream issues. Complete original acceptance, independent quality, source provenance, and claim-span reports are retained under `.genie/wishes/open-intelligence-observatory/`.\n\n## Current exact visual checkpoint\n\nAccepted study commit: `f429a573ddc98ce8aef50520c2e420d1ea883f19`; preceding immutable-observer proof: `d213829dafa40148ef7f2e87476e53cb08e47d08`.\n\nThe exact twelve-file product scope and all governing evidence are preserved across two bounded commits. No unaccepted read-model implementation, updated SDK disclosure, current private credential/account records, or native-extension proposal was swept into this publication. Original #8 full C1\u2013C4 and separate security/maintainability/performance committed-SHA attribution: **both SHIP at this exact commit, zero HIGH/CRITICAL.** The [complete two current standalone review reports and full actual clean-commit aggregate](https://github.com/namastex888/trending-research/pull/22#issuecomment-6092121217) were published without summarization and their entire stored comment body was read back byte-for-byte. Parent positively assessed and actually released both settled native reviewers before delivery acknowledgment; source repair2/2 and separate quality1/1 were not reset.\n\nFresh clean `git archive` of the exact commit, without uncommitted #7 code/tests:\n\n```sh\npython3 -B -m unittest discover tests\npython3 -B eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json\ngenie wish lint\n```\n\nActual exits: 0 / 0 / 0; 43 tests, zero failures; evaluator configuration `e2e3fe2870`, method 3.0 descriptive; wish lint reports four files and zero broken links. Same-byte native UI evidence is reused explicitly; tests alone are not the UI proof. The live-worktree 45-test result includes temporary unaccepted #7 work and is not renamed this clean gate.\n\nThe frozen study document\u2019s final pending sentence records its authoring stage. Its subsequently complete original/quality acceptance and actual card completion are established by the committed coordinator acceptance checkpoint; history was not rewritten through another exhausted source-repair cycle.\n\n## Active native gates and remaining roadmap\n\n- **#7 remains unaccepted:** full-snapshot widening failed at a 6,241,702-byte ReplayManifest remember after 61,649 native calls; final Scene root was unattempted. The cause body was lost and the actual cause remains UNKNOWN. Source/receipt history, source clocks, and stopped owned persistence are preserved. Both independent diagnostic reviews found three distinct HIGH gaps. The owner authorized exactly one additional prospective repair/review cycle; prior exhaustion is retained, not reset. The final cycle2/2 complete corrective5 remains DATA ONLY: exact236 true insertions/32 deletions/204 net, same11 paths/two prospective mutations, 1700 forecast/2000 hard/25 files. Two fresh full C1\u2013C8 and separate quality reviewers acknowledged complete methods before exact static artifact access; no code application, fixture execution, or diagnostic activation is admitted by that proposal.\n- **#4 remains unaccepted:** the one actual zero-model startup failed before native metadata/catalog completion. Static full-Bookworm ELF availability is only a compatible-prerequisite candidate, not SDK/loader/startup proof. The owner approved only a reviewed native-extension architecture proposal for the missing completion, all-transport principal, atomic-stop, and total-spend contracts\u2014not implementation or another runtime attempt.\n- **#9 and #13** depend on actual accepted #7; assistant/publication/collection/community/expansion/queue/CI work follows the unchanged native DAG. No dependency-ready label substitutes for acceptance.\n- Fresh product credential custody is qualified privately; it is not paid admission. Product model calls: **0**. Approved shared validation cap remains **USD20 total (DSH12 / Brain8)**; coding/storage/all-cost totals remain **UNKNOWN**. Enforced currency/usage reservations, attributable editorial/newcomer approval, recurring collection and deployment authority remain real gates.\n\n## Remote status and authority\n\nConventional public fork: `automagik-genie/trending-research`, nondefault feature branch `wish/open-intelligence-observatory`, PR base `namastex888/trending-research:main`. Upstream issue closure/labels/merge permissions are not inferred from fork administration. This remains a draft; no `closes` trailers, date/assignee edits, merge, deployment, infrastructure purchase, recurring collector, or paid-model bypass.\n\nAfter the actual normal fast-forward fork push, the remote branch and this draft PR both read back exact head `f429a573ddc98ce8aef50520c2e420d1ea883f19`. Fresh `gh pr checks` reports **no checks** (exit1); direct check-runs reports zero, and commit status has no contexts. This is **not a CI pass**. Full delivery requires all original child/milestone criteria, current integrated review/gates, actual CI, and deployed-revision acceptance.\n",
+    "headRefName": "wish/open-intelligence-observatory",
+    "headRefOid": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+    "headRepositoryOwner": {
+      "id": "U_kgDODQJrIA",
+      "name": "Automagik Genie \ud83e\uddde",
+      "login": "automagik-genie"
+    },
+    "isDraft": true,
+    "mergeStateStatus": "DIRTY",
+    "number": 22,
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "title": "feat: deliver evidence-led observatory roadmap",
+    "url": "https://github.com/namastex888/trending-research/pull/22"
+  },
+  "issues": [
+    {
+      "number": 21,
+      "title": "OI-20: Add CI gates for provenance, methodology and integration regressions",
+      "state": "open",
+      "assignees": [],
+      "milestone": 3,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 20,
+      "title": "OI-19: Turn research gaps into a governed GitHub delivery queue",
+      "state": "open",
+      "assignees": [],
+      "milestone": 5,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 19,
+      "title": "OI-18: Expand the source panel and lenses by demonstrated evidence gaps",
+      "state": "open",
+      "assignees": [],
+      "milestone": 5,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 18,
+      "title": "OI-17: Share and branch investigations with attributable disagreement",
+      "state": "open",
+      "assignees": [],
+      "milestone": 4,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 17,
+      "title": "OI-16: Accept evidence, replication and correction submissions",
+      "state": "open",
+      "assignees": [],
+      "milestone": 4,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 16,
+      "title": "OI-15: Route changed evidence into review and meaningful updates",
+      "state": "open",
+      "assignees": [],
+      "milestone": 3,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 15,
+      "title": "OI-14: Measure narrative stance and source independence",
+      "state": "open",
+      "assignees": [],
+      "milestone": 3,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 14,
+      "title": "OI-13: Automate the qualified source adapters with health and coverage",
+      "state": "open",
+      "assignees": [],
+      "milestone": 3,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 13,
+      "title": "OI-12: Make ingestion and rescoring reproducible and network-independent on replay",
+      "state": "open",
+      "assignees": [],
+      "milestone": 3,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 12,
+      "title": "OI-11: Publish the first investigation with editorial and release evidence",
+      "state": "open",
+      "assignees": [],
+      "milestone": 2,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 11,
+      "title": "OI-10: Separate attention, activity, adoption and capability semantics",
+      "state": "open",
+      "assignees": [],
+      "milestone": 2,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 10,
+      "title": "OI-09: Connect the DSH assistant to the selected investigation",
+      "state": "open",
+      "assignees": [],
+      "milestone": 2,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 9,
+      "title": "OI-08: Ship the relationship lens, timeline and shared evidence inspector",
+      "state": "open",
+      "assignees": [],
+      "milestone": 2,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 8,
+      "title": "OI-07: Compare visual directions using the real investigation",
+      "state": "open",
+      "assignees": [],
+      "milestone": 2,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 7,
+      "title": "OI-06: Preserve source revisions and implement the investigation read model",
+      "state": "open",
+      "assignees": [],
+      "milestone": 2,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 6,
+      "title": "OI-05: Curate the flagship economics investigation with counterevidence",
+      "state": "open",
+      "assignees": [],
+      "milestone": 2,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 5,
+      "title": "OI-04: Qualify Brain evidence persistence and relationship semantics",
+      "state": "open",
+      "assignees": [],
+      "milestone": 1,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 4,
+      "title": "OI-03: Qualify a pinned DSH assistant integration and session boundary",
+      "state": "open",
+      "assignees": [],
+      "milestone": 1,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 3,
+      "title": "OI-02: Qualify the first economics source panel and acquisition budget",
+      "state": "open",
+      "assignees": [],
+      "milestone": 1,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 2,
+      "title": "OI-01: Define the evidence, claim and temporal contracts",
+      "state": "open",
+      "assignees": [],
+      "milestone": 1,
+      "acceptance_criteria_count": 4
+    },
+    {
+      "number": 1,
+      "title": "Roadmap: open AI intelligence observatory",
+      "state": "open",
+      "assignees": [],
+      "milestone": null,
+      "acceptance_criteria_count": 25
+    }
+  ],
+  "milestones": [
+    {
+      "number": 1,
+      "title": "M0 \u2014 Evidence and integration contracts",
+      "state": "open",
+      "due_on": null
+    },
+    {
+      "number": 2,
+      "title": "M1 \u2014 First public investigation: frontier AI economics",
+      "state": "open",
+      "due_on": null
+    },
+    {
+      "number": 3,
+      "title": "M2 \u2014 Reliable autonomous collection",
+      "state": "open",
+      "due_on": null
+    },
+    {
+      "number": 4,
+      "title": "M3 \u2014 Community investigation and correction",
+      "state": "open",
+      "due_on": null
+    },
+    {
+      "number": 5,
+      "title": "M4 \u2014 Broader lenses and controlled roadmap automation",
+      "state": "open",
+      "due_on": null
+    }
+  ],
+  "native_dependencies": {
+    "2": {
+      "exit_code": 0,
+      "depends_on": []
+    },
+    "3": {
+      "exit_code": 0,
+      "depends_on": [
+        2
+      ]
+    },
+    "4": {
+      "exit_code": 0,
+      "depends_on": [
+        2
+      ]
+    },
+    "5": {
+      "exit_code": 0,
+      "depends_on": [
+        2
+      ]
+    },
+    "6": {
+      "exit_code": 0,
+      "depends_on": [
+        2,
+        3
+      ]
+    },
+    "7": {
+      "exit_code": 0,
+      "depends_on": [
+        2,
+        5,
+        6
+      ]
+    },
+    "8": {
+      "exit_code": 0,
+      "depends_on": [
+        6
+      ]
+    },
+    "9": {
+      "exit_code": 0,
+      "depends_on": [
+        7,
+        8
+      ]
+    },
+    "10": {
+      "exit_code": 0,
+      "depends_on": [
+        4,
+        7,
+        9
+      ]
+    },
+    "11": {
+      "exit_code": 0,
+      "depends_on": [
+        2
+      ]
+    },
+    "12": {
+      "exit_code": 0,
+      "depends_on": [
+        9,
+        10,
+        11
+      ]
+    },
+    "13": {
+      "exit_code": 0,
+      "depends_on": [
+        7,
+        11
+      ]
+    },
+    "14": {
+      "exit_code": 0,
+      "depends_on": [
+        3,
+        13
+      ]
+    },
+    "15": {
+      "exit_code": 0,
+      "depends_on": [
+        2,
+        3,
+        14
+      ]
+    },
+    "16": {
+      "exit_code": 0,
+      "depends_on": [
+        12,
+        14
+      ]
+    },
+    "17": {
+      "exit_code": 0,
+      "depends_on": [
+        12,
+        16
+      ]
+    },
+    "18": {
+      "exit_code": 0,
+      "depends_on": [
+        9,
+        16,
+        17
+      ]
+    },
+    "19": {
+      "exit_code": 0,
+      "depends_on": [
+        14,
+        15,
+        18
+      ]
+    },
+    "20": {
+      "exit_code": 0,
+      "depends_on": [
+        16,
+        17
+      ]
+    },
+    "21": {
+      "exit_code": 0,
+      "depends_on": [
+        4,
+        5,
+        12,
+        13
+      ]
+    }
+  },
+  "scope": "Read-only GitHub PR/issue/milestone/dependency metadata; no remote mutation, CI execution or deployed verification"
+}

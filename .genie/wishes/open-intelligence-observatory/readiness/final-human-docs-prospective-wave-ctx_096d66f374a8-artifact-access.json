@@ -1,0 +1,92 @@
+{
+  "recorded_at": "2026-10-09T21:10:27.258148+00:00",
+  "blind_ack_message": "msg_b4c3630c5b68",
+  "dispatch": "ctx_096d66f374a8",
+  "kind": "DSH_DISCLOSURE_BLOCKED_ORIGINAL_HANDOFF",
+  "independent_blind_method_accepted": true,
+  "artifacts": {
+    "wish": {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad"
+    },
+    "combined_freeze": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-UI-human-DSH-docs-source7-temporary-freeze.json",
+      "sha256": "8271f2f43d09bcaf0e657d9c2a7f87e7795ac270a805c3086115b23958c47011"
+    },
+    "current_aggregate": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-final-human-UI-DSH-disclosure-source7-temporary-aggregate.json",
+      "sha256": "aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c",
+      "actual_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "actual_test_count": 45,
+      "runner_owner": "parent coordinator",
+      "bounds": "Currentlocaltemporaryfreeze only, notremoteCI/deploy/DSHoriginal/native7completion"
+    },
+    "runtime_permission": "NONE builds/tests/browser/server/containers/network/provider/secret/Git prohibited",
+    "full_report_protocol": "Standalonefull/tmpreport; digest/bytes/lines/nativeworker_doneactualreviewwork; parentpositiveassessment/fullread/release beforeinboxACK, nooriginalcardmutation",
+    "candidate3": {
+      "docs/integrations/dsh.md": {
+        "sha256": "626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da",
+        "bytes": 24841,
+        "mode": "0600"
+      },
+      "docs/integrations/cordis.md": {
+        "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+        "bytes": 12132,
+        "mode": "0600"
+      },
+      "integrations/dsh/qualification/sandbox-readiness.json": {
+        "sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+        "bytes": 28091,
+        "mode": "0600"
+      }
+    },
+    "actual_classifier_metadata": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-failed-once-classified-metadata.json",
+      "sha256": "7a830a2aae61a3a74b0b9c0815f388fecc220a4a482c3d37123f383babf9f7ed"
+    },
+    "actual_independent_outcome_report": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-actual-zero-model-diagnostic-outcome-review-1.txt",
+      "sha256": "636bf654d74eb36c4635d11b3250fe8d34c24b751c28312245094e8eb29d2219"
+    },
+    "actual_outcome_review_settlement": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-actual-diagnostic-review-accepted-settlement.json",
+      "sha256": "c59b5ca9b9ea0748109e942e1f71877ab2320b88ed512e6492852f7b6b6fd01b"
+    },
+    "actual_disposition_checkpoint": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-own-failed-diagnostic-disposition-checkpoint.json",
+      "sha256": "aee7a8eaaf030b1fcc97d358a8485a6610cd725db1e5bee6d3866d63b594588b"
+    },
+    "authorized_disposition_gate": {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-3-failed-once-diagnostic-custody-and-throwaway-disposition.json",
+      "sha256": "31c33bb33e684bc78e208ca1f9f8ee4634a634a31ec6e9027b6d317861cfeab5"
+    },
+    "old_DSH_doc": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-DSH-prerequisite-doc-before-diagnostic-disposition.txt",
+      "sha256": "ec056adff560dddea4bd0345743015904d2f438e8f2352542a4304967ee6008c"
+    },
+    "old_pinned_Cordis_doc": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt",
+      "sha256": "ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6"
+    },
+    "doc_release_gate": {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-3-actual-failed-diagnostic-serialized-docs-release.json",
+      "sha256": "f705e2440e1f0c88092a04223161e0dedbc73734aa07bad7ab8f9a6e87ca04db"
+    },
+    "actual_once_gate": {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-3-native-zero-model-diagnostic-1.json",
+      "sha256": "0636caa297c6309b0fb49227ed9f16bbf446d49f5fc0ed73b3bcaadc0bfc2ea7"
+    },
+    "actual_BWS_auth_blocker": {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/user-BWS-fresh-product-credential-authentication-blocker.json",
+      "sha256": "1994f72790f8fb6e1f2e5c3a857252e133cc2a424aa286d8d08aa0dc59084077"
+    },
+    "original_contract_url": "https://github.com/namastex888/trending-research/issues/4",
+    "actual_proof_owners": "Failure/cleanup ctx_a979a9a2c022; independentoutcome task_c265975cc3a7/ctx_1ee63a5a938e settled; safe7a830transfer/dispositionpathnamechecks/currentaggregate parent. Exit1failureNOTC1C3/globalproof, exactABIcauseUNKNOWN.",
+    "nonpermission": "C1C3unavailable/fulloriginalBLOCKED, cap2/2/no code3/runtime/retry, no privatecredentialsread. Oldce917docmatches7pinnedinput notcurrentea09."
+  },
+  "explicit_permission": "READONLY_ARTIFACT_ACCESS_ONLY_NO_CODE_OR_RUNTIME"
+}

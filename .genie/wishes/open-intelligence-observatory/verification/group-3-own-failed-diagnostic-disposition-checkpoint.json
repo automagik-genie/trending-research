@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-10-09T19:20:26.470064+00:00",
+  "native_author_status": "msg_e268aaac9aed",
+  "task": "task_0a936d713c67",
+  "dispatch": "ctx_a979a9a2c022",
+  "parent_fresh_pathname_only_absence": {
+    "integrations/dsh/qualification/policy.mjs": true,
+    "integrations/dsh/qualification/probe.mjs": true,
+    "integrations/dsh/qualification/sandbox-a": true,
+    "integrations/dsh/qualification/sandbox-b": true
+  },
+  "root_ignore_restored_sha256": "d8304ce9e50c89f06fce9040935bed372f8709ca0e9553c479311477de7b3895",
+  "retained_readiness": {
+    "sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+    "bytes": 28091,
+    "mode": "0600"
+  },
+  "original_failure_preserved": "exit1/2.17s/ABI_LOAD_FAILED122bytes/exactcauseUNKNOWN/nullmetadata/catalog/completion/originalC1-C3",
+  "qualified_review_sha256": "636bf654d74eb36c4635d11b3250fe8d34c24b751c28312245094e8eb29d2219",
+  "safe_classified_copy_sha256": "7a830a2aae61a3a74b0b9c0815f388fecc220a4a482c3d37123f383babf9f7ed",
+  "private_values_or_state_contents_read_copied": false,
+  "docs_DSH_Cordis": "HOLDoldhashesec056/ce917until7freeze",
+  "original4_done": false,
+  "current_aggregate": "pending"
+}

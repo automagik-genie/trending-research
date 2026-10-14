@@ -1,0 +1,156 @@
+{
+  "recorded_at": "2026-10-09T17:59:37.875548+00:00",
+  "delivery": "delivery_6281f5b8284b",
+  "accepted_and_released": [
+    {
+      "dispatch": "ctx_05770b531e5b",
+      "accepted_settlement": "msg_c52dca930138",
+      "assessment": "READ_complete_notpaidpermission",
+      "release": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"550f29a5-49b7-4167-8408-4ae890843c8d\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_05770b531e5b\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"4eddc709-441d-4c6f-8c0a-799099e80c91\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "550f29a5-49b7-4167-8408-4ae890843c8d",
+          "ok": true,
+          "result": {
+            "dispatchId": "ctx_05770b531e5b",
+            "state": "released",
+            "processAction": "closed_agent_terminal",
+            "archive": {
+              "source": "terminal",
+              "status": "captured"
+            },
+            "mutation": {
+              "requestId": "4eddc709-441d-4c6f-8c0a-799099e80c91",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "dispatch": "ctx_9c125d3c81ea",
+      "accepted_settlement": "msg_eb53de43faa0",
+      "assessment": "FIX_FIRST_quality_Q1confirmedHIGH_browserclosed",
+      "release": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"fb6bccf7-b1f2-41de-aa67-5777cea10f80\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_9c125d3c81ea\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"518ac130-e1d6-4d74-8bfa-9e10bbb5da5d\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "fb6bccf7-b1f2-41de-aa67-5777cea10f80",
+          "ok": true,
+          "result": {
+            "dispatchId": "ctx_9c125d3c81ea",
+            "state": "released",
+            "processAction": "closed_agent_terminal",
+            "archive": {
+              "source": "terminal",
+              "status": "captured"
+            },
+            "mutation": {
+              "requestId": "518ac130-e1d6-4d74-8bfa-9e10bbb5da5d",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "dispatch": "ctx_60cca09682a9",
+      "accepted_settlement": "msg_6ce5170ec0a8",
+      "assessment": "staticclosureSHIP_fullreadinessoriginalBLOCKED",
+      "release": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"edbda3e2-3f58-432d-a86c-eb3c1ea6500e\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_60cca09682a9\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"0d8c2acd-3571-401c-a648-51117de4c4a9\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "edbda3e2-3f58-432d-a86c-eb3c1ea6500e",
+          "ok": true,
+          "result": {
+            "dispatchId": "ctx_60cca09682a9",
+            "state": "released",
+            "processAction": "closed_agent_terminal",
+            "archive": {
+              "source": "terminal",
+              "status": "captured"
+            },
+            "mutation": {
+              "requestId": "0d8c2acd-3571-401c-a648-51117de4c4a9",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "dispatch": "ctx_f79253ca87d2",
+      "accepted_settlement": "msg_fdfeb8e82c88",
+      "assessment": "original5succeeded_frozen6hashesunchanged",
+      "release": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"5e2a8d96-7781-4547-9105-92a4b7d23b41\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_f79253ca87d2\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"df46c153-f50b-4139-aa69-2b11c7563abd\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "5e2a8d96-7781-4547-9105-92a4b7d23b41",
+          "ok": true,
+          "result": {
+            "dispatchId": "ctx_f79253ca87d2",
+            "state": "released",
+            "processAction": "closed_agent_terminal",
+            "archive": {
+              "source": "terminal",
+              "status": "captured"
+            },
+            "mutation": {
+              "requestId": "df46c153-f50b-4139-aa69-2b11c7563abd",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    }
+  ],
+  "raw_reports_unchanged": [
+    {
+      "source": "/tmp/visual-original8-quality-1.txt",
+      "repository_notes": ".genie/wishes/open-intelligence-observatory/verification/group-7-independent-quality-1.txt",
+      "sha256": "60800cba0121578da724c97792b92bace99a6ce166a4b1ab84ebe3cda7d1ca59",
+      "bytes": 12579,
+      "mode": "0600",
+      "unchanged": true
+    },
+    {
+      "source": "/tmp/dsh-native-bootstrap-byte-review-4.txt",
+      "repository_notes": ".genie/wishes/open-intelligence-observatory/verification/group-3-native-bootstrap-byte-review-4.txt",
+      "sha256": "dc0c8b1a6d2fd6ac01d40d1b3a50ac91ce3ac0dfa2ef659e058642dba5d9bed8",
+      "bytes": 19391,
+      "mode": "0600",
+      "unchanged": true
+    },
+    {
+      "source": "/tmp/deepseek-public-paid-admission-primary.txt",
+      "repository_notes": ".genie/wishes/open-intelligence-observatory/readiness/deepseek-public-paid-admission-primary-findings.txt",
+      "sha256": "64c5598f87c90d5ff86f6db924dc2695c66f4307ee6e382fc47e011c9cdd41c5",
+      "bytes": 24603,
+      "mode": "0600",
+      "unchanged": true
+    }
+  ],
+  "Brain_final_frozen_six_match": true,
+  "UI_confirmedQ1": "HIGH actualEnterButtontoBODYnextTabrestarts atfirstquestion; no unchangedrerun",
+  "DSH_final": "staticR1/H1/H2closed; globalcompletionunavailable/fullS1-S4originalblocked; no thirdrepair",
+  "heartbeat": "livenessonlyprocessed"
+}

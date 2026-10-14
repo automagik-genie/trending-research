@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-10-09T17:49:02.097983+00:00",
+  "status": "ADMITTED_SEPARATE_QUALITY_AND_EXCLUSIVE_BROWSER_OBSERVATION",
+  "task": "task_20d392191d1e",
+  "dispatch": "ctx_9c125d3c81ea",
+  "blind_ack": "msg_36b64f632f8a",
+  "original_dispatch_typo": "4776f8b73fb0204fea96ed08db21af0922aaa53cd35b0d2d9a69d55f1cf949d63",
+  "actual_source4_sha256": "776f8b73fb0204fea96ed08db21af0922aaa53cd35b0d2d9a69d55f1cf949d63",
+  "candidate_manifest_sha256": "3b91b9abfabae00621b25da33a8ee7fe3ff694960ddf86c522e257ce883ae949",
+  "candidate_commit": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "truthful_intake": "BlindACK beforeartifact; dispatchParentacceptsreadexplicitpermission; revieweridentifiedextra4 andcheckedactualbrief/manifest, not newblindACKfabrication",
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "parent_lease_closed": "original8-parent-exclusive-after-hover",
+  "exclusive_browser_owner": "ctx_9c125d3c81ea",
+  "preview": "http://127.0.0.1:8879/",
+  "browser": "existingChrome153 toolmanagedisolatedprofile; loopbackonly noinstall/no-sandbox nottenantproof",
+  "scope": "Observeactualquestion/stepEnterfocus and Tabflow, verifyactualsurfaceguards; no source/testing/config/Gitmutation; close own tab and reportlease release",
+  "human_acceptance": null,
+  "original_acceptance": null,
+  "companion_receipt": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-parent-hover-guided-keyboard-proof.json",
+    "sha256": "a04e5385de8c4af150b54ddca0247f382e12fa4ddece763ed38781d88f3860a8"
+  },
+  "aggregate_receipt": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/native-brain-visual-post-commit-aggregate.json",
+    "sha256": "5dfe18493bbaf4d357f523edb99e1a8976867251dbdb4e08d749101bea69e53f"
+  }
+}

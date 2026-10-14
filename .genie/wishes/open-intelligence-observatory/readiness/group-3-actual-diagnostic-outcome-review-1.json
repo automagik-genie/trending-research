@@ -1,0 +1,53 @@
+{
+  "recorded_at": "2026-10-09T18:40:26.347000+00:00",
+  "status": "ADMITTED_READ_ONLY_ACTUAL_DIAGNOSTIC_OUTCOME_REVIEW",
+  "task": "task_c265975cc3a7",
+  "dispatch": "ctx_1ee63a5a938e",
+  "blind_ack": "msg_0208322deaa1",
+  "current_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "allowed_repo_files": [
+    ".gitignore",
+    "integrations/dsh/qualification/sandbox-readiness.json",
+    "integrations/dsh/qualification/policy.mjs",
+    "integrations/dsh/qualification/probe.mjs",
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md",
+    ".genie/wishes/open-intelligence-observatory/WISH.md",
+    ".genie/wishes/open-intelligence-observatory/verification/group-3-actual-zero-model-diagnostic-1-checkpoint.json",
+    ".genie/wishes/open-intelligence-observatory/readiness/group-3-native-zero-model-diagnostic-1.json",
+    ".genie/wishes/open-intelligence-observatory/verification/group-3-native-bootstrap-byte-review-4.txt"
+  ],
+  "exact_classified_private_metadata_only": {
+    "path": "integrations/dsh/qualification/sandbox-a/work/bootstrap-diagnostics.json",
+    "sha256": "7a830a2aae61a3a74b0b9c0815f388fecc220a4a482c3d37123f383babf9f7ed",
+    "optional_read_allowed": true,
+    "native_secret_state_keys_rawheaders_forbidden": true
+  },
+  "frozen_repo_manifest": {
+    ".gitignore": {
+      "sha256": "c5f8082f7d8bbac6fa2748b7f2a6dcba5afc68fd23351d2b78e85ac9843df711",
+      "bytes": 196,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/sandbox-readiness.json": {
+      "sha256": "bb3894871dbb16bcec2e8f1e4188e4c6d67b981d5874d3626f7a4f09ad136118",
+      "bytes": 26263,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/policy.mjs": {
+      "sha256": "e747c39d530d561d8a25b4e08f82b1fa5b09c6ef7d644a8e4efec8fc58443f21",
+      "bytes": 3743,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/probe.mjs": {
+      "sha256": "64e9bb85104c15e61d392aab68cd8894437fc1fd85293654e424c8c7e55cb29d",
+      "bytes": 24490,
+      "mode": "0600"
+    }
+  },
+  "expected_scope_claim": "Actualfailedoncequalifieddiagnostic andcustody assessment notfullS1-S4/originalacceptance; missing preciseABIcause retained unknown",
+  "runtime_execute_allowed": false,
+  "sole_output": "/tmp/dsh-once-diagnostic-outcome-review-1.txt",
+  "aggregate": "Currentnewwriteraggregate pending prior5dfe notcurrent",
+  "originalruntime": "BLOCKED"
+}

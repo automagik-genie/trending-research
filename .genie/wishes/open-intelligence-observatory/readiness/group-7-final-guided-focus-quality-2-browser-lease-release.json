@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-10-09T19:07:18.619317+00:00",
+  "task": "task_6db05d5f1177",
+  "dispatch": "ctx_1b1380a17517",
+  "parent_owned_tab": "original8-parent-final-guided-focus",
+  "status": "PARENT_TAB_CLOSED_LEASE_RELEASED_QUALITY_BROWSER_PERMITTED",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "manifest12_sha256": "00cfaf1dd043d2790b7ff744a2019a8d653f6b977652420ec0a87fe5ee032549",
+  "manifest_unchanged_after_proof": true,
+  "native14_focus_proof": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-parent-final-native-focus-proof.json",
+    "sha256": "201409891910145bcf3d604d2bd73c61dd9c370cf9044e3134900301c1a18e09"
+  },
+  "six_reader_proof": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-parent-final-focus-and-six-reader-proof.json",
+    "sha256": "0f8bfcd9bc928a1c3321dd8b5527c739948a3b26c90bbd827f375f304ce994b2"
+  },
+  "actual_parent_DPR": 1.25,
+  "preview_service": "127.0.0.1:8879 parent owned preserved",
+  "limits": "Source2/2+quality1/1; no actualFelipe/original8/currentaggregate/remoteCI/deployment claims"
+}

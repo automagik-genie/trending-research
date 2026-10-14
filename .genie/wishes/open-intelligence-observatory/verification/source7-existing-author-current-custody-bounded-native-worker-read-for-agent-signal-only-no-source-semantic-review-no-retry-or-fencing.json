@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-10T10:49:48.553075+00:00",
+  "purpose": "only nativeagent liveness/currentdeliverysignal, notcodebodyintelligence",
+  "actualNativeReceipt": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"12f6c7c1-ef2b-4da6-b015-bef99b24dff4\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_0c242e837d41\",\n    \"source\": \"terminal\",\n    \"sourceIdentity\": \"d0jpDVhpueQGFAtzxg6kTfQ_thDtDOM4\",\n    \"terminal\": {\n      \"handle\": \"term_61425050-f58f-4771-8cbf-af43d00ef05f\",\n      \"status\": \"running\",\n      \"tail\": [\n        \" TODO\",\n        \"  \u251c\u2500 VII. Actual exhausted cap3 settled paired review HOLD \u00b7 0/1\",\n        \"  \u2502  \u2514\u2500 \u2610 Receive the actual owner disposition and exact subsequent parent authority for fully settled cap3/3 FIX-FIRST\",\n        \" four-HIGH families without preparing DATA7 or changing source/runtime/card (blocked)\",\n        \"  \u2514\u2500\u2500\u2500\u2500\u2500\",\n        \"                                                                           \ud83d\udd2c SOURCE: Verify integrated smoke test proof\",\n        \" \u03c0 > \u25d2 GPT-6.1-Sol > \ud83c\udf33 \u2026n-intelligence-observatory > \u2442 wish/open-intelligence-observatory *4 ?352 > S10.67 \u25b6\u250029%\u254e\u2503272K\u2500\",\n        \"\u2570\u2500\"\n      ],\n      \"truncated\": false,\n      \"limited\": false,\n      \"oldestCursor\": \"0\",\n      \"nextCursor\": \"0\",\n      \"latestCursor\": \"0\",\n      \"returnedLineCount\": 8,\n      \"source\": \"screen\"\n    },\n    \"cursor\": \"owr1_eyJ2IjoxLCJkIjoiY3R4XzBjMjQyZTgzN2Q0MSIsInMiOiJ0ZXJtaW5hbCIsImkiOiJkMGpwRFZocHVlUUdGQXR6eGc2a1RmUV90aER0RE9NNCIsInAiOjB9\",\n    \"status\": {\n      \"worker\": \"ready\",\n      \"terminal\": \"running\",\n      \"liveness\": \"live\"\n    },\n    \"fallbackReason\": \"session_not_reported\",\n    \"warnings\": [],\n    \"sourceExact\": false,\n    \"contentComplete\": false,\n    \"clipping\": [\n      \"terminal_fallback\"\n    ],\n    \"projection\": {\n      \"id\": \"ctx_0c242e837d41\",\n      \"dispatchId\": \"ctx_0c242e837d41\",\n      \"taskId\": \"task_2bbfe79e0b5f\",\n      \"runId\": \"run_b7d6684b2cdd\",\n      \"role\": \"worker\",\n      \"parent\": null,\n      \"provider\": null,\n      \"host\": {\n        \"kind\": \"local\",\n        \"id\": \"local\"\n      },\n      \"workspace\": {\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\",\n        \"kind\": \"folder_or_worktree\"\n      },\n      \"stage\": {\n        \"worker\": \"ready\",\n        \"dispatch\": \"dispatched\",\n        \"detail\": \"input_accepted\",\n        \"activity\": \"unknown\"\n      },\n      \"outcome\": \"in_progress\",\n      \"liveness\": {\n        \"verdict\": \"unverifiable\",\n        \"reason\": \"missing_status\"\n      },\n      \"evidence\": {\n        \"durable\": true,\n        \"liveStatus\": \"unavailable\",\n        \"lastObservedAt\": null\n      },\n      \"resource\": {\n        \"state\": \"owned\",\n        \"id\": \"wtr_558d4c8fff9f\",\n        \"ownerDispatchId\": \"ctx_0c242e837d41\",\n        \"releaseState\": \"not_requested\",\n        \"terminalState\": \"active\"\n      },\n      \"nextAction\": {\n        \"kind\": \"none\",\n        \"argv\": []\n      },\n      \"attention\": {\n        \"categories\": [\n          \"unverifiable\"\n        ],\n        \"requiresAction\": true\n      }\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "12f6c7c1-ef2b-4da6-b015-bef99b24dff4",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_0c242e837d41",
+        "source": "terminal",
+        "sourceIdentity": "d0jpDVhpueQGFAtzxg6kTfQ_thDtDOM4",
+        "terminal": {
+          "handle": "term_61425050-f58f-4771-8cbf-af43d00ef05f",
+          "status": "running",
+          "tail": [
+            " TODO",
+            "  \u251c\u2500 VII. Actual exhausted cap3 settled paired review HOLD \u00b7 0/1",
+            "  \u2502  \u2514\u2500 \u2610 Receive the actual owner disposition and exact subsequent parent authority for fully settled cap3/3 FIX-FIRST",
+            " four-HIGH families without preparing DATA7 or changing source/runtime/card (blocked)",
+            "  \u2514\u2500\u2500\u2500\u2500\u2500",
+            "                                                                           \ud83d\udd2c SOURCE: Verify integrated smoke test proof",
+            " \u03c0 > \u25d2 GPT-6.1-Sol > \ud83c\udf33 \u2026n-intelligence-observatory > \u2442 wish/open-intelligence-observatory *4 ?352 > S10.67 \u25b6\u250029%\u254e\u2503272K\u2500",
+            "\u2570\u2500"
+          ],
+          "truncated": false,
+          "limited": false,
+          "oldestCursor": "0",
+          "nextCursor": "0",
+          "latestCursor": "0",
+          "returnedLineCount": 8,
+          "source": "screen"
+        },
+        "cursor": "owr1_eyJ2IjoxLCJkIjoiY3R4XzBjMjQyZTgzN2Q0MSIsInMiOiJ0ZXJtaW5hbCIsImkiOiJkMGpwRFZocHVlUUdGQXR6eGc2a1RmUV90aER0RE9NNCIsInAiOjB9",
+        "status": {
+          "worker": "ready",
+          "terminal": "running",
+          "liveness": "live"
+        },
+        "fallbackReason": "session_not_reported",
+        "warnings": [],
+        "sourceExact": false,
+        "contentComplete": false,
+        "clipping": [
+          "terminal_fallback"
+        ],
+        "projection": {
+          "id": "ctx_0c242e837d41",
+          "dispatchId": "ctx_0c242e837d41",
+          "taskId": "task_2bbfe79e0b5f",
+          "runId": "run_b7d6684b2cdd",
+          "role": "worker",
+          "parent": null,
+          "provider": null,
+          "host": {
+            "kind": "local",
+            "id": "local"
+          },
+          "workspace": {
+            "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory",
+            "kind": "folder_or_worktree"
+          },
+          "stage": {
+            "worker": "ready",
+            "dispatch": "dispatched",
+            "detail": "input_accepted",
+            "activity": "unknown"
+          },
+          "outcome": "in_progress",
+          "liveness": {
+            "verdict": "unverifiable",
+            "reason": "missing_status"
+          },
+          "evidence": {
+            "durable": true,
+            "liveStatus": "unavailable",
+            "lastObservedAt": null
+          },
+          "resource": {
+            "state": "owned",
+            "id": "wtr_558d4c8fff9f",
+            "ownerDispatchId": "ctx_0c242e837d41",
+            "releaseState": "not_requested",
+            "terminalState": "active"
+          },
+          "nextAction": {
+            "kind": "none",
+            "argv": []
+          },
+          "attention": {
+            "categories": [
+              "unverifiable"
+            ],
+            "requiresAction": true
+          }
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "unchangedAuthority": "evenempty/unavailable/PTYnotdeath/nonereadnotpermission; no duplicate/stop/reset/probe. Source7method4replypending.Firstsafeinspectnotpollwhileotherauthorworks."
+}

@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-13T19:22:38.621409+00:00",
+  "actualCompletedWait": "bg226 actualexit0 wall900.54seconds; recoveredfromWAITsnapshot notduplicated",
+  "actualResponse": {
+    "id": "00f7cbc6-f452-4cef-b495-d0b4bcdf16b7",
+    "ok": true,
+    "result": {
+      "runId": "run_b7d6684b2cdd",
+      "deliveryId": null,
+      "messages": [],
+      "count": 0,
+      "acknowledged": "delivery_a8b164b86e2f",
+      "timedOut": true,
+      "cancelled": false,
+      "connectionLost": false,
+      "mutation": {
+        "requestId": "ace65728-27d7-47b1-b5ed-c9be570adc6a",
+        "replayed": false
+      }
+    },
+    "_meta": {
+      "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+    }
+  },
+  "meaning": "ONLY Parentstructuredwaitexpiredwithoutselectedquestion/worker_done/escalation; notworker/processfailure/dead/stale/idle/release/candidate/report/SDK/nativefeaturestate proof. Requestedtypefilterexcludesheartbeat.",
+  "actualACKBeforeWaitAllowed": "EntireA8all4messagesprocessed beforeACK: qualityf488WHOLE52882B770LFactualfirstaccess343100; Source11aWHOLE917Bactualsame105460Bc67 methodcustodyreply2fa160; other2heartbeatemptybodyalreadyprocessed. NOworkerDoneinthisdelivery/NOnativereleasecalled.",
+  "actualNextNativeWait": "bg227 fresh structuredcheck --terminalParent --wait --typesquestion,worker_done,escalation --timeout-ms900000 --json NOackargument/NOpoll/retry/cleanup/workerstart. Allthreeactualcurrentactorsownwork scopes unchanged.",
+  "scopeHold": "ParentnoCode/Sourcesemanticengagement/all20/80/41/5unchanged/sixhistoriclocal/14stillunaccepted/all4DSH/all4Sourcecriteria NOTRUN/unaccepted/noSource/runtime/paidauthority/nobudgetreset",
+  "pairedCurrentBeforeAccessProofs": {
+    "original": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/DSHrepair3-currentOriginal88fd-WHOLE182c767LF-currentDEADLINEprimary-ALL42unchanged37fixed-bodyScope-ownControlACK-positive-ACTUALnativeReply0-3d157-beforeFullIndependentOriginalReport.json",
+      "bytes": 28338,
+      "LF": 72,
+      "sha256": "3290cd907391e8b2fe593a210d103a6a8895d2f17a5bf3fa15581a2b2acc7e27",
+      "mode": "0600"
+    },
+    "quality": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/DSHrepair3-currentQuality4ecf-WHOLEf488770LF-currentDEADLINEprimary-ALL42unchanged37fixed-bodyScope-ownControlACK-positive-ACTUALnativeReply0-34310-beforeFullIndependentQualityReport.json",
+      "bytes": 31404,
+      "LF": 83,
+      "sha256": "5e9ca1f8f45d767da7eb5b6282fe235e5a38c197d7cbce0d6a04e3c5b9786e37",
+      "mode": "0600"
+    },
+    "sourceExactMethodSame72Custody": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/source7-current1b2-WHOLE11a-actualReportedChildKernelLoss-NOnewCandidateOrCode-NativeEXACT105460c67-amendedMethod60LFaaf-23ACKliteralWire-custodyResend0-not73rdInput-repairReset-runtimeGrant.json",
+      "bytes": 446716,
+      "LF": 85,
+      "sha256": "5cfe2291fb236f9e59b5118552fe4416d89f2ec35b6e67e69dfbfd162da1dd6d",
+      "mode": "0600"
+    }
+  },
+  "upcomingGate": "BothCURRENTfullDSHsemanticreports ownwhole+Scope/digest/argv beforeexactDone/releaseAFTERDonebeforeACK; Source1b2wholeinert8sealedcarrier/actualnewTRUEC7 before2freshfullSourceindependentfirstaccessmethods andbothsemreviews."
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-10T01:12:38.265338+00:00",
+  "authorization": "WISH157/204 normalreviewedconventionalforkfeaturePR; freshisolatednativeModelUSD20 authorityNOTneededforzeroModelGit. Noupstreamadmin escalation/merge/deploy/issueclose",
+  "exactLocalReviewedSHA": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+  "fullOriginalC1C4": "e17a1a08c38f0c604e919dac016e179be221ccc341b2bf9b113f185dea0dad69 23677B117LF fullParentread_positiveAssessment_actualctx8cRELEASE0",
+  "separateCurrentQuality": "d9765e024e371ae70c26281dac00956a6513dd08d1afd9ec22cb2ba90ce080c2 24848B103LF fullParentread_positiveAssessment_actualctxeac3RELEASE0",
+  "bothVerdicts": "SHIPfulloriginal8exactSHA C1C4/all12/cumulative21/26descriptor complete0HIGH0CRITICAL no narrowedtask/newSource repair",
+  "fullActualFinalAggregate": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-final-exact-committed-accepted-visual-clean-43-test-evaluator-lint-aggregate.json",
+    "sha256": "67b627ac7593cbca8844c2ee18d9c902599e01c2a0deca0f9569dadcd8964d50"
+  },
+  "nativeActualUI14+6": "alreadyactualsamebyteequal evidence source12/bodyParent6claims SECTIONfallbacknotallsamebutton, full6PNGopens; noUnchangedPassingPathsRerun",
+  "sourceAndWorkingPreservation": "all26frozenpinModesbytes/hashmatch+all21exactCommit/nonTargetIndexbothphases+316originalfileidentities unchanged; privateown2indicesabsent",
+  "actualFastForwardCheck": "git merge-base --is-ancestor3b3beb094d2c3a5a021ead88a5280140bd1f841ef429a573ddc98ce8aef50520c2e420d1ea883f19 actualexit0",
+  "actualRemoteForkADMINRoute": "https://github.com/automagik-genie/trending-research.git; branchwish/open-intelligence-observatory notmain; oldactualRemote3b3/PR22draft/baseMain/headOwnerautomagik-genie/NOchecksactualexit1",
+  "onlyExactAllowedMutation": "gitpushEXACTf429SHA:refs/heads/wish/open-intelligence-observatory explicitHTTPSfork noforce/nootherbranches/noOriginconfig; remoteheadactualreadback; onePRcommentwithFULLbothcurrentreports/actualaggregate+exactstoredbodyreadback; author-ownedPR22bodyupdatefilepayload/readback onlyafterimmutableSourcepublish. Draftstateunchanged; noautoClose/noissue dates/assignees",
+  "whyNotExtraCommitChasingSHA": "Postcommitcurrentreviewreports&aggregate carriedFULLinverifiedPRcomment, unchangedcurrentf429source/candidate staysexactSHAreviewed. CommitHistoryoriginalall13governing/pendingstagecheckpoint publicimmutable; NO evidence-onlynewHEADwithoutreviewloop/newCode/rerunassumption. Commenttext actualimmutablelinks readbackexact.",
+  "productModels0/allCostsUNKNOWN": "privateproductvalues/hash/path/accountbalance/authrecordsNOTinall26orpubliccomment; noDshNative/source7/currentWISH260f/nativeextensionfile sweep",
+  "whole20notdone_sixlocalaccepted_original4and7stillBLOCKED_scopeOwnerCycles": "no allPRmergeReady/CI/nativeStockcompletion/Atlas9/publicInvestig12/Editorial/release/SHIPPED claim"
+}

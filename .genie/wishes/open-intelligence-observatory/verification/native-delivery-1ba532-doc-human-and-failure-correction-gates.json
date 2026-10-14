@@ -1,0 +1,137 @@
+{
+  "recorded_at": "2026-10-09T20:43:46.182661+00:00",
+  "delivery": "delivery_1ba5325cbdb1",
+  "source8_human_doc_admission_reply": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"3b62ee47-1d9c-4194-807d-4cfd6974e689\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_d2e6b05c4f35\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_a45e75e8c6bc\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Accepted exact doc-onlyreadiness for originalTasktask_8f2a067b113f/currentctx_a45e75e8c6bc under .genie/wishes/open-intelligence-observatory/readiness/group-7-actual-human-doc-only-stage-admission.json SHA=c70a04f7b679db4dae0ef11ee0a3b71d9d3779b0919ed2a92f2602e814cdbb35. DirectFelipe userchoicequestions+rationale source b654 authenticconversationreceipt, notGitidentity. OnlyexistingDoc9d345 changed +8maxlines/cumulative1289/12paths withinexistingcaps, allfourcodeSHA28c1/sixPNG/smoke/pinnedrealpack/assessment immutable. Recordactual primary/questions/rationale/timeofreadbackobserved, staleCURRENTabsencereplacedhistoricalnullspreserved. Prior9d369 quality report bindsold12historical notfreshdoc/currentintegration; freshdocquality/original8/currentaggregatepending. No code3/qualityrepair2/provider/model/Git/carddone/browser/schema/runtime/API change. Afterdocactualreadback freezeactualdocSHA/new12/source4 andcheckpoint beforehandoff. Keepclaimedcard andreport/worker_done pending realoriginal+docquality+currentaggregate. UsernowexplicitUseBWS credentialroute, pathreadyinfo notactualsecretadmission; no key/modeluse.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_e9ae49b28428\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T20:43:45Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_e9ae49b28428\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_a45e75e8c6bc\",\n      \"asker_handle\": \"term_5505d7b6-282e-4f75-8f78-ddc3c6fd1369\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_d2e6b05c4f35\",\n      \"answer_body\": \"Accepted exact doc-onlyreadiness for originalTasktask_8f2a067b113f/currentctx_a45e75e8c6bc under .genie/wishes/open-intelligence-observatory/readiness/group-7-actual-human-doc-only-stage-admission.json SHA=c70a04f7b679db4dae0ef11ee0a3b71d9d3779b0919ed2a92f2602e814cdbb35. DirectFelipe userchoicequestions+rationale source b654 authenticconversationreceipt, notGitidentity. OnlyexistingDoc9d345 changed +8maxlines/cumulative1289/12paths withinexistingcaps, allfourcodeSHA28c1/sixPNG/smoke/pinnedrealpack/assessment immutable. Recordactual primary/questions/rationale/timeofreadbackobserved, staleCURRENTabsencereplacedhistoricalnullspreserved. Prior9d369 quality report bindsold12historical notfreshdoc/currentintegration; freshdocquality/original8/currentaggregatepending. No code3/qualityrepair2/provider/model/Git/carddone/browser/schema/runtime/API change. Afterdocactualreadback freezeactualdocSHA/new12/source4 andcheckpoint beforehandoff. Keepclaimedcard andreport/worker_done pending realoriginal+docquality+currentaggregate. UsernowexplicitUseBWS credentialroute, pathreadyinfo notactualsecretadmission; no key/modeluse.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T20:33:39Z\",\n      \"answered_at\": \"2026-10-09T20:43:45Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"5e6b4fc0-4081-44c5-84f0-e662662746ae\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "3b62ee47-1d9c-4194-807d-4cfd6974e689",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_d2e6b05c4f35",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_a45e75e8c6bc",
+          "subject": "Re: Question",
+          "body": "Accepted exact doc-onlyreadiness for originalTasktask_8f2a067b113f/currentctx_a45e75e8c6bc under .genie/wishes/open-intelligence-observatory/readiness/group-7-actual-human-doc-only-stage-admission.json SHA=c70a04f7b679db4dae0ef11ee0a3b71d9d3779b0919ed2a92f2602e814cdbb35. DirectFelipe userchoicequestions+rationale source b654 authenticconversationreceipt, notGitidentity. OnlyexistingDoc9d345 changed +8maxlines/cumulative1289/12paths withinexistingcaps, allfourcodeSHA28c1/sixPNG/smoke/pinnedrealpack/assessment immutable. Recordactual primary/questions/rationale/timeofreadbackobserved, staleCURRENTabsencereplacedhistoricalnullspreserved. Prior9d369 quality report bindsold12historical notfreshdoc/currentintegration; freshdocquality/original8/currentaggregatepending. No code3/qualityrepair2/provider/model/Git/carddone/browser/schema/runtime/API change. Afterdocactualreadback freezeactualdocSHA/new12/source4 andcheckpoint beforehandoff. Keepclaimedcard andreport/worker_done pending realoriginal+docquality+currentaggregate. UsernowexplicitUseBWS credentialroute, pathreadyinfo notactualsecretadmission; no key/modeluse.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_e9ae49b28428",
+          "payload": null,
+          "created_at": "2026-10-09T20:43:45Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_e9ae49b28428",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_a45e75e8c6bc",
+          "asker_handle": "term_5505d7b6-282e-4f75-8f78-ddc3c6fd1369",
+          "status": "answered",
+          "answer_message_id": "msg_d2e6b05c4f35",
+          "answer_body": "Accepted exact doc-onlyreadiness for originalTasktask_8f2a067b113f/currentctx_a45e75e8c6bc under .genie/wishes/open-intelligence-observatory/readiness/group-7-actual-human-doc-only-stage-admission.json SHA=c70a04f7b679db4dae0ef11ee0a3b71d9d3779b0919ed2a92f2602e814cdbb35. DirectFelipe userchoicequestions+rationale source b654 authenticconversationreceipt, notGitidentity. OnlyexistingDoc9d345 changed +8maxlines/cumulative1289/12paths withinexistingcaps, allfourcodeSHA28c1/sixPNG/smoke/pinnedrealpack/assessment immutable. Recordactual primary/questions/rationale/timeofreadbackobserved, staleCURRENTabsencereplacedhistoricalnullspreserved. Prior9d369 quality report bindsold12historical notfreshdoc/currentintegration; freshdocquality/original8/currentaggregatepending. No code3/qualityrepair2/provider/model/Git/carddone/browser/schema/runtime/API change. Afterdocactualreadback freezeactualdocSHA/new12/source4 andcheckpoint beforehandoff. Keepclaimedcard andreport/worker_done pending realoriginal+docquality+currentaggregate. UsernowexplicitUseBWS credentialroute, pathreadyinfo notactualsecretadmission; no key/modeluse.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T20:33:39Z",
+          "answered_at": "2026-10-09T20:43:45Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "5e6b4fc0-4081-44c5-84f0-e662662746ae",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "source4_docs_release_reply": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"ae14f6b0-73ce-49c1-b4bd-8a2d5d910cc4\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_f10d15ebfb9b\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_a979a9a2c022\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Release exacttwo docs now afterexplicitgroup6temporarysourcefreeze msg_2e43e3c2f07b. Gate .genie/wishes/open-intelligence-observatory/readiness/group-3-actual-failed-diagnostic-serialized-docs-release.json SHA=f705e2440e1f0c88092a04223161e0dedbc73734aa07bad7ab8f9a6e87ca04db; olddsh ec056 andCordis ce917 exactprereq snapshots preserved incl .genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt SHA=ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6, no installedCordisAPI/pin change. Onlytwoscopeddocs: truthfuloncefailureexit1/2.17s/ABIclass122/exactcauseUNKNOWN/null nativecatalog/metadata/innerinspection/globalcompletion/originalC1-C3; qualifiedoutcome636bf separate, ownA/throwawaydisposal+rootignore restored/readinesse6f4; staleprospective/history/currentblocks distinguished. UseractualFelipeguidedfirst choice andUseBWS freshkeylocator doesNOT supplypaid/runtimeauthority; no keyvalues/operator use. No code3/repairreset/runtime/provider/Git/carddone/tests/source7mutation. Remove obsoletecurrentinstructions to deletedpolicy/probe, retainhistorical failedcommandDATA onlynot runnableintegration/permission. Readbackexactdocscurrenthashes+freezecheckpoint thenwaitparentcurrentaggregate/blockedoriginalhandoffreview; no finalreport/worker_done beforegate. Withinoriginal6paths952estimate25files2000hard; no new docs/API/dependencies.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_813742bf0345\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T20:43:45Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_813742bf0345\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_a979a9a2c022\",\n      \"asker_handle\": \"term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_f10d15ebfb9b\",\n      \"answer_body\": \"Release exacttwo docs now afterexplicitgroup6temporarysourcefreeze msg_2e43e3c2f07b. Gate .genie/wishes/open-intelligence-observatory/readiness/group-3-actual-failed-diagnostic-serialized-docs-release.json SHA=f705e2440e1f0c88092a04223161e0dedbc73734aa07bad7ab8f9a6e87ca04db; olddsh ec056 andCordis ce917 exactprereq snapshots preserved incl .genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt SHA=ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6, no installedCordisAPI/pin change. Onlytwoscopeddocs: truthfuloncefailureexit1/2.17s/ABIclass122/exactcauseUNKNOWN/null nativecatalog/metadata/innerinspection/globalcompletion/originalC1-C3; qualifiedoutcome636bf separate, ownA/throwawaydisposal+rootignore restored/readinesse6f4; staleprospective/history/currentblocks distinguished. UseractualFelipeguidedfirst choice andUseBWS freshkeylocator doesNOT supplypaid/runtimeauthority; no keyvalues/operator use. No code3/repairreset/runtime/provider/Git/carddone/tests/source7mutation. Remove obsoletecurrentinstructions to deletedpolicy/probe, retainhistorical failedcommandDATA onlynot runnableintegration/permission. Readbackexactdocscurrenthashes+freezecheckpoint thenwaitparentcurrentaggregate/blockedoriginalhandoffreview; no finalreport/worker_done beforegate. Withinoriginal6paths952estimate25files2000hard; no new docs/API/dependencies.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T20:03:40Z\",\n      \"answered_at\": \"2026-10-09T20:43:45Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"fa8457e0-8dfe-4fd9-9544-6004e9b67271\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "ae14f6b0-73ce-49c1-b4bd-8a2d5d910cc4",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_f10d15ebfb9b",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_a979a9a2c022",
+          "subject": "Re: Question",
+          "body": "Release exacttwo docs now afterexplicitgroup6temporarysourcefreeze msg_2e43e3c2f07b. Gate .genie/wishes/open-intelligence-observatory/readiness/group-3-actual-failed-diagnostic-serialized-docs-release.json SHA=f705e2440e1f0c88092a04223161e0dedbc73734aa07bad7ab8f9a6e87ca04db; olddsh ec056 andCordis ce917 exactprereq snapshots preserved incl .genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt SHA=ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6, no installedCordisAPI/pin change. Onlytwoscopeddocs: truthfuloncefailureexit1/2.17s/ABIclass122/exactcauseUNKNOWN/null nativecatalog/metadata/innerinspection/globalcompletion/originalC1-C3; qualifiedoutcome636bf separate, ownA/throwawaydisposal+rootignore restored/readinesse6f4; staleprospective/history/currentblocks distinguished. UseractualFelipeguidedfirst choice andUseBWS freshkeylocator doesNOT supplypaid/runtimeauthority; no keyvalues/operator use. No code3/repairreset/runtime/provider/Git/carddone/tests/source7mutation. Remove obsoletecurrentinstructions to deletedpolicy/probe, retainhistorical failedcommandDATA onlynot runnableintegration/permission. Readbackexactdocscurrenthashes+freezecheckpoint thenwaitparentcurrentaggregate/blockedoriginalhandoffreview; no finalreport/worker_done beforegate. Withinoriginal6paths952estimate25files2000hard; no new docs/API/dependencies.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_813742bf0345",
+          "payload": null,
+          "created_at": "2026-10-09T20:43:45Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_813742bf0345",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_a979a9a2c022",
+          "asker_handle": "term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd",
+          "status": "answered",
+          "answer_message_id": "msg_f10d15ebfb9b",
+          "answer_body": "Release exacttwo docs now afterexplicitgroup6temporarysourcefreeze msg_2e43e3c2f07b. Gate .genie/wishes/open-intelligence-observatory/readiness/group-3-actual-failed-diagnostic-serialized-docs-release.json SHA=f705e2440e1f0c88092a04223161e0dedbc73734aa07bad7ab8f9a6e87ca04db; olddsh ec056 andCordis ce917 exactprereq snapshots preserved incl .genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt SHA=ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6, no installedCordisAPI/pin change. Onlytwoscopeddocs: truthfuloncefailureexit1/2.17s/ABIclass122/exactcauseUNKNOWN/null nativecatalog/metadata/innerinspection/globalcompletion/originalC1-C3; qualifiedoutcome636bf separate, ownA/throwawaydisposal+rootignore restored/readinesse6f4; staleprospective/history/currentblocks distinguished. UseractualFelipeguidedfirst choice andUseBWS freshkeylocator doesNOT supplypaid/runtimeauthority; no keyvalues/operator use. No code3/repairreset/runtime/provider/Git/carddone/tests/source7mutation. Remove obsoletecurrentinstructions to deletedpolicy/probe, retainhistorical failedcommandDATA onlynot runnableintegration/permission. Readbackexactdocscurrenthashes+freezecheckpoint thenwaitparentcurrentaggregate/blockedoriginalhandoffreview; no finalreport/worker_done beforegate. Withinoriginal6paths952estimate25files2000hard; no new docs/API/dependencies.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T20:03:40Z",
+          "answered_at": "2026-10-09T20:43:45Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "fa8457e0-8dfe-4fd9-9544-6004e9b67271",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "source7_causal_correction_and_docs_input_snapshot_send": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"6c522a56-2351-4449-8d12-8c351626d8b5\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_e9b70709f7c2\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_0c242e837d41\",\n      \"subject\": \"Corrected actual ReplayManifest failure, source freeze retained, old Cordis bytes preserved before doc-only release\",\n      \"body\": \"Actual readonly causal correction msg_84d139407e27 accepted: failed b41a2 request was replay_manifests record applicationID manifest:snapshot:68d415eb7d23fda29b30f527493fce1f83e4f563f0cba268ef08010c56d48c98, 6241702UTF8bytes; only30102completedremember/getpairs aftercall1444. Scene/finalcanonicalroot NOTattempted. Priorfinalroot/allcollection claim retainedHISTORICAL incorrect inference, newrecord mustcorrect chronology, causebody stillUNKNOWN. No retry/request asconfirmation. Prepare frozenprospectiveB1 diagnosis against THISexactrecord/argsha, hash-preimage knowngetterID recovery READONLY means no31krememberrecovery needed; preserve originalSnapshotSHA6f78/clocks19:02 exact. All source11 remains frozen asmsg2e43 untilexplicitnewSource/runtimegate. Parentcurrentfullaggregate permitted underfreeze. I released DSH/Cordis DOCONLY disposition afteryourtempfreeze: actualoriginalCordisce917 pinnedprereq exactcopy .genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt SHA=ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6, oldDshcopyec056 similarly. Newdocs willdescribeactualfailed-once/nullacceptance/custodydisposal only, installed4.0.4 index/API/method/payloadinputs unchanged. Useold snapshot forpriorinitialSHA evidence; do not silently pretendupdateddocs haveoldhash, qualifynewdocmetadata before futuregates. No ownmutation whilereadonly prospectiveplanprepared; no old26/MS20/root200201 writes, no extra SDK/schema/roles/models/qualifier. Additionalownproductdiagnosticactivation isnotyetadmitted andmustcountasnewPGstart explicitly, not claimnone. Keepdocs/python-pipeline andactualfirstinvestigationmanifest absent honestly untilfullnativeprooffulfilled, notfakefinalsuccess.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T20:43:46Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"2883ee59-23ab-4400-893b-a9a67047f4e6\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "6c522a56-2351-4449-8d12-8c351626d8b5",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_e9b70709f7c2",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+          "to_handle": "dispatch:ctx_0c242e837d41",
+          "subject": "Corrected actual ReplayManifest failure, source freeze retained, old Cordis bytes preserved before doc-only release",
+          "body": "Actual readonly causal correction msg_84d139407e27 accepted: failed b41a2 request was replay_manifests record applicationID manifest:snapshot:68d415eb7d23fda29b30f527493fce1f83e4f563f0cba268ef08010c56d48c98, 6241702UTF8bytes; only30102completedremember/getpairs aftercall1444. Scene/finalcanonicalroot NOTattempted. Priorfinalroot/allcollection claim retainedHISTORICAL incorrect inference, newrecord mustcorrect chronology, causebody stillUNKNOWN. No retry/request asconfirmation. Prepare frozenprospectiveB1 diagnosis against THISexactrecord/argsha, hash-preimage knowngetterID recovery READONLY means no31krememberrecovery needed; preserve originalSnapshotSHA6f78/clocks19:02 exact. All source11 remains frozen asmsg2e43 untilexplicitnewSource/runtimegate. Parentcurrentfullaggregate permitted underfreeze. I released DSH/Cordis DOCONLY disposition afteryourtempfreeze: actualoriginalCordisce917 pinnedprereq exactcopy .genie/wishes/open-intelligence-observatory/verification/group-6-cordis-prerequisite-doc-before-diagnostic-disposition.txt SHA=ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6, oldDshcopyec056 similarly. Newdocs willdescribeactualfailed-once/nullacceptance/custodydisposal only, installed4.0.4 index/API/method/payloadinputs unchanged. Useold snapshot forpriorinitialSHA evidence; do not silently pretendupdateddocs haveoldhash, qualifynewdocmetadata before futuregates. No ownmutation whilereadonly prospectiveplanprepared; no old26/MS20/root200201 writes, no extra SDK/schema/roles/models/qualifier. Additionalownproductdiagnosticactivation isnotyetadmitted andmustcountasnewPGstart explicitly, not claimnone. Keepdocs/python-pipeline andactualfirstinvestigationmanifest absent honestly untilfullnativeprooffulfilled, notfakefinalsuccess.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": null,
+          "payload": null,
+          "created_at": "2026-10-09T20:43:46Z",
+          "delivered_at": null
+        },
+        "mutation": {
+          "requestId": "2883ee59-23ab-4400-893b-a9a67047f4e6",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "original_causal_report": "Earlierfinalroot/allcollection inferencewrong; newexactb41a2 reconstruction identifies6.24MB ReplayManifest beforeScene/finalroot. Errorbodystillunknown. No runtime/newcodeauthorized yet.",
+  "bws_projects_actual_failure_safe": {
+    "exit": 1,
+    "safe_error": "Error: \n   0: Missing access token\n\nLocation:\n   crates/bws/src/main.rs:65\n\nBacktrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.\nRun with RUST_BACKTRACE=full to include source snippets.\n",
+    "no_secret_list_get": true
+  }
+}

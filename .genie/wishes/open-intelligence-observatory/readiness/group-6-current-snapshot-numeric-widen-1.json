@@ -1,0 +1,59 @@
+{
+  "recorded_at": "2026-10-09T18:40:25.961417+00:00",
+  "status": "ADMITTED_EXACT_CURRENT_TRACKED_NUMERIC_SNAPSHOT_WIDENING_WITH_ARITHMETIC_CLARIFICATION",
+  "task": "task_2bbfe79e0b5f",
+  "dispatch": "ctx_0c242e837d41",
+  "author_question": "msg_22235827d80b",
+  "current_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "parent_base_gate": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6.json",
+    "sha256": "bf1f4b39cb5aa9970b8bb109f6ddb4347a622c777496f71b0a60236f463389a2",
+    "bytes": 29799,
+    "mode": "0600"
+  },
+  "raw_author_request": "{\"task\":\"task_2bbfe79e0b5f\",\"dispatch\":\"ctx_0c242e837d41\",\"readiness\":\"group-6.json bf1f4b39cb5aa9970b8bb109f6ddb4347a622c777496f71b0a60236f463389a2\",\"thin_tracer\":\"python3 -B /tmp/oi7-readmodel-smoke.py exit0; 173exact nativebindings/rootmemory200; duplicate fullpackimport sameIDs; actualnative IDEMPOTENCY_CONFLICT on changedobservation; real Cordis4.0.4twoactivations/cleanup/stalehandlerejected/equalview; realPGpostmaster 18:26:35.948618 ->18:29:51.598008; original26 exact hashes unchanged; no financialedges manufactured. Durable reached receipts observatory/evidence/receipts.json, notfinalgroupclaim.\",\"widen_freeze_request\":{\"snapshot\":\"web/data.json SHAa2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36 actualhistorical_v2_archive generated_at2026-10-08T02:00:49Z method2.0; tracked metadata4565papers/1706repos versus actual retaineditems1082papers/873repos. Import ALL1955 retainedentities, preserve tracked metadata as declared coverage not assert missing2610/833records exist.\",\"scalar_mapping\":\"Numeric-only canonical extraction retains every numeric/null item field: repos stars/forks/contributors; papers n_authors/upvotes/stars/mentions/hn_points/days. Keep scalar numeric age days as source-reported age-days with unknown measurement period, not derive date. All seven windows canonical all-view rows preserve all numeric/null fields including historical scores/raw/rank/prev/coverage/gspan/events/ratios in retained extraction; emit observations for counts/activity/gspan/coverage and existing historicalscore/raw/rank/prev labeled computed artifact outputs NOT newmeasurements/financialtruth. Source extraction excludes description/title/authors/prose and source execution. Other6 filteredviews would redundantly replay same entities/rawmetrics but ranks/cohorts differ: propose retain everyview numeric rows as source extraction, observations for allview only with explicit scope all; do not silently label allview output as every cohort. Allviews retained numeric extraction available via exactsource span, no recomputation/scoring. Fullfeatures fixtures separately support same adapter shape, never substitute fixtures-only.\",\"clocks\":\"sourcepublication/event validity/collection observed_at UNKNOWN null unless independent receipt. Source generated_at is historical computation metadata inside reason, NOT source publication/observed; caller actual runtime ingestion now and actual import computation now frozen once before duplicateimport. Source observation records preserve original timestamp null; period/window endpoints unknown, preserve window labels and upstream gspan as numeric metadata. Method identity for extraction python-snapshot/numeric/1.0.0 with upstreamhistorical2.0 in provenance; no run.py import/network/newcollection/rescore.\",\"interfaces\":\"project_snapshot(feature_snapshot,*,evidence_cutoff,method_version)->exactScene (pure deterministic Scene of extraction bundle); extract_snapshot(...,ingested_at,computed_at,observed_at=None)->EvidenceBundle with selected numeric observation records+explicit unverified technical inventory assessment separated from sourcefacts. No financialclaims generated. FixtureLAB remap ALL originalapp/group IDs to oi7:lab:<original>; label fixture_notice LAB, preserve originalspans/concurrency/ancestry while no old26writes.\",\"scope\":\"Same11paths, no additionaldeps/schema/root; sourcehashes unchanged. Runtime stillsame no-network productlab; one admitted restart alreadyused, no secondrestart requested; remaining actualsnapshot native persistence by roundtrip and freshclient/replacement. Finalstop/inspect retainsPGDATA.\"}}\nAccept exact scalar/clock mapping before widening, or specify explicit correction. No snapshot mutation/import yet.",
+  "snapshot": {
+    "path": "web/data.json",
+    "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+    "bytes": 4223271,
+    "mode": "0600"
+  },
+  "counts_attributed_to_author": {
+    "declared_papers": 4565,
+    "declared_repos": 1706,
+    "retained_papers": 1082,
+    "retained_repos": 873,
+    "retained_entities": 1955
+  },
+  "arithmetic_correction": {
+    "papers_declared_minus_retained": 3483,
+    "repos_declared_minus_retained": 833,
+    "author_2610": "incorrect subtraction of1955totalretained from4565papers; not missing-record or eligible-denominator inference"
+  },
+  "approved_mapping": {
+    "snapshot": "web/data.json SHAa2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36 actualhistorical_v2_archive generated_at2026-10-08T02:00:49Z method2.0; tracked metadata4565papers/1706repos versus actual retaineditems1082papers/873repos. Import ALL1955 retainedentities, preserve tracked metadata as declared coverage not assert missing2610/833records exist.",
+    "scalar_mapping": "Numeric-only canonical extraction retains every numeric/null item field: repos stars/forks/contributors; papers n_authors/upvotes/stars/mentions/hn_points/days. Keep scalar numeric age days as source-reported age-days with unknown measurement period, not derive date. All seven windows canonical all-view rows preserve all numeric/null fields including historical scores/raw/rank/prev/coverage/gspan/events/ratios in retained extraction; emit observations for counts/activity/gspan/coverage and existing historicalscore/raw/rank/prev labeled computed artifact outputs NOT newmeasurements/financialtruth. Source extraction excludes description/title/authors/prose and source execution. Other6 filteredviews would redundantly replay same entities/rawmetrics but ranks/cohorts differ: propose retain everyview numeric rows as source extraction, observations for allview only with explicit scope all; do not silently label allview output as every cohort. Allviews retained numeric extraction available via exactsource span, no recomputation/scoring. Fullfeatures fixtures separately support same adapter shape, never substitute fixtures-only.",
+    "clocks": "sourcepublication/event validity/collection observed_at UNKNOWN null unless independent receipt. Source generated_at is historical computation metadata inside reason, NOT source publication/observed; caller actual runtime ingestion now and actual import computation now frozen once before duplicateimport. Source observation records preserve original timestamp null; period/window endpoints unknown, preserve window labels and upstream gspan as numeric metadata. Method identity for extraction python-snapshot/numeric/1.0.0 with upstreamhistorical2.0 in provenance; no run.py import/network/newcollection/rescore.",
+    "interfaces": "project_snapshot(feature_snapshot,*,evidence_cutoff,method_version)->exactScene (pure deterministic Scene of extraction bundle); extract_snapshot(...,ingested_at,computed_at,observed_at=None)->EvidenceBundle with selected numeric observation records+explicit unverified technical inventory assessment separated from sourcefacts. No financialclaims generated. FixtureLAB remap ALL originalapp/group IDs to oi7:lab:<original>; label fixture_notice LAB, preserve originalspans/concurrency/ancestry while no old26writes.",
+    "scope": "Same11paths, no additionaldeps/schema/root; sourcehashes unchanged. Runtime stillsame no-network productlab; one admitted restart alreadyused, no secondrestart requested; remaining actualsnapshot native persistence by roundtrip and freshclient/replacement. Finalstop/inspect retainsPGDATA."
+  },
+  "scope_fullness": "ALL1955retainedentities, ALLviewsnumeric/null extraction retained; explicitALLview scopedobservations avoidduplicate basis; no fixtures-only substitution/no missingrecord existence or currentlivecollection inference",
+  "method_boundary": "Extractornumeric1.0.0 provenance upstreamhistorical2.0 score outputs flagged computedartifact notnewmeasurements/verification/truth; collection/event/sourcepublicationunknownnull; historicalgeneratedAt computation metadata notobservation, no arbitrary sourceclockimputation",
+  "LAB_boundary": "Remap allLABapp/groupIDs oi7:lab andsame-referencechains noold26collisions/mutation",
+  "runtime_limit": "No secondPGrestart; one alreadyused truepostmasterchange. Completewidenactualnative roundtrip/freshclient/realreplacement; finalstopinspectfailclosed andretainPGDATA;0paid/embedding/model/newnetwork",
+  "scope_paths": [
+    "observatory/evidence/contracts.py",
+    "observatory/evidence/brain.py",
+    "observatory/evidence/model.py",
+    "observatory/evidence/cordis.mjs",
+    "observatory/evidence/__main__.py",
+    "observatory/evidence/receipts.json",
+    "observatory/python_adapter.py",
+    "docs/integrations/python-pipeline.md",
+    "investigations/frontier-economics/manifest.json",
+    "tests/test_investigation.py",
+    "tests/test_evidence_contracts.py"
+  ],
+  "size": "11paths1700estimate2000hard; ifexceedstopbeforeadditionalcode notscope-reduction",
+  "aggregate": "Aftercompletewholegroup once; parentafterallwriterfreeze furthercurrentfullgate andindependentoriginal+quality required"
+}

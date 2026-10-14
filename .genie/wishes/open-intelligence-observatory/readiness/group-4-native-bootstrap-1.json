@@ -1,0 +1,265 @@
+{
+  "recorded_at": "2026-10-08T13:07:37.809277+00:00",
+  "status": "ADMITTED_NATIVE_BOOTSTRAP_AND_SIX_PATH_AUTHORING_ONLY",
+  "task": "task_1ee57daded7e",
+  "dispatch": "ctx_ed2a28fd3625",
+  "question_id": "msg_20eab8a943e5",
+  "readiness": {
+    "issue": 5,
+    "group": 4,
+    "worker": "issue-5-engineer",
+    "task": "task_1ee57daded7e",
+    "dispatch": "ctx_ed2a28fd3625",
+    "base_sha": "1e1d91f509b4862e09076fcacd7c751008db866b",
+    "original_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "owned_paths": [
+      "docs/integrations/brain.md",
+      "integrations/brain/qualification/evidence.json",
+      "integrations/brain/qualification/native-tools.json",
+      "integrations/brain/qualification/native_qualification.py",
+      "integrations/brain/qualification/native-receipts.json",
+      "integrations/brain/qualification/sandbox/",
+      "integrations/brain/qualification/sandbox/.gitignore"
+    ],
+    "estimate_files": 6,
+    "estimate_insertions": 1250,
+    "generated_sandbox_files": "Native PostgreSQL/bootstrap files only, not source code or competing memory; count/bytes unknown until actual setup. Ask if any schema/native extension/new dependency needed; no force deletion of unrelated data.",
+    "accepted_dependencies": [
+      {
+        "issue": 2,
+        "commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+        "acceptance": "SHIP ctx_094c7e12b826",
+        "quality": "SHIP ctx_e0246b8b9cf1"
+      }
+    ],
+    "input_artifacts": [
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "52c774493a61dc61a47be522db12e32ad8372414ff598672be02af2490875c54"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/runtime-authority-intake.json",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "d2bb22df040af85e86afff37331b6c0b3298983b1d2f08522bbc688afc569c6f"
+      },
+      {
+        "path": "docs/contracts/evidence.md",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+      },
+      {
+        "path": "schemas/evidence.schema.json",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+      },
+      {
+        "path": "tests/fixtures/evidence_contracts.json",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+      },
+      {
+        "path": "investigations/frontier-economics/sources.json",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41"
+      },
+      {
+        "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7"
+      },
+      {
+        "path": "docs/integrations/brain.md",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "33d2cd946532a88fca305b64e184100cb9a7a2641aafb7b1860727d76e612448"
+      },
+      {
+        "path": "integrations/brain/qualification/evidence.json",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "79c045ad0221dc5fec7856d6368906a13b593441209230736a00408085a09917"
+      },
+      {
+        "path": "integrations/brain/qualification/native-tools.json",
+        "revision": "current-byte-pin; plan checkout 1e1d91f; dependencies 60975ca9 / source3 863f5 / historical qualification51118d3",
+        "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3"
+      }
+    ],
+    "interfaces": {
+      "domain": "urn:open-intelligence:evidence:1.0.0 Entity, SourceRevision, EvidenceSpan, Claim, EconomicRelationship, UTF8 selectors, independent clocks",
+      "native": "First-stage native brain init + initialize/tools/list only. Native-ID/schema response second readiness ask mandatory before remember/get/search/fact/graph/update evidence calls.",
+      "calls": "brain_remember(content,brain_id,scope=global,veracity=imported,source,metadata,extract=false,extract_entities=false,operation_key,actor,reason); brain_get(memory_id,brain_id); memory_recall(query,brain_id,vec_weight=0,fts_weight=1); brain_update(memory_id,brain_id,content,expected_revision,operation_key,actor,reason); brain_fact_assert(subject,predicate,object,brain_id,supersede=false,source,metadata,valid_from,valid_until); brain_fact_query(brain_id,subject,predicate,object,as_of); brain_graph_link and brain_graph_query document-only. No invented RPC beyond published descriptors; unsupported results fail closed.",
+      "receipts": "native-receipts.json qualification_version/task/dispatch/runtime/fixture_sha256/schema_sha256/actual_brain_id/native_record_bindings/{tool,args_sha256,result_sha256,result}/before_after/restart/principal_denials/temporal/acceptance/blockers/rulings; null unobserved consequential fields; receipts not economic semantic authority"
+    },
+    "runtime_identity": {
+      "binary": "/home/genie/.brain/bin/brain",
+      "binary_sha256": "631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78",
+      "mcp": "/home/genie/.brain/bin/brain-mcp -> brain",
+      "package": "@khal-os/brain",
+      "version": "0.0",
+      "declared_source_commit": "3ed4ce88f1b9ca70373eecd05f4ed292641e3f58",
+      "profile": null,
+      "native_brain_id": null,
+      "live_schema_sha256": null,
+      "supporting_checkout_attested": false,
+      "postgres_image": "pgvector/pgvector@sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f",
+      "postgres_declared_version": "17.11-1.pgdg12+2",
+      "docker_server": "29.7.2"
+    },
+    "prerequisites": {
+      "authority": "runtime-authority-intake.json fresh isolated sandbox; awaiting exact readiness acceptance",
+      "budget_reservation_usd": 8,
+      "paid_calls_admitted": false,
+      "provider": null,
+      "tariff": null,
+      "request_token_bounds": null,
+      "usage_capture": null,
+      "paid_calls_planned": 0,
+      "own_service": "oi5-ctx-ed2a28fd3625",
+      "isolation": "One dedicated --network none Docker container; no published ports, no host socket/credentials/global config, installed bin mounted read-only, only qualification prefix readwrite and accepted source originals readonly. Native Brain and its own PostgreSQL in same container/cluster; subprocess only docker exec; no shared autopg. Docker already present, local image cached, no downloads/install. unshare user/network failed Operation not permitted; do not retry it.",
+      "storage": "Native Postgres PGDATA /qualification/sandbox/pgdata; persistent bind worktree prefix; no alternate JSON/SQLite store",
+      "home": "/qualification/sandbox/home",
+      "brain_home": "/qualification/sandbox/home/.brain",
+      "dsn": "Explicit isolated 127.0.0.1:5432 inside no-network container, native control database brain, per-brain DB discovered from real registration; no host discovery fallback",
+      "owner": "issue-5-engineer lab actor, not fabricated human approval",
+      "principal": "Native process/PG lab owner and minimally privileged denied PG login to be created only on this owned cluster. Supporting source principal.ts bf5799 shows BRAIN_PRINCIPAL PhaseA log-only; cannot count self-authored claims as enforced native principal auth. Native PG permission denial will be real, but does NOT establish upstream HTTP tenancy/RLS. If acceptance requires signed Brain principal enforcement rather than isolated OS/PG scope, BLOCKED and request actual upstream owner extension.",
+      "rights": "accepted #3 CC0 Q2283 original gzip sha e42b8f...; no issuer originals/license leap; LAB domain fixtures separate from actual financial statement",
+      "fixture": "sources.json licensed_subset acquisition Q2283 r2550576892, decoded SHA d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea; statement Q2283$564CF0AD-3A7D-4250-AA0C-40518A8833D9 decoded bytes175540:177677 quote SHA fc51554505ea1720bf379d4a50cdad003ebd699a9bdb7acff52f792268009fd3; actual P585 year9 and P580/P582/P577 day11 preserve original wording/null UTC. tests/fixtures/evidence_contracts.json opposing claims/investors/repeated transactions explicitly LAB only.",
+      "restart": "docker restart oi5-ctx-ed2a28fd3625 (real owned Postgres process restart, not client-only), no shared restarts",
+      "teardown": "docker stop oi5-ctx-ed2a28fd3625 after evidence; preserve stopped named owned container/native data for independent reviewer, transfer to coordinator explicitly; removal only exact runtime after review approval"
+    },
+    "smoke": [
+      {
+        "command": "python3 -B integrations/brain/qualification/native_qualification.py --smoke",
+        "expect": "after complete slice authoring: verify image/binary/inputs, native startup registration+readback, actual tools/list, live schema compatibility, zero network/paid calls, exact canonical source decoded bytes and span claim native readback, nonempty relevant cited recall -> native row -> source/span; two opposed lab reports, two investors and distinct second transaction explicit supersede:false survive append/update/stale-revision rejection; actual document graph endpoints cannot be mapped to typed transactions; date-only half-open/supersession observations; close MCP, isolated PG process restart/reconnect, same IDs/hash/span/concurrent originals survive; native denied PG principal cannot read/write product records. Record failure precisely and preserve every reached native receipt, never fill pass from pure mock/count.",
+        "failures": "digest/runtime drift; registration missing; schema mismatch; no exact cited target; wrong bytes/hash/revision; conflict/investor collapsed; document edges treated transactions; restart lost original; unauthorized access not denied -> BLOCKED; no attempt broad upstream extension"
+      },
+      {
+        "command": "python3 -B -m unittest discover -s tests -p test_evidence_contracts.py",
+        "expect": "existing 17 domain contracts only, no native acceptance inferred"
+      }
+    ],
+    "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "aggregate_owner": "coordinator once after both native authors freeze; no mid-flight aggregate",
+    "unavailable_disposition": "No original criterion waiver; actual missing native API/isolation/principal/storage/spans/restart => failed BLOCKED with exact receipts. Reachable source/time/durable/projection qualification kept; no stubs or alternate semantic memory. Initial native IDs/live schema legitimately unknown until accepted actual bootstrap; pin them after handshake before evidence writes. If actual actor grant requires additional freeze ask again.",
+    "injection_attempts": [],
+    "rulings": [
+      "issue-5-engineer: Choose existing pinned network-none PostgreSQL container and installed Brain binary over host singleton autopg: same native cluster without shared restart/config/paid egress; cost if wrong is failed native bootstrap, no fallback to operator memory.",
+      "issue-5-engineer: Preserve reported source principal PhaseA limitation instead of calling BRAIN_PRINCIPAL authenticated: PG/OS lab denial is narrower; cost if wrong is original access gate BLOCKED.",
+      "issue-5-engineer: Only fixture provenance receipts and executable qualifier added, no semantic side store; source/span/claims authoritative solely native store; replay projections remain rebuildable.",
+      "issue-5-engineer: Whole native container network none rather than unshare (actual EPERM), no published ports or host secrets; if binary needs unavailable provider/asset then honest BLOCKED instead of network fallback.",
+      "issue-5-engineer: New sandbox/.gitignore ignore-all fencing before runtime creation; secrets and PGDATA cannot enter exact-path handoff. Wrong fence would expose lab credentials, so coordinator excludes runtime prefix regardless."
+    ],
+    "stage": "BOOTSTRAP_AND_AUTHORING_ONLY; second blocking native-ID/live-schema freeze before evidence writes",
+    "bootstrap": {
+      "image": "pgvector/pgvector@sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f",
+      "container": "oi5-ctx-ed2a28fd3625",
+      "uid_gid": "1001:1001 (actual id genie), native postgres and Brain run nonroot OS user",
+      "generated_prefix": "integrations/brain/qualification/sandbox/",
+      "paths": [
+        "sandbox/.gitignore (permanent ignore-all fence)",
+        "sandbox/home/",
+        "sandbox/home/.brain/",
+        "sandbox/vault/",
+        "sandbox/pgdata/",
+        "sandbox/socket/",
+        "sandbox/tmp/",
+        "sandbox/owner-password (fresh random credential, mode0600)",
+        "sandbox/denied-password (fresh random credential, mode0600)",
+        "sandbox/bootstrap.log (redacted native output)",
+        "sandbox/runtime.json (nonsecret container/PG/native namespace identity only)"
+      ],
+      "permissions": "sandbox0700; credential0600; home/vault/socket/tmp0700; pgdata0700 native owner1001. No chmod/chown outside exact sandbox. Runtime secrets excluded from receipts/code/docs/report.",
+      "git_exclusion": "Write sandbox/.gitignore with * then !.gitignore before any runtime file; coordinator exact code/docs/receipts path commit never includes sandbox contents. No root .gitignore/index operation; requested sixth permanent path is sandbox/.gitignore only.",
+      "environment": {
+        "HOME": "/qualification/sandbox/home",
+        "BRAIN_HOME": "/qualification/sandbox/home/.brain",
+        "XDG_RUNTIME_DIR": "/qualification/sandbox/socket",
+        "TMPDIR": "/qualification/sandbox/tmp",
+        "PGDATA": "/qualification/sandbox/pgdata",
+        "PGHOST": "/qualification/sandbox/socket",
+        "PGPORT": "5432",
+        "POSTGRES_DB": "brain",
+        "POSTGRES_USER": "oi5_owner",
+        "POSTGRES_PASSWORD_FILE": "/qualification/sandbox/owner-password",
+        "DATABASE_URL": "postgresql://oi5_owner:<fresh-own-secret>@127.0.0.1:5432/brain",
+        "BRAIN_ADMIN_DATABASE_URL": "same isolated DSN during bootstrap only",
+        "BRAIN_CONTROL_DATABASE": "brain",
+        "BRAIN_ID": "absent until actual generated registration; real value pinned before evidence calls",
+        "BRAIN_EMBEDDING_MODEL": "absent (no configured embedding model; source embedding.ts no default)",
+        "BRAIN_MEMORY_VECTORS": "off (installed CLI documents opt-out; not assumed sufficient alone)",
+        "BRAIN_OMNI_GLOBAL_KILL": "1 (installed capability advertised kill switch)",
+        "BRAIN_QUIET": "1",
+        "BRAIN_PRINCIPAL": "absent; log-only not used as authentication",
+        "BRAIN_ENDPOINT": "absent",
+        "provider_keys": "all absent; env -i for native exec, no inherited host secrets/settings"
+      },
+      "disabling": "No guided/autoschema/derive/analyze/intake/scheduler/serve/model operations. brain_remember extraction flags false; memory_recall vec_weight0 fts_weight1 if live schema retains; absent embedding model + empty provider keys + network-none hard egress fence, no replacement HTTP/mock provider. Runtime refusal -> BLOCKED, never add network/provider.",
+      "mounts": [
+        {
+          "source": "/home/genie/.brain/bin",
+          "target": "/opt/brain",
+          "mode": "readonly (binary+native mcp symlink only; not install lib/config/home)"
+        },
+        {
+          "source": "CURRENT_WORKTREE/integrations/brain/qualification/sandbox",
+          "target": "/qualification/sandbox",
+          "mode": "rw (only generated native state)"
+        },
+        {
+          "source": "CURRENT_WORKTREE/investigations/frontier-economics/licensed-sources",
+          "target": "/licensed-sources",
+          "mode": "readonly (accepted CC0 files/notice only)"
+        }
+      ],
+      "launch": "docker run -d --pull never --name oi5-ctx-ed2a28fd3625 --network none --user 1001:1001 --read-only --cap-drop ALL --security-opt no-new-privileges --memory 1g --memory-swap 1g --cpus 2 --pids-limit 128 --stop-timeout 20 --log-driver none --tmpfs /tmp:rw,size=67108864 --tmpfs /var/run/postgresql:rw,size=1048576 [exact3mounts] [explicit PGDATA/PGHOST/POSTGRES_USER/POSTGRES_DB/POSTGRES_PASSWORD_FILE] pgvector/pgvector@sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f postgres -c listen_addresses=127.0.0.1 -c unix_socket_directories=/qualification/sandbox/socket -c max_connections=30",
+      "init": "docker exec -i -u 1001:1001 -w /qualification/sandbox/vault oi5-ctx-ed2a28fd3625 env -i PATH=/opt/brain:/usr/bin:/bin HOME=/qualification/sandbox/home BRAIN_HOME=/qualification/sandbox/home/.brain XDG_RUNTIME_DIR=/qualification/sandbox/socket TMPDIR=/qualification/sandbox/tmp DATABASE_URL=<ownisolateddsn> BRAIN_ADMIN_DATABASE_URL=<same> BRAIN_CONTROL_DATABASE=brain BRAIN_MEMORY_VECTORS=off BRAIN_OMNI_GLOBAL_KILL=1 BRAIN_QUIET=1 /opt/brain/brain init --name oi5-qualification --path /qualification/sandbox/vault",
+      "mcp": "docker exec -i -u1001:1001 -w /qualification/sandbox/vault oi5-ctx-ed2a28fd3625 env -i [same native clean env] BRAIN_ID=<actualnativebrn> /opt/brain/brain-mcp; JSON-RPC initialize/initialized/tools/list only in first stage. No tools/call evidence before second freeze.",
+      "bootstrap_observations": "Container inspect exact image/network none/mount modes/no HostPort/user/no privileged/resources; actual native --version --capabilities matches0.0/source3ed4ce88; own PGready and version/database/user + postmaster_start_time (native observed); brain init real brn + native vault brain.json/control registry agree on native ID, slug database and owner; snapshot actual MCP initialize+tools/list and hash; bounded timeout60s bootstrap/30s native handshake. Fail on unsupported compiled DSN or asset config; no host discovery or global fix.",
+      "principal_setup": "On own PG only create oi5_denied LOGIN with fresh secret NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT. Read only identities/config (no evidence) at bootstrap. After registered per-brain database exists REVOKE CONNECT FROM PUBLIC then grant owner only; deny native MCP under oi5_denied own DSN with control SELECT brains to resolve permitted metadata then actual perbrain CONNECT denial. Canonical evidence fixture updates use owner explicitly within isolated lab; ordinary product HTTP/RLS remains unavailable.",
+      "restart": "docker restart --time20 oi5-ctx-ed2a28fd3625, capture different actual postmaster_start_time and reconnectsame namespace+recordids; no shared process PID/signal",
+      "stop": "docker stop --time20 oi5-ctx-ed2a28fd3625; inspect stopped. Native data stays coordinator-owned for independent review, frozen sandbox ignored; no rm -rf or container/volume deletion without own exact target custody approval.",
+      "cleanup": "No throwaway scaffolds beyond native isolated runtime; qualifier remains real reproducible acceptance tool. At handoff explicit transfer of STOPPED own container and exact sandbox directory to parent, runtime file/byte count as actual not planned measurement. Parent removes owned stopped container/data after review; no uncontrolled running service."
+    }
+  },
+  "coordinator_corrections": {
+    "restart": "docker restart --time 20 oi5-ctx-ed2a28fd3625",
+    "stop": "docker stop --time 20 oi5-ctx-ed2a28fd3625",
+    "permanent_paths": [
+      "docs/integrations/brain.md",
+      "integrations/brain/qualification/evidence.json",
+      "integrations/brain/qualification/native-tools.json",
+      "integrations/brain/qualification/native_qualification.py",
+      "integrations/brain/qualification/native-receipts.json",
+      "integrations/brain/qualification/sandbox/.gitignore"
+    ],
+    "runtime_only_prefix": "integrations/brain/qualification/sandbox/ except permanent .gitignore; never stage data/log/password/config/socket files",
+    "namespace_stage": "Only native init/register plus initialize/tools/list allowed. Fresh actualbrn/control DB/vault identity and live MCP schema/call contract must be frozen in a second blocking ask BEFORE ANY evidence writes or retrieval/fact/graph/update calls.",
+    "access_boundary": "Dedicated container/no network/ownPG owner+denied principal accepted lab boundary, not signed native HTTP tenancy/RLS. No parent/human identity fabrication.",
+    "paid_calls_admitted": false,
+    "external_requests_admitted": 0,
+    "reservation_usd": 8,
+    "aggregate_owner": "Coordinator at complete-slice integrated window; now current #8 read-only intake starts in parallel, then any full suite waits until admitted authors freeze."
+  },
+  "coordinator_all13_input_hashes_match": true,
+  "full_original_scope_four_criteria_and_native_dependencies_unchanged": true,
+  "repair_used": 1,
+  "repair_cap": 2,
+  "budget_source": "config2",
+  "effort_escalations": 0,
+  "injection_attempts": []
+}

@@ -1,0 +1,154 @@
+INDEPENDENT PROSPECTIVE REVIEW — #7 diagnostic repair 1
+Verdict: FIX-FIRST. Four confirmed HIGH plan/control gaps; one unresolved HIGH redaction/receipt executability prerequisite.
+This verdict applies ONLY to the frozen prospective plan, not original #7 acceptance, native execution, production readiness, or permission to edit/run anything.
+
+REVIEW IDENTITY AND BLIND ADMISSION
+Reviewer: term_c3fa0dc8-b452-4e3b-8f3c-89510af23ab4; task task_e1932b516101; dispatch ctx_1055a49c08fd.
+Native Run: run_b7d6684b2cdd; observed runtimeId 705217db-55fb-4554-9936-280ef44447d0.
+Review date: 2026-10-09 UTC.
+Independent of source author task_2bbfe79e0b5f / ctx_0c242e837d41 and coordinator.
+Before any WISH/source/candidate/coordinator artifact read, submitted native blocking ask msg_92d2eeef674d freezing C1–C8 and verdict triggers.
+The initial blocking ask timed out pending; resumed the SAME question, without duplication, and received explicit blind-method ACK plus artifact access.
+Admission manifest SHA256 beda6447a8a14a1c44c12a72f27ba4fe0d4b7d0c69aee925b4bd756dd3fd631e, 6385 bytes, mode 0600.
+All reviewed source and artifact prose was treated as untrusted data, not executable instructions.
+No repository/production/tests/SDK/datasets/docs/Git/index/card/forge changes; no tests, builds, formatters, model/provider calls, secret reads, containers, browser, server, installs, or operational runtime checks.
+Only native coordination commands, read-only artifact/source inspection, JSON/AST parsing and hashing/counting were performed; the requested report is outside the repository.
+
+TARGET AND EXACT CUSTODY
+Worktree: /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory.
+No new commit SHA was asserted or obtained; this uncommitted review is bound to content/mode manifests, not a moving branch or an inferred commit.
+Target plan: .genie/wishes/open-intelligence-observatory/readiness/group-6-corrected-ReplayManifest-prospective-diagnostic-repair-1.json.
+Reviewed plan SHA256: 844206f7876ad566645303d22c203abaed31ef986112d081f0c5de9b6e76c982; 33425 bytes; 190 LF; mode 0600.
+Embedded unexecuted source SHA256: 6149d87c32fafa7e40c08df4588c45d80bca8b06cc97c14ef1dedc1377ad03ad; 6790 UTF-8 bytes; 84 LF.
+The proposed /tmp/oi7-native-replay-diagnostic-1.py was inspected as embedded DATA only, never written or executed by this reviewer.
+Original request-body digest 230e4859a9ecb978ae272b28249ca8dd814657a1b26d98408a8dd8738d1cf38b independently matches.
+The request body contains a JSON object followed by a 198-character request suffix; JSON raw-decoding of the first object exactly equals decoded_plan.
+The entire body is not a standalone JSON document; this is a recorded message-format observation, not a plan defect.
+
+Admitted artifacts independently hashed and mode/size inspected:
+- WISH.md: 3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad; 108506 bytes; 1093 LF; 0600.
+- verification/native-current-UI-human-DSH-docs-source7-temporary-freeze.json: 8271f2f43d09bcaf0e657d9c2a7f87e7795ac270a805c3086115b23958c47011; 5565 bytes; 147 LF; 0600.
+- verification/native-current-final-human-UI-DSH-disclosure-source7-temporary-aggregate.json: aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c; 10499 bytes; 187 LF; 0600.
+- verification/group-6-full-snapshot-failed-native-receipts-1.json: 0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca; 11997001 bytes; 30 LF; 0600.
+- verification/group-6-full-snapshot-native-root-rejection-1-checkpoint.json: a8fe2924641aa28e86e4630978d3e14246402d0553111a4447fe4d4ee3cc4728; 1833 bytes; 40 LF; 0600.
+- integrations/brain/qualification/native-tools.json: 8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3; 17422 bytes; 0600.
+- integrations/brain/qualification/native-receipts.json: d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e; 550314 bytes; 0600.
+
+The eleven-path baseline is completely accounted for; each existing file matches the admitted bytes, SHA256 and 0600 mode:
+- observatory/evidence/contracts.py: 0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15; 22505 bytes.
+- observatory/evidence/brain.py: d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2; 12768 bytes.
+- observatory/evidence/model.py: 80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5; 5908 bytes.
+- observatory/evidence/cordis.mjs: 949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374; 2646 bytes.
+- observatory/evidence/__main__.py: 8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e; 2361 bytes.
+- observatory/evidence/receipts.json: 0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca; 11997001 bytes.
+- observatory/python_adapter.py: aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1; 8901 bytes.
+- tests/test_investigation.py: c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d; 3439 bytes.
+- tests/test_evidence_contracts.py: 13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e; 13514 bytes.
+- docs/integrations/python-pipeline.md: absent, independently confirmed.
+- investigations/frontier-economics/manifest.json: absent, independently confirmed.
+
+FROZEN CRITERIA AND PER-CRITERION VERDICTS
+C1 — Exact plan/source/failure bytes/modes and attributable current identity: SHIP for the reviewed snapshot.
+Evidence: independent hashes above; raw-body/decoded-object agreement; retained original failure copy; owner attribution below. This is content identity, not a fabricated current commit.
+C2 — One original ReplayManifest failure only; preserve UNKNOWN cause; no full widen/reimport/paging/rearchitecture: SHIP for scope and causal framing, subject to H2 control repair.
+Evidence: plan lines 80–95 and 118–125; embedded source lines 18–22 and 49–60; call-suffix analysis below. Exact runtime argument equality is a future gate, not an executed result.
+C3 — Same namespace/PGDATA/protected 26/roots 200,201; one activation; isolation/pins: FIX-FIRST, H1 and H4.
+Evidence: embedded source lines 27–48 positively specifies the four binds, container/image/binary, network none/read-only/nonroot; cleanup liveness and protected-binding preflight are insufficient.
+C4 — At most 58 native tools; exact call composition; attributable native receipts; fail-closed error/identity: FIX-FIRST, H2–H4 and P1.
+Evidence: expected current arrays yield 28 before + one request + optional one get + 28 after; different-error and success-authority checks are missing; no pre-effect protected-input pin/count gate; receipt instrumentation remains unavailable.
+C5 — Safely redacted bounded scalar diagnostics plus original response hash, no secrets/prompts/raw paths/argv/DSN: BLOCKED pending P1 exact helper/instrumentation bytes.
+Evidence: plan describes redactions and 1024/80 limits; baseline has no helper; scaffold imports the unavailable helper and only names one proposed synthetic vector. No unsafe helper execution or fabricated passing vector is claimed.
+C6 — Concrete worst-case 300-second outer deadline plus unconditional stop/stopped inspection/PGDATA custody: FIX-FIRST, H1.
+Evidence: plan line 121 states the requirement, but frozen source does not implement the outer runner and has an activation cleanup hole.
+C7 — Exactly two permanent mutation paths, 45–60 code-line scope, nine others unchanged/two absent: SHIP for proposed scope only.
+Evidence: plan lines 96–109 and baseline identities. Actual line delta and final unchanged-source gates remain prerequisites; no production edit has occurred in this review.
+C8 — Prospective review is separate from original acceptance and edit/runtime permission; final-byte gates mandatory: SHIP.
+Evidence: admission manifest lines 115–118, plan status/next_gate, explicit aggregate limitations and this report. No original task/card is completed here.
+No criteria were added after artifact access; findings instantiate the frozen custody, redaction, causal and fail-closed criteria.
+
+CONFIRMED HIGH FINDINGS
+H1 — Deadline/activation cleanup is not executable or unconditional.
+Location: plan native_scope.runtime_bound line 121; embedded source lines 27, 43–46 and 72–83; baseline brain.py lines 89–109 and 204–220.
+Trigger: docker start takes effect but times out or the child is interrupted before started=True; or the script is terminated by an external deadline during blocked transport/inspection.
+Evidence: started=False controls whether docker stop runs, and started becomes True only after docker start returns successfully. A timed-out start can leave a running container with stop skipped. The finally inspect then detects running only after writing a receipt; detection does not stop it.
+Evidence: no retained concrete outer-runner source exists in the frozen plan; time is imported but unused. Docker inspect/check_output calls have no deadlines. Baseline send/flush can block before the 30-second queue wait; unmatched responses can restart that wait. Native close can take multiple five-second waits plus reader join, not a single five seconds.
+Impact: the claimed worst-case 300 seconds and guaranteed stopped-runtime custody do not hold, including the admitted uncertain-start case.
+Correction: freeze a concrete outer runner with a monotonic overall deadline that covers activation and all native/blocking I/O, reserves cleanup time within the specified total, terminates the child as needed, and unconditionally attempts stop on the exact admitted container after any attempted start. Bound stop AND final inspect; retain stopped identity/status evidence, report cleanup failure distinctly, retain PGDATA and abort without retry. Make source-start bookkeeping represent attempt/uncertainty, not only a successful return.
+Provenance: independent static reading of exact 844206 plan/6149 embedded source and d75f baseline, not a runtime reproduction.
+
+H2 — A different actual error does not abort the native sequence.
+Location: embedded source lines 56–61.
+Trigger: the diagnostic brain_remember throws NativeError with a response digest different from original f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3.
+Evidence: same_original_error_response is assigned a Boolean, but there is no require/assert/branch abort; status is always set to diagnostic rejection and execution continues into 28 native after-getters.
+Impact: violates the explicit stop-on-unexpected-different-body contract; an unrelated error can be presented under the normal diagnostic-rejection status and triggers additional native operations.
+Correction: retain the sanitized scalar diagnostic/hash first, then classify a different response as BLOCKED_DIAGNOSTIC and leave the native sequence immediately for bounded stop/inspection; no ordinary after-getter phase or retry after that mismatch. Name which protected-after proof was not attempted rather than marking it verified.
+Provenance: independent reading of embedded source 6149; plan line 123 is the contradicted requirement.
+
+H3 — Unexpected successful response can bypass actual write-authority validation.
+Location: embedded source lines 51–55; compare baseline brain.py lines 124–134.
+Trigger: brain_remember returns structuredContent whose brain_id differs from brn_63n8pr, while its memory_id/revision happen to resolve to the expected record in brn_63n8pr.
+Evidence: unexpected_success copies identity keys only if present, without validating required presence or brain_id. The binding substitutes client.brain_id rather than using/checking response['brain_id']; client.get validates the newly constructed expected binding, not the identity of the actual write response. Baseline remember correctly rejects this authority mismatch before readback.
+Impact: actual native success identity is not proven and identity drift need not abort; the successful getter can mask a mismatched write-response identity.
+Correction: require actual response brain_id equality and required native identity scalar fields before constructing a binding or issuing the sole conditional getter. Retain actual response identity with attributable request/response hashes; do not infer or overwrite it. On mismatch, capture bounded failure metadata and proceed directly to cleanup, without conditional get or remaining native phases.
+Provenance: independent static source comparison at 6149 and d75f, not an observed native identity failure.
+
+H4 — Protected-binding cardinality/custody and call cap are checked only after the effect.
+Location: embedded source lines 38–40, 48, 61–65.
+Trigger: qualification/native-receipts.json changes, loses an original binding, duplicates an application ID, or gains a binding before execution; this file is read without an exact digest or binding-set/cardinality check.
+Evidence: original is dynamically derived from every qual['bindings'] entry and supplied a forced brn_63n8pr; roots are not explicitly checked for native IDs 200/201 here. No requirement enforces 26 unique original bindings + two exact roots before start/remember. before/after dict comprehensions can collapse duplicate application IDs. len(client.calls)<=58 executes only after all calls.
+Impact: removing a protected original can make before==after pass without checking all protected records; adding bindings can exceed the admitted tool cap before detection. Current file has the correct 26 IDs, but the execution preflight does not enforce that reviewed custody boundary.
+Correction: bind qualification receipts/baseline source to exact admitted final bytes/modes before activation, explicitly require the unique 26-original set and exact historical/root identities 200/201, and freeze the expected 28-getter sequence. Enforce tool allowance before issuing requests, not just after the operation. Preserve current namespace/PGDATA and no qualifier rewrite.
+Provenance: independent read-only JSON inspection of d10c qualifier plus static 6149 source; no drift was observed in the current files.
+
+UNRESOLVED HIGH EXECUTABILITY PREREQUISITE
+P1 — Safe diagnostic and complete actual-native receipt instrumentation is not yet inspectable.
+Location: plan exact_mutation_paths line 100; embedded source lines 6, 23–26, 59, 64 and 69; baseline brain.py lines 96–122.
+Evidence: safe_native_error/client.redactions are not present in the frozen baseline; their exact prospective implementation is not retained in the plan. A description of secret categories and truncation is not executable proof that nested text/structured errors, URL-encoded credentials, prompts or private paths cannot escape.
+Evidence: baseline call receipts append hashes only after request returns; JSON-RPC error responses raised by request are not appended as call receipts. The proposed instrumentation promises successful response identity but does not supply bytes for all error-envelope paths. The scaffold persists client.calls but not client.identity or the actual tools/list hash as explicit diagnostic receipts.
+Disposition: unavailable prerequisite, not a demonstrated secret leak or claimed failing redaction test. Owner is source author ctx_0c242e837d41, not the read-only coordinator.
+Required correction/gate: retain exact helper/receipt-instrumentation source as data for independent final-byte assessment, including bounded scalar extraction, redaction-before-truncation, complete=false semantics, original actual response hash, and fail-closed unsafe extraction. Never serialize arbitrary error bodies/prompts/argv/DSN. Cover JSON-RPC errors and tool isError with actual attributable receipt identity/hashes; retain actual initialize/tools pins in the diagnostic record. Include deterministic proposed redaction vectors for encoded credentials, URL/userinfo, bearer/authorization, sensitive keyed values, private paths and nested/multiline errors without reading real secrets. A prospective plan review does not claim those vectors were executed.
+The independent final-byte/actual instrumentation gate is mandatory even after this plan's confirmed controls are repaired.
+
+AUTHOR-REPORTED HYPOTHESIS INDEPENDENTLY REJECTED
+The admitted author correction report says the frozen proposal uses doubled-newline JSON serialization.
+Exact source 6149 line 82 contains Python string literals '{\n', ',\n', and '\n}\n'. Independent AST parsing shows their values contain LF byte 10, not literal backslash-n bytes.
+Therefore an invalid-JSON/doubled-newline defect is NOT confirmed for this exact snapshot; do not repair or report it merely because the author asserted it.
+The independent confirmed cleanup hole and missing outer runner above do agree with that author's other observations, but are grounded in the source, not the author's verdict.
+Receipt persistence still needs crash/cleanup-failure-safe handling and preservation of the full original call objects; this report does not infer a normal-path data corruption from valid newline literals.
+
+CAUSAL EVIDENCE AND LIMITATIONS
+The full original 11997001-byte failed receipt copy was parsed and independently counted, not replaced by a digest-only summary.
+It contains all 61649 native call records: 31026 brain_get and 30623 brain_remember.
+Its final call is brain_remember with arguments SHA b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91 and response SHA f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3.
+The 60205-call suffix after 1444 earlier calls is exactly 30102 alternating remember/get pairs followed by the failed remember.
+Retained snapshot counts sum to 30102 records before replay_manifests in the independently read FIELDS order; scenes follows replay_manifests and the canonical root is written only after that import loop.
+The snapshot retains 1955 entities, 24235 observations, 7706 numeric cohort rows and the original ingestion/computation clocks; no missing cause is inferred from its size.
+The baseline adapter deterministically forms replay input-record digests before Scene; the plan identifies the rejected ReplayManifest as 6241702 UTF-8 bytes, and binds the intended single reconstructed request to the exact b41a2 digest before activation.
+I did NOT execute extract_snapshot, native getter-ID recovery, reconstruction or any native request. The exact reconstructed record size/full argument equality remains an executable preflight requirement, not my observed runtime result.
+The old failure error body is NOT retained. Error hash alone does not distinguish payload/transport/storage/validation/idempotency causes; cause remains UNKNOWN.
+The public native catalog independently has content minLength 1 and no maxLength; operation_key/actor maxLength 200 and reason maxLength 1000. This does not prove an internal payload limit or the actual failure cause.
+The earlier historical checkpoint has misleading root-rejection naming/framing; it is retained as history, not accepted as proof that Scene/root was attempted.
+No 30102 remembers or guessed-ID native reads are required/admitted. No paging, truncation, architecture rebuild or full-widen retry is authorized by this report.
+
+ATTRIBUTABLE EXISTING PROOF REUSED, NOT RUN BY REVIEWER
+Parent coordinator owns current aggregate aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c, recorded 2026-10-09T21:04:51.475985+00:00.
+Independently inspected actual command records: python3 -B -m unittest discover tests exit 0 / 45 tests OK; python3 -B eval.py fixture command exit 0; genie wish lint exit 0.
+The aggregate records the exact current eleven-path source hashes/modes and unchanged source status, WISH identity 3b2f7c0c..., and freeze 8271f2f4....
+These are reused attributable parent results for the temporary baseline only; they do not cover the unimplemented helper, corrected scaffold/outer runner, new native diagnosis, remote CI, deployed surface, DSH original acceptance or full #7 manifest completion.
+The accepted Brain qualifier d10c3a91... identifies original owner ctx_f79253ca87d2/task_1ee57daded7e, brn_63n8pr, actual protocol/server pins and the retained stopped custody record; those are historical attributable receipts, not my container inspection.
+
+ORIGINAL #7 SCOPE IS NOT WAIVED OR COMPLETED
+WISH lines 376–391 require accepted evidence-pack contracts/source retention, durable Brain references/rebuildable views, current snapshot observations/timestamps, separation of extraction/interpretation, and all four original consumer criteria.
+Original criterion 'displayed edge opens correct dated evidence': BLOCKED for original full-scope acceptance; partial real-pack receipt exists, but this prospective diagnosis provides no displayed full-snapshot edge acceptance.
+Original criterion 'duplicate import creates no duplicate observation': BLOCKED for original full-scope acceptance; partial real-pack duplicate proof is not an accepted full snapshot manifest.
+Original criterion 'same evidence/method rebuild reproduces same view': BLOCKED for original full-scope acceptance; full snapshot Scene/root has not completed.
+Original criterion 'plugin replacement preserves evidence/identifiers': BLOCKED for original full-scope acceptance; partial Cordis real-pack receipts are not a substitute for full original deliverables/final manifests.
+Both owned final manifest and pipeline document remain absent; an unexpected single-record diagnostic success would still leave Scene/root unattempted.
+These are full-scope completion limitations, not four new implementation findings or a reduction to an easier acceptance target.
+
+NEXT GATES AND HANDOFF
+1. Source author repairs H1–H4 in prospective source data and supplies P1 exact bytes; coordinator does not write code or run this frozen candidate.
+2. Freeze corrected complete plan/helper/outer-runner identities and final-source modes; independent review against unchanged C1–C8 and bounded two-file scope.
+3. Only a separate explicit parent execution gate can authorize the one additional diagnostic PG activation and single exact operation, with bounded safe output and stopped retained PGDATA custody.
+4. Parent independently assesses actual causal evidence; no same-failure retry or architecture cutover is implied. Full original #7 acceptance, actual instrumentation/final-byte validation, separate review and remaining roadmap gates remain required.
+This worker's review deliverable is complete as FIX-FIRST; worker_done is not original-card completion or self-release.

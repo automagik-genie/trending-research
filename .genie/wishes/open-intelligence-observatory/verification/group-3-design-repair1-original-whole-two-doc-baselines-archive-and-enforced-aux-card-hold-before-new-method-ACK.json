@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-10T05:22:58.698212+00:00",
+  "oldFullDRAFTArchive": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DRAFT-original116c.md",
+  "draftArchiveMetadata": {
+    "sha256": "116c0faed479f3f03d6ae97c5183d9c158adab787552915e802a276e21bca7a1",
+    "bytes": 10689,
+    "mode": "0600"
+  },
+  "oldFullDESIGNArchive": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md",
+  "designArchiveMetadata": {
+    "sha256": "d68909d5f8285aa9c52b9b1929a2e166c240990c51be6c4b555b4f6441544097",
+    "bytes": 65211,
+    "mode": "0600"
+  },
+  "actualBothOriginalReviewsContentDigest0290_WholeFiled689Distinct": "e459FIXFIRST1HIGH+b614SHIP0HIGH bothreadFULL/nativeDone/released0 beforetheirACKs; newestPairedONEHIGH minimaldesignRepairNOTruntime/bootstrapreset",
+  "actualAuxBlockExit": 0,
+  "actualBlockStdout": "Blocked task t_mv1nxer60fedac1d (ready, hold).\n",
+  "actualBlockStderr": "",
+  "actualExportExit": 0,
+  "actualAuxBlockedUnclaimedTask": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": "hold",
+    "blocked_by": "cli",
+    "blocked_reason": "Design-only bounded repairB1of2 required for original-full e459H1 native Cordis pre-swallow disposer result seam. Original oldauthorNativeDone/full53LFhandoff/one3385Breportevent84/actualreleased0, oldGenieclaimactualrelease0; bothfirstfullA1-A10/C1-C4reports e4591HIGH+b6140HIGH ParentFULLread/nativeDone/actualrelease0 beforetheirDeliveryACKs. AUXcardnotOriginal4source/history. FreshNativeDesigner FULLmethodACK beforeartifactaccess/prep thenparentexplicit2docGate/unblock/freshcheckoutopensnewone-reportclaimspan. No source/SDK/runtime/paid permission; originalstock2/2+Brain4/4 unchanged, WRS90not100. Whole oldDRAFT116cDESIGNd689 archivedexact; same8inputs260f/7520 includinghash-onlyreadiness unaffected bySource7owner3e0b. CurrentSource7ctx0c liveprospectiveprepMethodpending noSourceSharedWriterConflict.",
+    "board_id": null,
+    "claimed_at": null,
+    "claimed_by": null,
+    "created_at": 1791592518642,
+    "group_name": "group-3-native-extension-design",
+    "heartbeat_at": null,
+    "id": "t_mv1nxer60fedac1d",
+    "lane": null,
+    "status": "ready",
+    "title": "Design the bounded native DSH extension architecture \u2014 design only",
+    "updated_at": 1791609778434,
+    "wish": "open-intelligence-observatory"
+  },
+  "configuredDesignRepairUsed0Budget2_DRAFTruntimeFields": "actualDRAFTline23 round1council0review0designrepair0; firstcheckINcellstructuralnegativepositive notnative/productrepair.CodeoldSource4prospective2/2differentcounterunchanged",
+  "freshmethodNext_thenactualParentGate_unblock_newNativeCheckout": "beforeANYowningbodyanalysis/proposaldocmutation. NoOwnerimplementation/Ready100/paidGategrant",
+  "source7cap3_e0bCurrentOnlyIndependentProspective": "bothdocs/wish260f/eightinputs unchanged bysource7DATA0 currentd75/0b0/twoabsences+stopped845 preserved",
+  "source8OWNpreviewStoppedBySpecializedTool": "proc://original8-parent-exclusive-verifier-preview/kill actualStopped/exited65616 afterpublicf429proof; other8871/browseruntouched",
+  "model0/allcostUnknown/20capNoGitChanges": "scope all20 unchanged"
+}

@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-09T22:08:12.591932+00:00",
+  "native_worker_done": "msg_588cf27da957",
+  "task": "task_6e8420cfedc4",
+  "dispatch": "ctx_4e0fc5c0ee94",
+  "verdict": "ACCEPT_COMPLETE_FULL_C1C8_INDEPENDENT_REVIEW_DELIVERABLE_FIXFIRST_NOTSOURCE",
+  "full_report": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-independent-review-2.txt",
+    "sha256": "1274997130447ed001d46f828d2bcad23bcc2da66e83197a329840a572033e81"
+  },
+  "full115LF_all_long29to31_complete_read": true,
+  "proposal": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+    "sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e"
+  },
+  "criteria": {
+    "C1": "SHIP scopedimmutableidentity",
+    "C2": "SHIP prospectiveoneexactrequest",
+    "C3": "SHIP scope/isolation/protectedactivation, actualretainedcustodyC6stillFIXFIRST",
+    "C4": "SHIP static58cap/pre-effectidentity/abort",
+    "C5": "FIXFIRST truncatedcode falselycomplete",
+    "C6": "FIXFIRST missingPGDATA witnessnotblockingexit0",
+    "C7": "SHIP numeric105/-7/98metadataamendonly",
+    "C8": "SHIP distinctscopereviewnotexecution"
+  },
+  "confirmed_HIGH": [
+    "R1codeboundcompletenessflaglost",
+    "R2actualPGDATAretentionabsentdoesnotblockdiag success"
+  ],
+  "other_independent_quality_Q1Q6_allremainblocking": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt",
+    "sha256": "3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5"
+  },
+  "reports_static_hypotheticals_notactual_leak_orPGDATALoss": true,
+  "oldH2H3H4_staticclosed_H1P1remaining": true,
+  "source_B2used0": true,
+  "separate_quality_repair_loop_default_cap1_notusedyet": true,
+  "all_source_and_runtimepermission_DENIED": true,
+  "original7_accepted": false,
+  "whole20complete": false
+}

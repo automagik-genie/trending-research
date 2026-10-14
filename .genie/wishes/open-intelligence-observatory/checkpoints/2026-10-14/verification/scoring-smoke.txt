@@ -1,0 +1,115 @@
+Command: python3 eval.py --issue11-smoke --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json --compare-v2
+Started UTC: 2026-10-14T20:58:58.409287+00:00
+Exit: 0
+
+STDOUT
+# Discovery evaluation: current 3.0, config e2e3fe2870
+Stability, completeness and relative gaps are descriptive; no validated accuracy or truth probability.
+
+Issue #11 direct smoke: source metrics retained; incompatible/unknown cohorts unnormalized; closed usage unobserved; PR intersection 4/10=.4, unknown/empty cohort missing; dimensions unqualified.
+Feature cutoffs: 2026-10-06T17:22:49Z → 2026-10-08T02:00:49Z
+| tab | window | method | Spearman | pairs/top | overlap | coverage ≥ 0.5 |
+|---|---|---|---|---|---|---|
+| papers | 7d | 1.0 | 0.942 | 23/23 | 1.00 | 0.91 |
+| papers | 7d | 2.0 | 0.314 | 21/22 | 0.95 | 0.91 |
+| papers | 7d | 3.0 | 0.322 | 21/22 | 0.95 | 0.91 |
+| papers | 30d | 1.0 | 0.975 | 38/38 | 1.00 | 0.89 |
+| papers | 30d | 2.0 | 0.612 | 35/36 | 0.97 | 0.83 |
+| papers | 30d | 3.0 | 0.617 | 35/36 | 0.97 | 0.83 |
+| papers | overall | 1.0 | 0.960 | 60/60 | 1.00 | 0.60 |
+| papers | overall | 2.0 | 0.783 | 54/55 | 0.98 | 0.55 |
+| papers | overall | 3.0 | 0.783 | 54/55 | 0.98 | 0.55 |
+| repos | 7d | 1.0 | 0.510 | 27/29 | 0.93 | 0.00 |
+| repos | 7d | 2.0 | 0.859 | 27/29 | 0.93 | 0.00 |
+| repos | 7d | 3.0 | 0.833 | 27/29 | 0.93 | 0.00 |
+| repos | 30d | 1.0 | 0.574 | 48/49 | 0.98 | 0.24 |
+| repos | 30d | 2.0 | 0.927 | 48/49 | 0.98 | 0.24 |
+| repos | 30d | 3.0 | 0.949 | 48/49 | 0.98 | 0.24 |
+| repos | overall | 1.0 | 0.693 | 60/60 | 1.00 | 0.22 |
+| repos | overall | 2.0 | 0.931 | 60/60 | 1.00 | 0.22 |
+| repos | overall | 3.0 | 0.953 | 60/60 | 1.00 | 0.22 |
+Old feature merge ratios lack the created-and-merged intersection: current method excludes that signal; v2 preserves it.
+
+## Before/after: historical pooled Real → current discovery (not accuracy)
+| project | v2 score | v2 completeness | current score | coverage | proxy cohort | usage | families |
+|---|---|---|---|---|---|---|---|
+| ACE-Step | 45.2 | 0.20 | 44.0 | 0.29 | discussion | unobserved | — |
+| Action Model | 54.0 | 0.50 | 53.0 | 0.29 | discussion | observed | users |
+| Bolt.new | 46.8 | 0.20 | 47.0 | 0.29 | discussion | unobserved | — |
+| Claude Code | 72.0 | 0.50 | 60.5 | 0.29 | discussion | observed | download_operations |
+| DeepSeek Harness | 51.8 | 0.44 | 50.0 | 0.63 | gh_trust,paper,discussion | unobserved | — |
+| DeepSeek-V4.1-Flash | 70.0 | 0.50 | 63.5 | 0.29 | discussion | observed | download_operations |
+| DSPy | 52.4 | 0.20 | 51.5 | 0.29 | discussion | unobserved | — |
+| Gemini app | 59.6 | 0.20 | 62.0 | 0.29 | discussion | unobserved | — |
+| Google Genie 3 / Project Genie | 44.4 | 0.20 | 42.5 | 0.29 | discussion | unobserved | — |
+| Grok app | 50.0 | 0.20 | 50.0 | 0.29 | discussion | unobserved | — |
+| Higgsfield | 61.2 | 0.35 | 48.5 | 0.29 | discussion | observed | users |
+| Kling AI | 55.6 | 0.35 | 41.0 | 0.29 | discussion | observed | creators |
+| Laminar flow-1 | 42.0 | 0.20 | 39.5 | 0.29 | discussion | unobserved | — |
+| LeVJEPA | 35.6 | 0.40 | 42.9 | 0.57 | paper,discussion | unobserved | — |
+| Lovable | 57.2 | 0.20 | 59.0 | 0.29 | discussion | unobserved | — |
+| Mem0 | 42.4 | 0.24 | 50.0 | 0.34 | gh_trust,discussion | unobserved | — |
+| Nemotron 3.5 Lightning | 62.0 | 0.50 | 56.0 | 0.29 | discussion | observed | download_operations |
+| Olmo 3 / 3.1 | 47.2 | 0.70 | 57.1 | 0.57 | paper,discussion | observed | download_operations |
+| Physical Intelligence π0.7 | 32.4 | 0.40 | 28.6 | 0.57 | paper,discussion | unobserved | — |
+| Reflection Beam | 40.4 | 0.20 | 37.2 | 0.29 | discussion | unobserved | — |
+| Roo Code | 46.0 | 0.20 | 45.5 | 0.29 | discussion | unobserved | — |
+| Seedance | 55.6 | 0.20 | 57.5 | 0.29 | discussion | unobserved | — |
+| Sora | 45.8 | 0.35 | 37.2 | 0.29 | discussion | observed | download_operations |
+| V-JEPA 2 / 2.1 | 46.8 | 0.40 | 71.4 | 0.57 | paper,discussion | unobserved | — |
+| World Labs Marble | 54.0 | 0.20 | 54.5 | 0.29 | discussion | unobserved | — |
+
+## HYPE overall: 25 current, 25 historical v2, 25 historical v1
+Current descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 2, 'insufficient': 20, 'similar': 2}
+| project | attention | coverage | discovery | gap | label |
+|---|---|---|---|---|---|
+| Gemini app | 86.0 | 0.75 | 62.0 | 24.0 | insufficient |
+| DeepSeek-V4.1-Flash | 83.0 | 0.75 | 63.5 | 19.5 | insufficient |
+| Nemotron 3.5 Lightning | 80.0 | 0.75 | 56.0 | 24.0 | insufficient |
+| DeepSeek Harness | 77.0 | 0.75 | 50.0 | 27.0 | attention_ahead |
+| Seedance | 74.0 | 0.75 | 57.5 | 16.5 | insufficient |
+| shortlist | project | gap | label |
+|---|---|---|---|
+| 1 | Reflection Beam | -14.2 | insufficient |
+| 2 | DeepSeek Harness | 27.0 | attention_ahead |
+| 3 | Action Model | 12.0 | insufficient |
+| 4 | Higgsfield | 4.5 | insufficient |
+| 5 | Laminar flow-1 | 4.5 | insufficient |
+
+## HYPE 30d: 17 current, 17 historical v2, 17 historical v1
+Current descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 1, 'insufficient': 15}
+| project | attention | coverage | discovery | gap | label |
+|---|---|---|---|---|---|
+| Gemini app | 85.3 | 0.75 | 62.0 | 23.3 | insufficient |
+| Claude Code | 80.9 | 0.75 | 60.5 | 20.4 | insufficient |
+| DeepSeek-V4.1-Flash | 76.5 | 0.75 | 63.5 | 13.0 | insufficient |
+| Lovable | 72.1 | 0.75 | 59.0 | 13.1 | insufficient |
+| DeepSeek Harness | 67.6 | 0.75 | 50.0 | 17.6 | attention_ahead |
+| shortlist | project | gap | label |
+|---|---|---|---|
+| 1 | Reflection Beam | -4.8 | insufficient |
+| 2 | DeepSeek Harness | 17.6 | attention_ahead |
+| 3 | Action Model | -16.2 | insufficient |
+| 4 | Higgsfield | 5.9 | insufficient |
+| 5 | Laminar flow-1 | 6.1 | insufficient |
+
+## HYPE 7d: 15 current, 15 historical v2, 15 historical v1
+Current descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 1, 'insufficient': 13}
+| project | attention | coverage | discovery | gap | label |
+|---|---|---|---|---|---|
+| Claude Code | 85.0 | 0.75 | 60.5 | 24.5 | insufficient |
+| Gemini app | 80.0 | 0.75 | 62.0 | 18.0 | insufficient |
+| DeepSeek Harness | 75.0 | 0.75 | 50.0 | 25.0 | attention_ahead |
+| Grok app | 70.0 | 0.75 | 50.0 | 20.0 | insufficient |
+| Seedance | 65.0 | 0.75 | 57.5 | 7.5 | insufficient |
+| shortlist | project | gap | label |
+|---|---|---|---|
+| 1 | Reflection Beam | 7.8 | insufficient |
+| 2 | DeepSeek Harness | 25.0 | attention_ahead |
+| 3 | Action Model | 2.0 | insufficient |
+| 4 | Higgsfield | -21.0 | insufficient |
+| 5 | Laminar flow-1 | 20.5 | insufficient |
+
+HYPE temporal stability: unavailable (single dossier snapshot). Capability, business validation, verification and independence: unqualified.
+
+STDERR

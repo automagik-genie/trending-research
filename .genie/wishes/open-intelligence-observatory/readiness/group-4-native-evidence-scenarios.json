@@ -1,0 +1,175 @@
+{
+  "recorded_at": "2026-10-08T17:37:33.128388+00:00",
+  "status": "ADMITTED_REAL_NATIVE_EVIDENCE_SCENARIOS_NOT_ACCEPTANCE",
+  "issue": 5,
+  "group": 4,
+  "task": "task_1ee57daded7e",
+  "dispatch": "ctx_ed2a28fd3625",
+  "question_id": "msg_9fa3d1d7395b",
+  "current_wish_sha256": "1d0f9ee9a628b3c04439dfa5c9169314d9c6e79c46d4f6b9c8ed5188c4911163",
+  "exact_proposal": {
+    "issue": 5,
+    "group": 4,
+    "task": "task_1ee57daded7e",
+    "dispatch": "ctx_ed2a28fd3625",
+    "stage": "SECOND_NATIVE_AUTHORITY_SCHEMA_AND_EVIDENCE_CALL_FREEZE",
+    "prior_admission": "group-4-native-control-db-repair-3.json f7327d16dfbbfd789ff7524ae76cdccefd8454a38d0320dcbd96df42b3f70d04",
+    "repair_cap": 3,
+    "used": 3,
+    "configuration": "2 plus actual human exception; effort0 unchanged",
+    "actual_runtime": {
+      "container_id": "845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af",
+      "state_now": "STOPPED exited0 PID0 after attached Docker client lifecycle close",
+      "network": "none",
+      "binds": "exact4 native admitted, no volume/ports/hostconfig/providerkeys",
+      "native_binary_sha256": "631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78",
+      "native_brain_id": "brn_63n8pr",
+      "native_db_slug": "oi5-qualification",
+      "native_perbrain_database": "brain_oi5_qualification (derive from registeredslug; verify actual DB identity query beforegrant/write)",
+      "native_registry_owner": {
+        "type": "agent",
+        "id": "local"
+      },
+      "acting_lab_custodian": "issue-5-engineer; not rewritten nativeowner/humanidentity",
+      "native_manifest_sha256": "dbcccb51a05541b94eb361c1b910998f769921932c192a3b1b650a3621d7cc86",
+      "mcp_requested_protocol": "2026-07-28",
+      "mcp_actual_negotiated_protocol": "2025-11-25",
+      "mcp_server": {
+        "name": "brain",
+        "version": "0.0"
+      },
+      "live_tools_count": 86,
+      "live_tools_sha256": "387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b",
+      "ten_input_schemas": "all10 exactly equal historical shipped native-tools.json; protocol negotiatedolder documented not fabricatedrequested",
+      "receipt_sha256": "cd788c188f8b57f7fa63ff035d3ea89037f41babe26eea4d3b4ec0d759ff2dec",
+      "code_sha256": "bcd8d418f40d0e892a2cdd2daa0da1a6fa0769d536680fb1163b51cc128bed65"
+    },
+    "size": {
+      "frozen_permanent_paths": "same6; historical native-tools unchanged; no newschema/dependency/path",
+      "final_estimate_insertions": 1250,
+      "transient_observed_lines": "bootstrap native-receipts currently3926lines because all86 native schemaobjects serialized indented; must normalize serialization only (allfields preserved compact JSON, jq-readable) before finalartifact within2000lines. No nativeevidence dropped/hashes changed; current full schema digest binds actualtoolsresponse. Code262lines currently; plannedfinal~550, docdelta100/evidencedelta100/receipts compact<=250."
+    },
+    "authority_and_denial": {
+      "source_principal": "BRAIN_PRINCIPAL log-only; never authenticatedHTTPtenancy/RLS. Existing nativeowner agent:local in dedicated no-network lab; genuine OS1001/PG oi5_owner accepted labboundary perparent.",
+      "sql": "Native own cluster only: query actualpg_database owner/brain registry; CREATE ROLE oi5_denied LOGIN PASSWORD <fresh sandbox/denied-password> NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT; GRANT CONNECT ON DATABASE brain TO oi5_denied; GRANT USAGE ON SCHEMA public TO oi5_denied; GRANT SELECT ON brains TO oi5_denied incontrol only so native tool can resolve brn_63n8pr. REVOKE CONNECT ON DATABASE actualbrainDB FROM PUBLIC; GRANT CONNECT nativebrainDB TO oi5_owner. NativeMcp underdeniedrole cleanownDSN must genuinefail recordread and rememberwrite to approvedsamebrn. Also native facts/row IDs cannot resolve underforeign realnamespace unless separately mintedapproved; no fakebrn tests.",
+      "scope": "Only own labprincipals and productdatabase nativegrant tables, no newsemantic schema; actualdeny result/PGpermission error receipt, no self-authored principalclaims. All native IDs onlyrealresponse."
+    },
+    "no_spend": "Network-none hard egress; no modelcredential/profile/provider/tariff/paidcalladmitted. Actual native manifestembeddings.enabled=true/dims768 but no modelconfig/key exists; not claim disabledflag sufficient. Safe calls brain_remember extract=false extract_entities=false; memory_recall livevec_weight0 fts_weight1; knowledge_search with noembedding and model neverconfigured. Ifnative requiresprovider itBLOCKS, nevernetworkfallback. No native sync embeddings; use brain sync --no-embed --no-links for two ownedlab textdocuments only if requiredfor actualdocumentgraph; no autoschema/guided/derive/analyze. This bounded sync is existing supported CLI, explicitly freeze beforeuse.",
+    "licensed_fixture_mapping": {
+      "raw": "accepted #3 Q2283 r2550576892 CC0 original gzip E42b8f... verifiedoriginal SHA e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "decoded": "gzip.decompress yields exactUTF8 bytes SHA d066d891b6822dace32a99564186eaaeeb8530813aa9041828de2c640b86f6ea; no parse/reserialize/normalize. Span175540:177677 SHA fc51554505ea1720bf379d4a50cdad003ebd699a9bdb7acff52f792268009fd3. Originalsource remains JSON/gzip not called textplain; qualify explicit lossless extraction identity-decode-gzip-utf8-json-as-text/1 preserving everydecoded byte, and represent extraction text as v1 SourceRevision content_text/plain; mappingraworiginal->decodedtext->utf8_text selector shown in metadata. If this media qualification requires differentowner/schema stop, not relabeloriginal.",
+      "records": "Entity microsoft + reporter Wikidata; exact immutable SourceRevision/Span/Claim canonical sortedcompactUTF8json preserve original bytes, extractedtextdigest/domainIDs/acquisitionrawhash/precision9-year+11-day/qualifiers, reported unverified financial quantity; event/sourcepub unsupported timestamps remainnull; observed originalacquisition requestfinish; ingestion is actual runtimeutc reading. Canonicalcontent source kept nativeBrain memory only; raworiginal remainslicensedaccepted artifact, no competingstore.",
+      "lab": "tests/fixtures/evidence_contracts.json SHA48b85715 canonical entities/source_revisions/spans/claims/economic_relationships, explicitLAB=true for all money/contradictions/investors, never realfinancialfact. Appendcorrection claim:unresolved:2 distinctID/revision_of and source:a:2 distinct from immutableoriginal. Include repeatedtransaction:two investor-a no overwrite."
+    },
+    "evidence_calls": [
+      "All calls explicit brain_id=brn_63n8pr and live schema pinned. brain_remember per canonicalrecord scopeglobal veracityimported extractionfalse operation_key=oi5:<application-id> actor=issue-5-engineer reason=isolated qualification. Native resultIDs/revisions onlyactual response. Native get readback bytehash equality and metadata IDs; identicalreimport sameoperationkey mustidempotent; alteredbytes withsameoperationkey mustreject, so canonical bindingcannot silentlyoverwrite. Application-ID uniqueness beyond bindingkey remainsnativeintegrationextension unclaimed.",
+      "memory_recall actual relevant recordquery e.g P2139 and canonical claim id with vecweight0 ftsweight1 limit100; require desirednative row citation +trace and exact get->canonicalrecord->Span->SourceRevision fullbytes/hash/quotes. knowledge_search exact twoownedLAB documentmarkers afternative sync--noembed--nolinks; targetcitations/coverage mustactual not count/description.",
+      "brain_fact_assert conflictinglabclaims objectclaim:sustainable:1/claim:unsustainable:1 sameexplicitlabsubject/reported_claim predicate supersede:false; same transaction:one has_investor investor-a and investor-b supersede:false; transaction:two investor-a distinctsubject false. Preservecanonical EconomicRelationship full IDs/type/nullamount/party/provenance. brain_fact_query verify all exactobjects+metadata applicationID/spanbindings beforeandaftercorrection/disposableupdate/restart; countalonefails.",
+      "Append correction canonicalsource/span/claim undernewapplicationIDs, no brain_update originals. Separate native disposable LAB mutablememory using brain_update actualexpected_revision and operationkey; staleactualpriorrevision mustreject withconflict guard, native original canonicalrecords unchanged; brain_memory_history publishedlive schema mayinspect original/update revision snapshots (memory_id,brain_id,limit,offset) fordurablehistory ifneeded.",
+      "brain_graph_link actualnativeKGdocumentIDs from tworealnativeingestedLAB notes; graph query yields document-onlycitations, never typedEconomicRelationship/verifiedpayments; preserveoriginal canonicalentity financial semantics separately. Source docs graph no verifiedentitytransaction infer.",
+      "Temporal LAB dates onlyfromexisting2020 fixture, native date-onlyvalid_from/valid_until queries boundaryhalfopen; supersedefalse vs defaulttrue observed independentlyon disposablelabsubject; no inventedactualeconomicdates, native defaultsCURRENTDATE runtimeclock nevereventclock; RFC3339 fact as_of mustschema reject, no bitemporalvalid+knowncutoff API. Keep explicit sourceprecision9/11 and UTCnull.",
+      "CloseMCP and docker restart --time 20 exactowncontainer, actualpostmaster_start_time changes; reopenMCP sameactualID/schema, get originalSourceRevision/Span/Claim+canonicalhashes, quote selectors/concurrentreports/investors/repeatedtransactions/disposablerevisionhistory. Isolated realPGrestart not clientonly, immutablemappingreturns sameactualnativeIDs. Finally ownDocker stop --time20 + inspectedstopped, transfercustodyparent."
+    ],
+    "smoke_command": "python3 -B integrations/brain/qualification/native_qualification.py --smoke",
+    "expected": "After completeauthoring only, actualallnative scenarios strictassertionsorBLOCKED exitnonzero, preserve reached directreceipts and no paidcalls/healthsubstitute; no newpermanenttest source/wiringecho. Existing focused domain suite afterward ifacceptedparent wants; parentaggregateafterallauthorsfreeze.",
+    "unavailable_disposition": "Stop nextfailure cap3/3 (no third/fourthrepair) and preserve actualscenario receipts; neverclaimfulloriginalcriteria frombootstrap. Independentoriginalacceptance+separatequality mandatory later."
+  },
+  "coordinator_verified": {
+    "input_artifacts": [
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+        "sha256": "1d0f9ee9a628b3c04439dfa5c9169314d9c6e79c46d4f6b9c8ed5188c4911163"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/github-roadmap.json",
+        "sha256": "7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/runtime-authority-intake.json",
+        "sha256": "d2bb22df040af85e86afff37331b6c0b3298983b1d2f08522bbc688afc569c6f"
+      },
+      {
+        "path": "docs/contracts/evidence.md",
+        "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+      },
+      {
+        "path": "schemas/evidence.schema.json",
+        "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+      },
+      {
+        "path": "tests/fixtures/evidence_contracts.json",
+        "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-design-review.txt",
+        "sha256": "6f57cbd42b364ed589cf7e0d714908f74a1a04a77a9db717c40e171bdec37297"
+      },
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/verification/group-1-quality-review.txt",
+        "sha256": "2e45279ce5a696c4d79dd269ac06ce862399453f4c86bbff39ec1c2594ae190a"
+      },
+      {
+        "path": "investigations/frontier-economics/sources.json",
+        "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41"
+      },
+      {
+        "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+        "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7"
+      },
+      {
+        "path": "docs/integrations/brain.md",
+        "sha256": "33d2cd946532a88fca305b64e184100cb9a7a2641aafb7b1860727d76e612448"
+      },
+      {
+        "path": "integrations/brain/qualification/evidence.json",
+        "sha256": "79c045ad0221dc5fec7856d6368906a13b593441209230736a00408085a09917"
+      },
+      {
+        "path": "integrations/brain/qualification/native-tools.json",
+        "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3"
+      }
+    ],
+    "pre_evidence_receipt_raw_sha256": "cd788c188f8b57f7fa63ff035d3ea89037f41babe26eea4d3b4ec0d759ff2dec",
+    "native_qualifier_raw_sha256": "bcd8d418f40d0e892a2cdd2daa0da1a6fa0769d536680fb1163b51cc128bed65",
+    "native_manifest_raw_file_sha256": "2e7d3aca21c7224d906835100531adb34ff86faf602f82ad3e86094269f3f7af",
+    "native_manifest_canonical_sha256": "dbcccb51a05541b94eb361c1b910998f769921932c192a3b1b650a3621d7cc86",
+    "native_manifest_encoding": "json.dumps(object,sort_keys=True,separators=(comma,colon)) UTF8; actual file bytes distinct, same exact object",
+    "live_tools_sha256": "387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b",
+    "live_tools_digest_encoding": [
+      {
+        "value": "response",
+        "sort_keys": true,
+        "compact": true,
+        "ensure_ascii": false
+      }
+    ],
+    "live_tools_count": 86,
+    "ten_historical_input_schemas_exact_match": true,
+    "additional_live_history_tool": "brain_memory_history actual live descriptor read; brain_id/memory_id/limit/offset only",
+    "native_registry_owner": {
+      "type": "agent",
+      "id": "local"
+    },
+    "runtime_actor_not_owner_substitution": "issue-5-engineer actual isolatedlabcustodian",
+    "actual_brain_id": "brn_63n8pr",
+    "parent_container_inspect": "docker inspect exact845fa540 exit0; actualSTOPPED/exited0 PID0 UID1001:1001/networknone/readonlyroot/nopublishedports/exactfourbinds, twoinputreadonly/twoownstatewritable; artifact://344",
+    "exact_raw_to_utf8_span_hashes_verified": true,
+    "pre_evidence_called": false,
+    "pre_paid_calls": 0
+  },
+  "scope_conditions": [
+    "Only dedicated existing exactcontainer/ownregisteredbrn and native perbrain DB discovered/verified actual owner before grants; no otherDB/namespace/fallback.",
+    "Own testPGdenied role/grants explicitly authorized productlabtestprincipal, not upstreamHTTPtenant/RLS claim. Real native read/write denial required, no invented BRAIN_PRINCIPAL enforcement.",
+    "Keep original SourceRevision/Span/Claim immutable fullcanonical bytes and exact lossless text extraction+originalJSON/gzip distinction. LAB investors/conflicts/repeatedtransaction/date examples never actualfinance.",
+    "Only native calls exactly stated with explicit real brain_id/liveinputschema, no model/guided/extraction/derivedautoschema/network/paid fallback. Actual provider refusal BLOCKS.",
+    "Own native brain sync --no-embed --no-links only two exactownedLAB docs; verify pinned installed help supports exactflags before firstcall; no otherjob/intake/scheduler/model/tool.",
+    "One real owned Postgres restart to exercise persistence plus finalstop custody; normal scenario not newrepair. Deliberateexpectednegativeguards distinguish from unexpectedfailure, cap3/3 stop nextunexpectedfailure.",
+    "Normalize only authored receipt JSON representation if needed, preserve allfields/actual native schema/callobject canonical digests, record before/after rawfile hash; no data elision tofitcap.",
+    "Same sixpermanentpaths/1250estimate, no extra source/dependency/schema. All original criteria independentacceptance+separatequality/currentparentaggregate required, no nativebootstrapaspass."
+  ],
+  "paid_calls_admitted": false,
+  "repair_cap": 3,
+  "repairs_used": 3,
+  "effort_escalations": 0,
+  "source": "config2+explicitactualhuman single-attemptexception, no reset"
+}

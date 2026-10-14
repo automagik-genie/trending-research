@@ -1,0 +1,99 @@
+{
+  "recorded_at": "2026-10-09T18:27:10.179254+00:00",
+  "UI_probe_only_correction": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"dcf1dd19-d4d8-4319-83e0-204b9e20ad0a\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_95483a8d418b\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_a45e75e8c6bc\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Accept verifier correction ONLY, no source change or extra repair. Preserve failed top<50 assumption and actual browser bottom-clamped full-visible rectangle as probe-scaffold failure, not code defect. Delete incidental top<50 check; verify consumer-visible destination intersects viewport, correct unknown-economics target/content/Scene identity, focus remains reachable and actual scroll is appropriately clamped when at max. Full containment where target fits viewport; tall narrow target may partially intersect with normal native scrolling available. Resume only failed gap step then remaining previously unexercised narrow/nativeTab/source/sixcapture/load/privacy protocols; do not repeat already-passing widequestion/step tests merely to confirm. Source2/2 quality1/1 unchanged, no source edit/reset. Keep exclusive ownedtablease untilcomplete thenclose/release, freeze exactsource/proofhashes forfreshindependentreview; any realfailedconsumercriterion remainsblocker notrelaxed.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_5cda46326276\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T18:27:09Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_5cda46326276\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_a45e75e8c6bc\",\n      \"asker_handle\": \"term_5505d7b6-282e-4f75-8f78-ddc3c6fd1369\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_95483a8d418b\",\n      \"answer_body\": \"Accept verifier correction ONLY, no source change or extra repair. Preserve failed top<50 assumption and actual browser bottom-clamped full-visible rectangle as probe-scaffold failure, not code defect. Delete incidental top<50 check; verify consumer-visible destination intersects viewport, correct unknown-economics target/content/Scene identity, focus remains reachable and actual scroll is appropriately clamped when at max. Full containment where target fits viewport; tall narrow target may partially intersect with normal native scrolling available. Resume only failed gap step then remaining previously unexercised narrow/nativeTab/source/sixcapture/load/privacy protocols; do not repeat already-passing widequestion/step tests merely to confirm. Source2/2 quality1/1 unchanged, no source edit/reset. Keep exclusive ownedtablease untilcomplete thenclose/release, freeze exactsource/proofhashes forfreshindependentreview; any realfailedconsumercriterion remainsblocker notrelaxed.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T18:16:49Z\",\n      \"answered_at\": \"2026-10-09T18:27:09Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"1b5f1089-7f3c-4b20-962e-1d6abe368a51\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "dcf1dd19-d4d8-4319-83e0-204b9e20ad0a",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_95483a8d418b",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_a45e75e8c6bc",
+          "subject": "Re: Question",
+          "body": "Accept verifier correction ONLY, no source change or extra repair. Preserve failed top<50 assumption and actual browser bottom-clamped full-visible rectangle as probe-scaffold failure, not code defect. Delete incidental top<50 check; verify consumer-visible destination intersects viewport, correct unknown-economics target/content/Scene identity, focus remains reachable and actual scroll is appropriately clamped when at max. Full containment where target fits viewport; tall narrow target may partially intersect with normal native scrolling available. Resume only failed gap step then remaining previously unexercised narrow/nativeTab/source/sixcapture/load/privacy protocols; do not repeat already-passing widequestion/step tests merely to confirm. Source2/2 quality1/1 unchanged, no source edit/reset. Keep exclusive ownedtablease untilcomplete thenclose/release, freeze exactsource/proofhashes forfreshindependentreview; any realfailedconsumercriterion remainsblocker notrelaxed.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_5cda46326276",
+          "payload": null,
+          "created_at": "2026-10-09T18:27:09Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_5cda46326276",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_a45e75e8c6bc",
+          "asker_handle": "term_5505d7b6-282e-4f75-8f78-ddc3c6fd1369",
+          "status": "answered",
+          "answer_message_id": "msg_95483a8d418b",
+          "answer_body": "Accept verifier correction ONLY, no source change or extra repair. Preserve failed top<50 assumption and actual browser bottom-clamped full-visible rectangle as probe-scaffold failure, not code defect. Delete incidental top<50 check; verify consumer-visible destination intersects viewport, correct unknown-economics target/content/Scene identity, focus remains reachable and actual scroll is appropriately clamped when at max. Full containment where target fits viewport; tall narrow target may partially intersect with normal native scrolling available. Resume only failed gap step then remaining previously unexercised narrow/nativeTab/source/sixcapture/load/privacy protocols; do not repeat already-passing widequestion/step tests merely to confirm. Source2/2 quality1/1 unchanged, no source edit/reset. Keep exclusive ownedtablease untilcomplete thenclose/release, freeze exactsource/proofhashes forfreshindependentreview; any realfailedconsumercriterion remainsblocker notrelaxed.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T18:16:49Z",
+          "answered_at": "2026-10-09T18:27:09Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "1b5f1089-7f3c-4b20-962e-1d6abe368a51",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "DSH_once_diagnostic": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"8aa1fa20-713a-4c71-a7e8-42bfa695a3d0\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_18e44d61d646\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_a979a9a2c022\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"ACCEPT sixpathcustody supplement andONEdiagnostic explicitgate.genie/wishes/open-intelligence-observatory/readiness/group-3-native-zero-model-diagnostic-1.json SHA0636caa297c6309b0fb49227ed9f16bbf446d49f5fc0ed73b3bcaadc0bfc2ea7. Original2398code/policy/probe pins unchanged, allinputhashes matched/currentWish3b2f; historical65fe base preserved/currentHEAD1f4 sourcequalification frozen. Sixfiles952estimate hard25/2000. Samecard new checkout-to-handoffspan issue-4-engineer AFTERthisadmission, no force/reclaimotherclaim. Worker appendONLY2anchoredignore lines preservingexisting14; verifyA/Bignored BEFOREprivategeneratedstate. Stageexact3qualfiles matchedrawplan, ownfreshA/refuseforeignstate,CID/labels laboldc6 actualcurrenttask/ctxa979, cleanENV/networknone7binds/nonroot/readonly/resources/pins asfrozen; executeONE120s boundedexactcommand external240s; zeroModel/keys/paid/provider/privateoperatoraccess. Nativeexpectedcode1globalUNAVAILABLE not bootstrap success; anypriorrealerror retainedclassifiedprimary/nonzero, cleanupsecondary withstrictownedCIDinspections, no repair3/unchangedrerun. Preserveprivatecustody0700/0600 no token/cookie/key/lograwheaders. DO NOTeditdsh/cordis docs untilparentexplicitrelease afterissue7writerfreeze; signalactualexecutionreceipt andcustodycheckpoint thenwait. No cardfinalreport/permanentretention/forge/carddone beforelaterparentproof/reviewdisposition, parentownsaggregateafterwritersfreeze. Code/fullS1-S4/originalC1cited/C2stop/reconnect/C3tenants remainunaccepted; thisdiagnosticnarrowclaim doesNOTshrinkoriginalroadmapscope.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_59bf0de8ee7c\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T18:27:10Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_59bf0de8ee7c\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_a979a9a2c022\",\n      \"asker_handle\": \"term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_18e44d61d646\",\n      \"answer_body\": \"ACCEPT sixpathcustody supplement andONEdiagnostic explicitgate.genie/wishes/open-intelligence-observatory/readiness/group-3-native-zero-model-diagnostic-1.json SHA0636caa297c6309b0fb49227ed9f16bbf446d49f5fc0ed73b3bcaadc0bfc2ea7. Original2398code/policy/probe pins unchanged, allinputhashes matched/currentWish3b2f; historical65fe base preserved/currentHEAD1f4 sourcequalification frozen. Sixfiles952estimate hard25/2000. Samecard new checkout-to-handoffspan issue-4-engineer AFTERthisadmission, no force/reclaimotherclaim. Worker appendONLY2anchoredignore lines preservingexisting14; verifyA/Bignored BEFOREprivategeneratedstate. Stageexact3qualfiles matchedrawplan, ownfreshA/refuseforeignstate,CID/labels laboldc6 actualcurrenttask/ctxa979, cleanENV/networknone7binds/nonroot/readonly/resources/pins asfrozen; executeONE120s boundedexactcommand external240s; zeroModel/keys/paid/provider/privateoperatoraccess. Nativeexpectedcode1globalUNAVAILABLE not bootstrap success; anypriorrealerror retainedclassifiedprimary/nonzero, cleanupsecondary withstrictownedCIDinspections, no repair3/unchangedrerun. Preserveprivatecustody0700/0600 no token/cookie/key/lograwheaders. DO NOTeditdsh/cordis docs untilparentexplicitrelease afterissue7writerfreeze; signalactualexecutionreceipt andcustodycheckpoint thenwait. No cardfinalreport/permanentretention/forge/carddone beforelaterparentproof/reviewdisposition, parentownsaggregateafterwritersfreeze. Code/fullS1-S4/originalC1cited/C2stop/reconnect/C3tenants remainunaccepted; thisdiagnosticnarrowclaim doesNOTshrinkoriginalroadmapscope.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T18:24:10Z\",\n      \"answered_at\": \"2026-10-09T18:27:10Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"176f64fd-e185-485f-b8c0-88315f3339ec\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "8aa1fa20-713a-4c71-a7e8-42bfa695a3d0",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_18e44d61d646",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_a979a9a2c022",
+          "subject": "Re: Question",
+          "body": "ACCEPT sixpathcustody supplement andONEdiagnostic explicitgate.genie/wishes/open-intelligence-observatory/readiness/group-3-native-zero-model-diagnostic-1.json SHA0636caa297c6309b0fb49227ed9f16bbf446d49f5fc0ed73b3bcaadc0bfc2ea7. Original2398code/policy/probe pins unchanged, allinputhashes matched/currentWish3b2f; historical65fe base preserved/currentHEAD1f4 sourcequalification frozen. Sixfiles952estimate hard25/2000. Samecard new checkout-to-handoffspan issue-4-engineer AFTERthisadmission, no force/reclaimotherclaim. Worker appendONLY2anchoredignore lines preservingexisting14; verifyA/Bignored BEFOREprivategeneratedstate. Stageexact3qualfiles matchedrawplan, ownfreshA/refuseforeignstate,CID/labels laboldc6 actualcurrenttask/ctxa979, cleanENV/networknone7binds/nonroot/readonly/resources/pins asfrozen; executeONE120s boundedexactcommand external240s; zeroModel/keys/paid/provider/privateoperatoraccess. Nativeexpectedcode1globalUNAVAILABLE not bootstrap success; anypriorrealerror retainedclassifiedprimary/nonzero, cleanupsecondary withstrictownedCIDinspections, no repair3/unchangedrerun. Preserveprivatecustody0700/0600 no token/cookie/key/lograwheaders. DO NOTeditdsh/cordis docs untilparentexplicitrelease afterissue7writerfreeze; signalactualexecutionreceipt andcustodycheckpoint thenwait. No cardfinalreport/permanentretention/forge/carddone beforelaterparentproof/reviewdisposition, parentownsaggregateafterwritersfreeze. Code/fullS1-S4/originalC1cited/C2stop/reconnect/C3tenants remainunaccepted; thisdiagnosticnarrowclaim doesNOTshrinkoriginalroadmapscope.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_59bf0de8ee7c",
+          "payload": null,
+          "created_at": "2026-10-09T18:27:10Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_59bf0de8ee7c",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_a979a9a2c022",
+          "asker_handle": "term_98c97b22-39e5-4bbe-92ec-3c8710dc1fcd",
+          "status": "answered",
+          "answer_message_id": "msg_18e44d61d646",
+          "answer_body": "ACCEPT sixpathcustody supplement andONEdiagnostic explicitgate.genie/wishes/open-intelligence-observatory/readiness/group-3-native-zero-model-diagnostic-1.json SHA0636caa297c6309b0fb49227ed9f16bbf446d49f5fc0ed73b3bcaadc0bfc2ea7. Original2398code/policy/probe pins unchanged, allinputhashes matched/currentWish3b2f; historical65fe base preserved/currentHEAD1f4 sourcequalification frozen. Sixfiles952estimate hard25/2000. Samecard new checkout-to-handoffspan issue-4-engineer AFTERthisadmission, no force/reclaimotherclaim. Worker appendONLY2anchoredignore lines preservingexisting14; verifyA/Bignored BEFOREprivategeneratedstate. Stageexact3qualfiles matchedrawplan, ownfreshA/refuseforeignstate,CID/labels laboldc6 actualcurrenttask/ctxa979, cleanENV/networknone7binds/nonroot/readonly/resources/pins asfrozen; executeONE120s boundedexactcommand external240s; zeroModel/keys/paid/provider/privateoperatoraccess. Nativeexpectedcode1globalUNAVAILABLE not bootstrap success; anypriorrealerror retainedclassifiedprimary/nonzero, cleanupsecondary withstrictownedCIDinspections, no repair3/unchangedrerun. Preserveprivatecustody0700/0600 no token/cookie/key/lograwheaders. DO NOTeditdsh/cordis docs untilparentexplicitrelease afterissue7writerfreeze; signalactualexecutionreceipt andcustodycheckpoint thenwait. No cardfinalreport/permanentretention/forge/carddone beforelaterparentproof/reviewdisposition, parentownsaggregateafterwritersfreeze. Code/fullS1-S4/originalC1cited/C2stop/reconnect/C3tenants remainunaccepted; thisdiagnosticnarrowclaim doesNOTshrinkoriginalroadmapscope.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T18:24:10Z",
+          "answered_at": "2026-10-09T18:27:10Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "176f64fd-e185-485f-b8c0-88315f3339ec",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "DSH_card_dispatch_comment_stored_exact": true,
+  "dsh_gate_sha256": "0636caa297c6309b0fb49227ed9f16bbf446d49f5fc0ed73b3bcaadc0bfc2ea7"
+}

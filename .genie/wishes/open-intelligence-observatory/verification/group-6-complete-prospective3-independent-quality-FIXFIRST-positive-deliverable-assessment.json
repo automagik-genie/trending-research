@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-09T22:03:55.969497+00:00",
+  "native_worker_done": "msg_e942a6c56f0c",
+  "task": "task_7bf858467e33",
+  "dispatch": "ctx_2e039e329794",
+  "verdict": "ACCEPT_COMPLETE_INDEPENDENT_REVIEW_DELIVERABLE_FIXFIRST_NOT_SOURCE_SHIP",
+  "full_report": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt",
+    "sha256": "3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5"
+  },
+  "full219LF_actualread": true,
+  "proposal": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+    "sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e"
+  },
+  "blind_method_ack_beforeaccess_and_C7amendment_binding": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json",
+    "sha256": "c6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f"
+  },
+  "six_CONFIRMED_HIGH": [
+    "Q1 blacklist native free-text/plainprompt/pass/auth/code and fatal exception escape",
+    "Q2 presentcode bypasses incompletecausal capture abort",
+    "Q3 send/decode/EOF/timeout andhandshake lose completehashonlyattempt/fullframe identity",
+    "Q4 constructor cleanup masksprimarydiagnostic; cleanup/timeoutbeforewitness publication can losecapture",
+    "Q5 hardtimerstderrwrite mayblockorraise beforeexit",
+    "Q6 unboundednative memoryid/revision size/output"
+  ],
+  "MEDIUM": [
+    "M1 inheritedDockerinspectstderr unfiltered",
+    "M2 group-leaderexit notdescendantcleanupwitness/crashtransient externalcustody"
+  ],
+  "static_trigger_vectors_NOT_EXECUTED": true,
+  "initial_H2_H3_H4_concrete_controls_present_H1_timer_added_but_Q5_remaining": true,
+  "code_or_runtime_permission": false,
+  "original7_accepted": false,
+  "source_B2used0": true,
+  "parent_fullC1C8_report_stillpending_no_premature_repair": true,
+  "whole20_complete": false,
+  "all_costsUNKNOWN": true
+}

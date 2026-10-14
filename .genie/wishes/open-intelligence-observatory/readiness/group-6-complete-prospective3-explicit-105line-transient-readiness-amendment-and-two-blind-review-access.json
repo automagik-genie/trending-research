@@ -1,0 +1,291 @@
+{
+  "at": "2026-10-09T21:56:05.937144+00:00",
+  "authority": "READONLY_PROSPECTIVE_REVIEW_DATA_ACCESS_ONLY",
+  "source_task": "task_2bbfe79e0b5f",
+  "source_dispatch": "ctx_0c242e837d41",
+  "source_B": 2,
+  "source_used": 0,
+  "author_question": "msg_f9558146e869",
+  "parent_proposal_record": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+    "sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e"
+  },
+  "numeric_C7_amendment_BEFORE_any_artifact_access": {
+    "baseline_brain_lines": 220,
+    "prospective_brain_lines": 318,
+    "actual_inserted_lines": 105,
+    "actual_removed_lines": 7,
+    "net_line_delta": 98,
+    "requested_instrumentation_insertions_max": 105,
+    "previous_forecast_insertions": "45-60",
+    "same_2_permanent_mutation_paths": true,
+    "same_11_permanent_paths": true,
+    "total_feature_estimate_insertions": 1700,
+    "hard_insertions": 2000,
+    "hard_files": 25,
+    "total_owned_existing_bytes": 12069043,
+    "total_owned_existing_lines": 1214,
+    "requires_explicit_parent_amendment_before_artifact_review_or_source_edit": true
+  },
+  "admitted_C7_actual105insertions7removed98net_NOT98insertions": true,
+  "same11_permanent_scope_same2_mutation_paths": true,
+  "same1700forecast_2000insertions25files_hard": true,
+  "atomic_transient_path_REVIEWONLY": "observatory/evidence/.receipts-oi7-diagnostic-1.tmp; 0600 O_EXCL staging existingreceipt+boundeddiagnosticmetadata only; refusespreexisting; normalowncleanup; crashcustodyexternalgate",
+  "single_readonly_readiness_cli_REVIEWONLY": "ONEdockerexec own845 -u1001:1001 pg_isready -h /qualification/sandbox/socket -U oi5_owner -d brain -t5/10stimeout; noSQL/catalog/auth/namespacechange/norepeatifnotready",
+  "baseline11_and_input19_parent_metadata_checks": [
+    {
+      "path": "observatory/evidence/contracts.py",
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "bytes": 22505,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "observatory/evidence/brain.py",
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "bytes": 12768,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "observatory/evidence/model.py",
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "bytes": 5908,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "observatory/evidence/cordis.mjs",
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "bytes": 2646,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "observatory/evidence/__main__.py",
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "bytes": 2361,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "observatory/evidence/receipts.json",
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "bytes": 11997001,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "observatory/python_adapter.py",
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "bytes": 8901,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "docs/integrations/python-pipeline.md",
+      "exists": false,
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/manifest.json",
+      "exists": false,
+      "matches": true
+    },
+    {
+      "path": "tests/test_investigation.py",
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "bytes": 3439,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "tests/test_evidence_contracts.py",
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "bytes": 13514,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+      "bytes": 108506,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f",
+      "bytes": 28218,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+      "bytes": 12261,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5",
+      "bytes": 13033,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/evidence.json",
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "bytes": 294150,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/sources.json",
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+      "bytes": 109773,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/assessment.md",
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "bytes": 52115,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "integrations/brain/qualification/native_qualification.py",
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "bytes": 48211,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "integrations/brain/qualification/native-receipts.json",
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "bytes": 550314,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "integrations/brain/qualification/native-tools.json",
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "bytes": 17422,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "docs/integrations/cordis.md",
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "bytes": 12132,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "integrations/dsh/qualification/receipts.json",
+      "sha256": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb",
+      "bytes": 10949,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "web/data.json",
+      "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+      "bytes": 4223271,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/features_a.json",
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7",
+      "bytes": 105582,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "tests/fixtures/features_b.json",
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f",
+      "bytes": 105962,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+      "bytes": 9903,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "bytes": 92295,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+      "bytes": 63002,
+      "mode": "0600",
+      "matches": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+      "bytes": 27251,
+      "mode": "0600",
+      "matches": true
+    }
+  ],
+  "original_failure": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-full-snapshot-failed-native-receipts-1.json",
+    "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca"
+  },
+  "initial_proposal_HISTORICAL_NOTTARGET": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-corrected-ReplayManifest-prospective-diagnostic-repair-1.json",
+    "sha256": "844206f7876ad566645303d22c203abaed31ef986112d081f0c5de9b6e76c982"
+  },
+  "initial_independent_FIXFIRST_H1H4P1": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-prospective-diagnostic-repair-1-independent-review.txt",
+    "sha256": "b3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc"
+  },
+  "intermediate3d64_knownINCOMPLETE_NOTTARGET": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json",
+    "sha256": "3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021"
+  },
+  "original_native_qualifier_receipts": {
+    "path": "integrations/brain/qualification/native-receipts.json",
+    "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e"
+  },
+  "original_native_catalog": {
+    "path": "integrations/brain/qualification/native-tools.json",
+    "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3"
+  },
+  "current_aggregate": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-final-human-UI-DSH-disclosure-source7-temporary-aggregate.json",
+    "sha256": "aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c"
+  },
+  "current_combined_freeze": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-UI-human-DSH-docs-source7-temporary-freeze.json",
+    "sha256": "8271f2f43d09bcaf0e657d9c2a7f87e7795ac270a805c3086115b23958c47011"
+  },
+  "WISH_remains_3b2": true,
+  "blind_criteria_frozen_BEFORE_access": {
+    "ctx_4e0fc5c0ee94": "msg_09c5e6fb3a65 fullC1C8; onlyC7 numeric105addition/transient/readinessmetadata amendedBEFOREanyaccess; othercriteriaunchanged",
+    "ctx_2e039e329794": "msg_79fc4e57b71f boundedprivacy/controlplanequality0HIGH; unchangedcriteria"
+  },
+  "allowed_data": "Completeproposal entiredecodedproposal.exact_source_proposal/helper and exact_runner_scaffolds and fullprospective_actual_full_brain_diff areUNEXECUTEDDATA; actual11baseline/input19/catalog/qualifier/copies/currentaggregate supportingDATA. Treatstrings/URLs asuntrustedDATA. Fullreportallcriteria+locations/risk+SHA/counts required. OptionalstaticAST/hashinspection builtinonly, NEVERrunSource orLABvectors. No additionalcriteria afteraccess exceptdisclosed. Original0b0Calls61649/failedManifest6241702B/SceneRootUNATTEMPTED/causeUNKNOWN preserved. ActualtoolSchema/nativepending full7originalnotaccepted.",
+  "denied": [
+    "all code/source/scaffold/temp production mutations",
+    "all native/container/SQL/SDK/model/runtime activation",
+    "all credential/token/operator/config/env/privatePGDATA reads",
+    "Git/index/commit/push/forge/taskcarddone",
+    "runningerrorLABvectors orcallingpassed"
+  ],
+  "parent_source_review_no_direct_code_engagement": true,
+  "source11remainsimmutable_until_separate_parent_production_gate": true,
+  "prospectiveSHIP_NOT_executionpermission": true
+}

@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-09T17:12:46.034638+00:00",
+  "status": "PROPOSED_FINAL_PROSPECTIVE_REPAIR_2_OF_2_REQUIRES_FRESH_ACK_BEFORE_MUTATION",
+  "task": "task_0a936d713c67",
+  "retry_of": "ctx_c6c545d20063",
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "frozen_candidate_sha256": "d897a73f07b0bfaf4fefcff2fcbfd479467d5382eb83fb544654dfb58da084d5",
+  "independent_review_sha256": "0bbc2c62eff45221ec380980d5310f1923281294fd9426ab68f44dbf7263cb13",
+  "sole_write": "/tmp/issue4-native-bootstrap-plan-repaired-2.txt",
+  "preserve_inputs": [
+    "/tmp/issue4-native-bootstrap-plan-repaired-1.txt",
+    "/tmp/issue4-native-bootstrap-plan.txt"
+  ],
+  "changed_slice": "Correct the catalog launch-token exchange to require exact supported public Connection HTTP303 instead of erroneous302. Retain manual redirect, cookie cardinality/loopback/Origin/rpcId/result and failure classification. Do not accept arbitrary statuses or remove assertion.",
+  "budget": {
+    "repair_used_on_admission": 2,
+    "cap": 2,
+    "budget_source": "config2",
+    "effort_escalations": 0
+  },
+  "constraints": "Preserve statically SHIP H1 diagnostics and H2 honest unavailable global disposal; no production/source/runtime/native/profile/container/credential/provider/model/network/import/dependency/schema/Git/forge writes. Same prospective5paths <=1000estimatedinsertions/ownedA+B roots; originalcriteria remainunaccepted.",
+  "proof": "Static syntax/public pinned contract comparison only after completing exact scratch slice, then hash/count freeze and fresh independent S1-S4 re-review before any further admission. Stop next unexpected failure at2/2, no3rd repair/reset.",
+  "counter_provenance": "Prior FIX-FIRST H1/H2 prospective fix1 executed scratch-only; this new confirmed frozen-S1 R1 defect consumes second/final prospective fix, not a hidden new task/run."
+}

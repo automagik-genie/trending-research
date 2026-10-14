@@ -1,0 +1,68 @@
+{
+  "group": 5,
+  "issue": 6,
+  "status": "ORIGINAL_ACCEPTANCE_AND_SEPARATE_QUALITY_SHIP_LOCAL",
+  "commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+  "comparison_baseline": "3db0d3690973e2c5077fc0788a8ce150435871ea",
+  "paths": {
+    "investigations/frontier-economics/evidence.json": {
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "mode": "0600",
+      "bytes": 294150,
+      "lines": 200
+    },
+    "investigations/frontier-economics/assessment.md": {
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "mode": "0600",
+      "bytes": 52115,
+      "lines": 544
+    }
+  },
+  "manifest_sha256": "c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783",
+  "author": "ctx_76f21ad589b3",
+  "independent_acceptance": {
+    "dispatch": "ctx_c73d9cdb99fe",
+    "verdict": "SHIP",
+    "original_criteria": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "full_original_scope": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "public_report": "group-5-original-acceptance-review.txt",
+    "raw_sha256": "5de48095877e792ddf348f5656d63fe4144db6209144724af70f32ba89c5f903",
+    "public_sha256": "39b8b666d6d8920124a2ad8d71adeebbd00da4310c03a46ceeff735add79ea91",
+    "normalization": "Absolute worktree/home prefixes only, whole core report/appendices findings/criteria/evidence/verdict unchanged.",
+    "fresh": "Actual complete consumer38statements/39denials plus independent allfinancialrows/prose/metadata/eight new semantic controls exit0",
+    "reused": "Exact current parent43test/fullfixtureevaluator gate with attribution"
+  },
+  "separate_quality": {
+    "task": "task_7e28a8a627b0",
+    "dispatch": "ctx_70f07d06bb43",
+    "verdict": "SHIP",
+    "original_criteria": ["PASS", "PASS", "PASS", "PASS"],
+    "full_original_scope": ["PASS", "PASS", "PASS", "PASS"],
+    "public_report": "group-5-original-quality-review.txt",
+    "raw_sha256": "6ff8a2126ec832544f6ba8f7e0b3f1783417cfee3eb22c37702c462ac39bce8d",
+    "public_sha256": "6ff8a2126ec832544f6ba8f7e0b3f1783417cfee3eb22c37702c462ac39bce8d",
+    "normalization": "Absolute worktree/home prefixes only; no such prefixes present, so complete report bytes unchanged.",
+    "pre_access_pin_and_criteria_ack": "msg_73d442e58a13",
+    "fresh": "Actual complete consumer38statements/39denials plus seven substantive independent security/semantic denials exit0",
+    "reused": "Exact attributed current parent43test/full evaluator gate; no mid-flight suite",
+    "confirmed_high_or_critical_findings": [],
+    "quality_repairs_used": 0,
+    "parent_post_quality_smoke": "local://original6-post-quality-parent-smoke.json; exact source-chain consumer exit0, all38statements/39intentionaldenials",
+    "independent_of": ["ctx_76f21ad589b3", "ctx_c73d9cdb99fe"]
+  },
+  "repair_used": 0,
+  "B": 2,
+  "source": "config2",
+  "effort_escalations": 0,
+  "limits": "Actual bounded draft pack only, not private financial truth/nativeBrain/DSH/Felipe/editorial publication/production replay/CI/recurring/deploy. User separately approved fresh isolated native validation plus shared USD20 cap, no runtime waiver. Both original6 gates now SHIP at exact two-path manifest; original8 native task is ready. GitHub closure, whole-roadmap completion and deployment remain unclaimed."
+}

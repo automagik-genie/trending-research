@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-10-09T19:30:48.082160+00:00",
+  "task": "task_2bbfe79e0b5f",
+  "dispatch": "ctx_0c242e837d41",
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "existing_runtime_scope": "845fa540/brn63 own-only onealreadyusedPGrestart plus finalstop, samegatebf1f/currentwiden/canonicalroot",
+  "order_only": "Integration custody ordering, no extra restart/write/model/repair authority: if your admitted owned845fa540/brn63 runtime is STILL running, after full actualrealpack+ALL1955 snapshot smoke and source hashfreeze keep it up at a safe checkpoint for coordinator READONLY actual consumer CLI verification BEFORE your already-required final stop/inspect. Supply exact product CLI commands/required file-only ownsecret custody and actual manifest bindings for source001 inspect + fullsnapshot query; never secretvalue/DSN. Parent will use only minimal existing own-role credential in clean child and no writes, networking/models/privilege/schema/old26 changes. Source must be frozen while parent reads it. Then you perform final stop/inspect failclosed retainPGDATA before final report/card/worker_done; this changes order only, not number of permitted starts/restarts. If throwaway smoke's finally has ALREADY stopped runtime, DO NOT restart again or mutate product/script merely for me: report stopped custody and actual full consumer CLI smoke command/exit/transcript receipt identity so we can attribute observed worker runtime without fakeparentrun. No secondPGrestart (one alreadyused onlyoldshape), no fifthBrainqualificationrepair, no status polling. All prior fullsnapshot/rootpayload/bindingclosure/nooldwrites scope applies. Final docs DSH/Cordis HOLD until your freeze; no original/carddone yet.",
+  "native_send_receipt": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"ee8b5c88-764e-4475-b673-f4722775c1c6\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_594a355918ea\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_0c242e837d41\",\n      \"subject\": \"Consumer smoke custody order: safe frozen running checkpoint before existing final stop, never extra restart\",\n      \"body\": \"Integration custody ordering, no extra restart/write/model/repair authority: if your admitted owned845fa540/brn63 runtime is STILL running, after full actualrealpack+ALL1955 snapshot smoke and source hashfreeze keep it up at a safe checkpoint for coordinator READONLY actual consumer CLI verification BEFORE your already-required final stop/inspect. Supply exact product CLI commands/required file-only ownsecret custody and actual manifest bindings for source001 inspect + fullsnapshot query; never secretvalue/DSN. Parent will use only minimal existing own-role credential in clean child and no writes, networking/models/privilege/schema/old26 changes. Source must be frozen while parent reads it. Then you perform final stop/inspect failclosed retainPGDATA before final report/card/worker_done; this changes order only, not number of permitted starts/restarts. If throwaway smoke's finally has ALREADY stopped runtime, DO NOT restart again or mutate product/script merely for me: report stopped custody and actual full consumer CLI smoke command/exit/transcript receipt identity so we can attribute observed worker runtime without fakeparentrun. No secondPGrestart (one alreadyused onlyoldshape), no fifthBrainqualificationrepair, no status polling. All prior fullsnapshot/rootpayload/bindingclosure/nooldwrites scope applies. Final docs DSH/Cordis HOLD until your freeze; no original/carddone yet.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T19:30:48Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"6c1c4f76-1dbc-47e7-83af-454bbd54b97b\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "ee8b5c88-764e-4475-b673-f4722775c1c6",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_594a355918ea",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+          "to_handle": "dispatch:ctx_0c242e837d41",
+          "subject": "Consumer smoke custody order: safe frozen running checkpoint before existing final stop, never extra restart",
+          "body": "Integration custody ordering, no extra restart/write/model/repair authority: if your admitted owned845fa540/brn63 runtime is STILL running, after full actualrealpack+ALL1955 snapshot smoke and source hashfreeze keep it up at a safe checkpoint for coordinator READONLY actual consumer CLI verification BEFORE your already-required final stop/inspect. Supply exact product CLI commands/required file-only ownsecret custody and actual manifest bindings for source001 inspect + fullsnapshot query; never secretvalue/DSN. Parent will use only minimal existing own-role credential in clean child and no writes, networking/models/privilege/schema/old26 changes. Source must be frozen while parent reads it. Then you perform final stop/inspect failclosed retainPGDATA before final report/card/worker_done; this changes order only, not number of permitted starts/restarts. If throwaway smoke's finally has ALREADY stopped runtime, DO NOT restart again or mutate product/script merely for me: report stopped custody and actual full consumer CLI smoke command/exit/transcript receipt identity so we can attribute observed worker runtime without fakeparentrun. No secondPGrestart (one alreadyused onlyoldshape), no fifthBrainqualificationrepair, no status polling. All prior fullsnapshot/rootpayload/bindingclosure/nooldwrites scope applies. Final docs DSH/Cordis HOLD until your freeze; no original/carddone yet.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": null,
+          "payload": null,
+          "created_at": "2026-10-09T19:30:48Z",
+          "delivered_at": null
+        },
+        "mutation": {
+          "requestId": "6c1c4f76-1dbc-47e7-83af-454bbd54b97b",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "send_is_enqueue_not_read_ACK": true
+}

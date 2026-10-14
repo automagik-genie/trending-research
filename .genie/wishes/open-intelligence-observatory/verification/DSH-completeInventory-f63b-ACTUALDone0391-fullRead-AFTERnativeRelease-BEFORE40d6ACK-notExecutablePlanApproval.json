@@ -1,0 +1,147 @@
+{
+  "positiveWholeDeliverableIntake": {
+    "exit_code": 0,
+    "data": {
+      "id": "03f7416b-478d-4b7d-ac4c-6b0e3688e39d",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_79e70abdc5df",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_2deb0e3ca86f",
+          "subject": "Re: Question",
+          "body": "Parent consumed ENTIRE same uncompressed5954426UTF8B29241LF sole report through actualEOF/END COMPLETE with361 contiguous specialized RAW ranges1-29241, everyrange exact wholetext against full bytes, SHA256f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67/mode0600/regularnonsymlink. Full15962tree rows/14004bodyidentities119160115B/353manifests397configs1921exports3396lock33322module/4769UNIQUEcallerpositions4771familytags parsed throughEOF, all18 wholelicense-notice-README byteSHA/Gitblob match, all48 freshlocalguards and37fixedRsourceidentities/tree match. POSITIVE COMPLETE READONLY INVENTORY DELIVERABLE INTAKE ONLY; no ParentSDK/source semanticcodeapproval, no selfplanapproval/implementation/stockattempt/Brainattempt/build/native/paid/featuregrant. Preserve completeclosure/unknownexternalemitted counts and indivisiblelock29763LF vs2000hardHOLD; not approvedrunnablegroups. New independent full executable-contract review stillrequired; explicit actual boundedmanifests/formalpreflight/forkmaterialization/principals/credential/spend/nativeactivation gates remain. Nonblocking chronological status annotation: report cap5/no6th text preserved as prior status; subsequent actualowner d63c cap6used5remaining1 ONEQ1Q2 prospectiverepair controls NOW, not sourceF5 acceptance. Do not mutate report. Checkfollowups then actualworker_done ONCE currenttask800d/ctx2deb outcome succeeded for completeinventory/realreportpath, three sentences thenidle. Parentrelease AFTERactualDone BEFOREdeliveryACK; no selfrelease/GeniecardDone/featureacceptance.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_c3699f62ceb3",
+          "payload": null,
+          "created_at": "2026-10-14T20:12:27Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_c3699f62ceb3",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_2deb0e3ca86f",
+          "asker_handle": "term_add0e063-5371-4d39-9378-ba67f92eccb9",
+          "status": "answered",
+          "answer_message_id": "msg_79e70abdc5df",
+          "answer_body": "Parent consumed ENTIRE same uncompressed5954426UTF8B29241LF sole report through actualEOF/END COMPLETE with361 contiguous specialized RAW ranges1-29241, everyrange exact wholetext against full bytes, SHA256f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67/mode0600/regularnonsymlink. Full15962tree rows/14004bodyidentities119160115B/353manifests397configs1921exports3396lock33322module/4769UNIQUEcallerpositions4771familytags parsed throughEOF, all18 wholelicense-notice-README byteSHA/Gitblob match, all48 freshlocalguards and37fixedRsourceidentities/tree match. POSITIVE COMPLETE READONLY INVENTORY DELIVERABLE INTAKE ONLY; no ParentSDK/source semanticcodeapproval, no selfplanapproval/implementation/stockattempt/Brainattempt/build/native/paid/featuregrant. Preserve completeclosure/unknownexternalemitted counts and indivisiblelock29763LF vs2000hardHOLD; not approvedrunnablegroups. New independent full executable-contract review stillrequired; explicit actual boundedmanifests/formalpreflight/forkmaterialization/principals/credential/spend/nativeactivation gates remain. Nonblocking chronological status annotation: report cap5/no6th text preserved as prior status; subsequent actualowner d63c cap6used5remaining1 ONEQ1Q2 prospectiverepair controls NOW, not sourceF5 acceptance. Do not mutate report. Checkfollowups then actualworker_done ONCE currenttask800d/ctx2deb outcome succeeded for completeinventory/realreportpath, three sentences thenidle. Parentrelease AFTERactualDone BEFOREdeliveryACK; no selfrelease/GeniecardDone/featureacceptance.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-14T16:24:53Z",
+          "answered_at": "2026-10-14T20:12:27Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "82367a7e-f0db-497b-b7ae-00c6bf6589a1",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    },
+    "stdout": "{\n  \"id\": \"03f7416b-478d-4b7d-ac4c-6b0e3688e39d\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_79e70abdc5df\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_2deb0e3ca86f\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Parent consumed ENTIRE same uncompressed5954426UTF8B29241LF sole report through actualEOF/END COMPLETE with361 contiguous specialized RAW ranges1-29241, everyrange exact wholetext against full bytes, SHA256f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67/mode0600/regularnonsymlink. Full15962tree rows/14004bodyidentities119160115B/353manifests397configs1921exports3396lock33322module/4769UNIQUEcallerpositions4771familytags parsed throughEOF, all18 wholelicense-notice-README byteSHA/Gitblob match, all48 freshlocalguards and37fixedRsourceidentities/tree match. POSITIVE COMPLETE READONLY INVENTORY DELIVERABLE INTAKE ONLY; no ParentSDK/source semanticcodeapproval, no selfplanapproval/implementation/stockattempt/Brainattempt/build/native/paid/featuregrant. Preserve completeclosure/unknownexternalemitted counts and indivisiblelock29763LF vs2000hardHOLD; not approvedrunnablegroups. New independent full executable-contract review stillrequired; explicit actual boundedmanifests/formalpreflight/forkmaterialization/principals/credential/spend/nativeactivation gates remain. Nonblocking chronological status annotation: report cap5/no6th text preserved as prior status; subsequent actualowner d63c cap6used5remaining1 ONEQ1Q2 prospectiverepair controls NOW, not sourceF5 acceptance. Do not mutate report. Checkfollowups then actualworker_done ONCE currenttask800d/ctx2deb outcome succeeded for completeinventory/realreportpath, three sentences thenidle. Parentrelease AFTERactualDone BEFOREdeliveryACK; no selfrelease/GeniecardDone/featureacceptance.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_c3699f62ceb3\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-14T20:12:27Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_c3699f62ceb3\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_2deb0e3ca86f\",\n      \"asker_handle\": \"term_add0e063-5371-4d39-9378-ba67f92eccb9\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_79e70abdc5df\",\n      \"answer_body\": \"Parent consumed ENTIRE same uncompressed5954426UTF8B29241LF sole report through actualEOF/END COMPLETE with361 contiguous specialized RAW ranges1-29241, everyrange exact wholetext against full bytes, SHA256f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67/mode0600/regularnonsymlink. Full15962tree rows/14004bodyidentities119160115B/353manifests397configs1921exports3396lock33322module/4769UNIQUEcallerpositions4771familytags parsed throughEOF, all18 wholelicense-notice-README byteSHA/Gitblob match, all48 freshlocalguards and37fixedRsourceidentities/tree match. POSITIVE COMPLETE READONLY INVENTORY DELIVERABLE INTAKE ONLY; no ParentSDK/source semanticcodeapproval, no selfplanapproval/implementation/stockattempt/Brainattempt/build/native/paid/featuregrant. Preserve completeclosure/unknownexternalemitted counts and indivisiblelock29763LF vs2000hardHOLD; not approvedrunnablegroups. New independent full executable-contract review stillrequired; explicit actual boundedmanifests/formalpreflight/forkmaterialization/principals/credential/spend/nativeactivation gates remain. Nonblocking chronological status annotation: report cap5/no6th text preserved as prior status; subsequent actualowner d63c cap6used5remaining1 ONEQ1Q2 prospectiverepair controls NOW, not sourceF5 acceptance. Do not mutate report. Checkfollowups then actualworker_done ONCE currenttask800d/ctx2deb outcome succeeded for completeinventory/realreportpath, three sentences thenidle. Parentrelease AFTERactualDone BEFOREdeliveryACK; no selfrelease/GeniecardDone/featureacceptance.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-14T16:24:53Z\",\n      \"answered_at\": \"2026-10-14T20:12:27Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"82367a7e-f0db-497b-b7ae-00c6bf6589a1\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": ""
+  },
+  "chronologyMutationDeclined": {
+    "exit_code": 0,
+    "data": {
+      "id": "e8187639-472d-43e0-ba84-67102e438b9d",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_ab64c6bfe727",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_2deb0e3ca86f",
+          "subject": "Re: Question",
+          "body": "Parent FULLread ENTIRE current2deb method msg_756b9da9d041 69613B817LF throughEOF7contiguousRAWranges; retained63055Bpreviousmethod suffix byte-identical, originalcontrols/guards/37sources/bounds preserved. EXACT STATUS MUTATION REQUEST DECLINED. Do NOT edit/rewrite/append anybyte of /tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt. Existingf63b5954426B29241LFreport is already FULLintaken via361exactRAWranges1-29241/alltree+tables+18licensebodies/all48freshguards/37identities/all80criteria+dependencydeclarations; actual POSITIVE COMPLETE INVENTORY DELIVERABLE reply msg_79e70abdc5df to SAMEoriginalintake msg_c3699f62ceb3 exit0 ALREADYsent. Thatpositive explicitly preserved earliercap5text as historicalsnapshot, withcurrentactualownercap6 status separatelyattributed; it is NOT currentcap5authority and NOTplan/code/featureapproval. TWO NEWindependent reviewers now eachpositivelygranted immutableexactf63b49local+37publicscope, so anyreportedit wouldbreakbothseals unnecessarily. Ownerstatus20:08 is separatechronologicalhandoff update ONLY asyourdeclinedoption; nofourthdesignrepair/stamp/counterreset. Source7 latestcurrent847f actualmethod firstgrant a5e9 andadditionalexistingprivateQ2detailstaticgrant a8ef are ParentstatusONLYnoextraartifactaccess; used5/cap6ONEprospective, noSourceacceptance/F5/applySAFE/native/paid. ExistingreportUNCHANGEDandallrecordedgatesstand. Resume SAMEoriginalintake c369 ifneeded toconsume alreadyactual79e7positive, no duplicate report/newseal/newintake ask. Thisreply reconfirms exact CURRENT unchangedf63b COMPLETEinventorydeliverablepositive, notrunnableplanapproval. After owncheckpointfollowup/unchangedguardvalidation, send exactlyONCE actualworker_done SAMEtask800d/ctx2deb succeededforcompletedREADONLYinventory (notoriginalfeatures), realunchangedreportpath/3sentences; thenidle. ParentreleaseONLYAFTERactualDoneBEFOREACK; no selfrelease/card/Git/docs/WISH/sourcecode/runtime/paidmutation. No furtherreportpreparationrequired; doNOTtreatoldno6thstatementascurrentauthority or excuseincompleteinventory, allcompletealreadyverified.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_756b9da9d041",
+          "payload": null,
+          "created_at": "2026-10-14T20:27:58Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_756b9da9d041",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_2deb0e3ca86f",
+          "asker_handle": "term_add0e063-5371-4d39-9378-ba67f92eccb9",
+          "status": "answered",
+          "answer_message_id": "msg_ab64c6bfe727",
+          "answer_body": "Parent FULLread ENTIRE current2deb method msg_756b9da9d041 69613B817LF throughEOF7contiguousRAWranges; retained63055Bpreviousmethod suffix byte-identical, originalcontrols/guards/37sources/bounds preserved. EXACT STATUS MUTATION REQUEST DECLINED. Do NOT edit/rewrite/append anybyte of /tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt. Existingf63b5954426B29241LFreport is already FULLintaken via361exactRAWranges1-29241/alltree+tables+18licensebodies/all48freshguards/37identities/all80criteria+dependencydeclarations; actual POSITIVE COMPLETE INVENTORY DELIVERABLE reply msg_79e70abdc5df to SAMEoriginalintake msg_c3699f62ceb3 exit0 ALREADYsent. Thatpositive explicitly preserved earliercap5text as historicalsnapshot, withcurrentactualownercap6 status separatelyattributed; it is NOT currentcap5authority and NOTplan/code/featureapproval. TWO NEWindependent reviewers now eachpositivelygranted immutableexactf63b49local+37publicscope, so anyreportedit wouldbreakbothseals unnecessarily. Ownerstatus20:08 is separatechronologicalhandoff update ONLY asyourdeclinedoption; nofourthdesignrepair/stamp/counterreset. Source7 latestcurrent847f actualmethod firstgrant a5e9 andadditionalexistingprivateQ2detailstaticgrant a8ef are ParentstatusONLYnoextraartifactaccess; used5/cap6ONEprospective, noSourceacceptance/F5/applySAFE/native/paid. ExistingreportUNCHANGEDandallrecordedgatesstand. Resume SAMEoriginalintake c369 ifneeded toconsume alreadyactual79e7positive, no duplicate report/newseal/newintake ask. Thisreply reconfirms exact CURRENT unchangedf63b COMPLETEinventorydeliverablepositive, notrunnableplanapproval. After owncheckpointfollowup/unchangedguardvalidation, send exactlyONCE actualworker_done SAMEtask800d/ctx2deb succeededforcompletedREADONLYinventory (notoriginalfeatures), realunchangedreportpath/3sentences; thenidle. ParentreleaseONLYAFTERactualDoneBEFOREACK; no selfrelease/card/Git/docs/WISH/sourcecode/runtime/paidmutation. No furtherreportpreparationrequired; doNOTtreatoldno6thstatementascurrentauthority or excuseincompleteinventory, allcompletealreadyverified.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-14T20:24:50Z",
+          "answered_at": "2026-10-14T20:27:58Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "e25c1324-4ca0-44e0-8248-9e88a8e2b5ee",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    },
+    "stdout": "{\n  \"id\": \"e8187639-472d-43e0-ba84-67102e438b9d\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_ab64c6bfe727\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_2deb0e3ca86f\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Parent FULLread ENTIRE current2deb method msg_756b9da9d041 69613B817LF throughEOF7contiguousRAWranges; retained63055Bpreviousmethod suffix byte-identical, originalcontrols/guards/37sources/bounds preserved. EXACT STATUS MUTATION REQUEST DECLINED. Do NOT edit/rewrite/append anybyte of /tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt. Existingf63b5954426B29241LFreport is already FULLintaken via361exactRAWranges1-29241/alltree+tables+18licensebodies/all48freshguards/37identities/all80criteria+dependencydeclarations; actual POSITIVE COMPLETE INVENTORY DELIVERABLE reply msg_79e70abdc5df to SAMEoriginalintake msg_c3699f62ceb3 exit0 ALREADYsent. Thatpositive explicitly preserved earliercap5text as historicalsnapshot, withcurrentactualownercap6 status separatelyattributed; it is NOT currentcap5authority and NOTplan/code/featureapproval. TWO NEWindependent reviewers now eachpositivelygranted immutableexactf63b49local+37publicscope, so anyreportedit wouldbreakbothseals unnecessarily. Ownerstatus20:08 is separatechronologicalhandoff update ONLY asyourdeclinedoption; nofourthdesignrepair/stamp/counterreset. Source7 latestcurrent847f actualmethod firstgrant a5e9 andadditionalexistingprivateQ2detailstaticgrant a8ef are ParentstatusONLYnoextraartifactaccess; used5/cap6ONEprospective, noSourceacceptance/F5/applySAFE/native/paid. ExistingreportUNCHANGEDandallrecordedgatesstand. Resume SAMEoriginalintake c369 ifneeded toconsume alreadyactual79e7positive, no duplicate report/newseal/newintake ask. Thisreply reconfirms exact CURRENT unchangedf63b COMPLETEinventorydeliverablepositive, notrunnableplanapproval. After owncheckpointfollowup/unchangedguardvalidation, send exactlyONCE actualworker_done SAMEtask800d/ctx2deb succeededforcompletedREADONLYinventory (notoriginalfeatures), realunchangedreportpath/3sentences; thenidle. ParentreleaseONLYAFTERactualDoneBEFOREACK; no selfrelease/card/Git/docs/WISH/sourcecode/runtime/paidmutation. No furtherreportpreparationrequired; doNOTtreatoldno6thstatementascurrentauthority or excuseincompleteinventory, allcompletealreadyverified.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_756b9da9d041\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-14T20:27:58Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_756b9da9d041\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_2deb0e3ca86f\",\n      \"asker_handle\": \"term_add0e063-5371-4d39-9378-ba67f92eccb9\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_ab64c6bfe727\",\n      \"answer_body\": \"Parent FULLread ENTIRE current2deb method msg_756b9da9d041 69613B817LF throughEOF7contiguousRAWranges; retained63055Bpreviousmethod suffix byte-identical, originalcontrols/guards/37sources/bounds preserved. EXACT STATUS MUTATION REQUEST DECLINED. Do NOT edit/rewrite/append anybyte of /tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt. Existingf63b5954426B29241LFreport is already FULLintaken via361exactRAWranges1-29241/alltree+tables+18licensebodies/all48freshguards/37identities/all80criteria+dependencydeclarations; actual POSITIVE COMPLETE INVENTORY DELIVERABLE reply msg_79e70abdc5df to SAMEoriginalintake msg_c3699f62ceb3 exit0 ALREADYsent. Thatpositive explicitly preserved earliercap5text as historicalsnapshot, withcurrentactualownercap6 status separatelyattributed; it is NOT currentcap5authority and NOTplan/code/featureapproval. TWO NEWindependent reviewers now eachpositivelygranted immutableexactf63b49local+37publicscope, so anyreportedit wouldbreakbothseals unnecessarily. Ownerstatus20:08 is separatechronologicalhandoff update ONLY asyourdeclinedoption; nofourthdesignrepair/stamp/counterreset. Source7 latestcurrent847f actualmethod firstgrant a5e9 andadditionalexistingprivateQ2detailstaticgrant a8ef are ParentstatusONLYnoextraartifactaccess; used5/cap6ONEprospective, noSourceacceptance/F5/applySAFE/native/paid. ExistingreportUNCHANGEDandallrecordedgatesstand. Resume SAMEoriginalintake c369 ifneeded toconsume alreadyactual79e7positive, no duplicate report/newseal/newintake ask. Thisreply reconfirms exact CURRENT unchangedf63b COMPLETEinventorydeliverablepositive, notrunnableplanapproval. After owncheckpointfollowup/unchangedguardvalidation, send exactlyONCE actualworker_done SAMEtask800d/ctx2deb succeededforcompletedREADONLYinventory (notoriginalfeatures), realunchangedreportpath/3sentences; thenidle. ParentreleaseONLYAFTERactualDoneBEFOREACK; no selfrelease/card/Git/docs/WISH/sourcecode/runtime/paidmutation. No furtherreportpreparationrequired; doNOTtreatoldno6thstatementascurrentauthority or excuseincompleteinventory, allcompletealreadyverified.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-14T20:24:50Z\",\n      \"answered_at\": \"2026-10-14T20:27:58Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"e25c1324-4ca0-44e0-8248-9e88a8e2b5ee\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": ""
+  },
+  "actualWholeDoneMessage": {
+    "id": "msg_0391c1f3f04a",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_add0e063-5371-4d39-9378-ba67f92eccb9",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "Complete readonly SDK closure inventory positively intaken",
+    "body": "Completed and sealed the full fixed-revision SDK/build/export/generated/package closure inventory and conditional bounded implementation contracts in the single report, with Parent positive whole-EOF intake and final unchanged SHA256 f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67 at 5954426 bytes and 29241 LF. Verified 15962 tree entries and 14004 public bodies totaling 119160115 bytes, including all 37 original source owners, 353 manifests, 397 compiler configurations and 1921 export occurrences; emitted-file counts remain unqualified, and indivisible lockfile/copied-SDK footprints cannot be silently admitted under hard 25-file/2000-TRUE-line caps. Independent full contract review, exact bounded manifests and formal preflight, fork materialization, principals/credential custody/spend/native activation and live acceptance remain separately gated, while Source7 cap6 used5 remaining1 is separately attributed prospective Q1/Q2 authority only with no source/F5 acceptance, SDK execution, paid calls or repository changes.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_800d3e786cd3\",\"dispatchId\":\"ctx_2deb0e3ca86f\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt\"],\"reportPath\":\"/tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt\"}",
+    "created_at": "2026-10-14T20:29:31Z",
+    "delivered_at": null
+  },
+  "unchangedReportIdentity": {
+    "path": "/tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt",
+    "bytes": 5954426,
+    "LF": 29241,
+    "sha256": "f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67",
+    "mode": "0o600"
+  },
+  "nativeReleaseAfterActualDoneBeforeDeliveryAck": {
+    "exit_code": 0,
+    "data": {
+      "id": "deee0888-5ab5-4bb2-a10f-3b9e3687682d",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_2deb0e3ca86f",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "9fb93f86-dad1-47aa-bb8f-0be9323fe19f",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    },
+    "stdout": "{\n  \"id\": \"deee0888-5ab5-4bb2-a10f-3b9e3687682d\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_2deb0e3ca86f\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"9fb93f86-dad1-47aa-bb8f-0be9323fe19f\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": ""
+  },
+  "currentDeliveryToAckOnlyAfterThisSettlement": "delivery_40d6b4d1978f",
+  "inventoryProcedureComplete": true,
+  "exactExecutableManifestsAndEmittedCountsStillMissing": true,
+  "noOriginalFeatureCodeRuntimePaidAcceptance": true
+}

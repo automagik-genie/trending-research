@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-08T13:32:04.429293+00:00",
+  "task": "task_915ea96de399",
+  "dispatch": "ctx_2f29b6152ebf",
+  "verdict": "BLOCKED",
+  "bootstrap_verdict": "BLOCKED_WITH_HIGH_H1_CONNECTION_ENVELOPE_FIX_FIRST",
+  "original_runtime_acceptance": false,
+  "review_scope_sha256": [
+    "68039f1ec946ac6cb9471d0ad470a486bcbd1a1356ab486c30672fe06374238e",
+    "66cca3d03dbebca80a476c1e0925d796d70f3b53d52bfc7afd136b4310a29321"
+  ],
+  "reviewer_raw_sha256": "09e29f4b0cc3209666a5cde3f7694bb15cc4952116a91a129f4bc35e3810004f",
+  "public_report_sha256": "44141d355ce76facd8457cabf61b3108b2b2b0c92fdcafa072ed569b82f0b00d",
+  "public_report": "group-3-native-boundary-plan-review-1.txt",
+  "critical_high_confirmed": [
+    "H1: raw business args omit mandatory public Connection ClientRequest correlation/type/method/payload envelope. Use supported generated Remote/public client, not invented REST convention."
+  ],
+  "limits": "New Docker intakea5037ce was created AFTER reviewer already settled; not assessed by this verdict or an implied SHIP. Existing olddesign/bwrap artifacts preserved, originalallcriteria/paid/native gates remain required.",
+  "next": "Author changes exact bounded H1/newDocker/nativecomposition/bootstrap material in READONLY proposed plan before review/admission, no production/source/environment/API/profile/model mutation yet."
+}

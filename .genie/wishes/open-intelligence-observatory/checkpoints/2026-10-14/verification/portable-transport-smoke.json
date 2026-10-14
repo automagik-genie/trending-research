@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-14T21:12:46.956810+00:00",
+  "safe_original_repo_identities_verified": 690,
+  "complete_external_copy_identities_verified": 18,
+  "safe_derivative_identities_verified": 6,
+  "identity_failures": [],
+  "private_literal_propagation": [],
+  "private_originals_untouched": true,
+  "proposed_commit_paths_before_this_receipt": 627,
+  "no_program_decode_materialization_execution": true,
+  "scope": "Pure bytes/path/JSON-count transport smoke; no native/product/candidate acceptance claim"
+}

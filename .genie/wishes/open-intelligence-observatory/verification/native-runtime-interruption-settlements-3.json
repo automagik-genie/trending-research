@@ -1,0 +1,130 @@
+{
+  "recorded_at": "2026-10-09T16:39:50.647696+00:00",
+  "run": "run_b7d6684b2cdd",
+  "delivery": "delivery_fc43960fbb42",
+  "runtime": "705217db-55fb-4554-9936-280ef44447d0",
+  "app_version": "1.4.223",
+  "accepted_failed_settlements": [
+    {
+      "issue": 4,
+      "task": "task_0a936d713c67",
+      "dispatch": "ctx_c6c545d20063",
+      "worker_done": "msg_727f6995109e",
+      "original_acceptance": "BLOCKED",
+      "scratch_only": true
+    },
+    {
+      "issue": 8,
+      "task": "task_8f2a067b113f",
+      "dispatch": "ctx_d5453628d3df",
+      "worker_done": "msg_fdb7ea7ddcaa",
+      "original_acceptance": "BLOCKED",
+      "actual_hover_failure_unrepaired": true,
+      "final_12_manifest_sha256": "ef2942aed65de21a24be418e16418bc538841a95beb2493c1e24a253de2d8341"
+    },
+    {
+      "issue": 5,
+      "task": "task_1ee57daded7e",
+      "dispatch": "ctx_ed2a28fd3625",
+      "worker_done": "msg_07b4f8c6a908",
+      "original_acceptance": "BLOCKED",
+      "failed_smoke_exit": 1,
+      "resume_authority": "actual_user_cap4_admission_a1cb3426"
+    }
+  ],
+  "frozen_inputs": {
+    "repaired_plan": {
+      "sha256": "d897a73f07b0bfaf4fefcff2fcbfd479467d5382eb83fb544654dfb58da084d5",
+      "bytes": 52515,
+      "mode": "0600"
+    },
+    "old_plan": {
+      "sha256": "a9ad406747c94030663167c26bd1f7ba1191f4391dd2341a6a81a2ffc1ce3b15",
+      "bytes": 36375,
+      "mode": "0600"
+    },
+    "brain_failed_receipt": {
+      "sha256": "4b7cd8c3ee6e2d1267f4de2ca698683f552f932783feb913be77230e834ba019",
+      "bytes": 245685,
+      "mode": "0600"
+    },
+    "brain_qualifier": {
+      "sha256": "59d253698b89daf91e73bfd5546c54bdefc3ca3988cdd879af823514ee2957d3",
+      "bytes": 38818,
+      "mode": "0600"
+    },
+    "continuation_admission": {
+      "sha256": "a1cb342641cd2804f4205ce3f39be3f84a60d5ac243108c87761a2638a173c1d",
+      "bytes": 7711,
+      "mode": "0600"
+    },
+    "wish": {
+      "sha256": "4a96b55e5eaf4f63e74356a62cd3279871cf1d586ed89c3afaceae047a9f5135",
+      "bytes": 99670,
+      "mode": "0600"
+    }
+  },
+  "ui_manifest": {
+    "docs/design/frontier-economics.md": {
+      "sha256": "0e8bca346ce7606220e3d6418aa9907c2fd854283bfb90834e4e7fa402b058bc",
+      "bytes": 19917,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.css": {
+      "sha256": "c143d53697f21026880f564e1b1c0775f7878f9802bd1c762d721a9974f906d4",
+      "bytes": 5729,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.js": {
+      "sha256": "a028906f9b01d737aa7bb075833ee0e45c903126bb2883c3eeb9320f9d988cea",
+      "bytes": 22986,
+      "mode": "0600"
+    },
+    "web/prototypes/index.html": {
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+      "bytes": 2403,
+      "mode": "0600"
+    },
+    "web/prototypes/preview.py": {
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+      "bytes": 3934,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "sha256": "d487b8a6611742415a2f01da92155700bbff42d50ec0a86d9e4257e2b6de5401",
+      "bytes": 115821,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "sha256": "6d2f20d90ef1c14e4f200371f39dcb56aef59fc59b2489bf63328e0fcf797469",
+      "bytes": 207641,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "sha256": "8699ce790b472dc9ca23d988cb9341cfc04a775014a01310421d9b9773693533",
+      "bytes": 107516,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "sha256": "433f3879cd9b0d748b7f3e9cf72d73514ceaad778117eea3fe3a7147258b424b",
+      "bytes": 210897,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/smoke.json": {
+      "sha256": "06e6770515b432fe57c5dc74480a222faf602e5082f1adf7b5ffd83c25e9798a",
+      "bytes": 51519,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "sha256": "f49546a09c114f74fc1b47bafe2fa451af0413ff50c9fa273b023d359266f0ff",
+      "bytes": 99461,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "sha256": "a9b7bbc15f5a81101f84473e2d64250b5ae023e6d75b3560ace6834289869705",
+      "bytes": 139028,
+      "mode": "0600"
+    }
+  },
+  "decision": "Release all three accepted settled resources; Brain/UI exact same-task retry-of, DSH independent exact-byte read-only review before any execution. No acceptance inferred from failed reports; original task scopes unchanged."
+}

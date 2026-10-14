@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-10T01:37:33.353596+00:00",
+  "actualFullParentIntake": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-full-original-native-extension-PROPOSED-design-handoff-positive-parent-intake-assessment.json",
+    "sha256": "0132ae39d9f1ace50503ff903f6dd1d64adeb88c4eeb166852dd6950a6d06389"
+  },
+  "actualNativeDONE": {
+    "id": "msg_44d24ff5062c",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_86723a18-ae07-435f-9feb-ac79ca5b5bf8",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "Complete proposed native DSH design deliverable",
+    "body": "Created the complete original-#4 design-only DRAFT and PROPOSED DESIGN covering all four native contracts and unchanged acceptance criteria, with six bounded future groups and the full 26151-byte handoff positively assessed by the parent. Final ledger check-design exited0 with no findings, eight input pins stayed unchanged, the actual owned diff is two documents and413 insertions, and auxiliary report event84 was read back exactly at3385 bytes with SHA256767b0c75e9bb00f80cf70dd7671def8bdb36f406744eb3004e0a9c19662c037d. Independent blind proposal acceptance and separate quality, distinct owner implementation/runtime/paid admissions, and parent RELEASE remain next; original#4 stays BLOCKED with exhausted2/2, one UNKNOWN failure, model0 and unchanged USD20 DSH12/Brain8 hold.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_c4e7f3d2891b\",\"dispatchId\":\"ctx_5a853e66bc72\",\"outcome\":\"succeeded\",\"filesModified\":[\".genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DRAFT.md\",\".genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DESIGN.md\"],\"reportPath\":\"/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-original-COMPLETE-53LF-design-claim-span-PROPOSED-handoff.txt\"}",
+    "created_at": "2026-10-10T01:27:58Z",
+    "delivered_at": null
+  },
+  "actualOriginalSpanONEindex": {
+    "author": "native-dsh-extension-designer",
+    "author_kind": "pi",
+    "created_at": 1791595629322,
+    "id": 84,
+    "kind": "report",
+    "note": "done: Complete ORIGINAL #4/group3 PROPOSED native-DSH-extension DESIGN deliverable only, not Ready/SHIP/original-card acceptance/implementation/runtime/paid permission. Actual claimant native-dsh-extension-designer; auxiliary t_mv1nxer60fedac1d; native Run run_b7d6684b2cdd Task task_c4e7f3d2891b Dispatch ctx_5a853e66bc72. Parent fully read and positively assessed artifact completeness/coverage, admitted this ONE report index; semantic blind full-proposal acceptance and separate quality remain parent-owned.\nFull proposal: .genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DRAFT.md SHA256116c0faed479f3f03d6ae97c5183d9c158adab787552915e802a276e21bca7a1,10689B/130LF/0600; DESIGN.md SHA256d68909d5f8285aa9c52b9b1929a2e166c240990c51be6c4b555b4f6441544097,65211B/283LF/0600. Complete standalone handoff parent-persisted at .genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-original-COMPLETE-53LF-design-claim-span-PROPOSED-handoff.txt SHA2560054732d9ca8a85a3173c732fdb9e4d5c3208765f80f634347da1bed7f6d203f,26151B/53LF; exact /tmp/oi4-native-extension-original-full-design-handoff.txt readback. Eight governing input pins unchanged, including owner7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec/currentWISH260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743.\nScope: all FOUR native contracts: launcher app+proxy success/rejection/deadline/forced and independent witness with normal-natural nuance; actual issuer two restricted principals/every transport-business-read path; durable atomic stopped admission/all-owned-work drain/reconnect-history-cursor; hard durable worst-case per-actual-egress currency/usage UNKNOWN failclosed. All original streamed/cited same-Scene/cancel-queued/reconnect/foreign-denial criteria and Cordis/Brain teardown retained. Native isolated ownership considered before minimal explicit rc1 patch proposal; all interfaces PROPOSED, patchdigest FUTURE measured. G future six bounded groups each<=25files2000insertions, total10250 forecast, no source admission.\nValidation: round-ledger apply/ratchet/render exit0; first check-design exit1 three filename cells, bounded table correction then final check-design exit0 findings[], final render changedfalse. Actual new-file diff2files413insertions0deletions, under1000 forecast2000hard; NoProductData writes; full documents/handoff read; own0700 payload scratch identity-cleaned. No product build/lint/tests/native/SDK/container/Brain/model run, private/account/secret/env/PGDATA read, worker Git or original-card mutation. WRS90, emptySettled/reviews/councils; no fake owner answers/accounting/stamp.\nRuling: retain native DSH/Cordis/Brain and explicit isolated issuer/root control rather than stock operator cookies, proxy/Nodeexit success or competing memory; minimize each new state to current required invariant, full-context peak-miss currency reserve and unknown-usage hold; cost if wrong: bounded independent design correction before any activation. Preserve original stock prospective2/2/one exit1 causeUNKNOWN/globalUNAVAILABLE/Brain4of4stopped, all20issues80criteria41deps5milestones, dates/assigneesunset, model0/allcostUNKNOWN/USD20 DSH12Brain8 paidhold. Next: parent freeze/blind proposal+quality and separate owner implementation/runtime/paid gates, worker_done DESIGN-only then parent RELEASE before deliveryACK.",
+    "task_id": "t_mv1nxer60fedac1d"
+  },
+  "actualStoreBody3385B767b0_equalsNativeDeclared": "ParentactualGenieexport event84/fullnativebody674 allbodyread, exactlyONEoriginalauthorreport",
+  "actualMetadataOnlyProposalFullAssessment": "completeDRAFT116c/DESIGNd689/handoff005 covered4contracts/all4originalcriteria/8inputpins/fulloriginalclaimspan WRS90_PROPOSEDnotSHIP",
+  "actualNativeReleaseAFTERDoneBEFOREdeliveryACK": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"bb546d99-d925-4180-a7cc-56cf76e9995f\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_5a853e66bc72\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"a3368166-5610-4cff-a01a-f03d04d77a47\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "bb546d99-d925-4180-a7cc-56cf76e9995f",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_5a853e66bc72",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "a3368166-5610-4cff-a01a-f03d04d77a47",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "AuxCardNOTdone_original4Notaccepted": "awaitbothfullblindArchitecture+separatequality/currentWRS90 gates; releasednativeAUTHORnotstaleNativeactorauthority",
+  "noSource4RuntimeModelbudget2reset": true
+}

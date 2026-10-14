@@ -1,0 +1,60 @@
+{
+  "group": 5,
+  "issue": 6,
+  "task": "task_3d72b01ee05a",
+  "target_commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+  "comparison_baseline": "3db0d3690973e2c5077fc0788a8ce150435871ea",
+  "production_paths": {
+    "investigations/frontier-economics/evidence.json": {
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "mode": "0600",
+      "bytes": 294150,
+      "lines": 200
+    },
+    "investigations/frontier-economics/assessment.md": {
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "mode": "0600",
+      "bytes": 52115,
+      "lines": 544
+    }
+  },
+  "reviewed_manifest_sha256": "c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783",
+  "manifest_algorithm": "SHA256 UTF8 sorted path NUL four-digit octal POSIX permissions NUL full-file SHA256 LF. Two production paths only; both0600.",
+  "wish_sha256": "925b29b9ab4798b994c0d1f269b0d2c836818333f04a1013f78f51e5b4e8fa3f",
+  "readiness_sha256": "327df6d555de2f8f8d10b88fe3241648f60a930690e8a94288624cf7d3d304f7",
+  "parent_gate_sha256": "12d3dc56490cfbfc8a9fff60b855a8beae5539690421c41c4409ad7070b3fdba",
+  "author": "ctx_76f21ad589b3 original task36f4c261cc33 succeeded and released",
+  "original_criteria": [
+    "Every consequential factual statement has a dated source and classification.",
+    "Revenue/run rate, cash burn/loss and commitments/payments remain distinct.",
+    "Missing cost or retention data remains unknown; no unsupported bubble-burst date is generated.",
+    "The editorial reviewer can approve a precise investigation revision."
+  ],
+  "original_scope": [
+    "Build a dated evidence pack for \u201cAre frontier AI economics sustainable?\u201d using the qualified entity/source panel.",
+    "Separate demand/retention, price, inference economics, training costs, funding, compute commitments and open-model substitutes.",
+    "State competing interpretations, assumptions, strongest counterevidence and observable invalidation conditions.",
+    "Treat IPO timing, losses, subsidy and distillation as source-attributed claims requiring evidence."
+  ],
+  "input_source_accepted_seven_manifest": "b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff",
+  "domain_contract_accepted_commit": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68",
+  "actual_full_aggregate": {
+    "command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "exit_code": 0,
+    "tests": 43,
+    "attribution": "coordinator fresh frozen candidate; not prior source qualification/authorecho"
+  },
+  "actual_changed_path": {
+    "command": "python3 -B -c 'from pathlib import Path; text = Path(\"investigations/frontier-economics/assessment.md\").read_text(); exec(compile(text.split(\"```python\\n\", 1)[1].split(\"\\n```\", 1)[0], \"frontier-economics-smoke\", \"exec\"))'",
+    "exit_code": 0,
+    "attribution": "coordinator fresh38completeoriginal-to-canonical-to-contract-spans plus39meaningfulnegativeguards, not sole proof of all editorial prose"
+  },
+  "budgets": {
+    "B": 2,
+    "source": "config2",
+    "implementation_repair_used": 0,
+    "effort_escalations": 0,
+    "quality_repair_cap": 1
+  },
+  "authority_limits": "Local actual immutable datedpack, not nativeBrain/DSH/financial issuer-accounting truth, actual editorapproval, visualselection, productionoffline replay/public release/CI/recurring. Originalfourcriteria remain as-written, no introducedhumanapproval requirement forcriterion4 nor waiver later#12."
+}

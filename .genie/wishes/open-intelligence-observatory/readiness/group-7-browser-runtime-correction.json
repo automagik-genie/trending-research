@@ -1,0 +1,120 @@
+{
+  "recorded_at": "2026-10-08T17:30:22.244404+00:00",
+  "task": "task_8f2a067b113f",
+  "previous_dispatch": "ctx_b9afe1511795",
+  "accepted_worker_outcome": "failed",
+  "criterion_acceptance": false,
+  "question_id": "msg_590971d30c04",
+  "exact_worker_proposal": {
+    "group": 7,
+    "reason": "Orca1.4.222 actual DOM snapshot/interactions/state work, but BOTH screenshot and full-screenshot return entirely white PNGs, observed via saved/read relationship-wide.png. exec help also documented but unsupported; viewport set1280900 succeeds actualinnerWidth/height. ToolQA filed. Cannot claim visual proof from white captures.",
+    "unchanged_paths": [
+      "web/prototypes/index.html",
+      "web/prototypes/explorer.css",
+      "web/prototypes/explorer.js",
+      "web/prototypes/preview.py",
+      "web/prototypes/proof/smoke.json",
+      "web/prototypes/proof/relationship-wide.png",
+      "web/prototypes/proof/relationship-narrow.png",
+      "web/prototypes/proof/timeline-wide.png",
+      "web/prototypes/proof/timeline-narrow.png",
+      "web/prototypes/proof/questions-wide.png",
+      "web/prototypes/proof/questions-narrow.png",
+      "docs/design/frontier-economics.md"
+    ],
+    "proposed_runtime_correction": "Use existing /home/genie/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome with xd browser tab, explicit app.path, headless dedicated owned profile managed by tool and allowed_domains127.0.0.1; no install, no provider/model, no other service/tab. Actual engine/version qualified before evidence. Same8878server/sameimmutablepack/same6exact screenshotpaths replace whitecapture with actualsurface. Keep Orca own tab isolated/close. Native browser helpers permit screenshots/keyboard/reducedmotion/intercept loading/error/mismatch without modifying source files.",
+    "requested_authorization": "Freeze runtime correction ONLY, exact12paths/1450estimate/interfaces unchanged; authorize temp managed browser profile outside worktree as browser tool prerequisite, no durable newpath; use browser tool real taskproof if approved.",
+    "current_state": "All3code variants completed 4ownedfiles; actual Orca wide viewport/exactload/checkbox selection passed; no suite run; selectionnull/aggregate pending."
+  },
+  "verified_candidate": {
+    "issue": 8,
+    "group": 7,
+    "phase": "SOURCE_COMPLETE_FROZEN_BLOCKED_VISUAL_AUTHORITY_AND_ACTUAL_FELIPE_SELECTION",
+    "production_candidate": {
+      "web/prototypes/index.html": {
+        "mode": "0600",
+        "bytes": 2403,
+        "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478"
+      },
+      "web/prototypes/explorer.css": {
+        "mode": "0600",
+        "bytes": 5729,
+        "sha256": "c143d53697f21026880f564e1b1c0775f7878f9802bd1c762d721a9974f906d4"
+      },
+      "web/prototypes/explorer.js": {
+        "mode": "0600",
+        "bytes": 22986,
+        "sha256": "a028906f9b01d737aa7bb075833ee0e45c903126bb2883c3eeb9320f9d988cea"
+      },
+      "web/prototypes/preview.py": {
+        "mode": "0600",
+        "bytes": 3934,
+        "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513"
+      }
+    },
+    "production_candidate_sha256": "5f14a1eb2aacd384b0aafe131f2dec0eb8decaef15705b022df03b0fd5866b01",
+    "current_delivery_manifest": {
+      "web/prototypes/index.html": {
+        "mode": "0600",
+        "bytes": 2403,
+        "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478"
+      },
+      "web/prototypes/explorer.css": {
+        "mode": "0600",
+        "bytes": 5729,
+        "sha256": "c143d53697f21026880f564e1b1c0775f7878f9802bd1c762d721a9974f906d4"
+      },
+      "web/prototypes/explorer.js": {
+        "mode": "0600",
+        "bytes": 22986,
+        "sha256": "a028906f9b01d737aa7bb075833ee0e45c903126bb2883c3eeb9320f9d988cea"
+      },
+      "web/prototypes/preview.py": {
+        "mode": "0600",
+        "bytes": 3934,
+        "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513"
+      },
+      "web/prototypes/proof/smoke.json": {
+        "mode": "0600",
+        "bytes": 20196,
+        "sha256": "e3a06b429bbe8a0bb2cfc05f90016a82b0bbece6e87f78d87e343d4c22c55a53"
+      },
+      "web/prototypes/proof/relationship-wide.png": {
+        "mode": "0600",
+        "bytes": 5289,
+        "sha256": "57f45d88e654eeca054ff1cc37c39a437cb6e4b6ea2a6f59cf08a6228670107a",
+        "meaning": "FAILED allwhite Orca capture, not visualproof"
+      },
+      "docs/design/frontier-economics.md": {
+        "mode": "0600",
+        "bytes": 14790,
+        "sha256": "62c676f9450ebb3261eb17bf33efda807f4cafc1ce0147455fda5cc98a39b2e6"
+      }
+    },
+    "current_delivery_manifest_sha256": "83c9403113271fffa406aa020cc183a712a2572bcbfae0318d014b1af6d3193e",
+    "canonical_manifest_definition": "UTF8 json.dumps(mapping,sort_keys=True,separators=(comma,colon)) no trailingLF; keys mode/bytes/sha256, failedcapturealso meaning exactly as shown",
+    "size": {
+      "actual_created_files": 7,
+      "actual_text_insertions": 1226,
+      "actual_bytes": 75327,
+      "admitted_max_paths": 12,
+      "five_other_screenshots": "notcreated; null actualvisualevidence, no fake files"
+    },
+    "real_pack_sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+    "actual_proof": "proof/smoke.json: six1280x900/390x844 native source+strongestcounterweight tasks; fixedsource-returnfocus observedfailingbefore/passingafter; all38sourceoriginal/span/detail equality; selectedIDs/cutoff/method/revision/lens/detail invariants; keyboardSpace/Tab, all4guidedquestions3steps, back/forward/reload; ptBRexpansion; private/noentityempty; malicioussourceunsafeURL; loading/HTTP503/mismatcheddigest failclosed/recovery; HTTPprivate/traversal/symlink404 and readOnlyPOST405. No suites/build/lint/formatters run.",
+    "requirements": {
+      "AC1": "3 distinct actual interactionstructures complete",
+      "AC2": "Actual native source+counterweight discovery eachvariant bothviewports exercised; visualcapturestillunavailable",
+      "AC3": "null selecteddirection and actualFelipe receipt; tasks/responsive/accessibility expectations authored for eachcandidate but no counterfeitselection",
+      "AC4": "all38 exactrealassertions unverifiedclassification/rawunits/dateprecision/bounds/rank preserved; all4company/14topic/private-financialunknowns remainnull"
+    },
+    "selection_request": "Please freeze the exact source candidates, independently exercise current surfaces, and obtain the actual Felipe choice with attributed rationale against production_candidate_sha256. Worker/coordinator preference is not accepted. If human selection unavailable, state exact blocker; do not mark AC3/success. No more source/proof/doc edits while awaiting reply unless explicitlyauthorized. An actual receipt may authorize recording choice in existingdoc without changing these4candidatecodefiles.",
+    "other_pending_gate": "Visual runtime question msg_590971d30c04 is stillpending despite repeatedresume; no alternate runtime started. BothOrca capture pathswhite, no visualproof. It must be answered on samequestion; this request concerns candidatefreeze/actualFelipe choice not a duplicated runtimequestion.",
+    "aggregate_request": "All my authoredcode/docs/sourceproof frozen: please run unchangedaggregate after remainingwritersfreeze and return currentactualreceipt; workerdoesnotrunparentownedaggregate.",
+    "out_of_scope": "No native#7/Brain/DSH/runtimeprovider/privateMemory/CI/collection/root/forge/Git/publicrelease claims; later independentreviews/deployedacceptance remain separate."
+  },
+  "current_ledger_wish_sha256": "1d0f9ee9a628b3c04439dfa5c9169314d9c6e79c46d4f6b9c8ed5188c4911163",
+  "changed_context": "Parent admits existing Chromium binary through xd browser for actual owned profile and screenshots because observed Orca captures white; not installednew software/credential/privatebrowser/default grant. Frozen four source bytes unchanged, source/parser/state behavior must not be revised without new readiness. Same six exactscreenshotpaths/proof+doc already admitted. Failure receipts retained in proof/doc, not used as visual proof. Parent must still inspect actualsurface and actualFelipe chooser/independentacceptance/separatequality/fullgate remain required.",
+  "permission": "Temp browser-managed isolated profile outside repo permitted only existing Chromium invocation, allowed_domains127.0.0.1, no profile/relay/CDPpersonal use, no other tabs/services touched; close own tabs. Own preview8878 retained; method8871 unchanged.",
+  "original_scope_and_counters": "12 maxpaths/1450 estimatedinsertions/B2config2/effort0 unchanged; source4immutable. Retry changedenvironmentauthority not repair/reset. Sourcecandidate/deliverystatus explicitfailed, five screenshots absent, selectionnull."
+}

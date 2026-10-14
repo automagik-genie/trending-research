@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-10-08T17:30:22.245095+00:00",
+  "delivery_id": "delivery_4fb66bd2e087",
+  "visual_failed": {
+    "id": "msg_2d3dbade80f9",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_9d12dd82-0f8f-4f89-a6d7-fb6f6b498ce4",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "BLOCKED: #8 variants complete, acceptance authority missing",
+    "body": "Implemented three distinct real-evidence exploration variants, exact-source inspection, preserved Scene selection and responsive/accessibility reader contracts in seven owned files, with frozen candidate identity 5f14a1eb2aacd384b0aafe131f2dec0eb8decaef15705b022df03b0fd5866b01 and one verified claimant handoff. Actual wide/narrow native-browser tasks, all38 original-to-span assertions, keyboard/missingness/state transitions and fail-closed source/privacy scenarios passed, but Orca captures were entirely white and are explicitly not visual proof. Original #8 acceptance remains blocked on unanswered visual-runtime amendment msg_590971d30c04, actual Felipe selection against frozen candidates requested in msg_48913e309e68 and current coordinator aggregate evidence; no alternate runtime, human approval, independent SHIP or deployment was fabricated, and the admitted loopback preview remains available on8878.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_8f2a067b113f\",\"dispatchId\":\"ctx_b9afe1511795\",\"outcome\":\"failed\",\"filesModified\":[\"web/prototypes/index.html\",\"web/prototypes/explorer.css\",\"web/prototypes/explorer.js\",\"web/prototypes/preview.py\",\"web/prototypes/proof/smoke.json\",\"web/prototypes/proof/relationship-wide.png\",\"docs/design/frontier-economics.md\"],\"reportPath\":\"docs/design/frontier-economics.md\"}",
+    "created_at": "2026-10-08T14:49:01Z",
+    "delivered_at": null
+  },
+  "dsh_failed": {
+    "id": "msg_fd1c764f0daa",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_740c7a22-306d-468b-9af9-933e51f44e27",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "BLOCKED: issue 4 readiness unaccepted",
+    "body": "I completed read-only native-contract qualification, produced the explicitly permitted unexecuted planning artifact /tmp/issue4-native-bootstrap-plan.txt at SHA256 a9ad406747c94030663167c26bd1f7ba1191f4391dd2341a6a81a2ffc1ce3b15, and posted/read back the sole issue-4-engineer card handoff. Original criteria 1\u20133 remain BLOCKED by unaccepted trusted product-principal/all-transport enforcement, native durable stop admission, and fresh provider/key/request-cost bounds; the amended readiness question msg_6d24542c79dc remained unanswered through ten timeout/resume waits and escalation, so no repository/runtime/model mutation or smoke/aggregate run occurred. What remains is coordinator review and explicit freeze of the exact prospective native bytes/paths/authorization, followed by real original-scope runtime acceptance and independent review; no original criterion pass, narrowed completion or task done is claimed.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_0a936d713c67\",\"dispatchId\":\"ctx_af839a1785b6\",\"outcome\":\"failed\",\"reportPath\":\"/tmp/issue4-native-bootstrap-plan.txt\"}",
+    "created_at": "2026-10-08T15:24:12Z",
+    "delivered_at": null
+  },
+  "visual_candidate_verified": true,
+  "dsh_plan_sha256": "a9ad406747c94030663167c26bd1f7ba1191f4391dd2341a6a81a2ffc1ce3b15",
+  "brain_old_escalation_resolved_by_actual_user": ".genie/wishes/open-intelligence-observatory/readiness/group-4-native-control-db-repair-3.json",
+  "original_runtime_criteria_accepted": false
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "safe_portable_derivative_not_original",
+  "source_record": ".genie/wishes/open-intelligence-observatory/readiness/user-authorized-saved-BWS-authentication-and-project-metadata-only.json",
+  "source_identity": {
+    "opaque_id": "private-original-03",
+    "content_digest": null,
+    "note": "Private original retained locally unchanged; no private-content hashes exported"
+  },
+  "omitted_fields": [
+    "actual_BWS_projectmetadata_result.projects",
+    "private_token_custody.path",
+    "private_token_custody.user_lookup_authorization"
+  ],
+  "not_execution_authority": true,
+  "local_only_prerequisite": "Fresh authorized operator must separately qualify private product credential custody, account access, spend controls and runtime admission; do not replay this record.",
+  "safe_record": {
+    "at": "2026-10-09T21:44:44.549524+00:00",
+    "user_authorized_saved_BWS_lookup": true,
+    "private_token_custody": {
+      "path": "[OMITTED: private custody/account/identifier or source-content identity]",
+      "regular_file": true,
+      "is_symlink": false,
+      "owner_uid": 1001,
+      "current_uid": 1001,
+      "mode": "0600",
+      "size_in_valid_range": true,
+      "token_value_read_by_parent": false,
+      "token_hash_or_value_reported": false,
+      "user_lookup_authorization": "[OMITTED: private custody/account/identifier or source-content identity]"
+    },
+    "isolated_observer_process_exit": 0,
+    "actual_BWS_projectmetadata_result": {
+      "exit_code": 0,
+      "status": "AuthenticatedProjectMetadataOnly",
+      "projects": "[OMITTED: private custody/account/identifier or source-content identity]",
+      "secret_get_or_list": false,
+      "token_value_or_hash_output": false
+    },
+    "original_three_empty_env_failures_retained_as_historical": true,
+    "no_operator_model_key_fetched_or_reused": true,
+    "product_model_calls": 0,
+    "all_costs_UNKNOWN": true
+  }
+}

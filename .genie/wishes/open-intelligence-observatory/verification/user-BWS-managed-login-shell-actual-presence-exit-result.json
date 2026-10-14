@@ -1,0 +1,79 @@
+{
+  "recorded_at": "2026-10-09T21:26:33.871907+00:00",
+  "grant": "actualuser usebws",
+  "first_probe": "Shell exited0 butstdouttailEMPTY. Actual authpresenceUNKNOWN, notpresent/missingclaim. CloseAPIactualterminal_handle_stale; no broaderclose/retry.",
+  "first_probe_actual_exit": {
+    "handle": "term_86abe2a6-7142-47be-8d27-1ba7ca1312c1",
+    "condition": "exit",
+    "satisfied": true,
+    "status": "exited",
+    "exitCode": 0,
+    "exitCause": {
+      "kind": "exited",
+      "exitCode": 0
+    }
+  },
+  "first_probe_close_receipt": {
+    "id": "5dc1fa2b-f109-478e-95f5-8f31b9417829",
+    "ok": false,
+    "error": {
+      "code": "terminal_handle_stale",
+      "message": "terminal_handle_stale"
+    },
+    "_meta": {
+      "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+    }
+  },
+  "first_probe_in_live_registry": false,
+  "corrected_observer": "exec bash -c testpresenceonly, noshellvalueprint; exact process exit0present/1missing",
+  "second_owned_handle": "term_93a550f5-0d5d-4c89-b000-a0d80eebaa85",
+  "second_create_receipt": {
+    "id": "efa01296-b4cf-432d-9923-346f1106d08f",
+    "ok": true,
+    "result": {
+      "terminal": {
+        "handle": "term_93a550f5-0d5d-4c89-b000-a0d80eebaa85",
+        "tabId": "7285cab0-0e3b-4bd5-bdb1-60338698b61a",
+        "paneKey": "7285cab0-0e3b-4bd5-bdb1-60338698b61a:8aeb645e-89d7-4896-8174-8cf70f233e93",
+        "ptyId": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory@@1111ce82",
+        "worktreeId": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory",
+        "title": "OI BWS approved auth-presence process-exit observer",
+        "executionHostId": "local",
+        "incarnationId": "f2933b1b-0173-4040-ba1d-e7b4d4bfe629",
+        "hostPlatform": "linux",
+        "surface": "background",
+        "warning": "Terminal term_93a550f5-0d5d-4c89-b000-a0d80eebaa85 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_93a550f5-0d5d-4c89-b000-a0d80eebaa85` to reveal and focus it."
+      }
+    },
+    "_meta": {
+      "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+    }
+  },
+  "second_wait_receipt": {
+    "id": "bbf1e532-1a84-4199-b6ca-0f42b0d93ac0",
+    "ok": true,
+    "result": {
+      "wait": {
+        "handle": "term_93a550f5-0d5d-4c89-b000-a0d80eebaa85",
+        "condition": "exit",
+        "satisfied": true,
+        "status": "exited",
+        "exitCode": 1,
+        "exitCause": {
+          "kind": "exited",
+          "exitCode": 1
+        }
+      }
+    },
+    "_meta": {
+      "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+    }
+  },
+  "actual_BWS_access_token_presence_exit": 1,
+  "auth_presence": "missing",
+  "vault_projects_or_secrets_get_list_calls": 0,
+  "raw_terminal_output_persisted": false,
+  "product_provider_model_calls": 0,
+  "repo_or_product_code_changes": false,
+  "secret_values_printed_or_copied": false
+}

@@ -1,0 +1,111 @@
+{
+  "at": "2026-10-10T23:20:28.501467+00:00",
+  "state": "ACTUAL_OWNER_EXPLICIT_TWO_BOUNDED_ALLOWANCE_EXTENSIONS_ONLY",
+  "approver": "Actual user via functions.ask answers in this conversation; NOT inferred from generic autonomy or worker text",
+  "actualQuestionsAndAnswers": [
+    {
+      "id": "read_model_cap5",
+      "question": "Read-model diagnostic: authorize one additional prospective repair/review cycle?",
+      "answer": "Authorize cycle 5/5",
+      "approvedOptionDescription": "One complete inert candidate addressing all four blocker families, followed by two new full-scope independent reviews. Preserve all prior counters and findings; no source application, smoke run, native activation, or paid execution permission."
+    },
+    {
+      "id": "dsh_design_repair3",
+      "question": "Native DSH design: authorize one additional DESIGN-only repair and full review pair?",
+      "answer": "Authorize repair 3/3",
+      "approvedOptionDescription": "Resolve the remaining precursor-invocation ownership gap within the existing architecture, then obtain two new full-scope independent reviews. No implementation, runtime, paid execution, or feature promotion."
+    }
+  ],
+  "source7": {
+    "group": 6,
+    "issue": 7,
+    "sameOriginalTask": "task_2bbfe79e0b5f",
+    "sameOriginalDispatch": "ctx_0c242e837d41",
+    "sameOriginalClaim": "t_muz1j39160558b4b / issue-7-engineer",
+    "oldTotal": 4,
+    "oldUsed": 4,
+    "newTotal": 5,
+    "usedBeforeNewCycle": 4,
+    "remaining": 1,
+    "allowed": "ONE complete inert prospective candidate only plus TWO NEW independent ENTIRE originalC1C8 and separateprivacytransportdeadlinequality reviews; blindWHOLEbeforeANYartifactmethod required; newtrue C7numeric before revieweraccess. Parent no code/sourcereview.",
+    "stillBlockingFamilies": {
+      "count": 4,
+      "families": [
+        "OriginalA1strictsameerroradmissionfor28after",
+        "OriginalA2noprimarykillcleanupbeforepositiveprefix",
+        "OriginalA3+QualityH-Bsameprotocolwirebytecountdrop",
+        "QualityH-Aearlierprotocolcauseoverwrittenbylaterqueueoverflow"
+      ],
+      "whyNot5": "A3 andH-B sameowningmissingmetadata defect",
+      "opposedEvidencePreserved": "QualitygeneralC4after28onlyqualifiederror andC6only-aftervalidatedpublication positives retainedWHOLE butNOTwaivers forOriginalspecificA1/A2counterexamples; noParentsemanticadjudication/selfreview orforcedpeeragreement. Keepownverdicts, applyconservativeunionHOLD."
+    },
+    "sourceBudgetSeparate": {
+      "used": 0,
+      "configured": 2,
+      "effortEscalations": 0
+    },
+    "notGranted": [
+      "sixthcycle/DATA9/reviewerretry/reset",
+      "sourceapply",
+      "safechangedpathsmoke",
+      "nativePGDockeractivation",
+      "sourceclaimreport/cardDone/authorNativeDone",
+      "new source/interface/schema/store/framework/privateaccount/paid permission"
+    ]
+  },
+  "source4": {
+    "group": 3,
+    "issue": 4,
+    "auxCard": "t_mv1nxer60fedac1d",
+    "oldResolvedBudget": 2,
+    "oldUsed": 2,
+    "newResolvedBudgetFromExplicitInstruction": 3,
+    "usedBeforeNewRepair": 2,
+    "remaining": 1,
+    "oldOriginalNativeAuthorReleased": true,
+    "freshAuthorRequired": "Originalnativectx4fd released afterDone; newexactnative author Task/Dispatch with freshclaim native-dsh-extension-design-repair3; no reusesettledIDs",
+    "allowed": "ONE repair3/3 DESIGN-only existing DRAFT.md+DESIGN.md and bounded prior-baseline/handoff records plus TWO NEW independent FULLoriginal and separatequality reviews; wholeA1A10C1C4K1K4/full37owningsourcebodies/14bothwaycarriers/allfootprints/histories/rights; owningminimal samewritercapture OR actualrestrictedcompositionunsupportedobserverdenial, noeventbus/platform expansion.",
+    "remainingOneFamily": {
+      "original": "QH1-R1",
+      "quality": "QH1-S",
+      "count": 1,
+      "bothFullIndependentlyFIXFIRST": "Native internal/dispatch precursor callback returnedpromise/acquisition discarded before selectedtools/result capture; completeexpectedmembership/adoption OR explicitowningprofile denial needsdecision",
+      "noExecutedCounterexample": "BothSOURCESTATIC factualseam/proposalomission vs NOTRUN counterexample inference distinguished",
+      "noNewCriteria": "ExistingA2A5A6A8K1K3allownercompleteness"
+    },
+    "councilUsed": 0,
+    "councilCeiling": 1,
+    "effortEscalations": 0,
+    "notGranted": [
+      "fourthrepair/reset",
+      "implementation",
+      "nativeSDK/runtimeactivation",
+      "paid execution",
+      "WRS100/Ready/currentSHIP stamp/originalfeaturepromotion"
+    ]
+  },
+  "actualPriorFullGateEvidence": {
+    "source7": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-actual-owner-FOURTH-prospective-cycle-COMPLETE-bothWHOLE207141-reports-actualDone-AFTERreleases-conservativeFOURhigh-4of4EXHAUSTED-HOLD-noSourceSmokeNative.json",
+      "bytes": 10302,
+      "LF": 171,
+      "sha256": "2f6c3d0ab101a6e8114906cef96d9aaa8999edb5781bd7df00d31a4bca311c16",
+      "mode": "0600"
+    },
+    "source4": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-BOTH-FULL-original133-quality138-FIX-FIRST-ONEconservativeQH1precursorFamily-B2EXHAUSTED-ACTUAL-Done33b6-fb41-andAFTERnativeReleases-BEFORE2144ACK.json",
+      "bytes": 7794,
+      "LF": 123,
+      "sha256": "e103499342d069f7e06dabecfe99b0bc571a4c111b3715d6fb72880cf989dd28",
+      "mode": "0600"
+    },
+    "oldOwnerCap4Repair2": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-prospective-cap4-ONE-additional-cycle-and-native-DSH-DESIGN-only-final-repair2-human-disagreement-resolution-authority.json",
+      "bytes": 4578,
+      "LF": 37,
+      "sha256": "c2b3131dfa905687c8538d9d86b391492a6a0d386db499c04cf7cc1d29e5dad1",
+      "mode": "0600"
+    }
+  },
+  "unchangedGlobal": "Whole20roadmap80criteria41nativeLinks5milestones/datesassigneesunset/sixlocallyaccepted2,3,5,6,8,11 only; frozenWISH260f/currentD75/receipt0b0/sourcepack/clocks/rights/nativeABIcauseUNKNOWN; Brain4/4no5th/stock2/2no3rd; productmodelgeneration0/USD20DSH12Brain8/allincodingstorageUNKNOWN; no merge/CI/deploy/publicationpromotion. Explicitanswers settle ONLY allowances, no criteriawaiver/source/runtime interface/custody grant."
+}

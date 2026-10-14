@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-08T17:44:48.746240+00:00",
+  "status": "ADMITTED_PROSPECTIVE_PLAN_BYTE_FIX_ONLY_NOT_REPOSITORY_OR_RUNTIME",
+  "issue": 4,
+  "task": "task_0a936d713c67",
+  "retry_of": "ctx_af839a1785b6",
+  "input_plan_path": "/tmp/issue4-native-bootstrap-plan.txt",
+  "input_plan_raw_sha256": "a9ad406747c94030663167c26bd1f7ba1191f4391dd2341a6a81a2ffc1ce3b15",
+  "independent_review": "verification/group-3-native-bootstrap-byte-review-2.txt",
+  "independent_review_raw_sha256": "95be1d068604f4b1e6e5576a7a1b456a2312aadb3f0fbd145d1b1e5816aaea2d",
+  "current_wish_sha256": "1d0f9ee9a628b3c04439dfa5c9169314d9c6e79c46d4f6b9c8ed5188c4911163",
+  "B": 2,
+  "budget_source": "config2",
+  "repairs_used_before": 0,
+  "repairs_used_on_this_admission": 1,
+  "effort_escalations": 0,
+  "counter_note": "First bounded FIX-FIRST prospective-native-bootstrap byte repair; previous BLOCKED design requalification and no-write failed lifecycle handoffs are not hidden executed implementation repair rounds; no counter reset.",
+  "only_write_permission": [
+    "/tmp/issue4-native-bootstrap-plan-repaired-1.txt"
+  ],
+  "exact_gaps": [
+    "H1 preservebounded originatingbootstrap/metadata/Docker diagnostic phase/reason/code and privatecustody redaction; cleanup cannoteraseorigin; deliberatefailedbefore/passedafter diagnosticstaticcontrols and eventualactualsmoke",
+    "H2 distinguish public supportednative lifecycle completed receipt from forced timeout/rejection/termination and OS/container cleanup, no exit0/SIGTERM asnativeglobaldisposalproof; ifsupportedcompleteunobservable stateunavailable/failnotfake andprecisenativeroutebeforebootstrapadmission"
+  ],
+  "unchanged": "Originalfourcriteria/5pathestimated1000sourceplan/fullscope/DAG/pins/ownership; source/SDK/schema/runtime/profile/model/paid/credential mutation UNADMITTED. FreshDeepSeek route actualuserselected, credentialnotprovided or operatorcopyallowed; USD12 same, total20. Preserve originalprospectiveplan and oldfailedreports.",
+  "next_gate": "Blocking exactrepairedbytehash/size/ownership/readiness ask; fresh independent originalS1\u2013S4 review before repositoryauthoring/bootstrap. No new subsystem or unrelated cleanup."
+}

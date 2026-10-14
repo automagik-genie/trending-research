@@ -1,0 +1,190 @@
+{
+  "recorded_at": "2026-10-09T20:54:45.396722+00:00",
+  "native_question_id": "msg_4c9661aae3cf",
+  "body_sha256": "230e4859a9ecb978ae272b28249ca8dd814657a1b26d98408a8dd8738d1cf38b",
+  "full_original_request_body": "{\"task\":\"task_2bbfe79e0b5f\",\"dispatch\":\"ctx_0c242e837d41\",\"stage\":\"READONLY_PROSPECTIVE_DIAGNOSTIC_REPAIR_1_REQUIRES_INDEPENDENT_PLAN_REVIEW_AND_EXECUTION_GATE\",\"B\":2,\"configured\":2,\"repair_used\":0,\"effort_escalations\":0,\"temporary_source_freeze\":[{\"path\":\"observatory/evidence/contracts.py\",\"sha256\":\"0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15\",\"bytes\":22505,\"lines\":354},{\"path\":\"observatory/evidence/brain.py\",\"sha256\":\"d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2\",\"bytes\":12768,\"lines\":220},{\"path\":\"observatory/evidence/model.py\",\"sha256\":\"80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5\",\"bytes\":5908,\"lines\":83},{\"path\":\"observatory/evidence/cordis.mjs\",\"sha256\":\"949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374\",\"bytes\":2646,\"lines\":70},{\"path\":\"observatory/evidence/__main__.py\",\"sha256\":\"8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e\",\"bytes\":2361,\"lines\":52},{\"path\":\"observatory/evidence/receipts.json\",\"sha256\":\"0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca\",\"bytes\":11997001,\"lines\":30},{\"path\":\"observatory/python_adapter.py\",\"sha256\":\"aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1\",\"bytes\":8901,\"lines\":122},{\"path\":\"docs/integrations/python-pipeline.md\",\"exists\":false,\"disposition\":\"not authored; full native proof blocked\"},{\"path\":\"investigations/frontier-economics/manifest.json\",\"exists\":false,\"disposition\":\"not authored; full native proof blocked\"},{\"path\":\"tests/test_investigation.py\",\"sha256\":\"c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d\",\"bytes\":3439,\"lines\":53},{\"path\":\"tests/test_evidence_contracts.py\",\"sha256\":\"13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e\",\"bytes\":13514,\"lines\":230}],\"correction\":\"Actual rejected record is ReplayManifest (6241702bytes), NOT final canonical root. Scene/root unattempted. Readonly originalcall-index1444 +30102 completedremember/getpairs exactlymatch restored input; failedrequest argumentsSHA b41a2 exactlymatched from frozen clocks. Prior root-failure phrasing was [INFERENCE] and corrected via msg84d139407e27. Original causal errorbody not recoverable from hash.\",\"readonly_binding_recovery\":\"30102 actual nativegetter argumenthash preimages found withinIDs1..100000 via canonical {brain_id:brn_63n8pr,memory_id:str(i)} SHA; reflects previouslyexecuted getterrequestIDs, no new/nativecalls or guessed accepted IDs. Full root reconstruction is neither needed nor possible before rejectedReplayManifest/Scene complete. ZERO30102records reimport/recovery calls requested for diagnosis.\",\"original_snapshot\":{\"path\":\"web/data.json\",\"file_sha256\":\"a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36\",\"bundle_sha256\":\"6f78e23589b5e07ce344daa4611aba2347e50086105998cc7f25385065140539\",\"ingested_at\":\"2026-10-09T19:02:47.018224Z\",\"computed_at\":\"2026-10-09T19:02:47.018288Z\",\"candidate_canonical_bundle_utf8_bytes\":31723466,\"last_tool\":\"brain_remember\",\"last_collection\":\"replay_manifests\",\"last_application_id\":\"manifest:snapshot:68d415eb7d23fda29b30f527493fce1f83e4f563f0cba268ef08010c56d48c98\",\"last_content_utf8_bytes\":6241702,\"last_arguments_sha256\":\"b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91\",\"old_error_response_sha256\":\"f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3\"},\"exact_mutation_paths\":[{\"path\":\"observatory/evidence/brain.py\",\"before_sha256\":\"d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2\",\"change\":\"Add bounded safe_native_error helper and capture only safelyredacted scalar code/message+raw_responseSHA on actualerror. Add actualnative successfulresponse identity fields brain_id/memory_id/revision/action in callreceipts. No rawcontent/metadata/pw/argv/DSN persisted. Derive knownownpasswordredactions from admitted argvDATABASE_URL via urlsplit/unquote only, no inheritedenvread/globalconfig. Redact URLuserinfo, auth/bearer/token/password/secret/apikey fields, all absoluteprivatepaths; truncate sanitizedmessage1024 and code80, retaincomplete=false whentruncated. Preserve NativeError.body in memory for causal actualhash/safeextract, no source/provider/runtime API changes.\"},{\"path\":\"observatory/evidence/receipts.json\",\"before_sha256\":\"0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca\",\"change\":\"Append diagnostic_repair_1 object only; preserve entire original61649callobjects/originalfailedsnapshot/clocks/status unchanged. Existing statusBLOCKED_WIDEN remains no groupPASS claim. Parent alreadycopied fulloriginal failedreceipt as verification/...-1.json.\"}],\"unchanged_paths\":\"Other9frozen owned paths unchanged (two still absent). No sourcepack/nativequalification6files/DSH/Cordis/UI/root/Git writes.\",\"size\":\"Same11permanentpaths, prospective+45to60code lines plus onecompactdiagnosticreceipt fieldline, current existingowned1214lines includes230line oldtestfile; finalestimate1700<=2000hard. No newdependency/schema/store.\",\"prospective_scaffold\":{\"path\":\"/tmp/oi7-native-replay-diagnostic-1.py\",\"sha256\":\"6149d87c32fafa7e40c08df4588c45d80bca8b06cc97c14ef1dedc1377ad03ad\",\"utf8_bytes\":6790,\"lines\":84,\"source\":\"\\\"\\\"\\\"One admitted causal-data capture; never a full import or success substitute.\\\"\\\"\\\"\\nimport sys\\nfrom pathlib import Path\\nsys.path.insert(0,str(Path.cwd()))\\nimport hashlib,json,subprocess,time\\nfrom observatory.evidence.brain import BrainEvidence,NativeError,canonical,isolated_argv,CONTAINER,safe_native_error\\nfrom observatory.evidence.contracts import FIELDS,load_bundle,record_digest\\nfrom observatory.python_adapter import extract_snapshot\\nRECEIPT=Path('observatory/evidence/receipts.json')\\nORIGINAL_RECEIPT_SHA='0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca'\\nLAST_ARGS_SHA='b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91'\\nEXPECTED_ERROR_SHA='f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3'\\nSNAPSHOT_SHA='a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36'\\nassert hashlib.sha256(RECEIPT.read_bytes()).hexdigest()==ORIGINAL_RECEIPT_SHA\\nassert hashlib.sha256(Path('web/data.json').read_bytes()).hexdigest()==SNAPSHOT_SHA\\nold=load_bundle(RECEIPT)\\nassert old['status']=='BLOCKED_WIDEN' and old['custody']['running'] is False\\nbundle=extract_snapshot(load_bundle('web/data.json'),ingested_at='2026-10-09T19:02:47.018224Z',computed_at='2026-10-09T19:02:47.018288Z')\\nassert record_digest(bundle)=='6f78e23589b5e07ce344daa4611aba2347e50086105998cc7f25385065140539'\\nrecord=bundle['replay_manifests'][0]\\nargs={'brain_id':'brn_63n8pr','content':canonical(record),'scope':'global','veracity':'imported','source':record['id'],'extract':False,'extract_entities':False,'operation_key':'oi7:'+hashlib.sha256(record['id'].encode()).hexdigest(),'actor':'issue-7-engineer','reason':'Admitted isolated investigation evidence import','metadata':{'application_id':record['id'],'collection':'replay_manifests','canonical_sha256':record_digest(record),'provenance':None}}\\nassert record_digest(args)==LAST_ARGS_SHA and len(canonical(record).encode())==6241702\\n# Redaction vectors exercise no native/provider/store substitute and print no secrets.\\nfixture='LAB_ONLY_'+'private_credential'\\nprobe=safe_native_error({'content':[{'type':'text','text':'postgresql://local:'+fixture+'@127.0.0.1/db Authorization: Bearer secret_header token=secret_query /home/private/person/file '+fixture}]},(fixture,))\\nassert all(x not in canonical(probe) for x in (fixture,'secret_header','secret_query','/home/private/person/file'))\\ninfo=json.loads(subprocess.check_output(['docker','inspect',CONTAINER]))[0]\\nassert info['Id']==CONTAINER and not info['State']['Running']\\nassert info['Config']['User']=='1001:1001' and info['HostConfig']['NetworkMode']=='none'\\nassert info['HostConfig']['ReadonlyRootfs'] and not info['HostConfig']['Privileged'] and not info['HostConfig']['PortBindings']\\nassert info['Image']=='sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f'\\nexpected={'/opt/brain':(Path('/home/genie/.brain/bin'),False),'/qualification/sandbox':(Path.cwd()/'integrations/brain/qualification/sandbox',True),'/var/lib/postgresql/data':(Path.cwd()/'integrations/brain/qualification/sandbox/pgdata',True),'/licensed-sources':(Path.cwd()/'investigations/frontier-economics/licensed-sources',False)}\\nassert len(info['Mounts'])==4 and {m['Destination'] for m in info['Mounts']}==set(expected)\\nfor mount in info['Mounts']:\\n p,w=expected[mount['Destination']]\\n assert mount['Type']=='bind' and Path(mount['Source']).resolve()==p.resolve() and mount['RW']==w\\nassert hashlib.sha256(Path('/home/genie/.brain/bin/brain').read_bytes()).hexdigest()=='631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78'\\nqual=load_bundle('integrations/brain/qualification/native-receipts.json')\\noriginal=[{**b,'application_id':ident,'brain_id':'brn_63n8pr'} for ident,b in qual['bindings'].items()]\\nroots=[old['historical_v1_binding'],old['binding']]\\nresult={'stage':'DIAGNOSTIC_REPAIR_1_CAUSAL_CAPTURE_ONLY','status':'RUNNING','original_failed_receipt_sha256':ORIGINAL_RECEIPT_SHA,'original_args_sha256':LAST_ARGS_SHA,'snapshot_sha256':SNAPSHOT_SHA,'diagnostic_pg_start_count':1,'storage_restart_count_this_repair':0,'paid_model_calls':0,'operation_key':args['operation_key'],'target_application_id':record['id'],'target_collection':'replay_manifests','target_content_utf8_bytes':6241702}\\nclient=None\\nstarted=False\\ntry:\\n subprocess.run(['docker','start',CONTAINER],check=True,capture_output=True,text=True,timeout=30)\\n started=True\\n client=BrainEvidence(isolated_argv(),brain_id='brn_63n8pr')\\n before={b['application_id']:record_digest(client.get(b)) for b in original+roots}\\n # Exactly this one failed original request, to obtain missing causal data.\\n try:\\n  response=client.call('brain_remember',args)\\n  result['unexpected_success']={k:response[k] for k in ('brain_id','memory_id','revision','action') if k in response}\\n  binding={'brain_id':client.brain_id,'application_id':record['id'],'collection':'replay_manifests','canonical_sha256':record_digest(record),'memory_id':response['memory_id'],'revision':response['revision']}\\n  assert client.get(binding)==record\\n  result['status']='DIAGNOSTIC_REQUEST_SUCCEEDED_NOT_COMPLETE_SNAPSHOT'\\n except NativeError as exc:\\n  result['actual_error_sha256']=record_digest(exc.body)\\n  result['same_original_error_response']=result['actual_error_sha256']==EXPECTED_ERROR_SHA\\n  result['safe_native_error']=safe_native_error(exc.body,client.redactions)\\n  result['status']='DIAGNOSTIC_REJECTION_CAUSAL_CAPTURE_NOT_COMPLETION'\\n after={b['application_id']:record_digest(client.get(b)) for b in original+roots}\\n assert before==after\\n result['original_26_and_roots_200_201_unchanged']=before\\n result['native_calls']=client.calls\\n assert len(client.calls)<=58\\nexcept BaseException as exc:\\n result['status']='BLOCKED_DIAGNOSTIC';result['error_type']=type(exc).__name__\\n if isinstance(exc,NativeError):\\n  result['safe_native_error']=safe_native_error(exc.body,client.redactions if client else ())\\n  result['actual_error_sha256']=record_digest(exc.body)\\n raise\\nfinally:\\n try:\\n  if client:\\n   result['native_calls']=client.calls\\n   client.close()\\n finally:\\n  stop=subprocess.run(['docker','stop','--time','20',CONTAINER],capture_output=True,text=True,timeout=60) if started else None\\n  info=json.loads(subprocess.check_output(['docker','inspect',CONTAINER]))[0]\\n  result['custody']={'diagnostic_start_performed':started,'stop_exit':stop.returncode if stop else None,'running':info['State']['Running'],'container':info['Id'],'pgdata_retained':True}\\n  saved={**old,'diagnostic_repair_1':result}\\n  RECEIPT.write_text('{\\\\n'+',\\\\n'.join(json.dumps(k)+':'+canonical(v) for k,v in saved.items())+'\\\\n}\\\\n')\\n  assert not info['State']['Running'] and (stop is None or stop.returncode==0),'diagnostic custody cleanup failed'\\nprint(canonical({k:v for k,v in result.items() if k not in ('native_calls','original_26_and_roots_200_201_unchanged')}))\\n\",\"write_only_after_execution_gate\":true},\"native_scope\":{\"activation\":\"ONEadditional ownproduct diagnosticPGSTART after priorfinalstop; explicitly secondproductactivation, not claimno secondstart, not faultrecoveryrestart/fifth#5qualificationrepair. Exact845fa540 owncontainer, brn63, existingoi5_owner cleanminimalDSN sameapproved4binds/nativebinary/livetools/networknone/readOnly1001:1001 beforestart and handshakepin. No roles/grants/schema/newnamespace/container/provider/defaultmemory/config/network changes.\",\"calls\":\"Atmost58native tools: 26originals+roots200201 getterbefore=28; ONE exact originalrejectedReplayManifest remember with exactSHA b41; conditionalONEgetter onlyif unexpectedsuccess to verify actualreturnedID/record; 28gettersafter to compare originals/roots. Supportedinitialize/toolslist2+notification, not alternative SDK/recall/search/latest/nativeboundIDs invented. ZEROwholeimport/recovery/rebuild/chunking requests.\",\"runtime_bound\":\"Each nativeJSONRPC request <=30s existingtransport. Outerdiagnosticcommand deadline300s with explicitstop/inspect cleanup even onchildfailure; normal owned script exactcommand python3 -B /tmp/oi7-native-replay-diagnostic-1.py. Await nativeclose5s, dockerstop --time20 within60s, inspectstoppedmandatory; actual nativeprocess hardtimeout must be handled by approved outerrunner finally stop, not killandclaimcleanup. No storage restart.\",\"custody\":\"Finalstopinspect failclosed PGDATAretainedparentcustody. Ifparentcanownreadonlyrecordconsumergate beforenewstop onlysafeexistingroots notfullsnapshot, but defaultsstopafterdiagnosis; no extraactivation forparentconsumer.\",\"output\":\"Actualcausalsafe code/message and raw actualresponseSHA compared originalf6; rejection itself is expecteddiagnostic outcome not success. If it succeeds unexpectedly, recordreturnedactualbinding/readback once thenSTOP; fullScene/root still unattempted and no continuedwiden. Stopunexpecteddifferentbody/identity/redaction/integrity/cleanup failure, no unchangedretry.\"},\"next_gate\":\"After captured causal error parent independently evaluates nativeactualconstraint; then separate explicit architecture/readiness for pagedcanonicalmanifest or sloworiginalperrecordindex, maintaining allscope/acceptedcontracts. No implementationarchitecture/scope reduction/chunking/truncation or restore retry authorized by this diagnostic plan. No standalonecardhandoff yet.\"}\nPlease freeze exact prospective diagnostic plan for independent review, then provide execution gate or requested correction. No source/runtime mutation since failure; temporarysourcefreeze remains.",
+  "decoded_plan": {
+    "task": "task_2bbfe79e0b5f",
+    "dispatch": "ctx_0c242e837d41",
+    "stage": "READONLY_PROSPECTIVE_DIAGNOSTIC_REPAIR_1_REQUIRES_INDEPENDENT_PLAN_REVIEW_AND_EXECUTION_GATE",
+    "B": 2,
+    "configured": 2,
+    "repair_used": 0,
+    "effort_escalations": 0,
+    "temporary_source_freeze": [
+      {
+        "path": "observatory/evidence/contracts.py",
+        "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+        "bytes": 22505,
+        "lines": 354
+      },
+      {
+        "path": "observatory/evidence/brain.py",
+        "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+        "bytes": 12768,
+        "lines": 220
+      },
+      {
+        "path": "observatory/evidence/model.py",
+        "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+        "bytes": 5908,
+        "lines": 83
+      },
+      {
+        "path": "observatory/evidence/cordis.mjs",
+        "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+        "bytes": 2646,
+        "lines": 70
+      },
+      {
+        "path": "observatory/evidence/__main__.py",
+        "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+        "bytes": 2361,
+        "lines": 52
+      },
+      {
+        "path": "observatory/evidence/receipts.json",
+        "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+        "bytes": 11997001,
+        "lines": 30
+      },
+      {
+        "path": "observatory/python_adapter.py",
+        "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+        "bytes": 8901,
+        "lines": 122
+      },
+      {
+        "path": "docs/integrations/python-pipeline.md",
+        "exists": false,
+        "disposition": "not authored; full native proof blocked"
+      },
+      {
+        "path": "investigations/frontier-economics/manifest.json",
+        "exists": false,
+        "disposition": "not authored; full native proof blocked"
+      },
+      {
+        "path": "tests/test_investigation.py",
+        "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+        "bytes": 3439,
+        "lines": 53
+      },
+      {
+        "path": "tests/test_evidence_contracts.py",
+        "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+        "bytes": 13514,
+        "lines": 230
+      }
+    ],
+    "correction": "Actual rejected record is ReplayManifest (6241702bytes), NOT final canonical root. Scene/root unattempted. Readonly originalcall-index1444 +30102 completedremember/getpairs exactlymatch restored input; failedrequest argumentsSHA b41a2 exactlymatched from frozen clocks. Prior root-failure phrasing was [INFERENCE] and corrected via msg84d139407e27. Original causal errorbody not recoverable from hash.",
+    "readonly_binding_recovery": "30102 actual nativegetter argumenthash preimages found withinIDs1..100000 via canonical {brain_id:brn_63n8pr,memory_id:str(i)} SHA; reflects previouslyexecuted getterrequestIDs, no new/nativecalls or guessed accepted IDs. Full root reconstruction is neither needed nor possible before rejectedReplayManifest/Scene complete. ZERO30102records reimport/recovery calls requested for diagnosis.",
+    "original_snapshot": {
+      "path": "web/data.json",
+      "file_sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+      "bundle_sha256": "6f78e23589b5e07ce344daa4611aba2347e50086105998cc7f25385065140539",
+      "ingested_at": "2026-10-09T19:02:47.018224Z",
+      "computed_at": "2026-10-09T19:02:47.018288Z",
+      "candidate_canonical_bundle_utf8_bytes": 31723466,
+      "last_tool": "brain_remember",
+      "last_collection": "replay_manifests",
+      "last_application_id": "manifest:snapshot:68d415eb7d23fda29b30f527493fce1f83e4f563f0cba268ef08010c56d48c98",
+      "last_content_utf8_bytes": 6241702,
+      "last_arguments_sha256": "b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91",
+      "old_error_response_sha256": "f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3"
+    },
+    "exact_mutation_paths": [
+      {
+        "path": "observatory/evidence/brain.py",
+        "before_sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+        "change": "Add bounded safe_native_error helper and capture only safelyredacted scalar code/message+raw_responseSHA on actualerror. Add actualnative successfulresponse identity fields brain_id/memory_id/revision/action in callreceipts. No rawcontent/metadata/pw/argv/DSN persisted. Derive knownownpasswordredactions from admitted argvDATABASE_URL via urlsplit/unquote only, no inheritedenvread/globalconfig. Redact URLuserinfo, auth/bearer/token/password/secret/apikey fields, all absoluteprivatepaths; truncate sanitizedmessage1024 and code80, retaincomplete=false whentruncated. Preserve NativeError.body in memory for causal actualhash/safeextract, no source/provider/runtime API changes."
+      },
+      {
+        "path": "observatory/evidence/receipts.json",
+        "before_sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+        "change": "Append diagnostic_repair_1 object only; preserve entire original61649callobjects/originalfailedsnapshot/clocks/status unchanged. Existing statusBLOCKED_WIDEN remains no groupPASS claim. Parent alreadycopied fulloriginal failedreceipt as verification/...-1.json."
+      }
+    ],
+    "unchanged_paths": "Other9frozen owned paths unchanged (two still absent). No sourcepack/nativequalification6files/DSH/Cordis/UI/root/Git writes.",
+    "size": "Same11permanentpaths, prospective+45to60code lines plus onecompactdiagnosticreceipt fieldline, current existingowned1214lines includes230line oldtestfile; finalestimate1700<=2000hard. No newdependency/schema/store.",
+    "prospective_scaffold": {
+      "path": "/tmp/oi7-native-replay-diagnostic-1.py",
+      "sha256": "6149d87c32fafa7e40c08df4588c45d80bca8b06cc97c14ef1dedc1377ad03ad",
+      "utf8_bytes": 6790,
+      "lines": 84,
+      "source": "\"\"\"One admitted causal-data capture; never a full import or success substitute.\"\"\"\nimport sys\nfrom pathlib import Path\nsys.path.insert(0,str(Path.cwd()))\nimport hashlib,json,subprocess,time\nfrom observatory.evidence.brain import BrainEvidence,NativeError,canonical,isolated_argv,CONTAINER,safe_native_error\nfrom observatory.evidence.contracts import FIELDS,load_bundle,record_digest\nfrom observatory.python_adapter import extract_snapshot\nRECEIPT=Path('observatory/evidence/receipts.json')\nORIGINAL_RECEIPT_SHA='0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca'\nLAST_ARGS_SHA='b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91'\nEXPECTED_ERROR_SHA='f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3'\nSNAPSHOT_SHA='a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36'\nassert hashlib.sha256(RECEIPT.read_bytes()).hexdigest()==ORIGINAL_RECEIPT_SHA\nassert hashlib.sha256(Path('web/data.json').read_bytes()).hexdigest()==SNAPSHOT_SHA\nold=load_bundle(RECEIPT)\nassert old['status']=='BLOCKED_WIDEN' and old['custody']['running'] is False\nbundle=extract_snapshot(load_bundle('web/data.json'),ingested_at='2026-10-09T19:02:47.018224Z',computed_at='2026-10-09T19:02:47.018288Z')\nassert record_digest(bundle)=='6f78e23589b5e07ce344daa4611aba2347e50086105998cc7f25385065140539'\nrecord=bundle['replay_manifests'][0]\nargs={'brain_id':'brn_63n8pr','content':canonical(record),'scope':'global','veracity':'imported','source':record['id'],'extract':False,'extract_entities':False,'operation_key':'oi7:'+hashlib.sha256(record['id'].encode()).hexdigest(),'actor':'issue-7-engineer','reason':'Admitted isolated investigation evidence import','metadata':{'application_id':record['id'],'collection':'replay_manifests','canonical_sha256':record_digest(record),'provenance':None}}\nassert record_digest(args)==LAST_ARGS_SHA and len(canonical(record).encode())==6241702\n# Redaction vectors exercise no native/provider/store substitute and print no secrets.\nfixture='LAB_ONLY_'+'private_credential'\nprobe=safe_native_error({'content':[{'type':'text','text':'postgresql://local:'+fixture+'@127.0.0.1/db Authorization: Bearer secret_header token=secret_query /home/private/person/file '+fixture}]},(fixture,))\nassert all(x not in canonical(probe) for x in (fixture,'secret_header','secret_query','/home/private/person/file'))\ninfo=json.loads(subprocess.check_output(['docker','inspect',CONTAINER]))[0]\nassert info['Id']==CONTAINER and not info['State']['Running']\nassert info['Config']['User']=='1001:1001' and info['HostConfig']['NetworkMode']=='none'\nassert info['HostConfig']['ReadonlyRootfs'] and not info['HostConfig']['Privileged'] and not info['HostConfig']['PortBindings']\nassert info['Image']=='sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f'\nexpected={'/opt/brain':(Path('/home/genie/.brain/bin'),False),'/qualification/sandbox':(Path.cwd()/'integrations/brain/qualification/sandbox',True),'/var/lib/postgresql/data':(Path.cwd()/'integrations/brain/qualification/sandbox/pgdata',True),'/licensed-sources':(Path.cwd()/'investigations/frontier-economics/licensed-sources',False)}\nassert len(info['Mounts'])==4 and {m['Destination'] for m in info['Mounts']}==set(expected)\nfor mount in info['Mounts']:\n p,w=expected[mount['Destination']]\n assert mount['Type']=='bind' and Path(mount['Source']).resolve()==p.resolve() and mount['RW']==w\nassert hashlib.sha256(Path('/home/genie/.brain/bin/brain').read_bytes()).hexdigest()=='631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78'\nqual=load_bundle('integrations/brain/qualification/native-receipts.json')\noriginal=[{**b,'application_id':ident,'brain_id':'brn_63n8pr'} for ident,b in qual['bindings'].items()]\nroots=[old['historical_v1_binding'],old['binding']]\nresult={'stage':'DIAGNOSTIC_REPAIR_1_CAUSAL_CAPTURE_ONLY','status':'RUNNING','original_failed_receipt_sha256':ORIGINAL_RECEIPT_SHA,'original_args_sha256':LAST_ARGS_SHA,'snapshot_sha256':SNAPSHOT_SHA,'diagnostic_pg_start_count':1,'storage_restart_count_this_repair':0,'paid_model_calls':0,'operation_key':args['operation_key'],'target_application_id':record['id'],'target_collection':'replay_manifests','target_content_utf8_bytes':6241702}\nclient=None\nstarted=False\ntry:\n subprocess.run(['docker','start',CONTAINER],check=True,capture_output=True,text=True,timeout=30)\n started=True\n client=BrainEvidence(isolated_argv(),brain_id='brn_63n8pr')\n before={b['application_id']:record_digest(client.get(b)) for b in original+roots}\n # Exactly this one failed original request, to obtain missing causal data.\n try:\n  response=client.call('brain_remember',args)\n  result['unexpected_success']={k:response[k] for k in ('brain_id','memory_id','revision','action') if k in response}\n  binding={'brain_id':client.brain_id,'application_id':record['id'],'collection':'replay_manifests','canonical_sha256':record_digest(record),'memory_id':response['memory_id'],'revision':response['revision']}\n  assert client.get(binding)==record\n  result['status']='DIAGNOSTIC_REQUEST_SUCCEEDED_NOT_COMPLETE_SNAPSHOT'\n except NativeError as exc:\n  result['actual_error_sha256']=record_digest(exc.body)\n  result['same_original_error_response']=result['actual_error_sha256']==EXPECTED_ERROR_SHA\n  result['safe_native_error']=safe_native_error(exc.body,client.redactions)\n  result['status']='DIAGNOSTIC_REJECTION_CAUSAL_CAPTURE_NOT_COMPLETION'\n after={b['application_id']:record_digest(client.get(b)) for b in original+roots}\n assert before==after\n result['original_26_and_roots_200_201_unchanged']=before\n result['native_calls']=client.calls\n assert len(client.calls)<=58\nexcept BaseException as exc:\n result['status']='BLOCKED_DIAGNOSTIC';result['error_type']=type(exc).__name__\n if isinstance(exc,NativeError):\n  result['safe_native_error']=safe_native_error(exc.body,client.redactions if client else ())\n  result['actual_error_sha256']=record_digest(exc.body)\n raise\nfinally:\n try:\n  if client:\n   result['native_calls']=client.calls\n   client.close()\n finally:\n  stop=subprocess.run(['docker','stop','--time','20',CONTAINER],capture_output=True,text=True,timeout=60) if started else None\n  info=json.loads(subprocess.check_output(['docker','inspect',CONTAINER]))[0]\n  result['custody']={'diagnostic_start_performed':started,'stop_exit':stop.returncode if stop else None,'running':info['State']['Running'],'container':info['Id'],'pgdata_retained':True}\n  saved={**old,'diagnostic_repair_1':result}\n  RECEIPT.write_text('{\\n'+',\\n'.join(json.dumps(k)+':'+canonical(v) for k,v in saved.items())+'\\n}\\n')\n  assert not info['State']['Running'] and (stop is None or stop.returncode==0),'diagnostic custody cleanup failed'\nprint(canonical({k:v for k,v in result.items() if k not in ('native_calls','original_26_and_roots_200_201_unchanged')}))\n",
+      "write_only_after_execution_gate": true
+    },
+    "native_scope": {
+      "activation": "ONEadditional ownproduct diagnosticPGSTART after priorfinalstop; explicitly secondproductactivation, not claimno secondstart, not faultrecoveryrestart/fifth#5qualificationrepair. Exact845fa540 owncontainer, brn63, existingoi5_owner cleanminimalDSN sameapproved4binds/nativebinary/livetools/networknone/readOnly1001:1001 beforestart and handshakepin. No roles/grants/schema/newnamespace/container/provider/defaultmemory/config/network changes.",
+      "calls": "Atmost58native tools: 26originals+roots200201 getterbefore=28; ONE exact originalrejectedReplayManifest remember with exactSHA b41; conditionalONEgetter onlyif unexpectedsuccess to verify actualreturnedID/record; 28gettersafter to compare originals/roots. Supportedinitialize/toolslist2+notification, not alternative SDK/recall/search/latest/nativeboundIDs invented. ZEROwholeimport/recovery/rebuild/chunking requests.",
+      "runtime_bound": "Each nativeJSONRPC request <=30s existingtransport. Outerdiagnosticcommand deadline300s with explicitstop/inspect cleanup even onchildfailure; normal owned script exactcommand python3 -B /tmp/oi7-native-replay-diagnostic-1.py. Await nativeclose5s, dockerstop --time20 within60s, inspectstoppedmandatory; actual nativeprocess hardtimeout must be handled by approved outerrunner finally stop, not killandclaimcleanup. No storage restart.",
+      "custody": "Finalstopinspect failclosed PGDATAretainedparentcustody. Ifparentcanownreadonlyrecordconsumergate beforenewstop onlysafeexistingroots notfullsnapshot, but defaultsstopafterdiagnosis; no extraactivation forparentconsumer.",
+      "output": "Actualcausalsafe code/message and raw actualresponseSHA compared originalf6; rejection itself is expecteddiagnostic outcome not success. If it succeeds unexpectedly, recordreturnedactualbinding/readback once thenSTOP; fullScene/root still unattempted and no continuedwiden. Stopunexpecteddifferentbody/identity/redaction/integrity/cleanup failure, no unchangedretry."
+    },
+    "next_gate": "After captured causal error parent independently evaluates nativeactualconstraint; then separate explicit architecture/readiness for pagedcanonicalmanifest or sloworiginalperrecordindex, maintaining allscope/acceptedcontracts. No implementationarchitecture/scope reduction/chunking/truncation or restore retry authorized by this diagnostic plan. No standalonecardhandoff yet."
+  },
+  "parent_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "parent_full_failed_receipts_copy_sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+  "corrected_failure": "ReplayManifest6.241702MB rejected; Scene/finalrootunattempted. CausebodyUNKNOWN. NativegetterIDs hashpreimages readonly recovered (notinventedacceptedIDs), no all31krememberreplayneeded.",
+  "status": "FROZEN_PROSPECTIVE_ONLY_INDEPENDENT_REVIEW_BEFORE_ANY_CODE_OR_RUNTIME",
+  "source7_temporary_actual": {
+    "observatory/evidence/contracts.py": {
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "bytes": 22505,
+      "mode": "0600"
+    },
+    "observatory/evidence/brain.py": {
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "bytes": 12768,
+      "mode": "0600"
+    },
+    "observatory/evidence/model.py": {
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "bytes": 5908,
+      "mode": "0600"
+    },
+    "observatory/evidence/cordis.mjs": {
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "bytes": 2646,
+      "mode": "0600"
+    },
+    "observatory/evidence/__main__.py": {
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "bytes": 2361,
+      "mode": "0600"
+    },
+    "observatory/evidence/receipts.json": {
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "bytes": 11997001,
+      "mode": "0600"
+    },
+    "observatory/python_adapter.py": {
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "bytes": 8901,
+      "mode": "0600"
+    },
+    "docs/integrations/python-pipeline.md": {
+      "exists": false,
+      "disposition": "not authored; full native proof blocked"
+    },
+    "investigations/frontier-economics/manifest.json": {
+      "exists": false,
+      "disposition": "not authored; full native proof blocked"
+    },
+    "tests/test_investigation.py": {
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "bytes": 3439,
+      "mode": "0600"
+    },
+    "tests/test_evidence_contracts.py": {
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "bytes": 13514,
+      "mode": "0600"
+    }
+  },
+  "new_current_cordis_doc_sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+  "old_pinned_cordis_snapshot_sha256": "ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6",
+  "no_scaffold_file_created_by_coordinator": true,
+  "scaffold_exact_source_text_sha256_verified": true
+}

@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-09T23:08:20.606642+00:00",
+  "positive_parent_assessment": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-quality-full-positive-review-deliverable-assessment-FIX-FIRST.json",
+    "sha256": "2c30432f3f65576418f9ddaaae45f74125e9279cbf2d920cec589fb7713c8c92"
+  },
+  "full_report": {
+    "sha256": "1caa207996399e66a51d60153a7e7f8fbec9c1876d334329c5c3a0b7c64a3a12",
+    "bytes": 26752,
+    "mode": "0600"
+  },
+  "actual_LF": 143,
+  "release_actual": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"cfe9f425-a32a-4815-a409-d6b0c6e6b2f8\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_3f696bbb243a\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"91cf1c1c-916e-404f-a967-63f5d4dbc590\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "cfe9f425-a32a-4815-a409-d6b0c6e6b2f8",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_3f696bbb243a",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "91cf1c1c-916e-404f-a967-63f5d4dbc590",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "deliver901_notyetACK": "fullparentassessment+actualsupportednativeRELEASEbeforeACK",
+  "source7qualification_BLOCKED": true,
+  "quality1of1_exhausted_no_second_orreset": true
+}

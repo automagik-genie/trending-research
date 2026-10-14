@@ -1,0 +1,696 @@
+{
+  "actual_full_prospective_diff": "--- observatory/evidence/brain.py (actual d75 baseline)\n+++ observatory/evidence/brain.py (prospective corrective5 DATA)\n@@ -6,6 +6,8 @@\n import re\n import subprocess\n import threading\n+import time\n+from urllib.parse import quote, quote_plus, unquote, urlsplit\n \n from .contracts import FIELDS, load_bundle, record_digest, require, validate_bundle\n \n@@ -20,6 +22,83 @@\n def canonical(value):\n     return json.dumps(value, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False, allow_nan=False)\n \n+def safe_native_error(body, secrets=()):\n+    \"\"\"Admit exactly one bounded causal envelope; any extra node is incomplete.\"\"\"\n+    withheld = {\"code\": None, \"message\": None, \"complete\": False}\n+    node = body\n+    if type(node) is dict:\n+        if set(node) == {\"error\"}:\n+            node = node[\"error\"]\n+        elif \"content\" in node:\n+            if not set(node) <= {\"content\", \"isError\"} or (\"isError\" in node and node[\"isError\"] is not True):\n+                return withheld\n+            content = node[\"content\"]\n+            if type(content) is not list or len(content) != 1:\n+                return withheld\n+            leaf = content[0]\n+            if type(leaf) is not dict or set(leaf) != {\"type\", \"text\"} or leaf[\"type\"] != \"text\":\n+                return withheld\n+            node = leaf[\"text\"]\n+        elif \"structuredContent\" in node:\n+            if not set(node) <= {\"structuredContent\", \"isError\"} or (\"isError\" in node and node[\"isError\"] is not True):\n+                return withheld\n+            node = node[\"structuredContent\"]\n+    if type(node) is str:\n+        if len(node) > 8192:\n+            return withheld\n+        for prefix in (\"brain_remember failed: \", \"brain_get failed: \"):\n+            if node.startswith(prefix):\n+                node = node[len(prefix):]\n+                break\n+        if node.startswith(\"{\"):\n+            try:\n+                node = json.loads(node)\n+            except BaseException:\n+                return withheld\n+            if type(node) is dict and set(node) == {\"error\"}:\n+                node = node[\"error\"]\n+    code = None\n+    if type(node) is dict:\n+        if \"message\" not in node or not set(node) <= {\"code\", \"message\"}:\n+            return withheld\n+        code = node.get(\"code\")\n+        if \"code\" in node:\n+            allowed = (type(code) is str and code in {\"IDEMPOTENCY_CONFLICT\", \"UNAUTHORIZED\", \"NOT_FOUND\", \"54000\", \"22023\", \"23505\"}) or (type(code) is int and code in {-32700, -32600, -32601, -32602, -32603, -32000})\n+            if not allowed:\n+                return withheld\n+        node = node[\"message\"]\n+    if type(node) is not str or len(node) > 512 or any(secret and secret in node for secret in secrets):\n+        return {\"code\": code, \"message\": None, \"complete\": False}\n+    for prefix in (\"error returned from database: \", \"database error: \", \"ERROR: \"):\n+        if node.startswith(prefix):\n+            node = node[len(prefix):]\n+    patterns = (r\"string is too long for tsvector \\(([0-9]{1,19}) bytes, max ([0-9]{1,19}) bytes\\)\",\n+                r\"index row requires ([0-9]{1,19}) bytes, maximum size is ([0-9]{1,19})\",\n+                r\"value too long for type character varying\\(([0-9]{1,19})\\)\")\n+    for pattern in patterns:\n+        match = re.fullmatch(pattern, node)\n+        if match and all(0 <= int(value) <= 9223372036854775807 for value in match.groups()):\n+            return {\"code\": code, \"message\": node, \"complete\": True}\n+    return {\"code\": code, \"message\": None, \"complete\": False}\n+\n+\n+def native_identity(result, brain_id):\n+    \"\"\"Reject oversized/foreign identities before output or a conditional get.\"\"\"\n+    if not isinstance(result, dict):\n+        return None\n+    memory_id, revision = result.get(\"memory_id\"), result.get(\"revision\")\n+    if result.get(\"brain_id\") != brain_id or not isinstance(memory_id, str) or re.fullmatch(r\"[1-9][0-9]{0,18}\", memory_id) is None:\n+        return None\n+    if int(memory_id) > 9223372036854775807 or type(revision) is not int or not 1 <= revision <= 9223372036854775807:\n+        return None\n+    action = result.get(\"action\")\n+    if action is not None and (not isinstance(action, str) or re.fullmatch(r\"[a-z][a-z0-9_-]{0,79}\", action) is None):\n+        return None\n+    identity = {\"brain_id\": result[\"brain_id\"], \"memory_id\": memory_id, \"revision\": revision}\n+    if action is not None:\n+        identity[\"action\"] = action\n+    return identity\n+\n \n class NativeError(RuntimeError):\n     def __init__(self, body):\n@@ -29,7 +108,7 @@\n \n def isolated_argv(*, denied=False):\n     \"\"\"Use only the parent-admitted stopped-runtime identity; never start it here.\"\"\"\n-    info = json.loads(subprocess.check_output([\"docker\", \"inspect\", CONTAINER]))[0]\n+    info = json.loads(subprocess.check_output([\"docker\", \"inspect\", CONTAINER], stderr=subprocess.DEVNULL, timeout=5))[0]\n     require(info[\"Id\"] == CONTAINER and info[\"State\"][\"Running\"], \"admitted runtime not running\")\n     require(info[\"Config\"][\"User\"] == \"1001:1001\", \"native OS principal drift\")\n     host = info[\"HostConfig\"]\n@@ -56,13 +135,26 @@\n             \"env\", \"-i\", *(f\"{k}={v}\" for k, v in env.items()), \"/opt/brain/brain-mcp\"]\n \n \n+class NativeTransportError(RuntimeError):\n+    def __init__(self, phase, receipt):\n+        self.receipt = receipt\n+        super().__init__(\"Native transport failed: \" + phase)\n+\n+\n class BrainEvidence:\n-    def __init__(self, argv, *, brain_id):\n-        require(re.fullmatch(r\"brn_[a-z0-9_]+\", brain_id) is not None, \"explicit Brain authority required\")\n-        self.brain_id, self.sequence, self.calls = brain_id, 0, []\n+    def __init__(self, argv, *, brain_id, witness=None):\n+        require(re.fullmatch(r\"brn_[a-z0-9_]{1,72}\", brain_id) is not None, \"explicit Brain authority required\")\n+        self.brain_id, self.sequence, self.calls, self.requests = brain_id, 0, [], []\n+        self.witness, self.last_request, self.redactions = witness, None, ()\n+        for arg in argv:\n+            if arg.startswith(\"DATABASE_URL=\"):\n+                password = urlsplit(arg[len(\"DATABASE_URL=\"):]).password\n+                if password:\n+                    password = unquote(password)\n+                    self.redactions = (password, quote(password, safe=\"\"), quote_plus(password))\n         self.pending = queue.Queue()\n         self.process = subprocess.Popen(argv, stdin=subprocess.PIPE, stdout=subprocess.PIPE,\n-                                        stderr=subprocess.DEVNULL, text=True, bufsize=1)\n+                                        stderr=subprocess.DEVNULL)\n         self.reader = threading.Thread(target=self._read, daemon=True)\n         self.reader.start()\n         try:\n@@ -73,39 +165,135 @@\n             self.send(\"notifications/initialized\", {})\n             self.tools = self.request(\"tools/list\", {})\n             require(record_digest(self.tools) == TOOLS_SHA, \"native tool schema drift\")\n+        except BaseException as primary:\n+            primary.request_receipts = self.requests\n+            try:\n+                self.close()\n+            except BaseException as cleanup:\n+                primary.cleanup_error_type = type(cleanup).__name__\n+            raise\n+\n+    def _read(self):\n+        frame = None\n+        try:\n+            for line in self.process.stdout:\n+                frame = {\"wire_sha256\": None, \"wire_bytes\": len(line)}\n+                frame[\"wire_sha256\"] = hashlib.sha256(line).hexdigest()\n+                try:\n+                    value = json.loads(line)\n+                except BaseException:\n+                    frame[\"kind\"] = \"decode_error\"\n+                else:\n+                    try:\n+                        frame[\"frame_sha256\"] = record_digest(value)\n+                    except BaseException:\n+                        frame[\"kind\"] = \"canonicalization_error\"\n+                    else:\n+                        frame[\"value\"] = value\n+                        frame[\"kind\"] = \"response\"\n+                self.pending.put(frame)\n+                frame = None\n         except BaseException:\n-            self.close()\n-            raise\n-\n-    def _read(self):\n-        try:\n-            for line in self.process.stdout:\n-                self.pending.put(json.loads(line))\n-        except (ValueError, OSError):\n-            self.pending.put({\"fatal\": \"invalid native transport\"})\n+            failed = {\"kind\": \"read_error\"}\n+            if frame is not None:\n+                failed.update(wire_sha256=frame.get(\"wire_sha256\"), wire_bytes=frame.get(\"wire_bytes\"))\n+            self.pending.put(failed)\n         finally:\n-            self.pending.put({\"fatal\": \"native transport closed\"})\n+            self.pending.put({\"kind\": \"eof\"})\n+\n+    def _observe(self, receipt):\n+        if self.witness is not None:\n+            try:\n+                self.witness(dict(receipt))\n+            except BaseException:\n+                receipt[\"witness_failed\"] = True\n+                raise NativeTransportError(\"witness_unavailable\", receipt) from None\n+\n+    def _fail(self, receipt, phase):\n+        receipt[\"phase\"] = phase\n+        self._observe(receipt)\n+        raise NativeTransportError(phase, receipt)\n \n     def send(self, method, params, ident=None):\n-        message = {\"jsonrpc\": \"2.0\", \"method\": method, \"params\": params}\n-        if ident is not None:\n-            message[\"id\"] = ident\n-        self.process.stdin.write(canonical(message) + \"\\n\")\n-        self.process.stdin.flush()\n+        require(method in {\"initialize\", \"tools/list\", \"tools/call\", \"notifications/initialized\"}, \"unadmitted RPC method\")\n+        if method == \"tools/call\":\n+            require(isinstance(params, dict) and params.get(\"name\") in {\"brain_get\", \"brain_remember\"} and isinstance(params.get(\"arguments\"), dict), \"unadmitted native request frame\")\n+        receipt = {\"method\": method, \"request_id\": ident, \"parameters_sha256\": None,\n+                   \"request_wire_sha256\": None, \"request_wire_bytes\": None, \"sent\": None, \"phase\": \"attempted\",\n+                   \"response_wire_sha256\": None, \"response_frame_sha256\": None,\n+                   \"response_result_sha256\": None, \"response_error_body_sha256\": None}\n+        if method == \"tools/call\":\n+            receipt.update(tool=params[\"name\"], arguments_sha256=None)\n+            self.calls.append(receipt)\n+        self.requests.append(receipt)\n+        self.last_request = receipt\n+        self._observe(receipt)\n+        try:\n+            message = {\"jsonrpc\": \"2.0\", \"method\": method, \"params\": params}\n+            if ident is not None:\n+                message[\"id\"] = ident\n+            payload = (canonical(message) + \"\\n\").encode()\n+            receipt.update(parameters_sha256=record_digest(params), request_wire_sha256=hashlib.sha256(payload).hexdigest(), request_wire_bytes=len(payload))\n+            if method == \"tools/call\":\n+                receipt[\"arguments_sha256\"] = record_digest(params[\"arguments\"])\n+        except (TypeError, ValueError, UnicodeError, RecursionError, OverflowError):\n+            self._fail(receipt, \"request_encode_error\")\n+        self._observe(receipt)\n+        try:\n+            written = self.process.stdin.write(payload)\n+            self.process.stdin.flush()\n+            if written != len(payload):\n+                self._fail(receipt, \"send_partial\")\n+        except (OSError, ValueError):\n+            self._fail(receipt, \"send_error\")\n+        receipt[\"sent\"] = True\n+        receipt[\"phase\"] = \"sent\" if ident is not None else \"notification_sent\"\n+        self._observe(receipt)\n+        return receipt\n \n     def request(self, method, params):\n         self.sequence += 1\n-        self.send(method, params, self.sequence)\n+        receipt = self.send(method, params, self.sequence)\n+        due = time.monotonic() + 30\n+        unmatched = 0\n         while True:\n             try:\n-                response = self.pending.get(timeout=30)\n-            except queue.Empty as exc:\n-                raise RuntimeError(\"native request timeout\") from exc\n-            require(\"fatal\" not in response, response.get(\"fatal\", \"native transport error\"))\n+                frame = self.pending.get(timeout=max(0.001, due - time.monotonic()))\n+            except queue.Empty:\n+                self._fail(receipt, \"response_timeout\")\n+            if frame[\"kind\"] != \"response\":\n+                receipt.update(response_wire_sha256=frame.get(\"wire_sha256\"), response_wire_bytes=frame.get(\"wire_bytes\"))\n+                self._fail(receipt, frame[\"kind\"])\n+            response = frame[\"value\"]\n+            if not isinstance(response, dict):\n+                receipt.update(response_wire_sha256=frame[\"wire_sha256\"], response_frame_sha256=frame[\"frame_sha256\"])\n+                self._fail(receipt, \"non_object_response\")\n+            if type(response.get(\"id\")) is not int:\n+                receipt.update(response_wire_sha256=frame[\"wire_sha256\"], response_wire_bytes=frame[\"wire_bytes\"],\n+                               response_frame_sha256=frame[\"frame_sha256\"])\n+                self._fail(receipt, \"correlation_id_invalid\")\n             if response.get(\"id\") != self.sequence:\n+                unmatched += 1\n+                receipt.update(unmatched_count=unmatched, last_unmatched_wire_sha256=frame[\"wire_sha256\"])\n+                self._observe(receipt)\n+                if unmatched >= 8 or time.monotonic() >= due:\n+                    self._fail(receipt, \"correlation_failure\")\n                 continue\n+            receipt.update(response_wire_sha256=frame[\"wire_sha256\"], response_wire_bytes=frame[\"wire_bytes\"],\n+                           response_frame_sha256=frame[\"frame_sha256\"])\n+            if response.get(\"jsonrpc\") != \"2.0\":\n+                self._fail(receipt, \"protocol_frame_invalid\")\n             if \"error\" in response:\n-                raise NativeError(response[\"error\"])\n+                receipt.update(phase=\"jsonrpc_error\", response_error_body_sha256=record_digest(response[\"error\"]),\n+                               safe_native_error=safe_native_error(response[\"error\"], self.redactions))\n+                self._observe(receipt)\n+                error = NativeError(response[\"error\"])\n+                error.receipt = receipt\n+                raise error\n+            if \"result\" not in response:\n+                self._fail(receipt, \"result_missing\")\n+            receipt.update(phase=\"result_received\", response_result_sha256=record_digest(response[\"result\"]))\n+            self._observe(receipt)\n             return response[\"result\"]\n \n     def call(self, name, arguments):\n@@ -114,12 +302,28 @@\n         schema = next(t[\"inputSchema\"] for t in self.tools[\"tools\"] if t[\"name\"] == name)\n         require(set(arguments) <= set(schema[\"properties\"]) and set(schema.get(\"required\", [])) <= set(arguments), \"native arguments drift\")\n         wire = self.request(\"tools/call\", {\"name\": name, \"arguments\": arguments})\n-        self.calls.append({\"tool\": name, \"arguments_sha256\": record_digest(arguments), \"response_sha256\": record_digest(wire)})\n-        if wire.get(\"isError\"):\n-            raise NativeError(wire)\n-        if \"structuredContent\" in wire:\n-            return wire[\"structuredContent\"]\n-        return json.loads(\"\\n\".join(c[\"text\"] for c in wire[\"content\"] if c[\"type\"] == \"text\"))\n+        receipt = self.last_request\n+        if not isinstance(wire, dict):\n+            self._fail(receipt, \"tool_result_invalid\")\n+        if \"isError\" in wire and type(wire[\"isError\"]) is not bool:\n+            self._fail(receipt, \"tool_result_invalid\")\n+        if wire.get(\"isError\") is True:\n+            receipt.update(phase=\"tool_error\", response_error_body_sha256=record_digest(wire),\n+                           safe_native_error=safe_native_error(wire, self.redactions))\n+            self._observe(receipt)\n+            error = NativeError(wire)\n+            error.receipt = receipt\n+            raise error\n+        try:\n+            result = wire[\"structuredContent\"] if \"structuredContent\" in wire else json.loads(\"\\n\".join(c[\"text\"] for c in wire[\"content\"] if c[\"type\"] == \"text\"))\n+        except (KeyError, TypeError, ValueError, RecursionError, OverflowError):\n+            self._fail(receipt, \"tool_result_decode_error\")\n+        identity = native_identity(result, self.brain_id)\n+        if identity is None:\n+            self._fail(receipt, \"native_identity_invalid\")\n+        receipt.update(phase=\"native_result\", native_identity=identity)\n+        self._observe(receipt)\n+        return result\n \n     def remember(self, collection, record, *, provenance=None):\n         ident, digest = record[\"id\"], record_digest(record)\n",
+  "additional_actual_owner_and_DATA_gate_guards": [
+    {
+      "bytes": 2956,
+      "mode": 384,
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec"
+    },
+    {
+      "bytes": 4416,
+      "mode": 384,
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+      "sha256": "aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20"
+    }
+  ],
+  "all_four_licensed_originals_unchanged": [
+    {
+      "bytes": 9903,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16"
+    },
+    {
+      "bytes": 92295,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7"
+    },
+    {
+      "bytes": 63002,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae"
+    },
+    {
+      "bytes": 27251,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b"
+    }
+  ],
+  "author_preparation_authority": {
+    "actual_owner": {
+      "bytes": 2956,
+      "lines": 22,
+      "mode": 384,
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec"
+    },
+    "native_author_full_scope_ACK": {
+      "bytes": 5143,
+      "fact": "Parent explicitly acknowledged the whole pre-preparation C1-C8/scope question; not source/runtime authority.",
+      "mode": 384,
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-author-full-owner-cycle2-method-and-scope-ACK-before-corrective5-preparation.txt",
+      "sha256": "93eb20c8cd625d4e42874ab3eccb787b401b67a337ed9f4b6c39f9cc049cb85a"
+    },
+    "parent_DATA_ONLY_gate": {
+      "bytes": 4416,
+      "lines": 38,
+      "mode": 384,
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+      "sha256": "aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20"
+    }
+  },
+  "counters": {
+    "configured": 2,
+    "counter_after_this_complete_DATA_and_fresh_quality_review": 2,
+    "effort_escalations": 0,
+    "historical_first_cycle_1_of_1_EXHAUSTED_not_reset": true,
+    "no_third_automatic_cycle_or_SourceB_backdoor": true,
+    "one_additional_owner_authorized_cycle_number": 2,
+    "quality_cycles_used_before_this_final_complete_submission_and_fresh_reviews": 1,
+    "separate_quality_cap_total": 2,
+    "source_B": 2,
+    "source_repairs_used": 0
+  },
+  "current_WISH": {
+    "bytes": 126131,
+    "lines": 1157,
+    "mode": 384,
+    "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+    "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743"
+  },
+  "dispatch": "ctx_0c242e837d41",
+  "exact_runner_scaffolds": [
+    {
+      "bytes": 11928,
+      "lines": 179,
+      "mode": 384,
+      "path": "/tmp/oi7-native-replay-diagnostic-1.py",
+      "sha256": "61f418e462db741061ae78e0e6f076ce9cbaea0dd61ffece712e591a494f9c47",
+      "source": "\"\"\"Frozen one-request causal diagnostic; no import/rebuild/publication path.\"\"\"\nimport hashlib,json,re,subprocess,sys\nfrom pathlib import Path\nsys.path.insert(0,str(Path.cwd()))\nfrom observatory.evidence.brain import BrainEvidence,CONTAINER,isolated_argv,canonical,NativeError,native_identity,safe_native_error\nfrom observatory.evidence.contracts import load_bundle,record_digest\nfrom observatory.python_adapter import extract_snapshot\nRECEIPT=Path('observatory/evidence/receipts.json')\nORIGINAL_RECEIPT_SHA='0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca'\nLAST_ARGS_SHA='b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91'\nERROR_SHA='f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3'\nSNAPSHOT_SHA='a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36'\nBINARY_SHA='631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78'\nQUAL_SHA='d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e'\ndef preflight():\n info=json.loads(subprocess.check_output(['docker','inspect',CONTAINER],stderr=subprocess.DEVNULL,timeout=5))[0]\n assert info['Id']==CONTAINER and not info['State']['Running']\n assert info['Config']['User']=='1001:1001' and info['HostConfig']['NetworkMode']=='none'\n assert info['HostConfig']['ReadonlyRootfs'] and not info['HostConfig']['Privileged'] and not info['HostConfig']['PortBindings']\n assert info['Image']=='sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f'\n expected={'/opt/brain':(Path('/home/genie/.brain/bin'),False),'/qualification/sandbox':(Path.cwd()/'integrations/brain/qualification/sandbox',True),'/var/lib/postgresql/data':(Path.cwd()/'integrations/brain/qualification/sandbox/pgdata',True),'/licensed-sources':(Path.cwd()/'investigations/frontier-economics/licensed-sources',False)}\n assert len(info['Mounts'])==4 and {m['Destination'] for m in info['Mounts']}==set(expected)\n for mount in info['Mounts']:\n  p,w=expected[mount['Destination']]\n  assert mount['Type']=='bind' and Path(mount['Source']).resolve()==p.resolve() and mount['RW']==w\n assert hashlib.sha256(Path('/home/genie/.brain/bin/brain').read_bytes()).hexdigest()==BINARY_SHA\n return info\n\nclass Witness:\n def __init__(self):\n  self.sequence=0;self.previous='0'*64\n def emit(self,payload):\n  self.sequence+=1\n  assert self.sequence<=512\n  content=canonical(payload);assert len(content.encode())<=131072\n  digest=hashlib.sha256(content.encode()).hexdigest()\n  chain=hashlib.sha256((self.previous+':'+digest).encode()).hexdigest()\n  frame={'kind':'oi7-causal-witness/1','sequence':self.sequence,'previous_sha256':self.previous,'payload_sha256':digest,'chain_sha256':chain,'payload':payload}\n  line=canonical(frame);assert len(line.encode())<=132096\n  sys.stdout.write(line+'\\n');sys.stdout.flush()\n  self.previous=chain\n\n\ndef main():\n result={'stage':'DIAGNOSTIC_REPAIR_1_CAUSAL_CAPTURE_ONLY','status':'BLOCKED_DIAGNOSTIC','original_failed_receipt_sha256':ORIGINAL_RECEIPT_SHA,'original_args_sha256':LAST_ARGS_SHA,'snapshot_sha256':SNAPSHOT_SHA,'new_diagnostic_PGSTART_limit':1,'storage_restart_commands_this_repair':0,'paid_model_calls':0}\n client=None;used=0;witness=Witness()\n try:\n  assert hashlib.sha256(RECEIPT.read_bytes()).hexdigest()==ORIGINAL_RECEIPT_SHA\n  assert hashlib.sha256(Path('web/data.json').read_bytes()).hexdigest()==SNAPSHOT_SHA\n  qualpath=Path('integrations/brain/qualification/native-receipts.json')\n  assert hashlib.sha256(qualpath.read_bytes()).hexdigest()==QUAL_SHA\n  old=load_bundle(RECEIPT)\n  assert old['status']=='BLOCKED_WIDEN' and old['custody']['running'] is False\n  bundle=extract_snapshot(load_bundle('web/data.json'),ingested_at='2026-10-09T19:02:47.018224Z',computed_at='2026-10-09T19:02:47.018288Z')\n  assert record_digest(bundle)=='6f78e23589b5e07ce344daa4611aba2347e50086105998cc7f25385065140539'\n  record=bundle['replay_manifests'][0]\n  args={'brain_id':'brn_63n8pr','content':canonical(record),'scope':'global','veracity':'imported','source':record['id'],'extract':False,'extract_entities':False,'operation_key':'oi7:'+hashlib.sha256(record['id'].encode()).hexdigest(),'actor':'issue-7-engineer','reason':'Admitted isolated investigation evidence import','metadata':{'application_id':record['id'],'collection':'replay_manifests','canonical_sha256':record_digest(record),'provenance':None}}\n  assert record_digest(args)==LAST_ARGS_SHA and len(canonical(record).encode())==6241702\n  result.update(target_application_id=record['id'],target_collection='replay_manifests',target_content_utf8_bytes=6241702,operation_key=args['operation_key'])\n  # Complete prospective pure helper boundary DATA; NOT executed during preparation.\n  stock='string is too long for tsvector (2000000 bytes, max 1048575 bytes)'\n  text={'type':'text','text':'brain_remember failed: '+stock}\n  rejected=(\n   {'content':[text,{'type':'text','text':'unrecognized causal detail'}]},\n   {'content':[text,{'type':'text','text':canonical({'code':'UNSUPPORTED_NATIVE_CODE','message':'additional cause'})}]},\n   {'content':[text]*8+[{'type':'text','text':'unsupported ninth node'}]},\n   {'content':[text],'structuredContent':{'message':stock}},\n   {'content':[dict(text,annotation='unsupported extra field')]},\n   {'content':[text],'unknown':None},\n   {'error':{'code':-32000,'message':stock,'data':None}},\n   {'error':{'code':True,'message':stock}},\n   {'error':{'code':None,'message':stock}},\n   {'error':{'code':'X'*81,'message':stock}},\n   {'error':{'message':'string is too long for tsvector (9223372036854775808 bytes, max 1048575 bytes)'}},\n   {'content':[]}, {'content':None},\n   {'error':{'code':-32000,'message':'input was LAB_PRIVATE_PROMPT'}},\n   {'error':{'code':'LAB_PRIVATE_PROMPT','message':'pass=LAB_PASS auth=LAB_AUTH'}},\n   {'error':{'code':-32000,'message':'X'*8193}})\n  for body in rejected:\n   safe=safe_native_error(body,('LAB_OWN_CREDENTIAL',))\n   assert safe['message'] is None and safe['complete'] is False\n   assert all(token not in canonical(safe) for token in ('LAB_PRIVATE_PROMPT','LAB_PASS','LAB_AUTH','LAB_OWN_CREDENTIAL','UNSUPPORTED_NATIVE_CODE'))\n  accepted=({'content':[text]}, {'content':[text],'isError':True},\n            {'error':{'code':-32000,'message':stock}},\n            {'structuredContent':{'message':stock},'isError':True})\n  for body in accepted:\n   safe=safe_native_error(body)\n   assert safe['complete'] is True and safe['message']==stock\n  assert safe_native_error({'message':stock},('tsvector',))['complete'] is False\n  assert native_identity({'brain_id':'brn_63n8pr','memory_id':'7'*20,'revision':1},'brn_63n8pr') is None\n  assert native_identity({'brain_id':'brn_63n8pr','memory_id':'7','revision':9223372036854775808},'brn_63n8pr') is None\n  assert native_identity({'brain_id':'brn_other','memory_id':'7','revision':1},'brn_63n8pr') is None\n  assert native_identity({'brain_id':'brn_63n8pr','memory_id':'7','revision':True},'brn_63n8pr') is None\n  result['allowlist_and_identity_LAB_guards']=True\n  qual=load_bundle(qualpath)\n  assert qual['brain_id']=='brn_63n8pr'\n  original=[{**b,'application_id':ident,'brain_id':qual['brain_id']} for ident,b in qual['bindings'].items()]\n  assert len(original)==26 and any(b['memory_id']=='20' for b in original)\n  assert qual['brain_id']=='brn_63n8pr'\n  assert len({b['application_id'] for b in original})==26 and len({b['memory_id'] for b in original})==26\n  original=[{**b,'brain_id':qual['brain_id']} for b in original]\n  protected=original+[old['historical_v1_binding'],old['binding']]\n  assert len({b['application_id'] for b in protected})==28 and len({b['memory_id'] for b in protected})==28\n  assert all(b['brain_id']=='brn_63n8pr' and type(b['memory_id']) is str and b['memory_id'].isdigit() and type(b['revision']) is int and b['revision']>0 for b in protected)\n  assert [b['memory_id'] for b in protected[-2:]]==['200','201']\n  preflight()\n  result['diagnostic_start_attempted']=True\n  subprocess.run(['docker','start',CONTAINER],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=20)\n  result['diagnostic_start_command_succeeded']=True\n  subprocess.run(['docker','exec','-u','1001:1001',CONTAINER,'pg_isready','-h','/qualification/sandbox/socket','-U','oi5_owner','-d','brain','-t','5'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=10)\n  result['one_readonly_PG_ready_probe']=True\n  client=BrainEvidence(isolated_argv(),brain_id='brn_63n8pr',witness=lambda receipt:witness.emit({'event':'rpc','receipt':receipt}))\n  result['actual_initialize']={**{k:client.identity[k] for k in ('protocolVersion','serverInfo')},'result_sha256':record_digest(client.identity)}\n  result['actual_tools_sha256']=record_digest(client.tools)\n  def take_tool():\n   nonlocal used\n   assert used<58, 'admitted tool allowance exhausted before request'\n   used+=1\n  def get(binding):\n   take_tool()\n   return client.get(binding)\n  before={b['application_id']:record_digest(get(b)) for b in protected}\n  result['one_original_request_attempted']=True\n  try:\n   take_tool()\n   response=client.call('brain_remember',args)\n   identity=native_identity(response,'brn_63n8pr')\n   assert identity is not None and 'action' in identity\n   result['actual_unexpected_success_identity']=identity\n   binding={'brain_id':response['brain_id'],'application_id':record['id'],'collection':'replay_manifests','canonical_sha256':record_digest(record),'memory_id':response['memory_id'],'revision':response['revision']}\n   assert get(binding)==record\n   result['unexpected_success_binding']=binding\n   result['status']='DIAGNOSTIC_REQUEST_SUCCEEDED_NOT_COMPLETE_SNAPSHOT'\n  except NativeError as exc:\n   result['actual_error_sha256']=record_digest(exc.body)\n   result['same_original_error_response']=result['actual_error_sha256']==ERROR_SHA\n   result['safe_native_error']=exc.receipt['safe_native_error']\n   if not result['same_original_error_response']:\n    result['protected_after_not_attempted']='actual diagnostic response digest differs from original; immediate native-phase abort'\n    raise RuntimeError('different actual error requires parent disposition')\n   safe=result['safe_native_error']\n   if safe['complete'] is not True or safe['message'] is None:\n    result['protected_after_not_attempted']='safe causal scalar unavailable; immediate native-phase abort'\n    raise RuntimeError('safe causal scalar unavailable')\n   result['status']='DIAGNOSTIC_REJECTION_CAUSAL_CAPTURE_NOT_COMPLETION'\n  witness.emit({'event':'causal_capture','result':dict(result),'actual_tool_attempts':used})\n  after={b['application_id']:record_digest(get(b)) for b in protected}\n  assert before==after\n  result['original_26_and_roots_200_201_unchanged']=before\n  result['actual_tool_attempts']=used\n  assert used==len(client.calls) and used<=58\n except BaseException as exc:\n  result['status']='BLOCKED_DIAGNOSTIC';result['error_type']=type(exc).__name__\n  result['primary_request_receipts']=getattr(exc,'request_receipts',[])\n  if hasattr(exc,'receipt'):\n   result['primary_receipt']=exc.receipt\n  if hasattr(exc,'cleanup_error_type'):\n   result['constructor_cleanup_error_type']=exc.cleanup_error_type\n  if isinstance(exc,NativeError):\n   result['actual_error_sha256']=record_digest(exc.body)\n   result['safe_native_error']=getattr(exc,'receipt',{}).get('safe_native_error',{'code':None,'message':None,'complete':False})\n finally:\n  result['actual_tool_attempts']=used\n  if client:\n   result['request_receipts']=client.requests\n  else:\n   result.setdefault('request_receipts',[])\n  witness.emit({'event':'before_cleanup','result':dict(result)})\n  if client:\n   result['native_calls']=client.calls\n   try:\n    client.close()\n    result['native_close_verified']=True\n   except BaseException as exc:\n    result['status']='BLOCKED_DIAGNOSTIC';result['native_close_error_type']=type(exc).__name__\n witness.emit({'event':'final','result':result})\n return 1 if result['status']=='BLOCKED_DIAGNOSTIC' else 0\nif __name__=='__main__':\n sys.exit(main())\n"
+    },
+    {
+      "bytes": 15854,
+      "lines": 185,
+      "mode": 384,
+      "path": "/tmp/oi7-native-replay-diagnostic-1-outer.py",
+      "sha256": "c1d33ca47f758bee9ca8b7b7c77c9ff80e50dec1b2ebdc594d74131e63fdc527",
+      "source": "\"\"\"Overall 300s alarm, <=215s native phase, reserved bounded custody cleanup.\"\"\"\nimport hashlib,json,os,runpy,signal,stat,subprocess,sys,time\nfrom pathlib import Path\nstart=time.monotonic();deadline=start+300\nCONTAINER='845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af'\nINNER=Path('/tmp/oi7-native-replay-diagnostic-1.py')\nINNER_SHA='61f418e462db741061ae78e0e6f076ce9cbaea0dd61ffece712e591a494f9c47'\nSOURCE_GUARDS=[{'path': 'observatory/evidence/contracts.py', 'sha256': '0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15', 'mode': 384, 'bytes': 22505}, {'path': 'observatory/evidence/brain.py', 'sha256': '5518c61f39bbbe55e0916b5bd71ecced3528cdc0ee8ff1962af3e93facf3d879', 'mode': 384, 'bytes': 23390}, {'path': 'observatory/evidence/model.py', 'sha256': '80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5', 'mode': 384, 'bytes': 5908}, {'path': 'observatory/evidence/cordis.mjs', 'sha256': '949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374', 'mode': 384, 'bytes': 2646}, {'path': 'observatory/evidence/__main__.py', 'sha256': '8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e', 'mode': 384, 'bytes': 2361}, {'path': 'observatory/evidence/receipts.json', 'sha256': '0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca', 'mode': 384, 'bytes': 11997001}, {'path': 'observatory/python_adapter.py', 'sha256': 'aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1', 'mode': 384, 'bytes': 8901}, {'path': 'docs/integrations/python-pipeline.md', 'absent': True}, {'path': 'investigations/frontier-economics/manifest.json', 'absent': True}, {'path': 'tests/test_investigation.py', 'sha256': 'c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d', 'mode': 384, 'bytes': 3439}, {'path': 'tests/test_evidence_contracts.py', 'sha256': '13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e', 'mode': 384, 'bytes': 13514}]\nINPUT_GUARDS=[{'path': '.genie/wishes/open-intelligence-observatory/WISH.md', 'sha256': '260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743', 'mode': 384, 'bytes': 126131}, {'path': 'docs/contracts/evidence.md', 'sha256': 'b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f', 'mode': 384, 'bytes': 28218}, {'path': 'schemas/evidence.schema.json', 'sha256': 'aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f', 'mode': 384, 'bytes': 12261}, {'path': 'tests/fixtures/evidence_contracts.json', 'sha256': '48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5', 'mode': 384, 'bytes': 13033}, {'path': 'investigations/frontier-economics/evidence.json', 'sha256': 'e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93', 'mode': 384, 'bytes': 294150}, {'path': 'investigations/frontier-economics/sources.json', 'sha256': 'b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41', 'mode': 384, 'bytes': 109773}, {'path': 'investigations/frontier-economics/assessment.md', 'sha256': '1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa', 'mode': 384, 'bytes': 52115}, {'path': 'integrations/brain/qualification/native_qualification.py', 'sha256': 'a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389', 'mode': 384, 'bytes': 48211}, {'path': 'integrations/brain/qualification/native-receipts.json', 'sha256': 'd10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e', 'mode': 384, 'bytes': 550314}, {'path': 'integrations/brain/qualification/native-tools.json', 'sha256': '8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3', 'mode': 384, 'bytes': 17422}, {'path': 'docs/integrations/cordis.md', 'sha256': 'ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2', 'mode': 384, 'bytes': 12132}, {'path': 'integrations/dsh/qualification/receipts.json', 'sha256': '434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb', 'mode': 384, 'bytes': 10949}, {'path': 'web/data.json', 'sha256': 'a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36', 'mode': 384, 'bytes': 4223271}, {'path': 'tests/fixtures/features_a.json', 'sha256': '7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7', 'mode': 384, 'bytes': 105582}, {'path': 'tests/fixtures/features_b.json', 'sha256': '92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f', 'mode': 384, 'bytes': 105962}, {'path': 'investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin', 'sha256': '666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16', 'mode': 384, 'bytes': 9903}, {'path': 'investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin', 'sha256': 'e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7', 'mode': 384, 'bytes': 92295}, {'path': 'investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin', 'sha256': '0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae', 'mode': 384, 'bytes': 63002}, {'path': 'investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin', 'sha256': '268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b', 'mode': 384, 'bytes': 27251}]\nAUTHORITY_GUARDS=[{'path': '.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json', 'sha256': '7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec', 'mode': 384, 'bytes': 2956}, {'path': '.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json', 'sha256': 'aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20', 'mode': 384, 'bytes': 4416}]\nRECEIPT=Path('observatory/evidence/receipts.json')\nTEMP=Path('observatory/evidence/.receipts-oi7-diagnostic-1.tmp')\nOLD_SHA='0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca'\ndef alarm(signum,frame):\n raise TimeoutError('owned diagnostic deadline')\ndef hard_end(signum,frame):\n os._exit(124)\ndef left(maximum):\n return max(0.001,min(maximum,deadline-time.monotonic()-5))\ndef canonical(value):\n return json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False)\n\ndef parse_witness(output):\n raw=output.encode() if isinstance(output,str) else output\n assert len(raw)<=1048576\n previous='0'*64;sequence=0;latest=None;final=False;receipts={};complete_bytes=0\n for line in raw.splitlines(keepends=True):\n  if not line.endswith(bytes([10])):\n   break\n  assert len(line)<=132096 and sequence<512\n  frame=json.loads(line)\n  assert isinstance(frame,dict) and set(frame)=={'kind','sequence','previous_sha256','payload_sha256','chain_sha256','payload'}\n  assert frame['kind']=='oi7-causal-witness/1' and type(frame['sequence']) is int and frame['sequence']==sequence+1 and frame['previous_sha256']==previous\n  payload=frame['payload'];content=canonical(payload);assert len(content.encode())<=131072\n  digest=hashlib.sha256(content.encode()).hexdigest()\n  chain=hashlib.sha256((previous+':'+digest).encode()).hexdigest()\n  assert frame['payload_sha256']==digest and frame['chain_sha256']==chain\n  assert isinstance(payload,dict) and payload.get('event') in {'rpc','causal_capture','before_cleanup','final'}\n  if payload['event']=='rpc':\n   receipt=payload['receipt']\n   assert isinstance(receipt,dict) and receipt['method'] in {'initialize','tools/list','tools/call','notifications/initialized'}\n   assert receipt['request_id'] is None or type(receipt['request_id']) is int and 1<=receipt['request_id']<=61\n   receipts[(receipt['method'],receipt['request_id'])]=receipt\n  else:\n   result=payload['result']\n   assert isinstance(result,dict) and result.get('stage')=='DIAGNOSTIC_REPAIR_1_CAUSAL_CAPTURE_ONLY'\n   latest=result;final=payload['event']=='final'\n  previous=chain;sequence+=1;complete_bytes+=len(line)\n return {'latest':latest,'final':final,'receipts':list(receipts.values()),'complete_frame_count':sequence,'complete_prefix_bytes':complete_bytes,'last_chain_sha256':previous,'trailing_partial_frame_not_proof':bool(raw and not raw.endswith(bytes([10])))}\n\npublished_bytes=0;published_sha256=hashlib.sha256(b'').hexdigest()\ndef recover_and_publish(output):\n global result,witness,published_bytes,published_sha256\n raw=output.encode() if isinstance(output,str) else output\n recovered=parse_witness(raw)\n prefix=raw[:recovered['complete_prefix_bytes']]\n assert len(prefix)>=published_bytes and hashlib.sha256(prefix[:published_bytes]).hexdigest()==published_sha256\n witness=recovered\n guard['safe_witness']={k:v for k,v in recovered.items() if k!='latest'}\n if recovered['latest'] is not None:\n  result=recovered['latest']\n guard['final_child_witness']=recovered['final']\n # Relay only validated LF-complete frames, BEFORE any owned cleanup call.\n # If publication blocks/fails, hard exit stays unconditional; custody is external/unknown.\n if guard.get('primary_publication_error_type'):\n  raise RuntimeError('uncertain primary publication requires external custody; no prefix retry')\n new=prefix[published_bytes:]\n if new:\n  written=sys.stdout.buffer.write(new)\n  sys.stdout.buffer.flush()\n  assert written==len(new)\n  published_bytes=len(prefix);published_sha256=hashlib.sha256(prefix).hexdigest()\n guard['published_complete_prefix_bytes']=published_bytes\n guard['published_complete_prefix_sha256']=published_sha256\n guard['published_complete_frame_count']=recovered['complete_frame_count']\n\nsignal.signal(signal.SIGALRM,alarm)\nsignal.setitimer(signal.ITIMER_REAL,215)\nchild=None;authorized_cleanup=False;old=None;temp_created=False;output=b'';witness=None\nresult={'stage':'DIAGNOSTIC_REPAIR_1_CAUSAL_CAPTURE_ONLY','status':'BLOCKED_DIAGNOSTIC','original_failed_receipt_sha256':OLD_SHA}\nguard={'outer_limit_seconds':300,'native_phase_limit_seconds':215,'child_limit_seconds':210,'inner_sha256':INNER_SHA}\ntry:\n assert INNER.is_file() and not INNER.is_symlink() and INNER.stat().st_mode&0o777==0o600\n assert hashlib.sha256(INNER.read_bytes()).hexdigest()==INNER_SHA\n for item in SOURCE_GUARDS+INPUT_GUARDS+AUTHORITY_GUARDS:\n  p=Path(item['path'])\n  if item.get('absent'):\n   assert not p.exists() and not p.is_symlink()\n   continue\n  meta=p.lstat()\n  assert stat.S_ISREG(meta.st_mode) and not p.is_symlink() and meta.st_mode&0o777==item['mode'] and meta.st_size==item['bytes']\n  assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256']\n assert not TEMP.exists() and not TEMP.is_symlink()\n old=json.loads(RECEIPT.read_text())\n assert old['status']=='BLOCKED_WIDEN' and len(old['native_calls'])==61649\n helpers=runpy.run_path(str(INNER))\n helpers['preflight']()\n # All guards complete while PG stopped. Next child may attempt startup.\n authorized_cleanup=True\n env={'PATH':os.environ.get('PATH','/usr/local/bin:/usr/bin:/bin'),'LANG':'C.UTF-8','PYTHONDONTWRITEBYTECODE':'1'}\n child=subprocess.Popen([sys.executable,'-B',str(INNER)],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,env=env,start_new_session=True)\n output,_=child.communicate(timeout=max(0.001,min(210,start+215-time.monotonic())))\n guard['child_exit']=child.returncode\n guard['child_stdout_sha256']=hashlib.sha256(output.encode() if isinstance(output,str) else output).hexdigest()\n witness=parse_witness(output)\n guard['safe_witness']={k:v for k,v in witness.items() if k!='latest'}\n if witness['latest'] is not None:\n  result=witness['latest']\n guard['final_child_witness']=witness['final']\nexcept subprocess.TimeoutExpired as exc:\n output=exc.output or output\n guard['native_phase_deadline_exceeded']=True\nexcept TimeoutError:\n guard['native_phase_deadline_exceeded']=True\nexcept BaseException as exc:\n guard['outer_error_type']=type(exc).__name__\nfinally:\n signal.signal(signal.SIGALRM,hard_end)\n signal.setitimer(signal.ITIMER_REAL,max(0.001,deadline-time.monotonic()))\n # Already received primary evidence is external BEFORE child kill/wait or Docker cleanup.\n if output:\n  try:\n   recover_and_publish(output)\n  except BaseException as exc:\n   guard['primary_publication_error_type']=type(exc).__name__\n if authorized_cleanup:\n  # Never use a successful-return flag: a start timeout may already have booted PG.\n  if child and child.poll() is None:\n   try:\n    os.killpg(child.pid,signal.SIGKILL)\n   except ProcessLookupError:\n    pass\n   try:\n    child.wait(timeout=left(3))\n   except BaseException as exc:\n    guard['child_cleanup_error_type']=type(exc).__name__\n  if child:\n   try:\n    output,_=child.communicate(timeout=left(2))\n    guard['child_stdout_sha256']=hashlib.sha256(output.encode() if isinstance(output,str) else output).hexdigest()\n    # Newly recovered complete frames are also external BEFORE Docker stop/inspect.\n    recover_and_publish(output)\n   except BaseException as exc:\n    guard['witness_recovery_error_type']=type(exc).__name__\n  guard['host_descendant_custody']='normal native_close proof required; exited/crashed group needs parent external custody disposition'\n  try:\n   stop=subprocess.run(['docker','stop','--time','20',CONTAINER],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=left(30))\n   guard['stop_exit']=stop.returncode\n  except BaseException as exc:\n   guard['stop_error_type']=type(exc).__name__\n  try:\n   state=json.loads(subprocess.check_output(['docker','inspect',CONTAINER],stderr=subprocess.DEVNULL,timeout=left(5)))[0]\n   guard['container']=state['Id'];guard['running']=state['State']['Running']\n   guard['pgdata_retained']=Path('integrations/brain/qualification/sandbox/pgdata').is_dir()\n  except BaseException as exc:\n   guard['inspect_error_type']=type(exc).__name__\n guard['activation_cleanup_scope_admitted_and_entered']=authorized_cleanup\n guard['verified_stopped']=guard.get('container')==CONTAINER and guard.get('running') is False and guard.get('stop_exit')==0 and guard.get('pgdata_retained') is True and not guard.get('inspect_error_type')\n guard['wall_seconds']=round(time.monotonic()-start,3)\n if not guard['verified_stopped'] or guard.get('outer_error_type') or guard.get('primary_publication_error_type') or guard.get('witness_recovery_error_type') or not guard.get('published_complete_prefix_bytes') or (witness and witness['trailing_partial_frame_not_proof']) or guard.get('native_phase_deadline_exceeded') or guard.get('child_cleanup_error_type') or guard.get('child_exit')!=0 or not guard.get('final_child_witness') or result.get('native_close_verified') is not True or guard['wall_seconds']>300:\n  result['status']='BLOCKED_DIAGNOSTIC'\n result['outer_guard']=guard\n # Publish safe compact witness before any possible storage failure; no raw body.\n print(canonical(result),flush=True)\n if old is not None and authorized_cleanup:\n  try:\n   assert hashlib.sha256(RECEIPT.read_bytes()).hexdigest()==OLD_SHA\n   fd=os.open(TEMP,os.O_WRONLY|os.O_CREAT|os.O_EXCL,0o600);temp_created=True\n   with os.fdopen(fd,'w') as stream:\n    saved={**old,'diagnostic_repair_1':result}\n    stream.write('{'+chr(10)+(','+chr(10)).join(json.dumps(k)+':'+canonical(v) for k,v in saved.items())+chr(10)+'}'+chr(10))\n    stream.flush();os.fsync(stream.fileno())\n   os.replace(TEMP,RECEIPT);temp_created=False\n   with RECEIPT.open() as stream:\n    readback=json.load(stream)\n   assert readback['diagnostic_repair_1']==result and {k:v for k,v in readback.items() if k!='diagnostic_repair_1'}==old\n   print(canonical({'stored_receipt_sha256':hashlib.sha256(RECEIPT.read_bytes()).hexdigest(),'original_fields_and_61649_calls_equal':True,'actual_receipt_bytes':RECEIPT.stat().st_size}),flush=True)\n  except BaseException as exc:\n   result['status']='BLOCKED_DIAGNOSTIC'\n   print(canonical({'receipt_persistence_error_type':type(exc).__name__,'status':'BLOCKED_DIAGNOSTIC','actual_stopped_custody':guard['verified_stopped']}),flush=True)\n  finally:\n   if temp_created:\n    TEMP.unlink()\n signal.setitimer(signal.ITIMER_REAL,0)\nsys.exit(1 if result['status']=='BLOCKED_DIAGNOSTIC' else 0)\n"
+    }
+  ],
+  "exact_source_proposal": {
+    "after_sha256": "5518c61f39bbbe55e0916b5bd71ecced3528cdc0ee8ff1962af3e93facf3d879",
+    "baseline_bytes": 12768,
+    "baseline_lines": 220,
+    "baseline_sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+    "bytes": 23390,
+    "lines": 424,
+    "mode": 384,
+    "path": "observatory/evidence/brain.py",
+    "source": "\"\"\"Explicit native Brain transport and immutable application bindings; no side store.\"\"\"\nimport hashlib\nimport json\nfrom pathlib import Path\nimport queue\nimport re\nimport subprocess\nimport threading\nimport time\nfrom urllib.parse import quote, quote_plus, unquote, urlsplit\n\nfrom .contracts import FIELDS, load_bundle, record_digest, require, validate_bundle\n\nBINARY_SHA = \"631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78\"\nTOOLS_SHA = \"387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b\"\nCONTAINER = \"845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af\"\nROOT = Path(__file__).resolve().parents[2]\nSANDBOX = ROOT / \"integrations/brain/qualification/sandbox\"\nBASE = \"/qualification/sandbox\"\n\n\ndef canonical(value):\n    return json.dumps(value, sort_keys=True, separators=(\",\", \":\"), ensure_ascii=False, allow_nan=False)\n\ndef safe_native_error(body, secrets=()):\n    \"\"\"Admit exactly one bounded causal envelope; any extra node is incomplete.\"\"\"\n    withheld = {\"code\": None, \"message\": None, \"complete\": False}\n    node = body\n    if type(node) is dict:\n        if set(node) == {\"error\"}:\n            node = node[\"error\"]\n        elif \"content\" in node:\n            if not set(node) <= {\"content\", \"isError\"} or (\"isError\" in node and node[\"isError\"] is not True):\n                return withheld\n            content = node[\"content\"]\n            if type(content) is not list or len(content) != 1:\n                return withheld\n            leaf = content[0]\n            if type(leaf) is not dict or set(leaf) != {\"type\", \"text\"} or leaf[\"type\"] != \"text\":\n                return withheld\n            node = leaf[\"text\"]\n        elif \"structuredContent\" in node:\n            if not set(node) <= {\"structuredContent\", \"isError\"} or (\"isError\" in node and node[\"isError\"] is not True):\n                return withheld\n            node = node[\"structuredContent\"]\n    if type(node) is str:\n        if len(node) > 8192:\n            return withheld\n        for prefix in (\"brain_remember failed: \", \"brain_get failed: \"):\n            if node.startswith(prefix):\n                node = node[len(prefix):]\n                break\n        if node.startswith(\"{\"):\n            try:\n                node = json.loads(node)\n            except BaseException:\n                return withheld\n            if type(node) is dict and set(node) == {\"error\"}:\n                node = node[\"error\"]\n    code = None\n    if type(node) is dict:\n        if \"message\" not in node or not set(node) <= {\"code\", \"message\"}:\n            return withheld\n        code = node.get(\"code\")\n        if \"code\" in node:\n            allowed = (type(code) is str and code in {\"IDEMPOTENCY_CONFLICT\", \"UNAUTHORIZED\", \"NOT_FOUND\", \"54000\", \"22023\", \"23505\"}) or (type(code) is int and code in {-32700, -32600, -32601, -32602, -32603, -32000})\n            if not allowed:\n                return withheld\n        node = node[\"message\"]\n    if type(node) is not str or len(node) > 512 or any(secret and secret in node for secret in secrets):\n        return {\"code\": code, \"message\": None, \"complete\": False}\n    for prefix in (\"error returned from database: \", \"database error: \", \"ERROR: \"):\n        if node.startswith(prefix):\n            node = node[len(prefix):]\n    patterns = (r\"string is too long for tsvector \\(([0-9]{1,19}) bytes, max ([0-9]{1,19}) bytes\\)\",\n                r\"index row requires ([0-9]{1,19}) bytes, maximum size is ([0-9]{1,19})\",\n                r\"value too long for type character varying\\(([0-9]{1,19})\\)\")\n    for pattern in patterns:\n        match = re.fullmatch(pattern, node)\n        if match and all(0 <= int(value) <= 9223372036854775807 for value in match.groups()):\n            return {\"code\": code, \"message\": node, \"complete\": True}\n    return {\"code\": code, \"message\": None, \"complete\": False}\n\n\ndef native_identity(result, brain_id):\n    \"\"\"Reject oversized/foreign identities before output or a conditional get.\"\"\"\n    if not isinstance(result, dict):\n        return None\n    memory_id, revision = result.get(\"memory_id\"), result.get(\"revision\")\n    if result.get(\"brain_id\") != brain_id or not isinstance(memory_id, str) or re.fullmatch(r\"[1-9][0-9]{0,18}\", memory_id) is None:\n        return None\n    if int(memory_id) > 9223372036854775807 or type(revision) is not int or not 1 <= revision <= 9223372036854775807:\n        return None\n    action = result.get(\"action\")\n    if action is not None and (not isinstance(action, str) or re.fullmatch(r\"[a-z][a-z0-9_-]{0,79}\", action) is None):\n        return None\n    identity = {\"brain_id\": result[\"brain_id\"], \"memory_id\": memory_id, \"revision\": revision}\n    if action is not None:\n        identity[\"action\"] = action\n    return identity\n\n\nclass NativeError(RuntimeError):\n    def __init__(self, body):\n        self.body = body\n        super().__init__(\"Native Brain rejected call: \" + record_digest(body))\n\n\ndef isolated_argv(*, denied=False):\n    \"\"\"Use only the parent-admitted stopped-runtime identity; never start it here.\"\"\"\n    info = json.loads(subprocess.check_output([\"docker\", \"inspect\", CONTAINER], stderr=subprocess.DEVNULL, timeout=5))[0]\n    require(info[\"Id\"] == CONTAINER and info[\"State\"][\"Running\"], \"admitted runtime not running\")\n    require(info[\"Config\"][\"User\"] == \"1001:1001\", \"native OS principal drift\")\n    host = info[\"HostConfig\"]\n    require(host[\"NetworkMode\"] == \"none\" and host[\"ReadonlyRootfs\"] and not host[\"PortBindings\"]\n            and not host[\"Privileged\"], \"native isolation drift\")\n    require(info[\"Image\"] == \"sha256:cf134a767f474095eeba57e0117be8e568e011a63f33fbf252f14c9b760f8e6f\", \"native image drift\")\n    mounts = {m[\"Destination\"]: m for m in info[\"Mounts\"]}\n    expected = {\"/opt/brain\": (Path(\"/home/genie/.brain/bin\"), False), BASE: (SANDBOX, True),\n                \"/licensed-sources\": (ROOT / \"investigations/frontier-economics/licensed-sources\", False),\n                \"/var/lib/postgresql/data\": (SANDBOX / \"pgdata\", True)}\n    require(len(info[\"Mounts\"]) == len(expected) and set(mounts) == set(expected), \"native mounts drift\")\n    for dest, (source, writable) in expected.items():\n        require(mounts[dest][\"Type\"] == \"bind\" and Path(mounts[dest][\"Source\"]).resolve() == source.resolve()\n                and mounts[dest][\"RW\"] == writable, \"native bind drift\")\n    require(hashlib.sha256(Path(\"/home/genie/.brain/bin/brain\").read_bytes()).hexdigest() == BINARY_SHA, \"native binary drift\")\n    role = \"oi5_denied\" if denied else \"oi5_owner\"\n    password = (SANDBOX / (\"denied-password\" if denied else \"owner-password\")).read_text().strip()\n    dsn = f\"postgresql://{role}:{password}@127.0.0.1:5432/brain\"\n    env = {\"PATH\": \"/opt/brain:/usr/bin:/bin\", \"HOME\": BASE + \"/home\", \"BRAIN_HOME\": BASE + \"/home/.brain\",\n           \"XDG_RUNTIME_DIR\": BASE + \"/socket\", \"TMPDIR\": BASE + \"/tmp\", \"DATABASE_URL\": dsn,\n           \"BRAIN_CONTROL_DATABASE\": \"brain\", \"BRAIN_MEMORY_VECTORS\": \"off\", \"BRAIN_OMNI_GLOBAL_KILL\": \"1\",\n           \"BRAIN_QUIET\": \"1\", \"BRAIN_ID\": \"brn_63n8pr\"}\n    return [\"docker\", \"exec\", \"-i\", \"-u\", \"1001:1001\", \"-w\", BASE + \"/vault\", CONTAINER,\n            \"env\", \"-i\", *(f\"{k}={v}\" for k, v in env.items()), \"/opt/brain/brain-mcp\"]\n\n\nclass NativeTransportError(RuntimeError):\n    def __init__(self, phase, receipt):\n        self.receipt = receipt\n        super().__init__(\"Native transport failed: \" + phase)\n\n\nclass BrainEvidence:\n    def __init__(self, argv, *, brain_id, witness=None):\n        require(re.fullmatch(r\"brn_[a-z0-9_]{1,72}\", brain_id) is not None, \"explicit Brain authority required\")\n        self.brain_id, self.sequence, self.calls, self.requests = brain_id, 0, [], []\n        self.witness, self.last_request, self.redactions = witness, None, ()\n        for arg in argv:\n            if arg.startswith(\"DATABASE_URL=\"):\n                password = urlsplit(arg[len(\"DATABASE_URL=\"):]).password\n                if password:\n                    password = unquote(password)\n                    self.redactions = (password, quote(password, safe=\"\"), quote_plus(password))\n        self.pending = queue.Queue()\n        self.process = subprocess.Popen(argv, stdin=subprocess.PIPE, stdout=subprocess.PIPE,\n                                        stderr=subprocess.DEVNULL)\n        self.reader = threading.Thread(target=self._read, daemon=True)\n        self.reader.start()\n        try:\n            self.identity = self.request(\"initialize\", {\"protocolVersion\": \"2026-07-28\", \"capabilities\": {},\n                        \"clientInfo\": {\"name\": \"observatory-evidence\", \"version\": \"1.0.0\"}})\n            require(self.identity[\"serverInfo\"] == {\"name\": \"brain\", \"version\": \"0.0\"}\n                    and self.identity[\"protocolVersion\"] == \"2025-11-25\", \"native identity drift\")\n            self.send(\"notifications/initialized\", {})\n            self.tools = self.request(\"tools/list\", {})\n            require(record_digest(self.tools) == TOOLS_SHA, \"native tool schema drift\")\n        except BaseException as primary:\n            primary.request_receipts = self.requests\n            try:\n                self.close()\n            except BaseException as cleanup:\n                primary.cleanup_error_type = type(cleanup).__name__\n            raise\n\n    def _read(self):\n        frame = None\n        try:\n            for line in self.process.stdout:\n                frame = {\"wire_sha256\": None, \"wire_bytes\": len(line)}\n                frame[\"wire_sha256\"] = hashlib.sha256(line).hexdigest()\n                try:\n                    value = json.loads(line)\n                except BaseException:\n                    frame[\"kind\"] = \"decode_error\"\n                else:\n                    try:\n                        frame[\"frame_sha256\"] = record_digest(value)\n                    except BaseException:\n                        frame[\"kind\"] = \"canonicalization_error\"\n                    else:\n                        frame[\"value\"] = value\n                        frame[\"kind\"] = \"response\"\n                self.pending.put(frame)\n                frame = None\n        except BaseException:\n            failed = {\"kind\": \"read_error\"}\n            if frame is not None:\n                failed.update(wire_sha256=frame.get(\"wire_sha256\"), wire_bytes=frame.get(\"wire_bytes\"))\n            self.pending.put(failed)\n        finally:\n            self.pending.put({\"kind\": \"eof\"})\n\n    def _observe(self, receipt):\n        if self.witness is not None:\n            try:\n                self.witness(dict(receipt))\n            except BaseException:\n                receipt[\"witness_failed\"] = True\n                raise NativeTransportError(\"witness_unavailable\", receipt) from None\n\n    def _fail(self, receipt, phase):\n        receipt[\"phase\"] = phase\n        self._observe(receipt)\n        raise NativeTransportError(phase, receipt)\n\n    def send(self, method, params, ident=None):\n        require(method in {\"initialize\", \"tools/list\", \"tools/call\", \"notifications/initialized\"}, \"unadmitted RPC method\")\n        if method == \"tools/call\":\n            require(isinstance(params, dict) and params.get(\"name\") in {\"brain_get\", \"brain_remember\"} and isinstance(params.get(\"arguments\"), dict), \"unadmitted native request frame\")\n        receipt = {\"method\": method, \"request_id\": ident, \"parameters_sha256\": None,\n                   \"request_wire_sha256\": None, \"request_wire_bytes\": None, \"sent\": None, \"phase\": \"attempted\",\n                   \"response_wire_sha256\": None, \"response_frame_sha256\": None,\n                   \"response_result_sha256\": None, \"response_error_body_sha256\": None}\n        if method == \"tools/call\":\n            receipt.update(tool=params[\"name\"], arguments_sha256=None)\n            self.calls.append(receipt)\n        self.requests.append(receipt)\n        self.last_request = receipt\n        self._observe(receipt)\n        try:\n            message = {\"jsonrpc\": \"2.0\", \"method\": method, \"params\": params}\n            if ident is not None:\n                message[\"id\"] = ident\n            payload = (canonical(message) + \"\\n\").encode()\n            receipt.update(parameters_sha256=record_digest(params), request_wire_sha256=hashlib.sha256(payload).hexdigest(), request_wire_bytes=len(payload))\n            if method == \"tools/call\":\n                receipt[\"arguments_sha256\"] = record_digest(params[\"arguments\"])\n        except (TypeError, ValueError, UnicodeError, RecursionError, OverflowError):\n            self._fail(receipt, \"request_encode_error\")\n        self._observe(receipt)\n        try:\n            written = self.process.stdin.write(payload)\n            self.process.stdin.flush()\n            if written != len(payload):\n                self._fail(receipt, \"send_partial\")\n        except (OSError, ValueError):\n            self._fail(receipt, \"send_error\")\n        receipt[\"sent\"] = True\n        receipt[\"phase\"] = \"sent\" if ident is not None else \"notification_sent\"\n        self._observe(receipt)\n        return receipt\n\n    def request(self, method, params):\n        self.sequence += 1\n        receipt = self.send(method, params, self.sequence)\n        due = time.monotonic() + 30\n        unmatched = 0\n        while True:\n            try:\n                frame = self.pending.get(timeout=max(0.001, due - time.monotonic()))\n            except queue.Empty:\n                self._fail(receipt, \"response_timeout\")\n            if frame[\"kind\"] != \"response\":\n                receipt.update(response_wire_sha256=frame.get(\"wire_sha256\"), response_wire_bytes=frame.get(\"wire_bytes\"))\n                self._fail(receipt, frame[\"kind\"])\n            response = frame[\"value\"]\n            if not isinstance(response, dict):\n                receipt.update(response_wire_sha256=frame[\"wire_sha256\"], response_frame_sha256=frame[\"frame_sha256\"])\n                self._fail(receipt, \"non_object_response\")\n            if type(response.get(\"id\")) is not int:\n                receipt.update(response_wire_sha256=frame[\"wire_sha256\"], response_wire_bytes=frame[\"wire_bytes\"],\n                               response_frame_sha256=frame[\"frame_sha256\"])\n                self._fail(receipt, \"correlation_id_invalid\")\n            if response.get(\"id\") != self.sequence:\n                unmatched += 1\n                receipt.update(unmatched_count=unmatched, last_unmatched_wire_sha256=frame[\"wire_sha256\"])\n                self._observe(receipt)\n                if unmatched >= 8 or time.monotonic() >= due:\n                    self._fail(receipt, \"correlation_failure\")\n                continue\n            receipt.update(response_wire_sha256=frame[\"wire_sha256\"], response_wire_bytes=frame[\"wire_bytes\"],\n                           response_frame_sha256=frame[\"frame_sha256\"])\n            if response.get(\"jsonrpc\") != \"2.0\":\n                self._fail(receipt, \"protocol_frame_invalid\")\n            if \"error\" in response:\n                receipt.update(phase=\"jsonrpc_error\", response_error_body_sha256=record_digest(response[\"error\"]),\n                               safe_native_error=safe_native_error(response[\"error\"], self.redactions))\n                self._observe(receipt)\n                error = NativeError(response[\"error\"])\n                error.receipt = receipt\n                raise error\n            if \"result\" not in response:\n                self._fail(receipt, \"result_missing\")\n            receipt.update(phase=\"result_received\", response_result_sha256=record_digest(response[\"result\"]))\n            self._observe(receipt)\n            return response[\"result\"]\n\n    def call(self, name, arguments):\n        require(arguments.get(\"brain_id\") == self.brain_id, \"foreign or implicit authority\")\n        require(name in {\"brain_remember\", \"brain_get\"}, \"unadmitted native operation\")\n        schema = next(t[\"inputSchema\"] for t in self.tools[\"tools\"] if t[\"name\"] == name)\n        require(set(arguments) <= set(schema[\"properties\"]) and set(schema.get(\"required\", [])) <= set(arguments), \"native arguments drift\")\n        wire = self.request(\"tools/call\", {\"name\": name, \"arguments\": arguments})\n        receipt = self.last_request\n        if not isinstance(wire, dict):\n            self._fail(receipt, \"tool_result_invalid\")\n        if \"isError\" in wire and type(wire[\"isError\"]) is not bool:\n            self._fail(receipt, \"tool_result_invalid\")\n        if wire.get(\"isError\") is True:\n            receipt.update(phase=\"tool_error\", response_error_body_sha256=record_digest(wire),\n                           safe_native_error=safe_native_error(wire, self.redactions))\n            self._observe(receipt)\n            error = NativeError(wire)\n            error.receipt = receipt\n            raise error\n        try:\n            result = wire[\"structuredContent\"] if \"structuredContent\" in wire else json.loads(\"\\n\".join(c[\"text\"] for c in wire[\"content\"] if c[\"type\"] == \"text\"))\n        except (KeyError, TypeError, ValueError, RecursionError, OverflowError):\n            self._fail(receipt, \"tool_result_decode_error\")\n        identity = native_identity(result, self.brain_id)\n        if identity is None:\n            self._fail(receipt, \"native_identity_invalid\")\n        receipt.update(phase=\"native_result\", native_identity=identity)\n        self._observe(receipt)\n        return result\n\n    def remember(self, collection, record, *, provenance=None):\n        ident, digest = record[\"id\"], record_digest(record)\n        result = self.call(\"brain_remember\", {\"brain_id\": self.brain_id, \"content\": canonical(record),\n            \"scope\": \"global\", \"veracity\": \"imported\", \"source\": ident, \"extract\": False, \"extract_entities\": False,\n            \"operation_key\": \"oi7:\" + hashlib.sha256(ident.encode()).hexdigest(), \"actor\": \"issue-7-engineer\",\n            \"reason\": \"Admitted isolated investigation evidence import\", \"metadata\": {\"application_id\": ident,\n            \"collection\": collection, \"canonical_sha256\": digest, \"provenance\": provenance}})\n        require(result[\"brain_id\"] == self.brain_id, \"native write authority mismatch\")\n        binding = {\"brain_id\": self.brain_id, \"application_id\": ident, \"collection\": collection,\n                   \"canonical_sha256\": digest, \"memory_id\": result[\"memory_id\"], \"revision\": result[\"revision\"]}\n        self.get(binding)\n        return binding\n\n    def get(self, binding):\n        require(binding[\"brain_id\"] == self.brain_id, \"foreign binding authority\")\n        result = self.call(\"brain_get\", {\"brain_id\": self.brain_id, \"memory_id\": binding[\"memory_id\"]})\n        require(result[\"brain_id\"] == self.brain_id and result[\"memory_id\"] == binding[\"memory_id\"]\n                and result[\"revision\"] == binding[\"revision\"], \"native binding identity/revision mismatch\")\n        require(hashlib.sha256(result[\"content\"].encode()).hexdigest() == binding[\"canonical_sha256\"], \"native canonical bytes mismatch\")\n        record = json.loads(result[\"content\"])\n        require(record[\"id\"] == binding[\"application_id\"] and canonical(record) == result[\"content\"], \"native application identity mismatch\")\n        for key in (\"application_id\", \"collection\", \"canonical_sha256\"):\n            require(result[\"metadata\"][key] == binding[key], \"native binding metadata mismatch\")\n        return record\n\n    def import_bundle(self, bundle, *, protected_bindings=(), existing_manifest_binding=None):\n        validate_bundle(bundle)\n        if existing_manifest_binding is not None:\n            accepted, _ = self.restore(existing_manifest_binding)\n            require(canonical(accepted) == canonical(bundle), \"existing manifest input conflict\")\n            return existing_manifest_binding\n        protected = {b[\"application_id\"]: b for b in protected_bindings}\n        bindings = []\n        for collection in FIELDS:\n            for record in bundle[collection]:\n                prior = protected.get(record[\"id\"])\n                if prior is not None:\n                    require(prior[\"collection\"] == collection and prior[\"canonical_sha256\"] == record_digest(record), \"protected application identity conflict\")\n                    self.get(prior)  # Never reimport or change the original qualification records.\n                    bindings.append(prior)\n                else:\n                    bindings.append(self.remember(collection, record))\n        root = {\"id\": \"brain-manifest:oi7:2:\" + record_digest(bundle), \"manifest_version\": \"2\",\n                \"canonical_bundle\": canonical(bundle), \"bundle_sha256\": record_digest(bundle), \"bindings\": bindings}\n        return self.remember(\"accepted_manifest\", root)\n\n    def restore(self, manifest_binding):\n        require(manifest_binding[\"collection\"] == \"accepted_manifest\", \"not an accepted manifest binding\")\n        root = self.get(manifest_binding)\n        require(set(root) == {\"id\", \"manifest_version\", \"canonical_bundle\", \"bundle_sha256\", \"bindings\"}\n                and root[\"manifest_version\"] == \"2\", \"unsupported native manifest version\")\n        bundle = json.loads(root[\"canonical_bundle\"])\n        require(canonical(bundle) == root[\"canonical_bundle\"] and record_digest(bundle) == root[\"bundle_sha256\"],\n                \"durable bundle digest mismatch\")\n        require(root[\"id\"] == \"brain-manifest:oi7:2:\" + root[\"bundle_sha256\"], \"manifest application identity mismatch\")\n        validate_bundle(bundle)\n        expected = {(c, r[\"id\"]): record_digest(r) for c in FIELDS for r in bundle[c]}\n        bound = {}\n        for binding in root[\"bindings\"]:\n            key = (binding[\"collection\"], binding[\"application_id\"])\n            require(binding[\"brain_id\"] == self.brain_id and key not in bound, \"foreign or duplicate manifest binding\")\n            require(expected.get(key) == binding[\"canonical_sha256\"], \"manifest record binding mismatch\")\n            bound[key] = binding\n        require(set(bound) == set(expected), \"manifest binding closure mismatch\")\n        return bundle, root[\"bindings\"]\n\n    def inspect_view(self, view, bindings, edge_id):\n        from .model import inspect_edge\n        rows = inspect_edge(view, edge_id)\n        bound = {b[\"application_id\"]: b for b in bindings}\n        edges = view[\"claim_evidence_edges\"] + view[\"observation_evidence_edges\"] + view[\"relationships\"]\n        edge = next(e for e in edges if e[\"id\"] == edge_id)\n        target = edge.get(\"claim_id\", edge.get(\"observation_id\", edge[\"id\"]))\n        self.get(bound[target])\n        for row in rows:\n            require(self.get(bound[row[\"span\"][\"id\"]]) == row[\"span\"], \"native span differs from accepted manifest\")\n            require(self.get(bound[row[\"source_revision\"][\"id\"]]) == row[\"source_revision\"],\n                    \"native source differs from accepted manifest\")\n        return rows\n\n    def close(self):\n        if self.process.stdin and not self.process.stdin.closed:\n            self.process.stdin.close()\n        try:\n            self.process.wait(timeout=5)\n        except subprocess.TimeoutExpired:\n            self.process.terminate()\n            try:\n                self.process.wait(timeout=5)\n            except subprocess.TimeoutExpired:\n                self.process.kill()\n                self.process.wait(timeout=5)\n                raise RuntimeError(\"native reader required forced termination\")\n        self.reader.join(timeout=5)\n        require(not self.reader.is_alive(), \"native reader cleanup incomplete\")\n        self.process.stdout.close()\n        require(self.process.returncode == 0, \"native reader exited unsuccessfully\")\n"
+  },
+  "finding_union_closure_design": {
+    "H1_equals_F1": "Exact whole admitted single causal envelope only: direct code/message, exact error wrapper, exact SINGLE text content or exact sole structuredContent wrapper; unsupported root/leaf fields, multiple/overflow/ambiguous content, extra structured content and unknown codes ALWAYS null/incomplete. Never slice first8 or break before inspecting additional nodes; reject the whole unsupported shape. Whole stock PG grammar plus I64 decimal bounds only, no freeform/native-body leakage. This is prospective code/data, not executed proof or diagnosis of original unseen f6e body.",
+    "H2": "Recover and relay ONLY whole validated bounded LF frames to supervising stdout BEFORE child poll/kill/wait and BEFORE own Docker cleanup; recover later child stdout and relay only NEW complete validated prefix before Docker stop/inspect. Byte/chain-prefix equality prevents duplicate prefix publication. Unknown/partial suffix not forwarded/proof; publication failure sets BLOCKED, no uncertain-prefix retry; unconditional hard timer has no logging. Already externally observed complete frames remain evidence after hard exit; external caller retention/readback MUST be actually proven under a separate smoke gate, never invented durability.",
+    "H3": "Reader computes actual wire SHA/length BEFORE json.loads and canonicalization; BOTH catch BaseException into constant decode_error/canonicalization_error frames, then distinct EOF. Outer reader failure retains local computed wire metadata. Recursion/Overflow and unsupported parser exceptions cannot silently replace an already-computed wire digest by EOF. Request encoding/tool-result text recursion/overflow also retain existing attempt/wire receipt via constant failure. No raw exception or received payload export.",
+    "M1": "AllDocker inspect/start/readiness/stop stderr DEVNULL atdiagnosticboundary; ownbrain.isolatedargv inspectalsoDEVNULL/deadline5. Exceptiontype/actualhashonly, neverhelperrawoutput/DSN/password.",
+    "M2": "Hostchildgroup killedONLYownstilllivingnew-session leader; exited/crashedgroup no misleadingorphanfreeclaim, explicithost_descendant_custody externalparentdisposition. Successrequiresactualnormalnative_close_verified+finalframedchildwitness+exit0. Exactcontainerstop/PGDATA successseparatefromhostorphanclaim. AtomicO_EXCL0600temporaryreceipt+filefsync/replace protectsoriginaloldobjects; no claimedhostpowercrashdurability/directoryfsync. HardexitmayleaveonlynamedownTemp, parentpermission/custodianrequired, neverdeleteunknownuserfile.",
+    "M3": "Request rejects any type(response.id) other than int BEFORE Python equality: bool, float and null never correlate with initialize1. Failed receipt retains actual wire/frame SHA; constant correlation_id_invalid; all existing protocol/server/catalog checks remain.",
+    "Q1": "No arbitrarynative text/code/fatal exported. Only exactpublicstockerrorcodes andstrictwholemessageSQLgrammar; knownownpassword andencodedvariants checked beforeallowingmessage. Helper returnsnullableactualfields, notcontrolfallbackmessage. IncomingRPCpayload is wrappedbyreader-local metadata so native fatal keycannotmasqueradeasinternalfatal; nonobject/decode/EOF/protocol errors become constantNativeTransportError phase, no rawresponse usedasexceptiontext. DomainRootSnapshot/Source rights unchanged.",
+    "Q2": "Inner causal acceptancepredicate unconditionally requires safe.complete isTrue andmessage nonnull aftersamef6hash. Anycodepresentcannotbypassunsupported/incompletecause. Mismatch/unsafe/unavailable =>immediate native-phaseabort BEFOREafter28getters, missingproof named. No retry or inferredcause.",
+    "Q3": "Uniform hash-onlyattemptrecord BEFOREcanonicalization/send, retained method/id/params/args/requestwireSHA+bytecount andsentNone/True/phase. Receivedlinebytes hashed BEFOREJSON/UTF decode; wire/parsed-frame/result/error-body hashes separate namedfields, absentresponse staysNone. Allrequests includeinitialize/toolslist/notification plusonly58toolrecords sharedsameDict objects, no rawbody/argv/params. Timeout/sendpartial/malformedJSON/nonobject/EOF/unmatched/decodefailure preservesactualattempt+phase andavailablehashes. Observer emits safehashonlyrows beforeandafterphases; no newnativecalls/API/namespace. Corrective5 H3 extends reader parser/canonicalization exception coverage and strict M3; broad constant read failure retains available actual metadata, no failed-body/result digest fabricated.",
+    "Q4": "Constructor retainsPRIMARY exception/requestreceipts; closefailure attachedcleanup_error_type, neverreplacesprimary. Safeobserver emitsRPC attempt/error witness beforeconstructor cleanup. Inner explicitbefore_cleanup/causal_capture framedwitness BEFOREclose; outer recoverscompletechecksummednewlineframes evenfromTimeoutExpired stdout/cachedcommunicateafterownchildkill, no partialJSONproof. No retry/nativequery torecapturelostdata. Missingfinal/nativecloseproof alwaysblocked, recoveredprimarydata isEVIDENCE notsuccess. Corrective5 H2 adds explicit OUTER validated-prefix relay BEFORE every potentially blocking own cleanup; later custody/error/persistence results remain additive. Unknown publication/outer/recovery errors block success.",
+    "Q5": "Final300shardtimer performsONLY os._exit(124), no stdout/stderr/diskoperation canpreventexit. Initial215snativephase alarm/boundedchild210 reserves85cleanup; actualstop30s/inspect5 +ownedchildwait3/recovery2, allI/O overalltimercovered. stdout publication canblock onlyuntilhardexit; no stoppedclaim fromfinally. Outercrash/hardexitrequiresparentexternalcustodyinspection/disposition, no extraactivation.",
+    "Q6": "native_identity validatesactualpinnedbrain_id, nonleadingzeroASCIIdecimalmemoryID <=19digitsandI64max, positiveactualrevision <=I64max, optionalactualaction lowerASCII<=80 BEFOREcopy/output/conditionalget. Outofbound/foreign/untyped =>identityNone andconstantphase/hash-onlyerror; no truncatedidentity or forcedbrainID. Inner unexpectedwrite requiresactualaction too; no fabricatedenumactionnames.",
+    "R1": "Exact whole admitted single causal envelope only: direct code/message, exact error wrapper, exact SINGLE text content or exact sole structuredContent wrapper; unsupported root/leaf fields, multiple/overflow/ambiguous content, extra structured content and unknown codes ALWAYS null/incomplete. Never slice first8 or break before inspecting additional nodes; reject the whole unsupported shape. Whole stock PG grammar plus I64 decimal bounds only, no freeform/native-body leakage. This is prospective code/data, not executed proof or diagnosis of original unseen f6e body.",
+    "R2": "Outer verified_stopped custodySUCCESS nowrequires actualID845+runningfalse+stopexit0+pgdata_retainedTrue+no inspect_error. SourcePGDATA is_dirstat only, neverreadsprivatePGDATAcontents. Missing/failedwitness =>blockedexit/nativecode notcontinued andparentcustodydisposition; neverrestart/reset/deletion."
+  },
+  "four_complete_finding_fixture_DATA_not_executed": [
+    {
+      "additional_complete_source_vectors": "The whole inner DATA contains ALL freeform/prompt/credential/length/overflow/identity positives and negatives, not omitted here or executed.",
+      "complete_supported_body": {
+        "content": [
+          {
+            "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+            "type": "text"
+          }
+        ],
+        "isError": true
+      },
+      "criterion": "H1=F1/C5",
+      "expected_every_incomplete": {
+        "code": null,
+        "complete": false,
+        "message": null
+      },
+      "expected_supported": {
+        "code": null,
+        "complete": true,
+        "message": "string is too long for tsvector (2000000 bytes, max 1048575 bytes)"
+      },
+      "incomplete_bodies": [
+        {
+          "content": [
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "unrecognized causal detail",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "{\"code\":\"UNSUPPORTED_NATIVE_CODE\",\"message\":\"additional cause\"}",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            },
+            {
+              "text": "unsupported ninth node",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text"
+            }
+          ],
+          "structuredContent": {
+            "message": "string is too long for tsvector (2000000 bytes, max 1048575 bytes)"
+          }
+        },
+        {
+          "content": [
+            {
+              "text": "brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)",
+              "type": "text",
+              "unknown": "extra"
+            }
+          ]
+        },
+        {
+          "error": {
+            "code": -32000,
+            "data": null,
+            "message": "string is too long for tsvector (2000000 bytes, max 1048575 bytes)"
+          }
+        },
+        {
+          "error": {
+            "code": true,
+            "message": "string is too long for tsvector (2000000 bytes, max 1048575 bytes)"
+          }
+        },
+        {
+          "error": {
+            "code": null,
+            "message": "string is too long for tsvector (2000000 bytes, max 1048575 bytes)"
+          }
+        }
+      ],
+      "kind": "PURE HELPER INPUT/EXPECTED OUTPUT DATA; NOT RUN"
+    },
+    {
+      "additional_partial_suffix_utf8": "{\"kind\":\"oi7-causal-witness/1\",\"sequence\":2",
+      "complete_primary_bytes": 679,
+      "complete_primary_frame_utf8": "{\"chain_sha256\":\"3f02de8acea0453f33db6843c80f28ee544dd5e9b151307f68e9801d42d6a889\",\"kind\":\"oi7-causal-witness/1\",\"payload\":{\"event\":\"before_cleanup\",\"result\":{\"error_type\":\"NativeTransportError\",\"primary_receipt\":{\"method\":\"tools/call\",\"phase\":\"decode_error\",\"request_id\":3,\"response_wire_bytes\":21,\"response_wire_sha256\":\"39bb4e7589b024d9bae268bdac94274266174fcdba9465d9bddc8d244750db52\",\"tool\":\"brain_remember\"},\"stage\":\"DIAGNOSTIC_REPAIR_1_CAUSAL_CAPTURE_ONLY\",\"status\":\"BLOCKED_DIAGNOSTIC\"}},\"payload_sha256\":\"820effeb92490690dc529f7741b4f81add910cf7871c633e702f71370502ff85\",\"previous_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"sequence\":1}\n",
+      "complete_primary_sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "criterion": "H2/C6",
+      "cutoff_scenario": "After a VALID primary prefix is recovered, publish its whole LF checksummed frame onto this exact outer stdout retained by the parent BEFORE child poll/kill/wait and BEFORE Docker stop/inspect. If outer hard exits or crashes during subsequent cleanup, parent retains the earlier published complete prefix; storage/host/container custody remains UNKNOWN until external disposition. A blocked/failed publication is not claimed retained; mark BLOCKED and no uncertain-prefix publication retry.",
+      "expected": {
+        "complete_frame_count": 1,
+        "complete_prefix_bytes": 679,
+        "exact_published_primary_prefix_utf8": "{\"chain_sha256\":\"3f02de8acea0453f33db6843c80f28ee544dd5e9b151307f68e9801d42d6a889\",\"kind\":\"oi7-causal-witness/1\",\"payload\":{\"event\":\"before_cleanup\",\"result\":{\"error_type\":\"NativeTransportError\",\"primary_receipt\":{\"method\":\"tools/call\",\"phase\":\"decode_error\",\"request_id\":3,\"response_wire_bytes\":21,\"response_wire_sha256\":\"39bb4e7589b024d9bae268bdac94274266174fcdba9465d9bddc8d244750db52\",\"tool\":\"brain_remember\"},\"stage\":\"DIAGNOSTIC_REPAIR_1_CAUSAL_CAPTURE_ONLY\",\"status\":\"BLOCKED_DIAGNOSTIC\"}},\"payload_sha256\":\"820effeb92490690dc529f7741b4f81add910cf7871c633e702f71370502ff85\",\"previous_sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"sequence\":1}\n",
+        "partial_capture_disposition": "BLOCKED_DIAGNOSTIC",
+        "partial_suffix_must_not_be_published": true
+      },
+      "kind": "BOUNDED EXTERNAL PUBLICATION FIXTURE DATA; NOT RUN; NO NATIVE/MOCK ADAPTER",
+      "proof_boundary": "Input/expected DATA plus exact outer control flow only; no child cleanup stall, hard kill, stdout proof, native request or retained-custody experiment executed. Separate parent-gated actual safe smoke must observe the parent channel before any success claim.",
+      "unchanged_recovery_prefix_case": "Two recoveries of the SAME full prefix do not republish any bytes; a longer valid chained prefix publishes ONLY new complete bytes; a changed earlier prefix is rejected."
+    },
+    {
+      "boundary": "Under an admitted reader fixture with actual stdio bytes, feed these EXACT frames to the real installed _read implementation; direct byte/error-boundary-only qualification cannot substitute for native MCP. Recursion/overflow/unrecognized parser exceptions must queue failure with already-computed wire SHA/size BEFORE a separate EOF; no native error-body/result hash is fabricated. No candidate method, json.loads of these fixture bytes, stream fixture or subprocess has run during preparation.",
+      "criterion": "H3/C5",
+      "kind": "EXACT RECEIVED BYTE FIXTURE DATA; NOT RUN",
+      "recursion_precondition": "The deep frame triggers the decode failure only under a pinned parser nesting limit below4096; if a different host parser accepts it, test actual supported exception boundary rather than claim the branch exercised. No recursion/global configuration mutation authorized.",
+      "wire_frames": [
+        {
+          "exception_text_exported": false,
+          "expected_after_failure_kind": "eof",
+          "expected_first_failure_kind": "decode_error",
+          "expected_response_frame_sha256": null,
+          "wire_bytes": 8194,
+          "wire_sha256": "313e88250e0ca3cce3cc1be946a54470d979a875129fb806874eeb89dac0546d",
+          "wire_utf8": "[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[0]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]\n"
+        },
+        {
+          "exception_text_exported": false,
+          "expected_after_failure_kind": "eof",
+          "expected_first_failure_kind": "canonicalization_error",
+          "expected_response_frame_sha256": null,
+          "wire_bytes": 38,
+          "wire_hex": "7b226a736f6e727063223a22322e30222c226964223a312c22726573756c74223a4e614e7d0a",
+          "wire_sha256": "7bd1be49ff695293b5c4a77ac24b386b80615d818efdeaaa3d4deae00fa99191"
+        },
+        {
+          "exception_text_exported": false,
+          "expected_after_failure_kind": "eof",
+          "expected_first_failure_kind": "decode_error",
+          "expected_response_frame_sha256": null,
+          "wire_bytes": 2,
+          "wire_hex": "ff0a",
+          "wire_sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3"
+        }
+      ]
+    },
+    {
+      "boundary": "Actual request code checks type(id) is int BEFORE Python equality; booleans/floats/null are not accepted even when equality would match1. These frames are hypothetical transport DATA, never a fake native acceptance or live server response.",
+      "criterion": "M3/C5",
+      "frames": [
+        {
+          "expected": "correlation_id_invalid",
+          "request_sequence": 1,
+          "wire_sha256": "38238fef0da41ac8e3252a148613112fc4d0677214f6946ea17cabbadf25fbb5",
+          "wire_utf8": "{\"id\":true,\"jsonrpc\":\"2.0\",\"result\":{\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"brain\",\"version\":\"0.0\"}}}\n"
+        },
+        {
+          "expected": "correlation_id_invalid",
+          "request_sequence": 1,
+          "wire_sha256": "c730ca26225f3f34989bdaf6e202cd51385f89790a099f243fb8c6f03fca2c45",
+          "wire_utf8": "{\"id\":false,\"jsonrpc\":\"2.0\",\"result\":{\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"brain\",\"version\":\"0.0\"}}}\n"
+        },
+        {
+          "expected": "correlation_id_invalid",
+          "request_sequence": 1,
+          "wire_sha256": "0c7f4b4abed0183a91ac04b384a69307b21ff7021be4ba4c797810e6a3e54948",
+          "wire_utf8": "{\"id\":null,\"jsonrpc\":\"2.0\",\"result\":{\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"brain\",\"version\":\"0.0\"}}}\n"
+        },
+        {
+          "expected": "correlation_id_invalid",
+          "request_sequence": 1,
+          "wire_sha256": "ccbc646c60b18521ad37b6d4cb2fc5d4feb5a3da4c4f0a9bbbdc2238902dafdc",
+          "wire_utf8": "{\"id\":1.0,\"jsonrpc\":\"2.0\",\"result\":{\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"brain\",\"version\":\"0.0\"}}}\n"
+        },
+        {
+          "expected": "matching integer ID admitted subject to all existing initialize/server/protocol checks",
+          "request_sequence": 1,
+          "wire_sha256": "8d031a9e05c31d05b14d7fb6790baa521a3f4c93ba600fcd1bbc447cf8d334c9",
+          "wire_utf8": "{\"id\":1,\"jsonrpc\":\"2.0\",\"result\":{\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"brain\",\"version\":\"0.0\"}}}\n"
+        }
+      ],
+      "kind": "STRICT HANDSHAKE NUMERIC TYPE FIXTURE DATA; NOT RUN"
+    }
+  ],
+  "framing_limits": {
+    "complete_prefix_relay_external_channel": "The SAME outer stdout captured by supervising caller/tool; no new file/store. Caller must actually retain/read back full LF frames across cutoff at the admitted smoke. Successful write/flush is NOT fabricated disk/power-crash durability or a claim that this unrun channel is qualified.",
+    "kind": "oi7-causal-witness/1",
+    "matching_sequence_and_previous_payload_chain_sha_required": true,
+    "maximum_captured_stdout_bytes": 1048576,
+    "maximum_frame_line_bytes": 132096,
+    "maximum_frames": 512,
+    "maximum_payload_utf8_bytes": 131072,
+    "no_arbitrary_json_fragment_proof": true,
+    "no_witness_file_store": true,
+    "only_complete_LF_frames_proof": true,
+    "payload_cap_checked_by_outer_as_well_as_inner": true,
+    "prefix_retry_after_uncertain_publication": false,
+    "stdout_relay_bytes_only_validated_prefix": true,
+    "trailing_partial_frame_neverproof": true
+  },
+  "frozen_current_input_guards": [
+    {
+      "bytes": 126131,
+      "mode": 384,
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743"
+    },
+    {
+      "bytes": 28218,
+      "mode": 384,
+      "path": "docs/contracts/evidence.md",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+    },
+    {
+      "bytes": 12261,
+      "mode": 384,
+      "path": "schemas/evidence.schema.json",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "bytes": 13033,
+      "mode": 384,
+      "path": "tests/fixtures/evidence_contracts.json",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    },
+    {
+      "bytes": 294150,
+      "mode": 384,
+      "path": "investigations/frontier-economics/evidence.json",
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93"
+    },
+    {
+      "bytes": 109773,
+      "mode": 384,
+      "path": "investigations/frontier-economics/sources.json",
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41"
+    },
+    {
+      "bytes": 52115,
+      "mode": 384,
+      "path": "investigations/frontier-economics/assessment.md",
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa"
+    },
+    {
+      "bytes": 48211,
+      "mode": 384,
+      "path": "integrations/brain/qualification/native_qualification.py",
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389"
+    },
+    {
+      "bytes": 550314,
+      "mode": 384,
+      "path": "integrations/brain/qualification/native-receipts.json",
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e"
+    },
+    {
+      "bytes": 17422,
+      "mode": 384,
+      "path": "integrations/brain/qualification/native-tools.json",
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3"
+    },
+    {
+      "bytes": 12132,
+      "mode": 384,
+      "path": "docs/integrations/cordis.md",
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2"
+    },
+    {
+      "bytes": 10949,
+      "mode": 384,
+      "path": "integrations/dsh/qualification/receipts.json",
+      "sha256": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb"
+    },
+    {
+      "bytes": 4223271,
+      "mode": 384,
+      "path": "web/data.json",
+      "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36"
+    },
+    {
+      "bytes": 105582,
+      "mode": 384,
+      "path": "tests/fixtures/features_a.json",
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7"
+    },
+    {
+      "bytes": 105962,
+      "mode": 384,
+      "path": "tests/fixtures/features_b.json",
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f"
+    },
+    {
+      "bytes": 9903,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16"
+    },
+    {
+      "bytes": 92295,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7"
+    },
+    {
+      "bytes": 63002,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae"
+    },
+    {
+      "bytes": 27251,
+      "mode": 384,
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b"
+    }
+  ],
+  "frozen_final_execution_source_guards": [
+    {
+      "bytes": 22505,
+      "mode": 384,
+      "path": "observatory/evidence/contracts.py",
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15"
+    },
+    {
+      "bytes": 23390,
+      "mode": 384,
+      "path": "observatory/evidence/brain.py",
+      "sha256": "5518c61f39bbbe55e0916b5bd71ecced3528cdc0ee8ff1962af3e93facf3d879"
+    },
+    {
+      "bytes": 5908,
+      "mode": 384,
+      "path": "observatory/evidence/model.py",
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5"
+    },
+    {
+      "bytes": 2646,
+      "mode": 384,
+      "path": "observatory/evidence/cordis.mjs",
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374"
+    },
+    {
+      "bytes": 2361,
+      "mode": 384,
+      "path": "observatory/evidence/__main__.py",
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e"
+    },
+    {
+      "bytes": 11997001,
+      "mode": 384,
+      "path": "observatory/evidence/receipts.json",
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca"
+    },
+    {
+      "bytes": 8901,
+      "mode": 384,
+      "path": "observatory/python_adapter.py",
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1"
+    },
+    {
+      "absent": true,
+      "path": "docs/integrations/python-pipeline.md"
+    },
+    {
+      "absent": true,
+      "path": "investigations/frontier-economics/manifest.json"
+    },
+    {
+      "bytes": 3439,
+      "mode": 384,
+      "path": "tests/test_investigation.py",
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d"
+    },
+    {
+      "bytes": 13514,
+      "mode": 384,
+      "path": "tests/test_evidence_contracts.py",
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e"
+    }
+  ],
+  "future_vector_proof_not_run": "Whole exact pure-helper boundary vectors are inside complete inner DATA; four complete finding fixture groups supplied including full received bytes and checksummed primary line. No candidate method/reader/fixture/LAB/native model has been executed. Any byte/exception/publication fixture driver or actual retained-channel proof needs a separate parent safe-smoke gate; pure transport/helper boundaries never substitute for native MCP/Cordis/persistent original acceptance.",
+  "group": 6,
+  "historical_preservation": {
+    "corrective4_full_original_report_sha256": "35f912c97a544401ac827dcaa84e0acc2e4e0a2b1af4604de05d942dc4055d46",
+    "corrective4_separate_quality_report_sha256": "1caa207996399e66a51d60153a7e7f8fbec9c1876d334329c5c3a0b7c64a3a12",
+    "distinct_current_HIGH_union": 3,
+    "full_acceptance_review_sha256": "1274997130447ed001d46f828d2bcad23bcc2da66e83197a329840a572033e81",
+    "general_original_C6_static_assessment_does_not_override_specific_quality_H2": true,
+    "old_newline_hypothesis_rejected": true,
+    "original_61649_call_objects_and_all_other_fields_unchanged": true,
+    "original_F1_is_quality_H1": true,
+    "original_failed_receipt_sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+    "prior_WISH_copy": ".genie/wishes/open-intelligence-observatory/verification/WISH-before-current-six-local-acceptances-and-user-BWS-custody.txt",
+    "prior_WISH_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+    "prior_complete_corrective4_sha256": "ae20ec2ed24d71e2606473baaad63a79195fc54bd7407cd9a1ba0f4e686c3437",
+    "prior_current_WISH_dc6_sha256": "dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b",
+    "prior_dc6_copy_actual_verified_bytes": 120136,
+    "prior_dc6_exact_copy": ".genie/wishes/open-intelligence-observatory/verification/WISH-before-owner-authorized-quality-cycle2-and-native-DSH-extension-design.txt",
+    "prior_prospective3_sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e",
+    "privacy_transport_quality_review_sha256": "3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5",
+    "quality1_exhaustion_preserved": true
+  },
+  "issue": 7,
+  "next_required_parent_gates": "Explicit236insertions/32deletions/204net DATA-only C7 amendment BEFORE any first new reviewer artifact access; TWO NEW blind full frozen C1-C8/method ACKs before access, whole original plus separate privacy/transport reports BOTH zeroHIGH and full parent assessments/releases. Then SEPARATE production-byte mutation gate, SEPARATE actual safe changed-path smoke including proven caller retention/negatives, then SEPARATE one exact native activation gate. Final qualitycap2 used2 afterward; no automatic third/reset/SourceB backdoor. All original #7 criteria remain unaccepted and native cause UNKNOWN.",
+  "original_claim_baseline_HEAD": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3; historical supplied claim baseline, not a newly checked current HEAD; parent alone integrates Git",
+  "original_scope_not_complete_or_reduced": "Fullcurrent1955/allnumericcohorts/24235observations retained; 30102actualsuccessfulpairs precededfailedReplayManifest; Scene/finalfullsnapshotroot UNATTEMPTED. NativecauseUNKNOWN untilactualsafeacceptedcapture. PubliccatalognoMax/6.24MB notcause. Priorpack173/v1restart/Cordis thinproof notfullgroup. Docs/firstinvestigationmanifest absentuntilactualfullscopeproof. Fouroriginalcriteria remainunchanged; no shipped/deployed/remoteCI/humanclaim.",
+  "ownership_and_forecast_amendment_requested": {
+    "additional_witness_files": false,
+    "exact_2_proposed_permanent_mutation_paths": [
+      "observatory/evidence/brain.py",
+      "observatory/evidence/receipts.json"
+    ],
+    "existing_owned_bytes": 12069043,
+    "existing_owned_lines": 1214,
+    "explicit_numeric_amendment_requested_before_first_new_reviewer_access": "236 true insertions/32 deletions/204 net instead of216/28/188. Same11/two mutation paths/1700forecast/2000hard/25files; no new Store/WitnessFile/probe/interface. Only DATA access amendment requested; NOT source or runtime mutation.",
+    "feature_forecast": 1700,
+    "hard_files": 25,
+    "hard_insertions": 2000,
+    "named_existing_atomic_transient": "observatory/evidence/.receipts-oi7-diagnostic-1.tmp",
+    "new_brain_net_delta": 204,
+    "new_exact_brain_deletions": 32,
+    "new_exact_brain_insertions": 236,
+    "other9unchanged_including2absent": true,
+    "previous_review_data_insertions": 216,
+    "same_11_permanent_paths": [
+      {
+        "bytes": 22505,
+        "lines": 354,
+        "mode": 384,
+        "path": "observatory/evidence/contracts.py",
+        "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15"
+      },
+      {
+        "bytes": 12768,
+        "lines": 220,
+        "mode": 384,
+        "path": "observatory/evidence/brain.py",
+        "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2"
+      },
+      {
+        "bytes": 5908,
+        "lines": 83,
+        "mode": 384,
+        "path": "observatory/evidence/model.py",
+        "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5"
+      },
+      {
+        "bytes": 2646,
+        "lines": 70,
+        "mode": 384,
+        "path": "observatory/evidence/cordis.mjs",
+        "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374"
+      },
+      {
+        "bytes": 2361,
+        "lines": 52,
+        "mode": 384,
+        "path": "observatory/evidence/__main__.py",
+        "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e"
+      },
+      {
+        "bytes": 11997001,
+        "lines": 30,
+        "mode": 384,
+        "path": "observatory/evidence/receipts.json",
+        "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca"
+      },
+      {
+        "bytes": 8901,
+        "lines": 122,
+        "mode": 384,
+        "path": "observatory/python_adapter.py",
+        "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1"
+      },
+      {
+        "exists": false,
+        "path": "docs/integrations/python-pipeline.md"
+      },
+      {
+        "exists": false,
+        "path": "investigations/frontier-economics/manifest.json"
+      },
+      {
+        "bytes": 3439,
+        "lines": 53,
+        "mode": 384,
+        "path": "tests/test_investigation.py",
+        "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d"
+      },
+      {
+        "bytes": 13514,
+        "lines": 230,
+        "mode": 384,
+        "path": "tests/test_evidence_contracts.py",
+        "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e"
+      }
+    ],
+    "scope_of_optional_keyword": "BrainEvidence(argv,*,brain_id,witness=None) adds optional diagnostic-only SAFE metadata observer; existing soleproductioncaller observatory/evidence/__main__.py unchanged defaultNone; allMCP/CLI/domain/root/Scene wireinterfaces unchanged. Namespace/libraryreferences searched; LSP unavailable as acceptedintake, no guessedextra caller. Explicitparentinterface/lineboundadmission beforeartifactaccess/sourceedit required.",
+    "two_named_tmp_runners": true
+  },
+  "performed_readonly_preparation": "Actual complete baseline11/current input19/owner gate2 regular/non-symlink/0600/SHA/UTF8 byte/LF guards checked; current WISH260f and exact historical dc6 copy hashed; all3 whole prospective strings AST-parsed as DATA, literal11+19+2 guard equality and whole difflib236/32 verified; scoped public-reference grep shows sole actual __main__ caller defaultNone. NO candidate/source/module imports or exec/eval/code/fixture/vector execution, materialization/writes, native/container/runtime/config/credential/privatePGDATA/model/tests/build/lint/format/Git/card. One earlier readonly history self-equality expression provided no history proof and was replaced by actual dc6 SHA/120136B verification; no source artifact depended on it.",
+  "status": "ONE_COMPLETE_OWNER_AUTHORIZED_FINAL_QUALITY_CYCLE2_CORRECTIVE5_PROSPECTIVE_DATA_ONLY; NOT_APPLIED_OR_RUN; NEEDS_NUMERIC_AMENDMENT_AND_TWO_NEW_BLIND_ZERO_HIGH_REVIEWS",
+  "task": "task_2bbfe79e0b5f",
+  "unchanged_native_contract": {
+    "actual_tool_composition": "28protected26+root200201 pre-getters, ONEexactsameoriginalReplayManifest remembertoobtainmissingcausaldata NOTknownfailureconfirmation, optionalONEconditionalget onlyifactualvalidunexpectedacceptance, 28afterONLYexpectedhash+completeallowedcausalcapture. twoRPCinitialize/toolslist+notificationoutside58. No wholeimport/31kremember/getterrecovery/newclock/original26writes/rootswrites orfifthqualificationrepair.",
+    "clock_collection_event_source_publication_unknown": true,
+    "coding_and_storage_costs": "UNKNOWN",
+    "computed_at": "2026-10-09T19:02:47.018288Z",
+    "container": "845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af",
+    "ingested_at": "2026-10-09T19:02:47.018224Z",
+    "last_arguments_sha256": "b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91",
+    "last_original_error_response_sha256": "f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3",
+    "namespace": "brn_63n8pr",
+    "network": "none",
+    "one_readonly_ready_probe": "docker exec -u1001:1001 exactowncontainer pg_isready -h/qualification/sandbox/socket -Uoi5_owner -dbrain -t5 timeout10; no rerunifnotready.",
+    "original_target_application_id": "manifest:snapshot:68d415eb7d23fda29b30f527493fce1f83e4f563f0cba268ef08010c56d48c98",
+    "original_target_collection": "replay_manifests",
+    "product_paid_model_calls": 0,
+    "productmodel_extraction_embeddings": "off",
+    "real_diagnostic_additional_PGSTART_limit": 1,
+    "restart_commands_this_diagnostic": 0,
+    "same4mounts_OS1001_image_binary_live86pins": true,
+    "shared_USD20_DSH12_Brain8_unchanged": true,
+    "smoke_command_only_after_gates": "python3 -B /tmp/oi7-native-replay-diagnostic-1-outer.py",
+    "snapshot_bundle_sha256": "6f78e23589b5e07ce344daa4611aba2347e50086105998cc7f25385065140539",
+    "target_canonical_utf8_bytes": 6241702,
+    "tool_count_before_effect_limit": 58
+  }
+}

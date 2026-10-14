@@ -1,0 +1,87 @@
+{
+  "recorded_at": "2026-10-09T17:52:43.597786+00:00",
+  "status": "SHIP_ORIGINAL_AND_SEPARATE_QUALITY_VALIDATION_PASS_PENDING_AUTHOR_FINAL_HANDOFF",
+  "original_task": "task_1ee57daded7e",
+  "author_dispatch": "ctx_f79253ca87d2",
+  "card": "t_muz1j2ww5a6ec7c7",
+  "claimant": "issue-5-engineer",
+  "candidate_commit": "5e0f8b0bcf556f43762da8cdfd4e733381c4dcbc",
+  "candidate_manifest_sha256": "b5ac2167cbc90c60f322fe4ddc5eb92a039afbc7fb0d8f8bb0553dc18642dc0e",
+  "original_review": {
+    "task": "task_b555706cb341",
+    "dispatch": "ctx_436002224afb",
+    "verdict": "SHIP",
+    "C1": "PASS",
+    "C2": "PASS",
+    "C3": "PASS",
+    "C4": "PASS",
+    "report": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-4-native-original-acceptance-4.txt",
+      "sha256": "061304d7aed36bedfb9687a71f48d9165247f567e22b20c42fdd3d270b8172f5",
+      "bytes": 21772,
+      "mode": "0600"
+    },
+    "accepted_settlement": "msg_680d60869999",
+    "release": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"1beb3a6b-0104-4bae-bdc3-af4155b28f60\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_436002224afb\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"e827bbc4-02be-439d-999d-b34112644378\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "1beb3a6b-0104-4bae-bdc3-af4155b28f60",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_436002224afb",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "terminal",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "e827bbc4-02be-439d-999d-b34112644378",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+        }
+      }
+    }
+  },
+  "separate_quality": {
+    "verdict": "SHIP",
+    "report_path": ".genie/wishes/open-intelligence-observatory/verification/group-4-native-independent-quality-4.txt",
+    "report_sha256": "6f1564d75cdadf3bdf3bc02e0ee4d6eb389c8f4684a9382213c75ee194273727",
+    "nonblocking_Q1": "MEDIUM staticcleanupfailure; actualstopexit0/runningfalse; acceptedforfrozenone-shot only no fifthrepair/rerun"
+  },
+  "aggregate": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/native-brain-visual-post-commit-aggregate.json",
+    "sha256": "5dfe18493bbaf4d357f523edb99e1a8976867251dbdb4e08d749101bea69e53f",
+    "unittest_exit": 0,
+    "test_count": 43,
+    "evaluator_exit": 0
+  },
+  "runtime": {
+    "actual_native_smoke_exit": 0,
+    "calls": 150,
+    "preserved_old_calls": 73,
+    "bindings": 26,
+    "storage_restart": "actualchangedPGpostmaster exact26getter responses/claims-spans-sources/history unchanged",
+    "container": "845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af",
+    "custody": "stopped PGDATAretained parentowns"
+  },
+  "qualification_limits": [
+    "NotHTTPtenancy/RLS",
+    "NotuniversalappIDorappendonly",
+    "Notbitemporal",
+    "Notparallelwriterstress",
+    "Noactualverifiedfinancialtransaction",
+    "Nopaidproductmodelcalls; coding/storage/allcostunknown",
+    "NotremoteCI/deployed/human/forgeclosure"
+  ],
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "card_done": false,
+  "source_frozen": true,
+  "repair_cap": 4,
+  "repair_used": 4
+}

@@ -1,0 +1,98 @@
+OFFLINE CACHED STOCK IMAGE ABI CLOSURE — AUXILIARY READ-ONLY SCOUT, NOT ORIGINAL #4 ACCEPTANCE
+Task task_093f1bcec0d1 / Dispatch ctx_050e7534d9b0; worker term_547d5a42-cfce-46b4-895c-204f449c8270.
+Result: pinned native Node requires libatomic.so.1, but the effective final rootfs of the exact cached stock image contains no libatomic-named entry. Static stock-only ABI closure is incompatible; the precise cause of the historical lost stderr remains UNKNOWN.
+Confidence: HIGH for inspected immutable stock-rootfs absence and ELF requirements; HIGH for incompatibility of stock-only closure; UNKNOWN for attribution of the sole historical failure; NOT QUALIFIED for any alternative/runtime/application/global completion.
+No new red loop was authorized or run. The one prior diagnostic is the sole red observation. Report-skill reproduction guidance was constrained by the explicit no-rerun instruction.
+
+SCOPE / PINNED INTAKE
+W = /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory.
+V = W/.genie/wishes/open-intelligence-observatory/verification; abbreviations below resolve only to this absolute worktree.
+Native helper launched in base-main, whose wish verification directory was empty; orca worktree current / coordinator terminal metadata confirmed base-main, NOT source identity. Blocking native ask returned the absolute W; no actual native/SDK error was inferred from that intake mismatch.
+Parent received pins/method ACK msg_2a29c8d3ff2d before binary intake: five frozen static hypotheses, exact43ac stock export, no runtime or private data. Later queued absolute-path message msg_bd5d7d28bddc was read in full; all relative source reads already resolved under the exact W.
+DSH @deepseek-ai/dsh@0.2.0-rc.1; source4878cdabd87d4041bdaff61d04c966883b9fd07a; Cordis @deepseek-ai/cordis@4.0.4. No package/SDK/source/bootstrap/runtime qualification attempt was made.
+Native Node identity discovered from accepted V/group-3-native-bootstrap-byte-review-4.txt:59-60, not a guessed private location: /home/genie/.hermes/node/bin/node.
+Fresh sha256sum matched ad19784f7e90ba789a099eccba77ede8dc90a778c424f1c10a70fed3ff903fdc; actual size147870928 bytes. Version26.7.0 is the accepted-record pin, not a newly executed version observation.
+Stock source URI: oci://docker.io/library/node@sha256:43ac6c60b8f89723f746e8a92ce91abd5017e627ce1ddfe4238355d3a30b772c; cached tag node:22-slim. No registry network request/pull occurred.
+Fresh intake SHA256: W/docs/integrations/dsh.md = 626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da.
+Fresh intake SHA256: W/docs/integrations/cordis.md = ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2.
+Fresh intake SHA256: W/integrations/dsh/qualification/sandbox-readiness.json = e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716.
+Fresh intake SHA256: V/group-3-original-full-blocked-engineering-handoff.txt = 411306c4d8143747f1d7411e9382e4b609d4bc809cf9c3ba0f5b1cb5e09ba12f.
+Fresh intake SHA256: V/group-3-native-bootstrap-byte-review-4.txt = dc0c8b1a6d2fd6ac01d40d1b3a50ac91ce3ac0dfa2ef659e058642dba5d9bed8.
+Fresh intake SHA256: V/group-3-failed-once-classified-metadata.json = 7a830a2aae61a3a74b0b9c0815f388fecc220a4a482c3d37123f383babf9f7ed; line1 preserves classifier only.
+
+FROZEN BEFORE STOCK INVENTORY: FIVE FALSIFIABLE HYPOTHESES, NOT ROOT-CAUSE CLAIMS
+H1 Interpreter/architecture mismatch: native PT_INTERP absent, broken, or wrong ELF machine/class in stock rootfs; a matching effective loader would eliminate this static mismatch. Finding: rejected for stock-only image; both ELF64/little-endian/x86-64; interpreter resolves to matching regular loader.
+H2 Missing DT_NEEDED SONAME: at least one native dependency lacks an effective provider; supplying a compatible provider in a newly qualified rootfs would remove that static deficit. Finding: supported for libatomic.so.1; no libatomic entries in any final-rootfs path; seven other SONAMEs resolve.
+H3 GLIBC symbol-version mismatch: native requires a version absent from an effective provider; providers exporting all required tags/symbols would eliminate it. Finding: rejected for inspected available providers, by exact per-provider sets and imports, not version maxima alone.
+H4 GLIBCXX/CXXABI/GCC mismatch: libstdc++/libgcc exist but lack native-required versions/symbols; matching exports would eliminate it. Finding: rejected for inspected available providers; all required tags and strong imported symbols are present.
+H5 Layer/whiteout/symlink discrepancy: an earlier-layer provider is masked or a final symlink is broken; resolving the final layer map would expose the discrepancy. Finding: rejected for the seven available providers; all five layer inventories processed, zero whiteouts, usrmerge links resolved. No atomic provider was present to be masked.
+Only static comparisons were performed. No controlled runtime modification was tested, so these findings do not reconstruct a causal chain for the historical failure.
+
+EXACT STOCK IMAGE / EFFECTIVE ROOTFS EVIDENCE
+Read-only docker image inspect returned Id/repoDigest43ac, Os linux, Architecture amd64, Size79806158 bytes. Docker image ls reported329MB for its separate displayed size metric; these values were not treated as the same measurement.
+One own scratch directory /tmp/oi4-stock-ABI-m1h8v_jj, actual mode0700. docker image save exact43ac --output /tmp/oi4-stock-ABI-m1h8v_jj/stock.tar exited0, stderr empty; actual export82490368 bytes.
+Export bound336001848 bytes = 4*79806158 + 16MiB from actual inspect inventory; child RLIMIT_FSIZE enforced bound. Maximum observed aggregate scratch file bytes212716136 also stayed below bound.
+Export SHA256 e12af65beb0c54a14abd7021174491d7e58047935faa77a68e60510939038399, measured before deletion; Docker-save tar hash is local serialization evidence, not the registry digest.
+Specialized archive reads inspected root inventory, manifest.json and index.json; tarfile/gzip builtin parsing inspected all layer headers in order, whiteouts, hardlinks and symlinks without executing any image bytes.
+index.json:1 references exact43ac OCI index; its bytes rehashed to43ac. Selected linux/amd64 manifest25330af3531fb5e23318554a0aa911125b6e91b1b777edf7655501d207c067a2 rehashed to its digest and exactly matched saved layer order/config reference.
+Config digest reference only:88f8ba583a884279252779bbe221bf1ff2c61cf236cc973f8ca97676ae6d07f0. Config content/env was not read or dumped.
+Layer0 compressed SHA774043ccc8ccd0d0833a9ee0792142ab7ad93df971e59dd248fbf82db16d0150;28238443 bytes;4226 entries; uncompressed diffID34467cc93912af891dfee8a3902adf9b4f355a9bca4eaa46f658d1181a21de0d.
+Layer1 compressed SHA8ab8fd6c944526e5da2ca93b1663b2ab6f4bb8d4ea7b50a90d53c9fdcc5b0b9e;3311 bytes;18 entries; diffIDde795e33b0a97c1f296a52caad0b1f6230838ce1e2f6cf5b6a48914b31bc9b2f.
+Layer2 compressed SHA61592f5b60306b96e5208206668cdf0fa62d3cda3a3baeed26efdcd1a21aaba5;49837024 bytes;3074 entries; diffID821663448d9d87a75869c392ae8fcf7c225652826c759a200eaf2eed826b3d06.
+Layer3 compressed SHA8d9d84ee31888adba85837fbf8f0e6eca99263904b2ba04d79e7d4fc1da40056;1713017 bytes;48 entries; diffIDe4ab6a15070bbca77a0ba5afcafd3dd9d5b92ce55a9e9f1b5d467bfaf72560a8.
+Layer4 compressed SHAdc40c63c08b5453854c13da6d72b3182737b2e223156b786c67779e0d6f4e8e0;446 bytes;4 entries; diffIDd266843a38db9ec6f439526c04846f3652c06ffa0efb7a3264927b39d5255164.
+Each compressed digest and uncompressed diffID matched the inspected image chain; final7293 entries, zero .wh.* markers. No opaque-directory/tombstone omission was inferred from image metadata alone.
+Effective /etc/os-release through /usr/lib/os-release: Debian GNU/Linux12/bookworm. Stock dpkg status: libc6 amd642.36-9+deb12u14, libgcc-s1 amd6412.2.0-14+deb12u1, libstdc++6 amd6412.2.0-14+deb12u1; all install ok installed; no libatomic1 package record.
+Effective symlinks: /lib -> usr/lib; /lib64 -> usr/lib64; /usr/lib64/ld-linux-x86-64.so.2 -> /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2; /usr/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0.30.
+All observed closure library regular files originate in layer0. Final inventory contains ZERO paths including libatomic; no libatomic.so.1 regular file/symlink/hardlink exists, not merely a missing package listing or an earlier-layer search.
+
+NATIVE ELF REQUIREMENTS / EXACT PROVIDER COMPARISON
+readelf -h -l -d -V /home/genie/.hermes/node/bin/node exited0; native is ELF64 little-endian x86-64 EXEC; PT_INTERP /lib64/ld-linux-x86-64.so.2; no DT_RPATH/DT_RUNPATH.
+DT_NEEDED in order: libatomic.so.1, libdl.so.2, libm.so.6, libstdc++.so.6, libgcc_s.so.1, libpthread.so.0, libc.so.6, ld-linux-x86-64.so.2.
+libatomic.so.1: required LIBATOMIC_1.0; effective provider ABSENT; strong native import __atomic_compare_exchange@LIBATOMIC_1.0 unresolved.
+libdl.so.2: required GLIBC_2.2.5; exact provider version-definition set contains it.
+libm.so.6: required GLIBC_2.2.5,GLIBC_2.27; exact provider set contains both.
+libstdc++.so.6: required GLIBCXX_3.4,3.4.9,3.4.11,3.4.14,3.4.15,3.4.17,3.4.18,3.4.19,3.4.20,3.4.21 and CXXABI_1.3,1.3.2,1.3.5,1.3.7,1.3.8,1.3.9,1.3.11; all present. Provider supports through GLIBCXX_3.4.30/CXXABI_1.3.13, but maxima were NOT the membership test.
+libgcc_s.so.1: required GCC_3.0,GCC_3.3,GCC_4.2.0; all present.
+libpthread.so.0: required GLIBC_2.2.5,2.3.2,2.3.3,2.3.4,2.12; all present.
+libc.so.6: required GLIBC_2.2.5,2.3,2.3.2,2.3.4,2.4,2.5,2.6,2.7,2.9,2.10,2.12,2.14,2.15,2.16,2.17,2.18,2.25,2.27,2.28; all present; provider definitions through2.36.
+ld-linux-x86-64.so.2: required GLIBC_2.2.5,GLIBC_2.3; both present; PT_INTERP resolves to /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2.
+Available providers' transitive DT_NEEDED and version needs also resolve among these seven providers; exact set differences all empty, including GLIBC_PRIVATE definitions where required.
+readelf --dyn-syms --wide on native plus seven stock providers each exited0. Static union of GLOBAL/WEAK/UNIQUE DEFAULT/PROTECTED exports compared against strong UND imports: exactly one native unresolved import, __atomic_compare_exchange@LIBATOMIC_1.0; zero unresolved strong imports for available providers. This is an offline export-availability check, not loader-order/relocation/IFUNC/runtime execution proof.
+Provider path prefix /usr/lib/x86_64-linux-gnu/; each readelf -h -d -V exited0 and machine x86-64:
+ld-linux-x86-64.so.2:215000 bytes; SHA02bcda52c1a5dfc236f94d9e5255b4a0e26347d8a372a5223b650e31f291ce3c.
+libc.so.6:1926232 bytes; SHA6b4a45352fd0c540a9c7c718f35ce8c8e46a4e482f9d3885a910c32d1a0e1421.
+libdl.so.2:14480 bytes; SHA95d521b2c39fd0333271b6fdcdddff878ae82001a304313a837b8e728ebe3cb1.
+libgcc_s.so.1:125312 bytes; SHA2bd1552c47799ef67e701e81d4383061fd76059868e446e63560f0dd0d5ec14e.
+libm.so.6:911904 bytes; SHA7f2ca87f652f56b094462474b076749e90e689d0ecb9cb63c7679820b271b4e7.
+libpthread.so.0:14480 bytes; SHAb93a680da8a05b939b235c1533572e7a2f6d3d8808bf70209997edc64ea5fedc.
+libstdc++.so.6.0.30:2190440 bytes; SHAe7848e32af4932840ba775169041759a2a8dd5a008af360e5c55bce506eebcf4.
+
+COUNTEREXAMPLES / CAUSAL LIMITS
+The image's own /usr/local/bin/node, SHA fde6a4bf8d0562f7751d1a2d6cb9b417c4cfe107bbcb0aa3e9a24e125e348f48,124827920 bytes, readelf -h -d exit0, has seven DT_NEEDED SONAMEs matching the available providers and NO libatomic.so.1 requirement. Image tag node22-slim therefore does not certify external nativeNode26 ABI compatibility; neither binary was executed.
+Matching interpreter, GLIBC/GLIBCXX tag maxima, digest/release labels, or successful stock-node loading would not prove the external pinned executable's complete dependency closure. Here exact atomic absence supplies additional filesystem evidence absent from prior reports.
+[INFERENCE] A stock-only loader invocation of this pinned native executable cannot close its mandatory libatomic dependency. That static incompatibility is not proof that the consumed historical122-byte line named libatomic, nor proof of the exact lost-stderr root cause.
+Historical red evidence: W/docs/integrations/dsh.md:92-98 and V/group-3-original-full-blocked-engineering-handoff.txt:30-38 report exit1/2.17s, DOCKER_EXIT_BEFORE_METADATA + ABI_LOAD_FAILED/code:null/122bytes, before metadata/catalog. V/group-3-failed-once-classified-metadata.json:1 is the retained actual classifier; raw body was not retained.
+A mount altering library resolution, an undiscovered runtime dependency, wrong runtime launch mapping, or another earlier loader failure could change the observed error even with this stock deficit. Actual inner mount/resource/native metadata was never reached; historical text cannot select among those causes. None was reconstructed or exercised.
+No actual native/global-completion/support statement follows from ELF signatures or this report. C1-C3/global completion remain unfulfilled; qualified636bf/6abe disclosure/custody do not satisfy them.
+
+EXACT MINIMAL COMPATIBLE PREREQUISITE / CACHED ALTERNATIVES
+Minimal currently identified static deficit: an immutable qualified linux/amd64 runtime rootfs must contain loader-resolvable libatomic.so.1 with SONAME libatomic.so.1, definition LIBATOMIC_1.0 and export __atomic_compare_exchange@LIBATOMIC_1.0, whose own DT_NEEDED/version/symbol closure is satisfied alongside the seven inspected providers and exact native SHAad19. A filename or SONAME alone is insufficient.
+No particular libatomic build/package SHA was inspected; no package installation/image/library fix, mount, preload, or execution is recommended as an authorized action. Supplying that provider is a necessary prerequisite, not sufficient evidence of application/runtime success or historical causal repair.
+Already cached public alternatives DO exist, by read-only image ls/inspect; full compatible alternative remains UNVERIFIED because only exact43ac filesystem export was authorized/inspected. Tags/metadata alone are not a library qualification; no alternative image was saved or started.
+Cached node:22-bookworm: repoDigest363e1587494626837fa7f9a23bdb453d13b0ff3c67c705c2805cfc69c2d2fad7;linux/amd64;inspect Size408416587 bytes.
+Cached debian:bookworm-slim:repoDigest7c7b2c966bc9ee8cedfeef67e0e279108992c77681fa595db4a9d65c06ccc587;linux/amd64;Size28256448.
+Cached debian:trixie-slim:repoDigesta99cfc517144bc59b1978475ec53b46ecabec7e43635402ee5b77cc54cd1b20a;linux/amd64;Size29840863.
+Cached rust:1.98-trixie:repoDigesta8a5f0a1e5fe7dfe1d352591e4a1c7dd2c08fd70475cae872cf3458ba0df0546;linux/amd64;Size593081030.
+No cached node26 stock tag was observed in the image listing; not equivalent to proving no compatible untagged/custom image exists. Non-stock/private image content was not inspected; report retains only public stock facts.
+Remaining owner decision: parent must preserve original #4 BLOCKED/claimreleased and prospective2/2 exhausted; decide whether a distinct factual qualification authority for an immutable complete ABI rootfs is available BEFORE any runtime. Current authority grants no third source/SDK/bootstrap/native/runtime attempt or budget reset; fresh privately held product key changes none of that.
+Product model calls0; all-cost UNKNOWN; USD20 total reserve DSH12/Brain8 unchanged. No paid-call authority was inferred. Lifecycle/authentication design is outside SliceA.
+
+COMMAND / EXIT / DISPOSITION AUDIT
+orca skills get orca-cli and orchestration exited0; report/verify skills read. Native ask exited0 with absolute-root correction; worktree current/terminal show/checks exited0; coordinator pins ACK/heartbeat enqueue succeeded. No nested workers.
+sha256sum six exact allowed intake records exited0; sha256sum native && readelf -h -l -d -V native exited0. Builtin static readelf captures/ELF import comparisons/image hash assertions succeeded; all readelf processes exit0 as listed above.
+docker image inspect exact43ac --format '{{json .Id}} {{json .RepoDigests}} {{json .Os}} {{json .Architecture}} {{json .Size}} {{json .RootFS.Layers}}' exited0; exposes no Config/env. docker image ls --no-trunc --digests --format '{{.Repository}} {{.Tag}} {{.Digest}} {{.ID}} {{.Size}}' exited0; metadata only, report filters to public stock facts. docker image inspect node:22-bookworm debian:bookworm-slim debian:trixie-slim rust:1.98-trixie with Id/RepoDigests/Os/Architecture/Size format exited0.
+docker image save exact43ac --output own stock.tar exited0 under actual bound; no container create/start/run/exec/build/pull, no ldd, no candidate/DSH/SDK/app/nativeNode/library/container/SQL/model execution, no install, no tests/build/lint/formatter.
+Only stock data blobs were copied into own0700 scratch as non-executed files; extracted libraries/stock binary mode0600. No private memory/operator state/PGDATA/BWS/account/key/credential/config/env records read or dumped; no production/test/doc/dataset/WISH/task/Git/index/forge/recipe edits.
+After metadata/hash/library evidence was retained in tool outputs, own scratch path identity/nonsymlink/uid/mode were asserted and shutil.rmtree removed ONLY /tmp/oi4-stock-ABI-m1h8v_jj; immediate os.path.lexists returned false. User/native state untouched; no export scratch survives.
+Sole retained filesystem output is this requested /tmp report; final readback SHA/bytes/LF will be sent through native worker_done. Auxiliary investigation complete is not original4/global completion; parent owns settlement/release.

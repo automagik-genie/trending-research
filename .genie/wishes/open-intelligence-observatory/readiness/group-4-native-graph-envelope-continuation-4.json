@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-10-09T16:33:17.423399+00:00",
+  "status": "ADMITTED_ACTUAL_HUMAN_SINGLE_BOUNDED_NATIVE_CONTINUATION_4_OF_4",
+  "actual_user_choice": "Allow one bounded continuation",
+  "authority": "Explicit functions.ask answer in current conversation; /work multi-group positive per-group user exception, not fabricated saved-wish run or hidden default-reset.",
+  "issue": 5,
+  "group": 4,
+  "task": "task_1ee57daded7e",
+  "dispatch": "ctx_ed2a28fd3625",
+  "question_id": "msg_b16039a397b2",
+  "current_wish_sha256": "4a96b55e5eaf4f63e74356a62cd3279871cf1d586ed89c3afaceae047a9f5135",
+  "repair_cap_before": 3,
+  "repair_cap_after": 4,
+  "repairs_used_before": 3,
+  "repairs_used_on_admission": 4,
+  "budget_source": "originalconfig2 plus explicitactualhuman exceptions3and4",
+  "effort_escalations": 0,
+  "failed_original_smoke": {
+    "exit_code": 1,
+    "status": "BLOCKED_NEXT_UNEXPECTED_FAILURE_REPAIR_CAP_EXHAUSTED",
+    "blocker": "'citations'",
+    "receipt_raw_sha256": "4b7cd8c3ee6e2d1267f4de2ca698683f552f932783feb913be77230e834ba019",
+    "qualifier_raw_sha256": "59d253698b89daf91e73bfd5546c54bdefc3ca3988cdd879af823514ee2957d3",
+    "tool_calls": 73,
+    "native_canonical_bindings": 26,
+    "last_search_response_sha256": "e9c2d0e8154c5d086d3c08b7d9b8c266900175ae0c4c1d4687a7753ec9399156",
+    "actual_search_envelope": "structuredContent.confidence,totalResults,results[].path/heading/docid/chunkIndex/score/text/complete; no top-level citations/trace",
+    "coordinator_actual_envelope_read": true
+  },
+  "exact_worker_request": "STOPPED cap3/3; exact new unexpected failure in frozen --smoke, exit1: qualifier KeyError citations at knowledge_search, not a native ingest/retrieval failure. Receipt native-receipts.json has73actual toolcalls/26nativecanonicalbindings, actual owner plus PG-denied read/write, idempotent sameID/unequal-key rejection, concurrent reports/investors/repeatedtransaction, correction/disposableupdate/stalerevision/history, exactall26canonical/hash/spanquote readback, citedmemoryrecall target24/source22 trace8. Own native sync actualexit0 eightfrozen docs, first knowledge_search actual structuredContent={confidence:{score:0.825,level:PARTIAL,gapDetected:false,uncovered:false,suggestedAction:supplement},totalResults:1,results:[{path:lab-graph-source.md,heading:null,docid:7e2738,chunkIndex:null,score:0.825,text:<actual68bytes SHA7e2738dc6516c4df5adab8aa9f6b42faff331594b68c76e1a4d08ed070f58a9f>,complete:true}]}, native responseSHAe9c2d0e8154c5d086d3c08b7d9b8c266900175ae0c4c1d4687a7753ec9399156. knowledge_search has file/heading/docid citation information per native hit; unlike memory_recall it does NOT return top-level citations/trace. My qualifier wrongly assumed common flat citation envelope; no product schema/error/provider fix needed. Originalcriteria1 native restart and graphlink/query/time scenarios notyet reached, no substitute/pass. All receipts kept, container845fa stopped inspected exit0, PGDATA preserved, zero paidcalls. Request exactprospective repair ONLY IF human capexception frozen: same6paths/actualnative/26bindings/sourcefixtures/eightsamehashdocs/budget8/noreset/paid0; amend qualifier actual knowledge_search file/heading/docid fields + coverage/completetext hash assertion, explicitly not fabricate citations/trace; add --resume-smoke once after fullauthoring to preserve failedhistory and read existingbindings canonicalSHA/provenance/originallicensed decoded source, no reingest/CREATE ROLE/resync/scaffold changes, then target/source realsearch, native graphlink/query, alreadyfrozen date controls, sameactualPGrestart and after sameimmutableIDs/spans/concurrency/history/cited recall; stopfinally owncontainer. Current first --smoke remains historicalfailed; resume results separately attributed, never rerun failure to confirm. Estimate revised finalinsertions~1400 below2000 (code678 currently plus boundedresume~80/compactreceipts/docs); configexception4/4 requested, effort0. If exception not admitted, I will finish reachable docs/evidence with exact73calls/26bindings and preciseBLOCKED4criteria disposition/no furthernativecall. Authoritativechoice please; no code/environmentmutation until answered.",
+  "supplement": "Actual stopped receiptSHA4b7cd8c3ee6e2d1267f4de2ca698683f552f932783feb913be77230e834ba019, codeSHA59d253698b89daf91e73bfd5546c54bdefc3ca3988cdd879af823514ee2957d3,678+29lines; ACK current metadataWISH4a96b55e5eaf4f63e74356a62cd3279871cf1d586ed89c3afaceae047a9f5135 vs historical1d0f. Additional small evidence correction proposed within pending repair4: helper must retain actual redacted isError/rpc_error text verbatim, not only textSHA, because errors are not canonical economic memory and independent reviewer needs actual permission/idempotency/revision rejection bodies. Existing reached73calls retained losslessly; if exception admitted, freeze four already-passing negative controls in continuation (same denied read/write, same unequal-key content rejection, same stale revision rejection) under exactexistingnativeIDs to collect direct actual error bodies; this is not rerunning failed citation assertion or changing grants/data. No mutation/call yet; parent can reject correction or require reportblocked.",
+  "verified_existing_graph_corpus": {
+    "_Templates/daily.md": "da05aa6de5334a2866070b99e31fd1f2885b0edb3aa2642eeaef1b2940aedbb5",
+    "_Templates/domain.md": "8085852850eba5c4220b35da4cba1fdd0d6168b91e4d5a7ad7c46a53e483371d",
+    "_Templates/entity.md": "d241fc0c190af9039e452d68e0a421c014535522da1915261b752e4fc8f0b03a",
+    "_Templates/intel.md": "16b62f4aa69ff33025b62057ddcf0b5f41492d05a77918c017481fc56046c4b2",
+    "_Templates/playbook.md": "64d56ca9410fa4bb605ea4c690596dd48631fb6929ae15c5042dae9c460859ac",
+    "_index.md": "9ede957b78442b09ea3f2f5db9290a80fa1b435c7317df8788d825019e20b0f5",
+    "lab-graph-source.md": "7e2738dc6516c4df5adab8aa9f6b42faff331594b68c76e1a4d08ed070f58a9f",
+    "lab-graph-target.md": "1ff54ea8d53faeb1cd168cd59cf75b5db6bee910936b47056abc53818f22711c"
+  },
+  "changed_slice": [
+    "Correct qualifier actual native knowledge_search documentcitation fields and exactcomplete actualhit text/hash/coverage; no invented citation/trace or native score financial confidence",
+    "Preserve actual redacted error/guard bodies in receipt, raw responseSHA and redaction/capture bounds explicit; repeat only four alreadypassing denial/idempotency/stale negative controls with sameexisting realID/args toobtain missing directbody evidence, not rerunfailed assertion unchanged",
+    "One --resume-smoke: preserve whole failed73call/26binding/history, verify all realexistingcanonicalnative IDs/hashes/spans/licensed bytes; no re-ingest/createRole/reinitialize/resync/scaffold alterations; then graph source+target search/link/query, alreadyfrozenLAB datecontrols, realownedPGrestart and sameimmutableIDs/source/span/concurrency/history/citedrecall afterrestart; finalownstop/custody"
+  ],
+  "permanent_scope": "Same six exactpermanentpaths; revised1400 estimatedinsertions <=2000hard; no source/schema/SDK/newdependency/grant/modeledpaidroute/collection/publication/deployment change.",
+  "focus_command": "python3 -B integrations/brain/qualification/native_qualification.py --resume-smoke",
+  "next_unexpected_failure": "STOP4/4, no5threpair/retry/reset; preserve reached proof exactly, originalcriteria not inferred.",
+  "spend": {
+    "issue5_reservation_usd": 8,
+    "total_cap_usd": 20,
+    "extra_authorized": 0,
+    "paid_calls_admitted": false
+  },
+  "acceptance_gates": "Originalfourcriteria/fullscope all required; independentoriginalacceptance+separatequality+currentparentfullaggregate beforelocaldone. Restart notyetpassed."
+}

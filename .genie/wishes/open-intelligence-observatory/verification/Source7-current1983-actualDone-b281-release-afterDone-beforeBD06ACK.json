@@ -1,0 +1,44 @@
+{
+  "deliveryId": "delivery_bd06332110f4",
+  "done": {
+    "id": "msg_b281da52e08c",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_35076ee0-8e43-46e3-ba88-82ba68bfae63",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "Full original readonly review accepted: prospective DATA SHIP",
+    "body": "I completed the full independent readonly C1-C8/F1-F4/four-family/privateACK review and sole 87588-byte 157-LF report, which Parent fully read and positively intook as the completed original review deliverable. I found zero confirmed HIGH or CRITICAL static defects in the bounded prospective DATA; all74 guards and complete canonical diff bind the correct frozen baseline d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2, controlling the retained nonblocking prose transcription discrepancy. All four original features remain BLOCKED_NOTRUN, raw f6 remains LOSTUNKNOWN, and the missing separate quality report still blocks pair/source-application/smoke/native acceptance, with Parent release required after this actual Done before delivery ACK.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_214d2e8f5371\",\"dispatchId\":\"ctx_1983c4d179e9\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi7-corrective8-original-full-C1-C8-independent-review.txt\"],\"reportPath\":\"/tmp/oi7-corrective8-original-full-C1-C8-independent-review.txt\"}",
+    "created_at": "2026-10-14T15:09:51Z",
+    "delivered_at": null
+  },
+  "release": {
+    "exit_code": 0,
+    "data": {
+      "id": "86ef4818-7b11-4bc8-a423-0cd5b9d2fa8b",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_1983c4d179e9",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "8872886c-ec4d-417e-ad72-2eb7f4aaafa6",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    },
+    "stdout": "{\n  \"id\": \"86ef4818-7b11-4bc8-a423-0cd5b9d2fa8b\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_1983c4d179e9\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"8872886c-ec4d-417e-ad72-2eb7f4aaafa6\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": ""
+  },
+  "scope": "original static report settled only; quality FIX-FIRST still pending intake; no source apply/smoke/feature acceptance"
+}

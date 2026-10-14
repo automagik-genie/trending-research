@@ -1,0 +1,95 @@
+{
+  "recorded_at": "2026-10-08T17:46:39.547955+00:00",
+  "status": "ADMITTED_CURRENT_BROWSER_PROOF_ONLY_RETRY",
+  "task": "task_8f2a067b113f",
+  "dispatch": "ctx_d5453628d3df",
+  "question_id": "msg_46055bd07cc1",
+  "exact_readiness": {
+    "issue": 8,
+    "group": 7,
+    "task": "task_8f2a067b113f",
+    "dispatch": "ctx_d5453628d3df",
+    "base_sha": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "working_input_commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+    "ack": "Read and ACK exact runtime-correction readiness SHA199f1698d1f2776772d10a4a40adba69a3ebf0390f7a17daaaa192f6bf471f3d, current WISH SHA1d0f9ee9a628b3c04439dfa5c9169314d9c6e79c46d4f6b9c8ed5188c4911163; original4scope/4criteria/B2config2effort0 unchanged. Four source files remain hash-identical to candidate5f14a1eb2aacd384b0aafe131f2dec0eb8decaef15705b022df03b0fd5866b01. No mutation/access setup/browser launch in this dispatch yet.",
+    "owned_paths": [
+      "web/prototypes/proof/smoke.json",
+      "web/prototypes/proof/relationship-wide.png",
+      "web/prototypes/proof/relationship-narrow.png",
+      "web/prototypes/proof/timeline-wide.png",
+      "web/prototypes/proof/timeline-narrow.png",
+      "web/prototypes/proof/questions-wide.png",
+      "web/prototypes/proof/questions-narrow.png",
+      "docs/design/frontier-economics.md"
+    ],
+    "immutable_owned_source_paths": [
+      "web/prototypes/index.html",
+      "web/prototypes/explorer.css",
+      "web/prototypes/explorer.js",
+      "web/prototypes/preview.py"
+    ],
+    "estimate_files": 8,
+    "estimate_insertions": "additional <=220 textual lines; cumulative <=1450 admitted estimate, <=2000 hardcap; current1226. No new permanent tests or source changes.",
+    "accepted_dependencies": [
+      {
+        "issue": 6,
+        "acceptance": "ctx_c73d9cdb99fe SHIP",
+        "quality": "ctx_70f07d06bb43 SHIP",
+        "gate": ".genie/wishes/open-intelligence-observatory/verification/group-5.json",
+        "manifest": "c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783"
+      }
+    ],
+    "input_artifacts": [
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/readiness/group-7-browser-runtime-correction.json",
+        "sha256": "199f1698d1f2776772d10a4a40adba69a3ebf0390f7a17daaaa192f6bf471f3d"
+      },
+      {
+        "path": "investigations/frontier-economics/evidence.json",
+        "revision": "scene:issue6:1/contract1.0.0",
+        "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93"
+      },
+      {
+        "path": "investigations/frontier-economics/assessment.md",
+        "revision": "frontier-economics/assessment/1",
+        "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa"
+      }
+    ],
+    "interfaces": "Identical Scene prototype, evidence1.0.0, canonical-view/original span chain and preview exactroute interfaces frozen in group7 record. Runtime only changed: xd browser.open explicit app.path existingChrome, app.args [--no-sandbox,--disable-dev-shm-usage], headedFalse, allowed_domains127.0.0.1, viewport1280x900/390x844; own managed isolated profile only. Browser helpers observe/click/check/uncheck/press/emulate/screenshot and custom run for actual assertions, no source instructions. No-sandbox here is local helper invocation, not production tenant isolation proof.",
+    "runtime_identity": {
+      "binary": "/home/genie/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+      "observed_version": "Google Chrome for Testing153.0.8010.12",
+      "profile": "dedicated tool-owned temp, no user/default profile credentials",
+      "browser_UA": null,
+      "source": "existinginstalled binary/xd helper; no default download/install/CDP/relay"
+    },
+    "prerequisites": {
+      "authorization": "Coordinator changedcontext currentdispatch statusmsg07d63be452a3 plus msgs26610e7e8ab1/ea2cceadd721 admit only exact8878 allowlisted preview and existingChrome args above; no sharedservicerestarts",
+      "access": "Current originalpack/source4 read hashes match admitted pins; preview currently reported refused by parent, not assumed live",
+      "fixture": "same actualall38 statement originals/all4entities/14topics/3hypotheses/null private finances",
+      "storage": "only8owned proof/doc paths + approved toolmanagedprofile temp",
+      "rights": "same qualifiedCC0 structured originals; references remain unacquired/untrusted",
+      "principal": "issue-8-engineer; card stillinprogress existingclaim with priorhandoff, requires new checkout span authorization",
+      "budget": "zero paid/provider/model/sourcecalls; recurringcost unknown",
+      "actual_Felipe_receipt": null
+    },
+    "smoke": {
+      "serve": "python3 web/prototypes/preview.py --port 8878 (only after acceptedack/claim); confirm actualHTTP200 /web/prototypes/index.html and exactpackhash, nativeprivate/traversal404; notifyparent actualready for independenttab",
+      "reader": "Sixactual tasks each3directions at1280x900/390x844: Microsoft+Amazon, exactsource001 signedamount/bounds/rank/year, completeoriginal/sourcehash and strongest fragilitycounterweight/bufferlimit; stableentity IDs/method/cutoff/revision/detail acrosslenses and overview; screenshots six exactpaths, inspect actualPNG notwhite; fullsource/counter raw panels and nullableprivateOpenAI; nativekeyboardSpace/Tab/Enter and reducedmotion realmedia expectations; longptBRlabel expansion restored",
+      "failure": "Existingproven failure receipts retained aspreviousdispatch; fresh actualsource-gate/loading/error/digest/privacy/unsafeURL scenarios repeated via throwawaybrowserinterception/DOM only ifneeded; no fixture/source4mutation or newpermanenttests; genuineobservableassertions notlength/mockecho",
+      "visual_manifest": "Freeze4source identity unchanged; calculate6screenshots SHA/mode/bytes and currentproof/doc identity; keepfailedOrca capture digest/provenance inproof insteadofvisualclaim; close own tabs afteractualsurface",
+      "human": "Blockingask parent actualexercise thenFelipe choice/rationale against exactcandidate; no success/humanclaim fromworker preference; final docrecordonly after actualreceipt"
+    },
+    "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "aggregate_owner": "coordinator once currentauthorsfreeze; no workeraggregate midflight or substitute oldgate",
+    "unavailable_disposition": "No invented engine/profile measurements or actualFelipe receipt. Any source4 drift/newpath/newauthority requires newfreeze beforewrite. Missinghuman/currentaggregate remainsblocked, unchanged scope; repeatedask timeouts remainpending questions, not grant.",
+    "injection_attempts": [],
+    "request": "Please explicitlyaccept thisACK/readiness correction alreadyfrozen and authorize samecard newclaim-to-handoff span (existing sameclaimant inprogress with prior report); then I restore onlyown8878preview and qualify actualChromium/noinstall. Specify whether sameworker checkout opens retryspan or coordinator resets it; no cardrelease/reclaim mutation until youracceptance."
+  },
+  "source4_verified_immutable_manifest_sha256": "5f14a1eb2aacd384b0aafe131f2dec0eb8decaef15705b022df03b0fd5866b01",
+  "same_card_new_span": "Explicitoriginalsame-worker checkout t_muz1j3f7944dc064 --worker issue-8-engineer; parentdispatchhandoff alreadyoncard, noreset/release/reclaim/force or competingclaim. Oldfailedreportretained, onefinalnewreportforthisnewnativeattempt.",
+  "parent_verification_limit": "Previewcurrentlyrefusedactualparent, restoreown8878only andannounce actual200ready; no assumedrunning service. Chrome helperargsno-sandboxnotproductionisolationproof.",
+  "original_felipe_selection": null,
+  "aggregate_owner": "parentafterwritersfreeze",
+  "repair_counter_unchanged": "B2config2 effort0, runtimecorrectionnewcontext notsourcebugrepair"
+}

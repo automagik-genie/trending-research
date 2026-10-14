@@ -1,0 +1,586 @@
+ENTIRE DELIVERABLE — please FULLread through END and explicitly positively intake BEFORE actualworker_done. Completed independent review VERDICT BLOCKED; no native semantic contradiction manufactured, exact groups/generated/platform/issuer/reader/formal/nonzero native validation missing; all original80 and frozen contracts/carriers preserved. Sole absent-before exclusive0600regularnonsymlink report /tmp/oi4-gated-implementation-complete-independent-plan-review.txt 98486UTF8B/582LF/SHA256cc65c444af1932f3d5a021181ccc633925e46dfc851c50829e7b40b8baf887b7 WHOLE EOFreadback verified. Below is ENTIRE native full body (<=120KB), not excerpt/summary/hash-only substitute. Parent release only AFTER once actualDone BEFOREACK; no selfrelease or card mutation.
+
+COMPLETE INDEPENDENT NEW NATIVE DSH SDK/BUILD/EXPORT/GENERATED/PACKAGE EXECUTABILITY REVIEW
+VERDICT: BLOCKED — complete pinned public inventory and coherent conditional architecture; NOT an executable/admitted bounded implementation plan. No SHIP approval of code, SDK, activation, paid use, or original features. Confirmed contradictory native owning-contract recommendation: NONE established; load-bearing executable prerequisites remain unavailable. HIGH-risk admission blockers below are missing required evidence/decisions, not claims of reproduced native bugs.
+Reviewer: independently dispatched native configured OMP, term_3cf90887-8dc5-4b9c-9117-3d09f98ef380, task_56c8d2336535, ctx_e5efe6aa930d; not author, no model override/council/subdispatch/fresh-peer-report access. Observed review UTC 2026-10-14T20:32:58.105971+00:00.
+Target: /tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt,5954426UTF8B29241LF,mode0600,SHA256f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67. Entire body read through EOF;293 exact in-memory contiguous raw ranges1-29241 reconstruct every byte, all tables traversed. This is review of that NEW report and executable-contract recommendations, not merely old DESIGN, not source implementation authoring, and not my own recommendations.
+New recommendations binding: exact raw concatenation target lines102-178 then29223-29241,without inserted separator,36739UTF8B,SHA25678e60392c28aeea837664f22a1d83dc453cb9ee50af35eca331b05222f76280d; parent may also bind all recommendations to ENTIRE immutable targetf63b. Old design content digest498ca1fa848739d0e32211b3b45cc578e4288e3668494671fa9125d976be3586 is a different content-digest convention and never approves these new bytes.
+BLIND METHOD / FIRST ACCESS: only installed permitted review/evidence-identity/plan-executability/orca-cli/orchestration/wish/native-fallback/design-preflight guides before access. First entire method52622B847LF SHA40d66e74a55c87eb6f66cfbbda83d36e9f901535fcbdba2d478480694de46712,msg_6cf36eaaaa09 was FULLread but NOT granted because my row7 transcription omitted9hex. Same method amended BEFORE access to correct exact64hex6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2 and explicitly resolve malformed-row prose; no semantic change. Entire amended52618B847LF SHA2d5861551a0daf5c73ed6043fead0448fabe2c6368fcdc90991985a500ab16bc,msg_45017896482a was positively FULLread/granted for exact49locals/37public/fixedRtree closure/soleoutput. No old scout/proposal grant presumed. Native spec/metadata/history treated as DATA, not automatic access authority; no zero-knowledge claim.
+Frozen SHIP trigger: all original criteria covered,zeroHIGH/CRITICAL,real required plan validation and genuinely admissible WHOLE groups. Frozen FIX-FIRST trigger: confirmed wrong actionable contract or failed validation inside unchanged owned scope. Frozen BLOCKED trigger: missing load-bearing manifest/generated counts/authority/formalpreflight/platform/issuer/reader. When prerequisites block, preserve any confirmed wrong contracts separately; do not narrow to architecture to obtain SHIP. criteriaAddedAfterReading=[]; SDK shutdown scheduled void/allSettled->exit0 and full owning closure/aggregate gates were explicitly frozen before access, not added afterward.
+
+1. CONCLUSION AND CONCRETE ADMISSION BLOCKERS
+B1 HIGH / BLOCKED / exact executable deliverable and caller manifest missing. Target103-113/123/133/143/153/163/169 admits F1-F6 are families needing measured resplit, not runnable groups; F5 app/assistant/ and F6 qualification/ are directories, not exact members; proposed NativeOwnerCapture/OwnedOutcomeRef lack concrete complete exported signatures/SQL schema/IPC framing; accepted reader signatures explicitly UNAVAILABLE147. A migration instruction to update all contributors from a complete index is not an exact affected-caller list or admitted source/export contract. Close only with actual owner-authorized immutable baseline plus each group's exact source/new/copied/patch/generated/package/type/JS/map/profile/test/doc paths and full signatures/caller deltas. Owner: native implementation planning/integration owner with accepted Source7 reader owner; outside this read-only worker's scope. Do not author implementation or repair DESIGN to close it.
+B2 HIGH / BLOCKED / hard25files+2000TRUE cannot be proven and known fresh copies violate it. Independently count conditionally touched advertised exact source+package+selectedtest+patch paths: F1=26,F2=31,F3=26,F4=15,F5=6,F6=2; F5/F6 directory members and ALL emitted/lock/version/license/profile/docs add UNKNOWN. These are conditional counts if advertised targets are touched, NOT actual diff counts; no estimate-as-zero and no approval. Entire fresh pnpm-lock.yaml29763LF1021606B alone cannot fit ANY2000TRUE group; source37=14136LF and37files already exceed one group before copies of generated SDK. Tracked api-catalog8228LF/slot-catalog4135LF/analyzer3285LF are also indivisible oversized fresh copies. Target166-170 correctly recognizes this; recognition does not supply a feasible split. External pre-existing fixed baseline avoids counting unchanged bytes only after actual custody and physical-baseline identity are admitted; not if copied/materialized into deliverable. No owner cap waiver is assumed; no hiding/splitting/minifying an indivisible file or counting net instead of TRUE. Shared files count in every subgroup and require one serialized integration owner. Close with measured each-file positive insertions including whole copies/outputs, exact <=25/<=2000 subgroups and inactive boundary until whole integration accepted; if impossible, owner must choose explicit allowed scope/cap decision, not worker silent shrink.
+B3 HIGH / BLOCKED / modified physical SDK/build/export/platform closure absent. Own complete public tree/provenance verified below; source295 runtime/309 build manifests and6240 owned tracked runtime paths are not installed/tarball identities.1921 export occurrences include1237 exact untracked outputs and330 patterns, not actual emitted counts. Native build uses Node/TypeScript/tsdown host and client faces, desktop bundle, typert/catalog generators, Python runtime SEA/wheel, sidecars, optional platform/native dependencies, version/lock/profile and full license/notices. No actual modified source+emitted JS/dts/maps+package+lock+compiler+ABI tuple or rollback custody exists. Source engine ^22.19.0||>=24.0.0 includes design Node26.7.0 syntactically, not ABI/loader/sqlite compatibility proof. External1695locked packages/1701snapshots, eventsource-parser implementation and builtin/native loader installation are outside granted fixedR source; unsupported mappings remain HOLD. Close under separately admitted isolated materialization/build/platform qualification with measured complete physical outputs, all native/loader/compiler bindings, compatible actually loaded artifacts, modes/custody/licenses and rollback preserving STOPPED/reserves/history. Public MIT does not authorize install/boot/spend.
+B4 HIGH / BLOCKED / current formal design/Wish/plan admission binding absent. Whole current DRAFT/DESIGN/ledger and helpers read, not executed; four DESIGN footer PENDING fields, WRS90 PROPOSED/noncrystallized and INDEX Simmering remain. Historical paired actual static SHIP reviews3583/74da bind498c and documentary check0, not new planf63b. Both old settled reports read only as DATA and their whole actualDone->release->ACK custody retained; no new peer report opened. Formal version-matched supported preflight/stamp procedure and writer authority not in this grant; target174 explicitly unknown. Helper check-design/digest bodies READ ONLY, NO execution requested/granted, NO third helper/guessed flags/recomputed digest/ledger write. HumanB3used3remaining0 and old CONFIGB2used2 are unchanged; no repair4/reset. Close with separately named supported formal procedure, current exact design digest and ENTIRE new group contract/manifests, explicit owner codegroup approvals and observed required validation; parent owns integration, not semantic self-approval.
+B5 HIGH / BLOCKED / real issuer/reader/activation/spend prerequisites absent. TWO actually issued immutable principals with issuer/key/algorithm/audience/expiry/revocation/instance/domain/scope/typedcapability and private custody/profile bindings do not exist as inspected credentials here. A bootstrap header/operator token or process separation cannot supply them. Source7 fifth originalstaticSHIP + qualityFIX-FIRST2HIGH is not accepted reader/applySAFE/native permission. Current owner cap6 ONE prospective Q1/Q2 cycle used5remaining1 supersedes target149/158/177 old no6th chronology ONLY; no counter reset or F5 unblock. Accepted source7 exact canonical reader still absent. Provider tariffs/enforceable worst-case currency/rawusage/physical final-byte inventory and paid authority absent. Close via respective human owner decisions for actual issuer+custody, independently accepted Source7 interface, separately qualified native activation and separately funded tariff/spend/model/live acceptance. Preserve USD20=DSH12+Brain8,productmodel0,coding/storage/all-in UNKNOWN,stock2no3/oneABI_LOAD_FAILED rawcauseUNKNOWN globalcompletionUNAVAILABLE,Brain4no5. No private/source7 extras/model/provider access performed.
+B6 HIGH / BLOCKED / complete current validation chain and native smoke command not executable. Target160 names original Python aggregate,29225-29229 fourteen existing native test files and29230-29239 leaf build/generated/license/doc checks; every file exists in own pinned tree and commands are proposed NOTRUN. F6 native changed-path runner path/argv/profile/custody explicitly UNKNOWN29240. Source SDK required aggregate producers are own package.json check:all/check:ci plus scripts/run-gates.ts269-338,509-546,850-876 and .github/workflows/ci*.yml; leaf commands and Python aggregate alone are not full affected SDK QA. Full native source/build/package/consumer gates must be concretely bound to approved platform/profile and actual nonzero adversarial tests/smokes; current CI evidence at draftPR22/f429 not refreshed or borrowed. Close with frozen literal exact aggregate/affected-build/native smoke argv+inputprofile, toolchain/output identity, nonzero actual test/scenario observations and actual exits under separate future source/runtime permission. This review executes NO SDK/tests/build/import/generator/helper/runtime, as required; zero validation is not converted to SHIP.
+No CRITICAL exposure/data-loss/outage demonstrated in this static read-only assessment. B1-B6 are distinct missing load-bearing evidence/owner decisions; do not confuse absent executable contracts with six reproducible code defects. No confirmed wrong native owning-contract recommendation established: recommendations explicitly HOLD these unknowns, preserve relevant native semantics, and do not claim current fit/qualification. A bounded coherent conditional plan skeleton is nevertheless BLOCKED for actual execution under frozen triggers.
+
+2. COMPLETE FROZEN A/C/K/H/Q CONTRACT SCORING (retained architectural intent is NOT criterion implementation pass)
+A1/C1 — RETAINED/HOLD: target147/150 and own Session controller/types/remotes preserve canonical same Scene/Claim/EvidenceSpan/SourceRevision/cutoff/nullfinancial/counterevidence; actual named RemoteResult/mux/RemoteStreamHandle/assistantStream/follow/page/control and inspector required. Accepted reader/cited native turn/actual inspector unavailable. No text/providerSSE/mock/facade qualification. OriginalC1NOTRUN.
+A2/K3/C2 — RETAINED/HOLD: target127-130 one durable trusted atomic ACTUAL_START arbiter and STOPPED/T before ALL actual starts; retain/join preT promises+late acquisitions, retire independently; actual cold resume807-890 preserves original Session/history/writeclaim, SDK fresh createSession281 is not resume and client subprocess replacement is not reconnect. Exact sqlite/control IPC/crash protocol and physical scheduler/egress inventory absent. No bodyend/queue/allclosed substitute. OriginalC2NOTRUN.
+A3/K2/C3 — RETAINED/HOLD: target117-120 actual immutable TWO issued principals, dynamic/generated/inprocess physical mounts default-deny-before-effect; all14 both directions refresh/cold. Immutable verified principal proposal lacks actual issuer credential/schema/compiled inventory. Typed native errors map statuses where applicable; do not make every carrier HTTP or weaken own raw-path403 policy into an allowed filesystem read. OriginalC3NOTRUN.
+A4/C4 — INVENTORY VERIFIED/EXECUTABLE HOLD: all public package/source/compiler/tree/code/provenance tables own verified; physical generated/export/installed/native/platform tuple absent. Historical stock ONE startupABI_LOAD_FAILED causeUNKNOWN/globalcompletionUNAVAILABLE remains, no third or static loader diagnosis. Probe/permanent distinctions and blockers honestly disclosed in target3/175-178; bounded factual disclosure can be retained without awarding original whole nativeC4 acceptance.
+A5/K1 — RETAINED/HOLD: target107-110 capture native application boot privatecleanup BEFORE proxy/containment, transfer BOTH app and diagnostics roots979/982; four primarySUCCESS/REJECTION/DEADLINE/FORCED independent from BLOCKED/UNKNOWN admission/evidence/retirement. Root/privateoutcome/physicalretirement remain distinct; no implementation/trace. Additional real SDK scheduled shutdown assessed independently below.
+A6 — RETAINED/HOLD: design selects Node26.7.0 node:sqlite DatabaseSync BEGIN IMMEDIATE synchronousFULL crashOPEN_HELD, existing trusted rootsolewriter only identity/owner/Session/generation/epoch/ref/seq/T/outcome/spend refs. No new backend/cache/semantic Brain/Session/history framework. Concrete SQL/schema/privateIPC/fsync/volume/solewriter process identity is unavailable, not another backend choice.
+A7/K4 — RETAINED/HOLD: target137-140 every physical credential egress must reserve immutable actualprincipal/worst-caseCURRENCY at final serializedbytes including Messages/Files/innerretry/title/compaction/background/queue. Adapter120 sends extensions.payload AFTER Files/extensions; admission earlier at initial serialize would be wrong. Translator rawusage presence before defaults, may_have_sent/unknownpaid fullreserve/HOLD, USD20DSH12Brain8, estimates!=observedspend. Physical compiled send inventory/tariff/usage/custody/authority absent.
+A8 — RETAINED/HOLD: full pinned real Cordis reader factory/dependencies/rawwrappednestedFiber/setuprollback/reload/unload/pluginDisposed/directAgent/raceAbort/prepare/create/setup/resume/late acquisitions owning callers read; F1/F3/F5 require complete clean expectations AND independent retirement before replacement. Current proposal migrations not exact compiled caller manifests and F5reader unavailable; handlesclosed does not authorize remount.
+A9 — HOLD: complete coherent MODIFIED native pin and source/copied/emitted/generatedJS/dts/maps/export/pkg/version/lock/build/profile/licenses/notices/test/doc/orderedpatch closure must fit each<=25files<=2000TRUE. Conditional familyfrontiers26/31/26 show exact re-split needed, not revised historical forecast. Binarybytes not counted as randomnewline sourceinsertions. Whole lock/catalog copies indivisible; unknownoutputs notzero. Shared paths pergroup counted and serialized; no activepartialboundary or roadmap shrink.
+A10 — RETAINED/HOLD: all49localguards current whole DRAFT/DESIGN/helpers/ledger/human/history/wholehandoffs/settled old reviews/actual Done release beforeACK read. Paired old static498c SHIP0H0C is narrow historical evidence only. WRS90/PENDING/current formal missing; no Docrepair4/Ready/WRS100/stamp/digestreset. CurrentSource7cap6 annotation is chronology supplied by current authority, not new artifact permission/stamprepair.
+H1 — RETAINED/HOLD: own Fiber._unload675-695 catches/logs private rejection before public resolved disposer; pluginDisposed110-137 and effect setup rollback420-550 also contain private callbacks. Parentexpectation before effects/capture before catch; primarycleanupretirement separate. App bootstrap bothroots and directAgent owning paths must migrate, not solely public Fiber.dispose wrapper.
+QH1 privateprovider — RETAINED/HOLD: entire actual DeepSeek.generate51-72 iterator.return(undefined) private emptycatch and imported SSE13-28 pipeline acquired; primary error must not be replaced while private rejection recorded before containment. Readable body/decoder/parser pipeline retirement separately joined with late acquisitions. External eventsource-parser source/native reader behavior unavailable; no outer-stream-resolve substitute.
+QH1 actualresult — RETAINED/HOLD: CoreTools1669-1713 finishScheduledExecution->notifyResult actual invocation/returnedpromise hidden behind reportFailure/logcatch; listener membership vs invocation vs returnedpromise/acquisition distinct. Do not await model-facing finish or replace its primary outcome; capture/adopt private obligations once under same immutable actual owner/epoch, retain late acquisitions independently.
+QH1 precursor — RETAINED/HOLD: Events165-175 dispatch169 calls emit194-196 before selected tool/result callbacks; actual internal/dispatch async returned work lost even with ZERO resultlisteners. Freeze owning parent BEFORE createExecution1391/preparation/policy/denied-invalid-no-body/finalizers, preserve Hook/context/this/once/filter/order/sync fail-fast skippedsuffix and separate real zero from missing/unregistered/wrongepoch/knownreject/forced/UNKNOWN. Full precursortree + resulttree both required. Emptyresultlisteners is not emptyowner coverage.
+Current SDK shutdown owner — RETAINED/HOLD, independently inspected not assumedclean: server/index46-102 exact rootFiber captured, disposeAndExit allSettled flush69/rootdispose70 thenexit(0)71, setImmediate scheduledvoid90 AFTER reply. Root/private flush/dispose outcomes and task/transport physicalretirement must be expected/captured BEFORE containment and returnedreply/exit0 cannot certify clean completion. Inner server.performShutdown213-238 waits pendingcreation allSettled, aggregates handle/LLM disposal rejection; preserve each original private result and late creation ownership, not just outer request failure. Protocol transport175-238 detaches handleLine and converts handler errors to protocol frames; owns processing/flush/close independent of SDK client/python outer process/thread boundedjoins. Additional transport and coldresume handle.close.catch owners are part of frozen fullSDK/A8 closure, not postread new criteria. No SDKprocess launched.
+
+3. FULL PHYSICAL CARRIER MATRIX — EACH row BOTH A->B and B->A, authenticated refresh AND coldrestart; no qualified family asserted
+Universal required cases per row: own allowed positive; foreign/unknown identical404-equivalent native error bytes+metadata before materialization; malformed400-equivalent no business effects; unauth401; wrongissuer/origin403 BEFORE filesystem; postT stopped admission409. Preserve class-specific operator/raw-host deny403 even for own path (own positive only for the class's allowlisted positive subpath), and same Session/cursor stopped readable status. No uniform HTTP façade claim for mux/direct/stdio. Actual compiled/generated/dynamic physical inventory and private-owner trace required; literal candidate counts are NOT route coverage. Every row status=HOLD/NOTRUN for all four direction/state cells, because actual issued principals/native generated mounts/activation unavailable.
+
+1 unaryRemoteResult | rpc-host/session-controller typed native named requests | F2/F3; ownread rpc-host1-331/sessiontypes1-626 | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+2 muxstreams | gateway/remote native mux logical opens/uplinks | F2; ownread api/gateway/remotes/connection bodies | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+3 embeddednestedIDs | nested Scene/Session/Agent/record reference resolution | F2; commands/types/workspace bodies; whole-request deny on mixedown+foreign | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+4 attachments | declared exact owner attachment-byte routes | F2/F4; session-controller/host/Files owning bodies; no bytes/metadata leakage | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+5 GETHEADrecords | raw filesystem paths and record GET/HEAD carrier | F2; hostwebserver/workspace; hostpaths403 BEFORE FS evenown; authorizedrecord/attachmentpositives distinct | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+6 workspacecwd | prebound instance workspace/cwd/adoption | F2; workspace1-901/SDKinitialize cwd; absolutepath mutation403 beforeeffects | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+7 toolsSchedulerNestedPTCScopelessStaleCallbacks | CoreTools/AgentLoop/direct scheduler entry | F2/F3; CoreTools1391-1713; immutableactualscope and no missingPeer operatorfallback | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+8 eventscontrol$events | native registration/control/baseline subscription | F1/F2/F3; Events165-196; own-safe baseline only no host/foreign tool data | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+9 coldhistorySearchPage | native Session inclusive cursor/history/search/follow/page | F2/F3; sessioncontroller and actual resume807-890; authorization BEFORE persistence open | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+10 directInprocess | service calls without network Peer | F1/F2/F3; AgentLoop/directAgent/CoreTools; requireimmutableactualcapability at owningentry | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+11 createResumeForkImportLineage | owner/generation registered BEFORE acquisition/publication | F2/F3; commands1-691/AgentLoop652-890; STOPPED owns newqueue/resume/fork denial | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+12 BrainLinkedReadsCitation | accepted sameScene/span/revision/cutoff reader+inspector | F5; exact accepted reader UNAVAILABLE147; no broad private recall/duplicateBrain | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+13 providerFilesPrivateIteratorSSECallbackReturnedPromiseAcquisitions | all physical credential requests and private owner descendants | F1/F3/F4; adapter51-147/SSE13-28/Files1-262/CoreTools1669-1713; missingcoverage UNKNOWN | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+14 operatorProfileConfigPluginLauncher | operator launch/config/plugin/management excluded fromtenant | F1/F2/F6; profileboot/appboot/SDKlaunch/all profilepatches; issuerorigin403 beforeeffect | A->B(refresh,cold)=HOLD;B->A(refresh,cold)=HOLD;ownpositive/404bytesmetadata/400noeffects/401/403preFS/409=NOTRUN
+
+4. NEW FULL-CLOSURE OWN READ / PROVENANCE / OPERATIONAL POSSIBILITY
+Own unauthenticated GETs,requests.Session trust_env=False,no auth/account/env-token,redirects refused;fixed recursive treeR4878cdabd87d4041bdaff61d04c966883b9fd07a exact4388740B0LF SHA14cf83ce782fc0b7257ab31b333d08a959ea855426596b69f8133373e10982bc,truncated=false,15962entries1958trees14004blobs. Fixed16MiB metadata cap and2MiB/member128MiB uniqueaggregate respected: all14004 path bodies WHOLE EOF,119160115B,max1436355B,13721distinctGitblob objects,13950UTF8/54binary,zero acquisition errors. No SDKcache/materialization,source import/exec/install/Git mutation/private/operator/provider/model/paid effects. Publicbinary bodies retained raw, not executed; E6 LOCAL sandbox body NEVER decoded or shown. All original37 own raw B/LF/SHA/Gitblob matched before closure acquisition. Source provenance URI for every treeblob is exactly https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/ + URL-encoded tree path with slash preserved; tree membership,mode,GitblobSHA and own raw identities checked through EOF. No extra-source URLs/access or newpeerreport.
+Complete NEW report tables traversed in RAM: all15962 tree/body rows match own tree/mode/Gitblob/rawB/LF/SHA/UTF8classification,353manifest normalized records match own full JSON bodies,397compiler JSONC records match own full source (comments/trailingcomma parse as data),1921export occurrences independently derived from full manifests,33322module literal references in4988files all declared multiline startlocators checked against own body,4769unique owning candidatepositions in1066files checked inbounds (4771familymemberships due2overlaps, not inconsistency),1695lockedpackages1701snapshot339importers independently safe-parsed. No LSP available; no install/retry; lexical scans not complete dynamic callgraph. Independent source acquisition is not semantic/runtime qualification of13950codepaths; architectural assessment focused exact owners/signatures/migrations/build/export/package/generator/physical inventories below, with missing compiled/dynamic/external mappings explicitly blocked.
+Independently derived SDKclosure from exact six report seed manifests + runtime dependencies/peers/optional=295 members;including devDependencies309buildmembers,matching EVERY declared membership row. Nearest manifest/runtime source-side6240paths is conservative source closure not actual pack/installedfiles. Source SDK launcher selects same-version built lib/bin.js else source tsx SDK-sourcepatch; SDKstdiosubset3requests cannot implement C1/C2/C3Websurface unless TS/Python/client/server/protocol migrate together or unsupportedprofile denied beforeeffects. Denial of a profile is not acceptance of missing required positive feature paths. Profile.patch/default order and complete whole tree mount candidates acquired; physically compiled inventory absent, unknowndefaultdeny remains requisite.
+Build source: scripts/build.ts drivesnative/host/client/web; root host tsc-b -> tsdown host -> desktopbundle and client tsc-b -> tsdown client; emitted declarations/maps, typert, catalog generators/scoped events and their imported analyzers/consumer faces all own read. Python SEA/runtime bootstrap/hatch/platformmanifest/materialized links/native Office/ripgrep/pty sidecars require actual physical count/ABI/version/license; publication pack/tarball/files targets not inferred from sourcefiles. Full MIT/BSD/vendor/direct dependency notices terms read; resolved external/transitive actual license tuples unavailable. Every source/build/install/profile/release/license caller in tree acquired, not only original37, not only SDK TSfacade. Changes to public owning signatures require every affected Host/Client/compiled/generated/TS/Python contributor under exact baselines; no aliases/shims/second framework.
+Simplicity judgment: single existing semantic Brain/Session and single trusted transactional control writer are coherent; restricted reader/principal/currency capture and owner expectations are needed by original constraints. No second database/cache/duplicate history/framework demanded. F1-F6 dependency order generally coherent and serial sharedroot/Events/Session ownership correct; arrows do not grant custody or construct missing frontendreader/nativebundles. Rollback request to retain sameSTOPPED/reserve/history is correct but exact compatible reverse transition/artifact reactivation is unimplemented; arbitrary stockreinstall is not safe rollback.
+Validation observed in THIS review: actual complete metadata/static-data assertions PASS for49before+afterguards,48wholelocals,14004rawsources/tree/bytecaps/Gitblobs,all15962targetrows,353manifests/397configs/1921exports/SDKclosure295+309/80literalcriteria/41dependencyedges. No SDKbehavior tests/native scenarios/build/helpers executed, no cause diagnosis from stockfailure. Raw range tool initially elided a large body; reported automatedQA and recovered full bytes through native read helper; every48local wholeB/LF/SHA matched and293report rawranges exactreconstruction verified. No truncated local/remote body accepted. This observed readonly processing verifies inventory, not missing mandatory executable plan validation.
+Original Python aggregate target160: python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json — NOTRUN here. Native targeted14existingtestpaths and leaf10checks listed target29225-29239 own source verified; NOTRUN, not nonzero current proof. Required full SDKaggregate examples derived from actual source are pnpm run check:all (root check-all graph) and configured .github CI pnpm run check:ci/check:ci:linux-primary plus static/coverage/consumer/platform modes; exact selected future admissible chain and missing native changed-path path/argv/profile cannot be guessed or run here. Required nonzero per-suite/per-scenario, real actualcompiled owner/cold/principal/egress/nativeinspector path, primary/private/retirement traces and truthful missing-only skipfailure remain. Historical CI/digest/reviewer SHIP never fills this gap.
+
+5. CONDITIONAL FAMILY FOOTPRINTS (advertised exact paths, no physical emissions inferred; all HOLD):
+
+{"group":1,"source_targets":15,"package_targets":7,"tests":3,"named_paths_conditional_lower_bound":26,"generated_and_true_insertions":"UNKNOWN","status":"HOLD_NOT_APPROVED"}
+
+{"group":2,"source_targets":17,"package_targets":10,"tests":3,"named_paths_conditional_lower_bound":31,"generated_and_true_insertions":"UNKNOWN","status":"HOLD_NOT_APPROVED"}
+
+{"group":3,"source_targets":13,"package_targets":9,"tests":3,"named_paths_conditional_lower_bound":26,"generated_and_true_insertions":"UNKNOWN","status":"HOLD_NOT_APPROVED"}
+
+{"group":4,"source_targets":8,"package_targets":3,"tests":3,"named_paths_conditional_lower_bound":15,"generated_and_true_insertions":"UNKNOWN","status":"HOLD_NOT_APPROVED"}
+
+{"group":5,"source_targets":5,"package_targets":0,"tests":2,"named_paths_conditional_lower_bound":6,"generated_and_true_insertions":"UNKNOWN","status":"HOLD_NOT_APPROVED"}
+
+{"group":6,"source_targets":3,"package_targets":0,"tests":0,"named_paths_conditional_lower_bound":2,"generated_and_true_insertions":"UNKNOWN","status":"HOLD_NOT_APPROVED"}
+
+6. EXACT INPUT IDENTITY GUARDS — BOTH BEFORE AND AFTER, FULL UNCHANGED
+Every row below was independently raw-read for B/LF/SHA before acquisition and again at synthesis; lstat regular/nonsymlink/mode verified both times, observed before=after exactly supplied identities. Nonopaque48 bodies own read through EOF with exact same byte guards. Row10 E6 binaryhash/B/LF/modeONLY,NEVERdecoded. Output initiallyabsent confirmed before firstaccess aftergrant and again beforecreate. Before/after source RAM identities/Gitblobs also recomputed all14004; fixed immutable network bodies not refetched. No input mutation or allowed metadata drift.
+Columns: row | FULL expanded path | B | LF | rawSHA256 | mode | before=after | wholebody policy.
+
+1	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DRAFT.md	32366	211	eb5bbd80c372a60126d1b98f729640f140b9dc3318fb902ff969faf1356c6685	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+2	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DESIGN.md	107953	377	506ef1aa9f78e758f91097a6c482deb0a4908b669034eb5d80a8e10c85e13aeb	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+3	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/WISH.md	126131	1157	260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+4	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json	2956	22	7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+5	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-readonly-pinned-supported-lifecycle-principal-stop-egress-seams-scout.txt	21643	101	774accebe8456f3314de428d4735b3361e333b5f7c107af7b32ebfe7f9089025	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+6	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-official-alpha2-bounded-supported-contract-seams-factual-scout.txt	24217	107	501a8fc97f0ab1f72dc4b8f0b4ae360fea4c0b97fa586a51630a8afb56529c34	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+7	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-complete-static-ELF-availability-closure-factual-scout.txt	20258	88	6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+8	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/dsh.md	24841	138	626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+9	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/cordis.md	12132	62	ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+10	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-readiness.json	28091	275	e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OPAQUE_BINARY_IDENTITY_ONLY_NEVER_DECODE
+
+11	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DRAFT-original116c.md	10689	130	116c0faed479f3f03d6ae97c5183d9c158adab787552915e802a276e21bca7a1	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+12	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md	65211	283	d68909d5f8285aa9c52b9b1929a2e166c240990c51be6c4b555b4f6441544097	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+13	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-original-COMPLETE-53LF-design-claim-span-PROPOSED-handoff.txt	26151	53	0054732d9ca8a85a3173c732fdb9e4d5c3208765f80f634347da1bed7f6d203f	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+14	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-original-A1-A10-C1-C4-independent-one-HIGH-FIX-FIRST-proposal-review.txt	36969	104	e459006de18b233f3c10fa3eb546e8ff812a6a4e84ed2fd2a835136dde180e5c	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+15	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-A1-A10-C1-C4-separate-quality-zero-HIGH-SHIP-PROPOSAL-only-review.txt	37002	122	b6149d27d8b2393193d9bb56a0144b9d125564aba1238b023adab8a376661b06	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+16	/tmp/oi4-native-extension-design-repair1-full-handoff.txt	35764	70	66c8ebd3c1438bf341fa1e1515667539d100a725249b903720e670637c954895	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+17	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-repair1-full-original-A1-A10-C1-C4-independent-zero-HIGH-SHIP-PROPOSAL-only-full119LF-report.txt	45081	119	fc77dfc28a31005c5765066ac21972b78687d040f26f5c8186822d2d16316e36	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+18	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-repair1-full-independent-quality-one-HIGH-QH1-FIX-FIRST-full118LF-report.txt	39882	118	2bb22469a6ac39826588e139cdb9b42f8f1cf80289e5101933e3baf0ce027e64	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+19	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json	3461	32	e0b95459d2d11b1807674fd7e31284b586f9f8d3d10c4e7e2a98283e5b0f38fb	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+20	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-prospective-cap4-ONE-additional-cycle-and-native-DSH-DESIGN-only-final-repair2-human-disagreement-resolution-authority.json	4578	37	c2b3131dfa905687c8538d9d86b391492a6a0d386db499c04cf7cc1d29e5dad1	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+21	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair1-both-ACTUAL-native-Done9865-and8089-after-WHOLE119118-positive-report-intakes-same-b2-disagreeing-proposal-only-verdicts-before-release-after-Orca-recovery475.json	38631	133	acc34b3080b504fd982b64aeb1c9239383464c13425ee9bc5e352bb346e00bbf	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+22	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair1-both-whole-reviews-ACTUAL-native-releases-AFTERactualDones-BEFOREold104-and-newDone-deliveryACK-on-recovered-same-Orca475-runtime-NO-paired-SHIP-or-source-authority.json	3169	57	9dcabd6c742324e24d5dc9b2a8b802d014ae9e4c3b459884c4bd9b072224b56a	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+23	/tmp/oi4-native-extension-repair2-before-DRAFT-b491.md	16518	155	b4913fbc63db6c23f14c0d09d47f908c0d996010a4879120f92acafa45c70e63	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+24	/tmp/oi4-native-extension-repair2-before-DESIGN-4e895.md	83809	333	4e89524c84d14479a2cf77f9614383286e231f3a1a010b43852a75742789a7a7	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+25	/tmp/oi4-native-extension-design-repair2-full-handoff.txt	39942	130	fb17ff8965639610aeea095739bdfd74e551880cd1a81185298b4f26905f57d0	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+26	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-FULL-twoDocs-130LF-handoff-positive-deliverable-intake-BEFORE-one-fresh-claim-report-or-NativeDone-actual22pins37source-provenance-82trueins34del.json	46825	655	be7221ad69f0ae5e1066f4a8b138eb639ddf3f86b268ae3ff22b05fd19635f71	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+27	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-native-Done6535-after-WHOLEcurrentDocs-handoff-positive-and-ONEactual3982B-Genie-row105-full-read-before-release-beforeACK.json	7823	43	c24f5bbf4d47e1e96ef02da57c29b7e2b904e62a56dc5bd4d96e37105fe47f9e	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+28	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-native-release0-AFTERDone6535-BEFORE4bACK-and-AUXclaim-release0-enforced-full-review-HOLD-currentce898621eafb17.json	8597	73	01731ce828525a95a0a4257505d6663a920d5c3d4d7b2fefdda8d06c872a1960	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+29	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-Genie-report-event105-COMPLETE-stored3982B-note-one-fresh-span-readback-before-native-release.txt	3982	8	5d2f6e68a51731374c68a6ab2da1034ce06935daf83a9071dc7b717c900dc8da	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+30	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-original-FULL133LF-oneHIGH-QH1R1-FIX-FIRST-report.txt	43310	133	1b639f74cbdb588044b0993a8865dffb5dff3181685829499c0bb9019d132d17	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+31	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-quality-FULL138LF-oneHIGH-QH1S-FIX-FIRST-report.txt	49535	138	d97708eaf773e181287cdb6432e800d3125e43882f49871b54dd4273ef3579e4	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+32	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-BOTH-FULL-original133-quality138-FIX-FIRST-ONEconservativeQH1precursorFamily-B2EXHAUSTED-ACTUAL-Done33b6-fb41-andAFTERnativeReleases-BEFORE2144ACK.json	7794	123	e103499342d069f7e06dabecfe99b0bc571a4c111b3715d6fb72880cf989dd28	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+33	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-cap5-ONE-additional-prospective-cycle-and-native-DSH-DESIGN-repair3-ONE-final-extra-repair-authority.json	6581	111	c0a519dd4db4a257e231fe58874917324ccf132aa1af3c64ac720c03b0eb01e4	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+34	/tmp/oi4-native-extension-repair3-before-DRAFT-ce898.md	22290	178	ce8985b7c48bb1152f6d33b9cb3b4408f636e254577247ad8bba50bedc5aa778	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+35	/tmp/oi4-native-extension-repair3-before-DESIGN-621ea.md	96908	358	621ea7dbbcd88898e4068cc4f06e7caee1be33391c11b968842ed32dd80ec717	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+36	/tmp/oi4-native-extension-design-repair3-full-handoff.txt	73211	122	dc42f54c928b976188ddbf7fcec764613c0771bbce64f7a83d91a4b33d86b131	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+37	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-DESIGN-repair3-CORRECTED-WHOLE211377Docs122LFhandoff-FORMALhistorical1a4dLedger-canonical70ins18del728allOutput-fiveFiles-498cDocSmoke-positive-BEFOREoneFreshClaimReport-Done.json	64768	874	c04fe97a5d83a7b9abc233f20f9c925c0ba0c24857f7abc1e0df8b3fb14d0482	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+38	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-3-repair3-actualWHOLE43bf-helperMethod-positive-exact33locals37public-packedHistorical1a4d-review-render-SAMEhandoff80k200LF-noNativeSemanticRepair.json	118554	671	71ef0f88d7b71610ef9f0a0fbc87c2eafce575f14bda9ad7fd422ad346625e5d	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+39	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/source7-ACTUAL-proven-final0c-fence-none-sameActorReattachRefused-agentUnconfigured-andSAMEfailedOriginalTask-replacementctx5c-0-FULL71cap5contract-nativeSend-only.json	156236	212	cee820a32f8ae405d0751910de79604eb7cc36334512e608019a79189d71298f	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+40	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair3-ACTUAL-nativeDone3db-afterWHOLEc04-corrected211377122-intake-andONEactual3459B113-report-fullParent-read-BEFOREnativeRelease-beforec914ACK.json	13218	151	7ade3b0e170f66338c8ee758411a30e67b5536e87a24845393ff2b75720a7a4a	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+41	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair3-ACTUAL-nativeRelease0-AFTERDone3db-full113Report-BEFOREc914ACK-claimedRelease0-enforcedFULLreviewHOLD-eb5-506-dc42-noSourceAuthority.json	5249	69	27d8c99cc27f374d5555ec7b012e9dedcb3b46d4d90710fa51d54c264519bbf0	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+42	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair3-ACTUAL-Genie-freshClaim112-report113-COMPLETE-stored-note-BEFOREnativeAuthorRelease.txt	3459	11	8cea1634d199aa285c70e801a22a0240e958b9cd9ffc423d62feb428ca077388	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+43	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-afterDSHrepair3-bothFULL-staticSHIP-AUTHORIZE-gatedImplementation-readonlyCompleteClosure-planIndependentReview-beforeApprovedScopedCode-noRuntimePaid.json	2261	31	1adb1417ab066cef04eba8fd665e3dc4506292f02dd7432ff4e7ce4894c49624	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+44	/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/DSHrepair3-3-ENTIRE-both-independent-original3583-quality74da-all42R37-own498c-fullDocDiffs-ACTUAL-Dones-AFTERreleases-BEFOREacks-boundedSTATICproposalSHIP-notFeature.json	26633	139	4c91a6005c4ab5fe0d1265f39f775c018797b98360d1b649e4eba2b6296b77e1	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+45	/tmp/oi4-native-extension-design-repair3-original-full-review.txt	89938	148	3583e83c50773c7fa1632a91731af818d5d9789b016ef95975fc62c55bd85f24	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+46	/tmp/oi4-native-extension-design-repair3-quality-full-review.txt	115040	172	74da73de79bfd405a3b4a98b67ba0af26267912e5db96ba9d086ebbca1f2e6ef	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+47	/home/genie/.agents/skills/brainstorm/references/round-ledger.mjs	53103	1210	c98ce98c8ec975ab234abd68de499aaab4d7e3c00856035a652d28ea357f174b	0644	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+48	/home/genie/.agents/skills/brainstorm/references/design-review-evidence.mjs	10979	258	0320dca19c2ace6224e166317db2f8561a8c7e336b376269220ed1c0892d2cf4	0644	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+49	/tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt	5954426	29241	f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67	0600	UNCHANGED_PASS_BEFORE_AND_AFTER	OWN_WHOLE_EOF_DATA_ONLY
+
+7. ORIGINAL37 PUBLIC OWN FULL BODY IDENTITIES — URL/B/LF/SHA/Gitblob exact matching; static only
+
+1	vendor/cordis/src/fiber.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/fiber.ts	24960	754	b7661d6c19be76cef6b97d88719a8112c0f8b5abe65bd9e7d5947773fd4b96d4	6bb1caa7a5c66c0129cbd88b94e6d9a01025b455	OWN_WHOLE_EOF_VERIFIED
+
+2	vendor/cordis/src/context.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/context.ts	6153	146	96b388162d6013c1898de61e35f28917abb93809de24174980f2a1a348d0b115	0488423088e4da284d28c2d2cef887a5c69ed0f5	OWN_WHOLE_EOF_VERIFIED
+
+3	vendor/cordis/src/registry.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/registry.ts	11753	337	34bbd60ae502b4f85201c204afb52a9acabde6878d9278493478c1b2183debd3	478cf036cb2339fcd6c092ee0cb6f2babc500014	OWN_WHOLE_EOF_VERIFIED
+
+4	vendor/cordis/src/reflect.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/reflect.ts	15434	418	6847b9781044023d65aebb5896a873b9f0a3d777eaf7fa0dd2a7a408eb6b74a6	7bbe1ae9919b930230844ec3d4365466a78e90a8	OWN_WHOLE_EOF_VERIFIED
+
+5	vendor/cordis/src/utils.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/utils.ts	10236	287	8fe273424583d21267ef13f248840e97454d09d836a0ac08323a9482c2069263	024d21f5e025290b2fd01277ea83ad2128908bfa	OWN_WHOLE_EOF_VERIFIED
+
+6	apps/cli/src/profile-boot.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/apps/cli/src/profile-boot.ts	14227	326	6c750b3c838e42de921bbe9816aed1d8955526c90fccaece8c06969faa9830e6	b795f627ca432ebeaa61fba98cdf63aa25b9d94b	OWN_WHOLE_EOF_VERIFIED
+
+7	apps/cli/src/process-shutdown.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/apps/cli/src/process-shutdown.ts	2672	77	30743d5ac88154b25fd2d14ac22f7ff1b8d94e915547383de1ca7e49d1bbfc66	e34f85f7f3a5ac533ac97a29474ac713b6a62cec	OWN_WHOLE_EOF_VERIFIED
+
+8	packages/core/agent-loop/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/core/agent-loop/src/index.ts	37946	893	853e76aef2eecafe5526a5267c3d386780b5c59e3c79c2448532fada7285a605	7541a5c4bf928f8f159900bb41a58ca04e4dc6da	OWN_WHOLE_EOF_VERIFIED
+
+9	packages/util/http-proxy/src/install.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/util/http-proxy/src/install.ts	14928	315	acf606d8cdbee7364c3c55dbae025e3fa1c2a4d81b708d071e57562546894427	b3aacad2da21a720622a91169ac7b23a3c803ed8	OWN_WHOLE_EOF_VERIFIED
+
+10	packages/host/webserver/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/host/webserver/src/index.ts	14136	365	6baa08f1e7cdf86f315d80c935449ffce04640a1f6303a87cad6acd10f9d00cc	5b490fc770fe50989599a6f198c9831597d79f5c	OWN_WHOLE_EOF_VERIFIED
+
+11	packages/api/gateway/README.md	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/api/gateway/README.md	18991	103	f000a96511b30fe1d27cf21769998f8a096b9804712fdc2e77663edc8e0de245	e0c986e290b1744017fca99e3a2553a68d754ef6	OWN_WHOLE_EOF_VERIFIED
+
+12	LICENSE	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/LICENSE	1065	21	ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be	c1f7a78e89e4e4dc7b86664c3b3c76eb5eee1785	OWN_WHOLE_EOF_VERIFIED
+
+13	packages/boot/app-boot/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/boot/app-boot/src/index.ts	50857	1066	5460685d13cb1e281d01be4332854d0f493cf395b88c61bba9dc69910045ef9c	188cb33460f659393f28bbc5569c86b59ae135e0	OWN_WHOLE_EOF_VERIFIED
+
+14	packages/boot/app-boot/package.json	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/boot/app-boot/package.json	2297	66	516d2e744f6d6fd84e34cffecbe34367220a4b9ec81286491bcf74e3fa11fd17	77c16a8ac3296dd81091da64df7a55b38d4a2914	OWN_WHOLE_EOF_VERIFIED
+
+15	vendor/cordis/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/index.ts	815	16	071fb226e9a21556625e4391b28e6641b9b34b1cd402155246e0437993d8b740	5c27008b44d50b8319ab3828ba02bd94adc5aa16	OWN_WHOLE_EOF_VERIFIED
+
+16	vendor/cordis/package.json	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/package.json	1237	51	bd5b142ae927e4f954ceaee7cdc0e43fe921dde311edc8ec4f797f85f1981f83	abeac30e1cf2bc2a755029952df64c9e110cfbc2	OWN_WHOLE_EOF_VERIFIED
+
+17	packages/boot/app-boot/tsdown.config.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/boot/app-boot/tsdown.config.ts	782	34	69e76c3f53070664740cef0627c7f21d8c032f5f8287409ddcd340d0032593ab	6af29018c2cdeb5356e8922cb5b6e21574a3d111	OWN_WHOLE_EOF_VERIFIED
+
+18	packages/client/connection/src/rpc-host.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/client/connection/src/rpc-host.ts	12064	331	bf305c21998f65d605c22ca01646a7ce277ea4e298cc34abaf13832f789f01c3	0f98bc1f197291ea89d1e9d7070334f68ca96021	OWN_WHOLE_EOF_VERIFIED
+
+19	packages/client/connection/src/operator-peer.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/client/connection/src/operator-peer.ts	1222	33	638e7e0f1115426a7f50ba949bc8a89a344551c911faf4a2af2aa9840dcb84aa	83325f78e77bebbeb2427faafeb58bd1d85e2262	OWN_WHOLE_EOF_VERIFIED
+
+20	packages/client/connection/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/client/connection/src/index.ts	6694	163	36347d091ddd30736db007cb6c044c43618e5bfc22a4403e89b1bd2bfe5b4577	647174f74316272567e4d49fde028f7d0e06976a	OWN_WHOLE_EOF_VERIFIED
+
+21	packages/api/session-controller/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/api/session-controller/src/index.ts	21905	528	e66d55e979936a49a942cc68adc126a31c8ae59f7032596060721a6bf03338fc	3fe15221fbb39f72ead38ac2398441577c6aef1e	OWN_WHOLE_EOF_VERIFIED
+
+22	packages/api/session-controller/src/commands.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/api/session-controller/src/commands.ts	28280	691	e5e9b7df2ff4d3477d9005548496e5ca1c2adaa69470aa6de399e822d683c7a7	7e900b92aee6e6862d433ecfe03bc83399f75c0c	OWN_WHOLE_EOF_VERIFIED
+
+23	packages/api/session-controller/src/types.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/api/session-controller/src/types.ts	21997	626	10e8460f23f897b6d65b6ce979e26d56e386589201e063bdb076b7a9b5322cf2	a8f0d7e4501f63f0c0e15ac5fb5bd82727fd53d2	OWN_WHOLE_EOF_VERIFIED
+
+24	packages/api/session-controller/src/archived-session-gate.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/api/session-controller/src/archived-session-gate.ts	2426	56	1445070c0a9da7ebe7e3032a24ab9fcc4a803973ac12d4adf4b872ea0f0d0e18	06c6ee5f026c730e63287376ae226a4367969f7f	OWN_WHOLE_EOF_VERIFIED
+
+25	packages/workspace/workspace/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/workspace/workspace/src/index.ts	36840	901	6130c03aee1809e193c278e69fdea37c2c840dbc1550f5ca9b183bf6319292df	4b4176c573c0eaae5b3331d3df6cb02787a2be2b	OWN_WHOLE_EOF_VERIFIED
+
+26	packages/core/agent/src/archive-admission.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/core/agent/src/archive-admission.ts	1750	38	3a530fc561e309fec5493cfe509dd2acedfca16b648a8ca6f8da24efe33511e5	583216b1266cfd7e04fe3ae9ec2555f29fdf9987	OWN_WHOLE_EOF_VERIFIED
+
+27	packages/core/agent-loop/src/agent.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/core/agent-loop/src/agent.ts	28174	688	9c985dd5ce3612b0a6f1833cb592930e4e390d4249821accea53064d8e42015c	2f68565cef052f82ef6f2a740141962507654e02	OWN_WHOLE_EOF_VERIFIED
+
+28	packages/core/agent-loop/src/tool-calls.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/core/agent-loop/src/tool-calls.ts	11591	290	5c7e8d8ff0028b436efdd13e5dffa4801d2311c211c3af039e7dab705f87b303	c12de68d195eb3af411d2a79537e33a893ec852e	OWN_WHOLE_EOF_VERIFIED
+
+29	packages/core/tools/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/core/tools/src/index.ts	90679	1985	9107a2b6447b10c2ecb90429d7c1b80b956759e96d35230af16f5a88f5d3eccd	ca89f370febac1fa24f84cc25351a186866fe7e7	OWN_WHOLE_EOF_VERIFIED
+
+30	packages/llm/llm/src/index.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/llm/llm/src/index.ts	52048	1176	95364943b5c48dba3cb2239981a6ebe89393b55927b4d646ee72a581f23e6914	d67245d216aec55b218f7852268382ff9e06810f	OWN_WHOLE_EOF_VERIFIED
+
+31	packages/llm/llm-deepseek/src/adapter.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/llm/llm-deepseek/src/adapter.ts	8341	160	68d03fbaa3dd5f04a55ff48d7cd0f2ef125077f8144977459c15432e1464cf8f	20e899788e58c79d9caf1ec4e3b6f4c6e39ba7eb	OWN_WHOLE_EOF_VERIFIED
+
+32	packages/llm/llm-deepseek/src/files-api.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/llm/llm-deepseek/src/files-api.ts	10880	262	0f38622c30c85266bf17db38e0171a130bbee5ce0404327a1de949b1393eca26	9aa1f005d74c31f56d35aeea279f23c4d72bc2bb	OWN_WHOLE_EOF_VERIFIED
+
+33	packages/llm/llm-deepseek/src/translate.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/llm/llm-deepseek/src/translate.ts	8030	166	254f4b8fe292dadc5c24df3375b01920f5e5b345be09eae4290e91e9e810c1ba	deb901119ee8308f2fe1420222dda0ffdf6b7cbf	OWN_WHOLE_EOF_VERIFIED
+
+34	packages/llm/llm-deepseek/src/serialize.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/llm/llm-deepseek/src/serialize.ts	9656	168	5468bea545731cf5e8057296559aa0b648174900ca86821d022ffe3b468cf29c	bbfd01d3c3221beacc55a5440f4c26ad1f743f51	OWN_WHOLE_EOF_VERIFIED
+
+35	packages/llm/llm-deepseek/README.md	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/llm/llm-deepseek/README.md	26255	219	35c33d7a28d3fdfeeea72c141ee8fcb55caa31bff1e277c86b7a223130ee6603	651258fcbb857cd187bc5e6b2e1a841e1ce23ae6	OWN_WHOLE_EOF_VERIFIED
+
+36	packages/llm/llm-deepseek/src/sse.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/llm/llm-deepseek/src/sse.ts	1403	28	7ffcba377583018aa1a7f86c6d757b7dd6c1955ad8252103e2f33a4ceb90a741	cec99869a264dc65f775663285d3fc47a382afde	OWN_WHOLE_EOF_VERIFIED
+
+37	vendor/cordis/src/events.ts	https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/events.ts	14917	352	9aff93dcfcad98aebb692c19c36d3bf034a96f9085bc66900a997cda3f79e6fe	c7bf42632e5468b19c4a846bfdda5daaa2d3c27a	OWN_WHOLE_EOF_VERIFIED
+
+8. WHOLE DERIVED SOURCE SET AND INDEPENDENT OWNING LOCATORS
+Entire own source set is EXACTLY everyblob in fixed whole tree, no omission/newURL; all14004 rawsource identities independently matched target section9 rows340-16301, not accepted on scout word. Canonical provenance digest b516cc849bae26850de51df5f2cb62049e5dad810b463fef1144ffb2278e99d2: SHA256 over sorted exactpath rows of compact sort_keys JSON {path,mode,bytes,LF,sha256,gitblob_sha1} each followedLF, no exclusions,14004records. Canonicalfullmanifest held inRAM, not a newartifact; this digest is compact closure identity, NOT substitute for own body acquisition or Parent whole source report intake. All required owning files were independently acquired above; semantic source locators below are own reviewed bytes. Every URI derives from same fixedR rule. Byte ranges0-based halfopen over complete raw body; SHA over whole body, not snippet.
+Columns: FULL treepath | owninglines | byte[start,end) | own wholeSHA256 | contract evidence.
+
+vendor/cordis/src/fiber.ts	110-137	[3432,4385)	b7661d6c19be76cef6b97d88719a8112c0f8b5abe65bd9e7d5947773fd4b96d4	wrapped cleanup join and pluginDisposed private callback capture
+
+vendor/cordis/src/fiber.ts	420-550	[14662,18825)	b7661d6c19be76cef6b97d88719a8112c0f8b5abe65bd9e7d5947773fd4b96d4	effect registration/setup rollback before contained private outcome
+
+vendor/cordis/src/fiber.ts	675-695	[22567,23188)	b7661d6c19be76cef6b97d88719a8112c0f8b5abe65bd9e7d5947773fd4b96d4	_unload catch/logger cannot certify clean retirement
+
+vendor/cordis/src/events.ts	119-175	[5813,7909)	9aff93dcfcad98aebb692c19c36d3bf034a96f9085bc66900a997cda3f79e6fe	Hook identity/context/filter and dispatch169 precursor before selected business callbacks
+
+vendor/cordis/src/events.ts	194-196	[8634,8718)	9aff93dcfcad98aebb692c19c36d3bf034a96f9085bc66900a997cda3f79e6fe	emit synchronous map discards returned promises; preserve fail-fast and adopt without awaiting public result
+
+packages/core/tools/src/index.ts	1391-1507	[64635,70327)	9107a2b6447b10c2ecb90429d7c1b80b956759e96d35230af16f5a88f5d3eccd	owning parent before execution token/policy/denied unknown tool path
+
+packages/core/tools/src/index.ts	1641-1713	[76175,79279)	9107a2b6447b10c2ecb90429d7c1b80b956759e96d35230af16f5a88f5d3eccd	finalizer/result callback membership versus invocation versus returned promise
+
+packages/llm/llm-deepseek/src/adapter.ts	51-72	[2868,4130)	68d03fbaa3dd5f04a55ff48d7cd0f2ef125077f8144977459c15432e1464cf8f	private generate finally iterator.return rejected before outer cleanup
+
+packages/llm/llm-deepseek/src/adapter.ts	79-147	[4313,8048)	68d03fbaa3dd5f04a55ff48d7cd0f2ef125077f8144977459c15432e1464cf8f	auth/Files/inner retry/final extensions.payload credential send/imported parser
+
+packages/llm/llm-deepseek/src/sse.ts	3-28	[91,1403)	7ffcba377583018aa1a7f86c6d757b7dd6c1955ad8252103e2f33a4ceb90a741	actual TextDecoderStream/eventsource-parser pipeline independent reader retirement; external parser source not granted
+
+packages/llm/llm-deepseek/src/translate.ts	1-166	[0,8030)	254f4b8fe292dadc5c24df3375b01920f5e5b345be09eae4290e91e9e810c1ba	raw usage translation; presence must be recorded before defaults
+
+packages/llm/llm-deepseek/src/files-api.ts	1-262	[0,10880)	0f38622c30c85266bf17db38e0171a130bbee5ce0404327a1de949b1393eca26	Files actual credential-bearing HTTP lifecycle
+
+packages/llm/llm/src/index.ts	1-1176	[0,52048)	95364943b5c48dba3cb2239981a6ebe89393b55927b4d646ee72a581f23e6914	LLM caller/retry/stream ownership source complete; runtime graph still unqualified
+
+packages/boot/app-boot/src/index.ts	972-1037	[45888,49094)	5460685d13cb1e281d01be4332854d0f493cf395b88c61bba9dc69910045ef9c	both application and diagnostics root contexts; cleanup before finally/containment
+
+apps/cli/src/profile-boot.ts	1-326	[0,14227)	6c750b3c838e42de921bbe9816aed1d8955526c90fccaece8c06969faa9830e6	profile preparation/proxy/control root ordering entire caller
+
+apps/cli/src/process-shutdown.ts	1-77	[0,2672)	30743d5ac88154b25fd2d14ac22f7ff1b8d94e915547383de1ca7e49d1bbfc66	native process shutdown outer status distinct from private root outcomes
+
+packages/sdk/server/src/index.ts	46-102	[1922,4443)	8ce9469392abfb957e1c01f9e0d213852c28a2efd09ea6077e62d04e4722f028	scheduled void sharedexitTask and allSettled->exit0 independent admission/capture/retirement
+
+packages/sdk/server/src/server.ts	208-238	[8931,10173)	489ad060e5ca17901ac5336f9b7871b7397d1476e1258f69b0f3b22dba6f4238	creation snapshot allSettled plus inner rejected handle disposal aggregated; require per-promise outcome not just outer request
+
+packages/sdk/server/src/server.ts	248-293	[10497,12463)	489ad060e5ca17901ac5336f9b7871b7397d1476e1258f69b0f3b22dba6f4238	request dispatch only initialize/prompt/shutdown and fresh createSession is not cold resume
+
+packages/sdk/protocol/src/types.ts	105-119	[4142,4783)	9a9ab6172ff2a45b7a07adf75611aa8f42ae1bb98bd4ad598d8bdc5f618053d7	stock protocol three requests/four notifications; no stop/resume/follow/page
+
+packages/sdk/protocol/src/transport.ts	175-238	[5953,8022)	7aed4460d1bccc9bc525d2c54f2220ba5360ae529cb86711eb043ad7471c45ac	detached handleLine and request error conversion are additional transport ownership before flush/exit
+
+packages/sdk/client/src/api.ts	69-90	[3274,4102)	943f0326dbf1415b50b879fdd538c0bcd38f20bd37ea6fec397b14099c2c8987	failed startup subprocess replacement not same cold session
+
+packages/sdk/client/src/client.ts	384-457	[16101,18998)	162a928f45f34acb017e98030392c0825e87f23ceb7533ccc3d25784a79808ad	protocol shutdown catch and streams Promise.race not complete clean tree
+
+packages/sdk/client/src/dispose.ts	1-99	[0,3976)	d1e3321d070a1347d4c973695668ae467f55ce7e85a1c8d32efb8398328906f0	EOF/SIGTERM/SIGKILL actual process retirement separately owned
+
+packages/sdk/client/src/launch.ts	44-157	[1357,6595)	d7187537945618d6190bf98ab5893de9a1a059e4e2ec4d3778386eaffe5148af	matching package versions and built/source profile selection custody
+
+python/sdk/src/deepseek_harness/client.py	95-131	[3091,4654)	78193d6b88d49b87dc0057ec92cbc512426e7712f75c3e700f0fc7e0046d28fc	Python shutdown catch/terminate/kill/thread boundedjoin distinct native outcome
+
+packages/core/agent-loop/src/index.ts	151-185	[5199,6659)	853e76aef2eecafe5526a5267c3d386780b5c59e3c79c2448532fada7285a605	raceAbort late acquisitions cleanup owns original promises
+
+packages/core/agent-loop/src/index.ts	652-890	[27517,37918)	853e76aef2eecafe5526a5267c3d386780b5c59e3c79c2448532fada7285a605	create/createAgent/setup/resume same persistent id/writer/header/history; final handle.close catch also pre-swallow owner
+
+packages/core/agent-loop/src/agent.ts	1-688	[0,28174)	9c985dd5ce3612b0a6f1833cb592930e4e390d4249821accea53064d8e42015c	direct native agent prepare/run/dispose owners
+
+packages/core/agent-loop/src/tool-calls.ts	1-290	[0,11591)	5c7e8d8ff0028b436efdd13e5dffa4801d2311c211c3af039e7dab705f87b303	nested tool scheduling physical dispatch owners
+
+packages/client/connection/src/rpc-host.ts	1-331	[0,12064)	bf305c21998f65d605c22ca01646a7ce277ea4e298cc34abaf13832f789f01c3	named remote request decode/dispatch/return ownership
+
+packages/client/connection/src/operator-peer.ts	1-33	[0,1222)	638e7e0f1115426a7f50ba949bc8a89a344551c911faf4a2af2aa9840dcb84aa	operator credential constructor not actually issued tenant principal
+
+packages/client/connection/src/index.ts	1-163	[0,6694)	36347d091ddd30736db007cb6c044c43618e5bfc22a4403e89b1bd2bfe5b4577	mount/connection caller authority
+
+packages/api/gateway/src/index.ts	1-1562	[0,59949)	f071ca7d2dfb8aa3de54645877108b979bec52ae57b04647544a5a745364a66b	native gateway/mux physical ingress and generated routes
+
+packages/api/remotes/src/index.ts	1-168	[0,6298)	50a9d1dadedbd61d5cc8f12a1ce7c88797c006ffa32a9d5230c24b4e6f521f2f	native RemoteResult and generated remote Host contribution
+
+packages/api/session-controller/src/index.ts	1-528	[0,21905)	e66d55e979936a49a942cc68adc126a31c8ae59f7032596060721a6bf03338fc	native Session mounts/list/control/cursor owning service
+
+packages/api/session-controller/src/commands.ts	1-691	[0,28280)	e5e9b7df2ff4d3477d9005548496e5ca1c2adaa69470aa6de399e822d683c7a7	native create/resume/fork lineage/control owning dispatch
+
+packages/api/session-controller/src/types.ts	1-626	[0,21997)	10e8460f23f897b6d65b6ce979e26d56e386589201e063bdb076b7a9b5322cf2	typed RemoteResult/named input/session projections contract
+
+packages/workspace/workspace/src/index.ts	1-901	[0,36840)	6130c03aee1809e193c278e69fdea37c2c840dbc1550f5ca9b183bf6319292df	workspace binding/effects before server response
+
+packages/host/webserver/src/index.ts	1-365	[0,14136)	6baa08f1e7cdf86f315d80c935449ffce04640a1f6303a87cad6acd10f9d00cc	exact mount/upgrade/origin dispatch not tenant issuance
+
+packages/boot/app-boot/src/profile.ts	1-738	[0,33924)	30a883b090c4489b14371d947113d532ab9484d4e0f79c7a4fcddd066e24b6ab	actual profile selection user patch order SDK-minimal/web/headless closure
+
+packages/bundle/sdk-app/cordis.patch.yml	1-41	[0,1818)	df3fd271ebc2d9bde61affc63eca3cc233a42c9af892faa37f92641cb089b6ba	actual mounted SDK startup required disable title/HMR
+
+packages/bundle/sdk-minimal/cordis.patch.yml	1-158	[0,5326)	a2609189fafaaed862ad9dabdc1c4dd59ab6077b530535e901a32fc23559ca2f	complete native tree includes provider/tools/operator surfaces; not restricted by stdio
+
+vendor/loader/src/internal.ts	104-144	[4086,5765)	35a50d597fed58656a11e3c5294fdf99524ed8c106739b4fab522a288eefa877	external builtin/native Node module loader shape; static seam does not diagnose failed historical ABI
+
+package.json	1-260	[0,16779)	b046e4035885d2ac404b5fe03d57024cd5aa47a071e29689fe04db156ba997b9	exact scripts/packageManager/Node/toolchain/build and aggregate commands
+
+tsconfig.base.json	1-560	[0,48867)	6ac5c01dede3a374aaa99afc289faa429bdebc692eb5975e9c386203d5b5725b	compiler declarations/maps/composite/alias output closure
+
+tsconfig.host.json	1-480	[0,23795)	8b2704d6feddc2fbe5bd258f281ee1b887282bd91ee282ee035e07b35ce4956f	host compiled project closure
+
+tsconfig.client.json	1-147	[0,7800)	eff33581ce82353dd0178ca0926605faf72141277804f8b3d0771dfae12d2d57	client compiled project closure
+
+tsdown.config.ts	1-35	[0,1449)	af5cf6832716fce53f1443b9daa1f4434a8dd5ac90d9f8bf59aaae937b1904a4	emitted intermediates feed ESM entries; source typecheck alone insufficient
+
+scripts/build.ts	1-53	[0,2198)	6afb64c9045c90549ff8201a890d572f8f87dae3eebf9c14e5b6ebfc448b6056	native system+host/client+web build actual required graph
+
+scripts/run-gates.ts	269-338	[9776,12711)	f461e4d445d100636727a65d4b87f2cef71e468acbe211cec1144b35c5c4f30f	required aggregate mode graphs differ from selected leaf checks
+
+scripts/run-gates.ts	509-546	[19127,20509)	f461e4d445d100636727a65d4b87f2cef71e468acbe211cec1144b35c5c4f30f	full SDK primary gate includes built package/npm type/builtin/native smoke and consumer proof
+
+scripts/run-gates.ts	850-876	[35186,36584)	f461e4d445d100636727a65d4b87f2cef71e468acbe211cec1144b35c5c4f30f	built-bin smoke actual compiled SDKscope/remotes/runtime consumers
+
+.github/workflows/ci.yml	1-726	[0,34437)	3c67a452f1b4aec08e318d5b38addfe05f4ddbdcb14a81457dccdc68b1c37662	actual pinned CI static/coverage/bench/consumer/platform producers, not current CI evidence
+
+.github/workflows/ci-master.yml	1-523	[0,20775)	fab725119e3b9706eb6147b035d2ab4ba4b8d79beb17eedd537ef29f796042eb	master SDK CI Linux primary/current policy definition not executed checks
+
+scripts/build-exe-for-python-sdk.ts	261-655	[10946,27969)	34f5c0d126fd157f0271982d39e75827872192accad730dbb0ae62f2a66b967c	deploy/materialize links/pack native sidecars/wheel copied footprints
+
+python/sdk-runtime/hatch_build.py	1-121	[0,5539)	e1565069add5ac1f24d813a8dd5684871b32a4b8c1cc4034e5f07adcccddabd3	wheel executable/spawn helper/native platform validation
+
+scripts/release/families.ts	1-449	[0,18450)	a531a2082445ae804c99cc588fbee372e36f4d475255f83637117c36f5ef0945	source versus built payload family/version/license projection
+
+scripts/release/pack.ts	1-90	[0,3870)	feddff24b912c7a929431ab0837617d5f41bb51464c5c04add41a16f6d57d2ad	actual tarball package membership—not source export occurrence counts
+
+scripts/release/tarball.ts	1-54	[0,2174)	7695eb0494a62e86028fe6e4cfc7064bd9d520c2fedafed9e8598543c4f4c39f	actual packed artifact enumeration prerequisite
+
+pnpm-lock.yaml	1-29763	[0,1021606)	081d9f8641590187c359477a5ee01efe99e0f216d19b8ac946d50cc710cdfb8b	indivisible fresh copy violates2000;1695 packages/1701snapshot external prerequisites
+
+pnpm-workspace.yaml	1-107	[0,5411)	0f362357b95d769c892e199e6d2986142ddc9fc6362109851bf0a50ceb1bc8bc	workspace includes real allowed installbuild/patch semantics
+
+LICENSE	1-21	[0,1065)	ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be	MIT notice must accompany copied modified closure
+
+THIRD_PARTY_NOTICES.md	1-289	[0,23637)	7f1b13082b40882731368cb2f62f254f4c1e257ff27fe22773532e912722bdf6	full dependency terms—not direct package licenses alone
+
+9. ALL ORIGINAL80 CRITERIA — EXACT TEXT / OWN WISH+NEWREPORT PROVENANCE / DISPOSITION
+All80 literals independently compared against WHOLE immutable WISH260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743,not just report excerpt. All20groups retained,41deps/5milestones unchanged,dates/assignees unset. Original six historic accepted issues2,3,5,6,8,11 retained without reopening/reaccepting; remaining14notaccepted. Checkbox is literal copied evidence,not harmonized to narrative historical status. Original #4/#10 native integration criteria are NOTRUN/unaccepted. Other issuecriteria remain original obligations, not implemented by this read-only report. Each row says contract retention and original acceptance disposition independently; no omission and no blanket feature PASS. Scope is NEWnative plan review and impact preservation, not writing/reviewing unavailable product bodies outside grant.
+
+01	issue#2/group1	WISH:228;NEWREPORT:229	- [ ] Examples represent two contradictory claims without overwriting either.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 canonical contracts/no duplicate semantic store
+
+02	issue#2/group1	WISH:229;NEWREPORT:230	- [ ] Examples preserve simultaneous investors and repeated transactions without accidental supersession.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 canonical contracts/no duplicate semantic store
+
+03	issue#2/group1	WISH:230;NEWREPORT:231	- [ ] A later source revision can be traced to the prior record; replay specifies both its evidence cutoff and method version.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 canonical contracts/no duplicate semantic store
+
+04	issue#2/group1	WISH:231;NEWREPORT:232	- [ ] An independent design review covers the contracts and records unresolved integration risks.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 canonical contracts/no duplicate semantic store
+
+05	issue#3/group2	WISH:260;NEWREPORT:233	- [ ] Each included source has a successful read receipt or a named blocked state.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A7 budget/provenance unavailable sources honest
+
+06	issue#3/group2	WISH:261;NEWREPORT:234	- [ ] Source coverage and missing private-company data are visible; no inaccessible or paid source is marked operational.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A7 budget/provenance unavailable sources honest
+
+07	issue#3/group2	WISH:262;NEWREPORT:235	- [ ] Repeated reporting is identified as common-source evidence rather than independent corroboration.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A7 budget/provenance unavailable sources honest
+
+08	issue#3/group2	WISH:263;NEWREPORT:236	- [ ] The first release can ship with the qualified subset.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A7 budget/provenance unavailable sources honest
+
+09	issue#4/group3	WISH:292;NEWREPORT:237	- [ ] A cited answer references the same entity IDs and evidence cutoff as the supplied scene.	LITERAL_RETENTION_PASS	NATIVE_C1_HOLD_NOTRUN;B1-B6	C1-C4 direct native acceptance
+
+10	issue#4/group3	WISH:293;NEWREPORT:238	- [ ] Cancellation stops new work; reconnect preserves the session and returns a clear status.	LITERAL_RETENTION_PASS	NATIVE_C2_HOLD_NOTRUN;B1-B6	C1-C4 direct native acceptance
+
+11	issue#4/group3	WISH:294;NEWREPORT:239	- [ ] Two isolated sessions cannot access each other's restricted records or tools.	LITERAL_RETENTION_PASS	NATIVE_C3_HOLD_NOTRUN;B1-B6	C1-C4 direct native acceptance
+
+12	issue#4/group3	WISH:295;NEWREPORT:240	- [ ] Verdict names validated constraints and remaining blockers; probe code is labeled throwaway unless separately accepted.	LITERAL_RETENTION_PASS	NATIVE_C4_HOLD_NOTRUN;B1-B6	C1-C4 direct native acceptance
+
+13	issue#5/group4	WISH:324;NEWREPORT:241	- [x] A claim links back to its exact evidence span after restart.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A6/A8 existing Brain authority preserved
+
+14	issue#5/group4	WISH:325;NEWREPORT:242	- [x] Conflicting reports and multiple investors survive ingest and update.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A6/A8 existing Brain authority preserved
+
+15	issue#5/group4	WISH:326;NEWREPORT:243	- [x] Document graph relationships are not presented as verified entity transactions.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A6/A8 existing Brain authority preserved
+
+16	issue#5/group4	WISH:327;NEWREPORT:244	- [x] Supported time semantics and any unavailable bitemporal replay are documented.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A6/A8 existing Brain authority preserved
+
+17	issue#6/group5	WISH:356;NEWREPORT:245	- [ ] Every consequential factual statement has a dated source and classification.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknownfinancial/counterevidence semantics retained
+
+18	issue#6/group5	WISH:357;NEWREPORT:246	- [ ] Revenue/run rate, cash burn/loss and commitments/payments remain distinct.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknownfinancial/counterevidence semantics retained
+
+19	issue#6/group5	WISH:358;NEWREPORT:247	- [ ] Missing cost or retention data remains unknown; no unsupported bubble-burst date is generated.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknownfinancial/counterevidence semantics retained
+
+20	issue#6/group5	WISH:359;NEWREPORT:248	- [ ] The editorial reviewer can approve a precise investigation revision.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknownfinancial/counterevidence semantics retained
+
+21	issue#7/group6	WISH:388;NEWREPORT:249	- [ ] A displayed edge opens the correct dated evidence.	LITERAL_RETENTION_PASS	SOURCE7_NOT_ACCEPTED_READER_BLOCKS_F5;B5	A1/A8 accepted reader unavailable
+
+22	issue#7/group6	WISH:389;NEWREPORT:250	- [ ] Duplicate import creates no duplicate observation.	LITERAL_RETENTION_PASS	SOURCE7_NOT_ACCEPTED_READER_BLOCKS_F5;B5	A1/A8 accepted reader unavailable
+
+23	issue#7/group6	WISH:390;NEWREPORT:251	- [ ] Rebuilding from the same evidence/method revision reproduces the same view.	LITERAL_RETENTION_PASS	SOURCE7_NOT_ACCEPTED_READER_BLOCKS_F5;B5	A1/A8 accepted reader unavailable
+
+24	issue#7/group6	WISH:391;NEWREPORT:252	- [ ] Plugin replacement preserves accepted evidence and identifiers.	LITERAL_RETENTION_PASS	SOURCE7_NOT_ACCEPTED_READER_BLOCKS_F5;B5	A1/A8 accepted reader unavailable
+
+25	issue#8/group7	WISH:420;NEWREPORT:253	- [x] Variants differ in interaction structure, not only colors.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A9 no visual redo/scope shrink
+
+26	issue#8/group7	WISH:421;NEWREPORT:254	- [x] A reader can find a source and strongest counterevidence in every variant.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A9 no visual redo/scope shrink
+
+27	issue#8/group7	WISH:422;NEWREPORT:255	- [x] The selected direction has responsive/accessibility expectations and observable acceptance tasks.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A9 no visual redo/scope shrink
+
+28	issue#8/group7	WISH:423;NEWREPORT:256	- [x] No variant represents missing or synthetic financial facts as real.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1/A9 no visual redo/scope shrink
+
+29	issue#9/group8	WISH:452;NEWREPORT:257	- [ ] Switching lenses preserves the selected entities and cutoff.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/C1 inspector/sameScene reader prerequisite
+
+30	issue#9/group8	WISH:453;NEWREPORT:258	- [ ] Every displayed connection can be inspected and traced.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/C1 inspector/sameScene reader prerequisite
+
+31	issue#9/group8	WISH:454;NEWREPORT:259	- [ ] A share link restores the investigation revision and meaningful filters.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/C1 inspector/sameScene reader prerequisite
+
+32	issue#9/group8	WISH:455;NEWREPORT:260	- [ ] The defined reader tasks pass on desktop and a narrow viewport.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/C1 inspector/sameScene reader prerequisite
+
+33	issue#10/group9	WISH:484;NEWREPORT:261	- [ ] Assistant and UI use the same evidence revision.	LITERAL_RETENTION_PASS	F5_F6_NATIVE_HOLD_NOTRUN;B1-B6	A1-A8 realassistant/inspector/stop/principals
+
+34	issue#10/group9	WISH:485;NEWREPORT:262	- [ ] Answer citations resolve in the inspector.	LITERAL_RETENTION_PASS	F5_F6_NATIVE_HOLD_NOTRUN;B1-B6	A1-A8 realassistant/inspector/stop/principals
+
+35	issue#10/group9	WISH:486;NEWREPORT:263	- [ ] Unsupported causal or financial conclusions are identified as hypotheses or unknowns.	LITERAL_RETENTION_PASS	F5_F6_NATIVE_HOLD_NOTRUN;B1-B6	A1-A8 realassistant/inspector/stop/principals
+
+36	issue#10/group9	WISH:487;NEWREPORT:264	- [ ] Cancellation, reconnect and session isolation pass the qualified scenarios.	LITERAL_RETENTION_PASS	F5_F6_NATIVE_HOLD_NOTRUN;B1-B6	A1-A8 realassistant/inspector/stop/principals
+
+37	issue#11/group10	WISH:516;NEWREPORT:265	- [ ] Download operations, users and business customers are not normalized as one comparable usage magnitude.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknown metrics no false finance/capability
+
+38	issue#11/group10	WISH:517;NEWREPORT:266	- [ ] An unobserved closed-product metric remains missing rather than implying low value.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknown metrics no false finance/capability
+
+39	issue#11/group10	WISH:518;NEWREPORT:267	- [ ] Labels and method descriptions match the implemented measurements.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknown metrics no false finance/capability
+
+40	issue#11/group10	WISH:519;NEWREPORT:268	- [ ] Relevant regression tests and before/after fixture analysis explain changed behavior without claiming unvalidated accuracy.	LITERAL_RETENTION_PASS	HISTORIC_ACCEPTANCE_PRESERVED_NOT_REVALIDATED	A1 unknown metrics no false finance/capability
+
+41	issue#12/group11	WISH:548;NEWREPORT:269	- [ ] A newcomer explains the thesis and its strongest counterevidence using the product.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9/A10 release actualevidence notstaticSHIP
+
+42	issue#12/group11	WISH:549;NEWREPORT:270	- [ ] Every consequential displayed claim has resolvable evidence.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9/A10 release actualevidence notstaticSHIP
+
+43	issue#12/group11	WISH:550;NEWREPORT:271	- [ ] Publication records exact inputs, method, approval and deployed revision.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9/A10 release actualevidence notstaticSHIP
+
+44	issue#12/group11	WISH:551;NEWREPORT:272	- [ ] Failed publication can be recovered without duplicating or silently replacing accepted content.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9/A10 release actualevidence notstaticSHIP
+
+45	issue#13/group12	WISH:580;NEWREPORT:273	- [ ] Replay succeeds with network disabled and reproduces the same revision.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A2/A6/A8 durable replay not replacement
+
+46	issue#13/group12	WISH:581;NEWREPORT:274	- [ ] An interrupted job resumes without duplicate records.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A2/A6/A8 durable replay not replacement
+
+47	issue#13/group12	WISH:582;NEWREPORT:275	- [ ] Changing a source later cannot alter a prior published snapshot.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A2/A6/A8 durable replay not replacement
+
+48	issue#13/group12	WISH:583;NEWREPORT:276	- [ ] A clean checkout can execute the documented fixture pipeline.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A2/A6/A8 durable replay not replacement
+
+49	issue#14/group13	WISH:612;NEWREPORT:277	- [ ] A failed source visibly ages or marks its layer instead of looking freshly collected.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7 physical spend/backoff remains separate
+
+50	issue#14/group13	WISH:613;NEWREPORT:278	- [ ] Quota exhaustion backs off and preserves the last good evidence.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7 physical spend/backoff remains separate
+
+51	issue#14/group13	WISH:614;NEWREPORT:279	- [ ] Observed/computed timestamps remain distinct.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7 physical spend/backoff remains separate
+
+52	issue#14/group13	WISH:615;NEWREPORT:280	- [ ] Costs and request limits stay within the approved budget.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7 physical spend/backoff remains separate
+
+53	issue#15/group14	WISH:644;NEWREPORT:281	- [ ] Repeated reporting of one announcement does not count as multiple independent confirmations.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1 counterevidence/attribution retained
+
+54	issue#15/group14	WISH:645;NEWREPORT:282	- [ ] Outputs distinguish attention, stance, uncertainty and measured outcomes.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1 counterevidence/attribution retained
+
+55	issue#15/group14	WISH:646;NEWREPORT:283	- [ ] A reader can inspect examples and sampling limitations behind each aggregate.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1 counterevidence/attribution retained
+
+56	issue#15/group14	WISH:647;NEWREPORT:284	- [ ] Direct Chinese-language evidence retains originals and attributed translations where included.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1 counterevidence/attribution retained
+
+57	issue#16/group15	WISH:676;NEWREPORT:285	- [ ] A changed source produces a traceable assessment delta.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A10 accepted revisions no silentoverwrite
+
+58	issue#16/group15	WISH:677;NEWREPORT:286	- [ ] Unreviewed interpretation never appears as an accepted public conclusion.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A10 accepted revisions no silentoverwrite
+
+59	issue#16/group15	WISH:678;NEWREPORT:287	- [ ] Unchanged runs create no duplicate publication or notification.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A10 accepted revisions no silentoverwrite
+
+60	issue#16/group15	WISH:679;NEWREPORT:288	- [ ] Retractions/corrections remain visible and invalidate dependent conclusions when appropriate.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A10 accepted revisions no silentoverwrite
+
+61	issue#17/group16	WISH:708;NEWREPORT:289	- [ ] A reader can submit a sourced correction against a specific claim.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A3 restricted evidence/agent boundary
+
+62	issue#17/group16	WISH:709;NEWREPORT:290	- [ ] Reviewers can accept/reject with an attributed reason.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A3 restricted evidence/agent boundary
+
+63	issue#17/group16	WISH:710;NEWREPORT:291	- [ ] Votes never upgrade a claim to verified status.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A3 restricted evidence/agent boundary
+
+64	issue#17/group16	WISH:711;NEWREPORT:292	- [ ] Restricted or malicious content cannot bypass the evidence/agent boundary.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A3 restricted evidence/agent boundary
+
+65	issue#18/group17	WISH:740;NEWREPORT:293	- [ ] A shared investigation opens at its documented revision.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A3 provenance/private link guard
+
+66	issue#18/group17	WISH:741;NEWREPORT:294	- [ ] Alternative interpretations preserve source provenance and attribution.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A3 provenance/private link guard
+
+67	issue#18/group17	WISH:742;NEWREPORT:295	- [ ] A correction to underlying evidence is discoverable from dependent investigations.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A3 provenance/private link guard
+
+68	issue#18/group17	WISH:743;NEWREPORT:296	- [ ] Public links do not expose private drafts or sessions.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A1/A3 provenance/private link guard
+
+69	issue#19/group18	WISH:772;NEWREPORT:297	- [ ] Each expansion names the user question it unlocks.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9 expansion not inferred scope
+
+70	issue#19/group18	WISH:773;NEWREPORT:298	- [ ] At least one new lens passes reader tasks on real evidence.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9 expansion not inferred scope
+
+71	issue#19/group18	WISH:774;NEWREPORT:299	- [ ] New sources meet the shared adapter and provenance contracts.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9 expansion not inferred scope
+
+72	issue#19/group18	WISH:775;NEWREPORT:300	- [ ] Coverage improvements are measured without claiming internet-wide representativeness.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A9 expansion not inferred scope
+
+73	issue#20/group19	WISH:804;NEWREPORT:301	- [ ] A real evidence gap produces one deduplicated, reviewable GitHub issue.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7/A9/A10 authority/spend/review release
+
+74	issue#20/group19	WISH:805;NEWREPORT:302	- [ ] Unapproved work cannot alter scope, spend, publish interpretations or deploy code.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7/A9/A10 authority/spend/review release
+
+75	issue#20/group19	WISH:806;NEWREPORT:303	- [ ] Accepted work links to independent review and deployed evidence before being labeled shipped.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7/A9/A10 authority/spend/review release
+
+76	issue#20/group19	WISH:807;NEWREPORT:304	- [ ] The agent explains why a proposal matters and what proves it done.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A7/A9/A10 authority/spend/review release
+
+77	issue#21/group20	WISH:836;NEWREPORT:305	- [ ] A real pipeline executes and its receipt is linked.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A4/A10 realpipeline/nonzero/deployed not CIfiction
+
+78	issue#21/group20	WISH:837;NEWREPORT:306	- [ ] A deliberately broken provenance link or unexpected network replay fails the appropriate gate.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A4/A10 realpipeline/nonzero/deployed not CIfiction
+
+79	issue#21/group20	WISH:838;NEWREPORT:307	- [ ] Documentation names checks that actually run.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A4/A10 realpipeline/nonzero/deployed not CIfiction
+
+80	issue#21/group20	WISH:839;NEWREPORT:308	- [ ] Release completion requires verified deployed behavior in addition to CI.	LITERAL_RETENTION_PASS	ORIGINAL_NOT_ACCEPTED;NO_NEW_IMPLEMENTATION_EVIDENCE	A4/A10 realpipeline/nonzero/deployed not CIfiction
+
+10. ALL41 ORIGINAL DEPENDENCIES AND FIVE MILESTONES — no new edge or closure claimed
+
+41 exact original group dependency edges (dependency -> dependent), independently derived from21WISH depends-on records and identical report309-329: [[1,2],[1,3],[1,4],[1,5],[2,5],[1,6],[4,6],[5,6],[5,7],[6,8],[7,8],[3,9],[6,9],[8,9],[1,10],[8,11],[9,11],[10,11],[6,12],[10,12],[2,13],[12,13],[1,14],[2,14],[13,14],[11,15],[13,15],[11,16],[15,16],[8,17],[15,17],[16,17],[13,18],[14,18],[17,18],[15,19],[16,19],[3,20],[4,20],[11,20],[12,20]]
+
+WISH:59;NEWREPORT:331	- [ ] M0: reviewed domain contract, qualified panel and verified DSH/Brain paths; no implicit unsupported embedding/replay guarantees.	ORIGINAL_MILESTONE_RETAINED;NO_NEW_COMPLETE_EVIDENCE;native#4/reader#7 prevents inference of readiness
+
+WISH:60;NEWREPORT:332	- [ ] M1: published economics investigation with relationship view, timeline, inspector, assistant and shareable revision; newcomer thesis/counterevidence task passes.	ORIGINAL_MILESTONE_RETAINED;NO_NEW_COMPLETE_EVIDENCE;native#4/reader#7 prevents inference of readiness
+
+WISH:61;NEWREPORT:333	- [ ] M2: reliable scheduled collection exposes coverage/cost, survives failure/retry, reproduces publications and sends interpretation changes to editorial review.	ORIGINAL_MILESTONE_RETAINED;NO_NEW_COMPLETE_EVIDENCE;native#4/reader#7 prevents inference of readiness
+
+WISH:62;NEWREPORT:334	- [ ] M3: reviewed attributable contributions/corrections and inspectable disputes; votes never certify truth.	ORIGINAL_MILESTONE_RETAINED;NO_NEW_COMPLETE_EVIDENCE;native#4/reader#7 prevents inference of readiness
+
+WISH:63;NEWREPORT:335	- [ ] M4: one additional real-evidence lens accepted; bounded deduplicated roadmap proposals cannot bypass editorial/spending/release gates.	ORIGINAL_MILESTONE_RETAINED;NO_NEW_COMPLETE_EVIDENCE;native#4/reader#7 prevents inference of readiness
+
+Ffamily DAG target164 retained: admission/current formalbindings+fullreview+exactboundedmanifests ->F1;F1->F2;F1+F2->F3;F1+F3->F4;F2+F3+F4+acceptedSource7reader->F5;allF1-F5+separatenativeactivation->F6default0realtracer;separateTWOissuedprincipals/custody/tariffs/spend/modelpaid/liveacceptance->F6fullnativeproof. These are conditional family dependencies,not extra GitHub links or current runnable subgroup DAG. Sharedroot/Events/Session/spend/generated paths serialize under integration owner; cold STOPPED/history/currency must survive any permitted rollback, unsupportedprofile stays inactive.
+
+11. FINAL LIMITS / HUMAN DECISIONS / LIFECYCLE
+Original-source inspection complete within granted fixedR tree; unsupported external generated/native reader/platform mappings remain precise HOLD, not failure to read available sources. No additional artifacts, newpeerreport,Source7extra bodies, SDKcache/fixture/repo/tests/docs/Genie/card/Git/ledger/stamp mutations or source execution; sole authored artifact is this report. No helper execution or actual formalpreflight claimed. Existing whole report contains old cap5/no6th statements; latest actual-owner cap6 prospectivecycle used5remaining1 applied only as supplied chronology, not owner semantic repair/reset/permission. Old fifth source reviews and F5reader hold unchanged. Accounting all-in UNKNOWN; productmodel0 and stock/Brain counters not extended.
+Human owner must supply actual independently reviewed exact subgroup manifests and custody/materialization baseline, preserve or explicitly decide any impossible freshcopy scope without worker capwaiver; formal version-matched current admission/stamp writer authority; real compiler/native/Node26.7.0/sqlite/control volume/IPC/ABI/profile tuple; TWO actually issued immutable principals with private custody; independently accepted sameBrain/Scene source7 reader; concrete fullSDK+original aggregate/nonzero changed-native runner bindings; separate native activation and separately funded tariff/spend/model/live acceptance. Every missing prerequisite is outside this read-only owned scope; no half-scaffold, guessed schema/API/reader/test/runtime command or designrepair supplied. Architecture/inventory recognition alone cannot mark APPROVED/Ready/SHIPPED.
+This completed review outcome is BLOCKED, not failed worker execution. Report identity/whole EOFreadback/B/LF/hash/mode/regular/nonsymlink will be verified before handoff, then Parent FULLpositive ENTIRE deliverable intake is REQUIRED before onceactualworker_done on task_56c8d2336535/ctx_e5efe6aa930d with succeeded outcome for completed review, realreportpath and3-sentence summary. Parent alone releases AFTER actualDone BEFOREACK. No selfrelease/card/Genie/taskdone, no selfapproval/code/runtime promotion, no extra work afterDone. Silent ask timeouts resume same message, not failure.
+END COMPLETE INDEPENDENT NEW NATIVE IMPLEMENTATION-CONTRACT / WHOLE SDK CLOSURE / ALL ORIGINAL CRITERIA REVIEW.
+
+ENTIRE DELIVERABLE BODY ENDS ABOVE; please explicit FULLread positive intake or identify any actual bounded report correction, no source/design/runtime scope inference.

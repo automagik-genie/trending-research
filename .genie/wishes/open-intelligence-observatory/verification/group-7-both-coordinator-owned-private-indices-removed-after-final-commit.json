@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-10T00:50:11.584982+00:00",
+  "actualFinalCommit": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+  "actualRemovedOnlyOWNcreatedprivateindexPaths": [
+    "/var/tmp/sofia-agents/oi-accepted-visual-disclosure-candidate-6qltj4yw/index",
+    "/var/tmp/sofia-agents/oi-accepted-visual-disclosure-candidate-6qltj4yw/visual-only.index"
+  ],
+  "identityUIDregularNonSymlinkParentOwnedChecked": true,
+  "confirmedbothAbsent": true,
+  "cleanCheckoutAndArchiveRetainedForReadonlyReviewNotIndex": true,
+  "realSharedIndexnotTouchedByCleanup": true,
+  "noForeignUserDataRemoval": true
+}

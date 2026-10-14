@@ -1,0 +1,130 @@
+{
+  "at": "2026-10-10T12:42:01.536860+00:00",
+  "wholeNativeDoneDelivery": {
+    "id": "4e4a4300-8ce7-48d9-9edb-48fe98e62ebf",
+    "ok": true,
+    "result": {
+      "runId": "run_b7d6684b2cdd",
+      "deliveryId": "delivery_c3d43727158c",
+      "messages": [
+        {
+          "id": "msg_fb5cd45e2029",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "term_fcb7d0fa-1134-45d2-b539-757d9a99fcaf",
+          "to_handle": "run:run_b7d6684b2cdd",
+          "subject": "Full independent review complete: FIX-FIRST 3 HIGH",
+          "body": "Completed the full independent readonly C1-C8 review, all four original criteria, all four HIGH families, 67 scoped identities, 130 complete wire references, and three whole program flows, with the sole report positively accepted by the parent through full native intake. FIX-FIRST identifies three HIGH violations: successful responses admit after-28 calls without the required qualified error, no-primary paths kill or clean up before primary retention, and earliest protocol failures lose an available captured wire length. All four original feature criteria remain BLOCKED_NOTRUN with no source acceptance or application permission; the separate full quality review is still required and further source, smoke, native, or paid work remains ungranted.",
+          "type": "worker_done",
+          "priority": "normal",
+          "thread_id": null,
+          "payload": "{\"taskId\":\"task_76d4c3a4c9f1\",\"dispatchId\":\"ctx_c3bcab8ba80a\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi7-corrective7-original-full-C1-C8-independent-review.txt\"],\"reportPath\":\"/tmp/oi7-corrective7-original-full-C1-C8-independent-review.txt\"}",
+          "created_at": "2026-10-10T12:39:53Z",
+          "delivered_at": null
+        }
+      ],
+      "count": 1,
+      "replayed": false,
+      "acknowledged": "delivery_c9b55e59e7e8",
+      "timedOut": false,
+      "cancelled": false,
+      "connectionLost": false,
+      "mutation": {
+        "requestId": "7eb806a3-9b80-4ff3-81ea-bd9bc4a65629",
+        "replayed": false
+      }
+    },
+    "_meta": {
+      "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+    }
+  },
+  "wholeReportIntake": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-cap4-corrective7-original-WHOLE207LF-6f4c-positive-reviewDELIVERABLE-intake-THREEhigh-A1A2A3-BEFOREsingleNativeDone-noSourceGrant.json",
+    "bytes": 81139,
+    "LF": 520,
+    "sha256": "dd7a04125281141e63d9833b72ff9cc7afbf97f5c070ecdb6adc90fbb30f7673",
+    "mode": "0600"
+  },
+  "actualPositiveExistingReply0": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"a02f3625-e1db-4d8f-9777-2edbfbd43970\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_bbe79f187eab\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_c3bcab8ba80a\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"WHOLE e174 native52098B210LF body=payload question andENTIRE sole207LF49959B report6f4cfdd99fd644583426dc74f1cb84a4e059884e1239e686aba79946cd287091 FULL-read exact1-100/101-208 throughactualEOF+wholewire92identity130refstable/full67guardtable/footer; wholeexactreport substring equality andactualregular0600verified. Entirechangedblindmethoddb28/19273B15LF alreadyWHOLE positivelygranted, currentcompleteexecutedmethod+allcoverageinthewhole report accepted as FULL original readonly REVIEW-PROCEDURE DELIVERABLE. RetainFIX-FIRST CRITICAL0/HIGH3 A1unexpectedsuccessafter28admission, A2no-primarykill/cleanup-before-retention, A3earliestprotocolwirelengthlost; ownfullsourceprovenance vsNOTRUNcounterexamples distinguished, no addedcriteria/semanticParentSourcereview. Allactual67metadata/5absences stillunchanged;405TRUE38del367net/901prospective full3includingTMPrunners, rights/history/custody/nullfinance/money/currentcaps preserved. Exactintake /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-cap4-corrective7-original-WHOLE207LF-6f4c-positive-reviewDELIVERABLE-intake-THREEhigh-A1A2A3-BEFOREsingleNativeDone-noSourceGrant.json SHAdd7a04125281141e63d9833b72ff9cc7afbf97f5c070ecdb6adc90fbb30f7673. You may nowcheckcoordinatorinboxonce andsendEXACT ONE actualnative worker_done succeeded completedfullreadonlyreviewprocedure with same task_76d4c3a4c9f1/ctx_c3bcab8ba80a/soleactualreport path, explicitFIXFIRST/notSourceacceptance/all4originalfeaturesBLOCKED_NOTRUN thenidle. No selfrelease; Parentrelease AFTERactualDone beforedeliveryACK. QualityFULLindependentcompletionstillmandatory evenyourFIXFIRST; no newpeerreportread or exposedpeeranalysis. Cap4used3beforepair→4afterboth exhausted, no fifth/DATA8/SourceBreset/authorreportcardDone/sourceapply/smoke/native/PG/Docker/test/provider/paidauthority. Preserve report/candidate/guards/WISH260f unchanged; no secondreport/source/doc/metadataworker mutation.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_e174fa831898\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-10T12:39:17Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_e174fa831898\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_c3bcab8ba80a\",\n      \"asker_handle\": \"term_fcb7d0fa-1134-45d2-b539-757d9a99fcaf\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_bbe79f187eab\",\n      \"answer_body\": \"WHOLE e174 native52098B210LF body=payload question andENTIRE sole207LF49959B report6f4cfdd99fd644583426dc74f1cb84a4e059884e1239e686aba79946cd287091 FULL-read exact1-100/101-208 throughactualEOF+wholewire92identity130refstable/full67guardtable/footer; wholeexactreport substring equality andactualregular0600verified. Entirechangedblindmethoddb28/19273B15LF alreadyWHOLE positivelygranted, currentcompleteexecutedmethod+allcoverageinthewhole report accepted as FULL original readonly REVIEW-PROCEDURE DELIVERABLE. RetainFIX-FIRST CRITICAL0/HIGH3 A1unexpectedsuccessafter28admission, A2no-primarykill/cleanup-before-retention, A3earliestprotocolwirelengthlost; ownfullsourceprovenance vsNOTRUNcounterexamples distinguished, no addedcriteria/semanticParentSourcereview. Allactual67metadata/5absences stillunchanged;405TRUE38del367net/901prospective full3includingTMPrunners, rights/history/custody/nullfinance/money/currentcaps preserved. Exactintake /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-cap4-corrective7-original-WHOLE207LF-6f4c-positive-reviewDELIVERABLE-intake-THREEhigh-A1A2A3-BEFOREsingleNativeDone-noSourceGrant.json SHAdd7a04125281141e63d9833b72ff9cc7afbf97f5c070ecdb6adc90fbb30f7673. You may nowcheckcoordinatorinboxonce andsendEXACT ONE actualnative worker_done succeeded completedfullreadonlyreviewprocedure with same task_76d4c3a4c9f1/ctx_c3bcab8ba80a/soleactualreport path, explicitFIXFIRST/notSourceacceptance/all4originalfeaturesBLOCKED_NOTRUN thenidle. No selfrelease; Parentrelease AFTERactualDone beforedeliveryACK. QualityFULLindependentcompletionstillmandatory evenyourFIXFIRST; no newpeerreportread or exposedpeeranalysis. Cap4used3beforepair→4afterboth exhausted, no fifth/DATA8/SourceBreset/authorreportcardDone/sourceapply/smoke/native/PG/Docker/test/provider/paidauthority. Preserve report/candidate/guards/WISH260f unchanged; no secondreport/source/doc/metadataworker mutation.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-10T12:37:32Z\",\n      \"answered_at\": \"2026-10-10T12:39:17Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"1e53939d-45d8-4415-8105-4dbcf1986ec3\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "a02f3625-e1db-4d8f-9777-2edbfbd43970",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_bbe79f187eab",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_c3bcab8ba80a",
+          "subject": "Re: Question",
+          "body": "WHOLE e174 native52098B210LF body=payload question andENTIRE sole207LF49959B report6f4cfdd99fd644583426dc74f1cb84a4e059884e1239e686aba79946cd287091 FULL-read exact1-100/101-208 throughactualEOF+wholewire92identity130refstable/full67guardtable/footer; wholeexactreport substring equality andactualregular0600verified. Entirechangedblindmethoddb28/19273B15LF alreadyWHOLE positivelygranted, currentcompleteexecutedmethod+allcoverageinthewhole report accepted as FULL original readonly REVIEW-PROCEDURE DELIVERABLE. RetainFIX-FIRST CRITICAL0/HIGH3 A1unexpectedsuccessafter28admission, A2no-primarykill/cleanup-before-retention, A3earliestprotocolwirelengthlost; ownfullsourceprovenance vsNOTRUNcounterexamples distinguished, no addedcriteria/semanticParentSourcereview. Allactual67metadata/5absences stillunchanged;405TRUE38del367net/901prospective full3includingTMPrunners, rights/history/custody/nullfinance/money/currentcaps preserved. Exactintake /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-cap4-corrective7-original-WHOLE207LF-6f4c-positive-reviewDELIVERABLE-intake-THREEhigh-A1A2A3-BEFOREsingleNativeDone-noSourceGrant.json SHAdd7a04125281141e63d9833b72ff9cc7afbf97f5c070ecdb6adc90fbb30f7673. You may nowcheckcoordinatorinboxonce andsendEXACT ONE actualnative worker_done succeeded completedfullreadonlyreviewprocedure with same task_76d4c3a4c9f1/ctx_c3bcab8ba80a/soleactualreport path, explicitFIXFIRST/notSourceacceptance/all4originalfeaturesBLOCKED_NOTRUN thenidle. No selfrelease; Parentrelease AFTERactualDone beforedeliveryACK. QualityFULLindependentcompletionstillmandatory evenyourFIXFIRST; no newpeerreportread or exposedpeeranalysis. Cap4used3beforepair→4afterboth exhausted, no fifth/DATA8/SourceBreset/authorreportcardDone/sourceapply/smoke/native/PG/Docker/test/provider/paidauthority. Preserve report/candidate/guards/WISH260f unchanged; no secondreport/source/doc/metadataworker mutation.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_e174fa831898",
+          "payload": null,
+          "created_at": "2026-10-10T12:39:17Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_e174fa831898",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_c3bcab8ba80a",
+          "asker_handle": "term_fcb7d0fa-1134-45d2-b539-757d9a99fcaf",
+          "status": "answered",
+          "answer_message_id": "msg_bbe79f187eab",
+          "answer_body": "WHOLE e174 native52098B210LF body=payload question andENTIRE sole207LF49959B report6f4cfdd99fd644583426dc74f1cb84a4e059884e1239e686aba79946cd287091 FULL-read exact1-100/101-208 throughactualEOF+wholewire92identity130refstable/full67guardtable/footer; wholeexactreport substring equality andactualregular0600verified. Entirechangedblindmethoddb28/19273B15LF alreadyWHOLE positivelygranted, currentcompleteexecutedmethod+allcoverageinthewhole report accepted as FULL original readonly REVIEW-PROCEDURE DELIVERABLE. RetainFIX-FIRST CRITICAL0/HIGH3 A1unexpectedsuccessafter28admission, A2no-primarykill/cleanup-before-retention, A3earliestprotocolwirelengthlost; ownfullsourceprovenance vsNOTRUNcounterexamples distinguished, no addedcriteria/semanticParentSourcereview. Allactual67metadata/5absences stillunchanged;405TRUE38del367net/901prospective full3includingTMPrunners, rights/history/custody/nullfinance/money/currentcaps preserved. Exactintake /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-cap4-corrective7-original-WHOLE207LF-6f4c-positive-reviewDELIVERABLE-intake-THREEhigh-A1A2A3-BEFOREsingleNativeDone-noSourceGrant.json SHAdd7a04125281141e63d9833b72ff9cc7afbf97f5c070ecdb6adc90fbb30f7673. You may nowcheckcoordinatorinboxonce andsendEXACT ONE actualnative worker_done succeeded completedfullreadonlyreviewprocedure with same task_76d4c3a4c9f1/ctx_c3bcab8ba80a/soleactualreport path, explicitFIXFIRST/notSourceacceptance/all4originalfeaturesBLOCKED_NOTRUN thenidle. No selfrelease; Parentrelease AFTERactualDone beforedeliveryACK. QualityFULLindependentcompletionstillmandatory evenyourFIXFIRST; no newpeerreportread or exposedpeeranalysis. Cap4used3beforepair→4afterboth exhausted, no fifth/DATA8/SourceBreset/authorreportcardDone/sourceapply/smoke/native/PG/Docker/test/provider/paidauthority. Preserve report/candidate/guards/WISH260f unchanged; no secondreport/source/doc/metadataworker mutation.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-10T12:37:32Z",
+          "answered_at": "2026-10-10T12:39:17Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "1e53939d-45d8-4415-8105-4dbcf1986ec3",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "actualNativeReleaseAfterDoneBeforeACK": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"f95765ec-fc4c-4173-ba79-0d0bb434c423\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_c3bcab8ba80a\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"47bcda1c-8e99-492e-b4c9-340ebe76d9c1\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "f95765ec-fc4c-4173-ba79-0d0bb434c423",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_c3bcab8ba80a",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "47bcda1c-8e99-492e-b4c9-340ebe76d9c1",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "report": {
+    "path": "/tmp/oi7-corrective7-original-full-C1-C8-independent-review.txt",
+    "bytes": 49959,
+    "LF": 207,
+    "sha256": "6f4cfdd99fd644583426dc74f1cb84a4e059884e1239e686aba79946cd287091",
+    "mode": "0600"
+  },
+  "verdict": "FIXFIRST3HIGH noSourceacceptance",
+  "quality": "WHOLE141LFreportalreadypositivelyconsumed actualreply0d7130; actualqualityDone/releaseSTILLnotobserved",
+  "budgets": "Finalcap4HOLD/nofifth/noSourceBreset/source-smoke-nativepromotion"
+}

@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-09T18:59:03.096874+00:00",
+  "task": "task_2bbfe79e0b5f",
+  "dispatch": "ctx_0c242e837d41",
+  "request": "msg_85fdfc63ac8d",
+  "status": "ADMITTED_SINGLE_BRAIN_AUTHORITY_CANONICAL_IMMUTABLE_REPLAY_MANIFEST_EXTENSION",
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "scope": "same11paths+35lines within1700estimate/2000hard; samecurrentfull1955entities/all7windowdata, no scope shrink",
+  "decision": "SameBrainimmutableacceptedrevision manifest canonical bundle permits boundedstartup/sameinput rebuild withouttensofthousandsNativeget calls. IndividualrecordnativeIDs retainedanddirectinspectorchain actualfetched; no independent semanticstore.",
+  "requirements": [
+    "Nativefullcanonicalbundle exactbytes/hash andallbindingapplicationID/collection/hashclosure/domaininvariants, no locale/rescore/regeneration/walltime mutation",
+    "NativecanonicalBundle rootmustbe qualifiedactualmaxpayload/getresponse/end-to-endretention BEFOREpromotinganypartial; no truncation/compression/chunking/newstore/fallbackscope withoutnewadmission",
+    "Oldtracer173bindingroot200 immutablehistoricalevidence only; append newexplicitversionedoperationkey/root forchangedmanifestshape, no overwrite/upgraderoot200/fallbackoldshape/shim",
+    "Duplicateexisting_manifest_binding requiresactualnativeget + exactincomingcanonicalbundle/bundlehash/rootID/allbindingclosure; reject changedincoming/missingforeignconflictingroot, reuse immutablemanifest/exactsameIDs no duplicateobservation writes. Existingno-bindingstableper-IDremember conflict remains meaningful.",
+    "Projection derivedfromacceptednativeimmutablemanifest notcurrentmutableliveperrecordview; exposeexactrevision/source nativebindings. On-demandinspector MUSTactualget requirededge->observation->span->source chain andhashverify againstmanifestbeforeanswer, changed/missingbinding mustfailclosed notdisplaycachedclaim",
+    "Do notclaim rootcanonicalmanifest validationfetchesallactualcurrentrecordbytes; afterimportverifyallnewperrecordstorednativebytes once, inspectorverifiescurrentselectednativechain, exactprovenancereadscope stated. No appendonly/bitemporal/HTTP/financialtruth/tenant/new-concurrent-firstwriter claim",
+    "Fullrealpack+ALL1955snapshot actualfirstimport/get closure, immutableduplicates, freshreader +realinstalledCordis4dispose/replacement/sameviews/stalehandle denial; exactnewmanifestmismatch/conflict/on-demandspan/source integrity negatives",
+    "No secondPGrestart; earlierrestart18:26:35->18:29:51 onlyoldshape qualifiesitself, NOTamendedmanifestpostrestart. Newamendedprojectionfreshreaderproof separate, finalstop/inspectfailclosedretainPGDATA. Old26unchanged proofrequired.",
+    "No models/provider/network/env/grant/schema/oldrecordwrites; productalltotalsunknown. Sameexactown845/brn63 runtimecustody admission andno extraBrain5repair.",
+    "ReceiptslocalhashIDsrightsbindingsonly; no localcanonicalfullbundlereplay authority; no productionimporttests/duplicateverifier/convention/shims."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-10T00:55:44.326722+00:00",
+  "actualGitRemoteOutput": "origin https://github.com/namastex888/trending-research/ fetch/push ONLY. No forkremoteadded/changed; useexplicitauthorizedHTTPSforkURLwhenSHIP",
+  "authorizedConventionalForkURL": "https://github.com/automagik-genie/trending-research.git",
+  "actualForkReadCommand": "gh api repos/automagik-genie/trending-research --jq {full_name,private,default_branch,permissions,html_url} exit0",
+  "actualForkObserved": {
+    "full_name": "automagik-genie/trending-research",
+    "private": false,
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "pull": true,
+      "push": true,
+      "triage": true
+    },
+    "html_url": "https://github.com/automagik-genie/trending-research"
+  },
+  "actualRemoteHeadReadCommand": "gh api repos/automagik-genie/trending-research/git/ref/heads/wish/open-intelligence-observatory --jq {ref,object} exit0",
+  "actualRemoteHeadSHA": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "actualPRroutingReadCommand": "gh api repos/namastex888/trending-research/pulls/22 ... exit0",
+  "actualPR": {
+    "number": 22,
+    "state": "open",
+    "draft": true,
+    "html_url": "https://github.com/namastex888/trending-research/pull/22",
+    "base": {
+      "ref": "main",
+      "repo": "namastex888/trending-research"
+    },
+    "head": {
+      "ref": "wish/open-intelligence-observatory",
+      "repo": "automagik-genie/trending-research",
+      "sha": "3b3beb094d2c3a5a021ead88a5280140bd1f841e"
+    },
+    "mergeable": true,
+    "mergeable_state": "clean"
+  },
+  "actualChecksCommand": "gh pr checks22 --repo namastex888/trending-research exit1",
+  "actualChecksOutput": "no checks reported on the 'wish/open-intelligence-observatory' branch",
+  "checksMeaning": "NONE NOTPASS; gitmergeable:true NOTqualifiednative/CI/runtime/whole-roadmapmerge-ready",
+  "exactFutureLocalSHA": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+  "pushPending": "only afterCURRENTfullOriginalC1C4+separatequalitycommittedSHA SHIP, fastforwardancestry/no force, remoteexactHEADreadback, PRdraft/body readback equality+actualremotechecks",
+  "WISHauthority": "157/204 normalreviewedconventionalforkfeaturePR explicit;/wishnotmergedeploy/spend/upstreampermissions/datesassignees",
+  "allPrivateBWSKeyValuesHashesPathsAccountbalancefilesExcluded": "allpreviouscurrent26targetnormaltwoCommitexactscope",
+  "noRemoteMutationYet": true,
+  "currentSource7QualityCycle2_andDSHDesign_notImplementation": "active scopesnotstaged/paid/runtimehold unchanged"
+}

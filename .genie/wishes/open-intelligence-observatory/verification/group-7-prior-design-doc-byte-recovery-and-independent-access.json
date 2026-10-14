@@ -1,0 +1,101 @@
+{
+  "recorded_at": "2026-10-09T21:20:29.793102+00:00",
+  "author_status": "msg_2dc9e4dd2599",
+  "original_path": "/tmp/issue8-prior-design-doc-9d345.md",
+  "actual_metadata": {
+    "sha256": "9d345a577c618ff37463a69c987831af238d2a54bad38ba98db46127807d6cde",
+    "bytes": 25820,
+    "mode": "0600"
+  },
+  "parent_exact_copy": ".genie/wishes/open-intelligence-observatory/verification/group-7-prior-design-doc-before-actual-human-selection.txt",
+  "parent_copy_metadata": {
+    "sha256": "9d345a577c618ff37463a69c987831af238d2a54bad38ba98db46127807d6cde",
+    "bytes": 25820,
+    "mode": "0600"
+  },
+  "quality_readonly_reply": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"0a7dfe6b-eb8e-45db-aba7-77bfc3ea8d0b\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_a632c7ed8cb3\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_9034fe8beb77\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"ExactbeforeDocactualbytes nowavailable/protected: author/tmp/issue8-prior-design-doc-9d345.md mechanicallyinverseexactownrecordedhashlinepatch, keeperbytescopiedunchangednotmemoryguess; parentactualfullSHA9d345a577c618ff37463a69c987831af238d2a54bad38ba98db46127807d6cde/25820bytes verifiedbeforecopy. Readonlyparentexactcopy .genie/wishes/open-intelligence-observatory/verification/group-7-prior-design-doc-before-actual-human-selection.txt SAME SHA9d345. Explicitlyadmitoldbytes/current78a8diff independently now, nosourcecode/Git/browser/CLItests permission. Currentdocaggregate nullasofauthorfreezesupersededaa3d asyoucorrectlystate. CompletefullboundedDocqualityrebindreport andworker_done nooriginalcardmutation.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_f397a998b9cb\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T21:20:29Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_f397a998b9cb\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_9034fe8beb77\",\n      \"asker_handle\": \"term_70121b18-6cef-42a7-8409-0766794028f2\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_a632c7ed8cb3\",\n      \"answer_body\": \"ExactbeforeDocactualbytes nowavailable/protected: author/tmp/issue8-prior-design-doc-9d345.md mechanicallyinverseexactownrecordedhashlinepatch, keeperbytescopiedunchangednotmemoryguess; parentactualfullSHA9d345a577c618ff37463a69c987831af238d2a54bad38ba98db46127807d6cde/25820bytes verifiedbeforecopy. Readonlyparentexactcopy .genie/wishes/open-intelligence-observatory/verification/group-7-prior-design-doc-before-actual-human-selection.txt SAME SHA9d345. Explicitlyadmitoldbytes/current78a8diff independently now, nosourcecode/Git/browser/CLItests permission. Currentdocaggregate nullasofauthorfreezesupersededaa3d asyoucorrectlystate. CompletefullboundedDocqualityrebindreport andworker_done nooriginalcardmutation.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T21:14:54Z\",\n      \"answered_at\": \"2026-10-09T21:20:29Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"00bcc9c4-1871-43ca-9404-93bda37cda61\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "0a7dfe6b-eb8e-45db-aba7-77bfc3ea8d0b",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_a632c7ed8cb3",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_9034fe8beb77",
+          "subject": "Re: Question",
+          "body": "ExactbeforeDocactualbytes nowavailable/protected: author/tmp/issue8-prior-design-doc-9d345.md mechanicallyinverseexactownrecordedhashlinepatch, keeperbytescopiedunchangednotmemoryguess; parentactualfullSHA9d345a577c618ff37463a69c987831af238d2a54bad38ba98db46127807d6cde/25820bytes verifiedbeforecopy. Readonlyparentexactcopy .genie/wishes/open-intelligence-observatory/verification/group-7-prior-design-doc-before-actual-human-selection.txt SAME SHA9d345. Explicitlyadmitoldbytes/current78a8diff independently now, nosourcecode/Git/browser/CLItests permission. Currentdocaggregate nullasofauthorfreezesupersededaa3d asyoucorrectlystate. CompletefullboundedDocqualityrebindreport andworker_done nooriginalcardmutation.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_f397a998b9cb",
+          "payload": null,
+          "created_at": "2026-10-09T21:20:29Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_f397a998b9cb",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_9034fe8beb77",
+          "asker_handle": "term_70121b18-6cef-42a7-8409-0766794028f2",
+          "status": "answered",
+          "answer_message_id": "msg_a632c7ed8cb3",
+          "answer_body": "ExactbeforeDocactualbytes nowavailable/protected: author/tmp/issue8-prior-design-doc-9d345.md mechanicallyinverseexactownrecordedhashlinepatch, keeperbytescopiedunchangednotmemoryguess; parentactualfullSHA9d345a577c618ff37463a69c987831af238d2a54bad38ba98db46127807d6cde/25820bytes verifiedbeforecopy. Readonlyparentexactcopy .genie/wishes/open-intelligence-observatory/verification/group-7-prior-design-doc-before-actual-human-selection.txt SAME SHA9d345. Explicitlyadmitoldbytes/current78a8diff independently now, nosourcecode/Git/browser/CLItests permission. Currentdocaggregate nullasofauthorfreezesupersededaa3d asyoucorrectlystate. CompletefullboundedDocqualityrebindreport andworker_done nooriginalcardmutation.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T21:14:54Z",
+          "answered_at": "2026-10-09T21:20:29Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "00bcc9c4-1871-43ca-9404-93bda37cda61",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "original_reviewer_status_send": {
+    "exit_code": 1,
+    "stdout": "{\n  \"id\": \"87877a7f-245b-4886-a506-7ff22eece872\",\n  \"ok\": false,\n  \"error\": {\n    \"code\": \"dispatch_inactive\",\n    \"message\": \"Dispatch ctx_9e2dab15bdde is completed; its worker will never read that mailbox. Send to run:run_b7d6684b2cdd instead, or start a new Dispatch for follow-up work. Orchestration mutation request ID: e8dab671-dc7a-4a73-a2c3-d5ef0ba1e18f.\",\n    \"data\": {\n      \"orchestrationRequestId\": \"e8dab671-dc7a-4a73-a2c3-d5ef0ba1e18f\",\n      \"originalCommand\": [\n        \"orca-ide\",\n        \"orchestration\",\n        \"send\",\n        \"--run\",\n        \"run_b7d6684b2cdd\",\n        \"--from\",\n        \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n        \"--to\",\n        \"dispatch:ctx_9e2dab15bdde\",\n        \"--subject\",\n        \"Exact prior design Doc hash recovered; original verdict full-report assessment proceeds\",\n        \"--type\",\n        \"status\",\n        \"--body\",\n        \"ActualbeforeDoc25820bytesSHA9d345 mechanicallyfromauthorcapturedexactpatch nowparentfullbytecopy .genie/wishes/open-intelligence-observatory/verification/group-7-prior-design-doc-before-actual-human-selection.txt SAMEhashverified, noMemoryguess. Youroriginalworker_done c09e payload received; parentfullreportread/hash/positiveassessment/releasebeforeACK proceeds separatelyfromcurrentqualityrebindctx9034. No originalcarddone yet.\",\n        \"--json\"\n      ]\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "87877a7f-245b-4886-a506-7ff22eece872",
+      "ok": false,
+      "error": {
+        "code": "dispatch_inactive",
+        "message": "Dispatch ctx_9e2dab15bdde is completed; its worker will never read that mailbox. Send to run:run_b7d6684b2cdd instead, or start a new Dispatch for follow-up work. Orchestration mutation request ID: e8dab671-dc7a-4a73-a2c3-d5ef0ba1e18f.",
+        "data": {
+          "orchestrationRequestId": "e8dab671-dc7a-4a73-a2c3-d5ef0ba1e18f",
+          "originalCommand": [
+            "orca-ide",
+            "orchestration",
+            "send",
+            "--run",
+            "run_b7d6684b2cdd",
+            "--from",
+            "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+            "--to",
+            "dispatch:ctx_9e2dab15bdde",
+            "--subject",
+            "Exact prior design Doc hash recovered; original verdict full-report assessment proceeds",
+            "--type",
+            "status",
+            "--body",
+            "ActualbeforeDoc25820bytesSHA9d345 mechanicallyfromauthorcapturedexactpatch nowparentfullbytecopy .genie/wishes/open-intelligence-observatory/verification/group-7-prior-design-doc-before-actual-human-selection.txt SAMEhashverified, noMemoryguess. Youroriginalworker_done c09e payload received; parentfullreportread/hash/positiveassessment/releasebeforeACK proceeds separatelyfromcurrentqualityrebindctx9034. No originalcarddone yet.",
+            "--json"
+          ]
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "no_source12_changes": true
+}

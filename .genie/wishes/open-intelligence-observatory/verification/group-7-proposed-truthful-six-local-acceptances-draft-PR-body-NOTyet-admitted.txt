@@ -1,0 +1,47 @@
+## Scope and verified state
+
+Tracks #1: five milestones, twenty original child issues, eighty acceptance criteria, and forty-one native dependencies. Dates and GitHub assignees remain unset.
+
+**Draft / IN_PROGRESS — six of twenty issues have local original acceptance and separate quality acceptance: #2, #3, #5, #6, #8, and #11. This is not whole-roadmap completion, M0 completion, a deployed investigation, CI acceptance, merge authorization, or SHIPPED.** The coordinator performs orchestration, evidence observation, and exact-path Git integration; workers author implementation.
+
+## Accepted checkpoints
+
+- **#2:** evidence, claim, provenance, and temporal contracts; opposing claims and concurrent investors remain distinct; observation/validity/publication/ingestion/computation clocks do not collapse.
+- **#3:** qualified licensed financial-original route, precise Microsoft/Amazon spans and retained CC0 originals; source rights and bounded acquisition are recorded, not internet-wide coverage.
+- **#5:** actual native Brain qualification with owner/denied roles, append-only conflicting records, exact spans, restart/recall/history and concurrency. The fourth authorized continuation is retained with earlier failures; no fifth qualifier. Document relationships are not financial-transaction proof.
+- **#6:** real dated frontier-economics pack and assessment, strongest counterevidence, explicit assumptions/invalidation conditions and inspectable precise revision. Missing financial quantities remain unknown.
+- **#8:** three structurally distinct explorers over the same real pack. Felipe chose guided questions first, followed by evidence and missing premises, retaining relationship/timeline lenses. Actual desktop/narrow-reader and keyboard-focus receipts cover all variants; the unchanged relationship prototype default is not a claim that production #9 is integrated.
+- **#11:** attention/activity/adoption/capability semantics and honest descriptive evaluator; coverage is not accuracy or truth probability.
+
+These are local issue acceptance checkpoints, not authority to close upstream issues. Complete original acceptance, independent quality, source provenance, and claim-span reports are retained under `.genie/wishes/open-intelligence-observatory/`.
+
+## Current exact visual checkpoint
+
+Accepted study commit: `f429a573ddc98ce8aef50520c2e420d1ea883f19`; preceding immutable-observer proof: `d213829dafa40148ef7f2e87476e53cb08e47d08`.
+
+The exact twelve-file product scope and all governing evidence are preserved across two bounded commits. No unaccepted read-model implementation, updated SDK disclosure, current private credential/account records, or native-extension proposal was swept into this publication. Original #8 full C1–C4 and separate quality committed-SHA attribution: **PENDING — do not publish this proposed body until both exact-SHA SHIP reports are received and their links substituted here.**
+
+Fresh clean `git archive` of the exact commit, without uncommitted #7 code/tests:
+
+```sh
+python3 -B -m unittest discover tests
+python3 -B eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json
+genie wish lint
+```
+
+Actual exits: 0 / 0 / 0; 43 tests, zero failures; evaluator configuration `e2e3fe2870`, method 3.0 descriptive; wish lint reports four files and zero broken links. Same-byte native UI evidence is reused explicitly; tests alone are not the UI proof. The live-worktree 45-test result includes temporary unaccepted #7 work and is not renamed this clean gate.
+
+The frozen study document’s final pending sentence records its authoring stage. Its subsequently complete original/quality acceptance and actual card completion are established by the committed coordinator acceptance checkpoint; history was not rewritten through another exhausted source-repair cycle.
+
+## Active native gates and remaining roadmap
+
+- **#7 remains unaccepted:** full-snapshot widening failed at a 6,241,702-byte ReplayManifest remember after 61,649 native calls; final Scene root was unattempted. The cause body was lost and the actual cause remains UNKNOWN. Source/receipt history, source clocks, and stopped owned persistence are preserved. Both independent diagnostic reviews found three distinct HIGH gaps. The owner authorized exactly one additional prospective repair/review cycle; prior exhaustion is retained, not reset. No diagnostic activation follows from a data-only proposal.
+- **#4 remains unaccepted:** the one actual zero-model startup failed before native metadata/catalog completion. Static full-Bookworm ELF availability is only a compatible-prerequisite candidate, not SDK/loader/startup proof. The owner approved only a reviewed native-extension architecture proposal for the missing completion, all-transport principal, atomic-stop, and total-spend contracts—not implementation or another runtime attempt.
+- **#9 and #13** depend on actual accepted #7; assistant/publication/collection/community/expansion/queue/CI work follows the unchanged native DAG. No dependency-ready label substitutes for acceptance.
+- Fresh product credential custody is qualified privately; it is not paid admission. Product model calls: **0**. Approved shared validation cap remains **USD20 total (DSH12 / Brain8)**; coding/storage/all-cost totals remain **UNKNOWN**. Enforced currency/usage reservations, attributable editorial/newcomer approval, recurring collection and deployment authority remain real gates.
+
+## Remote status and authority
+
+Conventional public fork: `automagik-genie/trending-research`, nondefault feature branch `wish/open-intelligence-observatory`, PR base `namastex888/trending-research:main`. Upstream issue closure/labels/merge permissions are not inferred from fork administration. This remains a draft; no `closes` trailers, date/assignee edits, merge, deployment, infrastructure purchase, recurring collector, or paid-model bypass.
+
+Before publication, the existing PR reported **no checks**, not a CI pass. Read exact new remote head and checks after the authorized fast-forward publication; preserve a truthful no-checks state if still absent. Full delivery requires all original child/milestone criteria, current integrated review/gates, actual CI, and deployed-revision acceptance.

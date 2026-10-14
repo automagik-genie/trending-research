@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-09T23:16:26.017027+00:00",
+  "nativeworker_done": "msg_441ed6f87eac",
+  "task": "task_b311e5f37ca0",
+  "dispatch": "ctx_3c879b311508",
+  "outcome": "succeeded meansfulloriginalC1C8 REVIEWdeliverableonly",
+  "actual_parent_FULLread": "functions.read exact1-122 PLUSonlyomittedlongline30:raw; no unstatedfooterassumptions",
+  "actual_report": {
+    "sha256": "35f912c97a544401ac827dcaa84e0acc2e4e0a2b1af4604de05d942dc4055d46",
+    "bytes": 26815,
+    "mode": "0600"
+  },
+  "actual_LF": 122,
+  "exact_parent_copy": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-full-C1-C8-independent-FIX-FIRST-full-report.txt",
+  "positive_scope_bounded_parent_acceptance": "ACCEPT completeindependentstatic fullfrozenC1C8 review ofwholeae20/ca1 helper/source/inner/outer/diff/current11+input19/historical0b0/old127499+3ae2. Full122LF+complete30 custodyline actualread. Exact216/-28/188 scopeSAFEobserver amendmentbeforeaccess, no sourceexecution/candidate/native/paid grants. F1samequalityH1 directlyviolatesfrozencompletefalseonANYunsupporteddrop; notnewcriteria/observedfailure/rootcauseguess. Fullfuture2ca vsactuald75/newWISHdc6/history3b2 distinguished.",
+  "candidate_verdict": "FIX-FIRST1CONFIRMEDHIGH F1 completeness; C4 dependent. Actual originalfullScope stillunaccepted.",
+  "both_reviewers_combined": "OriginalF1 isSAMEqualityH1 so union3distinctCONFIRMEDHIGH (not4): completeness H1/F1, outerprimarypublicationbeforeowncleanupH2, parserRecursionErrorreceivedhashH3. MediumstrictboolRPCid M3. OriginalC6positive inspectedgeneralcontrols doesNOTclosequalityspecificouter-before-cleanup publication hole; combinedmustsatisfyBOTH0HIGH, soqualificationBLOCKED. DoNOTignoreseparatequalityH2H3 orclaimC6fullsafe.",
+  "loops": "SourceB2used0effort0 unchanged; separatequality1/1EXHAUSTED (ae20completedonlycorrective+freshrechecks); noautomaticsecond/newsourcefixbudgetbackdoor/reset, no sourceedit/scaffolds/LAB/nativeactivation",
+  "rootScope": "original1955/7706/24235 retained/actual61649failureReplayManifest6.24MB/SceneRootunattempted/causeUNKNOWN/owned845stopretained. 45worktree/43cleanTree none provesdiagnostic. Whole20 sixacceptedunchanged",
+  "currentWISHdc6": "unchangedduringallreview phase; scope11d75/0b0frozen. FinalREVIEWnote canqualifyhistoryonlyafterbothsettled",
+  "actual_scoped_model_provider_native_container_tests_vectors_executions": 0,
+  "allcost": "UNKNOWN",
+  "parentpositivebefore_actual_nativeRELEASE_before_deliveryACK": true
+}

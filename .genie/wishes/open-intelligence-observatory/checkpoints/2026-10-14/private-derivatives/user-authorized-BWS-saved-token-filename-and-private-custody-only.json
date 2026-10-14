@@ -1,0 +1,27 @@
+{
+  "kind": "safe_portable_derivative_not_original",
+  "source_record": ".genie/wishes/open-intelligence-observatory/verification/user-authorized-BWS-saved-token-filename-and-private-custody-only.json",
+  "source_identity": {
+    "opaque_id": "private-original-06",
+    "content_digest": null,
+    "note": "Private original retained locally unchanged; no private-content hashes exported"
+  },
+  "omitted_fields": [
+    "path",
+    "user_lookup_authorization"
+  ],
+  "not_execution_authority": true,
+  "local_only_prerequisite": "Fresh authorized operator must separately qualify private product credential custody, account access, spend controls and runtime admission; do not replay this record.",
+  "safe_record": {
+    "path": "[OMITTED: private custody/account/identifier or source-content identity]",
+    "regular_file": true,
+    "is_symlink": false,
+    "owner_uid": 1001,
+    "current_uid": 1001,
+    "mode": "0600",
+    "size_in_valid_range": true,
+    "token_value_read_by_parent": false,
+    "token_hash_or_value_reported": false,
+    "user_lookup_authorization": "[OMITTED: private custody/account/identifier or source-content identity]"
+  }
+}

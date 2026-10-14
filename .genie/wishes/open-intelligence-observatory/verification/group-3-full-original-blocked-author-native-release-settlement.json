@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-09T21:50:06.231721+00:00",
+  "full_blocked_original_assessment": ".genie/wishes/open-intelligence-observatory/verification/group-3-full-original-blocked-author-handoff-parent-assessment-and-enforced-block.json",
+  "native_author_release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"5f1c3b82-85df-4945-be80-895cc070342f\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_a979a9a2c022\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"b2ec6d1f-0327-4037-bf00-a3c47e521c96\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "5f1c3b82-85df-4945-be80-895cc070342f",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_a979a9a2c022",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "b2ec6d1f-0327-4037-bf00-a3c47e521c96",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "enforced_block_before_release_exit": 0,
+  "block_stdout": "Blocked task t_muz1j2pr10192156 (in_progress, work).\n",
+  "block_stderr": "",
+  "Genie_claim_still_needs_supported_release_check": true,
+  "positive_bounded_fullread_release_before_delivery_ACK": true,
+  "carddone": false,
+  "original4_accepted": false
+}

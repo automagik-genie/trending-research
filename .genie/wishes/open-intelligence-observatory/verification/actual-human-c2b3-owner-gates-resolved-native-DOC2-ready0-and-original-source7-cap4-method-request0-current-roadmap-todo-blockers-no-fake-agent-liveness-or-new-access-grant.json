@@ -1,0 +1,99 @@
+{
+  "at": "2026-10-10T10:43:14.462540+00:00",
+  "actualAuthority": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-prospective-cap4-ONE-additional-cycle-and-native-DSH-DESIGN-only-final-repair2-human-disagreement-resolution-authority.json",
+    "sha256": "c2b3131dfa905687c8538d9d86b391492a6a0d386db499c04cf7cc1d29e5dad1",
+    "bytes": 4578,
+    "lf": 37,
+    "mode": "0600"
+  },
+  "actualDocReady": {
+    "runId": "run_b7d6684b2cdd",
+    "taskId": "task_aed254af46b0",
+    "dispatchId": "ctx_4fd4f94db7e7",
+    "state": "ready",
+    "stage": "input_accepted",
+    "turnStart": "unsupported",
+    "setup": {
+      "requested": "not_applicable",
+      "effective": "not_applicable",
+      "source": "existing_worktree",
+      "hookFound": false,
+      "startupPolicy": "start-immediately",
+      "state": "not_applicable"
+    },
+    "launch": {
+      "requested": {
+        "agent": "omp",
+        "model": null,
+        "effort": null
+      },
+      "effective": {
+        "agent": "omp",
+        "model": null,
+        "effort": null
+      }
+    },
+    "mode": {
+      "mode": "terminal",
+      "preferred": "terminal",
+      "reason": "user_default",
+      "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+    },
+    "timeoutMs": 60000,
+    "effects": [
+      {
+        "kind": "worktree",
+        "action": "reused",
+        "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+      },
+      {
+        "kind": "setup",
+        "action": "not_applicable",
+        "state": "not_applicable"
+      },
+      {
+        "kind": "terminal",
+        "role": "agent",
+        "action": "created",
+        "id": "term_81a23e17-cfec-4eda-9d6b-36aebf019e2c",
+        "surface": "visible"
+      },
+      {
+        "kind": "dispatch_input",
+        "role": "agent",
+        "id": "term_81a23e17-cfec-4eda-9d6b-36aebf019e2c",
+        "state": "accepted"
+      }
+    ],
+    "prompt": {
+      "requestId": "73b548a7-00e0-4469-bf77-54c6fe04f731",
+      "stages": [
+        "input_accepted"
+      ],
+      "provider": "unsupported",
+      "observation": "unsupported",
+      "processIncarnation": "3f2437c2-8afb-4dcf-8432-e85a1b4f5a0b",
+      "generation": 15,
+      "baselineWorkingSequence": 0,
+      "baselineExplicitWorkingStartedAt": null,
+      "baselinePermissionSequence": 0
+    },
+    "residualResources": [],
+    "mutation": {
+      "requestId": "73b548a7-00e0-4469-bf77-54c6fe04f731",
+      "replayed": false
+    }
+  },
+  "updatedOriginalBlockers": [
+    "#4 \u2014 Qualify a pinned DSH assistant integration and session boundary.",
+    "Obtain an independently reviewed bounded native DSH extension architecture, preserving every original acceptance criterion and withholding implementation/runtime authority.",
+    "Clear the confirmed native Cordis pre-swallow cleanup-result architecture gap through bounded design-only repair and two fresh whole-scope independent reviews.",
+    "#7 \u2014 Preserve source revisions and implement the investigation read model.",
+    "Clear independently confirmed read-model diagnostic deadline, error-abort, native-authority and protected-preflight gaps, and qualify exact safe instrumentation before activation.",
+    "#9 \u2014 Ship the relationship lens, timeline and shared evidence inspector."
+  ],
+  "actualArchitectureCurrentReason": "Actualhuman c2b3131dfa905687c8538d9d86b391492a6a0d386db499c04cf7cc1d29e5dad1 resolves sameb2 oldoriginalSHIP0/qualityFIXFIRSTONEQH1 by addressing privateiterator/toolcallbackprecontainment ownership. FinalDESIGN-onlyrepair2/B2 admitted, usedbefore1 retained; currentnativeDocTaskaed254af46b0/ctx4fd4f94db7e7/term81a23e17 actualstart0ready/inputaccepted configuredOMPnoescalation on same475Run. ExactexistingDRAFTb491/DESIGN4e895 +22 proposedinputs readinesse6METADATAONLY and R35+SSEbody source-intelligenceauthor notparent; NOartifact/claim/docswrite permission UNTILwholebeforeAccessmethod/fullparentintake/unblock/freshclaim. AuxstillunclaimedHOLD old1oneevent93/full70handoff and oldbothcomplete119118actualDone98658089/releases0/whole878ACK0 retained. AllA1A10C1C4/fourcontracts/14classes/sixfuturebounded25/2000groups unchanged, bothfreshwholeoriginalandquality mandatory notoldapproval/newsourceauthority. WRS90PROPOSED/noncrystallized/PENDING/INDEXSimmering. ALLfouroriginalruntimecriteriaUNaccepted; nativeSDK/SQLite/productruntime/paid NEVERgranted. StockDSH2/2exhausted ONEABIexit1causeUNKNOWN/rawlost/globalUNAVAILABLE no3rd Brain4/4no5th; modelgeneration0 USD20DSH12Brain8codingstorageallcostUNKNOWN. Source7independentactualhuman totalcap4used3 remainingONE beforepreparationMethod parentgrant, no artificial#4 prerequisite9. All20/80/41/5sixlocallyacceptedf429draftPR22NoCIreported datesassignees untouched.",
+  "actualReadModelCurrentReason": "Actualhuman c2b3 authority totalprospectivecap4/used3/remainingONE, old1/1+2/2+3/3 retained exhausted notreset SourceB2used0 separate. ONEchangedprospectiveDATA-only cycle4 plus TWOnewfulloriginalC1-C8 andseparateprivacytransportdeadlinequality reviews. ExistingSOLEctx0c/task2bb sameclaim engineer: currentworker-show PTYlive exactWorker but agentfeedmissing_statusUNVERIFIABLE, no proofexit/nodupe/stop/retry. ActualWHOLEbothC3reports+finalcycle readACK940 consumed; newowner wholebeforeANYnewaccessmethod request0 msg0e999 andcarddispatch0; onlyskills/currentcontextallowed, NOTnewartifactread/preparation yet. Await actualWHOLEmethodreadACK/fullparentpositivegrant. FullC3original6277 141LF2HIGH +quality07da149LF3HIGH conservativeunionFOURfamilies allretained humanchoseaddressall: strictwholeJSONdupes/nonfinite, supportedUTF8, capturedprimaryharddeadlinepublication, orderedearliestfailureidentity. BotholdreviewDone/actualreleases0afterDoneBeforeACK complete. AllFOURoriginalsnapshotcriteriaUNaccepted/currentD75_0b0/11sourceguards/all34/2absences/fiveclocks/WISH260f/stopped845/failed61649b41f6rawCauseUNKNOWN/6241702manifestfailed/31MBSceneUNattempted unchanged. Source/application/vector-smoke/nativePG58calls/getremember300s/Brain5th/DSHstock3rd/model/paid/Git/cardreport/Done withheld until separate explicitfuturegates; no baselinefixtures/staticprotocol asacceptance. Source4finalDESIGN2only independent noartificialprereq9. All20/80/41/5sixlocallyacceptedf429draftPR22NoCIreported datesassignees untouched USD20model0allcostUNKNOWN.",
+  "nuance": "worker-show statuslive is ONLY PTY; agentstatusmissing remainsUNVERIFIABLE untilactualmethodQuestion/HB readACK. NewDocready/inputaccepted notalreadyanalyzed. No code/Source guard/model paid grants assumed."
+}

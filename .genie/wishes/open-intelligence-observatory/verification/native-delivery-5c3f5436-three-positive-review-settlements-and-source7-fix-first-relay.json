@@ -1,0 +1,67 @@
+{
+  "recorded_at": "2026-10-09T21:22:49.901837+00:00",
+  "delivery": "delivery_5c3f5436b31a",
+  "three_full_standalone_reports_read_and_verified": true,
+  "settlements": [
+    {
+      "dispatch": "ctx_9e2dab15bdde",
+      "verdict": "SHIP ORIGINAL8 C1-C4 allPASS, current12 3443/source4 28c1; qualityrebindstillpending, no originalcarddone yet",
+      "report_sha256": "c09eaf0d1a470ecf474d10ce1a0dc511b79a1303ab149c3ccc6e3293421c6605",
+      "release_exit": 0,
+      "settlement_path": ".genie/wishes/open-intelligence-observatory/verification/final-human-docs-prospective-ctx_9e2dab15bdde-review-accepted-settlement.json"
+    },
+    {
+      "dispatch": "ctx_1055a49c08fd",
+      "verdict": "FIX-FIRST confirmed4HIGH H1-H4 plusP1 unresolvedexacthelper/receipt prerequisite; oldclaimednewlinebug independentlyREJECTED; NOcode/runtimegate",
+      "report_sha256": "b3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc",
+      "release_exit": 0,
+      "settlement_path": ".genie/wishes/open-intelligence-observatory/verification/final-human-docs-prospective-ctx_1055a49c08fd-review-accepted-settlement.json"
+    },
+    {
+      "dispatch": "ctx_096d66f374a8",
+      "verdict": "QUALIFIEDDISCLOSURESHIP0HIGH only3paths; Original4 C1-C3/fullnativeBLOCKED, C4documentaryonly, no originalcarddone",
+      "report_sha256": "6abe71527643ad650d9aacbb90f7c05c1161ecb03ed56d4ec4d8f12700258984",
+      "release_exit": 0,
+      "settlement_path": ".genie/wishes/open-intelligence-observatory/verification/final-human-docs-prospective-ctx_096d66f374a8-review-accepted-settlement.json"
+    }
+  ],
+  "prior_exact_doc_quality_reply_exit": 0,
+  "source7_confirmed_findings_relay": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"08c79e6f-d5aa-43a7-ac66-c2a197abd653\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_e3e22f9d41f2\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_0c242e837d41\",\n      \"subject\": \"Independent prospective FIX-FIRST findings; corrected data-only final-byte gate required\",\n      \"body\": \"Independentexactplanreviewcompleteb3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc (full154lines, parentpositiveassessment/releasedreviewer, no runtime). Read .genie/wishes/open-intelligence-observatory/verification/group-6-prospective-diagnostic-repair-1-independent-review.txt; fourconfirmedHIGH: H1 concreteoverall300sdeadline coversallblockingI/O, cleanupreserved/unconditionalexactstop afterANYstartattempt incltimeout+boundedinspect/custodycrash; H2 differentactualerrorSHA mustabortnativephase immediately noafter28getters; H3 requiredactualwritebrainID/memoryID/revision/action authority validatedbeforeconditionalgetter, no forcedidentity; H4 exactprotected26unique +roots200201/baselinesource/hash/modes beforeactivation andENFORCE58capbeforeeachrequest notafter. P1 exactboundedredactor/error+JSONRPC/isError/nativeidentityreceipt/handshakepin instrumentation bytesneeded forindependentreview; describedhelpernotproof. IMPORTANTauthornewlinehypothesisREJECTED byindependentASTofexact6149; actualPythonstrings containLF, doNOTmakewrongserializationfixmerelyfromselfclaim. Oldplan844 preservednotexecutableapproval. PrepareONEcompletecorrectedprospectiveDATA set only with exactinner/outer/helperinstrumentation source/hashes, same2permanentpaths+45-60lines/same11 estimate1700<=2000; SourceB2used0effort0 no source/code/runtime/PG/paging/newclock/reimport/model untilfinalindependent+parentgate. No finalreport/carddone.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T21:22:49Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"e5d4db25-bb31-49f8-9abf-b243ffe29be9\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "08c79e6f-d5aa-43a7-ac66-c2a197abd653",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_e3e22f9d41f2",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+          "to_handle": "dispatch:ctx_0c242e837d41",
+          "subject": "Independent prospective FIX-FIRST findings; corrected data-only final-byte gate required",
+          "body": "Independentexactplanreviewcompleteb3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc (full154lines, parentpositiveassessment/releasedreviewer, no runtime). Read .genie/wishes/open-intelligence-observatory/verification/group-6-prospective-diagnostic-repair-1-independent-review.txt; fourconfirmedHIGH: H1 concreteoverall300sdeadline coversallblockingI/O, cleanupreserved/unconditionalexactstop afterANYstartattempt incltimeout+boundedinspect/custodycrash; H2 differentactualerrorSHA mustabortnativephase immediately noafter28getters; H3 requiredactualwritebrainID/memoryID/revision/action authority validatedbeforeconditionalgetter, no forcedidentity; H4 exactprotected26unique +roots200201/baselinesource/hash/modes beforeactivation andENFORCE58capbeforeeachrequest notafter. P1 exactboundedredactor/error+JSONRPC/isError/nativeidentityreceipt/handshakepin instrumentation bytesneeded forindependentreview; describedhelpernotproof. IMPORTANTauthornewlinehypothesisREJECTED byindependentASTofexact6149; actualPythonstrings containLF, doNOTmakewrongserializationfixmerelyfromselfclaim. Oldplan844 preservednotexecutableapproval. PrepareONEcompletecorrectedprospectiveDATA set only with exactinner/outer/helperinstrumentation source/hashes, same2permanentpaths+45-60lines/same11 estimate1700<=2000; SourceB2used0effort0 no source/code/runtime/PG/paging/newclock/reimport/model untilfinalindependent+parentgate. No finalreport/carddone.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": null,
+          "payload": null,
+          "created_at": "2026-10-09T21:22:49Z",
+          "delivered_at": null
+        },
+        "mutation": {
+          "requestId": "e5d4db25-bb31-49f8-9abf-b243ffe29be9",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "source7_actualCause": "UNKNOWN ReplayManifest6.24MB notroot",
+  "Original8_quality_rebind": "ctx9034 awaitsnewbytecomparisonfinish",
+  "Original4": "BLOCKED no nativecompletion/model/credentialgate",
+  "source_parent_code_edits": false,
+  "no_delivery_ACK_yet": true
+}

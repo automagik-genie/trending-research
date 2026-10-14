@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-10-09T19:10:35.708208+00:00",
+  "author": "ctx_a979a9a2c022",
+  "task": "task_0a936d713c67",
+  "status": "ADMITTED_OWN_FAILED_DIAGNOSTIC_DISPOSITION_ONLY_DOCS_STILL_HELD",
+  "review_report_sha256": "636bf654d74eb36c4635d11b3250fe8d34c24b751c28312245094e8eb29d2219",
+  "qualified_verdict": "SHIP attribution/custody only; fullS1-S4/originalC1-C3BLOCKED",
+  "actual_once_failure": "exit1 DOCKER_EXIT_BEFORE_METADATA + ABI_LOAD_FAILED122 classified bytes; exact missing library UNKNOWN",
+  "safe_classified_custody_transferred": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-failed-once-classified-metadata.json",
+    "sha256": "7a830a2aae61a3a74b0b9c0815f388fecc220a4a482c3d37123f383babf9f7ed",
+    "native_values_copied": false
+  },
+  "authorization": [
+    "Verify unchanged frozen four hashes and exact classified metadata SHA by pathname metadata only; parent safely preserved classified413bytes7a830 and fullreview636bf, not secret native values.",
+    "Remove only YOUR authored failed-once throwaway integrations/dsh/qualification/policy.mjs and probe.mjs; no retained SDK integration or new execution permission. Cleanup is not prospective code repair3.",
+    "Dispose only YOUR exact fresh-owned sandbox-a after nonsymlink/pathidentity check and known owned-container removal. No private content enumeration/read/copy or foreign state/container cleanup. B never created; do not create/delete any unknown B.",
+    "After actual A root absent and B never exists, remove ONLY your two appended root .gitignore sandbox-a/b lines preserving all original14lines, all user/index/config bytes. If custody remains retain precise rules and report actual blocker.",
+    "Update ONLY sandbox-readiness.json historical actual disposition/removed paths/hashes. Preserve once exit1/2.17s/ABI_LOAD_FAILED122classifiedbytes, exact cause UNKNOWN, null metadata/catalog/innerinspection/completion/original criteria and zero model/paid product calls. No automatic retry, third prospective repair, reset or feature claim.",
+    "HOLD docs/integrations/dsh.md ec056 and cordis.md ce917 until explicit parent release after issue7 freeze. Do not publish broken references or original/card completion; later docs and current aggregate still required.",
+    "Send truthful cleanup checkpoint exact changed paths/hashes and disposed owned path metadata, then heartbeat/checkwait. No SDK execution, ABI retry, container/image pull/install/network/provider/key/environment/grant/schema/operator/foreign service reads; no tests/build/aggregate while issue7 writes."
+  ]
+}

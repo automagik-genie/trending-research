@@ -1,0 +1,104 @@
+{
+  "at": "2026-10-10T07:14:33.559963+00:00",
+  "result": "COMPLETE actualownerONEthird prospectiveDATA+bothfullindependentreview cycle. FIXFIRSTconservativeFOURHIGHfamilies; NOTSource7fourcriterionacceptance. Allsource/runtimeactivationwithheld",
+  "ownerGate": "e0b total3/used2beforecurrent ->3/3EXHAUSTED. Old1/1and2/2EXHAUSTED preserved; NOautomatic4th/Data7/reset/SourceB2used0config2effort0backdoor",
+  "originalReport": {
+    "sha256": "6277bb7b5289dc1bd0d4f562106728eb40d66494cad7d5d48313ff2a511c6aa7",
+    "bytes": 37600,
+    "lf": 141,
+    "mode": "0600",
+    "verdict": "FIXFIRST2HIGH",
+    "actualNativeDone": "msg12f111task55dcctx43ad",
+    "actualRelease0": "storedgroup-6-owner-cap3-corrective6-original-full-two-HIGH-review-ACTUAL-release-afterDone-beforeACK-quality-report-cap-45000-and-authorHOLD.json before b956 actualACK",
+    "wholeArchive": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-full-original-C1-C8-independent-two-HIGH-FIX-FIRST-report.txt"
+  },
+  "separateQualityReport": {
+    "actualMetadata": {
+      "path": "/tmp/oi7-corrective6-separate-full-privacy-transport-deadline-quality-review.txt",
+      "bytes": 43431,
+      "lf": 149,
+      "sha256": "07da62a7ea46b0adc5ce7e0eafd93d31ad408c92efa21a1ce52e4f39068186f3",
+      "mode": "0o600"
+    },
+    "wholeArchive": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-separate-full-privacy-transport-deadline-quality-three-HIGH-FIX-FIRST-report.txt",
+    "verdict": "FIXFIRST3HIGH",
+    "positiveWholeReportIntakeAndBeforeDoneActualReply": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-quality-FULL149LF-three-HIGH-and-original-WHOLE141LF-conservative-four-family-UNION-positive-review-intake-BEFORE-quality-Done.json",
+    "actualNativeDone": {
+      "id": "msg_d9144a2f2800",
+      "run_id": "run_b7d6684b2cdd",
+      "delivery_contract": "current_delivery",
+      "from_handle": "term_77beb0ed-5e76-4c8c-84f6-eef01f57013a",
+      "to_handle": "run:run_b7d6684b2cdd",
+      "subject": "Complete corrective6 review FIX-FIRST 3 HIGH",
+      "body": "I completed the independently authorized whole corrective6 static review across all C1-C8, four original feature criteria, 34 guards, seven fully decoded fixture groups, rights originals and complete historical evidence, and verified the sole report at 43431 UTF8 bytes, 149 LF, mode 0600 and SHA256 07da62a7ea46b0adc5ce7e0eafd93d31ad408c92efa21a1ce52e4f39068186f3. I found three confirmed source-traced HIGH defects in duplicate/nonfinite JSON completeness admission, cutoff-time publication of already captured primary evidence, and consumer reader-end/overflow priority losing earlier queued failure identity; the parent actually fully read and positively accepted this complete FIX-FIRST review deliverable without feature or source acceptance. The author remains LIVE HOLD with cap3 exhausted and all four original criteria unaccepted, no candidate or native execution was performed, and parent actual release must follow this worker_done before delivery acknowledgment with any further repair or activation requiring separate owner disposition.",
+      "type": "worker_done",
+      "priority": "normal",
+      "thread_id": null,
+      "payload": "{\"taskId\":\"task_dca18d58f43b\",\"dispatchId\":\"ctx_f40ff8d2b067\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi7-corrective6-separate-full-privacy-transport-deadline-quality-review.txt\"],\"reportPath\":\"/tmp/oi7-corrective6-separate-full-privacy-transport-deadline-quality-review.txt\"}",
+      "created_at": "2026-10-10T07:06:36Z",
+      "delivered_at": null
+    },
+    "actualReleaseAfterDoneBeforeCurrentDelivery055ACK": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"c3b54852-bc85-4a9b-98ca-0a9d7168cd50\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_f40ff8d2b067\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"6b01a9a4-2e8d-4641-9172-7624deafa243\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "c3b54852-bc85-4a9b-98ca-0a9d7168cd50",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_f40ff8d2b067",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "terminal",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "6b01a9a4-2e8d-4641-9172-7624deafa243",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+        }
+      }
+    }
+  },
+  "bothFullReportsActualRead": "originalRAW1-75/76-142141LF plusqualityRAW1-50/51-100/101-150149LF withstrictmeta+archiveSHA.Nogenericverdict/source-marker/helperonlypartialacceptance",
+  "remainingFOUR_HIGHfamilies": [
+    {
+      "id": "R1",
+      "class": "wholeJSONduplicate/nonfinitecompleteness",
+      "sources": [
+        "originalG1",
+        "qualityH-A"
+      ]
+    },
+    {
+      "id": "R2",
+      "class": "nativeUTF8unsupportedUTF16/32byteautodetect",
+      "sources": [
+        "originalG2"
+      ]
+    },
+    {
+      "id": "R3",
+      "class": "alreadycapturedprimarysoft215/child210publicationdeadline",
+      "sources": [
+        "qualityH-B"
+      ],
+      "preserveDisagreement": "originalC6genericstaticpass/oldcommunicateclosure cannotwaivespecificcounterinterleavings"
+    },
+    {
+      "id": "R4",
+      "class": "firstfailurewireidentityreader-endEOF/terminaloverflowpriority",
+      "sources": [
+        "qualityH-C"
+      ],
+      "preserveDisagreement": "originalqueue/localcapturegenericclosure notexternalconsumerfirstfailureproof"
+    }
+  ],
+  "futureDATAUntouched": "b12whole121984B545LF/cdbfP1/61fP2/5a555P3/11bb308TRUEins34del274net/full7carrier ca2828 stillfutureDATA, notapplied/run/materialized. CurrentD75/0b0/34guards/twoabsences/845stopped-custody/fiveclocks/WISH260f source4DRAFTb491/DESIGN4e895 frozen. Original61649calls/b41f6LOSTcauseUNKNOWN6241702manifestfailure31723466Sceneunattempted unchanged",
+  "continuation": "Originalengineerctx0c LiveHOLD actualreadACK444; readbothentirecompletedreports+finalparentsettlement ONLYnowgrantreadonly, no source/materialization/correctiveprep/Code/smoke/native/PG/getremember/model/paid/Git/Card/Done.Nextactualowner disposition tracked before furthercap orimplementation.Showbothfullreportsriskwithoutsourceediting.Semanticsreview delegatedSource4new2fullnativeArchitecturelive readonlyimmutableR17plus18/15+SSEpendingquality exactscope",
+  "roadmap": "all20/80/41/five milestones dateassigneesunset/sixlocalaccepted2,3,5,6,8,11 maintained f429DraftPR22NoCI. Root#7allfourfullsnapshotcriteria UNaccepted; no fakepartialpack acceptance.Noartificial4prereq9.SharedUSD20DSH12Brain8 productModel0 codingstorageallcostUNKNOWN.Brain4/4no5thDSHstock2/2no3rd."
+}

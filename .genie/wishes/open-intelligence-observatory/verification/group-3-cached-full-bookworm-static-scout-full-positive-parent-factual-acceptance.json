@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-09T23:19:31.103461+00:00",
+  "task": "task_5a787479cc3a",
+  "dispatch": "ctx_528608c658a5",
+  "native_ready_question": "msg_f0685374a0ba",
+  "parent_full_read": "functions.read exact1-88 noomittedreportlines",
+  "whole_report": {
+    "sha256": "6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2",
+    "bytes": 20258,
+    "mode": "0600"
+  },
+  "actual_LF": 88,
+  "actual_wc_exit": 0,
+  "sameexact_parentcopy": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-complete-static-ELF-availability-closure-factual-scout.txt",
+  "preinventory_actual_methodACK": "msg_482b56cb25ba",
+  "positive_scopebounded_parent_acceptance": "ACCEPT completecachedPUBLICfullbookworm363 staticELFavailabilityclosure. Exactimageindex/selectedAMD64manifest17b7+8compresseduncompressedlayers+33511finalentries/whiteouts/links+8SONAMEproviders+interpreter/arch/SHA/version/strongexports/transitiveNeeded allstaticAvailability; glibclibccompatibility87symbols explicitlynotfalseNamedProviderexports. libatomic107a30776B layer3 supportsLIBATOMIC_1.0/__atomic_compare_exchange; no17IFUNC/relocation/ldcache/runtime/SDK/nativeappqualification. ActualboundedimageSave14.860sexit0/readelf18process0 andownscratchcleanup only reportedwithidentity/UID/mode/nootherdata.",
+  "wording_interpretation": "Report80 originalfour meansfouroriginalcriteria; actualprospectivebudget2/2 and actualONEstartup failure per78, notfourattempts. Preservecountclarity inparentnotes.",
+  "historical_cause": "UNKNOWN; necessarycompatibleELFavailability prerequisite notcausalrepairproof/run success",
+  "factual_compatible_candidate_immutable": "node22bookworm363e1587494626837fa7f9a23bdb453d13b0ff3c67c705c2805cfc69c2d2fad7, selectedAMD64manifest17b7fd60fd812617654c64b95f9b2dde94f103313073b672bc40fdad6dccbaa2. No moreimages inspected/newruntime/constructor/SDK/install/pull orsource edits",
+  "full_contract_still_needed": "completeindependentlauncherapp+proxyoutcomes, actualdistinctalltransportprincipals, durableatomicstop/quiescence, allpaidtotaladmission, installedSDKdependency/policy+actualscene/cancel/reconnect fixtures",
+  "model_calls": 0,
+  "coding_storage_all_cost": "UNKNOWN",
+  "source2of2_NOreset_or_runtime3rd_grant": true,
+  "original4_CARD_UNCLAIMED_BLOCKED_NOTdone_whole20unchanged": true,
+  "lifecycle": "ParentpositiveassessmentcompleteNOW, then YOUworker_done AFTERownreadback/metas, BEFOREactualparentrelease. ParentreleasebeforeDeliveryACK; notrelease-before-workerDone. No actualreleaseyet"
+}

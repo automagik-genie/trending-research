@@ -1,0 +1,131 @@
+{
+  "recorded_at": "2026-10-09T21:10:26.538136+00:00",
+  "blind_ack_message": "msg_0975b5c4ebe8",
+  "dispatch": "ctx_9e2dab15bdde",
+  "kind": "ORIGINAL_UI_C1_C4",
+  "independent_blind_method_accepted": true,
+  "artifacts": {
+    "wish": {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad"
+    },
+    "combined_freeze": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-UI-human-DSH-docs-source7-temporary-freeze.json",
+      "sha256": "8271f2f43d09bcaf0e657d9c2a7f87e7795ac270a805c3086115b23958c47011"
+    },
+    "current_aggregate": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-final-human-UI-DSH-disclosure-source7-temporary-aggregate.json",
+      "sha256": "aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c",
+      "actual_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "actual_test_count": 45,
+      "runner_owner": "parent coordinator",
+      "bounds": "Currentlocaltemporaryfreeze only, notremoteCI/deploy/DSHoriginal/native7completion"
+    },
+    "runtime_permission": "NONE builds/tests/browser/server/containers/network/provider/secret/Git prohibited",
+    "full_report_protocol": "Standalonefull/tmpreport; digest/bytes/lines/nativeworker_doneactualreviewwork; parentpositiveassessment/fullread/release beforeinboxACK, nooriginalcardmutation",
+    "current_UI_freeze": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-actual-human-doc-only-final-author-freeze.json",
+      "sha256": "c84f63ed1c454dd83967ff3f7e6b8f44ef6e73335a9fa15990ca98c127b5e69f"
+    },
+    "candidate12_sha256": "3443be140200d08355cc21e1a11bcfb29d18cc83a0c519e306d913970a0a27ae",
+    "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+    "candidate12_manifest": {
+      "web/prototypes/explorer.css": {
+        "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad",
+        "bytes": 5754,
+        "mode": "0600"
+      },
+      "web/prototypes/explorer.js": {
+        "sha256": "7f39db9ef42fae3b728a57374e11dd28e8d3045dad8a432a686013eeb66deb48",
+        "bytes": 23172,
+        "mode": "0600"
+      },
+      "web/prototypes/index.html": {
+        "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+        "bytes": 2403,
+        "mode": "0600"
+      },
+      "web/prototypes/preview.py": {
+        "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+        "bytes": 3934,
+        "mode": "0600"
+      },
+      "docs/design/frontier-economics.md": {
+        "sha256": "78a8b419e16b3439dd7f564848b12a60635ba342f92cf56f270e6b47f9aa6c7e",
+        "bytes": 27702,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/smoke.json": {
+        "sha256": "8038617b2783f0fbb599901598a7ca0820b49fcfbe517be0209dde03e02fbefc",
+        "bytes": 277492,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/relationship-wide.png": {
+        "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31",
+        "bytes": 114519,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/relationship-narrow.png": {
+        "sha256": "f59d738f1312765a3ed3a73ec6773536f2d17ab156a7ac49b55c55391884d5c6",
+        "bytes": 63444,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/timeline-wide.png": {
+        "sha256": "af4eff4701eaaa11745be18775057cba8ed6e9756827526b9354101d91d36321",
+        "bytes": 138665,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/timeline-narrow.png": {
+        "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4",
+        "bytes": 79872,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/questions-wide.png": {
+        "sha256": "9bac25b986e00ccddf22a53d82a3d3307db4127ef355d97af076d1fcc31124f7",
+        "bytes": 134452,
+        "mode": "0600"
+      },
+      "web/prototypes/proof/questions-narrow.png": {
+        "sha256": "1815a7e40fb2d1bc01d1fc6c7b51753e7e680b439e9ea5025d0ab5790e9d34d3",
+        "bytes": 77091,
+        "mode": "0600"
+      }
+    },
+    "actual_human_receipt": {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-7-felipe-direct-user-selection.json",
+      "sha256": "b65454df0354a8ece8e421825c7d3dee5273482ff87a6a9eecdc5c8e819e80cf"
+    },
+    "old_UI_freeze": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-final-guided-focus-author-freeze-2.json",
+      "sha256": "122a8da05e91ecb3d938d1b49988cea1d8d2a6fa3b9a66b39062ed882d734960"
+    },
+    "old_UI_independent_quality": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-final-guided-focus-independent-quality-2.txt",
+      "sha256": "9d369bab178f010641e3b3a7d1de5d796793893d93b0a9f51f67a57fc213dcd7"
+    },
+    "old_UI_quality_bounds": "Exactold12 00cf only; current4sourcesunchanged, Doc5lines changed, doNOTlaunderoldqualityascurrent12. ObserveeveryPNG independently.",
+    "actual_parent_focus14": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-parent-final-native-focus-proof.json",
+      "sha256": "201409891910145bcf3d604d2bd73c61dd9c370cf9044e3134900301c1a18e09"
+    },
+    "actual_parent_focus_and_reader6": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-parent-final-focus-and-six-reader-proof.json",
+      "sha256": "0f8bfcd9bc928a1c3321dd8b5527c739948a3b26c90bbd827f375f304ce994b2"
+    },
+    "actual_runtime_owner": "Parentterm_d46a2b58 original8-parent-final-guided-focus CLOSEDmanagedtab; Chrome153/privateprofile CSS1280x900 and390x844 DPR1.25. All4question/3stepEnter+Tab/all3lenses counterassessment001/source001/overview. GuidanceStep3counterclose visibleoverviewSECTIONfallback, notallsamesourcebutton.",
+    "actual_UI_pack": "FullDoc+smoke referenceknownacceptedrealpack/assessment filepaths immutablee452bf54.../1868924a... withinproof. No manufacturedrelationship/datedfinancialinstant.",
+    "original_issue_URL": "https://github.com/namastex888/trending-research/issues/8",
+    "full_original_criteria": [
+      "Interactionstructure-notpalette variation",
+      "Everyvariant sourcereader+strongestcounter",
+      "ChosenactualFelipe directionresponsive/a11y expectationsandobservabletasks",
+      "Missing/syntheticfinancialfacts notshownasreal"
+    ],
+    "author_repair_caps": "source2/2 separatequality1/1 effort0 unchanged; nopatchpermission"
+  },
+  "explicit_permission": "READONLY_ARTIFACT_ACCESS_ONLY_NO_CODE_OR_RUNTIME"
+}

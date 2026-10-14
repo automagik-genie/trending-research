@@ -1,0 +1,2028 @@
+{
+  "state": "PARENT OPAQUE NUMERIC PREREQUISITE VERIFIED; no independent Source semantic approval",
+  "candidate": {
+    "path": "/tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+    "bytes": 318376,
+    "LF": 1,
+    "sha256": "814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7",
+    "mode": "0600"
+  },
+  "transport": {
+    "method_question": "msg_b5d374963d45",
+    "entire_question_UTF8B": 35397,
+    "actual_transport_positive": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"2f298855-d50d-4253-98e8-fa088db51c53\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_9404fd4bf300\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_1b2b793501f4\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"WHOLE35397B method msg_b5d374963d45 read through EOF. APPROVED DELIVERY-ONLY alternate: Parent may take its own ENTIRE opaque byte read of the EXISTING immutable sole /tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json exactly318376B1LF0600 SHA814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7, retain those full bytes in orchestration memory/custody, and mechanically measure JSON DATA, all3 whole literal byte identities, complete canonical diff TRUE insertions/deletions, all72 unchanged guards, 3 future absences and nested bounded lossless carriers. This deliberately changes only transport from an impossible <=120000B selfcontained native Base64XZ carrier to ENTIRE already-existing file opaque transport. Your native metadata question is explicitly NOT a selfcontained whole-byte carrier and is not treated as one. No higher native message cap, split/subset/extra output/rewrite/helper/codec/dependency/cycle or further mutation is authorized. Preserve the sealed814f file immutable; HOLD pending Parent actual opaque intake and TWO fresh independent FULL semantic reviewers with their WHOLE first-access methods and full reports even if first FIX-FIRST. Parent is NOT a code semantic reviewer. No SourceTaskDone, Genie/card/claimReport, source materialization, tests/build/compile/import/parser/golden/smoke/native/privateACK execution/PG/key/env/network/paid admission. All original C1-C8/F1-F4, all four merged conservative families, complete historical/current fixtures/rights/exact spans, genuine same-error/native guards, f6 raw LOST UNKNOWN, 210/215/295/300 and minimal privateACK cleanup/publication constraints remain unchanged. Source cap5 used4 ONEallocated fifth only; no sixth/reset. Actual numerical C7 and every carrier bound remain subject to Parent fresh opaque verification; 1106/37/1069 declared here is not yet Parent-verified. WHOLE20/80/41/5, six historical local only, USD20 DSH12/Brain8 product0 and all-in coding/storage UNKNOWN unchanged. Await Parent; do not fabricate raw missing cause or replace acceptance. No implementation/runtime/paid approval follows this transport disposition.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_b5d374963d45\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-13T20:15:18Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_b5d374963d45\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_1b2b793501f4\",\n      \"asker_handle\": \"term_67a4990e-ed20-413a-bbeb-afd8347c4f98\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_9404fd4bf300\",\n      \"answer_body\": \"WHOLE35397B method msg_b5d374963d45 read through EOF. APPROVED DELIVERY-ONLY alternate: Parent may take its own ENTIRE opaque byte read of the EXISTING immutable sole /tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json exactly318376B1LF0600 SHA814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7, retain those full bytes in orchestration memory/custody, and mechanically measure JSON DATA, all3 whole literal byte identities, complete canonical diff TRUE insertions/deletions, all72 unchanged guards, 3 future absences and nested bounded lossless carriers. This deliberately changes only transport from an impossible <=120000B selfcontained native Base64XZ carrier to ENTIRE already-existing file opaque transport. Your native metadata question is explicitly NOT a selfcontained whole-byte carrier and is not treated as one. No higher native message cap, split/subset/extra output/rewrite/helper/codec/dependency/cycle or further mutation is authorized. Preserve the sealed814f file immutable; HOLD pending Parent actual opaque intake and TWO fresh independent FULL semantic reviewers with their WHOLE first-access methods and full reports even if first FIX-FIRST. Parent is NOT a code semantic reviewer. No SourceTaskDone, Genie/card/claimReport, source materialization, tests/build/compile/import/parser/golden/smoke/native/privateACK execution/PG/key/env/network/paid admission. All original C1-C8/F1-F4, all four merged conservative families, complete historical/current fixtures/rights/exact spans, genuine same-error/native guards, f6 raw LOST UNKNOWN, 210/215/295/300 and minimal privateACK cleanup/publication constraints remain unchanged. Source cap5 used4 ONEallocated fifth only; no sixth/reset. Actual numerical C7 and every carrier bound remain subject to Parent fresh opaque verification; 1106/37/1069 declared here is not yet Parent-verified. WHOLE20/80/41/5, six historical local only, USD20 DSH12/Brain8 product0 and all-in coding/storage UNKNOWN unchanged. Await Parent; do not fabricate raw missing cause or replace acceptance. No implementation/runtime/paid approval follows this transport disposition.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-13T20:13:12Z\",\n      \"answered_at\": \"2026-10-13T20:15:18Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"aebe8926-bd2c-4d69-abf1-3399d483aaf1\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "2f298855-d50d-4253-98e8-fa088db51c53",
+        "ok": true,
+        "result": {
+          "message": {
+            "id": "msg_9404fd4bf300",
+            "run_id": "run_b7d6684b2cdd",
+            "delivery_contract": "current_delivery",
+            "from_handle": "run:run_b7d6684b2cdd",
+            "to_handle": "dispatch:ctx_1b2b793501f4",
+            "subject": "Re: Question",
+            "body": "WHOLE35397B method msg_b5d374963d45 read through EOF. APPROVED DELIVERY-ONLY alternate: Parent may take its own ENTIRE opaque byte read of the EXISTING immutable sole /tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json exactly318376B1LF0600 SHA814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7, retain those full bytes in orchestration memory/custody, and mechanically measure JSON DATA, all3 whole literal byte identities, complete canonical diff TRUE insertions/deletions, all72 unchanged guards, 3 future absences and nested bounded lossless carriers. This deliberately changes only transport from an impossible <=120000B selfcontained native Base64XZ carrier to ENTIRE already-existing file opaque transport. Your native metadata question is explicitly NOT a selfcontained whole-byte carrier and is not treated as one. No higher native message cap, split/subset/extra output/rewrite/helper/codec/dependency/cycle or further mutation is authorized. Preserve the sealed814f file immutable; HOLD pending Parent actual opaque intake and TWO fresh independent FULL semantic reviewers with their WHOLE first-access methods and full reports even if first FIX-FIRST. Parent is NOT a code semantic reviewer. No SourceTaskDone, Genie/card/claimReport, source materialization, tests/build/compile/import/parser/golden/smoke/native/privateACK execution/PG/key/env/network/paid admission. All original C1-C8/F1-F4, all four merged conservative families, complete historical/current fixtures/rights/exact spans, genuine same-error/native guards, f6 raw LOST UNKNOWN, 210/215/295/300 and minimal privateACK cleanup/publication constraints remain unchanged. Source cap5 used4 ONEallocated fifth only; no sixth/reset. Actual numerical C7 and every carrier bound remain subject to Parent fresh opaque verification; 1106/37/1069 declared here is not yet Parent-verified. WHOLE20/80/41/5, six historical local only, USD20 DSH12/Brain8 product0 and all-in coding/storage UNKNOWN unchanged. Await Parent; do not fabricate raw missing cause or replace acceptance. No implementation/runtime/paid approval follows this transport disposition.",
+            "type": "status",
+            "priority": "normal",
+            "thread_id": "msg_b5d374963d45",
+            "payload": null,
+            "created_at": "2026-10-13T20:15:18Z",
+            "delivered_at": null
+          },
+          "question": {
+            "message_id": "msg_b5d374963d45",
+            "run_id": "run_b7d6684b2cdd",
+            "dispatch_id": "ctx_1b2b793501f4",
+            "asker_handle": "term_67a4990e-ed20-413a-bbeb-afd8347c4f98",
+            "status": "answered",
+            "answer_message_id": "msg_9404fd4bf300",
+            "answer_body": "WHOLE35397B method msg_b5d374963d45 read through EOF. APPROVED DELIVERY-ONLY alternate: Parent may take its own ENTIRE opaque byte read of the EXISTING immutable sole /tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json exactly318376B1LF0600 SHA814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7, retain those full bytes in orchestration memory/custody, and mechanically measure JSON DATA, all3 whole literal byte identities, complete canonical diff TRUE insertions/deletions, all72 unchanged guards, 3 future absences and nested bounded lossless carriers. This deliberately changes only transport from an impossible <=120000B selfcontained native Base64XZ carrier to ENTIRE already-existing file opaque transport. Your native metadata question is explicitly NOT a selfcontained whole-byte carrier and is not treated as one. No higher native message cap, split/subset/extra output/rewrite/helper/codec/dependency/cycle or further mutation is authorized. Preserve the sealed814f file immutable; HOLD pending Parent actual opaque intake and TWO fresh independent FULL semantic reviewers with their WHOLE first-access methods and full reports even if first FIX-FIRST. Parent is NOT a code semantic reviewer. No SourceTaskDone, Genie/card/claimReport, source materialization, tests/build/compile/import/parser/golden/smoke/native/privateACK execution/PG/key/env/network/paid admission. All original C1-C8/F1-F4, all four merged conservative families, complete historical/current fixtures/rights/exact spans, genuine same-error/native guards, f6 raw LOST UNKNOWN, 210/215/295/300 and minimal privateACK cleanup/publication constraints remain unchanged. Source cap5 used4 ONEallocated fifth only; no sixth/reset. Actual numerical C7 and every carrier bound remain subject to Parent fresh opaque verification; 1106/37/1069 declared here is not yet Parent-verified. WHOLE20/80/41/5, six historical local only, USD20 DSH12/Brain8 product0 and all-in coding/storage UNKNOWN unchanged. Await Parent; do not fabricate raw missing cause or replace acceptance. No implementation/runtime/paid approval follows this transport disposition.",
+            "answered_by_generation": 1,
+            "created_at": "2026-10-13T20:13:12Z",
+            "answered_at": "2026-10-13T20:15:18Z",
+            "closed_at": null
+          },
+          "duplicate": false,
+          "mutation": {
+            "requestId": "aebe8926-bd2c-4d69-abf1-3399d483aaf1",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    },
+    "selfcontained_native_carrier": false,
+    "actual_complete_existing_file_read": "318376 full bytes retained in parent orchestration memory, UTF8 JSON DATA only"
+  },
+  "complete_program_byte_identities": [
+    {
+      "path": "observatory/evidence/brain.py",
+      "bytes": 34508,
+      "LF": 626,
+      "sha256": "87d9e6a0682dc70fed92d03387e73201f19473117a53f33e639377cd89c9ad3d"
+    },
+    {
+      "path": "/tmp/oi7-native-replay-diagnostic-1.py",
+      "bytes": 18994,
+      "LF": 311,
+      "sha256": "f4aaaaa14c723c565f0358dc9577041bbf8ae26b7b6c3cd3bb82ab43f7ca883f"
+    },
+    {
+      "path": "/tmp/oi7-native-replay-diagnostic-1-outer.py",
+      "bytes": 26077,
+      "LF": 352,
+      "sha256": "0f6e0501829ee667eb0d52c7513375fd450ead50189888cbf078d1eed0195300"
+    }
+  ],
+  "actual_true_diff_counts": [
+    {
+      "path": "observatory/evidence/brain.py",
+      "true_insertions": 443,
+      "true_deletions": 37,
+      "net_insertions": 406
+    },
+    {
+      "path": "/tmp/oi7-native-replay-diagnostic-1.py",
+      "true_insertions": 311,
+      "true_deletions": 0,
+      "net_insertions": 311
+    },
+    {
+      "path": "/tmp/oi7-native-replay-diagnostic-1-outer.py",
+      "true_insertions": 352,
+      "true_deletions": 0,
+      "net_insertions": 352
+    }
+  ],
+  "all3_TRUE_insertions": 1106,
+  "all3_deletions": 37,
+  "all3_net": 1069,
+  "canonical_full_diff_bytes": 75788,
+  "canonical_full_diff_LF": 1235,
+  "canonical_full_diff_SHA256": "8bcc2ed3423b483ac268caa16b2fdba60432294e4bd1b78254367a267589e7b2",
+  "canonical_diff_actual_complete_baseline_to_all3_future_strings_byteequal": true,
+  "all72_fresh_actual_guards": [
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/contracts.py",
+      "bytes": 22505,
+      "LF": 354,
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/brain.py",
+      "bytes": 12768,
+      "LF": 220,
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/model.py",
+      "bytes": 5908,
+      "LF": 83,
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/cordis.mjs",
+      "bytes": 2646,
+      "LF": 70,
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/__main__.py",
+      "bytes": 2361,
+      "LF": 52,
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/receipts.json",
+      "bytes": 11997001,
+      "LF": 30,
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/python_adapter.py",
+      "bytes": 8901,
+      "LF": 122,
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/python-pipeline.md",
+      "absent": true
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/manifest.json",
+      "absent": true
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/test_investigation.py",
+      "bytes": 3439,
+      "LF": 53,
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/test_evidence_contracts.py",
+      "bytes": 13514,
+      "LF": 230,
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/WISH.md",
+      "bytes": 126131,
+      "LF": 1157,
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/contracts/evidence.md",
+      "bytes": 28218,
+      "LF": 173,
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/schemas/evidence.schema.json",
+      "bytes": 12261,
+      "LF": 153,
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/evidence_contracts.json",
+      "bytes": 13033,
+      "LF": 53,
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/evidence.json",
+      "bytes": 294150,
+      "LF": 200,
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/sources.json",
+      "bytes": 109773,
+      "LF": 843,
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/assessment.md",
+      "bytes": 52115,
+      "LF": 544,
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native_qualification.py",
+      "bytes": 48211,
+      "LF": 825,
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native-receipts.json",
+      "bytes": 550314,
+      "LF": 43,
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native-tools.json",
+      "bytes": 17422,
+      "LF": 510,
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/cordis.md",
+      "bytes": 12132,
+      "LF": 62,
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/receipts.json",
+      "bytes": 10949,
+      "LF": 185,
+      "sha256": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/web/data.json",
+      "bytes": 4223271,
+      "LF": 1,
+      "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/features_a.json",
+      "bytes": 105582,
+      "LF": 0,
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/features_b.json",
+      "bytes": 105962,
+      "LF": 0,
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "bytes": 9903,
+      "LF": 34,
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "bytes": 92295,
+      "LF": 320,
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "bytes": 63002,
+      "LF": 233,
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "bytes": 27251,
+      "LF": 112,
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "bytes": 2956,
+      "LF": 22,
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+      "bytes": 4416,
+      "LF": 38,
+      "sha256": "aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json",
+      "bytes": 3461,
+      "LF": 32,
+      "sha256": "e0b95459d2d11b1807674fd7e31284b586f9f8d3d10c4e7e2a98283e5b0f38fb",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-owner-cap3-corrective6-PROSPECTIVE-DATA-ONLY-full-C1-C8-before-preparation-method-gate.json",
+      "bytes": 5916,
+      "LF": 34,
+      "sha256": "3e51fd7e02abae15cb285342c7070d44af0bc18c48cac17039cdf005a3d0b3fd",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-prospective-cap4-ONE-additional-cycle-and-native-DSH-DESIGN-only-final-repair2-human-disagreement-resolution-authority.json",
+      "bytes": 4578,
+      "LF": 37,
+      "sha256": "c2b3131dfa905687c8538d9d86b391492a6a0d386db499c04cf7cc1d29e5dad1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-prospective-diagnostic-repair-1-independent-review.txt",
+      "bytes": 22442,
+      "LF": 154,
+      "sha256": "b3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-independent-review-2.txt",
+      "bytes": 26258,
+      "LF": 115,
+      "sha256": "1274997130447ed001d46f828d2bcad23bcc2da66e83197a329840a572033e81",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt",
+      "bytes": 34164,
+      "LF": 219,
+      "sha256": "3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-full-C1-C8-independent-FIX-FIRST-full-report.txt",
+      "bytes": 26815,
+      "LF": 122,
+      "sha256": "35f912c97a544401ac827dcaa84e0acc2e4e0a2b1af4604de05d942dc4055d46",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-independent-privacy-transport-quality-FIX-FIRST-full-report.txt",
+      "bytes": 26752,
+      "LF": 143,
+      "sha256": "1caa207996399e66a51d60153a7e7f8fbec9c1876d334329c5c3a0b7c64a3a12",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-full-original-C1-C8-independent-2HIGH-FIX-FIRST-report.txt",
+      "bytes": 31908,
+      "LF": 96,
+      "sha256": "51b9c5e16791e1d827ad6656cc88a2f3abd480f9a7667c44fbc00e8b21d3deb1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-separate-privacy-transport-quality-full-3HIGH-FIX-FIRST-report.txt",
+      "bytes": 28857,
+      "LF": 144,
+      "sha256": "9e637207fcc425337aa4b7206e421415c0c693559eafbb37cb4b02c6459a4949",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-full-original-C1-C8-independent-two-HIGH-FIX-FIRST-report.txt",
+      "bytes": 37600,
+      "LF": 141,
+      "sha256": "6277bb7b5289dc1bd0d4f562106728eb40d66494cad7d5d48313ff2a511c6aa7",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-separate-full-privacy-transport-deadline-quality-three-HIGH-FIX-FIRST-report.txt",
+      "bytes": 43431,
+      "LF": 149,
+      "sha256": "07da62a7ea46b0adc5ce7e0eafd93d31ad408c92efa21a1ce52e4f39068186f3",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-corrected-ReplayManifest-prospective-diagnostic-repair-1.json",
+      "bytes": 33425,
+      "LF": 190,
+      "sha256": "844206f7876ad566645303d22c203abaed31ef986112d081f0c5de9b6e76c982",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json",
+      "bytes": 80124,
+      "LF": 191,
+      "sha256": "3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+      "bytes": 215816,
+      "LF": 380,
+      "sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-one-complete-corrective-causal-diagnostic-prospective-data-4.json",
+      "bytes": 85554,
+      "LF": 392,
+      "sha256": "ae20ec2ed24d71e2606473baaad63a79195fc54bd7407cd9a1ba0f4e686c3437",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle2-complete-corrective5-whole-PROSPECTIVE-DATA.json",
+      "bytes": 118850,
+      "LF": 696,
+      "sha256": "c97db392d44ce5add695d4491e47be624b4fd3e1f07e69b0f84d469acca4f257",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-WHOLE-PROSPECTIVE-DATA.json",
+      "bytes": 121984,
+      "LF": 545,
+      "sha256": "b12a8ec6b262ead73c805b5171b8e374cbba5ad558bdf98202f6ada41e99bfc1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-original-native-question-WHOLE-DATA.txt",
+      "bytes": 121713,
+      "LF": 5,
+      "sha256": "a12539fd731f2bc51edf22b5d90af26b10ba7608d2d2d838e0affef67b94cb6f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-actual-owner-third-prospective-cycle-COMPLETE-both-WHOLE-reports-actualDone-releases-FIX-FIRST-four-HIGH-families-3-of-3-EXHAUSTED-NO-source-smoke-runtime-authority.json",
+      "bytes": 7466,
+      "LF": 104,
+      "sha256": "22bfa4cbe4848bf4f8716532c92866015944c3731c55fba9dce3c65d1db41551",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-quality-FULL149LF-three-HIGH-and-original-WHOLE141LF-conservative-four-family-UNION-positive-review-intake-BEFORE-quality-Done.json",
+      "bytes": 4314,
+      "LF": 23,
+      "sha256": "a5fa5502aca5dfdb9f2a237c2ef6cd61e37eaab95e2f7ec8dac94cef45ab3a94",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-corrective6-explicit-308-TRUE-insertions-and-whole-lossless-seven-group-carrier-full-C1-C8-two-blind-review-admission.json",
+      "bytes": 39801,
+      "LF": 1139,
+      "sha256": "45c0b5794678e49b8a671e4014612a9238064583a8cb64c306403f3cafac3f1c",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle3-corrective6-original-full-before-preparation-method-ACK.txt",
+      "bytes": 15266,
+      "LF": 18,
+      "sha256": "e137cf42a3bab90e4405b5b1427964178a5bae044d2176e07f2fd022d2ca537d",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-corrective6-C7-three-absence-only-and-three-exact-initial-history-artifacts-pre-read-scope-clarification.json",
+      "bytes": 2438,
+      "LF": 35,
+      "sha256": "5c0a62fabc544aa275dddc292973cc82b8dcba216d2c9a9c6675c330939efa76",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-entire-opaque-DATA-and-actual-34guards-three-source-hashes-308insertions-and-lossless-seven-group-carrier-metadata-intake.json",
+      "bytes": 15813,
+      "LF": 451,
+      "sha256": "4a4845349eb5ec4cebc557ab9db17d7714d3b7a39e8be6abedad4f35a065081b",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-owner-authorized-quality-cycle2-and-native-DSH-extension-design.txt",
+      "bytes": 120136,
+      "LF": 1135,
+      "sha256": "dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-current-six-local-acceptances-and-user-BWS-custody.txt",
+      "bytes": 108506,
+      "LF": 1093,
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-human-cap4-corrective7-WHOLE6983-original-currentcontext-before-ANY-newArtifact-access-preparation-method.txt",
+      "bytes": 36513,
+      "LF": 28,
+      "sha256": "eced700d9512b8c3fffffe282a20df653b8d586083672f4a0834586adaeaecde",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-human-cap4-corrective7-PROSPECTIVE-DATA-only-FULL6983-positive-before-preparation-EXACT61path-access-and-one-inert-output-gate.json",
+      "bytes": 38016,
+      "LF": 578,
+      "sha256": "3a4895721db2aabb65363efd0a89cef054e312c1dbeb33c74eb93b01abdf8285",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-WHOLE0b6-source-author-C6-native-admission-vs-same-primary-publication-deadline-method-clarification-before-seal.txt",
+      "bytes": 4074,
+      "LF": 3,
+      "sha256": "c6b172643ab3923c0c17294fdda8c225c43b9ef63f2695273f307dd94e9293aa",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-C6-deadline-POLICY-require-independent-inner-pre-effect-cutoff-within-existing-two-runner-inert-scope-no-pre-primary-kill-exception.json",
+      "bytes": 17355,
+      "LF": 93,
+      "sha256": "9cc4c41de45d18b9ecf853fabc95a43af56eac41bb0635a750feb737a9280c6a",
+      "mode": "0600"
+    },
+    {
+      "path": "/tmp/oi7-corrective7-WHOLE-PROSPECTIVE-DATA.json",
+      "bytes": 260400,
+      "LF": 1,
+      "sha256": "eafab1520267da216f8fe826caaf1d13ee940b70e8481f452a9eea5fe8623eb5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-WHOLE-aa93-sealed-source-author-numeric-C7-before-review-access-question.txt",
+      "bytes": 98552,
+      "LF": 1,
+      "sha256": "f7d177c77969816842c682cb62c9482a4f472944cf4ee9464297b471597096bc",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-human-cap4-corrective7-two-NEW-fresh-FULL-original-and-quality-frozen-review-contract-PREPARED-NOT-DISPATCHED.txt",
+      "bytes": 24776,
+      "LF": 44,
+      "sha256": "2f1a7ed46c677f190f207451b2a68464328a719f41d3efcc7f0949b94d72c239",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-ACTUAL-WHOLE-aa93-positive-opaque-C7-before-twoFresh-review-firstAccess-405trueIns38del367net.json",
+      "bytes": 28275,
+      "LF": 550,
+      "sha256": "5d3abe12ac27a18ab7f4da50d24b5e964fa88950656d2e31de771229c2f50d11",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap4-corrective7-original-FULL207LF-threeHIGH-FIX-FIRST-report.txt",
+      "bytes": 49959,
+      "LF": 207,
+      "sha256": "6f4cfdd99fd644583426dc74f1cb84a4e059884e1239e686aba79946cd287091",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap4-corrective7-quality-FULL141LF-twoHIGH-FIX-FIRST-report.txt",
+      "bytes": 41112,
+      "LF": 141,
+      "sha256": "1b239d42bd26dfa320ccc08a4b32be1ef71058923c9fb42d31927dc3a8547e68",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-actual-owner-FOURTH-prospective-cycle-COMPLETE-bothWHOLE207141-reports-actualDone-AFTERreleases-conservativeFOURhigh-4of4EXHAUSTED-HOLD-noSourceSmokeNative.json",
+      "bytes": 10302,
+      "LF": 171,
+      "sha256": "2f6c3d0ab101a6e8114906cef96d9aaa8999edb5781bd7df00d31a4bca311c16",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-cap5-ONE-additional-prospective-cycle-and-native-DSH-DESIGN-repair3-ONE-final-extra-repair-authority.json",
+      "bytes": 6581,
+      "LF": 111,
+      "sha256": "c0a519dd4db4a257e231fe58874917324ccf132aa1af3c64ac720c03b0eb01e4",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-source7-cap5-existingONEinertCandidate-MINIMAL-private-publication-ACK-interface-only-authority-noExtraCycle-source-runtime-paid.json",
+      "bytes": 6976,
+      "LF": 74,
+      "sha256": "eb86c20248310720b3a0a936ad7b12ada67a4d5d14cbc2eb570306a53abb0179",
+      "mode": "0600"
+    }
+  ],
+  "future3_absences": [
+    {
+      "path": "/tmp/oi7-native-replay-diagnostic-1.py",
+      "absent": true
+    },
+    {
+      "path": "/tmp/oi7-native-replay-diagnostic-1-outer.py",
+      "absent": true
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/.receipts-oi7-diagnostic-1.tmp",
+      "absent": true
+    }
+  ],
+  "nested_full_strict_B64_hex_XZ_byte_identity_metadata": [
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER",
+      "bytes": 166231,
+      "LF": 0,
+      "sha256": "90a6a0a97a954733885bc766057589102edfd537c2297e6811be919eec36310b",
+      "encoding": "base64-xz COMPLETE LOSSLESS ANCILLARY JSON DATA; no omitted strings/wires/guards; not executable"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/0/whole_other_supported_success_wrappers_DATA_UNCHANGED/0/whole_rpc_wire",
+      "bytes": 177,
+      "LF": 1,
+      "sha256": "22b0442092b83efcdd8710ae1b65b9605923e822efce4d939c9e9c60b70d1d27",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/0/whole_other_supported_success_wrappers_DATA_UNCHANGED/1/whole_rpc_wire",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "1957c63a6b61f1aede346328fa117aaac3caba3db1c6123aeafbae8dae4be3cf",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/0/whole_supported_success_wrapper_DATA_UNCHANGED/whole_rpc_wire",
+      "bytes": 146,
+      "LF": 1,
+      "sha256": "e396e317551b9a9ab563609475a7f8de25a23b5a4d0268fc8791d05949888008",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/0/wire",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "e046c71ab634d48fd17d8d39cf212222ad27e8bc416c478ab19fa85ed74a7f3f",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/1/wire",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "e15d2d8a9e5db0370dc17e93f28bfb1a7f463bb1723f39162c66a48c0190950e",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/2/wire",
+      "bytes": 270,
+      "LF": 1,
+      "sha256": "552ecd78486b05e3d490a34f369b8647c0f523c476bc9d61f136ec477676b1ea",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/3/wire",
+      "bytes": 269,
+      "LF": 1,
+      "sha256": "3d9fad662dea7df8f4ebd7793975c56d2d27c21f11fa124e9a82aa2ceff61995",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/4/wire",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "540be0ea8a69307e06c455c95e2fa7245b1d84e34eedebc26147fa24e1adc808",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/5/wire",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "9da2d4c70befa5883c03d74fef6caee3f538f1460b26600fdc75581cd6293bd2",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/6/wire",
+      "bytes": 270,
+      "LF": 1,
+      "sha256": "45aefb61665bac772c0fa2044ed9d426ee98d07c1579e649113d5f82fe223116",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/7/wire",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "8abd60699b9259a16d0b5658041c2f49a58700d2f6d26a74a052fd262d94a2f1",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/8/wire",
+      "bytes": 272,
+      "LF": 1,
+      "sha256": "142f41c570cf3727aba2ab01739577ea76be01fd8c350b19f376c1fe81f3457f",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/9/wire",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "b475c0e044a2ee02c243237286e214eb0e1fbceb91c2af754dcb9e3747c68440",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/10/wire",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "65b1071915dfea7b40481eb90eed796c5cf66a2ae983119ecb79f82d001149be",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/11/wire",
+      "bytes": 257,
+      "LF": 1,
+      "sha256": "5fd1a954a61595471d85a7d8b5e5f3682f7d8f30da324816db01a8affe6d8ad6",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/12/wire",
+      "bytes": 299,
+      "LF": 1,
+      "sha256": "927e8b66c756b2d78741c271e84ebdaaf3e72504c5ff90df517737d38251611a",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/13/wire",
+      "bytes": 281,
+      "LF": 1,
+      "sha256": "6b453ffc8917bd9a267e9787edb4fb937e12c10694448a797f0ff44d77987f12",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/14/wire",
+      "bytes": 270,
+      "LF": 1,
+      "sha256": "c18b7dcda77eda618086f2936ec487348940c4192f8b4cf146f296cb38e877e9",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/15/wire",
+      "bytes": 272,
+      "LF": 1,
+      "sha256": "2fbdb94c8b685048b92baaa8f625a729c157f96fa270bfcf4673898d1a0789fd",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/16/wire",
+      "bytes": 536,
+      "LF": 1,
+      "sha256": "d6bbc74c3110a6eb8026a9786735bf65f5730334d50a1f90250e4631a556d80f",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/17/wire",
+      "bytes": 1072,
+      "LF": 1,
+      "sha256": "f8f2372e1cc9edc50f4f5f86d2d6ba3c66e1885e1020f1a89508b95df1ccc7fe",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/18/wire",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "7c81f71f8b868dbda6624792e9ba48c1d24207e53feeded5c610d48d18e52764",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/19/wire",
+      "bytes": 2,
+      "LF": 1,
+      "sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/20/wire",
+      "bytes": 0,
+      "LF": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/21/wire",
+      "bytes": 267,
+      "LF": 0,
+      "sha256": "b1a7583d13493d8b7ce5db84a72568a35bd4e1308b7938153773f0ef937c69fa",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/22/wire",
+      "bytes": 536,
+      "LF": 2,
+      "sha256": "03f357449cb741d764629d25fdd1a9b982272875e0b8d8bd3e2afdf1c40adbf0",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/23/wire",
+      "bytes": 1024,
+      "LF": 1,
+      "sha256": "5a42a649d53dc2c0f1c655a17a91a8e2457c1a4fe2f3baf498abb172acf9b149",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/ACK_full_wires/24/wire",
+      "bytes": 1025,
+      "LF": 1,
+      "sha256": "84666c2b1fef889e1f3d31ac61e326b2b3148483fd31f4cf04a906701a81d782",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/1/full_legacy679_primary_DATA_UNCHANGED",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/2/whole_wire_DATA",
+      "bytes": 3,
+      "LF": 1,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/generic_protocol_supplements/0/whole_first_wire_DATA",
+      "bytes": 85,
+      "LF": 1,
+      "sha256": "796598a1ff0414da21ea2d47e2f768715b86b361781b11966a93251c486f57e9",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/generic_protocol_supplements/0/whole_later_second_and_third_wires_DATA/0",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "792de70ccf48653b3c6f1565c359f569c7bd1310511f11fb78be3bf473ce44df",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/generic_protocol_supplements/0/whole_later_second_and_third_wires_DATA/1",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "3aad1f8461824e7d205f8c0a5dbbf89def8efc65d9cac36dd22b0ec187794ff5",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/generic_protocol_supplements/0/whole_stream_DATA",
+      "bytes": 311,
+      "LF": 3,
+      "sha256": "3a73360486ead418f98979f7411db22270ab820fd57e5ddabc7c52c7e8421169",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/generic_protocol_supplements/1/whole_first_wire_DATA",
+      "bytes": 37,
+      "LF": 1,
+      "sha256": "48887007fbdcbd91dfa3f7bfd1ab4f1a2324ebc84ae34b40c21fed9585da7257",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/generic_protocol_supplements/2/whole_first_wire_DATA",
+      "bytes": 36,
+      "LF": 1,
+      "sha256": "74178605b50ceda3755cb18733604865ef29854451329ad911a4fbc57a6862ea",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/whole_first_wire_DATA",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "5b8878120d0eee1c1c8d759ee14801d7e98312da16f9832d0b0d1d2ab4613a21",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/whole_second_wire_DATA",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "792de70ccf48653b3c6f1565c359f569c7bd1310511f11fb78be3bf473ce44df",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/whole_stream_DATA",
+      "bytes": 339,
+      "LF": 3,
+      "sha256": "41d83fec5eba01bd911d9717d07c2d89b365481c5666bcd75246c7a2de6c389a",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_current_four_families_actualshaped_ACK_literal_wires_schedules_goldens_NOT_RUN/3/whole_third_wire_DATA",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "3aad1f8461824e7d205f8c0a5dbbf89def8efc65d9cac36dd22b0ec187794ff5",
+      "encoding": "base64 COMPLETE LITERAL DATA; never executed"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/prefix",
+      "bytes": 158,
+      "LF": 1,
+      "sha256": "36896e438e599662b5d8432f89c8211d5f62a5c930cd54201060b7c3fd3970b7",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/primary",
+      "bytes": 86,
+      "LF": 1,
+      "sha256": "c43c237b4357fa21091e01d608484d4a9847c837091ea3b5ceec26b0746cfc43",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/0",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "37bf99615fbef4e5e5a9b908f300295f6e978d76ecf68678c6454504208e8bc9",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/1",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "0d310a2b75d7020d956b8ded99fde1cf20f391a1bdec4349cc2727454a2c671a",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/2",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "cf61372cc97317da83364bd05544bcf2dd25836fd82fb7ae291c846bf579f4d8",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/3",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "b3e7360478200b295a03faf80690e36f9aea012be7e62f129dfd64464de93359",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/4",
+      "bytes": 272,
+      "LF": 1,
+      "sha256": "d8fb817523defe192d4e592c47739a09eb4755665f4d38d0cab5e25a8dd2dd56",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/5",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "91e2112daf3b0df9715f985fdf996eabc8e96b40d8de29b614f081babed69467",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/6",
+      "bytes": 268,
+      "LF": 1,
+      "sha256": "7e836b3a5a0e3f6734d8574c316bcc7a7899fe10805a71bd092ba88d4489f04a",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/7",
+      "bytes": 257,
+      "LF": 1,
+      "sha256": "51010a737766c4863f0071e87aa9935c5efb623a700e2c66ed2b4ccdef5d33f2",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/8",
+      "bytes": 270,
+      "LF": 1,
+      "sha256": "c6dd40541b43e22965b8b67324f307f42731a043f640aa9b9ec6262d07401512",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/9",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "56f183ab63897a94f638d996d909a206eb5bfbdcff54f07174b538ab5b22988a",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/10",
+      "bytes": 278,
+      "LF": 1,
+      "sha256": "7e5f274b82dbe26af8ae9286e6c1787b9357068a34dbb0943b04fc09a5dcdf0b",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/11",
+      "bytes": 281,
+      "LF": 1,
+      "sha256": "25bd355937d3fcd4c45fd6a59906351a0d88ae8516e4acf7cb5682a14c12bada",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/12",
+      "bytes": 270,
+      "LF": 1,
+      "sha256": "76de3d10376c7ccdade85a8dc70d00d07b159f030b8154aeec3083b1ae15f9e7",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/13",
+      "bytes": 272,
+      "LF": 1,
+      "sha256": "3bda82c80afef9f99d7cb992ef825e69000b713dd7b142832128601f38af7f1e",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/14",
+      "bytes": 537,
+      "LF": 2,
+      "sha256": "3ff53f6324fd0006915d20dd10cba114cfe8ffeb6fbf6380a0d98004f85869d3",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/15",
+      "bytes": 1073,
+      "LF": 2,
+      "sha256": "946f5f39fe06c39bd0b9d7370f19306d0c460938dbf42e80c8d5ba21b418a051",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/16",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "bb4528d2054af6f65f05f5acff2946ccff1c68b8ef46e3624c6502187c732ff0",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/17",
+      "bytes": 2,
+      "LF": 1,
+      "sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/18",
+      "bytes": 267,
+      "LF": 0,
+      "sha256": "992cb2996e948f0e1989355d1ccf921804a8af8f3146105abf20599398651cf5",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/19",
+      "bytes": 0,
+      "LF": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/20",
+      "bytes": 536,
+      "LF": 2,
+      "sha256": "84656e212d6588b56fe1c79a1c64a4e726244f96c4885aca5098033a967e1e56",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/21",
+      "bytes": 1024,
+      "LF": 1,
+      "sha256": "c82c215896d9c591de67139d2936329dd3e0324e58a05a5d0317723b53910776",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_approved_METHOD_ACK_literal_wires_schedules_UNCHANGED/wires/22",
+      "bytes": 1025,
+      "LF": 1,
+      "sha256": "ee8a3de62cd5c196a0dcb546185d5953bbf6578b820726824bec6d9211f768a7",
+      "encoding": "BASE64_IMPLICIT"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED",
+      "bytes": 89438,
+      "LF": 0,
+      "sha256": "ca282831fb1952a3d4cf613dbabadf5ab698ced30efcf927cee20e1199ae239e",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/wire_frames/0/wire_utf8/complete_lossless_wire",
+      "bytes": 8194,
+      "LF": 1,
+      "sha256": "313e88250e0ca3cce3cc1be946a54470d979a875129fb806874eeb89dac0546d",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/0/whole_rpc_wire",
+      "bytes": 229,
+      "LF": 1,
+      "sha256": "027ccb12ddb81aca03325fd099476df1537a9f996aa7ccdf1bfeac3258ac5497",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/1/whole_rpc_wire",
+      "bytes": 248,
+      "LF": 1,
+      "sha256": "021ca38de713644b528f47c0bb06056c814f57d479358c81c47a6b01544c4ac3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/2/whole_rpc_wire",
+      "bytes": 180,
+      "LF": 1,
+      "sha256": "b5fbac4275bfe720b59d520b609f0cbf528dd688d88e27cbcbe9431c62380bb2",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/3/whole_rpc_wire",
+      "bytes": 278,
+      "LF": 1,
+      "sha256": "fc1e4a79909d0aa7e7a244187a9f119bbc4d041504ed18c5c23c6ce2ca222309",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/4/whole_rpc_wire",
+      "bytes": 290,
+      "LF": 1,
+      "sha256": "14d007c4af649a14ae32f6afb069a77fda969c03aca23cab134e84db0d10d2a9",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/5/whole_rpc_wire",
+      "bytes": 1039,
+      "LF": 1,
+      "sha256": "a207b0a2984362c568b513a5f5a53e08c2b5b91c21507f26aae276569cbfc974",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/6/whole_rpc_wire",
+      "bytes": 214,
+      "LF": 1,
+      "sha256": "8a9f9252c576c3c09c41fff293a67b8f03b17deba4fb28122eea4c00892b091c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/7/whole_rpc_wire",
+      "bytes": 146,
+      "LF": 1,
+      "sha256": "e396e317551b9a9ab563609475a7f8de25a23b5a4d0268fc8791d05949888008",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/8/whole_rpc_wire",
+      "bytes": 177,
+      "LF": 1,
+      "sha256": "22b0442092b83efcdd8710ae1b65b9605923e822efce4d939c9e9c60b70d1d27",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/9/whole_rpc_wire",
+      "bytes": 271,
+      "LF": 1,
+      "sha256": "1957c63a6b61f1aede346328fa117aaac3caba3db1c6123aeafbae8dae4be3cf",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/4/cases/10/whole_rpc_wire",
+      "bytes": 149,
+      "LF": 1,
+      "sha256": "fb6487e87f9c2ffa5910846f1d42eb2e27aaa201083ee35625fb4b6128aa804b",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/0/expected_published_primary_prefix",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/0/whole_captured_stream_DATA",
+      "bytes": 722,
+      "LF": 1,
+      "sha256": "556994818567410c44af64a3e81d8e92e44fd9a1cf4a70e109dc49539811d4bc",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/1/expected_published_primary_prefix",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/1/whole_captured_stream_DATA",
+      "bytes": 694,
+      "LF": 2,
+      "sha256": "a0097aecac6b83c796514daa44ec543e0fff4f3bbf2275bdf02e1308ea29cd4f",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/2/expected_published_primary_prefix",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/2/whole_captured_stream_DATA",
+      "bytes": 685,
+      "LF": 2,
+      "sha256": "23976a534e3f50e1f7dc3cec51f50a88fe255432442e6bf2d2e2a99d20619001",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/3/expected_published_primary_prefix",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/3/whole_captured_stream_DATA",
+      "bytes": 1144,
+      "LF": 2,
+      "sha256": "66e5366045f190dcd85c57fd2f15f1776915bf32bdf804428e850aa97e7e8916",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/4/expected_published_primary_prefix",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/4/whole_captured_stream_DATA",
+      "bytes": 1144,
+      "LF": 2,
+      "sha256": "ccc4397bb6e6342c1ca4b3d035e98a08de2e01b726bb53b95d554d7ce9fc577d",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/5/expected_published_primary_prefix",
+      "bytes": 1144,
+      "LF": 2,
+      "sha256": "b3229d269a5ee4c2e6cff0632cfe10f22584847a31e6942d62477a0163c11e51",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/5/whole_captured_stream_DATA",
+      "bytes": 1159,
+      "LF": 3,
+      "sha256": "ad33d748c30df65ee70b8ef8790d93b5faf1e1aa8fb7adb5a976012b02388244",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/6/expected_published_primary_prefix",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/6/whole_captured_stream_DATA",
+      "bytes": 132777,
+      "LF": 2,
+      "sha256": "ba3b58422cce6537cc4255b5a7c8879261a42a0afcbac6dce8a6de79d2b46088",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/7/expected_published_primary_prefix",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/streams/7/whole_captured_stream_DATA",
+      "bytes": 1048577,
+      "LF": 1,
+      "sha256": "7aaf745fa391bf0f35941d2174990693d2ac36b047205c72ba293bfeb711505f",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/timer_and_custody_whole_scenarios_DATA/0/input_wire",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/timer_and_custody_whole_scenarios_DATA/1/input_wire",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/timer_and_custody_whole_scenarios_DATA/2/input_wire",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/timer_and_custody_whole_scenarios_DATA/3/input_wire",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/timer_and_custody_whole_scenarios_DATA/4/input_wire",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/5/timer_and_custody_whole_scenarios_DATA/5/input_wire",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/0/WHOLE_wire_DATA",
+      "bytes": 112,
+      "LF": 0,
+      "sha256": "f0247c6c3bb26d49c94105a8f336903b162b25b77c9076f3a4847b0f7502e9cf",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/0/actual_expected_captured_prefix_DATA",
+      "bytes": 112,
+      "LF": 0,
+      "sha256": "f0247c6c3bb26d49c94105a8f336903b162b25b77c9076f3a4847b0f7502e9cf",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/1/WHOLE_wire_DATA",
+      "bytes": 145,
+      "LF": 0,
+      "sha256": "86b0c8af23d63dfa279025d7383ed50ac67d42e4e16b80cb5eb98ad0d6932652",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/1/actual_expected_captured_prefix_DATA",
+      "bytes": 145,
+      "LF": 0,
+      "sha256": "86b0c8af23d63dfa279025d7383ed50ac67d42e4e16b80cb5eb98ad0d6932652",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/2/WHOLE_wire_DATA",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "8d031a9e05c31d05b14d7fb6790baa521a3f4c93ba600fcd1bbc447cf8d334c9",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/2/actual_expected_captured_prefix_DATA",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "8d031a9e05c31d05b14d7fb6790baa521a3f4c93ba600fcd1bbc447cf8d334c9",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/3/WHOLE_wire_DATA",
+      "bytes": 16777216,
+      "LF": 1,
+      "sha256": "055e09f46c14694bef8f0e5e8246864268d5e7096e8dc5cabafb48f969f80d54",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/3/actual_expected_captured_prefix_DATA",
+      "bytes": 16777216,
+      "LF": 1,
+      "sha256": "055e09f46c14694bef8f0e5e8246864268d5e7096e8dc5cabafb48f969f80d54",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/4/WHOLE_wire_DATA",
+      "bytes": 16777217,
+      "LF": 1,
+      "sha256": "c6c3626277c3d71af04a15de85fb367269e37b1f23d9b6b8c4a6a773891e896c",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/4/actual_expected_captured_prefix_DATA",
+      "bytes": 16777217,
+      "LF": 1,
+      "sha256": "c6c3626277c3d71af04a15de85fb367269e37b1f23d9b6b8c4a6a773891e896c",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/5/WHOLE_wire_DATA",
+      "bytes": 16777218,
+      "LF": 0,
+      "sha256": "c67d4ec204ab82fdd3820c302470706170f84c09165b39f050446f3c6ea4bd8b",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/cases/5/actual_expected_captured_prefix_DATA",
+      "bytes": 16777217,
+      "LF": 0,
+      "sha256": "b125ac8fb735ac86d7f70ef72a83ed8d0d6a8bdd3ab59e81b9228b8965ea7a46",
+      "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/queue_cases/0/WHOLE_stream_DATA",
+      "bytes": 339,
+      "LF": 3,
+      "sha256": "1e2ef230b5d17cb1ed7b19831ab8eb45490374400ac496215c700cb0da4d5d95",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_original_seven_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/6/queue_cases/1/WHOLE_stream_DATA",
+      "bytes": 2,
+      "LF": 1,
+      "sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED",
+      "bytes": 120116,
+      "LF": 0,
+      "sha256": "b7ad1803636d3e5a6837ea5b96484ccb9561bf33babb956fb8dd04860f636f82",
+      "encoding": "base64-xz COMPLETE LOSSLESS FOUR-GROUP JSON DATA, not generator/executable fixture"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/0/whole_wire_DATA",
+      "bytes": 217,
+      "LF": 1,
+      "sha256": "f381a0de6b8836e8f5df86ce1cebf066dd507c61678a77cc2bc48bb3f43e2f3d",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/1/whole_wire_DATA",
+      "bytes": 161,
+      "LF": 1,
+      "sha256": "d8a1539bc400a6faa7c523016cb1c17736546c0005fbe02a69198c69c5e2b996",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/2/whole_wire_DATA",
+      "bytes": 221,
+      "LF": 1,
+      "sha256": "0e061d3a73eb96780b36544307b96fde317a7165ef1a061a7dd1c701a97b28b4",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/3/whole_wire_DATA",
+      "bytes": 204,
+      "LF": 1,
+      "sha256": "a96c4c927f5493536c7ca7e7905d60396c1ec97758583e7551a52b00bc912855",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/4/whole_wire_DATA",
+      "bytes": 188,
+      "LF": 1,
+      "sha256": "0f7e0467483817cc3cdfcc866a82a0abf563cf6246fbfcd65bedc9ec75c76a86",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/5/whole_wire_DATA",
+      "bytes": 181,
+      "LF": 1,
+      "sha256": "06aa5fffef9cf6b1f8e431ea436d1c0264a5436aacad94e18006708142a4822d",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/6/whole_wire_DATA",
+      "bytes": 179,
+      "LF": 1,
+      "sha256": "3294e9897cbad8d27d57914ecd3a720c01291b86a647c41c9d3cf00ce8bcb331",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/7/whole_wire_DATA",
+      "bytes": 208,
+      "LF": 1,
+      "sha256": "aa95b9e87147ef89a3d1371a6df61c15f2fd6684d33a6e66c77fb7a884c05a12",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/8/whole_wire_DATA",
+      "bytes": 226,
+      "LF": 1,
+      "sha256": "5c3e164bfa64010539dff4e1f6281069098f2f6ce44ba4762db80e33f3739a9b",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/9/whole_wire_DATA",
+      "bytes": 179,
+      "LF": 1,
+      "sha256": "25bfa7aafe68952dbad2ccbd855b57d514d527a0eb8427c7cd7f0535bf45acf7",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/10/whole_wire_DATA",
+      "bytes": 162,
+      "LF": 1,
+      "sha256": "d44ec14e794f43bdcec3c6306392ab87f9dde78d339d54f42f15d118b4b9a7f9",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/11/whole_wire_DATA",
+      "bytes": 186,
+      "LF": 1,
+      "sha256": "c18883c059bf507b6c85ef412237df68d444b15c5e9b72a6b9f3571b6b971acf",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/12/whole_wire_DATA",
+      "bytes": 184,
+      "LF": 1,
+      "sha256": "cafad9737deef5c55cf3aafa994b77b1684800bef38a9f4b1a5898bbf3b92145",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/13/whole_wire_DATA",
+      "bytes": 167,
+      "LF": 1,
+      "sha256": "e15b2d8dbdfde31a502afe2ba66b093df216718d790b40dfd9090fb23ec1ab46",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/14/whole_wire_DATA",
+      "bytes": 191,
+      "LF": 1,
+      "sha256": "b6d6cb4a730c96bdbbd699baf7b5591655f272d96f10a0b526c4df6949a949e1",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/15/whole_wire_DATA",
+      "bytes": 185,
+      "LF": 1,
+      "sha256": "5aa0a711ea03056ba79d91442cba500f68dd8e2fea079e544a62fd91e4ba68b5",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/16/whole_wire_DATA",
+      "bytes": 168,
+      "LF": 1,
+      "sha256": "537819eab0b30f1c3a9bcf10d8f9b771bed8886d2b1da5f83214cd33d9455f81",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/17/whole_wire_DATA",
+      "bytes": 192,
+      "LF": 1,
+      "sha256": "c68662aa4f21b9e3cd0a7398362a1f40d3f6b99afbe3de38599a208ab3bc6bc4",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/18/whole_wire_DATA",
+      "bytes": 181,
+      "LF": 1,
+      "sha256": "c596bf37c499a9781245ffb4e7f77ee1fe6805e2b1118c64c21a473cd7ea975d",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/19/whole_wire_DATA",
+      "bytes": 164,
+      "LF": 1,
+      "sha256": "71e956564bd8c8615a52f7d07845362cd8fed6ab8462e8ba0033d8ee737d40d3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/20/whole_wire_DATA",
+      "bytes": 188,
+      "LF": 1,
+      "sha256": "0f65d78dd126b25cda3cf2332da9348a3c4968642db0b41df4314bfdad112bae",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/21/whole_wire_DATA",
+      "bytes": 182,
+      "LF": 1,
+      "sha256": "2784ba8abcb0d1c86d2feaaca3dba34dff5871617831f1ed220e82a97d9a3db9",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/22/whole_wire_DATA",
+      "bytes": 165,
+      "LF": 1,
+      "sha256": "e00f9e60ea6aee023ced0c5342b980eb2e1b7cb163db5d0b6b802da67cdf5612",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/23/whole_wire_DATA",
+      "bytes": 189,
+      "LF": 1,
+      "sha256": "d37034a32e0d76929db61a7971b37ab456d2d1d584ac0a5bdd6e3d4b1cc0d305",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/24/whole_wire_DATA",
+      "bytes": 692,
+      "LF": 1,
+      "sha256": "5abda40fbe029648465d99608dbf638b5013cdd8aa85d1e8f44aa31b5a258164",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/25/whole_wire_DATA",
+      "bytes": 763,
+      "LF": 1,
+      "sha256": "c98cd0f0808d23c2e0a5811bec21bc6c8a622c63ae1d007c05da13788b675de3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/negative_cases/26/whole_wire_DATA",
+      "bytes": 1062,
+      "LF": 1,
+      "sha256": "1c7cb7f3a5cf94eb31d9c48893537d317e2d1de3b296a3ea453f680dd5b1232c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/positive_cases/0/whole_wire_DATA",
+      "bytes": 192,
+      "LF": 1,
+      "sha256": "46cc277567a9a92dd1fe5528ade9a7df2c04b6b8df391333d17e38e7fd6e6aa1",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/0/positive_cases/1/whole_wire_DATA",
+      "bytes": 178,
+      "LF": 1,
+      "sha256": "e295fb5f0e605bbe32f162e1b888b570d176b02399646dc21bba827de3e56226",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/0/actual_first_rawLF_prefix_DATA",
+      "bytes": 226,
+      "LF": 1,
+      "sha256": "44f93fae8acf00ffa63cd4327680974d2afdcaa0b4317c7e7036508e1c01ffee",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/0/whole_input_wire_DATA",
+      "bytes": 226,
+      "LF": 1,
+      "sha256": "44f93fae8acf00ffa63cd4327680974d2afdcaa0b4317c7e7036508e1c01ffee",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/1/actual_first_rawLF_prefix_DATA",
+      "bytes": 452,
+      "LF": 1,
+      "sha256": "ae09d9bd387fb31aff360a311010aedb0303e1306523d54e721563f8c0d5fbba",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/1/whole_input_wire_DATA",
+      "bytes": 452,
+      "LF": 1,
+      "sha256": "ae09d9bd387fb31aff360a311010aedb0303e1306523d54e721563f8c0d5fbba",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/2/actual_first_rawLF_prefix_DATA",
+      "bytes": 225,
+      "LF": 1,
+      "sha256": "de31c6814b62fb73fedb5037f0d3b2917a85df96fa0ee2073247488ce3879eeb",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/2/whole_input_wire_DATA",
+      "bytes": 226,
+      "LF": 1,
+      "sha256": "32be075fc818aecd4f1641f18dc383889c6adec943e46110ab9d511301779700",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/3/actual_first_rawLF_prefix_DATA",
+      "bytes": 449,
+      "LF": 1,
+      "sha256": "1d22ce6573e31225dc059863c2a3250ddf5611610ef1297df0f2aa709467eac0",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/3/whole_input_wire_DATA",
+      "bytes": 452,
+      "LF": 1,
+      "sha256": "bd9441dfea0699a3944ded43169291680cb6b7a3457801dd54aea7a580a27aca",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/4/whole_wire_DATA",
+      "bytes": 116,
+      "LF": 1,
+      "sha256": "0a375b7f088de53b054d8d9f841b003d5e89452a3e76d22f3cb5b1d61f1975df",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/5/whole_wire_DATA",
+      "bytes": 115,
+      "LF": 1,
+      "sha256": "dd8f5303c91d79a56efb45540725737e19c79a71cffbd82ea97003b2f9b3bcaa",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/6/whole_wire_DATA",
+      "bytes": 115,
+      "LF": 1,
+      "sha256": "b3a408ecb8ca6006c3b017741977172be5bbf12631d243e8a04e995d9fd2ef63",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/7/actual_first_rawLF_prefix_DATA",
+      "bytes": 292,
+      "LF": 1,
+      "sha256": "dae2237681428d5ebdbd0e4a26dfbbc2f681db46f0820ecf38a67f384b978698",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/7/whole_input_wire_DATA",
+      "bytes": 292,
+      "LF": 1,
+      "sha256": "dae2237681428d5ebdbd0e4a26dfbbc2f681db46f0820ecf38a67f384b978698",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/8/actual_first_rawLF_prefix_DATA",
+      "bytes": 584,
+      "LF": 1,
+      "sha256": "3274bba93307088dbee6d9d163a6c477cb5fd3e239dae766adb562bd8f50e326",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/8/whole_input_wire_DATA",
+      "bytes": 584,
+      "LF": 1,
+      "sha256": "3274bba93307088dbee6d9d163a6c477cb5fd3e239dae766adb562bd8f50e326",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/9/actual_first_rawLF_prefix_DATA",
+      "bytes": 291,
+      "LF": 1,
+      "sha256": "f3d3b474d35aa77cadd36da19c9946c427ccfbf19b4eedfefadd956de7844efc",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/9/whole_input_wire_DATA",
+      "bytes": 292,
+      "LF": 1,
+      "sha256": "38c52997cb4c2a3a9696e3ca283db0e8d8f120737ef3f17c0e9d222cfc49555a",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/10/actual_first_rawLF_prefix_DATA",
+      "bytes": 581,
+      "LF": 1,
+      "sha256": "edb5614d054fc7e0e4f82ea980843db085ff217fde28d41bdefd8d1970d495ee",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/10/whole_input_wire_DATA",
+      "bytes": 584,
+      "LF": 1,
+      "sha256": "bf937af3f26da815191c9443808f4b77b861a5314db9c28346ee8e6f611104a1",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/11/whole_wire_DATA",
+      "bytes": 149,
+      "LF": 1,
+      "sha256": "b636c2f2a20d9512eaee8871cafd274d4db3864ec37028931c191d3bdc46aee3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/12/whole_wire_DATA",
+      "bytes": 148,
+      "LF": 1,
+      "sha256": "b2173427054b8b19ff7370fad38a062a8047797a1abc24249058bf9aa8207bd1",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/13/whole_wire_DATA",
+      "bytes": 148,
+      "LF": 1,
+      "sha256": "486477557064df62ecb8fb1d913a37f582b1c2345e2bb202978d140da99df14e",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/14/actual_first_rawLF_prefix_DATA",
+      "bytes": 1358,
+      "LF": 1,
+      "sha256": "207f8a923b751e97050ed46f86d99d24b509fbe488839ef14ca3f580ee352e3a",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/14/whole_input_wire_DATA",
+      "bytes": 1358,
+      "LF": 1,
+      "sha256": "207f8a923b751e97050ed46f86d99d24b509fbe488839ef14ca3f580ee352e3a",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/15/actual_first_rawLF_prefix_DATA",
+      "bytes": 2716,
+      "LF": 1,
+      "sha256": "fc897df7d21c0b49a222efc31e0b168f0fd9f32eda039ce072e47ff8ed587a02",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/15/whole_input_wire_DATA",
+      "bytes": 2716,
+      "LF": 1,
+      "sha256": "fc897df7d21c0b49a222efc31e0b168f0fd9f32eda039ce072e47ff8ed587a02",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/16/actual_first_rawLF_prefix_DATA",
+      "bytes": 1357,
+      "LF": 1,
+      "sha256": "acb856a29da47c4df801a511b7504927ad33124c842ff90eb20b6089d6e3059e",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/16/whole_input_wire_DATA",
+      "bytes": 1358,
+      "LF": 1,
+      "sha256": "13cc85dad70947d428e4f729a14dce5e34b59746709109be99103b360851baa0",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/17/actual_first_rawLF_prefix_DATA",
+      "bytes": 2713,
+      "LF": 1,
+      "sha256": "65bdd8445ecd647e5ecc55aabbc1c36c30f1b277d3e76ec6419aab5060e10e17",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/17/whole_input_wire_DATA",
+      "bytes": 2716,
+      "LF": 1,
+      "sha256": "68844bf0f877f0ec303c64b3d114567efe1a5df3e17209dd3fc052e29d658e51",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/18/whole_wire_DATA",
+      "bytes": 682,
+      "LF": 1,
+      "sha256": "f08ce183779bd710f72bb00e13d2ffd6cfeb4d687c840896906d96907e0702b8",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/19/whole_wire_DATA",
+      "bytes": 681,
+      "LF": 1,
+      "sha256": "68def46921ab1a74937c451d8fb79ac0891bdaf9be2ccfd3cfcf61f3239d91f1",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/negative_cases/20/whole_wire_DATA",
+      "bytes": 681,
+      "LF": 1,
+      "sha256": "1cc649e45426a127a9bfe00cbfdd87fc1078521f5fe3aff7803276125c829b21",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/positive_cases/0/whole_wire_DATA",
+      "bytes": 149,
+      "LF": 1,
+      "sha256": "981c3d0f9e0e19c9c2ae58a315bdd0ea9349d5ae0155281e33d88506e35c42f8",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/1/positive_cases/1/whole_wire_DATA",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "8d031a9e05c31d05b14d7fb6790baa521a3f4c93ba600fcd1bbc447cf8d334c9",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/0/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/1/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/2/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/3/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/4/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/5/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/6/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/7/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/8/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/2/whole_schedules/9/whole_captured_primary_DATA",
+      "bytes": 679,
+      "LF": 1,
+      "sha256": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/0/whole_stream_DATA",
+      "bytes": 2,
+      "LF": 1,
+      "sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/1/whole_stream_DATA",
+      "bytes": 2,
+      "LF": 1,
+      "sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/2/whole_stream_DATA",
+      "bytes": 228,
+      "LF": 3,
+      "sha256": "f99d31545af922c71f97c81644fff460c5dd19731db8c3b4bb6a187d9c89d830",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/3/whole_stream_DATA",
+      "bytes": 228,
+      "LF": 3,
+      "sha256": "5f8668d812d8215a29037242cc7d3bd2f91902a8fb36e4f662cac690e30bf3ee",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/4/whole_stream_DATA",
+      "bytes": 2,
+      "LF": 1,
+      "sha256": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/5/whole_stream_DATA",
+      "bytes": 339,
+      "LF": 3,
+      "sha256": "526af7046beda44a2fca9dc5d64bf8e00b9aeaca893bdcfa0338c470679d1a93",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/6/whole_stream_DATA",
+      "bytes": 113,
+      "LF": 1,
+      "sha256": "8d031a9e05c31d05b14d7fb6790baa521a3f4c93ba600fcd1bbc447cf8d334c9",
+      "encoding": "hex COMPLETE DATA"
+    },
+    {
+      "locus": "ROOT/WHOLE_ANCILLARY_JSON_DATA_COMPLETE_LOSSLESS_CARRIER[COMPLETE_DECODED_JSON_DATA]/WHOLE_prior_R1_R4_fixture_groups_complete_lossless_carrier_UNCHANGED[COMPLETE_DECODED_JSON_DATA]/3/whole_schedules/7/whole_stream_DATA",
+      "bytes": 226,
+      "LF": 2,
+      "sha256": "a1fade9bf6c80e8d7385aa2367de31c05844727d04d19fce759cdf5e31420246",
+      "encoding": "hex COMPLETE DATA"
+    }
+  ],
+  "descriptor_references": 198,
+  "unique_including70inputs_and_entire_candidate": 222,
+  "unique_B": 89035763,
+  "max_member_B": 16777218,
+  "bounds": {
+    "member": 33554432,
+    "unique_aggregate": 134217728,
+    "XZ_memory": 67108864,
+    "XZ_maxOutputBoundPlus1_eofTrue_unused0": true
+  },
+  "all16_ancillary_complete_exact_previous90a6": true,
+  "approved_method_exact_aaf": true,
+  "parent_utilities_limit": "Opaque strict transport decoding/hash/B/LF and exact full source-line arithmetic only; no raw protocol wire JSON parsing, AST or code semantic review/execution. Two traversal mistakes (deep raw wire treated as JSON container / multi-frame raw stream treated as container), octal notation and absent-row shape errors were parent checker errors corrected; no candidate artifact defect or rerun of reported failure inferred. No raw private bodies/program lines printed.",
+  "owner_authority": "eb86 minimal privateACK only within existing cycle5 candidate8; original c0a519 cap5 used4; no6th/reset",
+  "next_required": "TWO fresh distinct native FULL C1-C8/F1-F4 independent reviewers, WHOLE firstaccess methods and both fullreports even first FIX-FIRST",
+  "hold": "No source/code/runtime/paid/parser/vector/golden/helper/smoke/Genie source report/cardDone. all original4 features NOT accepted; future safe changedpath smoke then exact native activation and full4features/integration/aggregate/remote/publication still required."
+}

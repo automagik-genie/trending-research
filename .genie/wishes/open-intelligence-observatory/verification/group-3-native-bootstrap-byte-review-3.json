@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-09T17:11:43.408309+00:00",
+  "task": "task_fc6e95ba1833",
+  "dispatch": "ctx_d7192100118b",
+  "worker_done": "msg_9a655febb8b3",
+  "assessment_outcome": "succeeded",
+  "report_sha256": "0bbc2c62eff45221ec380980d5310f1923281294fd9426ab68f44dbf7263cb13",
+  "candidate_sha256": "d897a73f07b0bfaf4fefcff2fcbfd479467d5382eb83fb544654dfb58da084d5",
+  "prior_H1_H2_closure": "SHIP_STATIC_ONLY",
+  "full_S1_S4_readiness": "FIX-FIRST",
+  "confirmed_high": "R1 pinned Connection requires HTTP303; candidate wrongly requires302",
+  "safe_nonzero_diagnostic_plan": "QUALIFIED_STATIC_SHIP_NOT_EXECUTION_PERMISSION",
+  "global_native_completion": "UNAVAILABLE",
+  "original_runtime": "BLOCKED_NO_ACTUAL_PROOF",
+  "criteria_added_after_reading": [],
+  "next_owner": "same original task author prospective repair2/2 only, then fresh exact independent re-review; no runtime/native/production/paid admission"
+}

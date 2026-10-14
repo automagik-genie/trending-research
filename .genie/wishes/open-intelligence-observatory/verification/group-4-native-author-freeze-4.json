@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-10-09T17:27:57.163578+00:00",
+  "status": "ACTUAL_NATIVE_AUTHOR_FREEZE_PENDING_INDEPENDENT_ACCEPTANCE_AND_QUALITY",
+  "task": "task_1ee57daded7e",
+  "dispatch": "ctx_f79253ca87d2",
+  "question_id": "msg_28690caa253a",
+  "author_exact_report": "AUTHOR FREEZE task task_1ee57daded7e dispatch ctx_f79253ca87d2. Accepted exact binding d2b9d2999f111a45723510a378b8863ff3685bb0874fa625dd63485dcc6bb521 applied before checkout; samecard claimed issue-5-engineer newspan, no report yet. Complete admitted4/4 slice; one frozen python3 -B integrations/brain/qualification/native_qualification.py --resume-smoke exit0 PASS_ISOLATED_NATIVE_QUALIFICATION_NOT_DEPLOYMENT,150actual nativecalls=original73+77continuation,26same canonicalnativebindings, all original four native acceptance assertions pass. Actual PG postmaster17:08:09.28138->17:08:23.277682UTC; exact26IDs/canonicalhashes/metadata/allclaim-span-sourcebytes/quotes retained; facts1/2 opposedreports,3/4 twoinvestors,5repeatedtransaction and old/newdisposable27history equal afterrestart. Citedrecall claim24/source22 trace22; actual source/targetdocid7e2738/1ff54e exactcompletehashes, graphquerybrain_document/doc-3 trace16; datehalfopen/defaultsupersession/RFC3339rejection actual. Four sameIDs/args negativecontrols now complete redactedactualbody/rawSHA; rawSHA matches everyoriginal negative. Additional stdlib receiptcustody factcheck exit0 independently reconstructed exactpriorfailedrawdigest4b7cd8c3..., confirmed original73calls/26bindings equal, allfourargs/rawSHA/bodycomplete equal, sixartifacts contain no labpassword. NativeHTTPRLS/tenancy, universalappID/appendonly, bitemporal/deployedacceptance remain null/unclaimed; realCC0quantity unverified, conflicts/investors LAB. Ownexactcontainer inspected finallySTOPPED networknone/nonroot/noports/readonlyroot/fourbinds, PGDATAretained parentcustody, paid/modelcalls0, no reingest/resync/roles/grants/reset/scaffoldchange. Freeze current sixpaths: docs/integrations/brain.md SHA128af5e6afd153cbdd945bd16bf2114887bdf9ca58be154c7bfacd2d75a08b1e 344lines45572bytes; evidence.json SHAb169b97ffb1029ea1a4ee26c4f42675166fe170f7f20cd753f2be8df7aa952a9 764lines63216bytes; native_qualification.py SHAa8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389 825lines48211bytes; native-receipts.json SHAd10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e 43lines550314bytes; unchangednative-tools.json SHA8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3 510lines17422bytes; unchanged sandbox/.gitignore SHA240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d 2lines14bytes. Fourmodifiedpaths/no newpaths thiscontinuation,253netlineincrease vs acceptedbinding files,1400totalgroupinsertionestimate remains <=2000; worker did noGit, parent exactdiff required. Docv1.0.3 and current_native_qualification preserve historical1.0.1/1.0.2 separately and attribute8continuation Rulings (authority/search/errors/originalrecordcustody/documentboundary/time/restart/handoff); no throwaways/newtests/dependencies. Please freeze candidate and dispatch originalfourcriteria independentacceptance plus separatenativesecurity/maintainability/performancequality; run current frozen fullaggregate python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json after allauthorsfreeze. Focused/native smoke is completed, no rerunadmitted; reviewersread exactdirectreceipts and code/docs, do notmutate/restart. Parent must confirm original SHIP+separatequalitySHIP+currentaggregate/actualscopeddiff before successfulworker_done. I remain blocked in this authoritativeask, then will post exactlyone attributed cardhandoff and requiredworker_done, no taskdone/GitHubclosure.",
+  "manifest": {
+    "docs/integrations/brain.md": {
+      "sha256": "128af5e6afd153cbdd945bd16bf2114887bdf9ca58be154c7bfacd2d75a08b1e",
+      "bytes": 45572,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/evidence.json": {
+      "sha256": "b169b97ffb1029ea1a4ee26c4f42675166fe170f7f20cd753f2be8df7aa952a9",
+      "bytes": 63216,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native-tools.json": {
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "bytes": 17422,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native_qualification.py": {
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "bytes": 48211,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native-receipts.json": {
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "bytes": 550314,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/sandbox/.gitignore": {
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14,
+      "mode": "0600"
+    }
+  },
+  "manifest_sha256": "b5ac2167cbc90c60f322fe4ddc5eb92a039afbc7fb0d8f8bb0553dc18642dc0e",
+  "source_scope": "exactsixpaths/1400estimate/2000hard; ignored sandbox only native ownstate notstageable",
+  "actual_user_cap4_continuation": "Executed reportedone--resume-smoke exit0,150calls73+77,26bindings; parent metadata verifies exactfrozenbytes; directreceipt evaluation routedindependently. Not fullroadmap/deployedacceptance.",
+  "original_acceptance": null,
+  "separate_quality": null,
+  "aggregate": null
+}

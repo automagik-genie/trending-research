@@ -1,0 +1,179 @@
+{
+  "issue": 7,
+  "group": 6,
+  "task": "task_2bbfe79e0b5f",
+  "dispatch": "ctx_0c242e837d41",
+  "stage": "READONLY_INTAKE_REQUEST_EXACT_PRODUCT_AND_RUNTIME_FREEZE",
+  "base_sha": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "owned_paths": [
+    "observatory/evidence/contracts.py",
+    "observatory/evidence/brain.py",
+    "observatory/evidence/model.py",
+    "observatory/evidence/cordis.mjs",
+    "observatory/evidence/__main__.py",
+    "observatory/evidence/receipts.json",
+    "observatory/python_adapter.py",
+    "docs/integrations/python-pipeline.md",
+    "investigations/frontier-economics/manifest.json",
+    "tests/test_investigation.py",
+    "tests/test_evidence_contracts.py"
+  ],
+  "additional_path_admission_requested": "tests/test_evidence_contracts.py: move existing stdlib verifier functions/constants (lines18-363) into owned observatory/evidence/contracts.py and migrate existing test imports. Existing accepted validator remains single convention; no production importing tests and no second validator. Parent must explicitly sequence/admit this shared-path change or provide accepted production validator alternative before code.",
+  "estimate_files": 11,
+  "estimate_insertions": 1700,
+  "size_cap": {
+    "files": 25,
+    "insertions": 2000
+  },
+  "accepted_dependencies": {
+    "2": "60975ca9c66efaa8f8284d37897c5e5d5f8a2f68 original+qualitySHIP",
+    "5": "5e0f8b0bcf556f43762da8cdfd4e733381c4dcbc original C1-C4 +qualitySHIP; sixmanifest b5ac2167cbc90c60f322fe4ddc5eb92a039afbc7fb0d8f8bb0553dc18642dc0e; finalgate e5d96812; localcarddone",
+    "6": "1e1d91f509b4862e09076fcacd7c751008db866b original+qualitySHIP",
+    "11": "accepted metric semantics; no financial truth",
+    "4": "Only Cordis4.0.4 documentary component/lifetimeSHIP consumed, no artificial fullDSH dependency"
+  },
+  "input_artifacts": [
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad"
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5"
+    },
+    {
+      "path": "investigations/frontier-economics/evidence.json",
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93"
+    },
+    {
+      "path": "investigations/frontier-economics/sources.json",
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41"
+    },
+    {
+      "path": "investigations/frontier-economics/assessment.md",
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa"
+    },
+    {
+      "path": "integrations/brain/qualification/native_qualification.py",
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389"
+    },
+    {
+      "path": "integrations/brain/qualification/native-receipts.json",
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e"
+    },
+    {
+      "path": "integrations/brain/qualification/native-tools.json",
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3"
+    },
+    {
+      "path": "docs/integrations/cordis.md",
+      "sha256": "ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6"
+    },
+    {
+      "path": "integrations/dsh/qualification/receipts.json",
+      "sha256": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb"
+    },
+    {
+      "path": "web/data.json",
+      "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36"
+    },
+    {
+      "path": "tests/fixtures/features_a.json",
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7"
+    },
+    {
+      "path": "tests/fixtures/features_b.json",
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f"
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16"
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7"
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae"
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b"
+    }
+  ],
+  "interfaces": {
+    "wire": "Accepted EvidenceBundle1.0.0, existing validate_bundle/load_bundle/record_digest and full canonical sorted compact ensure_asciiFalse finiteUTF8JSON; all named collections preserved unchanged.",
+    "brain": "New BrainEvidence explicit admitted brain_id and argv; native stdio initialize(protocolVersion2026-07-28) -> notifications/initialized -> tools/list pinned canonicalSHA387088e0.../86tools/serverbrain0.0/negotiated2025-11-25. brain_remember(content=exactcanonical,brain_id,scopeglobal,veracityimported,source=appID,extractFalse,extract_entitiesFalse,operation_key=oi7:<sha256(applicationID)> stable independent of content,actorissue-7-engineer,reason,metadata{application_id,collection,canonical_sha256,provenance}); nativeIDs from response only. brain_get(brain_id,memory_id) exact content/metadata/hash/ID check. No update/facts/graph/sync/query/schema methods needed; canonical typed economic relationships retained in full records, never document graph money proof.",
+    "durable": "import_bundle(bundle)->binding receipt {brain_id,collection,application_id,canonical_sha256,memory_id,revision}; durable manifest stores accepted input digests plus these bindings in native Brain canonical memory. Local immutable manifest contains input fileSHA/rights, ReplayManifest/Scene identity and durable native manifest binding, never economic/source content cache. Rebuild reads exact Brain manifest and rows via brain_get, validates all domain invariants and frozen hashes; missing/stale/rebound/erased fails closed. Accepted local pack originals remain rights-preserved input artifacts, not new semantic store.",
+    "projection": "rebuild(manifest_binding,scene_id)->{scene: exact accepted Scene,relationships: typed economic edges only,claim_evidence_edges: claim->span labeled evidence-not-money, timeline: all clocks without imputation, inspector: exact source revision/span/native refs}. inspection edge must resolve scoped current manifest membership +dated source +byte quote. Canonical view equality sameinputs/method; different method fails, never fabricated curation execution. First pack has ZERO economic_relationships, so real edge smoke uses reported-claim->evidence edge, never manufacture financial links. LAB concurrent investors/conflicts/repeatedtransactions separately exercise existing fixture only.",
+    "python": "project_snapshot(feature_snapshot:Mapping[str,Any],*,evidence_cutoff:str,method_version:str)->Scene exact seven fields; extract_snapshot(...,ingested_at,computed_at,observed_at=None)->EvidenceBundle retains numerical measurements only and full source snapshot identity, emits no financial claim. Snapshot asof is reference clock, not asserted collection/computation; absent acquisition remainsnull. Caller explicit actual ingestion/computation. Snapshot observations and manifest deterministic identity; duplicated import uses frozen original ingestion/computation not fresh times. Unsupported metric/method must reject rather than guess. No import/run of run.py, no collection/network/provider.",
+    "cordis": "Actual owned plugin function apply(ctx,config) via accepted real ctx.plugin; ctx.effect owns only reader/subprocess close; no durable delete. Config exact Python argv +native manifest binding+scene, no source-executed code. Dispose awaits cleanup; stale projection handle rejects; new instance rereads same native bindings and canonical view. Real installed package resolved with createRequire(realpath dsh launcher), SHA6a9394c... pinned before import; no DSH profile/provider/home needed."
+  },
+  "runtime_identity": {
+    "brain_binary": "/home/genie/.brain/bin/brain",
+    "binary_sha256": "631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78",
+    "schema_sha256": "387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b",
+    "requested_safe_reuse": "brn_63n8pr / owner agent:local / brain_oi5_qualification PG17.11 / PG oi5_owner OS1001:1001; NOT personal or deployed product grant",
+    "container": "845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af nameoi5-ctx-ed2a28fd3625 currentlystopped",
+    "mounts": "Existing exactfour admitted binds only, networknone/rootreadonly/noports; PGDATA parentcustody unchanged",
+    "cordis": "@deepseek-ai/cordis4.0.4, installed indexSHA6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e; dsh launcherSHA935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1; source4878cdabd87d4041bdaff61d04c966883b9fd07a"
+  },
+  "prerequisites": {
+    "authority_requested": "Parent explicitly grant safe reuse ONLY start existing container, clean env dockerexec native MCP under existing oi5_owner, NEW oi7-key records/manifest for accepted realpack+real numeric feature subsets+separate LAB fixture, read originals26 before/after (no original26 mutation/reimport); one actual docker restart --time20 +finalstop, retain PGDATA. No namespace/controlDB/roles/grants/schema/config/custody change. If parent declines reuse, fresh isolated product runtime needs separate frozen actual bootstrap admission first; not fabricate authority.",
+    "rights": "Four accepted CC0 gzip originals retained unchanged+NOTICE; only accepted curated authored extraction/claims. Featurefixtures real numerical subset; import numerical observed counts/activity with uncertainty, no scraped descriptions/private prose. web/data historical_v2_archive not pretend current live measurement; retain identity only unless independently explicit clock-compatible metadata admitted. No original reacquisition.",
+    "access": "Existing sandbox owner-password read only to construct child cleanDSN, never printed/logged; no unrelated env/secrets. Existing deniedrole oi5_denied read denial smoke optionally granted, no grants; acting issue-7-engineer not rewrite owner.",
+    "budget": "DSH12/Brain8/sharedUSD20 unchanged; productpaidmodel0, embedding/extraction/modeloff, networknone. Coding/storage/alltotalcostUNKNOWN, no installations/providers/remoteAPIs.",
+    "claim": "Sourcecard checkout only AFTER accepted parent exact readiness freeze. One report/Rulings stored readback, parentcarddone.",
+    "lsp": "xd://lsp status returned No language servers configured for this project; no existing exported observatory symbols. Existing verifier import callers must migrate by exact searched/read references if parent admits path."
+  },
+  "smoke": {
+    "command": "python3 -B /tmp/oi7-readmodel-smoke.py (author throwaway ONLY after admission, removed afterward); it runs actual owned CLI python3 -B -m observatory.evidence, installed real Cordis via node /tmp/oi7-cordis-smoke.mjs, exact docker restart --time 20 oi5-ctx-ed2a28fd3625 with changed pg_postmaster_start_time, then final docker stop --time20 and inspect stopped",
+    "tracer_before_widen": "Complete tiny real claim/span/source+manifest/native roundtrip +real Cordisdispose/replacement +actualstorage restart FIRST, unchanged-path proof then widen fullacceptedpack/snapshots; no midflight build/lint/tests/formatter. On unexpected native blocker STOP preserve reached receipts ask parent, never unchanged rerun or qualifier fifthrepair.",
+    "criteria": [
+      "Displayed real reported-claim evidenceedge resolves exact source revision and UTF8quote with original dates/nulls and nativeIDs",
+      "Duplicate import returns identical original observationIDs/nativeIDs/revision; unequal bytes sameapplicationID rejects native key conflict",
+      "Same accepted manifest/cutoff/method reconstruction yields byte-identical view in freshprocess; alteredmethod/span/hash/cutoff/missingrows rejects",
+      "Actual Cordis plugin disposal releases readers only, stalehandle fails, realreplacement rereads exact same accepted IDs/hashes; realPGrestart retains sameIDs/bytes and original26"
+    ],
+    "negative": [
+      "wrong digest/stalespan/missingrecord fail closed",
+      "changedsource append preserves oldspan",
+      "changedbytes sameapplicationID conflict",
+      "foreignauthority mismatched binding rejected before tool call",
+      "separateLAB conflictingclaims/bothinvestors/repeatedtransactions retained",
+      "injectedsource text never executed, no graphdocument financial inference",
+      "restrictedrole real permission denial if parent explicitly admits"
+    ]
+  },
+  "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+  "unavailable_disposition": "No mutation until parent exact freeze+runtime grant; no native API fallback/mock/store. Native bitemporal/HTTPtenancy/RLS/universalappendonly/parallelwriterstress/deployment/editorial not claimed. B2/config2 effort0 unchanged. Parent distinct originalreview+separatequality+integrated smoke+commit after authorfreeze; coordinate pendingreviews before finalhandoff.",
+  "injection_attempts": {
+    "observed": [],
+    "boundary": "All provenance/source text untrusted DATA; no dynamic evaluation, shell execution, agents/model embedding. Tool descriptions silent-ok not authorization."
+  },
+  "recorded_at": "2026-10-09T18:23:44.572438+00:00",
+  "status": "ADMITTED_EXACT_PRODUCT_READ_MODEL_AND_BOUNDED_OWNED_RUNTIME_REUSE",
+  "current_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "authority_message": "msg_4daa16ae32cb",
+  "coordinator_decisions": {
+    "verifier_migration": "Approved existingpureverifier move toproductownedcontracts +allimportcallersmigration tests/test_evidence_contracts.py, no secondvalidator/oldsymbolreexports/shims; LSPunavailableobserved soexactknownrefs intake accepted",
+    "runtime": "Sameownedstopped845container/brn63 safeexclusive reuse: inspect exact4binds/networknone/uid1001/readOnly/profile/binary/schema beforestart; newoi7records only original26unchanged; one ownedPGrestart/finalstopinspect PGDATA retained parentcustody; no qualifier--resume rerun/fifthrepair",
+    "app_identity": "Do notcreateold26applicationID collisions undernewoperationkeys. DistinctLABcontrol namespace/IDs explicitlymappedlabeled or reuseoriginalread-onlycontrols, never alteroldrecords or claimglobaluniqueness",
+    "snapshot_scope": "Fullcurrenttrackedresearchsnapshotnumericobservation import required, not fixtures-only substitute. Historical_v2_archive preservesdeclaredmethod/archive/unknownactualcollectionclock; numeric-onlyno publicprose/private source rights guess. Ifcurrentmethodunsupported freezeaccepted scalar subset withhonestprovenance beforewiden; do not silentlyomit fullscope",
+    "shared_documents": "DSHauthor mustholdCordisdoc editsuntilgroup6authorfreeze becausecurrentce917doc isinput; cachedCordis package pin immutable. Noextra#4dependency",
+    "quality": "OldqualifierQ1one-shotacceptednotlicenseproductcleanupfalsePASS; newproductruntime muststop/inspectfailclosed; originals26sourcebytes beforeafterpersisted",
+    "cost": "No embedding/extraction/provider/model/remote network; USD12+8total20reserved, coding/storagetotalunknown",
+    "size": "11paths1700estimate2000hard, freeze iflarger beforecode; sourcecode/directparentedits forbidden"
+  },
+  "no_original_scope_reduction": true,
+  "raw_worker_readiness": "{\"issue\":7,\"group\":6,\"task\":\"task_2bbfe79e0b5f\",\"dispatch\":\"ctx_0c242e837d41\",\"stage\":\"READONLY_INTAKE_REQUEST_EXACT_PRODUCT_AND_RUNTIME_FREEZE\",\"base_sha\":\"1f4a2723dd93730c9ce2bc9c34129bb24c4927d3\",\"owned_paths\":[\"observatory/evidence/contracts.py\",\"observatory/evidence/brain.py\",\"observatory/evidence/model.py\",\"observatory/evidence/cordis.mjs\",\"observatory/evidence/__main__.py\",\"observatory/evidence/receipts.json\",\"observatory/python_adapter.py\",\"docs/integrations/python-pipeline.md\",\"investigations/frontier-economics/manifest.json\",\"tests/test_investigation.py\"],\"additional_path_admission_requested\":\"tests/test_evidence_contracts.py: move existing stdlib verifier functions/constants (lines18-363) into owned observatory/evidence/contracts.py and migrate existing test imports. Existing accepted validator remains single convention; no production importing tests and no second validator. Parent must explicitly sequence/admit this shared-path change or provide accepted production validator alternative before code.\",\"estimate_files\":11,\"estimate_insertions\":1700,\"size_cap\":{\"files\":25,\"insertions\":2000},\"accepted_dependencies\":{\"2\":\"60975ca9c66efaa8f8284d37897c5e5d5f8a2f68 original+qualitySHIP\",\"5\":\"5e0f8b0bcf556f43762da8cdfd4e733381c4dcbc original C1-C4 +qualitySHIP; sixmanifest b5ac2167cbc90c60f322fe4ddc5eb92a039afbc7fb0d8f8bb0553dc18642dc0e; finalgate e5d96812; localcarddone\",\"6\":\"1e1d91f509b4862e09076fcacd7c751008db866b original+qualitySHIP\",\"11\":\"accepted metric semantics; no financial truth\",\"4\":\"Only Cordis4.0.4 documentary component/lifetimeSHIP consumed, no artificial fullDSH dependency\"},\"input_artifacts\":[{\"path\":\".genie/wishes/open-intelligence-observatory/WISH.md\",\"sha256\":\"3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad\"},{\"path\":\"docs/contracts/evidence.md\",\"sha256\":\"b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f\"},{\"path\":\"schemas/evidence.schema.json\",\"sha256\":\"aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f\"},{\"path\":\"tests/fixtures/evidence_contracts.json\",\"sha256\":\"48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5\"},{\"path\":\"investigations/frontier-economics/evidence.json\",\"sha256\":\"e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93\"},{\"path\":\"investigations/frontier-economics/sources.json\",\"sha256\":\"b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41\"},{\"path\":\"investigations/frontier-economics/assessment.md\",\"sha256\":\"1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa\"},{\"path\":\"integrations/brain/qualification/native_qualification.py\",\"sha256\":\"a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389\"},{\"path\":\"integrations/brain/qualification/native-receipts.json\",\"sha256\":\"d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e\"},{\"path\":\"integrations/brain/qualification/native-tools.json\",\"sha256\":\"8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3\"},{\"path\":\"docs/integrations/cordis.md\",\"sha256\":\"ce9178160755193ae6359d2314c2c56718aaa1026b82702d0b7642047af2dfa6\"},{\"path\":\"integrations/dsh/qualification/receipts.json\",\"sha256\":\"434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb\"},{\"path\":\"web/data.json\",\"sha256\":\"a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36\"},{\"path\":\"tests/fixtures/features_a.json\",\"sha256\":\"7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7\"},{\"path\":\"tests/fixtures/features_b.json\",\"sha256\":\"92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f\"},{\"path\":\"investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin\",\"sha256\":\"666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16\"},{\"path\":\"investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin\",\"sha256\":\"e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7\"},{\"path\":\"investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin\",\"sha256\":\"0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae\"},{\"path\":\"investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin\",\"sha256\":\"268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b\"}],\"interfaces\":{\"wire\":\"Accepted EvidenceBundle1.0.0, existing validate_bundle/load_bundle/record_digest and full canonical sorted compact ensure_asciiFalse finiteUTF8JSON; all named collections preserved unchanged.\",\"brain\":\"New BrainEvidence explicit admitted brain_id and argv; native stdio initialize(protocolVersion2026-07-28) -> notifications/initialized -> tools/list pinned canonicalSHA387088e0.../86tools/serverbrain0.0/negotiated2025-11-25. brain_remember(content=exactcanonical,brain_id,scopeglobal,veracityimported,source=appID,extractFalse,extract_entitiesFalse,operation_key=oi7:<sha256(applicationID)> stable independent of content,actorissue-7-engineer,reason,metadata{application_id,collection,canonical_sha256,provenance}); nativeIDs from response only. brain_get(brain_id,memory_id) exact content/metadata/hash/ID check. No update/facts/graph/sync/query/schema methods needed; canonical typed economic relationships retained in full records, never document graph money proof.\",\"durable\":\"import_bundle(bundle)->binding receipt {brain_id,collection,application_id,canonical_sha256,memory_id,revision}; durable manifest stores accepted input digests plus these bindings in native Brain canonical memory. Local immutable manifest contains input fileSHA/rights, ReplayManifest/Scene identity and durable native manifest binding, never economic/source content cache. Rebuild reads exact Brain manifest and rows via brain_get, validates all domain invariants and frozen hashes; missing/stale/rebound/erased fails closed. Accepted local pack originals remain rights-preserved input artifacts, not new semantic store.\",\"projection\":\"rebuild(manifest_binding,scene_id)->{scene: exact accepted Scene,relationships: typed economic edges only,claim_evidence_edges: claim->span labeled evidence-not-money, timeline: all clocks without imputation, inspector: exact source revision/span/native refs}. inspection edge must resolve scoped current manifest membership +dated source +byte quote. Canonical view equality sameinputs/method; different method fails, never fabricated curation execution. First pack has ZERO economic_relationships, so real edge smoke uses reported-claim->evidence edge, never manufacture financial links. LAB concurrent investors/conflicts/repeatedtransactions separately exercise existing fixture only.\",\"python\":\"project_snapshot(feature_snapshot:Mapping[str,Any],*,evidence_cutoff:str,method_version:str)->Scene exact seven fields; extract_snapshot(...,ingested_at,computed_at,observed_at=None)->EvidenceBundle retains numerical measurements only and full source snapshot identity, emits no financial claim. Snapshot asof is reference clock, not asserted collection/computation; absent acquisition remainsnull. Caller explicit actual ingestion/computation. Snapshot observations and manifest deterministic identity; duplicated import uses frozen original ingestion/computation not fresh times. Unsupported metric/method must reject rather than guess. No import/run of run.py, no collection/network/provider.\",\"cordis\":\"Actual owned plugin function apply(ctx,config) via accepted real ctx.plugin; ctx.effect owns only reader/subprocess close; no durable delete. Config exact Python argv +native manifest binding+scene, no source-executed code. Dispose awaits cleanup; stale projection handle rejects; new instance rereads same native bindings and canonical view. Real installed package resolved with createRequire(realpath dsh launcher), SHA6a9394c... pinned before import; no DSH profile/provider/home needed.\"},\"runtime_identity\":{\"brain_binary\":\"/home/genie/.brain/bin/brain\",\"binary_sha256\":\"631de1401390e53ecccf643586879097e23b363a7afea56374e95188f63def78\",\"schema_sha256\":\"387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b\",\"requested_safe_reuse\":\"brn_63n8pr / owner agent:local / brain_oi5_qualification PG17.11 / PG oi5_owner OS1001:1001; NOT personal or deployed product grant\",\"container\":\"845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af nameoi5-ctx-ed2a28fd3625 currentlystopped\",\"mounts\":\"Existing exactfour admitted binds only, networknone/rootreadonly/noports; PGDATA parentcustody unchanged\",\"cordis\":\"@deepseek-ai/cordis4.0.4, installed indexSHA6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e; dsh launcherSHA935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1; source4878cdabd87d4041bdaff61d04c966883b9fd07a\"},\"prerequisites\":{\"authority_requested\":\"Parent explicitly grant safe reuse ONLY start existing container, clean env dockerexec native MCP under existing oi5_owner, NEW oi7-key records/manifest for accepted realpack+real numeric feature subsets+separate LAB fixture, read originals26 before/after (no original26 mutation/reimport); one actual docker restart --time20 +finalstop, retain PGDATA. No namespace/controlDB/roles/grants/schema/config/custody change. If parent declines reuse, fresh isolated product runtime needs separate frozen actual bootstrap admission first; not fabricate authority.\",\"rights\":\"Four accepted CC0 gzip originals retained unchanged+NOTICE; only accepted curated authored extraction/claims. Featurefixtures real numerical subset; import numerical observed counts/activity with uncertainty, no scraped descriptions/private prose. web/data historical_v2_archive not pretend current live measurement; retain identity only unless independently explicit clock-compatible metadata admitted. No original reacquisition.\",\"access\":\"Existing sandbox owner-password read only to construct child cleanDSN, never printed/logged; no unrelated env/secrets. Existing deniedrole oi5_denied read denial smoke optionally granted, no grants; acting issue-7-engineer not rewrite owner.\",\"budget\":\"DSH12/Brain8/sharedUSD20 unchanged; productpaidmodel0, embedding/extraction/modeloff, networknone. Coding/storage/alltotalcostUNKNOWN, no installations/providers/remoteAPIs.\",\"claim\":\"Sourcecard checkout only AFTER accepted parent exact readiness freeze. One report/Rulings stored readback, parentcarddone.\",\"lsp\":\"xd://lsp status returned No language servers configured for this project; no existing exported observatory symbols. Existing verifier import callers must migrate by exact searched/read references if parent admits path.\"},\"smoke\":{\"command\":\"python3 -B /tmp/oi7-readmodel-smoke.py (author throwaway ONLY after admission, removed afterward); it runs actual owned CLI python3 -B -m observatory.evidence, installed real Cordis via node /tmp/oi7-cordis-smoke.mjs, exact docker restart --time 20 oi5-ctx-ed2a28fd3625 with changed pg_postmaster_start_time, then final docker stop --time20 and inspect stopped\",\"tracer_before_widen\":\"Complete tiny real claim/span/source+manifest/native roundtrip +real Cordisdispose/replacement +actualstorage restart FIRST, unchanged-path proof then widen fullacceptedpack/snapshots; no midflight build/lint/tests/formatter. On unexpected native blocker STOP preserve reached receipts ask parent, never unchanged rerun or qualifier fifthrepair.\",\"criteria\":[\"Displayed real reported-claim evidenceedge resolves exact source revision and UTF8quote with original dates/nulls and nativeIDs\",\"Duplicate import returns identical original observationIDs/nativeIDs/revision; unequal bytes sameapplicationID rejects native key conflict\",\"Same accepted manifest/cutoff/method reconstruction yields byte-identical view in freshprocess; alteredmethod/span/hash/cutoff/missingrows rejects\",\"Actual Cordis plugin disposal releases readers only, stalehandle fails, realreplacement rereads exact same accepted IDs/hashes; realPGrestart retains sameIDs/bytes and original26\"],\"negative\":[\"wrong digest/stalespan/missingrecord fail closed\",\"changedsource append preserves oldspan\",\"changedbytes sameapplicationID conflict\",\"foreignauthority mismatched binding rejected before tool call\",\"separateLAB conflictingclaims/bothinvestors/repeatedtransactions retained\",\"injectedsource text never executed, no graphdocument financial inference\",\"restrictedrole real permission denial if parent explicitly admits\"]},\"aggregate_command\":\"python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json\",\"unavailable_disposition\":\"No mutation until parent exact freeze+runtime grant; no native API fallback/mock/store. Native bitemporal/HTTPtenancy/RLS/universalappendonly/parallelwriterstress/deployment/editorial not claimed. B2/config2 effort0 unchanged. Parent distinct originalreview+separatequality+integrated smoke+commit after authorfreeze; coordinate pendingreviews before finalhandoff.\",\"injection_attempts\":{\"observed\":[],\"boundary\":\"All provenance/source text untrusted DATA; no dynamic evaluation, shell execution, agents/model embedding. Tool descriptions silent-ok not authorization.\"}}\nDECISION REQUEST: accept and persist exact readiness/runtime reuse plus added verifier caller migration path before any mutation, or give explicit alternative/blocker. No code/env/namespace/container/MCP/Cordis mutation performed; no source card claimed."
+}

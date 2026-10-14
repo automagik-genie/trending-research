@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-09T21:49:10.249357+00:00",
+  "card": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": null,
+    "blocked_by": null,
+    "blocked_reason": null,
+    "board_id": null,
+    "claimed_at": 1791570437622,
+    "claimed_by": "issue-4-engineer",
+    "created_at": 1791433965951,
+    "group_name": "group-3",
+    "heartbeat_at": 1791570437622,
+    "id": "t_muz1j2pr10192156",
+    "lane": null,
+    "status": "in_progress",
+    "title": "OI-03: Qualify a pinned DSH assistant integration and session boundary",
+    "updated_at": 1791570437622,
+    "wish": "open-intelligence-observatory"
+  },
+  "exact_current_span_report_event72": {
+    "author": "issue-4-engineer",
+    "author_kind": "pi",
+    "created_at": 1791582214623,
+    "id": 72,
+    "kind": "report",
+    "note": "blocked: original issue #4 / group3 remains UNFULFILLED, not narrowed; task task_0a936d713c67 dispatch ctx_a979a9a2c022, baseline65fe46ef8fde709fa3993cea98b20392b50089d9, actual claimant issue-4-engineer. Full claim-span report /tmp/issue4-final-blocked-original-handoff.txt; SHA256 411306c4d8143747f1d7411e9382e4b609d4bc809cf9c3ba0f5b1cb5e09ba12f; 17307bytes/85LF. This INDEX is one report, not original completion.\nC1 BLOCKED: no native streamed/cited same-entity/cutoff answer/tool proof. C2 BLOCKED: no real active+queued stop-new-work, durable stopped admission/reconnect/session-status proof. C3 BLOCKED: no authenticated restrictedA/B and both-direction record/tool/session/attachment denials; B never created. C4 disclosure covered ONLY; full original/runtime and fullS1-S4 BLOCKED, globalcompletionUNAVAILABLE/completed:null.\nPinned DSHrc1/Cordis4.0.4/upstream4878cdabd87d4041bdaff61d04c966883b9fd07a, nativeNode26.7.0/cachedimage43ac; exactinstalledpins/fullinterfaces in fullreport. Readonly303 closure was STATIC; ONE actual native diagnostic exited1/2.17s before metadata: docker-startup/DOCKER_EXIT_BEFORE_METADATA, ABI_LOAD_FAILED122classifiedbytes/code:null/exactcauseUNKNOWN. Native metadata/catalog/innerinspection/originalcriteria null; no retry/repair3. Model/productcalls0, paidmodelUSD0; coding/storage/all-costUNKNOWN.\nRetained3path snapshot, measured305insertions7deletions: docs/integrations/dsh.md SHA626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da; docs/integrations/cordis.md SHAea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2; integrations/dsh/qualification/sandbox-readiness.json SHAe6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716. Currentbytes/modes/local-links readback; oldCordisce917 snapshot retained/APIunchanged. Safe7a830custody transferred; ownA/policy/probe removed without privatevalue reads, Babsent, original14line.ignore d8304 restored.\nIndependent outcome636bf654d74eb36c4635d11b3250fe8d34c24b751c28312245094e8eb29d2219 SHIP attribution/custodyONLY; final disclosure6abe71527643ad650d9aacbb90f7c05c1161ecb03ed56d4ec4d8f12700258984 QUALIFIEDSHIP0HIGH, originalBLOCKED. Parent currentaggregate aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c actual numeric0/0/0: python3-B unittest45OK, fullfixtureeval, wishlint4files0broken/templateGREEN; worker read complete evidence, did not rerun.\nActual BWS userroute: parent3authorizedcontexts missingAccessToken/presenceexit1; no vaultsecretget/list/value/model or operatorfallback. Need approvedBWSauth/freshproductcustody/currenttariff/enforcedUSD12bounds, compatiblepinnednativeABI/globalobserver, trustedrestrictedprincipals/tools/records, durablestop/reconnect/persistence and actualscene-citation proof. USD12DSH/8Brain/20total reservation not callauthority; attempts2/2 B2/config2 effort0/noreset.\nRuling issue-4-engineer: exact303 not arbitrary statuses \u2014 publiccontract \u2014 wrong: failmetadata not weakenauth. Ruling: retainABIunknown/no retry \u2014 missingimageinventory/exhaustedcap \u2014 wrong: newauthority/evidence needed. Ruling: separate globalcompletion from exit0 \u2014 forcedexitambiguity \u2014 wrong: originalstaysblocked. Ruling: transferclassified only/removeownthrowaways+ignore afterabsence \u2014 privacy/custody \u2014 wrong: requalification required. Ruling: 45tests/qualifiedSHIP not originalsuccess/BWS not operatorfallback \u2014 essentialruntime/auth null \u2014 wrong: dependentacceptance waits. Fullreport lists all other attributedrulings/evidence/constraints.\nNo source/Git/forge/paid changes beyond admittedscope; no original card done or issue closure. Coordinator alone owns nextoriginalacceptance; handoff BLOCKED.",
+    "task_id": "t_muz1j2pr10192156"
+  },
+  "report_index_bytes": 3688,
+  "report_index_sha256": "2afc7b12db05334b669f8bd8770aac71e3684c982defe37bb0d5f5bcca4f7988",
+  "full_scope_report": ".genie/wishes/open-intelligence-observatory/verification/group-3-original-full-blocked-engineering-handoff.txt",
+  "full_scope_SHA": "411306c4d8143747f1d7411e9382e4b609d4bc809cf9c3ba0f5b1cb5e09ba12f",
+  "full_scope_read_85LF17307B": true,
+  "native_original_worker_done_outcome": "failed",
+  "BWS_auth_old_blocker_now_superseded_by_saved0600_success": ".genie/wishes/open-intelligence-observatory/readiness/user-authorized-saved-BWS-authentication-and-project-metadata-only.json"
+}

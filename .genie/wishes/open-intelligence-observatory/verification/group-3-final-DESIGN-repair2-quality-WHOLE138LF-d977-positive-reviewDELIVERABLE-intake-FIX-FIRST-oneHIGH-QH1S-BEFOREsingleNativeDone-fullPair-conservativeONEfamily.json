@@ -1,0 +1,317 @@
+{
+  "at": "2026-10-10T12:21:40.249170+00:00",
+  "state": "POSITIVE_COMPLETE_FULL_QUALITY_REVIEW_DELIVERABLE_NOT_DESIGN_SHIP",
+  "wholeNativeQuestion": {
+    "id": "msg_df63948d04f1",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "dispatch:ctx_c5b66f878242",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "Question",
+    "body": "Complete final independent WHOLE quality review is exclusively created at /tmp/oi4-native-extension-repair2-full-independent-quality-review.txt, regular nonsymlink0600,49535UTF8B/138LF SHA256d97708eaf773e181287cdb6432e800d3125e43882f49871b54dd4273ef3579e4; exact WHOLE stored-byte readback matches. Please ACTUALLY FULL-read all138LF including every criterion, finding, all29 local identity rows and all37 own whole source provenance rows, final limitations, then positively assess and accept this COMPLETE DESIGN-only review deliverable BEFORE my one actual NativeDone. My own installed check-design argv exit0 COMPLETE findings[]/root stdout and digest exit0 own reviewed-sha2561a4d51f3b3d66bd3fca20611d991b01b7305c663ccefdc5d707e9943f49d517d, actual UTC2026-10-10T12:12:28.481785Z; candidate DRAFTce898/wholeDESIGN621ea/WISH260f and ALL29 regular0600 unchanged after checks and again before report. Whole source37 exactHTTP200 SHA256/Gitblob/bytes/LF own matches and full semantic readings, no current-peer report access, code/source/runtime/tests/SDK/models/Brain/PG/Git/index/card/council changes or subagents. Verdict FIX-FIRST ONE HIGH QH1-S: named private iterator/SSE and actual selected tools-result callbacks now have explicit proposed owning captures, olderH1 preserved, but native selection itself invokes Events.dispatch169 internal/dispatch through Events.emit194-196 BEFORE returning selected tools/result hooks and discards precursor callback promises; CoreTools per-selected-result adoption cannot own those even with empty authenticated selected set. DESIGN178 preselection barrier/182 owned-selection projection plus184 CoreTools once-adoption does not concretely capture/join that earlier native precursor invocation promise or explicitly deny all unsupported selection-side observers before effects; source-static fact and NOTRUN counterexample/inference separate. Added adversarial subcase of frozenA2A5A6A8/K1K3 ALL-owned-work completeness, NOT new acceptance requirement/general event platform. Suggested native same-writer owning capture or explicit full-profile unsupported observer denial, preserving result ordering/no await model finish/no second bus. AllA1-A10/C1-C4/K1-K4/14bothdirectionrefreshcold classes/six full-footprint forecasts107slots10950TRUEins/current82TRUEins34del/human37LF/capB2final2of2/council0effort0/full historical119118 opposed rulings/actualDone-release-intake105chronology included. C1-C4 runtime ALLBLOCKED_NOTRUN, WRS90PROPOSED/noncrystallized/footer4PENDING/INDEXSimmering unchanged; no Ready/featureShip/source/native/paid grant or thirdrepair/reset. Positive intake means completed review deliverable accepted even if my verdict remains FIX-FIRST, NOT agreement/feature acceptance. No report alteration while intake pending. After whole positive acceptance I will check fully and send NativeDone EXACTONCE outcomeSucceeded completed review only, ownpath/three-sentence body, no selfrelease; parent ACTUALnativeRelease after actualDone before DoneDeliveryACK. Please reply with actual whole assessment, bound report identity, unchanged own digest and permission for this one Done; preserve any current reviewer disagreement without exposing their report.",
+    "type": "question",
+    "priority": "normal",
+    "thread_id": "msg_df63948d04f1",
+    "payload": "{\"taskId\":\"task_6502b101a89a\",\"dispatchId\":\"ctx_c5b66f878242\",\"question\":\"Complete final independent WHOLE quality review is exclusively created at /tmp/oi4-native-extension-repair2-full-independent-quality-review.txt, regular nonsymlink0600,49535UTF8B/138LF SHA256d97708eaf773e181287cdb6432e800d3125e43882f49871b54dd4273ef3579e4; exact WHOLE stored-byte readback matches. Please ACTUALLY FULL-read all138LF including every criterion, finding, all29 local identity rows and all37 own whole source provenance rows, final limitations, then positively assess and accept this COMPLETE DESIGN-only review deliverable BEFORE my one actual NativeDone. My own installed check-design argv exit0 COMPLETE findings[]/root stdout and digest exit0 own reviewed-sha2561a4d51f3b3d66bd3fca20611d991b01b7305c663ccefdc5d707e9943f49d517d, actual UTC2026-10-10T12:12:28.481785Z; candidate DRAFTce898/wholeDESIGN621ea/WISH260f and ALL29 regular0600 unchanged after checks and again before report. Whole source37 exactHTTP200 SHA256/Gitblob/bytes/LF own matches and full semantic readings, no current-peer report access, code/source/runtime/tests/SDK/models/Brain/PG/Git/index/card/council changes or subagents. Verdict FIX-FIRST ONE HIGH QH1-S: named private iterator/SSE and actual selected tools-result callbacks now have explicit proposed owning captures, olderH1 preserved, but native selection itself invokes Events.dispatch169 internal/dispatch through Events.emit194-196 BEFORE returning selected tools/result hooks and discards precursor callback promises; CoreTools per-selected-result adoption cannot own those even with empty authenticated selected set. DESIGN178 preselection barrier/182 owned-selection projection plus184 CoreTools once-adoption does not concretely capture/join that earlier native precursor invocation promise or explicitly deny all unsupported selection-side observers before effects; source-static fact and NOTRUN counterexample/inference separate. Added adversarial subcase of frozenA2A5A6A8/K1K3 ALL-owned-work completeness, NOT new acceptance requirement/general event platform. Suggested native same-writer owning capture or explicit full-profile unsupported observer denial, preserving result ordering/no await model finish/no second bus. AllA1-A10/C1-C4/K1-K4/14bothdirectionrefreshcold classes/six full-footprint forecasts107slots10950TRUEins/current82TRUEins34del/human37LF/capB2final2of2/council0effort0/full historical119118 opposed rulings/actualDone-release-intake105chronology included. C1-C4 runtime ALLBLOCKED_NOTRUN, WRS90PROPOSED/noncrystallized/footer4PENDING/INDEXSimmering unchanged; no Ready/featureShip/source/native/paid grant or thirdrepair/reset. Positive intake means completed review deliverable accepted even if my verdict remains FIX-FIRST, NOT agreement/feature acceptance. No report alteration while intake pending. After whole positive acceptance I will check fully and send NativeDone EXACTONCE outcomeSucceeded completed review only, ownpath/three-sentence body, no selfrelease; parent ACTUALnativeRelease after actualDone before DoneDeliveryACK. Please reply with actual whole assessment, bound report identity, unchanged own digest and permission for this one Done; preserve any current reviewer disagreement without exposing their report.\",\"options\":[]}",
+    "created_at": "2026-10-10T12:20:22Z",
+    "delivered_at": null
+  },
+  "bodyEqualsPayload": true,
+  "wholeReport": {
+    "path": "/tmp/oi4-native-extension-repair2-full-independent-quality-review.txt",
+    "bytes": 49535,
+    "LF": 138,
+    "sha256": "d97708eaf773e181287cdb6432e800d3125e43882f49871b54dd4273ef3579e4",
+    "mode": "0600"
+  },
+  "fullParentToolReading": "exactraw1-78 and79-139 actualEOF entire138LF report; complete49,535UTF8B separatelybound. ParentWHOLE report/criteria/authority intake not source SDKsemantic review.",
+  "actualCurrent29MetadataUnchanged": [
+    {
+      "id": 1,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DRAFT.md",
+      "sha256": "ce8985b7c48bb1152f6d33b9cb3b4408f636e254577247ad8bba50bedc5aa778",
+      "bytes": 22290,
+      "lf": 178,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 2,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DESIGN.md",
+      "sha256": "621ea7dbbcd88898e4068cc4f06e7caee1be33391c11b968842ed32dd80ec717",
+      "bytes": 96908,
+      "lf": 358,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 3,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+      "bytes": 126131,
+      "lf": 1157,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 4,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec",
+      "bytes": 2956,
+      "lf": 22,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 5,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-readonly-pinned-supported-lifecycle-principal-stop-egress-seams-scout.txt",
+      "sha256": "774accebe8456f3314de428d4735b3361e333b5f7c107af7b32ebfe7f9089025",
+      "bytes": 21643,
+      "lf": 101,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 6,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-official-alpha2-bounded-supported-contract-seams-factual-scout.txt",
+      "sha256": "501a8fc97f0ab1f72dc4b8f0b4ae360fea4c0b97fa586a51630a8afb56529c34",
+      "bytes": 24217,
+      "lf": 107,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 7,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-complete-static-ELF-availability-closure-factual-scout.txt",
+      "sha256": "6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2",
+      "bytes": 20258,
+      "lf": 88,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 8,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/dsh.md",
+      "sha256": "626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da",
+      "bytes": 24841,
+      "lf": 138,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 9,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/cordis.md",
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "bytes": 12132,
+      "lf": 62,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 10,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-readiness.json",
+      "sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+      "bytes": 28091,
+      "lf": 275,
+      "mode": "0600",
+      "scope": "METADATAONLY NEVER values decoded"
+    },
+    {
+      "id": 11,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DRAFT-original116c.md",
+      "sha256": "116c0faed479f3f03d6ae97c5183d9c158adab787552915e802a276e21bca7a1",
+      "bytes": 10689,
+      "lf": 130,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 12,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md",
+      "sha256": "d68909d5f8285aa9c52b9b1929a2e166c240990c51be6c4b555b4f6441544097",
+      "bytes": 65211,
+      "lf": 283,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 13,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-original-COMPLETE-53LF-design-claim-span-PROPOSED-handoff.txt",
+      "sha256": "0054732d9ca8a85a3173c732fdb9e4d5c3208765f80f634347da1bed7f6d203f",
+      "bytes": 26151,
+      "lf": 53,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 14,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-original-A1-A10-C1-C4-independent-one-HIGH-FIX-FIRST-proposal-review.txt",
+      "sha256": "e459006de18b233f3c10fa3eb546e8ff812a6a4e84ed2fd2a835136dde180e5c",
+      "bytes": 36969,
+      "lf": 104,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 15,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-A1-A10-C1-C4-separate-quality-zero-HIGH-SHIP-PROPOSAL-only-review.txt",
+      "sha256": "b6149d27d8b2393193d9bb56a0144b9d125564aba1238b023adab8a376661b06",
+      "bytes": 37002,
+      "lf": 122,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 16,
+      "path": "/tmp/oi4-native-extension-design-repair1-full-handoff.txt",
+      "sha256": "66c8ebd3c1438bf341fa1e1515667539d100a725249b903720e670637c954895",
+      "bytes": 35764,
+      "lf": 70,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 17,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-repair1-full-original-A1-A10-C1-C4-independent-zero-HIGH-SHIP-PROPOSAL-only-full119LF-report.txt",
+      "sha256": "fc77dfc28a31005c5765066ac21972b78687d040f26f5c8186822d2d16316e36",
+      "bytes": 45081,
+      "lf": 119,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 18,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-repair1-full-independent-quality-one-HIGH-QH1-FIX-FIRST-full118LF-report.txt",
+      "sha256": "2bb22469a6ac39826588e139cdb9b42f8f1cf80289e5101933e3baf0ce027e64",
+      "bytes": 39882,
+      "lf": 118,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 19,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json",
+      "sha256": "e0b95459d2d11b1807674fd7e31284b586f9f8d3d10c4e7e2a98283e5b0f38fb",
+      "bytes": 3461,
+      "lf": 32,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 20,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-prospective-cap4-ONE-additional-cycle-and-native-DSH-DESIGN-only-final-repair2-human-disagreement-resolution-authority.json",
+      "sha256": "c2b3131dfa905687c8538d9d86b391492a6a0d386db499c04cf7cc1d29e5dad1",
+      "bytes": 4578,
+      "lf": 37,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 21,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair1-both-ACTUAL-native-Done9865-and8089-after-WHOLE119118-positive-report-intakes-same-b2-disagreeing-proposal-only-verdicts-before-release-after-Orca-recovery475.json",
+      "sha256": "acc34b3080b504fd982b64aeb1c9239383464c13425ee9bc5e352bb346e00bbf",
+      "bytes": 38631,
+      "lf": 133,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "id": 22,
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair1-both-whole-reviews-ACTUAL-native-releases-AFTERactualDones-BEFOREold104-and-newDone-deliveryACK-on-recovered-same-Orca475-runtime-NO-paired-SHIP-or-source-authority.json",
+      "sha256": "9dcabd6c742324e24d5dc9b2a8b802d014ae9e4c3b459884c4bd9b072224b56a",
+      "bytes": 3169,
+      "lf": 57,
+      "mode": "0600",
+      "scope": "Wholemetadata exact current artifact identity; ParentactualsemanticFULL intake ONLY bothDRAFT/DESIGN+handoff. Otherhistoricalbodies previouslyWHOLEattributableaccepted notnewsemantic sourceParentReview."
+    },
+    {
+      "path": "/tmp/oi4-native-extension-repair2-before-DRAFT-b491.md",
+      "sha256": "b4913fbc63db6c23f14c0d09d47f908c0d996010a4879120f92acafa45c70e63",
+      "bytes": 16518,
+      "lf": 155,
+      "mode": "0600",
+      "scope": "FULLreadonlyownedbeforebaseline.PerfectactualwholeDocdiff vsnewsealedCandidate nowrite."
+    },
+    {
+      "path": "/tmp/oi4-native-extension-repair2-before-DESIGN-4e895.md",
+      "sha256": "4e89524c84d14479a2cf77f9614383286e231f3a1a010b43852a75742789a7a7",
+      "bytes": 83809,
+      "lf": 333,
+      "mode": "0600",
+      "scope": "FULLreadonlyownedbeforebaseline.PerfectactualwholeDocdiff vsnewsealedCandidate nowrite."
+    },
+    {
+      "path": "/tmp/oi4-native-extension-design-repair2-full-handoff.txt",
+      "sha256": "fb17ff8965639610aeea095739bdfd74e551880cd1a81185298b4f26905f57d0",
+      "bytes": 39942,
+      "lf": 130,
+      "mode": "0600",
+      "scope": "ENTIREnewauthorhandoff whole130LF+lastEOF/readallmetadata37S/22L/actualcommands/obligations/counters."
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-FULL-twoDocs-130LF-handoff-positive-deliverable-intake-BEFORE-one-fresh-claim-report-or-NativeDone-actual22pins37source-provenance-82trueins34del.json",
+      "sha256": "be7221ad69f0ae5e1066f4a8b138eb639ddf3f86b268ae3ff22b05fd19635f71",
+      "bytes": 46825,
+      "lf": 655,
+      "mode": "0600",
+      "scope": "FULLParentpositiveintake metadata NOTreviewerSource/successproof. Allindepownsource37/policy/criteria remainsrequired."
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-native-Done6535-after-WHOLEcurrentDocs-handoff-positive-and-ONEactual3982B-Genie-row105-full-read-before-release-beforeACK.json",
+      "sha256": "c24f5bbf4d47e1e96ef02da57c29b7e2b904e62a56dc5bd4d96e37105fe47f9e",
+      "bytes": 7823,
+      "lf": 43,
+      "mode": "0600",
+      "scope": "ENTIREreadonlyactual finalauthorone3982Breport105+actualDone6535+nativeRelease0AFTERDoneBEFOREACK.GenCardreadyENFORCEDholdclaimnull.NoreviewerSourceproof."
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-native-release0-AFTERDone6535-BEFORE4bACK-and-AUXclaim-release0-enforced-full-review-HOLD-currentce898621eafb17.json",
+      "sha256": "01731ce828525a95a0a4257505d6663a920d5c3d4d7b2fefdda8d06c872a1960",
+      "bytes": 8597,
+      "lf": 73,
+      "mode": "0600",
+      "scope": "ENTIREreadonlyactual finalauthorone3982Breport105+actualDone6535+nativeRelease0AFTERDoneBEFOREACK.GenCardreadyENFORCEDholdclaimnull.NoreviewerSourceproof."
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-Genie-report-event105-COMPLETE-stored3982B-note-one-fresh-span-readback-before-native-release.txt",
+      "sha256": "5d2f6e68a51731374c68a6ab2da1034ce06935daf83a9071dc7b717c900dc8da",
+      "bytes": 3982,
+      "lf": 8,
+      "mode": "0600",
+      "scope": "ENTIREreadonlyactual finalauthorone3982Breport105+actualDone6535+nativeRelease0AFTERDoneBEFOREACK.GenCardreadyENFORCEDholdclaimnull.NoreviewerSourceproof."
+    }
+  ],
+  "wholeOriginalReviewerReport": {
+    "path": "/tmp/oi4-native-extension-repair2-full-original-A1-A10-C1-C4-review.txt",
+    "bytes": 43310,
+    "LF": 133,
+    "sha256": "1b639f74cbdb588044b0993a8865dffb5dff3181685829499c0bb9019d132d17",
+    "mode": "0600"
+  },
+  "actualOriginalDoneRelease": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-original-ACTUAL-Done33b6-and-nativeRelease0-AFTERwhole133LF-intake-a702-BEFOREe7deliveryACK-oneHIGHQH1R1-exhaustedB2.json",
+    "bytes": 14290,
+    "LF": 139,
+    "sha256": "9bcfb7949917f594c5c7fbd78e20967a6bc2ee55639f3d36b5d9b789a6589103",
+    "mode": "0600"
+  },
+  "wholeQualityOwnSourceProvenance": "Entire37literal rows in whole138LF report, attributable independent sourceintel; ParentNOT semantic source re-review.",
+  "ownQualityReviewedSHA256": "1a4d51f3b3d66bd3fca20611d991b01b7305c663ccefdc5d707e9943f49d517d",
+  "verdict": "FIX-FIRST",
+  "critical": 0,
+  "high": 1,
+  "finding": "QH1-S native Events internal/dispatch precursor invocation return/promise/acquisition discarded before tools/result selected-member capture. Same root expected membership/capture before callback/return-discard OR explicit actual restricted-profile denial of unsupported observers needsdecision; static confirmed provenance and NOTRUN inference separated.",
+  "conservativePairUnion": {
+    "sameOneFamily": [
+      "original QH1-R1",
+      "quality QH1-S"
+    ],
+    "count": 1,
+    "notTwoIndependentCauses": true,
+    "bothIndependentlyFIXFIRST": true,
+    "bothNamedDirectQH1BridgesAndOlderH1AddressedProposalNotRuntime": true
+  },
+  "coverage": "WHOLE A1-A10/C1-C4/K1-K4/14bothdirectionrefresh+cold/full29local37public/sixfuturefullfootprints107/10950ESTIMATE/82TRUEins34del/histories/human37LF/actualauthorreport105Done-release/fullprivacycustodymoneyunknowns",
+  "nextPermission": "Exactsame quality task6502/ctxc5b may send ONCE NativeDone succeeded fullreadonlyreviewprocedure only afterParentpositive reply, thenidle. Parentrelease AFTERactualDone BEFOREdeliveryACK. No selfrelease/additionalreport/stamp/sourcecode/docs/runtime/provider/privatecardsWISHINDEXmutation.",
+  "authority": "FinalDESIGNB2USED2/CAP2 exhausted; no thirdrepair/reset/council/newpanel. ALL4originalfeaturesBLOCKED_NOTRUN. Whole20roadmapunchanged. OtherSource7finalfullreviewsindependentcontinue."
+}

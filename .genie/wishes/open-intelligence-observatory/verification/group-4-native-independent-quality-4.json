@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-10-09T17:50:13.850187+00:00",
+  "status": "SHIP_SEPARATE_QUALITY",
+  "task": "task_d2e0ffb9b515",
+  "dispatch": "ctx_4776ab49905e",
+  "accepted_worker_done": "msg_9a07f3e72d90",
+  "report": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-4-native-independent-quality-4.txt",
+    "sha256": "6f1564d75cdadf3bdf3bc02e0ee4d6eb389c8f4684a9382213c75ee194273727",
+    "bytes": 16013,
+    "mode": "0600"
+  },
+  "raw_report_unchanged": true,
+  "candidate_commit": "5e0f8b0bcf556f43762da8cdfd4e733381c4dcbc",
+  "candidate_manifest_sha256": "b5ac2167cbc90c60f322fe4ddc5eb92a039afbc7fb0d8f8bb0553dc18642dc0e",
+  "blocking_findings": {
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "nonblocking_Q1": {
+    "severity": "MEDIUM",
+    "fact": "Static cleanupfailure could leavePASS if finalstopfailed butinspectrunningtrue; actual candidate finalstop exit0 custodyrunningfalse",
+    "decision": "Accepted onlywithincompletedfrozenone-shot qualification, no fifthrepair orrerun; futureseparatelyauthorizedusemustnotinfercleanupfailureguardexists"
+  },
+  "original_acceptance": "pending",
+  "aggregate_receipt_sha256": "5dfe18493bbaf4d357f523edb99e1a8976867251dbdb4e08d749101bea69e53f",
+  "release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"85d0dc27-c506-44de-8064-cd2362184bd1\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_4776ab49905e\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"cc8360c4-8e69-473a-83ff-e39bc76b3f70\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "85d0dc27-c506-44de-8064-cd2362184bd1",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_4776ab49905e",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "cc8360c4-8e69-473a-83ff-e39bc76b3f70",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  }
+}

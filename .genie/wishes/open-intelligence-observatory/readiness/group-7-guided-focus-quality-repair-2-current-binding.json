@@ -1,0 +1,74 @@
+{
+  "recorded_at": "2026-10-09T18:15:34.252118+00:00",
+  "status": "ADMITTED_FINAL_FOCUS_SOURCE_REPAIR_2_2_AND_QUALITY_LOOP_1_1",
+  "task": "task_8f2a067b113f",
+  "dispatch": "ctx_a45e75e8c6bc",
+  "author_ack": "msg_dcfc74a4d9c7",
+  "prospective_admission": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-7-guided-focus-quality-repair-2.json",
+    "sha256": "aec5b83b221be31c5bae17497c1775b7385ca9ee6d6ae9edafe1e30ebaca0171",
+    "bytes": 2853,
+    "mode": "0600"
+  },
+  "current_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "source_before": {
+    "web/prototypes/explorer.css": {
+      "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad",
+      "bytes": 5754,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.js": {
+      "sha256": "a028906f9b01d737aa7bb075833ee0e45c903126bb2883c3eeb9320f9d988cea",
+      "bytes": 22986,
+      "mode": "0600"
+    },
+    "web/prototypes/index.html": {
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+      "bytes": 2403,
+      "mode": "0600"
+    },
+    "web/prototypes/preview.py": {
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+      "bytes": 3934,
+      "mode": "0600"
+    }
+  },
+  "source4_sha256": "776f8b73fb0204fea96ed08db21af0922aaa53cd35b0d2d9a69d55f1cf949d63",
+  "readonly_intake_truth": "Authorreadproposedreadiness/fullindependentquality/priorintake only; earlierfullintake preserved, not fabricated blind ACK",
+  "source_fix_scope": "Only JSguidedquestion/step equivalentfocus restoration; existing6PNGs/smoke/design refreshed, CSS/index/preview/evidence/assessment unchanged",
+  "size": {
+    "current_text_lines": 1264,
+    "proposed_added_text_max": 35,
+    "files": 12,
+    "estimated_insertions": 1450,
+    "hard_insertions": 2000,
+    "proof_added_text_bound": 220
+  },
+  "counters": {
+    "source_repair_next": 2,
+    "source_repair_cap": 2,
+    "separate_quality_repair_next": 1,
+    "separate_quality_repair_cap": 1,
+    "config_B": 2,
+    "effort_escalations_used": 0,
+    "effort_escalations_cap": 2,
+    "scope_estimate_files": 12,
+    "scope_estimate_insertions": 1450,
+    "hard_insertions": 2000
+  },
+  "exclusive_browser_owner": "ctx_a45e75e8c6bc",
+  "parent_and_quality_tabs_closed": true,
+  "preview": "parentowned8879 existingstrictallowlist; no otherbrowseractor; sourcepack and existing otherpaths unchanged",
+  "expected_behavior": [
+    "Atbothsizes actualquestionchanges nativeEnter retainsvisiblefocus onnew equivalentbutton thennextTabprogresses expectedcontrol, notBODY/firstquestion",
+    "Allthree stepEnter nativefocusretained andTabforward, source/counter/gap actions reachable",
+    "Scene/entity/cutoff/method/revision/unknowns actualdataunchanged",
+    "Six guardedcaptures actualpopulated surfaces + realreader/source/counter/overview controls updateinexistingproof",
+    "Selectedhover remainscorrect andreducedmotion/loadfailure/recovery/privacy supported"
+  ],
+  "full_aggregate_owner": "parentafterallwritersfreezeforcurrentgate",
+  "human_Felipe": null,
+  "original_acceptance": null,
+  "paid_model_allowed": false,
+  "no_next_repair_without_actual_human_exception": true
+}

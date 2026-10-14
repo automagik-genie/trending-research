@@ -1,0 +1,113 @@
+INDEPENDENT READ-ONLY DSH STAGED-BOOTSTRAP PLAN REVIEW
+Reviewer: term_c59a6b8b-6f65-4df3-aea9-e39a99fb16ce / task_5bac8b2b9e97 / ctx_6bb93d59ac98
+Date: 2026-10-08. Independent reviewer, not proposed-code author and not original-runtime acceptance reviewer.
+
+DECISION
+Staged readiness to WRITE AND RUN this exact no-model bootstrap: FIX-FIRST.
+Confirmed CRITICAL: 0. Confirmed HIGH: 2, both bounded observability/verification defects within frozen bootstrap criteria, not a demand for original paid/principal/runtime acceptance.
+Original #4 runtime acceptance: BLOCKED / NO ACTUAL PROOF. No native runtime, container creation, model, tool, stream, cancellation, reconnect, cold resume, two-principal, or lifecycle scenario was executed here.
+The changed Docker authority and repaired Connection envelope remove the old conceptual blockers; this verdict does not reuse the previous BLOCKED disposition as authority.
+
+IDENTITY AND BLIND CRITERIA
+reviewed-sha256: a9ad406747c94030663167c26bd1f7ba1191f4391dd2341a6a81a2ffc1ce3b15
+Target: /tmp/issue4-native-bootstrap-plan.txt; entire raw file, no exclusions; 517 lines, 36375 bytes.
+Pin matched before reading and after static validation. Changed target invalidates this assessment and requires STOP/re-pin.
+Supplied baseline/head: 1e1d91f509b4862e09076fcacd7c751008db866b.
+Supplied current governing ledger SHA256: 1d0f9ee9a628b3c04439dfa5c9169314d9c6e79c46d4f6b9c8ed5188c4911163.
+Candidate line6 names historical WISH SHA52c77449...; I did not adopt that as current scope or inspect/mutate the ledger/Git state.
+Before candidate access, native status message msg_23b945c3b463 froze S1-S4 and exact pins/triggers. An earlier attempted send with unsupported type 'message' exited1 and did not constitute the ACK; successful type 'status' ACK preceded candidate access.
+criteriaAddedAfterReading: []
+Frozen SHIP: zero confirmed HIGH/CRITICAL within S1-S4 plus static primary-contract support for composition; runtime remains explicitly unexecuted.
+Frozen FIX-FIRST: bounded actual HIGH missing/broken bootstrap bytes.
+Frozen BLOCKED: inaccessible decision/pin/runtime authority or genuinely new auth design.
+No original paid/model/C1-C3 pass is required for staged plan readiness, and none can be inferred from it.
+
+S1-S4 SCORE / PROVENANCE
+S1 — STATIC SUPPORTED, runtime unexecuted.
+The exact Connection wire correction is supported by public ClientRequest/ServerResponse declarations and shipped createWebConnectionRpc. Candidate170-206 carries type, rpcId, method session/modelCatalog, payload {args:{}}, result.ok and echoed-rpcId verification. Old raw-business-args H1 is eliminated, not suppressed. Native cookie exchange is private and corresponds to shipped browser auth. Anchored createRequire avoids bare resolution from /policy.mjs and resolves PUBLIC package exports, not private implementation imports. Both prospective scripts parse. Public root/profile exports and 178 named base/web composition export targets exist and realpath inside the mounted node_modules root. The literal overlay reconstructed statically equals the frozen YAML. This is structural public-entry support, NOT transitive source-build attestation or evidence that every plugin initializes under the image ABI. Metadata-only provider discovery is supported and locally implemented by the selected official adapter.
+S2 — FIX-FIRST, H2 below; confinement design statically supported, creation unexecuted.
+Docker Engine29.7.2 responds through a distinct Engine/containerd/runc authority; cached exact node22-slim image ID and repoDigest match, linux/amd64, Config.Volumes absent. This is genuinely different from the known same-host unshare EPERM, which I accepted without rerunning. argv fixes --pull=never, --network none, no published ports, readonly root, nonroot1001:1001, cap-drop ALL, no-new-privileges, pids128, memory512MiB, CPU1, nofile1024, bounded tmpfs and /usr/bin/env -i with five-variable whitelist. Current uid/gid are1001/1001. Host binds are the exact Node/runtime/fixture/plugin/runner readonly inputs and own A/B state/work writable roots; no personal home/.env/shared state/socket. CID+dispatch/principal label verification avoids name-only destruction, and removal follows observed container nonrunning state. Missing CID preserves the root for inspection instead of reclaiming an unproven container. These support scoped confinement/cleanup; native successful disposal is NOT established by the planned exit-code check.
+S3 — FIX-FIRST, H1 below; no-model and original nonpromotion constraints supported.
+No key/account/auth.begin/model prompt is proposed; adapters/presets/ancillary title/compaction/telemetry are disabled as specified, zero startup agents, monotonic deny-all tool guard, and network-none is the external-I/O fence. Native appReady callback starts asynchronously and avoids apply startup deadlock. Receipts carry originalCriteria null and tenantIsolationValidated false; full C1-C3/B3-B5 remain unavailable. HTTP calls have5s limits, startup wall bound120s, private native output byte bound1MiB (line-consumed bound, not proof of total buffered-memory bound), native termination5s, Docker commands15s. Failure is nonzero, but actual failure attribution/diagnostics are discarded rather than retained or safely classified.
+S4 — STATIC SUPPORTED, authored scope/count unobserved.
+Exactly five retained owned paths are proposed at30: docs/integrations/dsh.md; docs/integrations/cordis.md; integrations/dsh/qualification/sandbox-readiness.json; integrations/dsh/qualification/policy.mjs; integrations/dsh/qualification/probe.mjs. Three prospective JS blocks total358 lines; overlay70 lines is embedded in runner, not a sixth retained file. <=1000 estimated insertions is plausible but not an actual authored count. B2/config2 effort0 is retained as dispatch fact. No new dependency/SDK/schema/global default/production auth service is introduced; ephemeral A/B state/work/CID are owned custody artifacts outside the retained pathset and must be removed after positive own-container exit. Throwaway policy/probe are explicitly not promoted to supported integration. This assessment authorizes no runtime, paid call, principal issuer, persistence extension or production cutover.
+
+CONFIRMED HIGH FINDINGS
+H1 HIGH — Required bootstrap diagnostics have no surviving actual attribution.
+Criterion: frozen S3, honest observable smoke with explicit failure limits/actual diagnostics.
+Target: /tmp/issue4-native-bootstrap-plan.txt:81-85,330-343,433-434,489-493; reviewed-sha256 above. Proposed retained files policy.mjs/probe.mjs.
+Trigger: native launch/profile/plugin/ABI startup emits a diagnostic and exits or never reaches readiness; alternatively metadata operation rejects or Docker fails creation/entrypoint execution. The metadata catch discards its error and emits only metadata-failed. Native consume scans token/approved JSON and never stores other diagnostics. Docker stderr.resume() discards all Docker diagnostics. Ordinary Errors such as 'owned Docker exited before bootstrap', 'native exited before metadata', and 'bootstrap exceeded 120 second bound' have no code; the final receipt discards their message and phase and yields stage bootstrap-failed/code null. Even assertion errors expose only generic ERR_ASSERTION, not the failed invariant. The comment that diagnostics remain private is not a private retention implementation.
+Impact: the admitted no-model smoke can honestly fail, but cannot produce the required actual attributable reason or distinguish load/import/ABI, metadata, catalog transport, resource/inspection, timeout and cleanup failure from its durable output. This is a broken observability criterion, not a deployed exposure or fabricated-success accusation.
+Provenance: direct read of the frozen proposed catch/consume/error constructors, not an author's claim or old review. No prospective code executed.
+Smallest closure: retain a bounded approved failure phase plus allowlisted reason/code at the actual originating operation, including policy metadata failure and Docker/startup failure, without exposing tokens/cookies/credentials/raw provider strings. If raw diagnostics are necessary, specify bounded private custody and explicit redaction, not public forwarding. Ensure cleanup errors do not erase the originating failure; return truthful nonzero and originalCriteria null. Re-pin/review exact amended bytes; later admitted smoke must actually show distinguishable safe diagnostics for relevant startup/metadata failures. No telemetry/auth service or new dependency required.
+
+H2 HIGH — Native disposal check conflates successful teardown and forced exit.
+Criterion: frozen S2, own cleanup/disposal checks; frozen S3 failure honesty. This is bootstrap scoped lifecycle evidence, not original full C4 acceptance.
+Target: /tmp/issue4-native-bootstrap-plan.txt:353-365,369-375,466-485, and claimed disposal protocol220. Proposed retained file probe.mjs.
+Primary installed contract: R/dsh/lib/profile-boot-BZ2ZjNWi.js:12,46-56,63-68,230-238,249-251 (R defined below; hash in pins).
+Trigger: SIGTERM requests launcher shutdown code0; the native fiber disposer rejects or takes beyond its5s deadline. Installed createProcessShutdown calls forceExitOnce(code) both on timeout (48-50) and disposal rejection (54-56); successful signal disposal also force-exits that same code (51-53). SIGTERM passes0 (249-251). Candidate accepts exit0 as bootstrap-complete; it additionally accepts signal SIGTERM without a successful-disposal receipt. CID/container removal proves process confinement cleanup, not native effect/disposer completion.
+Impact: the exact bootstrap cannot distinguish a native disposal failure from completed native teardown. I do NOT assert its JSON explicitly says nativeDisposalVerified:true—it does not—but there is no separate native disposal check satisfying frozen S2, and a positive bootstrap receipt is allowed after the demonstrated native disposal-failure branch.
+Provenance: independently read installed shipped shutdown implementation plus the frozen acceptance branch; actual disposal failure was not induced.
+Smallest closure: specify a supported, scoped native lifecycle completion receipt/check independent of process exit, and separately classify completed disposal, timeout/forced termination and process/container cleanup. Do not treat native exit0/SIGTERM or Docker removal as that completion receipt. If successful global disposal cannot be observed through this launcher, choose the exact supported public bootstrap lifecycle route or keep native-disposal evidence explicitly failed/unavailable rather than silently accepting it; no production runtime patch or invented API. Freeze concrete bytes and re-review. Original full activation/replacement/persistence lifecycle remains separately unaccepted.
+
+UNRESOLVED HYPOTHESES / NONBLOCKING LIMITATIONS
+- Actual image creation, mounted Node26/libc ABI, native package initialization, modelCatalog payload handling, actual state/mount/namespace/resource inspection, launch-token announcement ordering, output/exit timing and CID cleanup remain unexecuted. These are explicit smoke gates, not confirmed failures and not grounds to demand original paid acceptance now.
+- appReady and web URL announcement have separate asynchronous flows; token-before-metadata is not explicitly synchronized by candidate. Metadata's several awaited operations may allow announcement first. I did not demonstrate the opposite ordering, so this is an unresolved race hypothesis, not confirmed HIGH.
+- The bound counts lines after readline emission, not bytes before a newline, and outer stdout lacks an explicit byte counter. The named image/launcher/plugin inputs are not arbitrary output-generating peers; I have no confirmed bootstrap failure from this. Preserve the declared memory/resource limit and do not claim this is a byte-perfect buffering bound.
+- Entire installed transitive dependency/source-build attestation remains null as candidate states. Public export realpaths support mounted entry closure only; no source revision was equated to installed runtime.
+- docker stop failure leaves conservative custody; exact prose promises a fallback docker kill whereas finally bytes only invoke docker stop then inspect. CLI stop normally owns timed escalation; no observed failure here. A failure must be truthfully reported/retained, never broad deletion.
+- No actual fixture/Scene/schema bytes were inspected: named hashes/IDs are supplied candidate facts, and proposed runtime asserts fixture hash and Scene identity. Domain claim approval and original evidence references remain unaccepted.
+- Candidate historical WISH hash is not current dispatch ledger hash; current original scope remains governing. No ledger was rewritten or reclassified.
+
+PRIMARY PUBLIC API / STRUCTURAL PROVENANCE
+R=<home>/.dsh/runtime/0.2.0-rc.1/node_modules/@deepseek-ai/
+1. dsh-client-connection/lib/types/rpc.d.ts:61-73,88-103 declares full ClientRequest/ServerResponse and operator admission; lib/client.js:1209-1231 implements envelope/channel-endpoint HTTP path, result and rpcId validation. lib/index.js:223,366-407 declares browser signing record and launch-token root redirect/cookie; operator cookie is not product-principal proof.
+2. dsh-api-session-controller/lib/typert.remote-client.d.ts:25 declares native metadata modelCatalog. No model/prompt/stop invocation is proposed.
+3. dsh-credentials/lib/types/index.d.ts:18,46,136,165,174 declares credentialRef/credentialKey and nonsecret describe/describeRecord/listRecords. Public package root export resolves to mounted index.js. No private credential payload read by this reviewer.
+4. dsh-tools/lib/types/index.d.ts:646-655 declares monotonic synchronous execution-denial guard and owned disposer; visibility is not mistaken for execution authority.
+5. cordis-plugin-loader/lib/index.js:213-226,333-361,448-461 supports module import, disabled entries, unwrapping and plugin mount; exact policy module is ESM syntax-valid. This is not a browser ModuleLoader emulation.
+6. dsh-agent-preset/lib/types/index.d.ts:7-17 and dsh-agent-preset-registry/lib/types/definition.d.ts:4-12 support empty named declarative preset plugins.
+7. dsh-base/cordis.patch.yml:91-118,127-171,204-218,499-529 and dsh-web-app/cordis.patch.yml:169-223 provide actual services/transport/adapters and row IDs; web client/operator remains private. llm-deepseek row targets dsh-llm-deepseek-api-key, not an invented package.
+8. dsh-llm-deepseek-api-key/lib/index.js:35-65 registers deepseek-official and local configured metadata discovery. Shared generic llm listModels does not universally guarantee no I/O; Docker network-none remains the fence.
+9. dsh/lib/profile-boot-BZ2ZjNWi.js:87-106,230-283 supplies readiness after actual host boot and bounded native shutdown; H2 names its forced-exit ambiguity. dsh-web-app/lib/index.js:194-217 independently announces the token URL after loader/startup audit.
+10. Parsed public manifests: DSH0.2.0-rc.1, Cordis4.0.4. Public export resolution test covers178 base/web package names with zero missing targets and zero realpaths outside mounted node_modules. No installed package was imported/executed.
+
+EXACT KEY SHA256 PINS
+<home>/.hermes/node/bin/node ad19784f7e90ba789a099eccba77ede8dc90a778c424f1c10a70fed3ff903fdc
+dsh/lib/bin.js 935e95d05f4dc70a8a013eea59da80028946b5c139e45c6351dcaf2810ca00a1
+dsh/package.json 6c5d2b98ca97920fffe81eaff8455dfd1e97524c8b3a7a3b0cac4c960ebb363c
+cordis/lib/index.js 6a9394c0877ff45218818c6e815edd038f8057e1a1deb390a8d43ec81c57691e
+cordis/package.json 41c9dee4715a89ef94f227384460c8445857c8faf33493eb545604a948828649
+dsh-client-connection/lib/types/rpc.d.ts 3ca86c027408eb2dd6f1aa6efba0778b0f14802d638fc2f66bced8c5e698b0a4
+dsh-client-connection/lib/client.js 0fbb93fa2382bb66919767f69c909585c6255486f9536f9232231edaeac8c4e6
+dsh-client-connection/lib/index.js 3950f524aed44e28240140a254cd928ea40eba8e2d04cc8fd04f92a687f5c91d
+dsh-credentials/lib/types/index.d.ts b7930c064aa63f9028deccab8c3a71b215e0e5cbb95422ad7b5f52cf86ecac92
+dsh-tools/lib/types/index.d.ts 3536b173ec22361dcda85c05281921fc850db49984813b138d05395c4fe4510f
+dsh-agent-preset/lib/types/index.d.ts ff4a01ff707668b0b98a43aa71f62c7e153dc2c449dc2845ef173236cbd64c57
+dsh-llm-deepseek-api-key/lib/index.js 71688fb743a3187ebafa9d50e74ded4e899a5ccb0731f9d2d15a7abeaa57bb95
+cordis-plugin-loader/lib/index.js b57c5075e881b4ceb3a15382f506ce549bcbdcd2a0f5bae292f67e6a83a45b1f
+dsh/lib/profile-boot-BZ2ZjNWi.js c394b2aa2ce08a3b1fcc8c544257c7d689dd4d0b1cfaf8602687e65eeaba5aa1
+dsh-base/cordis.patch.yml 9c2be64f46a193eff3cca190c26e697e8e8eee25c9b40149dfdb56f8142c252d
+dsh-web-app/cordis.patch.yml df7653ee4c324dca706034631926c86f13a2cf17c280cc018f8c070a0aaad19e
+Docker image ID and repoDigest sha256:43ac6c60b8f89723f746e8a92ce91abd5017e627ce1ddfe4238355d3a30b772c
+Old separate review /tmp/dsh-native-boundary-plan-review.txt 09e29f4b0cc3209666a5cde3f7694bb15cc4952116a91a129f4bc35e3810004f, read ONLY after blind ACK as historical data.
+
+ACTUAL COMMANDS / EXIT / COST
+- orca skills get orca-cli: exit0; read current native guide. Required /review references and /verify read through read tool.
+- sha256sum target && wc -lc target: exit0; exact authorized digest/517/36375. Final sha256sum target: exit0, unchanged.
+- docker version --format '{{json .}}' && docker image inspect EXACT_IMAGE --format '{{json .}}': exit0. Full metadata output read from artifact://5, not inferred from truncated preview. Engine/client29.7.2, containerd2.3.3, runc1.4.3; cached ID/digest/architecture/no-volumes confirmed. No container listing/creation/start/exec/network was done by reviewer.
+- docker run --help && id -u && id -g: exit0; required options supported;1001/1001. Help only, not docker run.
+- Python in-memory static extraction, SHA checks and subprocess Node --input-type=module --check fed via stdin: policy exit0, concatenated nativeCatalog+runner exit0; no prospective JS execution, files or imports. JS blocks53/34/271 lines.
+- Node builtin-only createRequire.resolve/fs.realpathSync checks in clean env: exit0 for four selected public exports; exit0 for178 base/web names, failed[],outside[]. Does not import installed packages or bootstrap profiles.
+- In-memory reconstruction of disabled-row prefix plus literal template: equality assertion PASS against exact70-line YAML; no YAML plugin evaluation.
+- Read-only source/declaration/manifest tools returned sections cited above. No tests/build/lint/formatter/full aggregate gate; parent owns post-freeze aggregate. No browser/network/install/model/config/auth/tool action, no private env/secret value, no Git/source/runtime/repository/WISH/card mutation. Only this expressly permitted scratch report plus native lifecycle messages written.
+- Native blind ACK send exit0/msg_23b945c3b463; checkpoints used native check with empty inbox. Heartbeat msg_313bbbc484e1; findings relayed msg_5ab9dbe7b951 and msg_352d6e7baca3.
+Paid requests:0. Paid model spend from this review:USD0. Coding/session/storage/all-cost totals:UNKNOWN, not asserted zero.
+
+ORIGINAL RUNTIME / PAID FIELDS KEPT BLOCKED
+Original cited answer must use supplied Scene/entity IDs/evidence cutoff and actual reference targets; actual cancellation must stop new work and reconnect preserve status; two isolated authenticated sessions must not read foreign records/tools. No throwaway/prototype/native metadata receipt substitutes for those.
+B3 trusted product principal issuer plus unary/mux/uplink/file/history/in-process boundary: unavailable/unaccepted.
+B4 durable principal-bound stopped admission, stop-generation ordering, reconnect/cold resume: unavailable/unaccepted.
+B5 fresh actual DeepSeek credential, hard serialized input/dispatch/retry/ancillary accounting and usage/pricing admission: unavailable/unaccepted.
+User budget USD20 partition DSH12/Brain8 remains governing; fresh DeepSeek credential not supplied, no operator copy, no paid calls authorized here. Candidate tariff arithmetic is not enforcement or paid admission.
+Next: parent routes the two bounded corrections, freezes/re-pins the amended bootstrap and independently re-reviews before writing/running; original qualification still needs full direct proof and its separate acceptance/quality reviews. Reviewer authored no implementation and changed no gates.

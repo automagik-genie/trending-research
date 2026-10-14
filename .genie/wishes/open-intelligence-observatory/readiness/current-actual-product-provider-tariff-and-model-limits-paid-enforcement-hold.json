@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-09T22:04:57.908745+00:00",
+  "sourceURL": "https://api-docs.deepseek.com/quick_start/pricing",
+  "observed_public_model": "deepseek-flash",
+  "observed_public_model_version": "DeepSeek-V4.1-Flash",
+  "legacy_aliases_retired_but_served_currentflash": [
+    "deepseek-v4-flash",
+    "deepseek-v4-flash-vision-exp"
+  ],
+  "public_prices_unit": "per1M tokens; symbol$",
+  "peak_cache_hit": 0.006,
+  "peak_cache_miss": 0.3,
+  "peak_output": 1.2,
+  "offpeak_cache_hit": 0.003,
+  "offpeak_cache_miss": 0.15,
+  "offpeak_output": 0.6,
+  "peak_schedule": "01:00-04:00 and06:00-10:00UTC Monday-Friday excludingChinesePublicHolidays; usePEAKforfutureworstcase no holiday/caching assumption",
+  "default_thinking": "enabled",
+  "actual_API_model_context_window": 1048576,
+  "actual_API_model_max_output_tokens": 393216,
+  "actual_API_effort_default": "high",
+  "account_currency_primary_actual": "USD",
+  "account_other_granted_currency_actual": "CNY",
+  "tariff_effective_date_explicit_in_body": null,
+  "tariff_may_change": true,
+  "price_currently_rechecked_readonly": true,
+  "paid_use_permission": false,
+  "blocked_by": [
+    "enforcedactualegress background/retry/queued/input/output/ancillary bounds absent",
+    "currentSDKcompatibleisolatednative lifecycle/globaldisposalunavailable",
+    "authenticatedtwo-principalalltransport/cancel/reconnect/citedscene paths unqualified",
+    "usage receipts/worstcase reservation notimplemented or independently reviewed"
+  ],
+  "current_funding_and_model_inventory_proof": ".genie/wishes/open-intelligence-observatory/readiness/user-confirmed-BWS-product-secret-isolated-custody-and-actual-provider-account-model-metadata.json",
+  "freeGETs_not_model_calls": true,
+  "product_model_calls": 0,
+  "all_cost_totals_UNKNOWN": true,
+  "FAQ_root_URL": {
+    "url": "https://api-docs.deepseek.com/faq",
+    "actual": "redirect-linkcontent notbillingproof",
+    "target": "https://static.deepseek.com/faq/index.html?lang=en#/category/4",
+    "actual_target": "staticread empty shell; clientrender needed ifcurrency/effectivebillingroute requiresadditionalqualification"
+  },
+  "publish_private_account_balance_or_credential_paths_in_publicGit": false
+}

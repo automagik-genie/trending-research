@@ -1,0 +1,147 @@
+{
+  "recorded_at": "2026-10-09T20:54:45.396146+00:00",
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "source7_temp_frozen": {
+    "observatory/evidence/contracts.py": {
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "bytes": 22505,
+      "mode": "0600"
+    },
+    "observatory/evidence/brain.py": {
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "bytes": 12768,
+      "mode": "0600"
+    },
+    "observatory/evidence/model.py": {
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "bytes": 5908,
+      "mode": "0600"
+    },
+    "observatory/evidence/cordis.mjs": {
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "bytes": 2646,
+      "mode": "0600"
+    },
+    "observatory/evidence/__main__.py": {
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "bytes": 2361,
+      "mode": "0600"
+    },
+    "observatory/evidence/receipts.json": {
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "bytes": 11997001,
+      "mode": "0600"
+    },
+    "observatory/python_adapter.py": {
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "bytes": 8901,
+      "mode": "0600"
+    },
+    "docs/integrations/python-pipeline.md": {
+      "exists": false,
+      "disposition": "not authored; full native proof blocked"
+    },
+    "investigations/frontier-economics/manifest.json": {
+      "exists": false,
+      "disposition": "not authored; full native proof blocked"
+    },
+    "tests/test_investigation.py": {
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "bytes": 3439,
+      "mode": "0600"
+    },
+    "tests/test_evidence_contracts.py": {
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "bytes": 13514,
+      "mode": "0600"
+    }
+  },
+  "source7_status": "BLOCKED_NATIVE_REPLAY_MANIFEST6241702BYTES beforeScene/root, repair0/2,readonlyprospectiveplanonly",
+  "UI_final12": {
+    "web/prototypes/explorer.css": {
+      "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad",
+      "bytes": 5754,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.js": {
+      "sha256": "7f39db9ef42fae3b728a57374e11dd28e8d3045dad8a432a686013eeb66deb48",
+      "bytes": 23172,
+      "mode": "0600"
+    },
+    "web/prototypes/index.html": {
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+      "bytes": 2403,
+      "mode": "0600"
+    },
+    "web/prototypes/preview.py": {
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+      "bytes": 3934,
+      "mode": "0600"
+    },
+    "docs/design/frontier-economics.md": {
+      "sha256": "78a8b419e16b3439dd7f564848b12a60635ba342f92cf56f270e6b47f9aa6c7e",
+      "bytes": 27702,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/smoke.json": {
+      "sha256": "8038617b2783f0fbb599901598a7ca0820b49fcfbe517be0209dde03e02fbefc",
+      "bytes": 277492,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31",
+      "bytes": 114519,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "sha256": "f59d738f1312765a3ed3a73ec6773536f2d17ab156a7ac49b55c55391884d5c6",
+      "bytes": 63444,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "sha256": "af4eff4701eaaa11745be18775057cba8ed6e9756827526b9354101d91d36321",
+      "bytes": 138665,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4",
+      "bytes": 79872,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "sha256": "9bac25b986e00ccddf22a53d82a3d3307db4127ef355d97af076d1fcc31124f7",
+      "bytes": 134452,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "sha256": "1815a7e40fb2d1bc01d1fc6c7b51753e7e680b439e9ea5025d0ab5790e9d34d3",
+      "bytes": 77091,
+      "mode": "0600"
+    }
+  },
+  "UI_final12_sha256": "3443be140200d08355cc21e1a11bcfb29d18cc83a0c519e306d913970a0a27ae",
+  "UI_source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "human_selection_sha256": "b65454df0354a8ece8e421825c7d3dee5273482ff87a6a9eecdc5c8e819e80cf",
+  "DSH_final3": {
+    "docs/integrations/dsh.md": {
+      "sha256": "626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da",
+      "bytes": 24841,
+      "mode": "0600"
+    },
+    "docs/integrations/cordis.md": {
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "bytes": 12132,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/sandbox-readiness.json": {
+      "sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+      "bytes": 28091,
+      "mode": "0600"
+    }
+  },
+  "current_aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json && genie wish lint",
+  "current_aggregate_job": "bg_122 actualrunpending",
+  "all_three_authors_have_reported_source_freeze": true,
+  "no_git_mutation": true,
+  "source7_remaining_two_files_absent_notcomplete": true
+}

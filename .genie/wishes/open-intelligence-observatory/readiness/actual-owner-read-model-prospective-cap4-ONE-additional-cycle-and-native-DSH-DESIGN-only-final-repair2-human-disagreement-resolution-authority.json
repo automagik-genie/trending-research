@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-10T10:26:54.804891+00:00",
+  "approver": "actual user via native question-harness answers",
+  "actualAnswers": {
+    "read_model_cycle4": "Authorize one additional cycle",
+    "native_design_repair2": "Address the quality finding"
+  },
+  "source7Question": "#7 has exhausted its authorized 3 repair/review cycles. Four HIGH finding families remain. Which route do you authorize?",
+  "source7SelectedDescription": "Set the total cap to 4, retaining 3 used and all prior counters. The existing engineer addresses all four findings through a changed prospective proposal, followed by two fresh whole-scope independent reviews. No source application, smoke, native runtime or paid-call permission.",
+  "source7OldNewBudget": {
+    "oldTotalCap": 3,
+    "oldUsed": 3,
+    "newTotalCap": 4,
+    "usedBeforeNextPreparation": 3,
+    "remaining": 1,
+    "budgetSource": "explicit actual-user instruction",
+    "historicalCapsUsed": "1/1 and2/2 and3/3 preserved exhausted",
+    "sourceRepairBudget": "B2 used0/config2 not a backdoor",
+    "effortEscalations": 0
+  },
+  "source7ContestedEvidence": "Original full6277 141LF FIXFIRST2HIGH + independentqualityfull07da149LF FIXFIRST3HIGH = conservativeunionFOUR families strictwholeJSONincludingduplicates/nonfinite, strictsupportedUTF8, retainedprimarypublicationbyharddeadline, orderedfirstfailureidentity. Genericoriginalpasses do not waive specificqualityfindings. Human authorizes addressingallfour, notdiscardingreportorcriteria. Fresh originalfullC1C8 andseparateprivacytransportdeadlinequality mandatory. Existing originalctx0c/task2bb onlyauthor, PTYactuallylive exactWorker but agentfeedmissing_statusUNVERIFIABLE notproofagentdeath orprogress. No duplicate editor/stop/fence/retry. Ask sameauthor wholebeforeANYnewaccess/preparationmethod andwaitactualReadACK beforepreparationgrant.",
+  "source4Question": "#4\u2019s proposal has original-review SHIP/0 HIGH and independent-quality FIX-FIRST/1 HIGH at the same digest. How should this disagreement be resolved?",
+  "source4SelectedDescription": "Authorize DESIGN-only repair 2/2 in the same two documents: explicitly cover private model-iterator cleanup and detached tool-result callback ownership. Preserve all criteria and require two fresh whole-scope reviews. No implementation, runtime or paid-call permission.",
+  "source4OldNewSettings": {
+    "repairBudget": 2,
+    "usedBeforeAuthoring": 1,
+    "admittedNextRepair": 2,
+    "effortEscalations": 0,
+    "councilUsed": 0,
+    "councilCeiling": 1,
+    "budgetSource": "existing configuredB2 no reset",
+    "oldDigestBothIndependentlyComputed": "b2fb47579c62432668b20efdec07af3c0b2d831f15d64c1f570ac944bef1f46a"
+  },
+  "source4HumanResolution": "Preserve original wholefc77 119LF45081B SHIPPROPOSALonly0HIGH and independentwhole2bb2 118LF39882B FIXFIRSTONEHIGHQH1. Actual user resolves by addressingqualityQH1 via final boundedDESIGN-onlyrepair2/2, NOTwaivingeitherreview. SpecificH1Cordis/directAgent gapremainsbridged. Add explicit actualowningprecontainment capture/join for privateprovideriteratorcleanup and detachedToolRuntimecallbackinvocations/results usingexistingtrustedroot/outcomeref/retirement machinery, notsecondstore/framework. AllA1A10/C1C4/fourcontracts/14nativeclasses/sixfutureboundedgroups frozen; 4originalnativecriteria allBLOCKEDNOTRUN. FreshTWOwholeindependentreviewswithowncheck-design/digest/UTC mandatory. Newdigestinvalidatesoldproposalreviewapproval no reviewerstampselfsubstitute. No simplification/scopechange/criteriawaiver.",
+  "blastRadius": "Source7 ONEnew prospective DATA-only preparation plusTWOwholeindependentreviews, originalauthorretained; no futurecode/application/smoke/vector/nativeactivation. Source4 ONLYexisting .genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DRAFT.md andDESIGN.md +strictlyassignedTMP handoff/baseline/report, read-only immutable evidence underpreaccesswholemethod; onefreshauxclaimspan/report afterparentFULLpositiveintake. NoWISH260f/INDEX/source/dataset/SDK/generated/package/binary/test/readiness/model/privatekey/SQLite/PG/current845 runtime writes or execution. No paidcalls/stockDSHthird/Brainfifth/automaticfollow-on.",
+  "unchangedRoadmap": "All20issues80criteria41nativeDependencies5milestones; datesassigneesuntouched;6locallyaccepted f429checkpoint draftPR22NoCIreported notmerge-ready; USD20 DSH12Brain8/modelgeneration0/allcodingstoragecostUNKNOWN. ParentorchestratorONLYnoSourceCode.Intakefullreportsnotexcerpts; newreviewsblindbeforeartifactaccess; acceptedNativeDone thenreleasebeforeDeliveryACK."
+}

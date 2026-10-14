@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-10T05:13:20.846928+00:00",
+  "actualFullParentPositiveAssessment": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-original-104LF-one-HIGH-FIX-FIRST-proposal-review-positive-parent-assessment.json",
+    "sha256": "8e08da254686cd88d97479b37bf94326a0bcdb6525576ed7b08f239669ca3441"
+  },
+  "actualWholeReportCopiedExact": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-original-A1-A10-C1-C4-independent-one-HIGH-FIX-FIRST-proposal-review.txt",
+    "sha256": "e459006de18b233f3c10fa3eb546e8ff812a6a4e84ed2fd2a835136dde180e5c"
+  },
+  "actualUnchangedReviewedDigest": "0290bb51bb48c7d85778a05b1ee12f0e9726b1a4f9411e585cb9548a32772ce6",
+  "actualNativeDONE": {
+    "id": "msg_5ef0e2bb1aa4",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_190d15b2-c3d5-4375-96e8-f498fe38469a",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "Original4 full proposal FIX-FIRST: native cleanup outcome seam",
+    "body": "Completed the independent full READONLY architecture review across A1-A10, original C1-C4, all four native contracts, fourteen policies, six groups and the complete authorized evidence inventory; the standalone report is 36969 bytes/104 LF/mode0600 with SHA256 e459006de18b233f3c10fa3eb546e8ff812a6a4e84ed2fd2a835136dde180e5c and actual reviewed-sha256 0290bb51bb48c7d85778a05b1ee12f0e9726b1a4f9411e585cb9548a32772ce6. Verdict FIX-FIRST with one HIGH and zero CRITICAL: actual Cordis fiber unload swallows disposer errors, but the proposal does not specify the native pre-swallow cleanup-result seam required for honest launcher rejection, quiescence and replacement outcomes. A bounded design-only H1 repair and two fresh full proposal/quality reviews remain, while WRS90 PROPOSED, original4 BLOCKED, stock2of2 UNKNOWN, Brain4of4, model0 and USD20 paid hold remain unchanged; parent full-read positive assessment and actual release AFTER DONE BEFORE delivery ACK are still required.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_1645c57f0f73\",\"dispatchId\":\"ctx_9afd3bc78835\",\"outcome\":\"succeeded\",\"reportPath\":\"/tmp/oi4-native-extension-independent-original4-architecture-review.txt\"}",
+    "created_at": "2026-10-10T01:48:37Z",
+    "delivered_at": null
+  },
+  "actualReleaseAFTERDoneandParentPositiveBEFORE5d840DeliveryACK": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"7830ac89-69c5-40d4-b279-d92d11ea2b33\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_9afd3bc78835\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"3e775105-8ef2-4b03-9709-de4003da7a4b\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "7830ac89-69c5-40d4-b279-d92d11ea2b33",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_9afd3bc78835",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "3e775105-8ef2-4b03-9709-de4003da7a4b",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "noREADY100_orImplementationReviewApproval": "ONEHIGH/FIXFIRST designneedsboundedrepairafterotherfullblindreturns, twofreshwhole reviews. Original4notaccepted"
+}

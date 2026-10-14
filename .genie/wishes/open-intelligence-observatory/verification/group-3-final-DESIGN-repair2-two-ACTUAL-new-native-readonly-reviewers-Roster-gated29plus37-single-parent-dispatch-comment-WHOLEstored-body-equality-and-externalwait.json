@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-10T11:51:26.484205+00:00",
+  "actualNewReviewerRoster": [
+    {
+      "slice": "original",
+      "taskId": "task_dea961e548bf",
+      "dispatchId": "ctx_b9322cd9ea85",
+      "terminal": "term_e3f7183f-d281-485d-bc9d-f92aff0f3c90",
+      "processIncarnation": "7d04fe83-4cc6-4bbc-aae6-e7bc84d837d1",
+      "reportPath": "/tmp/oi4-native-extension-repair2-full-original-A1-A10-C1-C4-review.txt",
+      "startState": "actual0ready/inputaccepted ONLY/progressnotinferred providerunsupported",
+      "artifactAccess": "HOLD untilENTIREownblindmethod fullParentread+explicit29local37exactreadonly"
+    },
+    {
+      "slice": "quality",
+      "taskId": "task_6502b101a89a",
+      "dispatchId": "ctx_c5b66f878242",
+      "terminal": "term_24709904-9279-4275-abed-072511947bda",
+      "processIncarnation": "a0d5aa51-a013-4126-b938-0824188a3dc3",
+      "reportPath": "/tmp/oi4-native-extension-repair2-full-independent-quality-review.txt",
+      "startState": "actual0ready/inputaccepted ONLY/progressnotinferred providerunsupported",
+      "artifactAccess": "HOLD untilENTIREownblindmethod fullParentread+explicit29local37exactreadonly"
+    }
+  ],
+  "actualParentOneRealGateComment0": {
+    "exit": 0,
+    "stdout": "Commented on task t_mv1nxer60fedac1d as orchestrator.\n",
+    "body": "Final DESIGN-only repair2 actualFULL parentintake of currentDRAFTce89822290B178LF/DESIGN621ea96908B358LF andWHOLEhandofffb1739942B130LF precededONE3982Bfresh-spanreport105 (exactstoredbodyfullyread). Actual nativeDone6535 at11:41:57 taskaed/ctx4fd succeededDESIGNonly; actual nativeRelease0 released/closedagent/archivecaptured AFTERDoneBEFOREDoneDeliveryACK. AUXclaimrelease0/enforcedhold0 currentready+block_kindhold/claimnull.DocsReadonly/CONFIGB2final2/2/oldb2approvalinvalid/currentauthor1a4digestnotreviewstamp. TWO NEW actualnative worker-start0ready/inputaccepted with configuredOMPdefault/existingworktree/noeffort: originalFULL A1A10C1C4K1K4 task_dea961e548bf/ctx_b9322cd9ea85; separateFULL independentprivacy-lifecycle-architectureQuality task_6502b101a89a/ctx_c5b66f878242. BothbeforeArtifactaccess mustENTIREblindmethod thenParentfullread/exact29local+37immutablepublicowningbodies grant. Fullscope14bidirectionalcarriers/olderH1+bothQH1privateowners/noemptyknownrefsuccess/trustroot/actualstartT/independentretirement/futurecompleteF1F6 footpaths retained. Actualstartrecord /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-two-ACTUAL-fresh-native-original-quality-worker-starts-after-authorFullIntake-report105-Done6535-afterRelease0-own-beforeArtifact-method29plus37-gate.json andspecificfullspec /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-3-final-DESIGN-repair2-ACTUAL-authorDone6535-release0-report105-two-FRESH-original-and-quality-beforeACCESS29local37source-native-dispatch-specs.json. No currentreviewverdict/Ready/source/runtime/paid/original#4featureacceptance. Source7sameoriginalauthorcap4used3DATAonly63scope underC6policy separately held, WISH260f/frozen20issues80criteria41deps5milestones datesassignees unchanged. Stock2/2ABIunknown/globalunavailableBrain4/4/model0/USD20ALLcostUNKNOWN."
+  },
+  "actualStructuredWholeStoredRowReadback0": {
+    "author": "orchestrator",
+    "author_kind": "pi",
+    "created_at": 1791633086214,
+    "id": 108,
+    "kind": "comment",
+    "note": "Final DESIGN-only repair2 actualFULL parentintake of currentDRAFTce89822290B178LF/DESIGN621ea96908B358LF andWHOLEhandofffb1739942B130LF precededONE3982Bfresh-spanreport105 (exactstoredbodyfullyread). Actual nativeDone6535 at11:41:57 taskaed/ctx4fd succeededDESIGNonly; actual nativeRelease0 released/closedagent/archivecaptured AFTERDoneBEFOREDoneDeliveryACK. AUXclaimrelease0/enforcedhold0 currentready+block_kindhold/claimnull.DocsReadonly/CONFIGB2final2/2/oldb2approvalinvalid/currentauthor1a4digestnotreviewstamp. TWO NEW actualnative worker-start0ready/inputaccepted with configuredOMPdefault/existingworktree/noeffort: originalFULL A1A10C1C4K1K4 task_dea961e548bf/ctx_b9322cd9ea85; separateFULL independentprivacy-lifecycle-architectureQuality task_6502b101a89a/ctx_c5b66f878242. BothbeforeArtifactaccess mustENTIREblindmethod thenParentfullread/exact29local+37immutablepublicowningbodies grant. Fullscope14bidirectionalcarriers/olderH1+bothQH1privateowners/noemptyknownrefsuccess/trustroot/actualstartT/independentretirement/futurecompleteF1F6 footpaths retained. Actualstartrecord /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-two-ACTUAL-fresh-native-original-quality-worker-starts-after-authorFullIntake-report105-Done6535-afterRelease0-own-beforeArtifact-method29plus37-gate.json andspecificfullspec /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-3-final-DESIGN-repair2-ACTUAL-authorDone6535-release0-report105-two-FRESH-original-and-quality-beforeACCESS29local37source-native-dispatch-specs.json. No currentreviewverdict/Ready/source/runtime/paid/original#4featureacceptance. Source7sameoriginalauthorcap4used3DATAonly63scope underC6policy separately held, WISH260f/frozen20issues80criteria41deps5milestones datesassignees unchanged. Stock2/2ABIunknown/globalunavailableBrain4/4/model0/USD20ALLcostUNKNOWN.",
+    "task_id": "t_mv1nxer60fedac1d"
+  },
+  "actualBodyEquality": "fullbodyexact expectedmatchedONErownotcommandshelldroppedhashes/truncatedsummary",
+  "currentExternalWait": "FinalDoc2 deliveryWHOLEce898/621ea/fb17 acceptedDESIGNonly82TRUEins34del/22pins37provenance; actualONE3982Breport105stored-fullread\u2192NativeDone6535\u2192exactnativeRelease0AFTERDonebefore4bACK+claimreleased/AUXENFORCEDhold. TwofreshnativeReviewstarts0ready/inputaccepted ORIGINALtaskdea961e548bf/ctxb9322cd9ea85 andQUALITYtask6502b101a89a/ctxc5b66f878242. AwaitbothENTIREownblindbeforeFIRST-artifact methods forParentactualfullread/exact29local+37Sourcegrant BEFOREaccess, thenbothWHOLEreports/actualutilityownDigest/identityUTC/Done/releaseAfterbeforeACK. ProviderunsupportedreadystageNOTprogressproof. NoartifactAccessyet/no oldb2onnewcurrent621ea/author1a4stamp/Ready/implementation/runtime/paid/originalfourfeatureacceptance. ExistingCONFIGB2used2of2/nothird/council0effort0.Source7independentcap4used3DATAonlycurrentC6policy.WISH260frozen.",
+  "currentNativeCheck": "bg190ACK4b-afterrelease-WAITactive.ACKreceiptnotyetobserved.MustFULLanynewmessagebeforeACK.Datesassignees/source/runtime/modelbudgetsunchanged, ParentnoCode/source."
+}

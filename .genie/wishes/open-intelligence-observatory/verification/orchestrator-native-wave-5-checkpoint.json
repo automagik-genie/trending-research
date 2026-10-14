@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-10-09T18:37:17.411997+00:00",
+  "status": "ONGOING_FULL_ROADMAP_ORCHESTRATION_NOT_COMPLETE",
+  "current_wish": {
+    "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+    "tag": "124E",
+    "metadata_only_last_edit": true,
+    "observed_wish_lint": "wishes-lint OK4files0brokenbrainstormlinks/template validator green, actualtoolrun"
+  },
+  "native_run": "run_b7d6684b2cdd",
+  "coordinator": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+  "last_processed_delivery": "delivery_a2853db07d30",
+  "next_consuming_check": "bg_112",
+  "current_HEAD": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "remote_HEAD_last_observed": "3b3beb094d2c3a5a021ead88a5280140bd1f841e",
+  "original_locally_accepted_issues": [
+    2,
+    3,
+    5,
+    6,
+    11
+  ],
+  "active_dispatches": {
+    "issue7": {
+      "task": "task_2bbfe79e0b5f",
+      "dispatch": "ctx_0c242e837d41",
+      "gate": ".genie/wishes/open-intelligence-observatory/readiness/group-6.json",
+      "scope": "11sourcepaths1700estimate, realBrainowned845reuse, no old26 mutation,onePGrestart/realCordisreplacement/currentnumericalsnapshot scope required"
+    },
+    "issue8": {
+      "task": "task_8f2a067b113f",
+      "dispatch": "ctx_a45e75e8c6bc",
+      "scope": "JSguidedfocusbugrepair2/2,quality1/1; wideEnterTab passed; incidentalgeometryguardfailed notsourcebug, onlyfailedprobe-stepcontinued; remainingnarrow/sixproof/currentquality+aggregate/human pending",
+      "exclusive_browser_lease": "ctx_a45e75e8c6bc"
+    },
+    "issue4": {
+      "task": "task_0a936d713c67",
+      "dispatch": "ctx_a979a9a2c022",
+      "scope": "actualonceexit1 ABI_LOAD_FAILED beforemetadata; no rerun/3rdrepair; authoronlyreadonlypublicELF diagnosis; fourrepo+privateclassifiedcustody held; docsdsh/cordis held untilissue7freeze"
+    },
+    "DSH_outcome_review": {
+      "task": "task_c265975cc3a7",
+      "dispatch": "ctx_1ee63a5a938e",
+      "scope": "blindACK/parentadmission pending; staticactualdiagnostic outcome/custody only no originalacceptance"
+    }
+  },
+  "full_aggregate_latest": "5dfe18493bbaf4d357f523edb99e1a8976867251dbdb4e08d749101bea69e53f43tests/eval0/0 at1f4 priorcurrentwriters; NOTcurrentchanged7/8/4gate",
+  "user_prerequisites": {
+    "fresh_product_DeepSeek_local0600key_path": null,
+    "actual_Felipe_visual_choice_rationale": null,
+    "editorial_deployed_collector_authority": "notinvented"
+  },
+  "new_parent_only_sources": "WISH/readiness/verification coordination records only; no production/test/SDK/dataset/integrationdoc/root.gitignore edit byparent",
+  "paid_product_model_calls": 0,
+  "all_coding_storage_cost": "UNKNOWN",
+  "no_done_merge_deployed_or_GitHub_closure_claim": true
+}

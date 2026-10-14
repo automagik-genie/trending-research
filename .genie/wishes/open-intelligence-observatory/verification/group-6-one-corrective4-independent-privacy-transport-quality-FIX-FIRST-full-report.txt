@@ -1,0 +1,143 @@
+INDEPENDENT READ-ONLY PRIVACY / TRANSPORT / DEADLINE QUALITY REVIEW — corrective DATA 4
+VERDICT: FIX-FIRST. Three confirmed HIGH static frozen-invariant gaps; no actual exposure, parser crash, lost diagnostic or native/container failure was induced or asserted.
+Completed independent review deliverable only. Not original7 acceptance, production approval, LAB proof, runtime permission, parent assessment or self-release.
+
+IDENTITY / AUTHORITY / BLIND METHOD
+Reviewer: term_eb0592d1-8fbf-4791-af9a-9ba00a88d16f; task_a198a3a22695; ctx_3f696bbb243a; native Run run_b7d6684b2cdd; date 2026-10-09 UTC.
+Independent of source author task_2bbfe79e0b5f / ctx_0c242e837d41. Parent term_d46a2b58-9d50-46cc-91c4-d8823cb344a5 owns integration/runtime/budget/releases.
+Exact existing worktree: /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory.
+Before target/source/helper/diff/old-report access, native blocking question msg_cc1470c43446 submitted the FULL frozen C1–C8, method, boundaries and verdict triggers. No candidate discovery occurred while waiting.
+First ask exited1 on its600000ms timeout, leaving that SAME question pending; resume returned the parent's exact artifact-access reply, exit0. No duplicate question or qualification was created.
+Parent accepted blind ACK and explicitly RELEASED ONLY whole corrective4 DATA, gate, authorized old reports and guarded baseline/input data; sole quality loop1/1, no second/reset. Source B2/used0/configured2/effort0 remains documentary state, not execution proof.
+Preaccess C7 amendment explicitly admits216 TRUE insertions/28 deletions/188 net, replacing105 only; optional safe BrainEvidence(...,witness=None) diagnostic observer; same11 ownership/two permanent mutations;1700 forecast/2000 hard/25 files; same named atomic transient, two/tmp runners, ONE readiness probe; no new store.
+Parent also clarified lifecycle before access: own complete report/readback/hash THEN worker_done; parent then fullread/positive bounded assessment/RELEASE before delivery ACK. No reviewer waits for self-release before reporting.
+Method: whole released candidate/gate/helper/inner/outer/diff and whole baseline/old reports read AS UNTRUSTED DATA; builtin JSON/AST parsing, hashing, byte/LF/mode/absence checks and difflib only. Candidate code, imports, vectors and runtime were NOT executed.
+No new criterion after access. Findings H1/H3 instantiate frozen C5 completeness/identity; H2 instantiates frozen C6 primary-witness preservation. SHIP requires zero HIGH; actionable gaps FIX-FIRST; unavailable exact authority/evidence BLOCKED.
+No product/test/docs/WISH/Git/index/card/forge edits; no source/helper/runner/witness materialization, peer NEW report, container/native/SQL/SDK/model/paid/credential/env/privatePGDATA read, install/pull/build/browser/server/test/lint/format. Only this assigned/tmp report is writable.
+
+EXACT REVIEWED BYTES (NOT APPLIED CODE)
+Candidate: .genie/wishes/open-intelligence-observatory/readiness/group-6-one-complete-corrective-causal-diagnostic-prospective-data-4.json
+reviewed-sha256 ae20ec2ed24d71e2606473baaad63a79195fc54bd7407cd9a1ba0f4e686c3437; actual85554 UTF8B/392LF/mode0600.
+Access gate: .genie/wishes/open-intelligence-observatory/readiness/group-6-one-corrective4-explicit-216insertions-safeobserver-and-two-blind-review-access.json
+SHA ca1e3768810975f70554a432d5d3f958e38c5125273c8e91a45a1fcf3082d33d; actual14417B/361LF/mode0600; whole JSON inspected.
+Author preparation authority: .genie/wishes/open-intelligence-observatory/readiness/group-6-one-corrective-prospective-data-loop-all-independent-findings-new-ledger-pin.json
+SHA d8ec3cadbb3599eb4ec2d13c6d1ed9bec012e372e545deb6d24565a9593d00e9; actual4564B/54LF/mode0600; whole JSON inspected.
+Decoded complete proposed brain.py: SHA2ca7865d7fd4122537718f75deda6dca908dd7d8c147f1a5866aef6d5842f0ec;22507 UTF8B/408LF; declared0600, NOT installed.
+Decoded complete inner /tmp/oi7-native-replay-diagnostic-1.py: SHAb89235806a2b3ace39137f373bf27e8efcf50fea1bf1041a7bcac94ee70cd370;10803 UTF8B/157LF; declared0600, NOT materialized.
+Decoded complete outer /tmp/oi7-native-replay-diagnostic-1-outer.py: SHA1b202d5226e36450e5636448bf9e448ea17f43e98fad65c8ad2cde56f324375a;13697 UTF8B/163LF; declared0600, NOT materialized.
+Exact whole unified diff: SHAef8aadab416173f8b8e2e8591a81919f8b8a7bb47c54ca7aca780dbf04f3d2a7;15627 UTF8B/307LF; independently generated difflib equality TRUE;216 insertions/28 deletions, NOT188 insertions.
+All decoded identities match independently computed bytes/hash/LF; all three ASTs parse. Whole outer guard literals separately inspected and AST-literal equality matches candidate source11/input19 exactly.
+Actual CURRENT brain baseline remains d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2/12768B/220LF/0600. Future2ca source guard is NOT claimed already applied.
+Current WISH dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b/120136B/1135LF/0600 independently matches input19.
+Historical WISH copy .genie/wishes/open-intelligence-observatory/verification/WISH-before-current-six-local-acceptances-and-user-BWS-custody.txt matches exact3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad/108506B/1093LF/0600. Old3b2 is historical, never current.
+
+CONFIRMED HIGH FINDINGS — DIRECT STATIC EVIDENCE, SYMBOLIC DATA ONLY
+H1 — Unsupported/dropped causal entries can still be declared complete.
+Frozen criterion C5; locations proposed brain.py25–81, especially31/33–66; inner119–125. Evidence provenance: direct read of exact2ca helper, not an executed vector or actual error body.
+Symbolic DATA trigger: tool-isError body with content=[{type:'text',text:'brain_remember failed: string is too long for tsvector (2000000 bytes, max 1048575 bytes)'},{type:'text',text:'unrecognized causal detail'}], or that supported first entry plus an unsupported code node later in content, or more than eight entries.
+Line31 silently slices content[:8]. The loop reaches the supported first text and breaks at49–50; later unsupported text/code is never examined. Final81 returns complete=True solely from the selected message grammar. Even entries inside the eight-node bound can be silently dropped after first match.
+There is no aggregate dropped/unsupported flag and no exact admitted-envelope-shape check. A selected stock message does not establish that omitted causal entries were supported or fully captured. This is not an allegation that the originalf6e body contains these entries.
+Impact: false complete causal evidence can be printed/persisted. The inner's new unconditional predicate is sound only if helper.complete is truthful; with this falsely complete output and a matching expected error digest, it permits after-getters instead of required fail-closed disposition. Actual original-body applicability remains UNKNOWN.
+Precise remedy: admit an exact bounded supported error envelope/selection rule; detect every omitted/overflow/unsupported causal candidate and set complete=False, message withheld as necessary. Never label first-match extraction complete while silently slicing/ignoring later causal data. Preserve actual hashes; no extra request, cause guess or raw-body output.
+
+H2 — Outer hard termination during its own custody cleanup loses the recovered primary witness.
+Frozen criterion C6; locations outer75–92/104–142 and hard_end15–16; inner124/146/150/154. Evidence provenance: complete exact1b202 andb892 static control/dataflow.
+Positive control: inner emits bounded checksummed LF frames before client.close; outer recovers complete frames from TimeoutExpired output and later communicate. Constructor primary exception is no longer replaced by ordinary close failure.
+Remaining symbolic trigger: child already emitted a causal/primary-error receipt or before_cleanup frame; outer has recovered it into output/witness/result at104–122; outer then stalls/gets terminated in docker stop, inspect or other own-cleanup work at125–134 before its first external publication at142.
+Those child frames are held ONLY in outer-owned memory/captured pipe. Outer does not relay a complete bounded framed primary witness to its retained output before docker cleanup, nor has it an admitted durable store. At300s hard_end executes only os._exit(124), which guarantees exit but discards this memory without publication. A hard exit/crash before142 therefore loses the newly recovered primary evidence.
+Impact: the sole diagnostic can have actually captured safe causal/request identity yet leave parent only historical0b0 and unknown custody after outer termination. External custody inspection can establish storage/process state but cannot reconstruct the lost causal witness without another forbidden request.
+Precise remedy: forward/stage a validated bounded COMPLETE framed primary witness onto the parent-retained channel before potentially blocking outer cleanup, under the same hard deadline and no-new-store boundary; keep cleanup outcome additive and recovered witness distinct from success. Explicitly preserve already-published prefix on outer cutoff; publication failure remains BLOCKED/external-custodian, never a stopped/success claim.
+This does NOT request logging inside the hard-exit handler or weakening the300s termination. No blocked cleanup, hard kill or actual evidence loss was executed.
+
+H3 — Reader parser/canonicalization failures can discard received-byte identity and masquerade as EOF.
+Frozen criterion C5 actual received identity on unsupported transport paths; locations brain.py175–190 and request252–254. Evidence provenance: direct exact2ca exception-handler and queue trace.
+Symbolic DATA trigger: a received LF JSON frame whose nesting makes json.loads or record_digest raise RecursionError; similarly an exception outside the narrow ValueError/UnicodeError/TypeError parser handler. No nested vector was constructed/executed against the candidate.
+Line178 has already computed actual wire_sha256/wire_bytes. RecursionError is not caught by inner184 nor outer187(OSError). Reader finally enqueues ONLY {'kind':'eof'} at190; the already-computed frame metadata never enters pending. Request253 copies None hashes from this EOF marker and fails as eof rather than the actual decode/canonicalization failure.
+Impact: the receipt falsely represents the observed received-byte identity as unavailable and loses the failed response's hash, although bytes were received. Native phase does fail closed, so this is an evidence-integrity criterion defect, NOT an unsafe continuation or raw-body disclosure claim.
+Precise remedy: retain local wire metadata in a reader-failure envelope for supported parser/canonicalization exceptions, including recursion/overflow boundaries; constant-classify the actual failure phase, then EOF separately. Unknown/unsupported capture must be incomplete and abort; never fabricate a response hash or expose the parser exception's raw text.
+
+NONBLOCKING OBSERVATION / LIMITS
+M3 — request259 correlates by Python equality only; boolean JSON id:true compares equal to initialize sequence1. Protocol2.0 and server/protocol values still checked afterward; tool IDs begin>=3, so this is not a demonstrated misattributed remember. MEDIUM strict-handshake identity risk: require admitted numeric-ID type as well as equality before accepting a frame.
+No actual leak, missing directory, credential value, wrong native identity, stalled FD, native failure cause or fifth qualification is asserted. All counterexamples above are unexecuted symbolic DATA, not LAB/passproof.
+
+OLD FINDING DISPOSITION — READ ONLY AFTER CURRENT CANDIDATE/FINDINGS
+Whole old full report .genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-independent-review-2.txt read; SHA1274997130447ed001d46f828d2bcad23bcc2da66e83197a329840a572033e81/26258B/115LF/0600 independently matched.
+Whole old quality report .genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt read; SHA3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5/34164B/219LF/0600 independently matched. Historical report size is NOT this report's quota or passing candidate evidence.
+R1 code truncation: exact finite code allowlist at55–60 removes the old truncated-code path; completeness remains NOT fully closed because H1. R2 custody: outer136/138 now requires exact container+stopped+stop_exit0+pgdata_retainedTrue+no inspect_error; old false-directory success branch statically closed.
+Q1 arbitrary free text/fatal: exact whole-message grammar and finite codes replace blacklist safety; unknown free text is null/incomplete. Reader-local frame kind prevents a native fatal key becoming internal fatal/exception text. No freeform body/argv/DSN is emitted by intended diagnostic routes. Completeness H1 remains distinct from an observed privacy leak.
+Q2 code bypass: inner120 unconditionally requires complete isTrue AND nonnull message after exactf6e body hash, before after-getters. Old code-present Boolean bypass closed, contingent on truthful completeness H1.
+Q3 missing attempts: send209–229 stores/observes attempt BEFORE encoding/send, including initialize/catalog/notification; same tool receipt objects counted before send. Wire/frame/result/body hashes have distinct names; null means no recorded response; write/flush failure retains sent=None (unknown), no invented response hash. Missing parser boundaries H3 remain open.
+Q4 masking/loss: constructor167–173 retains primary and adds cleanup_error_type; inner146 emits before_cleanup before close, frames recover after child timeout. Outer-owned cleanup publication hole H2 remains open.
+Q5 final timer: hard_end contains ONLY os._exit(124), no stdout/stderr write; old blocking hard-marker defect statically closed. Ordinary publication can block only until overall hard exit; that is not durable evidence preservation H2.
+Q6 identity bounds: native_identity84–99 pins actual brain, nonleadingzero ASCII memory ID<=19digits/I64MAX, exact positive int revision<=I64MAX, optional actual lowerASCII action<=80; inner106 requires action before conditional get. Old oversized-identity path closed without truncation or forced brain ID.
+M1 helper stderr: inspect/start/readiness/stop all DEVNULL in helper/inner/outer, bounded inspect5s; old inherited Docker stderr paths closed statically. Native subprocess/child stderr discarded; exception exports are type/constants/hashes, not raw bodies.
+M2 host/transient custody: killpg targets only still-running owned new-session child leader; outer123 explicitly separates host-descendant unknown from exact-container stop. Missing final/native_close/exit proof blocks success at138. Exited/crashed leader is NOT claimed orphan-free; external parent disposition remains required.
+Atomic storage: outer145–161 O_EXCL0600 named temp, filefsync, replace, old-field/call equality readback. Hard termination can leave only that owned transient; no power-crash/directoryfsync durability claim. Normal unlink failure can itself fail exit; custody cannot be inferred from finally. Parent alone decides unknown transient ownership/custodian after crash.
+
+TRANSPORT / PRIVACY / DEADLINE ROUTE COVERAGE
+JSONRPC error270–276: actual wire/frame/error-body digests plus allowlisted safe error; NativeError text digest-only; handshake errors carry request_receipts before constructor cleanup.
+Tool-isError294–300: actual result and error-body digests, strict bool marker, helper safe scalars; H1 completeness applies. Invalid/nonobject tool results and text decode fail use constant phases, retained matching-frame/result identity.
+Fatal/native arbitrary object: reader treats it as DATA; correlation/protocol/result checks classify constant failure, not native fatal text. Nonobject256 and JSON/UTF decode184 record available wire identity; deep-parser unsupported gap H3.
+EOF/read_error/response timeout: attempt is retained; missing received response hashes stay null. No synthetic response used. Up to8 unmatched frames observed with last-unmatched hash/count; complete history is not claimed.
+Attempt/send: request receipt exists before canonicalization; request/parameter/argument hashes populated before potentially blocking write/flush. sent=True only after complete write+flush; partial/failure retains sent=None, distinguishing unknown from proven send.
+Constructor/witness: observed safe receipt emitted before blocking cleanup; witness failure constant-classified with receipt, not raw exception text. Unavailable final proof cannot turn blocked into success. Outer cleanup relay remains H2.
+Deadlines: total300s; native-phase215s; child<=210 adjusted to remaining native phase; constructor request30s AFTER send; Docker start20s/readiness10s; own-child kill wait3/recovery2; stop30s with --time20; inspect5s; close wait5+5+5/readerjoin5. Blocking send/flush/close/stdio cut off by supervised child deadline, then hard outer exit. No runtime deadline guarantee was exercised.
+Container custody success is strictly stopped AND positive PGDATA retention metadata with no inspect error. Review NEVER inspected PGDATA or container. After outer crash/kill, positive external custody disposition still required; no retry/restart/delete follows from unknown state.
+Framing DATA declares512frames/131072 payloadB/132096 frame-lineB/1MiB capturedstdout; only LF-complete exact-kind/sequence/hash/chain frames accepted; trailing partial is not proof. This is declared/static boundedness, NOT an executed framing smoke or proof of durable parent retention.
+
+FROZEN C1–C8 COVERAGE (THIS QUALITY SLICE, NOT THE OTHER REVIEWER'S ACCEPTANCE)
+C1: reviewed full exact candidate/gate/helper/inner/outer/diff/baseline identities, all30 guard metadata, old report/authority/failure pins; no applied code/commit claim. Current actuald75 distinguished from future2ca.
+C2: inner48–58 preserves original clocks/snapshot/nativeReplayManifest6241702B/argsb41 and errorf6e pins; one exact remember102–104, no import_bundle/replay/newSceneRoot/cause guess. Actual reconstruction was NOT run.
+C3: inner15–27/84–90 and helper108–134 pin original845/OS1001/networknone/readonly/noports/noprivilege/image/binary/fourbind RW flags; namespace brn_63n8pr; qualifier26 and roots200/201 unique. One additional diagnostic start/one readiness only prospectively, NOT fifth qualification.
+C4: take_tool93–99 checks used<58 BEFORE effects;28before+one remember+optionalONEget only validated actual brain/memory/revision/action+28after; expectedreject57/max58. Initialize/catalog/notification separate. Errorhash mismatch or incomplete/null cause abort116–122; no forced IDs/count bypass. Helper completeness H1 prevents fully positive C4-quality closure.
+C5: FIX-FIRST H1/H3. Real inspectable helper; metadata-only request/error/transport paths; supported code/message and identity scalars bounded; unknowns withheld. Proposed LAB vectors60–72 not run, allowlist_and_identity_LAB_guards=True assignment is NOT passproof.
+C6: FIX-FIRST H2. Concrete deadlines/unconditional hardexit, pre-effect cleanup authority, additive constructor cleanup, inner framed precleanup proof, atomic old-object preservation and stopped+PGDATA predicate present; outer-before-own-cleanup preservation incomplete.
+C7: exact+216/-28/+188 verified; same11/two permanent mutation paths;1700/2000/25 unchanged; preaccess observer/transient/probe amendment explicit. Nine present scoped baseline files independently total12069043B/1214LF; two absent. No new store/materialized helper.
+C8: this FIX-FIRST blocks prospective qualification. Even SHIP would require BOTH complete independent zeroHIGH reports, positive full parent assessments/releases, then separate production-byte/safeLAB/native activation gates. Original7/full20 remain unaccepted.
+
+INDEPENDENT CURRENT GUARD INVENTORY — ALL30 VERIFIED
+All28 present entries read as bytes: actual SHA/size/lstat regular nonsymlink/mode0600 matched baseline11/input19; both absences verified including nonsymlink. Future guard2ca for brain verified against embedded proposal separately, NOT actual file.
+S01 observatory/evidence/contracts.py |0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15|22505B354LF
+S02 observatory/evidence/brain.py |d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2|12768B220LF
+S03 observatory/evidence/model.py |80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5|5908B83LF
+S04 observatory/evidence/cordis.mjs |949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374|2646B70LF
+S05 observatory/evidence/__main__.py |8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e|2361B52LF
+S06 observatory/evidence/receipts.json |0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca|11997001B30LF
+S07 observatory/python_adapter.py |aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1|8901B122LF
+S08 docs/integrations/python-pipeline.md |ABSENT
+S09 investigations/frontier-economics/manifest.json |ABSENT
+S10 tests/test_investigation.py |c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d|3439B53LF
+S11 tests/test_evidence_contracts.py |13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e|13514B230LF
+I01 .genie/wishes/open-intelligence-observatory/WISH.md |dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b|120136B1135LF
+I02 docs/contracts/evidence.md |b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f|28218B173LF
+I03 schemas/evidence.schema.json |aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f|12261B153LF
+I04 tests/fixtures/evidence_contracts.json |48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5|13033B53LF
+I05 investigations/frontier-economics/evidence.json |e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93|294150B200LF
+I06 investigations/frontier-economics/sources.json |b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41|109773B843LF
+I07 investigations/frontier-economics/assessment.md |1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa|52115B544LF
+I08 integrations/brain/qualification/native_qualification.py |a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389|48211B825LF
+I09 integrations/brain/qualification/native-receipts.json |d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e|550314B43LF
+I10 integrations/brain/qualification/native-tools.json |8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3|17422B510LF
+I11 docs/integrations/cordis.md |ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2|12132B62LF
+I12 integrations/dsh/qualification/receipts.json |434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb|10949B185LF
+I13 web/data.json |a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36|4223271B1LF
+I14 tests/fixtures/features_a.json |7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7|105582B0LF
+I15 tests/fixtures/features_b.json |92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f|105962B0LF
+I16 investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin |666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16|9903B34LF
+I17 investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin |e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7|92295B320LF
+I18 investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin |0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae|63002B233LF
+I19 investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin |268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b|27251B112LF
+
+HISTORICAL FACTS VS ACTUAL REVIEW OPERATIONS
+Original0b0 receipt independently parsed: task_2bbfe79e0b5f/ctx_0c242e837d41, BLOCKED_WIDEN,61649 native calls, last brain_remember argsb41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91/responsef6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3. Error retained digest-only, NOT causal native body.
+Original snapshot records1955entities/7706 numeric rows/24235 observations, exact clocks and6f78 bundle digest; historical custody own845 stopped/stop_exit0/PGDATAretainedTrue. These are SOURCE-owner historical receipts, not this reviewer's new container observation. Root cause UNKNOWN; full Scene/root UNATTEMPTED preserved, not substituted by prior roots200/201.
+Qualifierd10c JSON independently parsed:26 unique bindings including Microsoft memory20, brainbrn_63n8pr, protocol2025-11-25/serverbrain0.0/live schema387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b. Catalog8ba is shipped-not-live DATA; no payload-limit/root-cause inference.
+Actual reviewer native tools0, container starts/probes0, model/paid calls0, source/fixture/vector executions0, installs/tests/lints/builds0. No runtime/production/remoteCI/smoke exit is claimed. Coding/storage costs UNKNOWN; private credential custody not granted or inspected.
+Actual verification operations: released file/decoded-string SHA+UTF8B+LF+mode checks; all30 current guards; builtin JSON/AST parsing; exact full difflib reconstruction216/28; literal guard equality; historical receipt/qualifier parses and counts. These completed without evaluator error and prove static identity/inspection, NOT behavior passes.
+Native Orca skills/check/heartbeat/resumed-ask commands observed exit0, except the first ask's documented pending timeout exit1. Proposed runnable smoke and LAB assignments were READ AS DATA ONLY, not invoked. No historical passing test output is reused as candidate proof.
+Report quota is<=200LF/32000UTF8B; final exact readback/count/hash/mode supplied through native worker_done, not a self-referential digest inside this file.
+
+DISPOSITION
+The requested independent review is complete as FIX-FIRST with3HIGH; source/helper/scaffolds remain unimplemented and frozen baseline remains intact. No second quality loop, reset, production repair, extra diagnostic, paging/store/schema/clock workaround or activation is authorized by this review.
+Parent must fully read this report and the independently owned full-C1–C8 report, assess actual findings/boundaries, settle/release natively before delivery ACK, and own any permitted next disposition. Existing sole quality loop1/1 prevents treating this verdict as an automatic invitation to another corrective/review cycle.
+worker_done succeeded means the review deliverable is complete; it does not mean the candidate SHIP, original7/full20 acceptance, parent positive assessment, sourceB consumption or runtime safety proof.

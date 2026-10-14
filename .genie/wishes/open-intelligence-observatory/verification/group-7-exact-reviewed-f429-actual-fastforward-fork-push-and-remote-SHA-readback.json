@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-10T01:12:42.815659+00:00",
+  "admission": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-exact-f429a57-both-full-current-SHIP-review-and-actual-gate-authorized-fork-publication-admission.json",
+    "sha256": "eaf0e7b946f33dd7835fbcc577aaa86ca6d224c4ab51e33bc08a8b6dcdc362ca"
+  },
+  "exactCommand": "gitpushhttps://github.com/automagik-genie/trending-research.git f429a573ddc98ce8aef50520c2e420d1ea883f19:refs/heads/wish/open-intelligence-observatory",
+  "actualPush": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": "To https://github.com/automagik-genie/trending-research.git\n   3b3beb0..f429a57  f429a573ddc98ce8aef50520c2e420d1ea883f19 -> wish/open-intelligence-observatory\n"
+  },
+  "actualDifferentPathAPI_readback": {
+    "exit": 0,
+    "storedObject": {
+      "ref": "refs/heads/wish/open-intelligence-observatory",
+      "node_id": "REF_kwDOVAcfe9oALXJlZnMvaGVhZHMvd2lzaC9vcGVuLWludGVsbGlnZW5jZS1vYnNlcnZhdG9yeQ",
+      "url": "https://api.github.com/repos/automagik-genie/trending-research/git/refs/heads/wish/open-intelligence-observatory",
+      "object": {
+        "sha": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+        "type": "commit",
+        "url": "https://api.github.com/repos/automagik-genie/trending-research/git/commits/f429a573ddc98ce8aef50520c2e420d1ea883f19"
+      }
+    }
+  },
+  "exactLocalReviewedEqualsRemote": true,
+  "NOoriginConfigforceMergeDeployDateAssigneeIssueClose": true,
+  "actualmodel0PrivateCredentialsNo": true,
+  "PRBodyCommentUpdateStillPending_notPrematureDone": true
+}

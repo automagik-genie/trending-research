@@ -1,0 +1,210 @@
+{
+  "at": "2026-10-09T22:59:03.258011+00:00",
+  "shared_exact_sourceworktree": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory",
+  "actual_starts": [
+    {
+      "slice": "cached-full-bookworm-complete-static-closure",
+      "name": "oi4-cached-full-ABI-scout",
+      "report_path": "/tmp/oi4-cached-full-bookworm-complete-static-ABI-closure-scout.txt",
+      "spec_sha256": "441a39b384f1878da85a5b95ad92ac3527dcd623e38cf6d26b5678c92411a0a3",
+      "actual_native_start": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"a2372d05-5740-477e-acc8-b99493a8e091\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_5a787479cc3a\",\n    \"dispatchId\": \"ctx_528608c658a5\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_31c027e8-522d-4089-b363-2b17d436123d\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_31c027e8-522d-4089-b363-2b17d436123d is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_31c027e8-522d-4089-b363-2b17d436123d` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_31c027e8-522d-4089-b363-2b17d436123d\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"c96a0761-f2a7-40a4-9e57-d5bcdc9ae563\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"f54fc062-ce66-49ad-a8ca-361a8f85345e\",\n      \"generation\": 73,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_31c027e8-522d-4089-b363-2b17d436123d is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_31c027e8-522d-4089-b363-2b17d436123d` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"c96a0761-f2a7-40a4-9e57-d5bcdc9ae563\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "a2372d05-5740-477e-acc8-b99493a8e091",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_5a787479cc3a",
+            "dispatchId": "ctx_528608c658a5",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_31c027e8-522d-4089-b363-2b17d436123d",
+                "surface": "background",
+                "warning": "Terminal term_31c027e8-522d-4089-b363-2b17d436123d is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_31c027e8-522d-4089-b363-2b17d436123d` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_31c027e8-522d-4089-b363-2b17d436123d",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "c96a0761-f2a7-40a4-9e57-d5bcdc9ae563",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "f54fc062-ce66-49ad-a8ca-361a8f85345e",
+              "generation": 73,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_31c027e8-522d-4089-b363-2b17d436123d is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_31c027e8-522d-4089-b363-2b17d436123d` to reveal and focus it.",
+            "mutation": {
+              "requestId": "c96a0761-f2a7-40a4-9e57-d5bcdc9ae563",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "slice": "new-official-alpha2-supported-contract-seams",
+      "name": "oi4-new-vendor-seam-scout",
+      "report_path": "/tmp/oi4-new-official-alpha2-supported-contract-seams-scout.txt",
+      "spec_sha256": "dc51eb0435ba6eb7733c8a98995e8dcbf0979d799b6dd955f010e07356ea6f4b",
+      "actual_native_start": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"78e9fc7d-f506-4154-a9f5-06e4e2419cbb\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_eaecc00135d6\",\n    \"dispatchId\": \"ctx_fe067f4d7ea6\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_1546e3e2-6a60-40ea-832c-d143da0448e9\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_1546e3e2-6a60-40ea-832c-d143da0448e9\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"e540c7b5-a59e-4aa8-82a2-782a4f1f79c6\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"76c71834-1f6e-4fe2-b2ca-28b185123d00\",\n      \"generation\": 72,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"e540c7b5-a59e-4aa8-82a2-782a4f1f79c6\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "78e9fc7d-f506-4154-a9f5-06e4e2419cbb",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_eaecc00135d6",
+            "dispatchId": "ctx_fe067f4d7ea6",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_1546e3e2-6a60-40ea-832c-d143da0448e9",
+                "surface": "background",
+                "warning": "Terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_1546e3e2-6a60-40ea-832c-d143da0448e9",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "e540c7b5-a59e-4aa8-82a2-782a4f1f79c6",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "76c71834-1f6e-4fe2-b2ca-28b185123d00",
+              "generation": 72,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_1546e3e2-6a60-40ea-832c-d143da0448e9` to reveal and focus it.",
+            "mutation": {
+              "requestId": "e540c7b5-a59e-4aa8-82a2-782a4f1f79c6",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    }
+  ],
+  "source4prospective2of2_noreset_and_no_nativeattempts": true,
+  "officialnewsource_d743_notupgraded_current_rc1": true,
+  "cachedFullBookworm363_staticdata_noExecution": true,
+  "previous127c_774a_fullparentaccepted_released": true,
+  "fresh_productkey_notprovided_orread": true,
+  "readyinputaccepted_NOTmethodsreadACK": true,
+  "original7qualityreviewae20_ca1_parallel_notreadbyScouts": true,
+  "doNOTduplicate_ifwrapperparsingfails": true
+}

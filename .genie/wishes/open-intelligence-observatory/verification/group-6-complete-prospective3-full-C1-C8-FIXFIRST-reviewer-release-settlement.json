@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-09T22:08:14.294980+00:00",
+  "full115linepositive_review_delivery_assessment": ".genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-FIXFIRST-positive-review-deliverable-assessment.json",
+  "actual_release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"4ba21ea5-3286-43d4-b7be-ba3158ed9476\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_4e0fc5c0ee94\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"5ec064b2-d363-4b2c-b571-a5d2f8977b13\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "4ba21ea5-3286-43d4-b7be-ba3158ed9476",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_4e0fc5c0ee94",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "5ec064b2-d363-4b2c-b571-a5d2f8977b13",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "release_before_deliveryACK": true,
+  "sourceSHIP": false,
+  "source0of2notreset": true,
+  "quality_loop_cap1_default": true
+}

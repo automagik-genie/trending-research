@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-09T21:36:26.715623+00:00",
+  "first_owned_handle": "term_86abe2a6-7142-47be-8d27-1ba7ca1312c1",
+  "second_owned_handle": "term_93a550f5-0d5d-4c89-b000-a0d80eebaa85",
+  "first_owned_handle_present": false,
+  "second_owned_handle_present": false,
+  "first_owned_tab_present": false,
+  "second_owned_tab_present": false,
+  "actual_owned_exit_statuses": [
+    0,
+    1
+  ],
+  "first_close_API_stale_not_success": true,
+  "no_broader_terminal_close": true,
+  "No_private_values_read_or_printed": true,
+  "provider_or_secret_get_calls": 0
+}

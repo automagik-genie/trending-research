@@ -1,0 +1,187 @@
+{
+  "recorded_at": "2026-10-09T21:04:51.475985+00:00",
+  "actual_runner": "parent subprocess.capture_output with numeric process.returncode",
+  "observer_correction_reason": "bg122 prior all3 successful output retained intranscript but lacked explicitnumericexit; completedprocURI andoutputhelperFileNotFound. This run capturesmissingexit evidence, notconfirmingknownnativefailure. Firstactual45OK/fixture/lint output preserved aspriorobserved, no reset/sourcechanges/native retry.",
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "combined_freeze_sha256": "8271f2f43d09bcaf0e657d9c2a7f87e7795ac270a805c3086115b23958c47011",
+  "all_actual_commands": [
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".............................................\n----------------------------------------------------------------------\nRan 45 tests in 0.133s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "eval.py",
+        "--features",
+        "tests/fixtures/features_a.json",
+        "tests/fixtures/features_b.json",
+        "--hype",
+        "tests/fixtures/hype_small.json"
+      ],
+      "exit_code": 0,
+      "stdout": "# Discovery evaluation: current 3.0, config e2e3fe2870\nStability, completeness and relative gaps are descriptive; no validated accuracy or truth probability.\n\nFeature cutoffs: 2026-10-06T17:22:49Z \u2192 2026-10-08T02:00:49Z\n| tab | window | method | Spearman | pairs/top | overlap | coverage \u2265 0.5 |\n|---|---|---|---|---|---|---|\n| papers | 7d | 1.0 | 0.942 | 23/23 | 1.00 | 0.91 |\n| papers | 7d | 2.0 | 0.314 | 21/22 | 0.95 | 0.91 |\n| papers | 7d | 3.0 | 0.322 | 21/22 | 0.95 | 0.91 |\n| papers | 30d | 1.0 | 0.975 | 38/38 | 1.00 | 0.89 |\n| papers | 30d | 2.0 | 0.612 | 35/36 | 0.97 | 0.83 |\n| papers | 30d | 3.0 | 0.617 | 35/36 | 0.97 | 0.83 |\n| papers | overall | 1.0 | 0.960 | 60/60 | 1.00 | 0.60 |\n| papers | overall | 2.0 | 0.783 | 54/55 | 0.98 | 0.55 |\n| papers | overall | 3.0 | 0.783 | 54/55 | 0.98 | 0.55 |\n| repos | 7d | 1.0 | 0.510 | 27/29 | 0.93 | 0.00 |\n| repos | 7d | 2.0 | 0.859 | 27/29 | 0.93 | 0.00 |\n| repos | 7d | 3.0 | 0.833 | 27/29 | 0.93 | 0.00 |\n| repos | 30d | 1.0 | 0.574 | 48/49 | 0.98 | 0.24 |\n| repos | 30d | 2.0 | 0.927 | 48/49 | 0.98 | 0.24 |\n| repos | 30d | 3.0 | 0.949 | 48/49 | 0.98 | 0.24 |\n| repos | overall | 1.0 | 0.693 | 60/60 | 1.00 | 0.22 |\n| repos | overall | 2.0 | 0.931 | 60/60 | 1.00 | 0.22 |\n| repos | overall | 3.0 | 0.953 | 60/60 | 1.00 | 0.22 |\nOld feature merge ratios lack the created-and-merged intersection: current method excludes that signal; v2 preserves it.\n\n## HYPE overall: 25 current, 25 historical v2, 25 historical v1\nCurrent descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 2, 'insufficient': 20, 'similar': 2}\n| project | attention | coverage | discovery | gap | label |\n|---|---|---|---|---|---|\n| Gemini app | 86.0 | 0.75 | 62.0 | 24.0 | insufficient |\n| DeepSeek-V4.1-Flash | 83.0 | 0.75 | 63.5 | 19.5 | insufficient |\n| Nemotron 3.5 Lightning | 80.0 | 0.75 | 56.0 | 24.0 | insufficient |\n| DeepSeek Harness | 77.0 | 0.75 | 50.0 | 27.0 | attention_ahead |\n| Seedance | 74.0 | 0.75 | 57.5 | 16.5 | insufficient |\n| shortlist | project | gap | label |\n|---|---|---|---|\n| 1 | Reflection Beam | -14.2 | insufficient |\n| 2 | DeepSeek Harness | 27.0 | attention_ahead |\n| 3 | Action Model | 12.0 | insufficient |\n| 4 | Higgsfield | 4.5 | insufficient |\n| 5 | Laminar flow-1 | 4.5 | insufficient |\n\n## HYPE 30d: 17 current, 17 historical v2, 17 historical v1\nCurrent descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 1, 'insufficient': 15}\n| project | attention | coverage | discovery | gap | label |\n|---|---|---|---|---|---|\n| Gemini app | 85.3 | 0.75 | 62.0 | 23.3 | insufficient |\n| Claude Code | 80.9 | 0.75 | 60.5 | 20.4 | insufficient |\n| DeepSeek-V4.1-Flash | 76.5 | 0.75 | 63.5 | 13.0 | insufficient |\n| Lovable | 72.1 | 0.75 | 59.0 | 13.1 | insufficient |\n| DeepSeek Harness | 67.6 | 0.75 | 50.0 | 17.6 | attention_ahead |\n| shortlist | project | gap | label |\n|---|---|---|---|\n| 1 | Reflection Beam | -4.8 | insufficient |\n| 2 | DeepSeek Harness | 17.6 | attention_ahead |\n| 3 | Action Model | -16.2 | insufficient |\n| 4 | Higgsfield | 5.9 | insufficient |\n| 5 | Laminar flow-1 | 6.1 | insufficient |\n\n## HYPE 7d: 15 current, 15 historical v2, 15 historical v1\nCurrent descriptive label mix: {'attention_ahead': 1, 'evidence_ahead': 1, 'insufficient': 13}\n| project | attention | coverage | discovery | gap | label |\n|---|---|---|---|---|---|\n| Claude Code | 85.0 | 0.75 | 60.5 | 24.5 | insufficient |\n| Gemini app | 80.0 | 0.75 | 62.0 | 18.0 | insufficient |\n| DeepSeek Harness | 75.0 | 0.75 | 50.0 | 25.0 | attention_ahead |\n| Grok app | 70.0 | 0.75 | 50.0 | 20.0 | insufficient |\n| Seedance | 65.0 | 0.75 | 57.5 | 7.5 | insufficient |\n| shortlist | project | gap | label |\n|---|---|---|---|\n| 1 | Reflection Beam | 7.8 | insufficient |\n| 2 | DeepSeek Harness | 25.0 | attention_ahead |\n| 3 | Action Model | 2.0 | insufficient |\n| 4 | Higgsfield | -21.0 | insufficient |\n| 5 | Laminar flow-1 | 20.5 | insufficient |\n\nHYPE temporal stability: unavailable (single dossier snapshot). Capability, business validation, verification and independence: unqualified.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "genie",
+        "wish",
+        "lint"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "wishes-lint: OK (4 files scanned, 0 broken brainstorm links, template validator green)\n"
+    }
+  ],
+  "all_actual_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "frozen_sources_after": {
+    "observatory/evidence/contracts.py": {
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "bytes": 22505,
+      "mode": "0600"
+    },
+    "observatory/evidence/brain.py": {
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "bytes": 12768,
+      "mode": "0600"
+    },
+    "observatory/evidence/model.py": {
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "bytes": 5908,
+      "mode": "0600"
+    },
+    "observatory/evidence/cordis.mjs": {
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "bytes": 2646,
+      "mode": "0600"
+    },
+    "observatory/evidence/__main__.py": {
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "bytes": 2361,
+      "mode": "0600"
+    },
+    "observatory/evidence/receipts.json": {
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "bytes": 11997001,
+      "mode": "0600"
+    },
+    "observatory/python_adapter.py": {
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "bytes": 8901,
+      "mode": "0600"
+    },
+    "docs/integrations/python-pipeline.md": {
+      "exists": false
+    },
+    "investigations/frontier-economics/manifest.json": {
+      "exists": false
+    },
+    "tests/test_investigation.py": {
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "bytes": 3439,
+      "mode": "0600"
+    },
+    "tests/test_evidence_contracts.py": {
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "bytes": 13514,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.css": {
+      "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad",
+      "bytes": 5754,
+      "mode": "0600"
+    },
+    "web/prototypes/explorer.js": {
+      "sha256": "7f39db9ef42fae3b728a57374e11dd28e8d3045dad8a432a686013eeb66deb48",
+      "bytes": 23172,
+      "mode": "0600"
+    },
+    "web/prototypes/index.html": {
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+      "bytes": 2403,
+      "mode": "0600"
+    },
+    "web/prototypes/preview.py": {
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+      "bytes": 3934,
+      "mode": "0600"
+    },
+    "docs/design/frontier-economics.md": {
+      "sha256": "78a8b419e16b3439dd7f564848b12a60635ba342f92cf56f270e6b47f9aa6c7e",
+      "bytes": 27702,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/smoke.json": {
+      "sha256": "8038617b2783f0fbb599901598a7ca0820b49fcfbe517be0209dde03e02fbefc",
+      "bytes": 277492,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31",
+      "bytes": 114519,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "sha256": "f59d738f1312765a3ed3a73ec6773536f2d17ab156a7ac49b55c55391884d5c6",
+      "bytes": 63444,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "sha256": "af4eff4701eaaa11745be18775057cba8ed6e9756827526b9354101d91d36321",
+      "bytes": 138665,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4",
+      "bytes": 79872,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "sha256": "9bac25b986e00ccddf22a53d82a3d3307db4127ef355d97af076d1fcc31124f7",
+      "bytes": 134452,
+      "mode": "0600"
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "sha256": "1815a7e40fb2d1bc01d1fc6c7b51753e7e680b439e9ea5025d0ab5790e9d34d3",
+      "bytes": 77091,
+      "mode": "0600"
+    },
+    "docs/integrations/dsh.md": {
+      "sha256": "626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da",
+      "bytes": 24841,
+      "mode": "0600"
+    },
+    "docs/integrations/cordis.md": {
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "bytes": 12132,
+      "mode": "0600"
+    },
+    "integrations/dsh/qualification/sandbox-readiness.json": {
+      "sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+      "bytes": 28091,
+      "mode": "0600"
+    }
+  },
+  "test_count": 45,
+  "code_or_doc_source_mutations": false,
+  "source7_native_manifest_completion": false,
+  "DSH_full_original_runtime_acceptance": false,
+  "product_model_calls": 0,
+  "all_cost_totals": "UNKNOWN",
+  "no_deploy_or_remote_CI_acceptance": true
+}

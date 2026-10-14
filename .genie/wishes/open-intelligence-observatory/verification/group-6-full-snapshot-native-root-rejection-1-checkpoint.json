@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-10-09T20:33:01.886337+00:00",
+  "task": "task_2bbfe79e0b5f",
+  "dispatch": "ctx_0c242e837d41",
+  "escalation": "msg_b95c324a6f46",
+  "request": "msg_48ddfd6fec75",
+  "actual_command": "python3 -B /tmp/oi7-widen-smoke.py",
+  "actual_exit": 1,
+  "actual_elapsed_seconds": 1366.42,
+  "native_calls": 61649,
+  "actual_error_response_sha256": "f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3",
+  "last_tool": "brain_remember",
+  "last_arguments_sha256": "b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91",
+  "actual_error_body": "NOTretainedUNKNOWN cannotreversehashorclaimpayloadlimitcause",
+  "canonical_snapshot_bundle_sha256": "6f78e23589b5e07ce344daa4611aba2347e50086105998cc7f25385065140539",
+  "numeric_source_scope": {
+    "entities": 1955,
+    "cohort_rows_all7views": 7706,
+    "observations": 24235,
+    "original_ingestion": "2026-10-09T19:02:47.018224Z",
+    "original_computation": "2026-10-09T19:02:47.018288Z",
+    "source_observation_publication_event_clocks": null
+  },
+  "accepted_full_snapshot_manifest": false,
+  "accepted_real_pack_v2_root": 201,
+  "old_v1_root200": "retainedhistorical nofallback/overwrite",
+  "postrestart_v2_claim": false,
+  "custody": "own845 stoppedexit0/inspectrunningfalse PGDATA retained, no newstart/retry/roles/schema/qualifiercalls",
+  "failed_receipt_exact_copy": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-full-snapshot-failed-native-receipts-1.json",
+    "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+    "bytes": 11997001
+  },
+  "repair_budget": {
+    "B": 2,
+    "used": 0,
+    "effort": 0
+  },
+  "next": "prospectivefrozenrepair1diagnosis/logging plan BEFOREany mutation/runtime; supportedpageddesignnotadmitted; no scope shrink or original acceptance"
+}

@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-09T23:08:18.818879+00:00",
+  "native_worker_done": "msg_9c49c8e3fddb",
+  "task": "task_a198a3a22695",
+  "dispatch": "ctx_3f696bbb243a",
+  "nativeoutcome": "succeeded owncompleteREVIEWonly",
+  "actual_full_parent_read": "functions.read exact1-143 no omittedreportlines",
+  "actual_report": {
+    "sha256": "1caa207996399e66a51d60153a7e7f8fbec9c1876d334329c5c3a0b7c64a3a12",
+    "bytes": 26752,
+    "mode": "0600"
+  },
+  "actual_LF": 143,
+  "exact_parent_copy": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-independent-privacy-transport-quality-FIX-FIRST-full-report.txt",
+  "method_actual_full_ACK_beforeaccess": "msg_cc1470c43446/600:1-1raw; parentexplicitca1 gate beforeaccess; lifecyclecorrected",
+  "candidateDATA": "ae20ec2ed24d71e2606473baaad63a79195fc54bd7407cd9a1ba0f4e686c3437 85554B392LF; scope216/28/188 SAFEobserver explicitca1",
+  "parent_positive_scopebounded_acceptance": "ACCEPT completedindependentstaticprivacy/transport/deadlinequalityreview: wholeexactcandidate/caller/guard/helper/inner/outer/diff/historicalfindings actualinspection; full3HIGH H1silentdroppedcausalcomplete/H2lostouterprimarybeforecleanup/H3receivedhashlostRecursionError plusM3 strictboolhandshake risk underfrozenC5/C6/C4. Confirms alloldfindingsstaticalimprovements withremainingdistinctgaps; neverclaimedactualexecution/exposure/cause/model/tenant/candidateSHIP. Source currentd75 versusfuture2ca explicit. Fullrequiredmethod/identity/quota/standalone andfactualbounds satisfied.",
+  "prospective_candidate_verdict": "FIX-FIRST3CONFIRMEDHIGH blocksqualification. Notunverifiedruntimefailure/extra criterion.",
+  "sole_quality_loop": "1/1 EXHAUSTED; noautomaticsecondquality loop/noreset/no_source_application/LAB/activation. SourceB2used0effort0 unchangednotusedqualityrepairbackdoor. Needexactownerdecision before further corrective/reviewauthority.",
+  "source_remaining_scope": "original7/all20 unchanged; full1955/7706/24235/61649failureReplayManifest6.24MB/causeUNKNOWN/SceneRootunattempted. Nopaging/reimport/newclock/schema/native5thqualifier orsource/docs/manifest fabricated",
+  "current_freeze": "all11 currentd75/0b0 andnewWISHdc6 remained, own845PGSTOPPED/retainedhistoricalactualcheckpoint\u2014notthisreviewruntimeobservation",
+  "counts": "model0/allcostUNKNOWN",
+  "before_actual_native_release_and_deliveryACK": true
+}

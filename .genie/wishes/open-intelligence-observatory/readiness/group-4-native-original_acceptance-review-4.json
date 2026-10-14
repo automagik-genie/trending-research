@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-10-09T17:36:05.563545+00:00",
+  "status": "ADMITTED_INDEPENDENT_READ_ONLY_CANDIDATE_REVIEW",
+  "kind": "original_acceptance",
+  "task": "task_b555706cb341",
+  "dispatch": "ctx_436002224afb",
+  "blind_ack_message": "msg_b5f9142158a1",
+  "ack_type": "status",
+  "blind_ack_before_any_file_access": "Blind ACK before any file access: currentWish f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872; exact-six manifest b5ac2167cbc90c60f322fe4ddc5eb92a039afbc7fb0d8f8bb0553dc18642dc0e; receipt d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e. Frozen criteria: C1 exact span after real restart; C2 preserve opposed reports, multiple investors, repeated transaction after update; C3 document graph, not financial transactions; C4 honest time and bitemporal unavailable. Independent static read-only acceptance review plus security, custody, isolation, concurrency, maintainability, and performance; sole output /tmp/brain-native-original-acceptance-4.txt; no mutation, execution/import/model/network/paid/tests/Git/container/namespace changes and no original task/card completion, human, or deployed claims.",
+  "reviewed_commit": "5e0f8b0bcf556f43762da8cdfd4e733381c4dcbc",
+  "current_head": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "candidate_manifest_sha256": "b5ac2167cbc90c60f322fe4ddc5eb92a039afbc7fb0d8f8bb0553dc18642dc0e",
+  "candidate_manifest": {
+    "docs/integrations/brain.md": {
+      "sha256": "128af5e6afd153cbdd945bd16bf2114887bdf9ca58be154c7bfacd2d75a08b1e",
+      "bytes": 45572,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/evidence.json": {
+      "sha256": "b169b97ffb1029ea1a4ee26c4f42675166fe170f7f20cd753f2be8df7aa952a9",
+      "bytes": 63216,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native-tools.json": {
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "bytes": 17422,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native_qualification.py": {
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "bytes": 48211,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/native-receipts.json": {
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "bytes": 550314,
+      "mode": "0600"
+    },
+    "integrations/brain/qualification/sandbox/.gitignore": {
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14,
+      "mode": "0600"
+    }
+  },
+  "current_wish_sha256": "f1109c0185bb89ef1d82325bc6689e74781a33c23dd57dd067f5bec68ecc9872",
+  "frozen_criteria": "OriginalexactC1-C4 plusseparatequalitysecurity/custody/isolation/concurrency/maintainability/performanceasbrief; no changes afterread",
+  "aggregate_receipt_sha256": "5dfe18493bbaf4d357f523edb99e1a8976867251dbdb4e08d749101bea69e53f",
+  "scope": "Readonly exactsix/publicprimary; no rerun/import/native/container/model/network/Git/source/cardmutation; /tmp dedicatedreport only."
+}

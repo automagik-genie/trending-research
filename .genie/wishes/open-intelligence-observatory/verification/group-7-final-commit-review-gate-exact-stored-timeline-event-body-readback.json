@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-10T00:55:44.533457+00:00",
+  "actualExportExit": 0,
+  "exactIntendedStoredEvent": {
+    "author": "orchestrator",
+    "author_kind": "pi",
+    "created_at": 1791593455487,
+    "id": 82,
+    "kind": "comment",
+    "note": "review: committed-SHA attribution gate \u2014 original #8 exact accepted twelve-file study now f429a573ddc98ce8aef50520c2e420d1ea883f19 after d213 proof-only slice, full original C1-C4 and separate quality reviewers dispatched. Both complete blind methods ACKed before artifact access; source2/2 and quality1/1 remain exhausted, no source changes/new repair loop. Actual clean SHA aggregate43 tests/evaluator/lint exit0, same native14focus+6reader proof byte-equal. Exact review gate readiness/group-7-full-original-and-separate-quality-committed-f429a57-SHA-attribution-review-gate.json. Local #8 accepted; commit publication waits current SHA verdicts; whole20/native4/7/CI/deploy remain unaccepted.",
+    "task_id": "t_muz1j3f7944dc064"
+  },
+  "actualCardStillDone": true,
+  "currentCommit": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+  "cardGatepostlaunchOrderDisclosed": true,
+  "source8NoNewRepairCycle": true,
+  "currentNativeReviewMethodsBothFullReadPriorArtifactAccess": true
+}

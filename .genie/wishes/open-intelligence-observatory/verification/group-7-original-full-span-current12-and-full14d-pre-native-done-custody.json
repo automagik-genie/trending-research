@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-09T21:42:53.036881+00:00",
+  "current12SHA": "3443be140200d08355cc21e1a11bcfb29d18cc83a0c519e306d913970a0a27ae",
+  "full14dSHA": "14d65cec5190f8e8c145ec68be2bb037af888be042cdf92c8bc73b95e38717b1",
+  "paths": {
+    "web/prototypes/explorer.css": {
+      "bytes": 5754,
+      "mode": "0600",
+      "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad"
+    },
+    "web/prototypes/explorer.js": {
+      "bytes": 23172,
+      "mode": "0600",
+      "sha256": "7f39db9ef42fae3b728a57374e11dd28e8d3045dad8a432a686013eeb66deb48"
+    },
+    "web/prototypes/index.html": {
+      "bytes": 2403,
+      "mode": "0600",
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478"
+    },
+    "web/prototypes/preview.py": {
+      "bytes": 3934,
+      "mode": "0600",
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513"
+    },
+    "docs/design/frontier-economics.md": {
+      "bytes": 27702,
+      "mode": "0600",
+      "sha256": "78a8b419e16b3439dd7f564848b12a60635ba342f92cf56f270e6b47f9aa6c7e"
+    },
+    "web/prototypes/proof/smoke.json": {
+      "bytes": 277492,
+      "mode": "0600",
+      "sha256": "8038617b2783f0fbb599901598a7ca0820b49fcfbe517be0209dde03e02fbefc"
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "bytes": 114519,
+      "mode": "0600",
+      "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31"
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "bytes": 63444,
+      "mode": "0600",
+      "sha256": "f59d738f1312765a3ed3a73ec6773536f2d17ab156a7ac49b55c55391884d5c6"
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "bytes": 138665,
+      "mode": "0600",
+      "sha256": "af4eff4701eaaa11745be18775057cba8ed6e9756827526b9354101d91d36321"
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "bytes": 79872,
+      "mode": "0600",
+      "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4"
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "bytes": 134452,
+      "mode": "0600",
+      "sha256": "9bac25b986e00ccddf22a53d82a3d3307db4127ef355d97af076d1fcc31124f7"
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "bytes": 77091,
+      "mode": "0600",
+      "sha256": "1815a7e40fb2d1bc01d1fc6c7b51753e7e680b439e9ea5025d0ab5790e9d34d3"
+    }
+  },
+  "full_original_handoff_complete_read": true,
+  "actual_CLIindex3853_and_4000cap": true,
+  "native_source_worker_done_NOT_YET_RECEIVED": true,
+  "carddone": false,
+  "code_engagement_by_parent": false
+}

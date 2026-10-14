@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-10-09T18:14:01.544230+00:00",
+  "review_comment": "review: FIX-FIRST \u2014 separate quality ctx_9c125d3c81ea confirmed HIGH Q1: native Enter on guided question/step drops focus to BODY and next Tab restarts at first question at both actual wide/narrow sizes. Full report verification/group-7-independent-quality-1.txt SHA60800cba, exact source776f/12manifest3b91/candidate1f4. Parent froze final JS-only source repair2/2 plus separate quality loop1/1, configB2 effort0; readiness ACK before mutation, fresh actual native Enter/Tab proof and independent re-review required. Actual Felipe direction/rationale and original acceptance remain null; no unchanged rerun or budget reset.",
+  "comment_exit": 0,
+  "stored_exact_readback": true,
+  "card_stays_in_progress": true,
+  "fix_readiness_send_only_not_author_mutation_permission": true
+}

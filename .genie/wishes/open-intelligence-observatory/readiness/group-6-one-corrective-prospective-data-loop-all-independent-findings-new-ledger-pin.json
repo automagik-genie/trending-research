@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-09T22:12:12.848904+00:00",
+  "authority": "ONE_COMPLETE_CORRECTIVE_PROSPECTIVE_DATA_PREPARATION_ONLY_NO_CODE_RUNTIME",
+  "source_task": "task_2bbfe79e0b5f",
+  "source_dispatch": "ctx_0c242e837d41",
+  "WISH_ledger_amendment_before_next_candidate": {
+    "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+    "sha256": "dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b",
+    "bytes": 120136,
+    "mode": "0600"
+  },
+  "prior_exact_WISH": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/WISH-before-current-six-local-acceptances-and-user-BWS-custody.txt",
+    "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad"
+  },
+  "all_original20scopes80criteria41edges5milestones_preserved": true,
+  "original8localdone6of20_original4blocked": true,
+  "source_B2_used0_unchanged": true,
+  "configured2_effort0": true,
+  "separate_quality_cap1_corrective_loop0before_preparation": "nextCOMPLETEcorrectiveDATAsubmission+qualityrecheck consumessolequality1/1; no secondqualityloop/reset. Sourceactualproductionrepaircountremains0untilseparategate allowsproductionmutation",
+  "full_original_prospective_report": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-independent-review-2.txt",
+    "sha256": "1274997130447ed001d46f828d2bcad23bcc2da66e83197a329840a572033e81"
+  },
+  "separate_quality_report": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt",
+    "sha256": "3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5"
+  },
+  "bothfullreports_positive_assessed_and_resources_released_before_thisgate": true,
+  "permanent_source11_remainfrozen": "d75 brain/0b0 receipt allother9 unchanged/two absent;9existing1214LF12069043B",
+  "allowed": "ONEcomplete correctedprospective full-source/inner/outer/diff TEXTASDATA only, closure ALLR1R2Q1Q6 andM1M2 boundaries; frozenactualSHA/bytes/LF/modes/explicitmeasuredadditiondeletion/new105forecast amendment ifneeded; freshfullC1C8+separateprivacytransportrechecks before code/vector/script/runtime permission. Includeall19inputguards withNEW WISH exactSHA, old3bcopy asHistory nevercurrent",
+  "required_safe_controls": [
+    "boundedallowlistedactualcausalscalarforms ornull/incomplete/abort; arbitraryfree-textcode/message/fatalnotmade safe byblacklist",
+    "alltruncation/droppedcodefields participatein completeness; codepresentnotbypassincompletecausedataabort",
+    "pre-send boundedhashonlyattempt/method/id/argument/requestidentity; actualreceivedwirehashbeforedecode andexplicitphase/sentunknown/nullunavailable; uniformdistinctionframe/result/body plushandshake",
+    "primarydiagnostic safewitness retainedbeforepotentiallyblockingcleanup; cleanupadditivenotmasking; boundedframing andoutertimeout/crash preservewitnesswithoutacceptingpartialJSON",
+    "hardexitindependentofblocking/brokenstderr/stdout; safeoutputbounded; no fabricatedstoppedstate",
+    "actualnativeidentitysize/range beforeoutput/conditionalgetter; no truncatingidentity/forcedbrainID",
+    "successfulownPGDATAretentionwitness mandatoryforcustody/status/exit success; missing/failedmustblockedno restart/delete",
+    "helperstderrprivateconstant/hash-only no rawhelperoutput; hostdescendantcleanupseparatefromcontainerwitness; exacttransientowncustody/custodian ifcrash"
+  ],
+  "original_causeremainsUNKNOWN_no_payloadguess": true,
+  "unchanged_diag_only_contract": "Oneadditionalown845activation (no5th qualifier), exactb41sameclock6241702B ReplayManifest; <=58tools pre-effect, 28protectedoriginal26+roots200201 before/one remember/onegetteronly actualvalidunexpectedacceptance/28afteronlysafeexpectedcausalcapture; mismatch/unavailable/unsafe abortdirectcleanup; 300total harddeadline inclALLI/O, conditionalactualstopped+PGDATA preserved; no import31k/paging/reacquisition/models",
+  "denied": [
+    "production/test/docs/dataset edits",
+    "materializingscaffoldsource/runner/script",
+    "executingcandidate/LAB/vectors/runtime/native/SQL/container/model ornewSDK",
+    "readingoperatorconfig/grants/tokens/PGDATA",
+    "Git/index/commit/push/forge/cardreport/done",
+    "newstore/schema/chunking/truncationarchitecture before actualcause",
+    "budget orqualitycounter reset"
+  ],
+  "privateproductcredentialsnotinput": "freshproductownership/privatecustody/providersactualreadonlymetadata verified separately butnotin BrainMCPenv/no sharedfieldrequired/notpaidauthority"
+}

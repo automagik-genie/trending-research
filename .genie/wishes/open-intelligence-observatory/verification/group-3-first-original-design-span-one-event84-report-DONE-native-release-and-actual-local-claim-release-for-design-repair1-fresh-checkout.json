@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-10T05:19:10.616775+00:00",
+  "scope": "OnlyAUXdesignTaskt_mv1nxer60fedac1d originalDesigneralreadyfull53LFhandoffparentPositive+one3385BindexReportevent84+NativeDoneandActualReleasebefore592ACK. BOTHfirstblindfullreportsnowsettlednativeActualReleasebeforeTheirDeliveryACK; proposaloneHIGHneedsB2repair1. Original4TaskstillBlocked",
+  "actualLocalClaimReleaseExit": 0,
+  "actualStdout": "Released task t_mv1nxer60fedac1d (ready).\n",
+  "actualStderr": "",
+  "actualExportExit": 0,
+  "actualReleasedTask": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": null,
+    "blocked_by": null,
+    "blocked_reason": null,
+    "board_id": null,
+    "claimed_at": null,
+    "claimed_by": null,
+    "created_at": 1791592518642,
+    "group_name": "group-3-native-extension-design",
+    "heartbeat_at": null,
+    "id": "t_mv1nxer60fedac1d",
+    "lane": null,
+    "status": "ready",
+    "title": "Design the bounded native DSH extension architecture \u2014 design only",
+    "updated_at": 1791609550336,
+    "wish": "open-intelligence-observatory"
+  },
+  "oldReportONEperSpanPreserved": "NEWcheckoutopensnextspanadvertisedGeniehelp. No secondreportoldSpan. NewNativeDesignerfirstfullmethodACK thenparentScopeGate/actualFreshCheckout beforeanalysis/writes2docs; no originalNative4SDK/source budgetreset",
+  "ParentOnlyCoordinatorMeta_noSourceCode": "model0/allcostUnknown20cap unchanged"
+}

@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-10T01:37:34.869251+00:00",
+  "fullReportPositiveAssessment": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-full-original-2HIGH-FIX-FIRST-review-positive-parent-assessment.json",
+    "sha256": "0a5ff69eddba083f0af052504dc77bf136bc6514cd54379665d1c947a6184835"
+  },
+  "actualNativeDONE": {
+    "id": "msg_5b18d55aa234",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_01c3dc01-0d4c-4973-950b-3a0959bba789",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "FIX-FIRST: whole C1-C8 corrective5 static review",
+    "body": "Completed the independent whole original C1-C8 prospective DATA-only review and wrote the full 31908-byte, 96-LF, mode0600 report with SHA256 51b9c5e16791e1d827ad6656cc88a2f3abd480f9a7667c44fbc00e8b21d3deb1, without executing or applying candidate code. Found two HIGH defects: H2 still loses valid primary evidence before outer cleanup on malformed-complete-suffix and SIGALRM paths, and C5 admits unterminated native response fragments; H1, H3 and M3 have static repairs only. Final cycle2/2 requires HOLD and actual owner decision, with parent full-read assessment and native release after this done before delivery ACK, while production mutation, safe smoke, native activation and full Source7 acceptance remain separately gated.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_5634027e9ce1\",\"dispatchId\":\"ctx_171d573f1583\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi7-corrective5-original-C1-C8-independent-review-task5634027.txt\"],\"reportPath\":\"/tmp/oi7-corrective5-original-C1-C8-independent-review-task5634027.txt\"}",
+    "created_at": "2026-10-10T01:28:42Z",
+    "delivered_at": null
+  },
+  "actualNativeRELEASEafterFULLpositiveBeforeDeliveryACK": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"c7169b6c-c762-43f2-913f-a7c74cb6b1a6\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_171d573f1583\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"7e33b91c-6569-44f9-a491-d8971d9e38fa\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "c7169b6c-c762-43f2-913f-a7c74cb6b1a6",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_171d573f1583",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "7e33b91c-6569-44f9-a491-d8971d9e38fa",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "FIX-FIRST2HIGH_HOLD_noThird_NoFeatureNoSourceRuntimePermission": true,
+  "otherNewseparateQualityCtxde8StillLive_NoPeerFindingsSent": true
+}

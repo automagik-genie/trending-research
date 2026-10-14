@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-10T06:51:46.455194+00:00",
+  "wholeQuestionRead": "msg_1838f4553c3c/artifact755RAW1-130",
+  "decision": "Allow45000B sameSOLEOWNqualityreport, <=190LF0600; ONLYdocumentaryreport-outputlimit, notcandidate/reviewcriteria/workscope/nativeauthority/budgetreset",
+  "oldCap": 38000,
+  "newCap": 45000,
+  "draftClaim": {
+    "bytes": 43012,
+    "lf": 148,
+    "state": "inMemorynotwritten",
+    "verdict": "FIXFIRST3claimedHIGHawaitWHOLEactualreportnotacceptedfindingyet"
+  },
+  "ownOutput": "/tmp/oi7-corrective6-separate-full-privacy-transport-deadline-quality-review.txt",
+  "fullCoverageMandatory": "allC1C8/fourEXACToriginalcriteria/current34/sevenfixtures48refs31uniqueALLrawWireSHA/full7oldreports/history/oldfindings/rulings/rights/nativeUnknowns/noomission. NoPeerreport/candidate/program/parser/vector/source/import/test/native/PG/Git/model/private/Code materialization/execution. Samecounter3consumedafterfullcycle nofourth/reset/SourceBbackdoor. ParentWHOLEread/positiveReviewintakebeforeDone thenactualreleaseafterbeforeACK."
+}

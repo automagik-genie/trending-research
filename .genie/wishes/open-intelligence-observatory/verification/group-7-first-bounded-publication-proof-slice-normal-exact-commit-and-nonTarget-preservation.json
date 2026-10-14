@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-10T00:42:59.734170+00:00",
+  "actual_SHA": "d213829dafa40148ef7f2e87476e53cb08e47d08",
+  "actual_parent": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "actualPaths": [
+    ".genie/wishes/open-intelligence-observatory/readiness/group-7-felipe-direct-user-selection.json",
+    ".genie/wishes/open-intelligence-observatory/verification/group-7-actual-human-doc-only-final-author-freeze.json",
+    ".genie/wishes/open-intelligence-observatory/verification/group-7-parent-final-native-focus-proof.json"
+  ],
+  "actualinsertions": 1928,
+  "normalGitcommitactual": {
+    "exit": 0,
+    "stdout": "[wish/open-intelligence-observatory d213829] chore(evidence): retain original visual-study observer proof\n 3 files changed, 1928 insertions(+)\n create mode 100644 .genie/wishes/open-intelligence-observatory/readiness/group-7-felipe-direct-user-selection.json\n create mode 100644 .genie/wishes/open-intelligence-observatory/verification/group-7-actual-human-doc-only-final-author-freeze.json\n create mode 100644 .genie/wishes/open-intelligence-observatory/verification/group-7-parent-final-native-focus-proof.json\n",
+    "stderr": ""
+  },
+  "targetOnlyRealIndexSync": {
+    "exit": 0,
+    "stdout": "Unstaged changes after reset:\nM\t.genie/wishes/open-intelligence-observatory/WISH.md\nM\tdocs/design/frontier-economics.md\nM\tdocs/integrations/cordis.md\nM\tdocs/integrations/dsh.md\nM\ttests/test_evidence_contracts.py\nM\tweb/prototypes/explorer.js\nM\tweb/prototypes/proof/questions-narrow.png\nM\tweb/prototypes/proof/questions-wide.png\nM\tweb/prototypes/proof/relationship-narrow.png\nM\tweb/prototypes/proof/smoke.json\nM\tweb/prototypes/proof/timeline-wide.png\n",
+    "stderr": ""
+  },
+  "exactStoredCommitMessage_readback": "chore(evidence): retain original visual-study observer proof\n\nPreserve the actual keyboard observer, Felipe selection, and final author freeze for original issue #8. This is the first bounded evidence-publication slice; the exact accepted visual product and remaining full acceptance records follow separately.\n\nNo whole-roadmap, native #4/#7, CI, deployment, merge, or spending acceptance is claimed. No implementation bytes, private credential/account records, current WISH, or unrelated user files are staged.\n\n",
+  "nonTargetIndexExactlyPreserved": true,
+  "nonTarget_file_stat_identity_preserved_count": 316,
+  "all26targetshaBytesModesUnchanged": true,
+  "onlyfirstProofSlice_noProductRuntime_CodeOrWISH": true,
+  "NOTYETpublish": "remainingacceptedSourceevidenceslice+finalSHA43gate+reviewattribution needed"
+}

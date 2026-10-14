@@ -1,0 +1,162 @@
+{
+  "state": "COMPLETE_FIFTH_STATIC_REVIEW_PAIR_FIX_FIRST_SOURCE_HOLD",
+  "candidate": {
+    "path": "/tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+    "bytes": 318376,
+    "LF": 1,
+    "sha256": "814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7",
+    "mode": "0600"
+  },
+  "originalReport": {
+    "path": "/tmp/oi7-corrective8-original-full-C1-C8-independent-review.txt",
+    "bytes": 87588,
+    "LF": 157,
+    "sha256": "11381f40e7e397fed1ec0a6c7cccd0e9f1264bd9c5bcc2fe73735a5806c7fcaf",
+    "mode": "0o600"
+  },
+  "originalVerdict": "SHIP bounded static prospective DATA only, zero HIGH/CRITICAL",
+  "originalDone": {
+    "id": "msg_b281da52e08c",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_35076ee0-8e43-46e3-ba88-82ba68bfae63",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "Full original readonly review accepted: prospective DATA SHIP",
+    "body": "I completed the full independent readonly C1-C8/F1-F4/four-family/privateACK review and sole 87588-byte 157-LF report, which Parent fully read and positively intook as the completed original review deliverable. I found zero confirmed HIGH or CRITICAL static defects in the bounded prospective DATA; all74 guards and complete canonical diff bind the correct frozen baseline d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2, controlling the retained nonblocking prose transcription discrepancy. All four original features remain BLOCKED_NOTRUN, raw f6 remains LOSTUNKNOWN, and the missing separate quality report still blocks pair/source-application/smoke/native acceptance, with Parent release required after this actual Done before delivery ACK.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_214d2e8f5371\",\"dispatchId\":\"ctx_1983c4d179e9\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi7-corrective8-original-full-C1-C8-independent-review.txt\"],\"reportPath\":\"/tmp/oi7-corrective8-original-full-C1-C8-independent-review.txt\"}",
+    "created_at": "2026-10-14T15:09:51Z",
+    "delivered_at": null
+  },
+  "originalRelease": {
+    "exit_code": 0,
+    "data": {
+      "id": "86ef4818-7b11-4bc8-a423-0cd5b9d2fa8b",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_1983c4d179e9",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "8872886c-ec4d-417e-ad72-2eb7f4aaafa6",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    },
+    "stdout": "{\n  \"id\": \"86ef4818-7b11-4bc8-a423-0cd5b9d2fa8b\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_1983c4d179e9\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"8872886c-ec4d-417e-ad72-2eb7f4aaafa6\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": ""
+  },
+  "qualityReport": {
+    "path": "/tmp/oi7-corrective8-separate-full-privacy-transport-deadline-quality-review.txt",
+    "bytes": 89923,
+    "LF": 125,
+    "sha256": "33d29a6e063d35c19bfbcd4e2b2a27aa4a68233241c76a56cf2460a0352743a5",
+    "mode": "0o600"
+  },
+  "qualityVerdict": "FIX-FIRST 2 HIGH 0 CRITICAL",
+  "qualityFindings": [
+    "Q1 current ACK consumption and second-primary retirement ordering",
+    "Q2 valid JSON-RPC NativeError consumer unreachable"
+  ],
+  "qualityPositive": {
+    "exit_code": 0,
+    "data": {
+      "id": "6f38dc3d-251f-48a0-994d-4dec3f9d5566",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_7752135c031d",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_e3a3ab72ac3f",
+          "subject": "Re: Question",
+          "body": "Parent FULL-read your ENTIRE sole 89923UTF8B125LF report through REPORT-END, exact SHA25633d29a6e063d35c19bfbcd4e2b2a27aa4a68233241c76a56cf2460a0352743a5; exact native question suffix; all74 freshly checked opaque guards, original72 frozen rows, all198 descriptor byte-identity multiset andfuture3absences MATCH. Positive intake of COMPLETE independent review DELIVERABLE only. Your FIX-FIRST with HIGH Q1 current ACK transmission-versus-consumption/second primary retirement ordering and HIGH Q2 unreachable valid NativeError consumer is retained conservatively with original bounded static SHIP, not adjudicated or waived by Parent. BOTHFULLSHIP condition is NOT met: NO source application, SAFE smoke, runtime/native/paid, feature acceptance, sixth candidate/cycle/reset or new panel. Original F1-F4 BLOCKED_NOTRUN/f6 LOSTUNKNOWN and original80 criteria unchanged. Check followups, emit actual worker_done exactly once current task_c9554e33a920/ctx_e3a3ab72ac3f outcome succeeded for completed review deliverable with real report path, then idle. Parent will release AFTER actualDone BEFORE deliveryACK. Do not amend report or access peer report.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_5e540c4c642d",
+          "payload": null,
+          "created_at": "2026-10-14T15:28:24Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_5e540c4c642d",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_e3a3ab72ac3f",
+          "asker_handle": "term_6d479bb6-0439-495c-8bc6-c3f10cd2c7a7",
+          "status": "answered",
+          "answer_message_id": "msg_7752135c031d",
+          "answer_body": "Parent FULL-read your ENTIRE sole 89923UTF8B125LF report through REPORT-END, exact SHA25633d29a6e063d35c19bfbcd4e2b2a27aa4a68233241c76a56cf2460a0352743a5; exact native question suffix; all74 freshly checked opaque guards, original72 frozen rows, all198 descriptor byte-identity multiset andfuture3absences MATCH. Positive intake of COMPLETE independent review DELIVERABLE only. Your FIX-FIRST with HIGH Q1 current ACK transmission-versus-consumption/second primary retirement ordering and HIGH Q2 unreachable valid NativeError consumer is retained conservatively with original bounded static SHIP, not adjudicated or waived by Parent. BOTHFULLSHIP condition is NOT met: NO source application, SAFE smoke, runtime/native/paid, feature acceptance, sixth candidate/cycle/reset or new panel. Original F1-F4 BLOCKED_NOTRUN/f6 LOSTUNKNOWN and original80 criteria unchanged. Check followups, emit actual worker_done exactly once current task_c9554e33a920/ctx_e3a3ab72ac3f outcome succeeded for completed review deliverable with real report path, then idle. Parent will release AFTER actualDone BEFORE deliveryACK. Do not amend report or access peer report.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-14T15:23:31Z",
+          "answered_at": "2026-10-14T15:28:24Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "1459a348-78fb-42c4-8f9d-e6b62bb0ace4",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    },
+    "stdout": "{\n  \"id\": \"6f38dc3d-251f-48a0-994d-4dec3f9d5566\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_7752135c031d\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_e3a3ab72ac3f\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"Parent FULL-read your ENTIRE sole 89923UTF8B125LF report through REPORT-END, exact SHA25633d29a6e063d35c19bfbcd4e2b2a27aa4a68233241c76a56cf2460a0352743a5; exact native question suffix; all74 freshly checked opaque guards, original72 frozen rows, all198 descriptor byte-identity multiset andfuture3absences MATCH. Positive intake of COMPLETE independent review DELIVERABLE only. Your FIX-FIRST with HIGH Q1 current ACK transmission-versus-consumption/second primary retirement ordering and HIGH Q2 unreachable valid NativeError consumer is retained conservatively with original bounded static SHIP, not adjudicated or waived by Parent. BOTHFULLSHIP condition is NOT met: NO source application, SAFE smoke, runtime/native/paid, feature acceptance, sixth candidate/cycle/reset or new panel. Original F1-F4 BLOCKED_NOTRUN/f6 LOSTUNKNOWN and original80 criteria unchanged. Check followups, emit actual worker_done exactly once current task_c9554e33a920/ctx_e3a3ab72ac3f outcome succeeded for completed review deliverable with real report path, then idle. Parent will release AFTER actualDone BEFORE deliveryACK. Do not amend report or access peer report.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_5e540c4c642d\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-14T15:28:24Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_5e540c4c642d\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_e3a3ab72ac3f\",\n      \"asker_handle\": \"term_6d479bb6-0439-495c-8bc6-c3f10cd2c7a7\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_7752135c031d\",\n      \"answer_body\": \"Parent FULL-read your ENTIRE sole 89923UTF8B125LF report through REPORT-END, exact SHA25633d29a6e063d35c19bfbcd4e2b2a27aa4a68233241c76a56cf2460a0352743a5; exact native question suffix; all74 freshly checked opaque guards, original72 frozen rows, all198 descriptor byte-identity multiset andfuture3absences MATCH. Positive intake of COMPLETE independent review DELIVERABLE only. Your FIX-FIRST with HIGH Q1 current ACK transmission-versus-consumption/second primary retirement ordering and HIGH Q2 unreachable valid NativeError consumer is retained conservatively with original bounded static SHIP, not adjudicated or waived by Parent. BOTHFULLSHIP condition is NOT met: NO source application, SAFE smoke, runtime/native/paid, feature acceptance, sixth candidate/cycle/reset or new panel. Original F1-F4 BLOCKED_NOTRUN/f6 LOSTUNKNOWN and original80 criteria unchanged. Check followups, emit actual worker_done exactly once current task_c9554e33a920/ctx_e3a3ab72ac3f outcome succeeded for completed review deliverable with real report path, then idle. Parent will release AFTER actualDone BEFORE deliveryACK. Do not amend report or access peer report.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-14T15:23:31Z\",\n      \"answered_at\": \"2026-10-14T15:28:24Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"1459a348-78fb-42c4-8f9d-e6b62bb0ace4\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": ""
+  },
+  "qualityDone": {
+    "id": "msg_efd3c065b998",
+    "run_id": "run_b7d6684b2cdd",
+    "delivery_contract": "current_delivery",
+    "from_handle": "term_6d479bb6-0439-495c-8bc6-c3f10cd2c7a7",
+    "to_handle": "run:run_b7d6684b2cdd",
+    "subject": "FULL quality review FIX-FIRST: two HIGH",
+    "body": "I completed the independent full static C1-C8/F1-F4 privacy, transport, deadline, security, maintainability and performance review, including all three programs, canonical diff, complete fixtures and all 74 guards, and produced the sole report positively intaken by Parent. I found two HIGH defects in ACK transmission-versus-consumption and second-primary retirement ordering, and the unreachable valid NativeError consumer, with zero CRITICAL findings. The verdict is FIX-FIRST, so source application and SAFE smoke remain unauthorized, original F1-F4 remain BLOCKED_NOTRUN, and Parent owns the subsequent release.",
+    "type": "worker_done",
+    "priority": "normal",
+    "thread_id": null,
+    "payload": "{\"taskId\":\"task_c9554e33a920\",\"dispatchId\":\"ctx_e3a3ab72ac3f\",\"outcome\":\"succeeded\",\"filesModified\":[\"/tmp/oi7-corrective8-separate-full-privacy-transport-deadline-quality-review.txt\"],\"reportPath\":\"/tmp/oi7-corrective8-separate-full-privacy-transport-deadline-quality-review.txt\"}",
+    "created_at": "2026-10-14T15:29:16Z",
+    "delivered_at": null
+  },
+  "qualityRelease": {
+    "exit_code": 0,
+    "data": {
+      "id": "67aa48a7-64cc-4c3d-bdd7-29e2a4c5bf46",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_e3a3ab72ac3f",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "2fb4e044-e504-4342-8b2f-fcf6db33bb60",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    },
+    "stdout": "{\n  \"id\": \"67aa48a7-64cc-4c3d-bdd7-29e2a4c5bf46\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_e3a3ab72ac3f\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"2fb4e044-e504-4342-8b2f-fcf6db33bb60\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": ""
+  },
+  "releaseBeforeACK": "delivery_b71ca30222a8",
+  "budget": "cap5used5 remaining0; no sixth/newcandidate/reset permitted",
+  "conditionalApplySmoke": "NOT_MET BOTHFULLSHIP absent; no source apply/SAFE smoke/native/paid/feature acceptance",
+  "originalFeatures": "F1-F4 BLOCKED_NOTRUN; historicalf6 LOSTUNKNOWN; all20/80/41/5 unchanged",
+  "parent": "opaque metadata/report intake only; no direct code or semantic adjudication"
+}

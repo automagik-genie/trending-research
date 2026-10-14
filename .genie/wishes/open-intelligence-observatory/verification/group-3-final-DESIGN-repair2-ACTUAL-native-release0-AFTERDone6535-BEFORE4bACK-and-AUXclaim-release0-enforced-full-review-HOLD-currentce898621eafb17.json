@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-10T11:47:36.096473+00:00",
+  "actualNativeDonePositiveBeforeRelease": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-native-Done6535-after-WHOLEcurrentDocs-handoff-positive-and-ONEactual3982B-Genie-row105-full-read-before-release-beforeACK.json",
+  "actualNativeAfterDoneBeforeACKRelease": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"68bfe58e-c94f-4397-8a6d-6001e807878e\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_4fd4f94db7e7\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"7dc89e72-a4aa-4e61-b0b6-a80c162772ed\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "68bfe58e-c94f-4397-8a6d-6001e807878e",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_4fd4f94db7e7",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "7dc89e72-a4aa-4e61-b0b6-a80c162772ed",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "actualGenieClaimRelease0": {
+    "exit": 0,
+    "stdout": "Released task t_mv1nxer60fedac1d (ready).\n",
+    "stderr": ""
+  },
+  "actualGenieEnforcedHold0": {
+    "exit": 0,
+    "stdout": "Blocked task t_mv1nxer60fedac1d (ready, hold).\n",
+    "stderr": "",
+    "reason": "Final native DSH DESIGN repair2 delivered ONLY under actual human c2b3 CONFIG B2 final2/2, wholecurrentce898/621ea/fb17positiveintake+82trueins34del+ONE3982Breport105+actualNativeDone6535+nativeRelease0AFTERDone. TWO NEW fresh FULL independent A1-A10/C1-C4/K1-K4+all37owningBodies/14carrier/QH1bothowners reviews notyetaccepted. Hold readonly artifacts/currentWISH260f, no furtherDocsourcewrites/reset/3rdrepair/implementation/runtime/paid/Ready; original#4 allfourruntimecriteria BLOCKED_NOTRUN. Parentreviewgate only."
+  },
+  "actualStructuredCardReadback0": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": "hold",
+    "blocked_by": "cli",
+    "blocked_reason": "Final native DSH DESIGN repair2 delivered ONLY under actual human c2b3 CONFIG B2 final2/2, wholecurrentce898/621ea/fb17positiveintake+82trueins34del+ONE3982Breport105+actualNativeDone6535+nativeRelease0AFTERDone. TWO NEW fresh FULL independent A1-A10/C1-C4/K1-K4+all37owningBodies/14carrier/QH1bothowners reviews notyetaccepted. Hold readonly artifacts/currentWISH260f, no furtherDocsourcewrites/reset/3rdrepair/implementation/runtime/paid/Ready; original#4 allfourruntimecriteria BLOCKED_NOTRUN. Parentreviewgate only.",
+    "board_id": null,
+    "claimed_at": null,
+    "claimed_by": null,
+    "created_at": 1791592518642,
+    "group_name": "group-3-native-extension-design",
+    "heartbeat_at": null,
+    "id": "t_mv1nxer60fedac1d",
+    "lane": null,
+    "status": "ready",
+    "title": "Design the bounded native DSH extension architecture \u2014 design only",
+    "updated_at": 1791632771460,
+    "wish": "open-intelligence-observatory"
+  },
+  "claimSpanOneReportPreserved105": {
+    "author": "native-dsh-extension-design-repair2",
+    "author_kind": "pi",
+    "created_at": 1791632413559,
+    "id": 105,
+    "kind": "report",
+    "note": "FINAL DESIGN repair2 deliverable ONLY; NOT SHIP/Ready/implementation/runtime/paid. Worker native-dsh-extension-design-repair2; Run run_b7d6684b2cdd Task task_aed254af46b0 Dispatch ctx_4fd4f94db7e7 terminal term_81a23e17-cfec-4eda-9d6b-36aebf019e2c; AUX t_mv1nxer60fedac1d current fresh claim.\nParent ACTUAL FULL positive semantic/evidence intake of BOTH docs+WHOLE handoff BEFORE this ONE report, reply to durable msg_dbd2872f8944. Parent FULL diffs/pins/counts matched. Only modified .genie/brainstorms/open-intelligence-observatory-native-dsh-extension/{DRAFT,DESIGN}.md: DRAFT ce8985b7c48bb1152f6d33b9cb3b4408f636e254577247ad8bba50bedc5aa778/22290B178LF600; DESIGN621ea7dbbcd88898e4068cc4f06e7caee1be33391c11b968842ed32dd80ec717/96908B358LF600.\nSole FULL /tmp/oi4-native-extension-design-repair2-full-handoff.txt SHAfb17ff8965639610aeea095739bdfd74e551880cd1a81185298b4f26905f57d0/39942B130LF600. true unified DRAFT+28/-5,DESIGN+54/-29=82ins34del/2files; <=1000forecast/2000hard/25files, no netLF shortcut.\nQH1 PROPOSED/MODIFIED: private iterator/SSE retirement BEFORE catch; trusted Events Hook owner\u2192actual CoreTools invocation/once-adopted promise BEFORE log/detach. Result-dispatch expectation BEFORE body; never-registeredUNKNOWN. SAME root refs/solewriter/T/latejoin/independentretirement/primary vs cleanup/stock semantics, ALLstop/drain/replacement. ALLolder H1boot/Fiber/directAgent/late bridges retained; no secondstore/APIfiction.\nEach frozen ruling RETAINED PROPOSAL, all runtime C1\u2013C4 BLOCKED_NOTRUN: A1/C1 same real SceneIDs/revision/cutoff/nulls native RemoteResult/namedargs/mux/assistantStream/follow/page/control/citationinspector; A2/C2 atomic actualT/ALL-owner drain/sameSession clear reconnect; A3/C3 actual issuer/full14 both-direction denials; A4/C4 honest constraints/UNKNOWN/throwaway distinction; A5 fourLauncher outcomes+precontainment H1/QH1; A6 durable generation/realstart/recoveryheld/all promises/acquisitions; A7 every physical currency/rawcompleteusage/allattempts/finalbytes/default0/noFiles; A8 actual Cordis ownership/disposal/replacement/allcallers/noMap; A9 simple MODIFIED pin/license/rollback/full-footprint bounds; A10 WHOLE2docs/53+70handoffs/eightpins/104+122+119+118reviews/human37authority/nativechronology/footer/digest/formalcounters.\nK1 appTHENproxy/fourway/privatecapture/independentALLretirement; K2 immutabletwoissuer/allcarrier-record-capability; K3 durableSTOPPED/actualT/allpreT/nativecoldhistorycursor; K4 EVERYcredentialegress/worstcurrency/rawcompleteusage/UNKNOWNpaidhold. All14 classes unchanged: unary,mux,nestedIDs,attachments,exactGETHEAD,cwdadopt,tools/nested/PTC/stalecallback,events/control,coldhistorysearchpage,directcarriers,lineage,Brain/citation,providerFiles/privateiterator/toolcallbacks,operatorprofilepluginlaunch. Ownpositive/foreignunknown404/malformed400/noeffects/401/403/STOPPED409 BOTHdirections refresh+cold; 0of14 exercised.\nF1\u2013F6 full source/emitted/generated/package/build/profile/patch/fixtures/docs slots/ins20/1950,14/1800,24/1950,22/1950,15/1800,12/1500=107/10950; eachhard25/2000; actualinventoryUNKNOWN\u2192pre-code resplit. REAL QH1+oldercontrols NOTRUN.\nActual historicalreview0ordinal2/FIXFIRSTb2/repairedtrue; render0changedfalse; finalABSdesign/draft/root check-design0findings[]; digest0AUTHOR-only1a4d51f3b3d66bd3fca20611d991b01b7305c663ccefdc5d707e9943f49d517d. WHOLEhandoff has exactcommands/stdout/22pins/37WHOLEsources/E6metadataONLY/identity-cleanednonce.\nHuman CONFIGB2final2/2,council0effort0; WRS90PROPOSED/noncrystallized/fourfooterPENDING/INDEXSimmering,noreset. TwofreshFULLindependentreviews required/oldb2invalidated. Stock2/2 ONEABIexit1 causeUNKNOWN/globalUNAVAILABLE; Brain4/4/source7cap4used3DATA/model0/shared20DSH12Brain8/allcostUNKNOWN unchanged. No source/SDK/product/native/private/PG/paid/Git or feature4acceptance. Original20issues80criteria41deps5milestones/datesassignees unchanged. Actualrowreadback/finalcheck\u2192ONCEDone\u2192parentrelease\u2192ACK; idle.",
+    "task_id": "t_mv1nxer60fedac1d"
+  },
+  "coordinatorAssertionCorrection": "Claimrelease0andblock--hold0BOTHsucceeded once thenactualexport0.Parentwrongexpectedstatusblocked; actualAPIready+block_kindhold+blockedreason+claimnull enforceshold,no repeatmutations.No rootcode/failureSuppress/retry.RuntimeobservedFullreport105 metadata retained.",
+  "scope": "AfterDocNativeDoneclaimnowreleased/ENFORCED_HOLDnotdone. ArchitectureCardreadywithhold flagnotNativeFeatureAccepted.OpenfreshWholeoriginalandquality0HIGH,noReadyImplementation.Source7sameauthornotreleased.No extraCardreport.",
+  "oldDelivery4bACK": "NOTYETattemptedNEXTafteractualnativeReleasedsettlement.",
+  "sourceNoMutation": "Parentcontrolmetadata/tasklifecycleonly.No code/doc edit/sourceexec/runtime/paid.BOTHnewnativeReviewTaskstarts next exact26inputs37sourcesownmethods beforeartifactAccess."
+}

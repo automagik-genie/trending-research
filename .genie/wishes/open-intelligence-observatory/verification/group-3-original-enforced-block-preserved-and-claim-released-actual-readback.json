@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-09T21:51:27.431730+00:00",
+  "Genie_claim_release_exit": 0,
+  "stdout": "Released task t_muz1j2pr10192156 (ready).\n",
+  "stderr": "",
+  "actual_current_card": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": "work",
+    "blocked_by": "cli",
+    "blocked_reason": "OriginalC1-C3/S1-S4 stillBLOCKED: actualonceexit1 ABI_LOAD_FAILED122B exactcauseUNKNOWN, metadata/catalog/completionnotreached; globaldisposalUNAVAILABLE. Sourceprospective2/2 exhausted/no thirdrepair/runtime. Full85LF17307B411306 handoff +oneactual3688byteevent72 verified; disclosure6abe/custody636bf SHIP0HIGH only;45tests/eval/lint0/0/0 notnativeproof. SavedBWSauthnowqualified viauserauthorized0600file/projectmetadata, supersedesoldmissingtokenONLY; freshPRODUCTcredential/profile/currency/tariff/input/retry/usage/USD12reservation notyetqualified. NeedseparatelyauthorizedcompatibleimmutableSDK/runtimeandindependentcompletionroute, realauthenticatedtwo-principalall-transportown/foreigndenials, durablecancelnew+queuedwork/reconnectclearstatus, actualscene-boundcitedanswer. DoNOTDONEorreadyschedule/fullfeatureaccepted.",
+    "board_id": null,
+    "claimed_at": null,
+    "claimed_by": null,
+    "created_at": 1791433965951,
+    "group_name": "group-3",
+    "heartbeat_at": null,
+    "id": "t_muz1j2pr10192156",
+    "lane": null,
+    "status": "ready",
+    "title": "OI-03: Qualify a pinned DSH assistant integration and session boundary",
+    "updated_at": 1791582687212,
+    "wish": "open-intelligence-observatory"
+  },
+  "actual_export_exit": 0,
+  "enforced_block_persists_after_release": true,
+  "full_original4_ACCEPTED": false,
+  "cardDONE": false,
+  "Native_author_released_after_full_blocked_assessment": true
+}

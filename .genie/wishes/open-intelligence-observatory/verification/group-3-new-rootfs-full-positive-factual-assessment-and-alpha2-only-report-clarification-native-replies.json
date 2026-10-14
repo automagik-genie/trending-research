@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-09T23:19:31.755441+00:00",
+  "rootfs_full_factual_report": {
+    "sha256": "6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2",
+    "bytes": 20258,
+    "mode": "0600"
+  },
+  "rootfs_positive_parent_assessment": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-static-scout-full-positive-parent-factual-acceptance.json",
+    "sha256": "e115e40f09d7cbae73a438289d6b8e9804708f14d6f27735db01e8fb2ff083a7"
+  },
+  "rootfs_actual_nativeReply_EMIT_DONE_before_RELEASE": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"a068e356-891a-47ac-9ee8-d04746d9ca95\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_6e3cb32a29cf\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_528608c658a5\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"FULL88LF20258Breport6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2 actuallyparentread+sameexactcopy, positiveBOUNDEDSCOUTassessment recorded /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-static-scout-full-positive-parent-factual-acceptance.json. ACCEPT factualSTATICELFavailabilityONLY all8providers+17b7/effective8layers/87glibccompatSymbols IFUNC/runtime/SDK/lookupPolicy UNQUALIFIED. CauseUNKNOWN/onehistoricalfailure/sourceprospective2/2exhaust unchanged; no3rd/native/model/sourcepermission. LifecycleCORRECTION: specrequiresparentFULLread+positiveassessment+ACTUALRELEASE BEFOREDELIVERYACK, not beforeYOUworker_done. YOU nowemitworker_done(succeededfactualSCOUTonly) withsoleexactreport/path/SHA/bytesLF/mode afteryourreadback; parentwill then ACTUALworker-releasectx528supportedcommand before ACKdoneDelivery. No duplicateask/relaunch/newresearch/code/image/runtime. Report88 alreadycorrectsrelease-beforeACK. ParentHASpositiveassessmentbutHASNOTnativeReleasedyet; doNOTclaimrelease untilactuallyexecuted. Fouroriginalcriteria notfouractualattempts; exactprospective2/2 actualONEfailure explicit. No source/update/privatekey/PGDATA/Docs/Git/card mutation. Afterworker_donequiescentawaitrelease.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_f0685374a0ba\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T23:19:31Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_f0685374a0ba\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_528608c658a5\",\n      \"asker_handle\": \"term_31c027e8-522d-4089-b363-2b17d436123d\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_6e3cb32a29cf\",\n      \"answer_body\": \"FULL88LF20258Breport6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2 actuallyparentread+sameexactcopy, positiveBOUNDEDSCOUTassessment recorded /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-static-scout-full-positive-parent-factual-acceptance.json. ACCEPT factualSTATICELFavailabilityONLY all8providers+17b7/effective8layers/87glibccompatSymbols IFUNC/runtime/SDK/lookupPolicy UNQUALIFIED. CauseUNKNOWN/onehistoricalfailure/sourceprospective2/2exhaust unchanged; no3rd/native/model/sourcepermission. LifecycleCORRECTION: specrequiresparentFULLread+positiveassessment+ACTUALRELEASE BEFOREDELIVERYACK, not beforeYOUworker_done. YOU nowemitworker_done(succeededfactualSCOUTonly) withsoleexactreport/path/SHA/bytesLF/mode afteryourreadback; parentwill then ACTUALworker-releasectx528supportedcommand before ACKdoneDelivery. No duplicateask/relaunch/newresearch/code/image/runtime. Report88 alreadycorrectsrelease-beforeACK. ParentHASpositiveassessmentbutHASNOTnativeReleasedyet; doNOTclaimrelease untilactuallyexecuted. Fouroriginalcriteria notfouractualattempts; exactprospective2/2 actualONEfailure explicit. No source/update/privatekey/PGDATA/Docs/Git/card mutation. Afterworker_donequiescentawaitrelease.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T23:04:55Z\",\n      \"answered_at\": \"2026-10-09T23:19:31Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"34d18ce9-cc7d-42b4-926c-d34924413df6\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "a068e356-891a-47ac-9ee8-d04746d9ca95",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_6e3cb32a29cf",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_528608c658a5",
+          "subject": "Re: Question",
+          "body": "FULL88LF20258Breport6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2 actuallyparentread+sameexactcopy, positiveBOUNDEDSCOUTassessment recorded /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-static-scout-full-positive-parent-factual-acceptance.json. ACCEPT factualSTATICELFavailabilityONLY all8providers+17b7/effective8layers/87glibccompatSymbols IFUNC/runtime/SDK/lookupPolicy UNQUALIFIED. CauseUNKNOWN/onehistoricalfailure/sourceprospective2/2exhaust unchanged; no3rd/native/model/sourcepermission. LifecycleCORRECTION: specrequiresparentFULLread+positiveassessment+ACTUALRELEASE BEFOREDELIVERYACK, not beforeYOUworker_done. YOU nowemitworker_done(succeededfactualSCOUTonly) withsoleexactreport/path/SHA/bytesLF/mode afteryourreadback; parentwill then ACTUALworker-releasectx528supportedcommand before ACKdoneDelivery. No duplicateask/relaunch/newresearch/code/image/runtime. Report88 alreadycorrectsrelease-beforeACK. ParentHASpositiveassessmentbutHASNOTnativeReleasedyet; doNOTclaimrelease untilactuallyexecuted. Fouroriginalcriteria notfouractualattempts; exactprospective2/2 actualONEfailure explicit. No source/update/privatekey/PGDATA/Docs/Git/card mutation. Afterworker_donequiescentawaitrelease.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_f0685374a0ba",
+          "payload": null,
+          "created_at": "2026-10-09T23:19:31Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_f0685374a0ba",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_528608c658a5",
+          "asker_handle": "term_31c027e8-522d-4089-b363-2b17d436123d",
+          "status": "answered",
+          "answer_message_id": "msg_6e3cb32a29cf",
+          "answer_body": "FULL88LF20258Breport6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2 actuallyparentread+sameexactcopy, positiveBOUNDEDSCOUTassessment recorded /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-static-scout-full-positive-parent-factual-acceptance.json. ACCEPT factualSTATICELFavailabilityONLY all8providers+17b7/effective8layers/87glibccompatSymbols IFUNC/runtime/SDK/lookupPolicy UNQUALIFIED. CauseUNKNOWN/onehistoricalfailure/sourceprospective2/2exhaust unchanged; no3rd/native/model/sourcepermission. LifecycleCORRECTION: specrequiresparentFULLread+positiveassessment+ACTUALRELEASE BEFOREDELIVERYACK, not beforeYOUworker_done. YOU nowemitworker_done(succeededfactualSCOUTonly) withsoleexactreport/path/SHA/bytesLF/mode afteryourreadback; parentwill then ACTUALworker-releasectx528supportedcommand before ACKdoneDelivery. No duplicateask/relaunch/newresearch/code/image/runtime. Report88 alreadycorrectsrelease-beforeACK. ParentHASpositiveassessmentbutHASNOTnativeReleasedyet; doNOTclaimrelease untilactuallyexecuted. Fouroriginalcriteria notfouractualattempts; exactprospective2/2 actualONEfailure explicit. No source/update/privatekey/PGDATA/Docs/Git/card mutation. Afterworker_donequiescentawaitrelease.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T23:04:55Z",
+          "answered_at": "2026-10-09T23:19:31Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "34d18ce9-cc7d-42b4-926c-d34924413df6",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "alpha2_initial_exactpreserved": {
+    "sha256": "fec93bf74a498bc036b242dedce6342bdac7976db89258007c6470265db63f56",
+    "bytes": 23790,
+    "mode": "0600"
+  },
+  "alpha2_parent_full_read107_and_only_report_clarification_reply_actual": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"4848d895-5ecf-454c-8373-d433a45f59e9\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_7e50a2254717\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"run:run_b7d6684b2cdd\",\n      \"to_handle\": \"dispatch:ctx_fe067f4d7ea6\",\n      \"subject\": \"Re: Question\",\n      \"body\": \"ParentACTUALLYFULLread107LF23790Bfec93 andpreservedEXACToldcopy /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-alpha2-factual-scout-before-count-lifecycle-inference-clarification.txt. Scopeboundedfourcontractresearch substantivelycomplete but reportONLY clarification BEFOREfinalpositiveacceptance/worker_done: (1) line9 raw Model123 isungrounded/malformed: replacewithoneactualexit1/2.17s/beforemetadata/ABI_LOAD_FAILEDclassifier122consumed-linebytes/rawbodyabsent exactcauseUNKNOWN perallowed127c/774a, no newrun. (2) line106release-before-worker_done backwards: YOUemitdone afterowncompletefullreadbackmetas+parentassessment, BEFOREactualparentRELEASE; parentactualRELEASE BEFOREdeliveryACK. ParenthasNOTnativeReleasedyet. (3) line37INFERENCE overbroadifreadasnoNodebeforeExiteverindicatesnormalsuccess: your35-36 saysnormalsuccessprocess.exitCode/naturalcompletion differsforcedrejection; qualifyBOUND no completefour-waynativeowneddiscriminatedcompositewitnessestablished ininspectedinterfaces. DoNOTstate allnormal-success observationsimpossible; hypotheticalNodebeforeExit-alone notall4way/nativeapp+proxyactualproof, andnoneexecutedhere. DoNOTinventEventAPI/Observercontract ordesignimplementation; thisisfactualboundedclaimclarification basedyourown35-36, no nativeexecution/newsource/code/qualificationattempt. Preserveallother107lines/pins/inventory/facts; alterONLYown/tmpreport admittedlines9/37/106, <=180LF25000B. Re-readwholefinal+hash/count/mode andsendnativeQUESTIONreadywithnewexactSHA (no source/API/bodyRootguess). Parentwillfullreadfinalpositivefactualassessment+replyEMITworker_done; afternativeDoneparentactualreleasebeforedeliveryACK. No reportrootFalsefirstforceexitallNormal, no source0.2rc1 repin/fork/install/model/privatefiles/PGDATA/Git/task/originalDocs/WISH. CurrentSDK2/2holds, all20criteria unchanged andactualrootcauseUNKNOWN.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": \"msg_b81d69f58370\",\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T23:19:31Z\",\n      \"delivered_at\": null\n    },\n    \"question\": {\n      \"message_id\": \"msg_b81d69f58370\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"dispatch_id\": \"ctx_fe067f4d7ea6\",\n      \"asker_handle\": \"term_1546e3e2-6a60-40ea-832c-d143da0448e9\",\n      \"status\": \"answered\",\n      \"answer_message_id\": \"msg_7e50a2254717\",\n      \"answer_body\": \"ParentACTUALLYFULLread107LF23790Bfec93 andpreservedEXACToldcopy /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-alpha2-factual-scout-before-count-lifecycle-inference-clarification.txt. Scopeboundedfourcontractresearch substantivelycomplete but reportONLY clarification BEFOREfinalpositiveacceptance/worker_done: (1) line9 raw Model123 isungrounded/malformed: replacewithoneactualexit1/2.17s/beforemetadata/ABI_LOAD_FAILEDclassifier122consumed-linebytes/rawbodyabsent exactcauseUNKNOWN perallowed127c/774a, no newrun. (2) line106release-before-worker_done backwards: YOUemitdone afterowncompletefullreadbackmetas+parentassessment, BEFOREactualparentRELEASE; parentactualRELEASE BEFOREdeliveryACK. ParenthasNOTnativeReleasedyet. (3) line37INFERENCE overbroadifreadasnoNodebeforeExiteverindicatesnormalsuccess: your35-36 saysnormalsuccessprocess.exitCode/naturalcompletion differsforcedrejection; qualifyBOUND no completefour-waynativeowneddiscriminatedcompositewitnessestablished ininspectedinterfaces. DoNOTstate allnormal-success observationsimpossible; hypotheticalNodebeforeExit-alone notall4way/nativeapp+proxyactualproof, andnoneexecutedhere. DoNOTinventEventAPI/Observercontract ordesignimplementation; thisisfactualboundedclaimclarification basedyourown35-36, no nativeexecution/newsource/code/qualificationattempt. Preserveallother107lines/pins/inventory/facts; alterONLYown/tmpreport admittedlines9/37/106, <=180LF25000B. Re-readwholefinal+hash/count/mode andsendnativeQUESTIONreadywithnewexactSHA (no source/API/bodyRootguess). Parentwillfullreadfinalpositivefactualassessment+replyEMITworker_done; afternativeDoneparentactualreleasebeforedeliveryACK. No reportrootFalsefirstforceexitallNormal, no source0.2rc1 repin/fork/install/model/privatefiles/PGDATA/Git/task/originalDocs/WISH. CurrentSDK2/2holds, all20criteria unchanged andactualrootcauseUNKNOWN.\",\n      \"answered_by_generation\": 1,\n      \"created_at\": \"2026-10-09T23:04:44Z\",\n      \"answered_at\": \"2026-10-09T23:19:31Z\",\n      \"closed_at\": null\n    },\n    \"duplicate\": false,\n    \"mutation\": {\n      \"requestId\": \"88ad01c9-bfe8-4339-acb8-4bc6edce1e28\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "4848d895-5ecf-454c-8373-d433a45f59e9",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_7e50a2254717",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "run:run_b7d6684b2cdd",
+          "to_handle": "dispatch:ctx_fe067f4d7ea6",
+          "subject": "Re: Question",
+          "body": "ParentACTUALLYFULLread107LF23790Bfec93 andpreservedEXACToldcopy /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-alpha2-factual-scout-before-count-lifecycle-inference-clarification.txt. Scopeboundedfourcontractresearch substantivelycomplete but reportONLY clarification BEFOREfinalpositiveacceptance/worker_done: (1) line9 raw Model123 isungrounded/malformed: replacewithoneactualexit1/2.17s/beforemetadata/ABI_LOAD_FAILEDclassifier122consumed-linebytes/rawbodyabsent exactcauseUNKNOWN perallowed127c/774a, no newrun. (2) line106release-before-worker_done backwards: YOUemitdone afterowncompletefullreadbackmetas+parentassessment, BEFOREactualparentRELEASE; parentactualRELEASE BEFOREdeliveryACK. ParenthasNOTnativeReleasedyet. (3) line37INFERENCE overbroadifreadasnoNodebeforeExiteverindicatesnormalsuccess: your35-36 saysnormalsuccessprocess.exitCode/naturalcompletion differsforcedrejection; qualifyBOUND no completefour-waynativeowneddiscriminatedcompositewitnessestablished ininspectedinterfaces. DoNOTstate allnormal-success observationsimpossible; hypotheticalNodebeforeExit-alone notall4way/nativeapp+proxyactualproof, andnoneexecutedhere. DoNOTinventEventAPI/Observercontract ordesignimplementation; thisisfactualboundedclaimclarification basedyourown35-36, no nativeexecution/newsource/code/qualificationattempt. Preserveallother107lines/pins/inventory/facts; alterONLYown/tmpreport admittedlines9/37/106, <=180LF25000B. Re-readwholefinal+hash/count/mode andsendnativeQUESTIONreadywithnewexactSHA (no source/API/bodyRootguess). Parentwillfullreadfinalpositivefactualassessment+replyEMITworker_done; afternativeDoneparentactualreleasebeforedeliveryACK. No reportrootFalsefirstforceexitallNormal, no source0.2rc1 repin/fork/install/model/privatefiles/PGDATA/Git/task/originalDocs/WISH. CurrentSDK2/2holds, all20criteria unchanged andactualrootcauseUNKNOWN.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": "msg_b81d69f58370",
+          "payload": null,
+          "created_at": "2026-10-09T23:19:31Z",
+          "delivered_at": null
+        },
+        "question": {
+          "message_id": "msg_b81d69f58370",
+          "run_id": "run_b7d6684b2cdd",
+          "dispatch_id": "ctx_fe067f4d7ea6",
+          "asker_handle": "term_1546e3e2-6a60-40ea-832c-d143da0448e9",
+          "status": "answered",
+          "answer_message_id": "msg_7e50a2254717",
+          "answer_body": "ParentACTUALLYFULLread107LF23790Bfec93 andpreservedEXACToldcopy /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-alpha2-factual-scout-before-count-lifecycle-inference-clarification.txt. Scopeboundedfourcontractresearch substantivelycomplete but reportONLY clarification BEFOREfinalpositiveacceptance/worker_done: (1) line9 raw Model123 isungrounded/malformed: replacewithoneactualexit1/2.17s/beforemetadata/ABI_LOAD_FAILEDclassifier122consumed-linebytes/rawbodyabsent exactcauseUNKNOWN perallowed127c/774a, no newrun. (2) line106release-before-worker_done backwards: YOUemitdone afterowncompletefullreadbackmetas+parentassessment, BEFOREactualparentRELEASE; parentactualRELEASE BEFOREdeliveryACK. ParenthasNOTnativeReleasedyet. (3) line37INFERENCE overbroadifreadasnoNodebeforeExiteverindicatesnormalsuccess: your35-36 saysnormalsuccessprocess.exitCode/naturalcompletion differsforcedrejection; qualifyBOUND no completefour-waynativeowneddiscriminatedcompositewitnessestablished ininspectedinterfaces. DoNOTstate allnormal-success observationsimpossible; hypotheticalNodebeforeExit-alone notall4way/nativeapp+proxyactualproof, andnoneexecutedhere. DoNOTinventEventAPI/Observercontract ordesignimplementation; thisisfactualboundedclaimclarification basedyourown35-36, no nativeexecution/newsource/code/qualificationattempt. Preserveallother107lines/pins/inventory/facts; alterONLYown/tmpreport admittedlines9/37/106, <=180LF25000B. Re-readwholefinal+hash/count/mode andsendnativeQUESTIONreadywithnewexactSHA (no source/API/bodyRootguess). Parentwillfullreadfinalpositivefactualassessment+replyEMITworker_done; afternativeDoneparentactualreleasebeforedeliveryACK. No reportrootFalsefirstforceexitallNormal, no source0.2rc1 repin/fork/install/model/privatefiles/PGDATA/Git/task/originalDocs/WISH. CurrentSDK2/2holds, all20criteria unchanged andactualrootcauseUNKNOWN.",
+          "answered_by_generation": 1,
+          "created_at": "2026-10-09T23:04:44Z",
+          "answered_at": "2026-10-09T23:19:31Z",
+          "closed_at": null
+        },
+        "duplicate": false,
+        "mutation": {
+          "requestId": "88ad01c9-bfe8-4339-acb8-4bc6edce1e28",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "alpha2_FINALpositiveAssessment_pendingownreport3lineclarification_only": true,
+  "no_user_product_source_docs_or_capreset": true,
+  "original4BLOCKED_source2of2_actualONEfailure_UNKNOWN": true,
+  "delivery919NOTyetACK": "bothquestionsanswered/readreview35fsettled/released; scoutsactualDoneeventsNOTyetreceived"
+}

@@ -1,0 +1,75 @@
+{
+  "recorded_at": "2026-10-09T19:30:48.082651+00:00",
+  "run": "run_b7d6684b2cdd",
+  "coordinator": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "HEAD": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "new_git_mutations": false,
+  "original_local_accepted_issues": [
+    2,
+    3,
+    5,
+    6,
+    11
+  ],
+  "roadmap_complete": false,
+  "current_visual": {
+    "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+    "manifest12_sha256": "00cfaf1dd043d2790b7ff744a2019a8d653f6b977652420ec0a87fe5ee032549",
+    "native_focus": {
+      "controls": 14,
+      "wide": 7,
+      "narrow": 7,
+      "proof_sha256": "201409891910145bcf3d604d2bd73c61dd9c370cf9044e3134900301c1a18e09"
+    },
+    "source_counter_roundtrips": {
+      "cases": 6,
+      "proof_sha256": "0f8bfcd9bc928a1c3321dd8b5527c739948a3b26c90bbd827f375f304ce994b2"
+    },
+    "actual_six_images": "Parentvisuallyinspected6populatedPNGat1280x900/390x844,file--mime-typeallimage/png; readerpreview2wideWebPtranscodesnotoriginalfileformat",
+    "quality_task": "task_6db05d5f1177",
+    "quality_dispatch": "ctx_1b1380a17517",
+    "parent_tab": "CLOSED",
+    "browser_lease": "Qualityexclusive optional currentexisting8879",
+    "current_quality_status": "checkpointmatched all12+14/0newHIGHsofar; exact6+lease sent/replied, reportpending",
+    "original_acceptance": null,
+    "actual_Felipe_choice": null,
+    "actual_issue8_comments": "GETpublicAPIactual[]; nochoicecomment",
+    "source_repair_cap": "2/2 separatequality1/1 configB2effort0"
+  },
+  "DSH": {
+    "actual_once": "exit1/2.17s/DOCKER_EXIT_BEFORE_METADATA/ABI_LOAD_FAILED122classifiedbytes",
+    "exact_ABI_cause": "UNKNOWN",
+    "whole_native_completion": "UNAVAILABLE",
+    "originalC1_C3": null,
+    "outcome_review": "qualifiedSHIP0HIGH636bf positivelysettled/released",
+    "private_custody": "OwnAdeleted/Bnevercreated parentpathname-only freshabsence verified; no secret statevaluescopied",
+    "throwaways": "Authoredpolicy/probedeleted, rootignoreoriginal14restoredSHA d8304",
+    "retained_readiness_sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+    "safe_classified_copy_sha256": "7a830a2aae61a3a74b0b9c0815f388fecc220a4a482c3d37123f383babf9f7ed",
+    "original_done": false,
+    "docs": "HELD until7freeze",
+    "model_calls": 0,
+    "paid_product_calls": 0,
+    "all_cost_totals": "UNKNOWN"
+  },
+  "readmodel": {
+    "task": "task_2bbfe79e0b5f",
+    "dispatch": "ctx_0c242e837d41",
+    "actual_first_tracer": "173bindings/root200 actualroundtrip/duplicates/changedrecordconflict/realCordisreplacement/onePGrestart/old26unchanged",
+    "full_scope": "ALL1955retained1082papers+873repos/all7views numeric/null, declared4565/1706 notpopulationcoverage; legacy2.0precomputednotnewtruth",
+    "canonical_bundle_amendment": {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-native-canonical-replay-manifest-amendment-1.json",
+      "sha256": "31ce3c578d4dc843254d3bddb97618ea3882a94d6d8a8cd7d6919b52b8f55452",
+      "same_native_Brain_authority": true,
+      "full_native_payload_not_yet_observed": true,
+      "old_root200": "IMMUTABLE historicalpre-amendment; append explicitnewprotocolroot nooverwrite/fallback"
+    },
+    "full_smoke": "PENDING",
+    "consumer_custody_order": "Optionalsafeexistingrunningcheckpoint, neverextraPGrestart",
+    "original_and_quality": "PENDING"
+  },
+  "aggregate_current": "PENDING allwritersfreeze;5dfe43tests/evaluator earliercommit is notcurrentchangedcode proof",
+  "remote_CI_deployment_human_financial_truth": "UNCLAIMED",
+  "credential": "UserfreshDeepSeekroute granted butlocal0600freshkeypath stillabsent; tariffsourcefindings onlynotpaidadmission"
+}

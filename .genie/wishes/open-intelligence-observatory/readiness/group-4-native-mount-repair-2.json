@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-08T13:15:33.641043+00:00",
+  "issue": 5,
+  "group": 4,
+  "task": "task_1ee57daded7e",
+  "dispatch": "ctx_ed2a28fd3625",
+  "status": "ADMITTED_BOUNDED_ENV_MOUNT_REPAIR_2_OF_2_BOOTSTRAP_ONLY",
+  "B": 2,
+  "budget_source": "config2",
+  "repairs_used_before": 1,
+  "repairs_used_after": 2,
+  "effort_escalations": 0,
+  "cause": "env-tool-failure: pinned image declared VOLUME created unexpected fourth anonymous mount; no brn or evidence calls occurred. PostgreSQL exit2 cause itself remains unobserved, not guessed.",
+  "failure_receipt": "Stage1 bootstrap FAILED before registration/MCP/evidence writes; python3 -B integrations/brain/qualification/native_qualification.py --bootstrap exit1, blocker unexpected mount, stop exited0. Docker image declared VOLUME /var/lib/postgresql/data caused an automatically allocated fourth anonymous volume outside frozen sandbox: b279107f345e186b4b1ff404455b0f7a92bfaa2125652e1a8f5b8cb79a2b1541. Container364de92c3e89d7314e2f66c5e39e6c7f780f96955079d45d7cc81a0801fd4803 now STOPPED/exited2 PID0; no actual brn/live schema/records/tools/model. No repeat to confirm failure. Request exact correction: fourth bind source CURRENT_WORKTREE/integrations/brain/qualification/sandbox/pgdata -> /var/lib/postgresql/data rw (same alreadyownedPGDATA also under sandbox; shadows declared image VOLUME), inspect allows exactly4binds, no Docker volume. Author bootstrap log capture via docker attach --no-stdin existing own container -> sandbox/bootstrap.log (native output redacted), startup create then attach before docker start so exit2 gets actual diagnostic rather than guessing. This changes launch Docker create exact previous run args + fourth bind, then docker start own named container; all networkNone/user1001/read-only/caps0/ports0/cleanenv retained. Before retry explicitly authorize docker rm --volumes oi5-ctx-ed2a28fd3625 ONLY this proven stopped container + its matching anonymousvolume, no shared/prune or PGDATA deletion. Preserve alreadycreated sandboxPGDATA/passwords; do not recreate/overwrite native records or fabricate namespace. Add --resume-bootstrap qualifier mode loading fresh own password files and native dirs only, with previous failed receipt preserved in native-receipts.json bootstrap_history; still registration/initialize/tools-list only and mandatory secondask before evidence writes. No paid call; no newpermanentpath (existing six), no SDK/upstream patch/config/network change; readiness correction does not reset originalB2/config2/repair1/2. Please freeze exact corrected mount/lifecycle/logging admission or direct honestBLOCKED handoff if not admitted.",
+  "prior_admission": ".genie/wishes/open-intelligence-observatory/readiness/group-4-native-bootstrap-1.json",
+  "prior_admission_sha256": "19b9af8355315548047bed63db733469b5c10d803cb2507458e388c3cb3ed7c3",
+  "exact_correction": {
+    "fourth_bind": {
+      "source": "CURRENT_WORKTREE/integrations/brain/qualification/sandbox/pgdata",
+      "destination": "/var/lib/postgresql/data",
+      "mode": "rw"
+    },
+    "mount_guard": "exact four binds, zero Docker anonymous/named volume; preserve networknone/nonroot/readonlyroot/nocaps/no ports/resource bounds/cleanenv",
+    "create_attach_start": "same exact frozen native container args plus fourthbind via docker create; attach --no-stdin before docker start, capture actualredacted native exit diagnostics to existing ignored sandbox/bootstrap.log",
+    "safe_recreate": "ONLY proven stopped own container364de92c3e89d7314e2f66c5e39e6c7f780f96955079d45d7cc81a0801fd4803/nameoi5-ctx-ed2a28fd3625, validate sameID/stopped and sole automaticvolume b279107f345e186b4b1ff404455b0f7a92bfaa2125652e1a8f5b8cb79a2b1541 before docker rm --volumes exactcontainer; no force/prune/shared/container/data deletion",
+    "state_reuse": "Preserve existing ownedPGDATA/passwords; bounded --resume-bootstrap resumes initialized own environment without overwriting namespace or evidence; bootstrap_history retains actualfailedreceipt",
+    "write_scope": "Same six exactpermanentfiles, no schema/SDK/native-source/root/config/dependency/network change. Parent only orchestrates, author writes qualifier.",
+    "stage": "Only bootstrap/init/initialize/tools-list; secondblockingactualbrn/live-schema freeze stillmandatory before any evidence tools/call; paid/model/externalcalls remainunadmitted"
+  },
+  "next_failure": "No unchanged retry or cap reset. Diagnose actual retained exit/log evidence, ask exactchanged-context decision; no unapproved code repair beyond2 or effort change. Independent originalacceptance+separatequality required after final actualproof."
+}

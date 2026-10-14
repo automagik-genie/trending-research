@@ -1,0 +1,89 @@
+{
+  "at": "2026-10-13T18:20:23.345413+00:00",
+  "actualWholeBeforeReleaseSettlement": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/three-ACTUAL-failedDone-d594-2d5-4e9-ALL11queuedMsgsWHOLEread-noArtifactCandidateReview-beforeNativeReleases-before1baACK-SAMEtaskRetryOnly.json",
+    "bytes": 266424,
+    "LF": 1021,
+    "sha256": "d83d7fc5827158e2443e445cb1c2faad288bb5004006acb31a47572cb352a3f9",
+    "mode": "0600"
+  },
+  "actualAfterFailedDoneThreeNativeReleases": {
+    "ctx_5c1b196869dd": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"b9cfe1b2-c4e6-4ebb-8f07-e24b8dd81b07\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_5c1b196869dd\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"64b36f56-d658-42ec-8065-9db7680c504d\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "b9cfe1b2-c4e6-4ebb-8f07-e24b8dd81b07",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_5c1b196869dd",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "terminal",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "64b36f56-d658-42ec-8065-9db7680c504d",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    },
+    "ctx_f3a1eb8e7e48": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"10e2700a-9d79-4d64-90f8-c42fd662996c\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_f3a1eb8e7e48\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"947c2e46-b3ba-4894-977d-4ff5c6decbf2\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "10e2700a-9d79-4d64-90f8-c42fd662996c",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_f3a1eb8e7e48",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "terminal",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "947c2e46-b3ba-4894-977d-4ff5c6decbf2",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    },
+    "ctx_17da99c8976b": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"cfb12e6a-19f0-4f8f-b85f-96dd58cf9fe7\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_17da99c8976b\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"transcript\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"24886e51-ae01-42ce-8fc7-1743f18fe84b\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "cfb12e6a-19f0-4f8f-b85f-96dd58cf9fe7",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_17da99c8976b",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "transcript",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "24886e51-ae01-42ce-8fc7-1743f18fe84b",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    }
+  },
+  "deliveryStillUnACKed": "delivery_1ba8215fca91",
+  "next": "Exactmissingtmpguard bytecustody recovery then documented SAMEoriginalfailedTask retry-offailedDispatch for each3genuineexisting slices, no newTask/Run/circuitbypass/semanticadditionalreview/repair4/candidate6/reset. CurrentownerACK6976B74LF eb86 preserved; currentDshDocseb5/506 unchanged; firstmethodsFULLbeforeaccess mandatory."
+}

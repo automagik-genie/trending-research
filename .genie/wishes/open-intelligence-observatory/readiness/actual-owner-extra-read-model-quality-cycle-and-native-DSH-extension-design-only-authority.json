@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-10T00:31:35.916308+00:00",
+  "actual_authority": "Actual user response to functions.ask Resolving exhausted native integration gates; not agent proposal nor inference",
+  "questions_and_answers": [
+    {
+      "id": "read_model_quality_extension",
+      "question": "Authorize one additional bounded repair/review cycle for #7\u2019s diagnostic? The previous 1/1 quality cycle remains recorded as exhausted.",
+      "answer": "Authorize one additional cycle",
+      "authorized_option_description": "Extend the quality cap from 1 to 2, without resetting history. Same owned read-model scope; no diagnostic execution until both independent reviews have zero HIGH findings."
+    },
+    {
+      "id": "dsh_native_boundary_authority",
+      "question": "For #4, may workers design a bounded native DSH extension to provide the missing contracts, rather than require the stock vendor interfaces alone?",
+      "answer": "Approve native-extension design",
+      "authorized_option_description": "Permit an independently reviewed architecture amendment, including an explicitly pinned native patch if necessary. Preserve all original acceptance criteria, Brain/Cordis, the USD20 cap, and paid-call hold. This does not authorize implementation, another runtime attempt, or deployment before the new scoped gates are approved."
+    }
+  ],
+  "source7_exact_counters": "SourceB2used0/config2/effort0. Qualitycycle1/1EXHAUSTED retained; ownerextendscap2 total, used1 beforecompletecorrective5/newfreshfull+separatequalityreview, used2 after. No reset/3rd or disguisedSourceBqualityloop. Same11sourcepaths/same2permanentmutations d75/0b0,1700forecast2000hard25files; no actualapplication beforewholeprospective+two0HIGHreview gates andsafechangedpathsmoke route admitted. No nativeactivationuntilseparateexactparentgate.",
+  "source4_exact_counter": "Existingprospective2/2 exhausted andONEactualzero-modelfailure UNKNOWN/globalcompletionUNAVAILABLE retained. ThisisnewreadOnlynativeextensionDESIGNlaneonly, not runtime3/SDKinstall/constructor/repin/patch/productcode/requalification/paid grant. Planssplitbeforecode <=25files2000insertions/each; alloriginalcriteria/41deps5milestones20issues preserved.",
+  "global_reservations": "USD20 producttotal DSH12/Brain8 unchanged; model0 allcostUNKNOWN. Actualproductkeyinprivateowneronlycustody NOTrecordedhere, NO paidaccessuntilenforcedadmission/currenttariff/input/output/retries/queue/background/ancillary/usage+reservation. No accountmetadata/privatecredentialpaths/hashes/values/operatorauth orsecretread bydesignworker.",
+  "scope_controls": "Native DSH+Cordis+Brain preserve; no generic substitute, newsemanticmemory, unsupportedhooks, fixture-onlyacceptance, criterionwaiver, automaticforkimplementation, newimage/nativebootstrap, deployments/purchases/recurringcollector/publication/editorial approval/GitHubcloses or dates/assignees. NormalreviewedfeaturebranchPRalreadyapproved separately."
+}

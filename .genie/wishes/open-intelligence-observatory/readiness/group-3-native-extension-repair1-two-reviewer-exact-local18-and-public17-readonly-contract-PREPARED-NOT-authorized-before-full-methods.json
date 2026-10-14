@@ -1,0 +1,116 @@
+{
+  "at": "2026-10-10T06:43:22.133983+00:00",
+  "state": "PREPARED EXACT READONLY CONTRACT ONLY\u2014NOTgrant untilnewreviewerfullmethodquestionACTUALLYparentreadandreply",
+  "fullLocalReadablePaths": [
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DRAFT.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/brainstorms/open-intelligence-observatory-native-dsh-extension/DESIGN.md",
+    "/tmp/oi4-native-extension-design-repair1-full-handoff.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/WISH.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-readonly-pinned-supported-lifecycle-principal-stop-egress-seams-scout.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-official-alpha2-bounded-supported-contract-seams-factual-scout.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-complete-static-ELF-availability-closure-factual-scout.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/dsh.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/cordis.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-original-COMPLETE-53LF-design-claim-span-PROPOSED-handoff.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-original-A1-A10-C1-C4-independent-one-HIGH-FIX-FIRST-proposal-review.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-full-A1-A10-C1-C4-separate-quality-zero-HIGH-SHIP-PROPOSAL-only-review.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DRAFT-original116c.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-design-repair1-parent-FULL70LF-handoff-ALL155-333LF-docs-actual110insert35del8pins-positive-DESIGN-only-intake.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-design-repair1-actual-complete-stored-one-report-event.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json"
+  ],
+  "readinessMetadataONLY_NEVERvalues": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-readiness.json",
+  "metadataFrozenInputs": [
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/WISH.md",
+      "bytes": 126131,
+      "lf": 1157,
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "bytes": 2956,
+      "lf": 22,
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-readonly-pinned-supported-lifecycle-principal-stop-egress-seams-scout.txt",
+      "bytes": 21643,
+      "lf": 101,
+      "sha256": "774accebe8456f3314de428d4735b3361e333b5f7c107af7b32ebfe7f9089025",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-new-official-alpha2-bounded-supported-contract-seams-factual-scout.txt",
+      "bytes": 24217,
+      "lf": 107,
+      "sha256": "501a8fc97f0ab1f72dc4b8f0b4ae360fea4c0b97fa586a51630a8afb56529c34",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-cached-full-bookworm-complete-static-ELF-availability-closure-factual-scout.txt",
+      "bytes": 20258,
+      "lf": 88,
+      "sha256": "6ea817177a950b13aff22e8a547df00e0e331b10e0c7ac2362e386927ee40cc2",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/dsh.md",
+      "bytes": 24841,
+      "lf": 138,
+      "sha256": "626f6ef5ad95589f28e8d813fbda1399076a2c8a9ac6139aac714fc372dad0da",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/cordis.md",
+      "bytes": 12132,
+      "lf": 62,
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/sandbox-readiness.json",
+      "bytes": 28091,
+      "lf": 275,
+      "sha256": "e6f4f5dc1973ec3d776cc26f0bdb2020c9efc0bf5b360425f041920ac44d2716",
+      "mode": "0o600"
+    }
+  ],
+  "actual17AlreadyDiscoveredImmutableSourceBodyURIs": [
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/fiber.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/context.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/registry.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/reflect.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/utils.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/apps/cli/src/profile-boot.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/apps/cli/src/process-shutdown.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/core/agent-loop/src/index.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/util/http-proxy/src/install.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/host/webserver/src/index.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/api/gateway/README.md",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/LICENSE",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/boot/app-boot/src/index.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/boot/app-boot/package.json",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/src/index.ts",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/vendor/cordis/package.json",
+    "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/4878cdabd87d4041bdaff61d04c966883b9fd07a/packages/boot/app-boot/tsdown.config.ts"
+  ],
+  "primaryPublicDocumentURIsReadOnlyNotModel": [
+    "https://api-docs.deepseek.com/quick_start/pricing",
+    "https://api-docs.deepseek.com/guides/anthropic_api",
+    "https://api-docs.deepseek.com/api/create-chat-completion",
+    "https://api-docs.deepseek.com/guides/files_api",
+    "https://nodejs.org/download/release/v26.7.0/docs/api/sqlite.html"
+  ],
+  "otherImmutableRSourceCitations": "Onlyexactfilepaths/anchors explicitlynamed inFULLgrantedDESIGN/8publicinputs/oldreports. BeforeadditionalSourceAccess askparentexactknownOwningpaths; no guessedSource/latest/tree discovery/SDK/private/execution/patch",
+  "permittedDocUtilitiesOnly": "Advertisedinstalled brainstormskill round-ledger check-design READONLY anddesign-review-evidence digest ONLY, no stamp/render/apply/ratchet/review/write. Exact utilitydocs first; actualownreviewedsha256 unchanged return. Not NodeSQLite, SDK/source product/build/test/PG/docker/runtime/model.GzipJSONsources asdata only",
+  "ownTMPReports": {
+    "ctx_2f8487091d79": "/tmp/oi4-native-extension-repair1-full-original-A1-A10-C1-C4-review.txt",
+    "ctx_25039c13ad74": "/tmp/oi4-native-extension-repair1-full-independent-quality-review.txt"
+  },
+  "methodBoundary": "FullA1-A10C1-C4/4contracts14classes6groups/causalH1/pre-firsteffect/bootstrap/directAgent lateRefs/currency/issuer/stop allfrozenBEFOREartifacts.Readwholeall18localdocs+metadata e6 nevercontent. Fulloldreports not currentNEWpeer. AllZEROHIGH paired mandatory.ThenParentstamping/ownerimplementation/runtime/paid gates separate. Original4featureUNaccepted WRS90notReady100."
+}

@@ -1,0 +1,1139 @@
+{
+  "at": "2026-10-10T06:10:58.067147+00:00",
+  "state": "EXPLICIT_PARENT_METADATA_ONLY_C7_NUMERIC_AND_COMPLETE_LOSSLESS_CARRIER_ADMIT; no semanticSourceReview, notcandidateSHIP/apply/smoke/native gate",
+  "actualWholeNativeQuestion": {
+    "id": "msg4e85ec8cb8af",
+    "bodyPath": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-original-native-question-WHOLE-DATA.txt",
+    "sha256": "a12539fd731f2bc51edf22b5d90af26b10ba7608d2d2d838e0affef67b94cb6f",
+    "bytes": 121713,
+    "mode": "0600",
+    "lf": 5,
+    "wholeBodyEqualsPayloadQuestion": true
+  },
+  "actualWholeCandidate": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-WHOLE-PROSPECTIVE-DATA.json",
+    "sha256": "b12a8ec6b262ead73c805b5171b8e374cbba5ad558bdf98202f6ada41e99bfc1",
+    "bytes": 121984,
+    "mode": "0600",
+    "lf": 545,
+    "originalCompactUTF8": 118428,
+    "originalCompactSHA": "4d8994da05573acd8a362b1cba850aa356cd273e76665ecb9195e6a3fec234ac"
+  },
+  "parentFullMetadataReadingIntake": "Wholepreamble/suffix714Raw1-160 ALLnativeScope/current19/11/authority4/histories/Fulloriginal4criteria/nextgates nonCode projectionactualwholeoutput read. P1P2P3andactualDiff opaqueDataallbytesSHA/LF/rowcountverified neversemanticSource/code reviewed.CapturednativeCLIreplayunackedf3cfullwhenReader130KBescapedlinecap failed; notedToolissue,no ACK/duplicateprep.NOMetadata correctionofcandidateContent made; only coordinatorencodedByteCount/dictvsListassumptions corrected",
+  "explicitNewC7actualCounts": {
+    "true_insertions": 308,
+    "deletions": 34,
+    "net": 274,
+    "NOTprior": "236/32/204historical only",
+    "diffSHA": "11bb0f988237227029a5cbaa02aa58abbac50b2bd0e4027f3c6127f1914f46da",
+    "diffUTF8Bytes": 20740,
+    "diffLF": 403,
+    "actualCountsVerifiedFromEntireOpaqueDiff": true
+  },
+  "sameScopeBoundFORECAST1700HARD2000_TRUEins25files": "Original11/current9present2absent1214LF12069043B; futureownedLF1488NOTTrueInserted308. Solefuturepermanentbrain+receipts, future2TMPsourceStrings/existingatomictransient/onePGprobe.OptionalwitnessdefaultNone existingcaller parentonlyauthorclaimNOTsemanticvalidated. NoNewWitnessFile/dependency/store/interface/memory. No source4/bootstrap0 otherauthority; same criteria/fullSource7 4 unchanged",
+  "actualCurrent34Readbacks": [
+    {
+      "path": "observatory/evidence/contracts.py",
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "bytes": 22505,
+      "mode": "0600",
+      "lf": 354,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/brain.py",
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "bytes": 12768,
+      "mode": "0600",
+      "lf": 220,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/model.py",
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "bytes": 5908,
+      "mode": "0600",
+      "lf": 83,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/cordis.mjs",
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "bytes": 2646,
+      "mode": "0600",
+      "lf": 70,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/__main__.py",
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "bytes": 2361,
+      "mode": "0600",
+      "lf": 52,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/receipts.json",
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "bytes": 11997001,
+      "mode": "0600",
+      "lf": 30,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/python_adapter.py",
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "bytes": 8901,
+      "mode": "0600",
+      "lf": 122,
+      "exactmatch": true
+    },
+    {
+      "path": "docs/integrations/python-pipeline.md",
+      "actualABSENT": true
+    },
+    {
+      "path": "investigations/frontier-economics/manifest.json",
+      "actualABSENT": true
+    },
+    {
+      "path": "tests/test_investigation.py",
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "bytes": 3439,
+      "mode": "0600",
+      "lf": 53,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/test_evidence_contracts.py",
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "bytes": 13514,
+      "mode": "0600",
+      "lf": 230,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+      "bytes": 126131,
+      "mode": "0600",
+      "lf": 1157,
+      "exactmatch": true
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f",
+      "bytes": 28218,
+      "mode": "0600",
+      "lf": 173,
+      "exactmatch": true
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+      "bytes": 12261,
+      "mode": "0600",
+      "lf": 153,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5",
+      "bytes": 13033,
+      "mode": "0600",
+      "lf": 53,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/evidence.json",
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "bytes": 294150,
+      "mode": "0600",
+      "lf": 200,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/sources.json",
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+      "bytes": 109773,
+      "mode": "0600",
+      "lf": 843,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/assessment.md",
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "bytes": 52115,
+      "mode": "0600",
+      "lf": 544,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/brain/qualification/native_qualification.py",
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "bytes": 48211,
+      "mode": "0600",
+      "lf": 825,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/brain/qualification/native-receipts.json",
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "bytes": 550314,
+      "mode": "0600",
+      "lf": 43,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/brain/qualification/native-tools.json",
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "bytes": 17422,
+      "mode": "0600",
+      "lf": 510,
+      "exactmatch": true
+    },
+    {
+      "path": "docs/integrations/cordis.md",
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "bytes": 12132,
+      "mode": "0600",
+      "lf": 62,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/dsh/qualification/receipts.json",
+      "sha256": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb",
+      "bytes": 10949,
+      "mode": "0600",
+      "lf": 185,
+      "exactmatch": true
+    },
+    {
+      "path": "web/data.json",
+      "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+      "bytes": 4223271,
+      "mode": "0600",
+      "lf": 1,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/fixtures/features_a.json",
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7",
+      "bytes": 105582,
+      "mode": "0600",
+      "lf": 0,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/fixtures/features_b.json",
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f",
+      "bytes": 105962,
+      "mode": "0600",
+      "lf": 0,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+      "bytes": 9903,
+      "mode": "0600",
+      "lf": 34,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "bytes": 92295,
+      "mode": "0600",
+      "lf": 320,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+      "bytes": 63002,
+      "mode": "0600",
+      "lf": 233,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+      "bytes": 27251,
+      "mode": "0600",
+      "lf": 112,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec",
+      "bytes": 2956,
+      "mode": "0600",
+      "lf": 22,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+      "sha256": "aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20",
+      "bytes": 4416,
+      "mode": "0600",
+      "lf": 38,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json",
+      "sha256": "e0b95459d2d11b1807674fd7e31284b586f9f8d3d10c4e7e2a98283e5b0f38fb",
+      "bytes": 3461,
+      "mode": "0600",
+      "lf": 32,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-actual-owner-cap3-corrective6-PROSPECTIVE-DATA-ONLY-full-C1-C8-before-preparation-method-gate.json",
+      "sha256": "3e51fd7e02abae15cb285342c7070d44af0bc18c48cac17039cdf005a3d0b3fd",
+      "bytes": 5916,
+      "mode": "0600",
+      "lf": 34,
+      "exactmatch": true
+    }
+  ],
+  "actualFutureP1P2P3MetadataASDATA_NOTCURRENT": [
+    {
+      "LF": 494,
+      "bytes": 27255,
+      "future_mode": 384,
+      "label": "P1 full prospective source DATA",
+      "path": "observatory/evidence/brain.py",
+      "sha256": "cdbfdd1fc1cd48e9b0537dccb37b655333f042d036679ecc25f74d766a1feede"
+    },
+    {
+      "LF": 179,
+      "bytes": 11928,
+      "future_mode": 384,
+      "label": "P2 full prospective inner runner DATA",
+      "path": "/tmp/oi7-native-replay-diagnostic-1.py",
+      "sha256": "61f418e462db741061ae78e0e6f076ce9cbaea0dd61ffece712e591a494f9c47"
+    },
+    {
+      "LF": 253,
+      "bytes": 18682,
+      "future_mode": 384,
+      "label": "P3 full prospective streaming outer runner DATA",
+      "path": "/tmp/oi7-native-replay-diagnostic-1-outer.py",
+      "sha256": "5a5554d156aa4e662f075985be6a224b4dcd91906b0e339689531f29639e0376"
+    }
+  ],
+  "losslessWholeSevenFixtureCarrierAdmit": {
+    "kind": "Standard-librarybase64/XZ+hex INERTDATAfullcomplete notfragment/generator/SourceVectorExec",
+    "actualBase64ASCIIBytes": 12544,
+    "actualXZEncodedBytes": 9408,
+    "actualDecodedJSONBytes": 89438,
+    "actualDecodedJSONLF": 0,
+    "actualDecodedJSONSHA": "ca282831fb1952a3d4cf613dbabadf5ab698ced30efcf927cee20e1199ae239e",
+    "actualJSONRootLISTSevenGroups": true,
+    "actualBoundedDecode64MiBEOFunused0": true,
+    "sevenGroupMetadata": [
+      {
+        "index": 1,
+        "kind": "PURE HELPER INPUT/EXPECTED OUTPUT DATA; NOT RUN",
+        "criterion": "H1=F1/C5",
+        "fieldNames": [
+          "additional_complete_source_vectors",
+          "complete_supported_body",
+          "criterion",
+          "expected_every_incomplete",
+          "expected_supported",
+          "incomplete_bodies",
+          "kind"
+        ],
+        "nestedCountsONLY": {
+          "complete_supported_body": 2,
+          "expected_every_incomplete": 3,
+          "expected_supported": 3,
+          "incomplete_bodies": 8
+        }
+      },
+      {
+        "index": 2,
+        "kind": "BOUNDED EXTERNAL PUBLICATION FIXTURE DATA; NOT RUN; NO NATIVE/MOCK ADAPTER",
+        "criterion": "H2/C6",
+        "fieldNames": [
+          "additional_partial_suffix_utf8",
+          "complete_primary_bytes",
+          "complete_primary_frame_utf8",
+          "complete_primary_sha256",
+          "criterion",
+          "cutoff_scenario",
+          "expected",
+          "kind",
+          "proof_boundary",
+          "unchanged_recovery_prefix_case"
+        ],
+        "nestedCountsONLY": {
+          "expected": 5
+        }
+      },
+      {
+        "index": 3,
+        "kind": "EXACT RECEIVED BYTE FIXTURE DATA; NOT RUN",
+        "criterion": "H3/C5",
+        "fieldNames": [
+          "boundary",
+          "criterion",
+          "kind",
+          "recursion_precondition",
+          "wire_frames"
+        ],
+        "nestedCountsONLY": {
+          "wire_frames": 3
+        }
+      },
+      {
+        "index": 4,
+        "kind": "STRICT HANDSHAKE NUMERIC TYPE FIXTURE DATA; NOT RUN",
+        "criterion": "M3/C5",
+        "fieldNames": [
+          "boundary",
+          "criterion",
+          "frames",
+          "kind"
+        ],
+        "nestedCountsONLY": {
+          "frames": 5
+        }
+      },
+      {
+        "index": 5,
+        "kind": "F1-success-whole-call-branch",
+        "criterion": "C4/C5 full actual call envelope before identity and follow-on tools, not isolated error-helper proof",
+        "fieldNames": [
+          "cases",
+          "criterion",
+          "kind",
+          "not_observed_native_responses"
+        ],
+        "nestedCountsONLY": {
+          "cases": 11
+        }
+      },
+      {
+        "index": 6,
+        "kind": "F2-H2-incremental-prefix-control-flow",
+        "criterion": "C6 valid complete prefix externally retained BEFORE every owned potentially blocking cleanup despite suffix errors; no opaque communicate capture",
+        "fieldNames": [
+          "criterion",
+          "kind",
+          "not_executed",
+          "streams",
+          "timer_and_custody_whole_scenarios_DATA"
+        ],
+        "nestedCountsONLY": {
+          "streams": 8,
+          "timer_and_custody_whole_scenarios_DATA": 6
+        }
+      },
+      {
+        "index": 7,
+        "kind": "F3-native-actual-reader-LF-line-queue-boundaries",
+        "criterion": "C5 native response reader before parse/admit;16MiB is LOCAL capture not server max or causal diagnosis",
+        "fieldNames": [
+          "cases",
+          "criterion",
+          "kind",
+          "not_executed",
+          "queue_cases"
+        ],
+        "nestedCountsONLY": {
+          "cases": 6,
+          "queue_cases": 2
+        }
+      }
+    ],
+    "nestedInnerWireReferences": 48,
+    "actualUniqueNestedWireDescriptors": 31,
+    "ALLNestedCompleteWireByteSHA_LF_BoundedDecodeMetadataValidated": [
+      {
+        "fieldPath": [
+          "2",
+          "wire_frames",
+          "0",
+          "wire_utf8",
+          "complete_lossless_wire"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 8194,
+        "actualSHA": "313e88250e0ca3cce3cc1be946a54470d979a875129fb806874eeb89dac0546d",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "0",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 229,
+        "actualSHA": "027ccb12ddb81aca03325fd099476df1537a9f996aa7ccdf1bfeac3258ac5497",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "1",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 248,
+        "actualSHA": "021ca38de713644b528f47c0bb06056c814f57d479358c81c47a6b01544c4ac3",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "2",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 180,
+        "actualSHA": "b5fbac4275bfe720b59d520b609f0cbf528dd688d88e27cbcbe9431c62380bb2",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "3",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 278,
+        "actualSHA": "fc1e4a79909d0aa7e7a244187a9f119bbc4d041504ed18c5c23c6ce2ca222309",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "4",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 290,
+        "actualSHA": "14d007c4af649a14ae32f6afb069a77fda969c03aca23cab134e84db0d10d2a9",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "5",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 1039,
+        "actualSHA": "a207b0a2984362c568b513a5f5a53e08c2b5b91c21507f26aae276569cbfc974",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "6",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 214,
+        "actualSHA": "8a9f9252c576c3c09c41fff293a67b8f03b17deba4fb28122eea4c00892b091c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "7",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 146,
+        "actualSHA": "e396e317551b9a9ab563609475a7f8de25a23b5a4d0268fc8791d05949888008",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "8",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 177,
+        "actualSHA": "22b0442092b83efcdd8710ae1b65b9605923e822efce4d939c9e9c60b70d1d27",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "9",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 271,
+        "actualSHA": "1957c63a6b61f1aede346328fa117aaac3caba3db1c6123aeafbae8dae4be3cf",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "4",
+          "cases",
+          "10",
+          "whole_rpc_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 149,
+        "actualSHA": "fb6487e87f9c2ffa5910846f1d42eb2e27aaa201083ee35625fb4b6128aa804b",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "0",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "0",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 722,
+        "actualSHA": "556994818567410c44af64a3e81d8e92e44fd9a1cf4a70e109dc49539811d4bc",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "1",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "1",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 694,
+        "actualSHA": "a0097aecac6b83c796514daa44ec543e0fff4f3bbf2275bdf02e1308ea29cd4f",
+        "actualLF": 2,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "2",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "2",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 685,
+        "actualSHA": "23976a534e3f50e1f7dc3cec51f50a88fe255432442e6bf2d2e2a99d20619001",
+        "actualLF": 2,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "3",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "3",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 1144,
+        "actualSHA": "66e5366045f190dcd85c57fd2f15f1776915bf32bdf804428e850aa97e7e8916",
+        "actualLF": 2,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "4",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "4",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 1144,
+        "actualSHA": "ccc4397bb6e6342c1ca4b3d035e98a08de2e01b726bb53b95d554d7ce9fc577d",
+        "actualLF": 2,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "5",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 1144,
+        "actualSHA": "b3229d269a5ee4c2e6cff0632cfe10f22584847a31e6942d62477a0163c11e51",
+        "actualLF": 2,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "5",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 1159,
+        "actualSHA": "ad33d748c30df65ee70b8ef8790d93b5faf1e1aa8fb7adb5a976012b02388244",
+        "actualLF": 3,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "6",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "6",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 132777,
+        "actualSHA": "ba3b58422cce6537cc4255b5a7c8879261a42a0afcbac6dce8a6de79d2b46088",
+        "actualLF": 2,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "7",
+          "expected_published_primary_prefix"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "streams",
+          "7",
+          "whole_captured_stream_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 1048577,
+        "actualSHA": "7aaf745fa391bf0f35941d2174990693d2ac36b047205c72ba293bfeb711505f",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "timer_and_custody_whole_scenarios_DATA",
+          "0",
+          "input_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "timer_and_custody_whole_scenarios_DATA",
+          "1",
+          "input_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "timer_and_custody_whole_scenarios_DATA",
+          "2",
+          "input_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "timer_and_custody_whole_scenarios_DATA",
+          "3",
+          "input_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "timer_and_custody_whole_scenarios_DATA",
+          "4",
+          "input_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "5",
+          "timer_and_custody_whole_scenarios_DATA",
+          "5",
+          "input_wire"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 679,
+        "actualSHA": "00696f4e49b026b113990c0b7bbac905537ce6891014873154e5814e8706e15c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "0",
+          "WHOLE_wire_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 112,
+        "actualSHA": "f0247c6c3bb26d49c94105a8f336903b162b25b77c9076f3a4847b0f7502e9cf",
+        "actualLF": 0,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "0",
+          "actual_expected_captured_prefix_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 112,
+        "actualSHA": "f0247c6c3bb26d49c94105a8f336903b162b25b77c9076f3a4847b0f7502e9cf",
+        "actualLF": 0,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "1",
+          "WHOLE_wire_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 145,
+        "actualSHA": "86b0c8af23d63dfa279025d7383ed50ac67d42e4e16b80cb5eb98ad0d6932652",
+        "actualLF": 0,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "1",
+          "actual_expected_captured_prefix_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 145,
+        "actualSHA": "86b0c8af23d63dfa279025d7383ed50ac67d42e4e16b80cb5eb98ad0d6932652",
+        "actualLF": 0,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "2",
+          "WHOLE_wire_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 113,
+        "actualSHA": "8d031a9e05c31d05b14d7fb6790baa521a3f4c93ba600fcd1bbc447cf8d334c9",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "2",
+          "actual_expected_captured_prefix_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 113,
+        "actualSHA": "8d031a9e05c31d05b14d7fb6790baa521a3f4c93ba600fcd1bbc447cf8d334c9",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "3",
+          "WHOLE_wire_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 16777216,
+        "actualSHA": "055e09f46c14694bef8f0e5e8246864268d5e7096e8dc5cabafb48f969f80d54",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "3",
+          "actual_expected_captured_prefix_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 16777216,
+        "actualSHA": "055e09f46c14694bef8f0e5e8246864268d5e7096e8dc5cabafb48f969f80d54",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "4",
+          "WHOLE_wire_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 16777217,
+        "actualSHA": "c6c3626277c3d71af04a15de85fb367269e37b1f23d9b6b8c4a6a773891e896c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "4",
+          "actual_expected_captured_prefix_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 16777217,
+        "actualSHA": "c6c3626277c3d71af04a15de85fb367269e37b1f23d9b6b8c4a6a773891e896c",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "5",
+          "WHOLE_wire_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 16777218,
+        "actualSHA": "c67d4ec204ab82fdd3820c302470706170f84c09165b39f050446f3c6ea4bd8b",
+        "actualLF": 0,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "cases",
+          "5",
+          "actual_expected_captured_prefix_DATA"
+        ],
+        "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+        "actualDecodedBytes": 16777217,
+        "actualSHA": "b125ac8fb735ac86d7f70ef72a83ed8d0d6a8bdd3ab59e81b9228b8965ea7a46",
+        "actualLF": 0,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "queue_cases",
+          "0",
+          "WHOLE_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 339,
+        "actualSHA": "1e2ef230b5d17cb1ed7b19831ab8eb45490374400ac496215c700cb0da4d5d95",
+        "actualLF": 3,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      },
+      {
+        "fieldPath": [
+          "6",
+          "queue_cases",
+          "1",
+          "WHOLE_stream_DATA"
+        ],
+        "encoding": "hex COMPLETE DATA",
+        "actualDecodedBytes": 2,
+        "actualSHA": "e4688624e5f1ad0629505e6768e3bb36244f2f3e33e751215afa820334a76ed3",
+        "actualLF": 1,
+        "completeEquality": true,
+        "metadataDecodeOnlyNoFixtureOrCandidateExecution": true
+      }
+    ],
+    "largestCompleteDecodedWire": 16777218,
+    "bound": 67108864,
+    "NoNewProductDepSchemaStorage_Runtime_Vectors": "pureDataTransportLinuxnativeCLI singlearg bound; ParentDataDecoderstdlib notcandidate/vector execution. All11wholeRPCsuccess,8outerPrefix+6timer,6inboundLFsize+2queue andold4groups fullData retained; actualmarkerlogic STILLnativeReviewresponsibility. Byteidentitynotproveparse/controlflowmarkerclauses."
+  },
+  "blindreviewFrozenScopeRequiredBEFOREartifactAccess": "TWO NEW nativeReadonlyReviewers: OriginalFULLC1C8/fouroriginalScopecriteria andseparateprivacysecuritymaintainabilityperf. ALL3distinctCurrentHIGH successWholeEnvelope/C4C5;H2PrefixpublicationBeforeCleanup/C6;nativeActualFrameLFqueue/C5 +alloldH1error/H3wireparser/M3bool/R1R2Q1Q2Q3Q4Q5Q6M1M2. Completeall3programs/actualDiff/current34/oldwholeHistories/full7decodedfixturegroupsALLnestedwires. FullriskMethodACK beforeANYactualartifactAccess. Parentfullreadthenexplicitpathcontract; reportWHOLEallcriteria/findings/rulings/readlimits/noCode/private/report oneOwnTMP bounded. No peerNEWreport access beforeowncompletion/anyworkers/subagentscouncils.Candidate notmaterialized/imported/compiled/eval/exec.No vector/parser/helper run; ASTDATA only allowed.",
+  "counterActualAuthority": "actuale0bONEadditionalTOTALcap3/used2completedbeforecurrentCycle3newwholeDATA/freshreviews, used3uponfullFreshReviews completion. Old1/1and2/2 exhaustedpreserved no4th/reset/SourceB2used0/config2/effort0 notbackdoor. WISH260f frozenbase explicit actuale0bSource7logicalcap3 old7520aa10 plus3e51 guard.Justmetadataadmit noActiveRuntime",
+  "fullReadAndReleaseGate": "FreshfullOriginal+separatequalityReportsBOTH0HIGHmandatory. ParentactuallyWHOLEread/positiveReviewassessment, actualworkerDone once thenactualnativeReleaseAFTERDoneBEFOREDoneDeliveryACK. ScopeModel source7stillunaccepted untilNativeactualFeature4 andsmoke/docs/manifest/integration fulldiff/evidence.Stored4KoneclaimReport AFTERfullEngineeringhandoff/intake notNOW.DesignDSH1doesnotauthorizeSource7",
+  "laterGatesUNMET": "OnlythenSEPARATEexactsourcebytes+safeactualchangedpathSmoke gate, THENANOTHERseparateActualNativecausalAcquisition58/300/Soft215child210/oneOwnedPGstart.Ready0? No PG/native/get/remember/root/clock/reimport/newsource/license/model.Exact0b0 all61k/b41/f6/rawcausalLOSTUNKNOWN/SceneRoot31723466unattempted/5clocks/licensed4 decodedFull asdata.FieldWire16MiBLOCALnotnativeMaxcause/financialproof.Custody/publicationUnavailableskipownedblockingcleanup/exit124externalUnknown noDurabilitylie",
+  "nativeEngineerhold": "ReplyC7admit/freeze ONLY. Do notdoDATA7/fix/newSource/smoke/nativewhiletwoFreshreviews. Sameoldactualclaim remainslive; noOneSpanreportorDoneNOW. Newcounterb3no fourth implicit. Source4independent2DESIGNdocs repair1ofB2, current19CordisDocumentea09 unaffected.MetaScene #8accepted/PR22f429Draft/noCI",
+  "all20_80_41_5_sixlocalAccepted_productModel0_USD20DSH12Brain8_AllcostUNKNOWN": "unchanged noBudgetedCost0/merge/deploy/GHissueclose/assign/date/scopeShrink. ParentcodeauthorshipNONE."
+}

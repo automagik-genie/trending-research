@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-10-09T21:28:05.798008+00:00",
+  "user_instruction": "use bws",
+  "original_auth_blocker_path": ".genie/wishes/open-intelligence-observatory/readiness/user-BWS-fresh-product-credential-authentication-blocker.json",
+  "original_auth_blocker_sha256": "1994f72790f8fb6e1f2e5c3a857252e133cc2a424aa286d8d08aa0dc59084077",
+  "actual_contexts": [
+    {
+      "context": "ParentEval bws projectlist metadata",
+      "exit_code": 1,
+      "safe_error": "Missing access token",
+      "secrets_fetched": false
+    },
+    {
+      "context": "PersistenttoolShell presenceonly",
+      "test_exit_code": 1,
+      "value_printed": false
+    },
+    {
+      "context": "Orca managedloginShell withapprovedworkspaceenv",
+      "exact_test": "execbash test-nBWS_ACCESS_TOKEN only",
+      "actual_process_exit": 1,
+      "presence": "missing",
+      "actual_wait_receipt_path": ".genie/wishes/open-intelligence-observatory/verification/user-BWS-managed-login-shell-actual-presence-exit-result.json",
+      "actual_wait_receipt_sha256": "17c101331d72cd955ad68e5d083c89bc26f07e904454392d428e79fcedbdf46a",
+      "value_printed": false
+    }
+  ],
+  "first_managed_observer_limits": "ExitedbutstdouttailEMPTY; notcountedaspositive/negativeBWS auth. CleanupAPIstale; liveRegistryread showsownfirsthandleabsent, no broaderclose.",
+  "vault_secret_get_or_list_calls": 0,
+  "product_model_or_provider_calls": 0,
+  "operator_model_grant_reuse": false,
+  "credential_values_exposed_or_copied": false,
+  "actual_missing_prerequisite": "ApprovedBWS serviceaccounttoken injectedintoexecutionenvironment asBWS_ACCESS_TOKEN, orapproved0600BWS tokenfilepathname. Neverpastevalueinchat. Afterauthfreshproductsecretmetadata/custody/paid/nativeadmission stillrequired."
+}

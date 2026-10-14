@@ -1,0 +1,188 @@
+{
+  "at": "2026-10-10T11:50:01.234703+00:00",
+  "actualSpecRecords": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-3-final-DESIGN-repair2-ACTUAL-authorDone6535-release0-report105-two-FRESH-original-and-quality-beforeACCESS29local37source-native-dispatch-specs.json",
+  "actualAuthorAfterDoneSettlement": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-final-DESIGN-repair2-ACTUAL-native-release0-AFTERDone6535-BEFORE4bACK-and-AUXclaim-release0-enforced-full-review-HOLD-currentce898621eafb17.json",
+  "actualTwoStarts": [
+    {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"2f019fa5-b119-47a1-a2c7-a749488cc699\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_dea961e548bf\",\n    \"dispatchId\": \"ctx_b9322cd9ea85\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_e3f7183f-d281-485d-bc9d-f92aff0f3c90\",\n        \"surface\": \"visible\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_e3f7183f-d281-485d-bc9d-f92aff0f3c90\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"3fdd2ca3-b822-46ae-8278-e065d30826fb\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"7d04fe83-4cc6-4bbc-aae6-e7bc84d837d1\",\n      \"generation\": 19,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"mutation\": {\n      \"requestId\": \"3fdd2ca3-b822-46ae-8278-e065d30826fb\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "2f019fa5-b119-47a1-a2c7-a749488cc699",
+        "ok": true,
+        "result": {
+          "runId": "run_b7d6684b2cdd",
+          "taskId": "task_dea961e548bf",
+          "dispatchId": "ctx_b9322cd9ea85",
+          "state": "ready",
+          "stage": "input_accepted",
+          "turnStart": "unsupported",
+          "setup": {
+            "requested": "not_applicable",
+            "effective": "not_applicable",
+            "source": "existing_worktree",
+            "hookFound": false,
+            "startupPolicy": "start-immediately",
+            "state": "not_applicable"
+          },
+          "launch": {
+            "requested": {
+              "agent": "omp",
+              "model": null,
+              "effort": null
+            },
+            "effective": {
+              "agent": "omp",
+              "model": null,
+              "effort": null
+            }
+          },
+          "mode": {
+            "mode": "terminal",
+            "preferred": "terminal",
+            "reason": "user_default",
+            "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+          },
+          "timeoutMs": 60000,
+          "effects": [
+            {
+              "kind": "worktree",
+              "action": "reused",
+              "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+            },
+            {
+              "kind": "setup",
+              "action": "not_applicable",
+              "state": "not_applicable"
+            },
+            {
+              "kind": "terminal",
+              "role": "agent",
+              "action": "created",
+              "id": "term_e3f7183f-d281-485d-bc9d-f92aff0f3c90",
+              "surface": "visible"
+            },
+            {
+              "kind": "dispatch_input",
+              "role": "agent",
+              "id": "term_e3f7183f-d281-485d-bc9d-f92aff0f3c90",
+              "state": "accepted"
+            }
+          ],
+          "prompt": {
+            "requestId": "3fdd2ca3-b822-46ae-8278-e065d30826fb",
+            "stages": [
+              "input_accepted"
+            ],
+            "provider": "unsupported",
+            "observation": "unsupported",
+            "processIncarnation": "7d04fe83-4cc6-4bbc-aae6-e7bc84d837d1",
+            "generation": 19,
+            "baselineWorkingSequence": 0,
+            "baselineExplicitWorkingStartedAt": null,
+            "baselinePermissionSequence": 0
+          },
+          "residualResources": [],
+          "mutation": {
+            "requestId": "3fdd2ca3-b822-46ae-8278-e065d30826fb",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"54963e21-6d0c-4212-99d4-04573009cafc\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_6502b101a89a\",\n    \"dispatchId\": \"ctx_c5b66f878242\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_24709904-9279-4275-abed-072511947bda\",\n        \"surface\": \"visible\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_24709904-9279-4275-abed-072511947bda\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"f39062a1-a952-4aff-86d7-055ba4d5c708\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"a0d5aa51-a013-4126-b938-0824188a3dc3\",\n      \"generation\": 20,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"mutation\": {\n      \"requestId\": \"f39062a1-a952-4aff-86d7-055ba4d5c708\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "54963e21-6d0c-4212-99d4-04573009cafc",
+        "ok": true,
+        "result": {
+          "runId": "run_b7d6684b2cdd",
+          "taskId": "task_6502b101a89a",
+          "dispatchId": "ctx_c5b66f878242",
+          "state": "ready",
+          "stage": "input_accepted",
+          "turnStart": "unsupported",
+          "setup": {
+            "requested": "not_applicable",
+            "effective": "not_applicable",
+            "source": "existing_worktree",
+            "hookFound": false,
+            "startupPolicy": "start-immediately",
+            "state": "not_applicable"
+          },
+          "launch": {
+            "requested": {
+              "agent": "omp",
+              "model": null,
+              "effort": null
+            },
+            "effective": {
+              "agent": "omp",
+              "model": null,
+              "effort": null
+            }
+          },
+          "mode": {
+            "mode": "terminal",
+            "preferred": "terminal",
+            "reason": "user_default",
+            "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+          },
+          "timeoutMs": 60000,
+          "effects": [
+            {
+              "kind": "worktree",
+              "action": "reused",
+              "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+            },
+            {
+              "kind": "setup",
+              "action": "not_applicable",
+              "state": "not_applicable"
+            },
+            {
+              "kind": "terminal",
+              "role": "agent",
+              "action": "created",
+              "id": "term_24709904-9279-4275-abed-072511947bda",
+              "surface": "visible"
+            },
+            {
+              "kind": "dispatch_input",
+              "role": "agent",
+              "id": "term_24709904-9279-4275-abed-072511947bda",
+              "state": "accepted"
+            }
+          ],
+          "prompt": {
+            "requestId": "f39062a1-a952-4aff-86d7-055ba4d5c708",
+            "stages": [
+              "input_accepted"
+            ],
+            "provider": "unsupported",
+            "observation": "unsupported",
+            "processIncarnation": "a0d5aa51-a013-4126-b938-0824188a3dc3",
+            "generation": 20,
+            "baselineWorkingSequence": 0,
+            "baselineExplicitWorkingStartedAt": null,
+            "baselinePermissionSequence": 0
+          },
+          "residualResources": [],
+          "mutation": {
+            "requestId": "f39062a1-a952-4aff-86d7-055ba4d5c708",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    }
+  ],
+  "scope": "TWOindependentgenuinefulloriginal+qualityreadonlyslice.Run/parent/currentworktree OMPconfiguredmodeldefault/NOmodel or effort escalation/NO setup/newworktree/Git.No ArtifactaccessuntilENTIREownnewmethod+parentpositiveexplicit29local37sourcegrant.No Source/runtime/paid/Readyfeaturepromotion."
+}

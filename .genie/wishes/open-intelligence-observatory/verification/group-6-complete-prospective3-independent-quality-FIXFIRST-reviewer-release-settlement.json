@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-09T22:03:57.417951+00:00",
+  "full219line_read_positive_review_delivery_assessment": ".genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-quality-FIXFIRST-positive-deliverable-assessment.json",
+  "actual_release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"83811747-e1db-4c5e-9021-6c4514d570c0\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_2e039e329794\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"339409fa-2908-4d6c-a756-a7f63160ef01\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "83811747-e1db-4c5e-9021-6c4514d570c0",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_2e039e329794",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "339409fa-2908-4d6c-a756-a7f63160ef01",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "release_before_deliveryACK": true,
+  "sourceSHIP": false,
+  "source0of2_notreset": true
+}

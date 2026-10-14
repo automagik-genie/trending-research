@@ -1,0 +1,285 @@
+{
+ "schema_version": 1,
+ "reviewer": {
+  "terminal": "term_01a6401a-8186-41aa-8a29-0a24c5e35cfc",
+  "task": "task_1f6d18307680",
+  "dispatch": "ctx_26a4cce64439",
+  "at_utc": "2026-10-14T21:17:15.450633+00:00"
+ },
+ "verdict": "SHIP",
+ "verdict_scope": "Publication-safety SHIP for the exact owner-authorized cumulative DRAFT checkpoint only; no original feature, candidate semantics, executable SDK plan, native/paid, CI, merge or release approval.",
+ "frozen_criteria": {
+  "scope": "Exact full inclusion manifest with bytes, modes, SHA and explicit exclusions; all safe goal-owned cumulative work retained",
+  "privacy": "No secrets, BWS identifiers, private account/custody/account responses/operator grants/private credential paths, including nested inert carriers",
+  "truth": "Six accepted originals+quality; fourteen unaccepted; source7 DATA9 cap6 used5 no application or safe smoke; DSH actual original BLOCKED prerequisites, quality not accepted/done; historical gate not fresh",
+  "portability": "Roadmap 1+20/5/80/41 unchanged; portable continuation including candidate and inventory/reviews as safe DATA, rebind runtime and preserve budgets",
+  "verdict": "SHIP exact safe complete truthful manifest; FIX-FIRST bounded packaging corrections; BLOCKED inaccessible required evidence"
+ },
+ "identity": {
+  "plan": {
+   "path": "/tmp/oi-goal-checkpoint-publication-plan.json",
+   "bytes": 315250,
+   "LF": 5130,
+   "sha256": "4503420ea20afe25184cd9285fd3c08a73190fde31666184ea44be53dfda3f10"
+  },
+  "manifest": {
+   "path": ".genie/wishes/open-intelligence-observatory/checkpoints/2026-10-14/publication-manifest.json",
+   "bytes": 1428843,
+   "LF": 39254,
+   "sha256": "431f4381e0260a9154494ba0af91594975ff2ff1bd4d95d1856bafd8def11619"
+  },
+  "proposed_pr_body": {
+   "path": "/tmp/oi-goal-checkpoint-pr-body.md",
+   "bytes": 15681,
+   "lf": 88,
+   "sha256": "4333edbb7c6352beeca26c7144e59258fbd688510aac4cf2c5a95bbc87f12929",
+   "portable_copy": ".genie/wishes/open-intelligence-observatory/checkpoints/2026-10-14/PR-BODY.md"
+  },
+  "prior_pr_head": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+  "stage_files": 628,
+  "stage_bytes": 53718328,
+  "stage_mode_counts": {
+   "100644": 628
+  },
+  "stage_mode_bound_sha256": "8c4c9767b887dfb087d47e66f0b62525ee3c9ffe37548575ef0e2051a5c10e28",
+  "canonical_identity_algorithm": "SHA256 of UTF-8 json.dumps(sorted rows by path, ensure_ascii=False, sort_keys=True, separators=(comma,colon)); each row contains path,bytes,sha256,git_mode; git_mode=100755 iff any executable bit else100644; only regular nonsymlink files. Full exact path lists are plan.proposed_commit_paths and identity rows in proposed_noncheckpoint_change_identities + owned_checkpoint_file_identities.",
+  "safe_cumulative_repo_files": 690,
+  "safe_cumulative_repo_bytes": 51988672,
+  "safe_cumulative_mode_bound_sha256": "cfafd367ec50c0e29f454990c45454907317cc7baa6b187bbeb99002e1977901"
+ },
+ "examined_file_sets": {
+  "cumulative_original_paths": "All 696 paths in main...f429 diff, current tracked diff and untracked files were fully read/scanned; manifest.repo_files classifies the complete713 tracked/untracked root set, including17 unchanged pre-goal paths. Exact safe file set: repo_files where classification=INCLUDE (690). Exact private set: classification=PRIVATE-EXCLUDE (6), listed below without private-content hashes.",
+  "new_staging_paths": "590 original modified/new safe paths plus38 checkpoint files =628, exact set equality and every B/LF/SHA verified; no private path staged and no safe cumulative original omitted.100 unchanged current-safe paths already on existingPR; prior104 changed committed paths include four subsequently modified files.",
+  "checkpoint_files": "Every38 file under .genie/wishes/open-intelligence-observatory/checkpoints/2026-10-14, exactly plan.owned_checkpoint_file_identities; all files fully read/scanned; new artifacts18 and derivatives6 independently audited.",
+  "ignored_exclusions": "2623 files represented only by opaque exclusion records:2613 Brain runtime/store/installed/custody PRIVATE-EXCLUDE;10 pyc UNRELATED-PRESERVE. No ignored runtime/private file body copied or inspected.",
+  "root_policy": "No AGENTS.md/CLAUDE.md found in repository or explicit ancestor policy paths; actual CONTRIBUTING.md and governing full WISH scope inspected."
+ },
+ "external_artifacts": [
+  {
+   "path": "artifacts/oi4-native-extension-design-repair3-full-handoff.txt",
+   "bytes": 73211,
+   "lf": 122,
+   "sha256": "dc42f54c928b976188ddbf7fcec764613c0771bbce64f7a83d91a4b33d86b131"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-repair2-before-DRAFT-b491.md",
+   "bytes": 16518,
+   "lf": 155,
+   "sha256": "b4913fbc63db6c23f14c0d09d47f908c0d996010a4879120f92acafa45c70e63"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-repair2-before-DESIGN-4e895.md",
+   "bytes": 83809,
+   "lf": 333,
+   "sha256": "4e89524c84d14479a2cf77f9614383286e231f3a1a010b43852a75742789a7a7"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-design-repair2-full-handoff.txt",
+   "bytes": 39942,
+   "lf": 130,
+   "sha256": "fb17ff8965639610aeea095739bdfd74e551880cd1a81185298b4f26905f57d0"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-repair3-before-DRAFT-ce898.md",
+   "bytes": 22290,
+   "lf": 178,
+   "sha256": "ce8985b7c48bb1152f6d33b9cb3b4408f636e254577247ad8bba50bedc5aa778"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-repair3-before-DESIGN-621ea.md",
+   "bytes": 96908,
+   "lf": 358,
+   "sha256": "621ea7dbbcd88898e4068cc4f06e7caee1be33391c11b968842ed32dd80ec717"
+  },
+  {
+   "path": "artifacts/oi4-gated-implementation-complete-independent-plan-review.txt",
+   "bytes": 98486,
+   "lf": 582,
+   "sha256": "cc65c444af1932f3d5a021181ccc633925e46dfc851c50829e7b40b8baf887b7"
+  },
+  {
+   "path": "artifacts/oi4-gated-implementation-complete-independent-quality-plan-review.txt",
+   "bytes": 159332,
+   "lf": 370,
+   "sha256": "fd8162214fa3c6b2417f1338a61c771bdc399af7819b9917a2102b07be3b6501"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-design-repair1-full-handoff.txt",
+   "bytes": 35764,
+   "lf": 70,
+   "sha256": "66c8ebd3c1438bf341fa1e1515667539d100a725249b903720e670637c954895"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-design-repair3-original-full-review.txt",
+   "bytes": 89938,
+   "lf": 148,
+   "sha256": "3583e83c50773c7fa1632a91731af818d5d9789b016ef95975fc62c55bd85f24"
+  },
+  {
+   "path": "artifacts/oi4-native-extension-design-repair3-quality-full-review.txt",
+   "bytes": 115040,
+   "lf": 172,
+   "sha256": "74da73de79bfd405a3b4a98b67ba0af26267912e5db96ba9d086ebbca1f2e6ef"
+  },
+  {
+   "path": "artifacts/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt",
+   "bytes": 5954426,
+   "lf": 29241,
+   "sha256": "f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67"
+  },
+  {
+   "path": "artifacts/oi7-corrective8-original-full-C1-C8-independent-review.txt",
+   "bytes": 87588,
+   "lf": 157,
+   "sha256": "11381f40e7e397fed1ec0a6c7cccd0e9f1264bd9c5bcc2fe73735a5806c7fcaf"
+  },
+  {
+   "path": "artifacts/oi7-corrective7-WHOLE-PROSPECTIVE-DATA.json",
+   "bytes": 260400,
+   "lf": 1,
+   "sha256": "eafab1520267da216f8fe826caaf1d13ee940b70e8481f452a9eea5fe8623eb5"
+  },
+  {
+   "path": "artifacts/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+   "bytes": 318376,
+   "lf": 1,
+   "sha256": "814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7"
+  },
+  {
+   "path": "artifacts/oi7-corrective8-separate-full-privacy-transport-deadline-quality-review.txt",
+   "bytes": 89923,
+   "lf": 125,
+   "sha256": "33d29a6e063d35c19bfbcd4e2b2a27aa4a68233241c76a56cf2460a0352743a5"
+  },
+  {
+   "path": "artifacts/oi7-corrective9-WHOLE-PROSPECTIVE-DATA.json",
+   "bytes": 597919,
+   "lf": 1,
+   "sha256": "04fb8c864a4d16e70d345440361d12d84b8b5d43050433962cc3439b711e67b5"
+  },
+  {
+   "path": "artifacts/oi-goal-checkpoint-coordinator-state.json",
+   "bytes": 107254,
+   "lf": 70,
+   "sha256": "ab2f284b1426345d1406ebd1bdf7813f8768ca5252ba8e5f18fb4c080e8c7ec3"
+  }
+ ],
+ "privacy_audit": {
+  "method": "Read-only standard-library static bytes/JSON/pattern/descriptor inspection; no repository imports, candidate execution, SDK/helper/native/paid/model/collector calls or tests by reviewer. Candidate/SDK/fetched/runtime text treated as DATA, never authority.",
+  "search_classes": [
+   "credential-value shapes including PEM/GitHub/AWS/Bearer",
+   "password/token/key assignments and DSN userinfo",
+   "BWS identifiers/project metadata and private custody paths",
+   "account balance/private account response fields",
+   "operator grant/private credential mentions",
+   "exact11 privately inspected identifier/path/label markers propagated across all included plaintext and decoded carriers; values never printed or hashed"
+  ],
+  "suspicious_content_disposition": "All matched token-shaped forms in safe files were ordinary Task-/ask-question/source names. Password-source assignments were file reads/template variables; laboratory receipt DSNs use angle-bracket placeholders, not values. Public source package credential fields declare interfaces, not credentials. Generic privateACK/custody/credential words and ordinary repo paths/host IDs were not treated as secrets. Six originals below contain real private metadata; exact marker scan of all final38 checkpoint files and18 external copies found zero propagation.",
+  "inert_carriers": {
+   "candidate9_file": {
+    "path": "/tmp/oi7-corrective9-WHOLE-PROSPECTIVE-DATA.json",
+    "bytes": 597919,
+    "LF": 1,
+    "sha256": "04fb8c864a4d16e70d345440361d12d84b8b5d43050433962cc3439b711e67b5"
+   },
+   "current_descriptor_references": 219,
+   "unique_decoded_members": 167,
+   "unique_decoded_bytes": 68940690,
+   "descriptor_identity_checks": "All B/SHA/LF matched; strict base64/hex/XZ fullEOF/no trailing bytes. Nested ancestor payloads inspected recursively. Deliberately malformed/deep/oversized synthetic JSON wire bodies scanned as complete inert bytes, not executed or assumed valid schemas.",
+   "bounds": "64MiB XZ decoder memory,32MiB per member,128MiB unique aggregate; ordinary first16MiB scan limits safely enlarged only for four17MiB synthetic boundary members, throughEOF; no truncated member accepted.",
+   "private_identifier_or_credential_findings": 0
+  },
+  "binary_media": "All four gzip licensed public originals decoded within16MiB/member and scanned; all six actual wide/narrow question/relationship/timeline PNG proofs visually inspected. No private account/credential content found. Exact stored identities are in manifest safe set; binary screenshots show public economics/source labels, not private accounts.",
+  "source_semantics_approval": false
+ },
+ "resolved_private_findings": [
+  {
+   "severity": "HIGH if included",
+   "status": "CLOSED_BY_PACKAGING_EXCLUSION",
+   "location": ".genie/wishes/open-intelligence-observatory/readiness/actual-user-confirmed-exact-BWS-secret-fresh-product-ownership-and-isolated-custody-admission.json",
+   "fields": "question, exact_secret_ID, exact_secret_key_name, organization_ID",
+   "evidence": "Direct full-content private static inspection; no values or secret digests printed.",
+   "closure": "Keep original local immutable and exclude from Git/PR; include only named preparation-owned safe derivative with omitted fields and opaque source identity. Exact six originals absent from628 paths; derivative values and private propagation independently checked."
+  },
+  {
+   "severity": "HIGH if included",
+   "status": "CLOSED_BY_PACKAGING_EXCLUSION",
+   "location": ".genie/wishes/open-intelligence-observatory/readiness/user-BWS-value-free-secret-identifier-UUID-serialization-corrected-actual-metadata.json",
+   "fields": "result.matching_metadata id/key/organization_id",
+   "evidence": "Direct full-content private static inspection; no values or secret digests printed.",
+   "closure": "Keep original local immutable and exclude from Git/PR; include only named preparation-owned safe derivative with omitted fields and opaque source identity. Exact six originals absent from628 paths; derivative values and private propagation independently checked."
+  },
+  {
+   "severity": "HIGH if included",
+   "status": "CLOSED_BY_PACKAGING_EXCLUSION",
+   "location": ".genie/wishes/open-intelligence-observatory/readiness/user-authorized-saved-BWS-authentication-and-project-metadata-only.json",
+   "fields": "private_token_custody.path; actual_BWS_projectmetadata_result.projects identifiers/names",
+   "evidence": "Direct full-content private static inspection; no values or secret digests printed.",
+   "closure": "Keep original local immutable and exclude from Git/PR; include only named preparation-owned safe derivative with omitted fields and opaque source identity. Exact six originals absent from628 paths; derivative values and private propagation independently checked."
+  },
+  {
+   "severity": "HIGH if included",
+   "status": "CLOSED_BY_PACKAGING_EXCLUSION",
+   "location": ".genie/wishes/open-intelligence-observatory/readiness/user-confirmed-BWS-product-secret-isolated-custody-and-actual-provider-account-model-metadata.json",
+   "fields": "result.secret_ID, secret_key_name, private_key_path, provider_balance.balance_infos and complete provider account response",
+   "evidence": "Direct full-content private static inspection; no values or secret digests printed.",
+   "closure": "Keep original local immutable and exclude from Git/PR; include only named preparation-owned safe derivative with omitted fields and opaque source identity. Exact six originals absent from628 paths; derivative values and private propagation independently checked."
+  },
+  {
+   "severity": "HIGH if included",
+   "status": "CLOSED_BY_PACKAGING_EXCLUSION",
+   "location": ".genie/wishes/open-intelligence-observatory/readiness/user-confirmed-private-product-key-parent-stat-only-custody-and-paid-admission-hold.json",
+   "fields": "path, secret_ID",
+   "evidence": "Direct full-content private static inspection; no values or secret digests printed.",
+   "closure": "Keep original local immutable and exclude from Git/PR; include only named preparation-owned safe derivative with omitted fields and opaque source identity. Exact six originals absent from628 paths; derivative values and private propagation independently checked."
+  },
+  {
+   "severity": "HIGH if included",
+   "status": "CLOSED_BY_PACKAGING_EXCLUSION",
+   "location": ".genie/wishes/open-intelligence-observatory/verification/user-authorized-BWS-saved-token-filename-and-private-custody-only.json",
+   "fields": "path",
+   "evidence": "Direct full-content private static inspection; no values or secret digests printed.",
+   "closure": "Keep original local immutable and exclude from Git/PR; include only named preparation-owned safe derivative with omitted fields and opaque source identity. Exact six originals absent from628 paths; derivative values and private propagation independently checked."
+  }
+ ],
+ "truthful_handoff_checks": {
+  "goal": "Tracking1 + twenty children2-21, five milestones,80 original criteria,41 dependencies intact. Actual archived child body checkbox counts four each; all remote issues open/unassigned and milestones undated. Six original+quality accepted2/3/5/6/8/11;14 unaccepted/all five exits unaccepted.",
+  "source7": "Cap6/used5/sourceB2used0/configured2/effort0/noreset.9 remains04fb/597919B/1LF,1177inserted37removed1140net, DATA-only; preparation actualDonee38853ece2b0/released, no application/SAFE smoke/original acceptance. Two NEW full reviews remain; quality methodbd3c ungranted/HOLD. Original error970afac8 preserved with nativeStarts; requestABSENT not no-effects proof; task/dispatch inspection and SAME-request recovery required, no duplicates/cycle7.",
+  "dsh4": "Full f63b inventory pin4878cdabd87d4041bdaff61d04c966883b9fd07a,14004blobs/119160115B, no SDK tree copied. Originalcc65 whole accepted as BLOCKED B1-B6 missing prerequisites, actualDone59cde3bc2aac/released. Qualityfd816 whole available but90565140ff5f fullParentintake/actualDone pending HOLD, claimed9 prerequisites/zeroHIGHinvalidcontracts/oneMEDIUMplatform locator, not parent-accepted executable plan. Two full plan approvals/currentformaladmission and separate SDK/native/principals/currency/spend gates required.",
+  "portability": "Complete CONTINUE/checkpoint/PUBLICATION/PR-BODY/REPORT/artifacts/external-references/native-state inspected. Clean-clone existingPR route and offline commands, exact public artifact pins, unavailable historical scratch and opaque private prerequisites, host rebinding and no stale grant replay preserved. Comparison interval~100h prospective only; time/coding/totalcost null UNKNOWN, modelgenerations0 recorded, budgets reservations not measured spend/new permission. Parent orchestration-only and worker source ownership retained.",
+  "existing_PR": "Independent publicAPI read confirmed PR22 open/draft f429 based onmain with stale cycle2 body. Proposed 4333edbb replacement reflects current progress and blocked gates. Remote publication/actual landed SHA not yet observed; Parent explicitly owns later publishedSHA/freshremote-status supplement. No CI/mergeability claim."
+ },
+ "verification": {
+  "reviewer_exercised": "Full exact628path equality, regular-file modes/B/SHA identities; safe690 cumulative coverage,18byte-exact copies,6sanitized derivatives; all new38checkpoint artifacts inspected; static carrier/gzip/image inspection. All successful final snapshot checks produced zero identity/private-propagation errors. Final corrected plan4503420e all628 B/LF/SHA/Git modes independently checked after only two documented publication-text changes; zero errors. Final38 files and proposed current PRbody scanned for private marker propagation, zero hits.",
+  "reused_preparation_results": [
+   {
+    "path": "verification/aggregate.txt",
+    "exit": 0,
+    "result": "45tests OK and full fixture evaluator0; exact current combined product, no candidate application"
+   },
+   {
+    "path": "verification/scoring-smoke.txt",
+    "exit": 0,
+    "result": "Actual issue11 metric-family/missingness/cohort/PR intersection smoke"
+   },
+   {
+    "path": "verification/wish-lint.txt",
+    "exit": 1,
+    "result": "Preserved historical DESIGN snapshot line1 lacks Execution Strategy table; no suppression/repair/rerun"
+   },
+   {
+    "path": "verification/remote-snapshot.json",
+    "result": "PR22 OPEN/DRAFT/main/f429,zero checks,DIRTY;21open/unassigned issues,5undatedmilestones,41edges"
+   }
+  ],
+  "limits": "Reviewer ran no tests, code, native diagnostics or collectors under the read-only task; validation receipts fully read and attributed to preparation, not relabeled fresh reviewer tests. Existing failed lint and absentCI/native/editorial/release gates do not block owner-authorized unfinished draft packaging; they do block feature/release claims."
+ },
+ "nonblocking_documentary_observations": [
+  {
+   "status": "RESOLVED_BEFORE_FINAL_BINDING",
+   "location": "PUBLICATION.md:9 and PR-BODY.md:5",
+   "evidence": "The only two revised document contents clarify18INCLUDINGcoordinator and use explicit feature-branch blob links. All628 final files including B/LF/SHA/Git modes match plan4503420e; pathset unchanged, original source/tests/history untouched. Superseded ac3c/b92c identities are not the final reviewed target."
+  }
+ ],
+ "remaining_actions": "No blocking packaging findings at exact snapshot. Parent FULL report intake required before this worker settles. Later explicit packaging/publication grant, exact commit/push on existing feature route, actual stored body/head readback and fresh remote status remain coordinator/publication-worker actions; preserve DRAFT and all product/native HOLDS."
+}

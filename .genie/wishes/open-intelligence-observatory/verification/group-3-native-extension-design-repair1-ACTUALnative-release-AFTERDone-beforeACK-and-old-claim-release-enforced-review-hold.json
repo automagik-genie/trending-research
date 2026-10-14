@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-10T06:39:13.458130+00:00",
+  "priorFullPositiveSettlement": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-design-repair1-actualDone-one-exact93-stored-report-FULL-positive-settlement-before-release.json",
+  "actualNativeRelease": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"998c0b18-15d0-46f8-a634-3d60f34d99fa\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_7ef2707f9aa8\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"234a324d-7c8b-46eb-9be1-e0c63924f496\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "998c0b18-15d0-46f8-a634-3d60f34d99fa",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_7ef2707f9aa8",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "234a324d-7c8b-46eb-9be1-e0c63924f496",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "priorInvalidFromFlagNoMutation": {
+    "exit_code": 1,
+    "stdout": "{\n  \"id\": \"local\",\n  \"ok\": false,\n  \"error\": {\n    \"code\": \"invalid_argument\",\n    \"message\": \"Unknown flag --from for command: orchestration worker-release\",\n    \"data\": {\n      \"validFlags\": [\n        \"dispatch\",\n        \"environment\",\n        \"help\",\n        \"json\",\n        \"pairing-code\",\n        \"retry-request\"\n      ],\n      \"suggestions\": [\n        \"json\"\n      ],\n      \"nextSteps\": [\n        \"Did you mean: --json\",\n        \"Valid flags: --dispatch, --environment, --help, --json, --pairing-code, --retry-request\"\n      ]\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": null\n  }\n}\n",
+    "stderr": ""
+  },
+  "recovery": "release verb acceptsdispatchnotfrom; guideexactdispatch-only retry, no newstate/prematurerelease",
+  "actualGenieClaimReleaseExit": 0,
+  "actualClaimReleaseOutput": "Released task t_mv1nxer60fedac1d (ready).\n",
+  "actualEnforcedHoldExit": 0,
+  "actualHoldOutput": "Blocked task t_mv1nxer60fedac1d (ready, hold).\n",
+  "holdReason": "Designrepair1 completeoneevent93/nativeDone8a10ctx7ef/parentFULLpositiveintakeandactualrelease0. CurrentwholeDRAFTb491155LF/DESIGN4e895333LF/70LFhandoff66c8 actual110TRUEins35del2docs/8pins unchanged. AwaitTWO NEWblindFULLOriginalA1-A10C1-C4 andseparatequality FULLmethodBEFOREartifactaccess/bothwhole0HIGH/actualutilitydigests. WRS90PROPOSED/PENDINGfooter/INDEXSimmering notReady100 ororiginal4acceptance. Owner7520DESIGNONLY B2used1council0, no implementation/runtime/paid approval. All4originalcriteria/fourcontracts/14classes/6futuregroups/20issues80criteria41links5milestones unchanged; stockDSH2of2exhaustedABIcauseUNKNOWN/globalcompletionunavailable/Brain4of4/source7cap3DATAonly separate. NativeSourceGitsourceprivatePGModelactionsDENIED/model0USD20allcostUNKNOWN. Currentdocwriter releasednoclaim; parentalonecontrolsreviewevidence/stamps/INDEX later.",
+  "doneDeliveryNotACKedYet": "4e593; qualityquestionactualreply0+escalationrelay0 processed. NowdispatchbothnewReviewersbeforeACK. Lifecycle no premature release."
+}

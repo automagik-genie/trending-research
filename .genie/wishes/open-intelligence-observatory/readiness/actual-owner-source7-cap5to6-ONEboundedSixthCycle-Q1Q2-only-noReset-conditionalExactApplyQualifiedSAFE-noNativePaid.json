@@ -1,0 +1,44 @@
+{
+  "state": "ACTUAL_OWNER_AUTHORIZES_ONE_BOUNDED_SIXTH_CYCLE",
+  "actualQuestion": "The fifth full review pair is settled: quality found two HIGH defects, so the conditional apply/smoke gate failed. Your current authorization forbids a sixth cycle. How should I handle this exhausted read-model gate while the independent DSH inventory continues?",
+  "actualAnswer": "Authorize one bounded sixth cycle",
+  "selectedDescription": "Explicitly amend cap5\u2192cap6 without resetting used5. A worker repairs only ACK-consumption/retirement ordering and valid NativeError handling within the existing three-program boundary; both full independent reviews must pass before exact-candidate application and separately qualified safe-path smoke. No native activation, paid calls, feature waiver or extra subsystem.",
+  "budget": {
+    "oldCap": 5,
+    "newCap": 6,
+    "used": 5,
+    "remaining": 1,
+    "source": "actual user instruction",
+    "reset": false,
+    "effortEscalation": 0
+  },
+  "baselineCandidate": {
+    "path": "/tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+    "bytes": 318376,
+    "LF": 1,
+    "sha256": "814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7",
+    "mode": "0600"
+  },
+  "completedFifthPair": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/Source7-cap5-5-COMPLETE-bothFULL-originalSHIP-qualityFIXFIRST-twoHIGH-ACTUALDones-afterReleases-beforeACK-NOconditionalApplySmoke.json",
+    "bytes": 14158,
+    "LF": 161,
+    "sha256": "f67bc85b8dfce88e4b48c7ab771df6ffe36cf99e0b52d9731c82f0c7c9fe5504",
+    "mode": "0o600"
+  },
+  "repairScope": [
+    "Q1 causal current ACK acceptance/retirement readiness and redundant second-primary gate handling",
+    "Q2 exactly correlated valid JSON-RPC NativeError path without losing immutable early cause/privacy/overflow fail-closed"
+  ],
+  "ownedPrograms": [
+    "observatory/evidence/brain.py",
+    "/tmp/oi7-native-replay-diagnostic-1.py",
+    "/tmp/oi7-native-replay-diagnostic-1-outer.py"
+  ],
+  "prospectiveOnlyBeforeBothReviews": true,
+  "conditionalApplySmoke": "Only BOTH complete independent full-scope reviews SHIP 0HIGH0CRITICAL plus separate pre-mutation exact-source and safe-changed-path qualification methods; candidate immutable exact after review",
+  "noNativePaidFeatureGrant": true,
+  "noExtraSubsystemOrClockOrStore": true,
+  "allOriginalCriteria": "C1-C8/F1-F4/all20issues80criteria41deps5milestones unchanged; historical f6 LOSTUNKNOWN not reconstructed",
+  "parentNoDirectCode": true
+}

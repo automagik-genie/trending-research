@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-10T01:32:46.051211+00:00",
+  "actualGenieGatePostExit": 0,
+  "actualExportExit": 0,
+  "exactstoredbodyequalsIntended": true,
+  "actualStoredEvent": {
+    "author": "orchestrator",
+    "author_kind": "pi",
+    "created_at": 1791595965811,
+    "id": 85,
+    "kind": "comment",
+    "note": "publication checkpoint: original#8 exact acceptedf429a573ddc98ce8aef50520c2e420d1ea883f19 actualnormalforkfastforward+remote/PRheadreadback0; PR22 remainsDRAFT/open, complete currentfullC1-C4e17a117LF+separatequalityd976103LF bothSHIP0HIGH actuallypublished57757B withclean43/eval/lint andentirestoredbodymatch athttps://github.com/namastex888/trending-research/pull/22#issuecomment-6092121217; originalGitHub8all4criteria checkpointhttps://github.com/namastex888/trending-research/issues/8#issuecomment-6092218101 exactbodyreadback0. ActualremoteNOchecks zero runs/statuscontexts NOTPASS; GitHub8openassigneesunset, nocloses/labels/merge/deploy. Localdone retained; Source2/2Quality1/1notreset. Guidedfirstproduction9notintegrated; original4/7stillunaccepted/model0/cap20/allcostUNKNOWN/full20IN_PROGRESS.",
+    "task_id": "t_muz1j3f7944dc064"
+  },
+  "actualLocalOriginal8Card": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": null,
+    "blocked_by": null,
+    "blocked_reason": null,
+    "board_id": null,
+    "claimed_at": 1791565560208,
+    "claimed_by": "issue-8-engineer",
+    "created_at": 1791433966867,
+    "group_name": "group-7",
+    "heartbeat_at": 1791565560208,
+    "id": "t_muz1j3f7944dc064",
+    "lane": null,
+    "status": "done",
+    "title": "OI-07: Compare visual directions using the real investigation",
+    "updated_at": 1791582349682,
+    "wish": "open-intelligence-observatory"
+  },
+  "actualPublicProofRefs": {
+    "pr": "https://github.com/namastex888/trending-research/pull/22#issuecomment-6092121217",
+    "original8": "https://github.com/namastex888/trending-research/issues/8#issuecomment-6092218101"
+  },
+  "noCodeWorkingWISH260fSource7Source4ChangeByPublicationProofMetadata": true,
+  "all20notComplete_NOremoteCI": "retainedtruthfully"
+}

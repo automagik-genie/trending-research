@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-09T18:10:28.444833+00:00",
+  "status": "PRIMARY_RESEARCH_COMPLETE_PAID_EXECUTION_NOT_ADMITTED",
+  "raw_findings": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/deepseek-public-paid-admission-primary-findings.txt",
+    "sha256": "64c5598f87c90d5ff86f6db924dc2695c66f4307ee6e382fc47e011c9cdd41c5",
+    "bytes": 24603,
+    "mode": "0600"
+  },
+  "parent_synthesis": [
+    "CurrentrecommendedFlashalias cannotbe assumed retiredmodelpin; currentpublishedSSElastcontentchunk carriesusage andnon-nullfinish_reason, not genericemptychoices-onlyshape",
+    "Usepeak/cachemiss asconservativeproposal, no cachehit/offpeak/temppromo assumption; currencycode/effectivetariff/actualmodelCatalog remainliveadmissionquestions",
+    "Publishedtoken/concurrency/defaultthinking limits areNOTimplementednativeSDKrequest/retry guards orUSD12guarantee",
+    "Terminalusage/interruptedbilling unknown requiresworstcaseperattemptreservationandstop/reconcileunknownusage, notbillingzero",
+    "Reasoningguidewrongbody explicitlyUNREAD, no substitutionguide followed",
+    "Freshkeyabsent andnative hardboundedproviderprofile/session/principal/cancel/reconnect proofs stillrequired"
+  ],
+  "claim_basis": "Cited first-partybodyquotes inindependentreaderreport; sourceclaims notliveaccount/financialtruth/enforcedguard",
+  "frozen_sources": [
+    "https://api-docs.deepseek.com/",
+    "https://api-docs.deepseek.com/quick_start/pricing",
+    "https://api-docs.deepseek.com/api/create-chat-completion",
+    "https://api-docs.deepseek.com/guides/reasoning_model",
+    "https://api-docs.deepseek.com/quick_start/rate_limit",
+    "https://api-docs.deepseek.com/api/list-models",
+    "https://api-docs.deepseek.com/api/get-user-balance"
+  ],
+  "provider_live_verified": false,
+  "paid_calls_authorized": false,
+  "model_calls_in_research": 0,
+  "USD_reservations": {
+    "DSH": 12,
+    "Brain": 8,
+    "total": 20
+  },
+  "actual_paid_cost": "No productmodelcalls performed; coding/storage/alltotals UNKNOWN",
+  "injections": "No hostileattemptobserved; ordinarykey/install/curl/prompt/siteexamples treatedasDATAandnotexecuted",
+  "next_owner": "OriginalDSHauthor readonlycurrentexactprovider/profile/capsproposal; humanmustsupplyfresh0600localkeypath only"
+}

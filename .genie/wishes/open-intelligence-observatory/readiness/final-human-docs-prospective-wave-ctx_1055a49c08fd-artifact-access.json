@@ -1,0 +1,119 @@
+{
+  "recorded_at": "2026-10-09T21:10:27.618123+00:00",
+  "blind_ack_message": "msg_92d2eeef674d",
+  "dispatch": "ctx_1055a49c08fd",
+  "kind": "PROSPECTIVE_DIAGNOSTIC_PLAN_ONLY",
+  "independent_blind_method_accepted": true,
+  "artifacts": {
+    "wish": {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad"
+    },
+    "combined_freeze": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-UI-human-DSH-docs-source7-temporary-freeze.json",
+      "sha256": "8271f2f43d09bcaf0e657d9c2a7f87e7795ac270a805c3086115b23958c47011"
+    },
+    "current_aggregate": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/native-current-final-human-UI-DSH-disclosure-source7-temporary-aggregate.json",
+      "sha256": "aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c",
+      "actual_exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "actual_test_count": 45,
+      "runner_owner": "parent coordinator",
+      "bounds": "Currentlocaltemporaryfreeze only, notremoteCI/deploy/DSHoriginal/native7completion"
+    },
+    "runtime_permission": "NONE builds/tests/browser/server/containers/network/provider/secret/Git prohibited",
+    "full_report_protocol": "Standalonefull/tmpreport; digest/bytes/lines/nativeworker_doneactualreviewwork; parentpositiveassessment/fullread/release beforeinboxACK, nooriginalcardmutation",
+    "exact_frozen_prospective_plan": {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-corrected-ReplayManifest-prospective-diagnostic-repair-1.json",
+      "sha256": "844206f7876ad566645303d22c203abaed31ef986112d081f0c5de9b6e76c982",
+      "embedded_scaffold_text_sha256": "6149d87c32fafa7e40c08df4588c45d80bca8b06cc97c14ef1dedc1377ad03ad",
+      "code_is_data_only": "Scaffoldunwritten, doNOTexecute/create. Productionsafe_native_error helpernotimplemented; readonlybaselineonly."
+    },
+    "full_original_failed_receipts_copy": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-full-snapshot-failed-native-receipts-1.json",
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca"
+    },
+    "historical_initial_causal_checkpoint": {
+      "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-full-snapshot-native-root-rejection-1-checkpoint.json",
+      "sha256": "a8fe2924641aa28e86e4630978d3e14246402d0553111a4447fe4d4ee3cc4728"
+    },
+    "causal_history_correction": "HistoricalcheckpointWRONGLYinferredfinalrootrejection. ActualReplayManifest6.241702MB rejected Scene/rootunattempted. Newplanexplicitlycorrects;61649callhashes/errorbodyUNRETAINED/f6hash causeUNKNOWN.30102getargumenthashpreimages readonly notguessedacceptedIDs, noNativecalls.",
+    "baseline11": {
+      "observatory/evidence/contracts.py": {
+        "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+        "bytes": 22505,
+        "mode": "0600"
+      },
+      "observatory/evidence/brain.py": {
+        "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+        "bytes": 12768,
+        "mode": "0600"
+      },
+      "observatory/evidence/model.py": {
+        "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+        "bytes": 5908,
+        "mode": "0600"
+      },
+      "observatory/evidence/cordis.mjs": {
+        "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+        "bytes": 2646,
+        "mode": "0600"
+      },
+      "observatory/evidence/__main__.py": {
+        "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+        "bytes": 2361,
+        "mode": "0600"
+      },
+      "observatory/evidence/receipts.json": {
+        "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+        "bytes": 11997001,
+        "mode": "0600"
+      },
+      "observatory/python_adapter.py": {
+        "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+        "bytes": 8901,
+        "mode": "0600"
+      },
+      "docs/integrations/python-pipeline.md": {
+        "exists": false,
+        "disposition": "not authored; full native proof blocked"
+      },
+      "investigations/frontier-economics/manifest.json": {
+        "exists": false,
+        "disposition": "not authored; full native proof blocked"
+      },
+      "tests/test_investigation.py": {
+        "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+        "bytes": 3439,
+        "mode": "0600"
+      },
+      "tests/test_evidence_contracts.py": {
+        "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+        "bytes": 13514,
+        "mode": "0600"
+      }
+    },
+    "native_tool_catalog_path": "integrations/brain/qualification/native-tools.json",
+    "native_receipts_path": "integrations/brain/qualification/native-receipts.json",
+    "native_binary_access": "Knownpublicbinarybytesonlyifneeded. NEVERownpassword/PGDATA/globalconfig/privatefiles/values orprocess/dockerinspection.",
+    "author_post_freeze_correction_reports": [
+      {
+        "message_id": "msg_4cd7d587a673",
+        "owner": "sourceauthor ctx_0c242e837d41",
+        "statement": "Authorreadonlyreport: doublednewlineJSONserialization inproposal, started=Falsecleanupholeifdockerstarttimesout,missingconcreteouterdeadlinefinallyrunner. Prospectivecorrectionsneedednotapplied; independentlyverify notacceptselfverdict."
+      },
+      {
+        "message_id": "msg_985b1062543f",
+        "owner": "sourceauthor ctx_0c242e837d41",
+        "statement": "Read-onlycatalog contentstringminLength1/no maxLength;operation_key/actormax200/reasonmax1000. Payload-limitcauseUNKNOWN independentlyverify."
+      }
+    ],
+    "plan_scope": "Firstprospectiveiteration2permanentfiles45-60lines; sourceB2used0effort0;58toolsmax,ONEadditional ownPGactivation ONLYlaterparentgate, notfifth5qualifier/faultrestart/wholewiden/31kremembers/schema/paging/truncation/model.",
+    "gate_boundary": "Currentfrozenoldplan844206 unchangedreviewtarget. Correctedscaffold/helper/outerrunnersourcetextneednewexactindependentbinding+parentgate. ReportHIGH/prereqs noimplementation."
+  },
+  "explicit_permission": "READONLY_ARTIFACT_ACCESS_ONLY_NO_CODE_OR_RUNTIME"
+}

@@ -1,0 +1,282 @@
+{
+  "at": "2026-10-09T22:21:31.096710+00:00",
+  "roles": "two native READONLYSCOUTS",
+  "slices": "cachedstock ABIclosure vsSUPPORTEDlifecycle/principal/stop/egressseams disjoint",
+  "original4B2exhausted_notreset": true,
+  "no_code_runtime_nativeSDK_activation": true,
+  "parent_no_product_code_engagement": true,
+  "actuallaunches": [
+    {
+      "slice": "oi4-offline-ABI-closure-scout",
+      "report_path": "/tmp/oi4-offline-cached-image-ABI-closure-scout.txt",
+      "spec_sha256": "4639694789027de953496ecf9fb4331fbbe74a699a44d4a6aeaa3a73df38920a",
+      "receipt": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"079f61e2-20af-4c54-8695-fd791c5ccd7d\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_093f1bcec0d1\",\n    \"dispatchId\": \"ctx_050e7534d9b0\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_547d5a42-cfce-46b4-895c-204f449c8270\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_547d5a42-cfce-46b4-895c-204f449c8270 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_547d5a42-cfce-46b4-895c-204f449c8270` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_547d5a42-cfce-46b4-895c-204f449c8270\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"f60be74c-763a-432a-a8ca-9238036cccc6\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"9cd72154-c011-4e4b-80c7-711b86ecfb2b\",\n      \"generation\": 56,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_547d5a42-cfce-46b4-895c-204f449c8270 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_547d5a42-cfce-46b4-895c-204f449c8270` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"f60be74c-763a-432a-a8ca-9238036cccc6\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "079f61e2-20af-4c54-8695-fd791c5ccd7d",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_093f1bcec0d1",
+            "dispatchId": "ctx_050e7534d9b0",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_547d5a42-cfce-46b4-895c-204f449c8270",
+                "surface": "background",
+                "warning": "Terminal term_547d5a42-cfce-46b4-895c-204f449c8270 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_547d5a42-cfce-46b4-895c-204f449c8270` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_547d5a42-cfce-46b4-895c-204f449c8270",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "f60be74c-763a-432a-a8ca-9238036cccc6",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "9cd72154-c011-4e4b-80c7-711b86ecfb2b",
+              "generation": 56,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_547d5a42-cfce-46b4-895c-204f449c8270 is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_547d5a42-cfce-46b4-895c-204f449c8270` to reveal and focus it.",
+            "mutation": {
+              "requestId": "f60be74c-763a-432a-a8ca-9238036cccc6",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "slice": "oi4-supported-lifecycle-scout",
+      "report_path": "/tmp/oi4-supported-native-lifecycle-and-principal-seams-scout.txt",
+      "spec_sha256": "2147657f1d7aaa330ce5886d0a2f43b131ec5981c3af573e38890c4be5f1871b",
+      "receipt": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"cdec674e-d643-4e4c-af9f-7f5fc45db54c\",\n  \"ok\": true,\n  \"result\": {\n    \"runId\": \"run_b7d6684b2cdd\",\n    \"taskId\": \"task_82ee2dc24022\",\n    \"dispatchId\": \"ctx_c33ecca7956f\",\n    \"state\": \"ready\",\n    \"stage\": \"input_accepted\",\n    \"turnStart\": \"unsupported\",\n    \"setup\": {\n      \"requested\": \"not_applicable\",\n      \"effective\": \"not_applicable\",\n      \"source\": \"existing_worktree\",\n      \"hookFound\": false,\n      \"startupPolicy\": \"start-immediately\",\n      \"state\": \"not_applicable\"\n    },\n    \"launch\": {\n      \"requested\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      },\n      \"effective\": {\n        \"agent\": \"omp\",\n        \"model\": null,\n        \"effort\": null\n      }\n    },\n    \"mode\": {\n      \"mode\": \"terminal\",\n      \"preferred\": \"terminal\",\n      \"reason\": \"user_default\",\n      \"detail\": \"Started a terminal agent worker, the default for new agent tabs in your settings.\"\n    },\n    \"timeoutMs\": 60000,\n    \"effects\": [\n      {\n        \"kind\": \"worktree\",\n        \"action\": \"reused\",\n        \"id\": \"b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research\"\n      },\n      {\n        \"kind\": \"setup\",\n        \"action\": \"not_applicable\",\n        \"state\": \"not_applicable\"\n      },\n      {\n        \"kind\": \"terminal\",\n        \"role\": \"agent\",\n        \"action\": \"created\",\n        \"id\": \"term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef\",\n        \"surface\": \"background\",\n        \"warning\": \"Terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef` to reveal and focus it.\"\n      },\n      {\n        \"kind\": \"dispatch_input\",\n        \"role\": \"agent\",\n        \"id\": \"term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef\",\n        \"state\": \"accepted\"\n      }\n    ],\n    \"prompt\": {\n      \"requestId\": \"77848f13-e30c-4dfe-9c6e-4e2095e9c3a3\",\n      \"stages\": [\n        \"input_accepted\"\n      ],\n      \"provider\": \"unsupported\",\n      \"observation\": \"unsupported\",\n      \"processIncarnation\": \"4bc0a55b-9112-4709-8049-e5dca5c5495e\",\n      \"generation\": 57,\n      \"baselineWorkingSequence\": 0,\n      \"baselineExplicitWorkingStartedAt\": null,\n      \"baselinePermissionSequence\": 0\n    },\n    \"residualResources\": [],\n    \"warning\": \"Terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef` to reveal and focus it.\",\n    \"mutation\": {\n      \"requestId\": \"77848f13-e30c-4dfe-9c6e-4e2095e9c3a3\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "cdec674e-d643-4e4c-af9f-7f5fc45db54c",
+          "ok": true,
+          "result": {
+            "runId": "run_b7d6684b2cdd",
+            "taskId": "task_82ee2dc24022",
+            "dispatchId": "ctx_c33ecca7956f",
+            "state": "ready",
+            "stage": "input_accepted",
+            "turnStart": "unsupported",
+            "setup": {
+              "requested": "not_applicable",
+              "effective": "not_applicable",
+              "source": "existing_worktree",
+              "hookFound": false,
+              "startupPolicy": "start-immediately",
+              "state": "not_applicable"
+            },
+            "launch": {
+              "requested": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              },
+              "effective": {
+                "agent": "omp",
+                "model": null,
+                "effort": null
+              }
+            },
+            "mode": {
+              "mode": "terminal",
+              "preferred": "terminal",
+              "reason": "user_default",
+              "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+            },
+            "timeoutMs": 60000,
+            "effects": [
+              {
+                "kind": "worktree",
+                "action": "reused",
+                "id": "b82dc6ce-1505-478b-83c2-08476cdc4119::/home/genie/workspace/repos/trending-research"
+              },
+              {
+                "kind": "setup",
+                "action": "not_applicable",
+                "state": "not_applicable"
+              },
+              {
+                "kind": "terminal",
+                "role": "agent",
+                "action": "created",
+                "id": "term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef",
+                "surface": "background",
+                "warning": "Terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef` to reveal and focus it."
+              },
+              {
+                "kind": "dispatch_input",
+                "role": "agent",
+                "id": "term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef",
+                "state": "accepted"
+              }
+            ],
+            "prompt": {
+              "requestId": "77848f13-e30c-4dfe-9c6e-4e2095e9c3a3",
+              "stages": [
+                "input_accepted"
+              ],
+              "provider": "unsupported",
+              "observation": "unsupported",
+              "processIncarnation": "4bc0a55b-9112-4709-8049-e5dca5c5495e",
+              "generation": 57,
+              "baselineWorkingSequence": 0,
+              "baselineExplicitWorkingStartedAt": null,
+              "baselinePermissionSequence": 0
+            },
+            "residualResources": [],
+            "warning": "Terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef is running, but Orca could not make it discoverable. Run `orca terminal focus --terminal term_6f7fab25-706f-4c6d-a0b9-b1c4dac5c5ef` to reveal and focus it.",
+            "mutation": {
+              "requestId": "77848f13-e30c-4dfe-9c6e-4e2095e9c3a3",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    }
+  ],
+  "nativehelper_launchedBASEworkspace_notclaimedTARGETcwd": true,
+  "absolute_source_before_intake_steers": [
+    {
+      "dispatch": "ctx_050e7534d9b0",
+      "send": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"9038009c-c174-4a3a-afa0-55716b280b47\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_bd5d7d28bddc\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_050e7534d9b0\",\n      \"subject\": \"Before intake: absolute target worktree pin; native base workspace is not source identity\",\n      \"body\": \"SOURCEWORKTREEABSOLUTEQUALIFICATIONCORRECTION beforeANYrelativeartifact/sourceintake: actualowned target /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory (branchwish/open-intelligence-observatory). Nativehelperlaunch metadata reused BASEworkspace, NOT proofthatsourcecwdcorrect. DoNOTreadbaseMain relativeArtifact/CODEasthiswish. PrefixEVERYallowed source/report/data path with EXACT /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory; relativeScopebriefmeansTHATabsoluteWorktree only. CurrentWISH dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b (120136B0600), docsDSH626f6/Cordisea09/readinesse6f4 andoriginalauthor411306 mandatorysourceidentity. Ifbasecwd needCLIreadonlyDocker/readelfcwd arbitrary butsourcepaths exact/verified. No modifyingcwdrepo/state/checkout/Git or originaltaskclaim/source/runtime; remainREADONLYSCOUTartifactmapper only. NativeTask task_093f1bcec0d1/ctx_050e7534d9b0 liveactor notoldOriginal4; ownonly/tmpreport. PleaseACKactualscope/sourcepath andmethod BEFOREfacts; doNOTreuseoldWish/sourcecasually orreadprivateBWS/newkey/account/env/PGDATA. ProfileRootDocscurrentoffsets temporal newledger6/20 onlyauthority. Earlierfailedhelperparser compilehadNOlaunch effects; thesetwo actualNativeactorsonly/noduplicate.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T22:21:30Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"8e0580a7-8336-48f2-803d-51b83c932f24\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "9038009c-c174-4a3a-afa0-55716b280b47",
+          "ok": true,
+          "result": {
+            "message": {
+              "id": "msg_bd5d7d28bddc",
+              "run_id": "run_b7d6684b2cdd",
+              "delivery_contract": "current_delivery",
+              "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+              "to_handle": "dispatch:ctx_050e7534d9b0",
+              "subject": "Before intake: absolute target worktree pin; native base workspace is not source identity",
+              "body": "SOURCEWORKTREEABSOLUTEQUALIFICATIONCORRECTION beforeANYrelativeartifact/sourceintake: actualowned target /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory (branchwish/open-intelligence-observatory). Nativehelperlaunch metadata reused BASEworkspace, NOT proofthatsourcecwdcorrect. DoNOTreadbaseMain relativeArtifact/CODEasthiswish. PrefixEVERYallowed source/report/data path with EXACT /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory; relativeScopebriefmeansTHATabsoluteWorktree only. CurrentWISH dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b (120136B0600), docsDSH626f6/Cordisea09/readinesse6f4 andoriginalauthor411306 mandatorysourceidentity. Ifbasecwd needCLIreadonlyDocker/readelfcwd arbitrary butsourcepaths exact/verified. No modifyingcwdrepo/state/checkout/Git or originaltaskclaim/source/runtime; remainREADONLYSCOUTartifactmapper only. NativeTask task_093f1bcec0d1/ctx_050e7534d9b0 liveactor notoldOriginal4; ownonly/tmpreport. PleaseACKactualscope/sourcepath andmethod BEFOREfacts; doNOTreuseoldWish/sourcecasually orreadprivateBWS/newkey/account/env/PGDATA. ProfileRootDocscurrentoffsets temporal newledger6/20 onlyauthority. Earlierfailedhelperparser compilehadNOlaunch effects; thesetwo actualNativeactorsonly/noduplicate.",
+              "type": "status",
+              "priority": "normal",
+              "thread_id": null,
+              "payload": null,
+              "created_at": "2026-10-09T22:21:30Z",
+              "delivered_at": null
+            },
+            "mutation": {
+              "requestId": "8e0580a7-8336-48f2-803d-51b83c932f24",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    },
+    {
+      "dispatch": "ctx_c33ecca7956f",
+      "send": {
+        "exit_code": 0,
+        "stdout": "{\n  \"id\": \"e9c0fd7b-93e2-4a83-bbf4-1aead1feee62\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_04cc47c0c842\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_c33ecca7956f\",\n      \"subject\": \"Before intake: absolute target worktree pin; native base workspace is not source identity\",\n      \"body\": \"SOURCEWORKTREEABSOLUTEQUALIFICATIONCORRECTION beforeANYrelativeartifact/sourceintake: actualowned target /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory (branchwish/open-intelligence-observatory). Nativehelperlaunch metadata reused BASEworkspace, NOT proofthatsourcecwdcorrect. DoNOTreadbaseMain relativeArtifact/CODEasthiswish. PrefixEVERYallowed source/report/data path with EXACT /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory; relativeScopebriefmeansTHATabsoluteWorktree only. CurrentWISH dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b (120136B0600), docsDSH626f6/Cordisea09/readinesse6f4 andoriginalauthor411306 mandatorysourceidentity. Ifbasecwd needCLIreadonlyDocker/readelfcwd arbitrary butsourcepaths exact/verified. No modifyingcwdrepo/state/checkout/Git or originaltaskclaim/source/runtime; remainREADONLYSCOUTartifactmapper only. NativeTask task_82ee2dc24022/ctx_c33ecca7956f liveactor notoldOriginal4; ownonly/tmpreport. PleaseACKactualscope/sourcepath andmethod BEFOREfacts; doNOTreuseoldWish/sourcecasually orreadprivateBWS/newkey/account/env/PGDATA. ProfileRootDocscurrentoffsets temporal newledger6/20 onlyauthority. Earlierfailedhelperparser compilehadNOlaunch effects; thesetwo actualNativeactorsonly/noduplicate.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-09T22:21:31Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"20a31baa-bed9-4761-b06b-b15bf28b3160\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+        "stderr": "",
+        "receipt": {
+          "id": "e9c0fd7b-93e2-4a83-bbf4-1aead1feee62",
+          "ok": true,
+          "result": {
+            "message": {
+              "id": "msg_04cc47c0c842",
+              "run_id": "run_b7d6684b2cdd",
+              "delivery_contract": "current_delivery",
+              "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+              "to_handle": "dispatch:ctx_c33ecca7956f",
+              "subject": "Before intake: absolute target worktree pin; native base workspace is not source identity",
+              "body": "SOURCEWORKTREEABSOLUTEQUALIFICATIONCORRECTION beforeANYrelativeartifact/sourceintake: actualowned target /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory (branchwish/open-intelligence-observatory). Nativehelperlaunch metadata reused BASEworkspace, NOT proofthatsourcecwdcorrect. DoNOTreadbaseMain relativeArtifact/CODEasthiswish. PrefixEVERYallowed source/report/data path with EXACT /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory; relativeScopebriefmeansTHATabsoluteWorktree only. CurrentWISH dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b (120136B0600), docsDSH626f6/Cordisea09/readinesse6f4 andoriginalauthor411306 mandatorysourceidentity. Ifbasecwd needCLIreadonlyDocker/readelfcwd arbitrary butsourcepaths exact/verified. No modifyingcwdrepo/state/checkout/Git or originaltaskclaim/source/runtime; remainREADONLYSCOUTartifactmapper only. NativeTask task_82ee2dc24022/ctx_c33ecca7956f liveactor notoldOriginal4; ownonly/tmpreport. PleaseACKactualscope/sourcepath andmethod BEFOREfacts; doNOTreuseoldWish/sourcecasually orreadprivateBWS/newkey/account/env/PGDATA. ProfileRootDocscurrentoffsets temporal newledger6/20 onlyauthority. Earlierfailedhelperparser compilehadNOlaunch effects; thesetwo actualNativeactorsonly/noduplicate.",
+              "type": "status",
+              "priority": "normal",
+              "thread_id": null,
+              "payload": null,
+              "created_at": "2026-10-09T22:21:31Z",
+              "delivered_at": null
+            },
+            "mutation": {
+              "requestId": "20a31baa-bed9-4761-b06b-b15bf28b3160",
+              "replayed": false
+            }
+          },
+          "_meta": {
+            "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+          }
+        }
+      }
+    }
+  ],
+  "source8originaldone/source4enforcedblocked": true,
+  "product_model_calls": 0,
+  "all_costsUNKNOWN": true
+}

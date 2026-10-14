@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-09T21:22:49.581250+00:00",
+  "native_worker_done_message": "msg_5422b46341c2",
+  "task": "task_f22e3c14d72d",
+  "dispatch": "ctx_096d66f374a8",
+  "outcome_assessment": "POSITIVE thatindependentreviewdeliverablecomplete/fullreportverified; exactverdictboundsretained NOTunconditionalfeaturesuccess",
+  "review_verdict": "QUALIFIEDDISCLOSURESHIP0HIGH only3paths; Original4 C1-C3/fullnativeBLOCKED, C4documentaryonly, no originalcarddone",
+  "full_report_read": true,
+  "actual_report": {
+    "sha256": "6abe71527643ad650d9aacbb90f7c05c1161ecb03ed56d4ec4d8f12700258984",
+    "bytes": 25412,
+    "mode": "0600"
+  },
+  "report_lines": 83,
+  "parent_copy": ".genie/wishes/open-intelligence-observatory/verification/group-3-final-disclosure-and-blocked-original-independent-review-1.txt",
+  "release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"21693143-6690-4f3c-a002-7d2f09407407\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_096d66f374a8\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"transcript\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"6fc0b6c3-7c19-4335-bcfa-02d1b55d03a8\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "21693143-6690-4f3c-a002-7d2f09407407",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_096d66f374a8",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "transcript",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "6fc0b6c3-7c19-4335-bcfa-02d1b55d03a8",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "original_card_done": false,
+  "before_delivery_ACK": true,
+  "wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "current_aggregate_sha256": "aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c"
+}

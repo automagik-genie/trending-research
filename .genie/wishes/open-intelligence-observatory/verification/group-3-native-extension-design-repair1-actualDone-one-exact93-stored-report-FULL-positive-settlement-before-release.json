@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-10T06:38:31.527319+00:00",
+  "actualNativeDone": "artifact743RAW1-180 msg943aa6a62272 task8a10ctx7ef succeeded DESIGN-only exact2docs/fullreport66c8",
+  "parentEarlierPositiveFullIntake": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-design-repair1-parent-FULL70LF-handoff-ALL155-333LF-docs-actual110insert35del8pins-positive-DESIGN-only-intake.json",
+  "parentActualFullStoredReportRead": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-native-extension-design-repair1-actual-complete-stored-one-report-event.json",
+  "actualOneStoredEvent93FullBodyHash3b6dd2_3641B": {
+    "author": "native-dsh-extension-design-repair1",
+    "author_kind": "pi",
+    "created_at": 1791613636121,
+    "id": 93,
+    "kind": "report",
+    "note": "DESIGN repair1 COMPLETE, PROPOSED not SHIP: native-dsh-extension-design-repair1, Run run_b7d6684b2cdd/Task task_8a10d9a1b327/Dispatch ctx_7ef2707f9aa8, fresh AUX t_mv1nxer60fedac1d span after explicit full method/access grant and checkout. Parent actually FULL-read both docs and whole handoff, measured exact bytes/SHA/LF/mode/unified archive diffs/all8 pins, and gave POSITIVE DESIGN-only intake at2026-10-10T06:25:40.588091+00:00; intake artifact SHA0171947c27a1d55e311d6dc49610adc09e88d0e0c4e109f149e5c0ac4d434664 explicitly permits this ONE report before NativeDone, not architecture approval.\nOnly existing .genie/brainstorms/open-intelligence-observatory-native-dsh-extension/{DRAFT.md,DESIGN.md} changed: DRAFT SHAb4913fbc63db6c23f14c0d09d47f908c0d996010a4879120f92acafa45c70e63 16518B155LF0600; DESIGN SHA4e89524c84d14479a2cf77f9614383286e231f3a1a010b43852a75742789a7a7 83809B333LF0600. Actual old116c/d689 archive diff DRAFT+30/-5 and DESIGN+80/-30 =>110trueinsertions35deletions2files/net75LF, within1000forecast/hard2000/25; old archives/eight frozen inputs/WISH260f unchanged. Full standalone /tmp/oi4-native-extension-design-repair1-full-handoff.txt SHA66c8ebd3c1438bf341fa1e1515667539d100a725249b903720e670637c954895 35764B70LF0600 carries WHOLE evidence/provenance/commands/source17 immutable R SHA/gitblob/owning ranges/all omissions resolved; scratch removed.\nH1 repaired as DESIGN protocol only: PROPOSED/MODIFIED Launcher-before-proxy/boot private capture into actual boot app+diagnostic Context BEFORE first effect, explicit root-owned bootstrap transfer, Fiber raw/nested/setup/rollback/swallow and direct Agent/late acquired handle outcomes BEFORE contained catches, trusted refs into sole root control writer/app THEN proxy/independent all-owner retirement. Primary failure vs cleanup rejection vs physical retirement remain distinct; missing/blocked/skipped/late/forced UNKNOWN never success/old-reader replacement; intentional-force sealing preserves prior rejected receipts. Real changed-path negative controls specified NOT RUN, no existing Cordis observer API/log parsing/Nodeexit success/second semantic store.\nWhole A1-A10/C1-C4/fourcontracts/14classes/native Scene stream+cites/issuer/actual-start T/STOPPED/native Session reconnect/physical Messages+Files denial/rawusage/worstcasecurrency retained. Six future groups coherent87touchslots10700ESTIMATEDins, F1/F3/F5 observer/Agent/reader manifests/callers/notices updated, each hard25/2000 or explicit resplit BEFORE future source mutation; estimates NOT admission. Original paired0290 FIX-FIRST ONE HIGH versus bounded qualitySHIP0 preserved, not approval of new content. Historical formal review0ordinal1/repairedfalse/render0unchanged; structurecheck1 three outside-footer PENDING flags -> bounded wording correction ->check0findings[]+finalcheck0. Current utility AUTHOR-only proposed digestb2fb47579c62432668b20efdec07af3c0b2d831f15d64c1f570ac944bef1f46a, not reviewer-bound; WRS90/PROPOSED/fourPENDINGfooter/INDEXSimmering/B2repair1/council0/two fresh FULL independent reviews held.\nNo source/SDK/private/PG/Brain/model/runtime/product tests/build/lint/formatter/Git/index/CI/GitHub/WISH/INDEX mutation. StockDSH2of2 exhausted/one ABIexit1 2.17s122B rawbodylost causeUNKNOWN/globalUNAVAILABLE; Brain4of4/845stopped/source7ctx0c prospectivecap3DATA separate; model0/sharedUSD20DSH12Brain8/allcostUNKNOWN/20issues80criteria41links5milestonesdatesassigneesunset retained. Exact stored-row readback and final native followup check precede one worker_done succeeded DESIGN-only; actual parent release AFTERDoneBeforeDeliveryACK remains next, not preclaimed.",
+    "task_id": "t_mv1nxer60fedac1d"
+  },
+  "actualClaimTaskRow": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": null,
+    "blocked_by": null,
+    "blocked_reason": null,
+    "board_id": null,
+    "claimed_at": 1791610511534,
+    "claimed_by": "native-dsh-extension-design-repair1",
+    "created_at": 1791592518642,
+    "group_name": "group-3-native-extension-design",
+    "heartbeat_at": 1791611788277,
+    "id": "t_mv1nxer60fedac1d",
+    "lane": null,
+    "status": "in_progress",
+    "title": "Design the bounded native DSH extension architecture \u2014 design only",
+    "updated_at": 1791611788277,
+    "wish": "open-intelligence-observatory"
+  },
+  "settlementAcceptance": "ACCEPT completed boundedDESIGNdeliverable only\u2014notarchitectureSHIP/Ready/original#4feature/runtime/paid. Current2doc4e/b491 formalstructuralcheck0 reused, twoFreshblindfullOriginalA1A10C1C4+quality nowrequired.No moreauthorwrites. ActualreleaseMUSTafterthisacceptedDoneBEFOREdelivery4e593ACK",
+  "noCodeSourceReviewOrRuntime": "Parentonlywholeproposal/evidence/metadata no nativeSourceCode/currentproductchecks.GatesFrozen/old2of2stockfailureUNKNOWN/model0/shared20costUNKNOWN/Brain4of4/source7currentfullReview3independent"
+}

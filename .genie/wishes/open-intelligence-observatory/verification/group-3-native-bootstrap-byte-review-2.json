@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-08T17:43:11.860228+00:00",
+  "task": "task_5bac8b2b9e97",
+  "dispatch": "ctx_6bb93d59ac98",
+  "blind_ack": "msg_23b945c3b463",
+  "verdict": "FIX-FIRST",
+  "original_runtime_verdict": "BLOCKED_NO_ACTUAL_PROOF",
+  "reviewed_sha256": "a9ad406747c94030663167c26bd1f7ba1191f4391dd2341a6a81a2ffc1ce3b15",
+  "raw_report_sha256": "95be1d068604f4b1e6e5576a7a1b456a2312aadb3f0fbd145d1b1e5816aaea2d",
+  "public_report_sha256": "0089919568ff2579604b160424ef4311f9574b29e7bbbfe025e13ddafc6c3fe5",
+  "normalization": "Whole report retained; absolute home/worktree prefixes only normalized.",
+  "confirmed_high": [
+    "H1 actual originating bootstrap/metadata/docker diagnostics discarded; ordinaryfailurecode null and cleanup maymasksource",
+    "H2 pinned launcher SIGTERM0 alsoforceexits0ondisposalrejection/timeout; process/containerexitcannotprove nativeCordisdisposal"
+  ],
+  "static_resolved": [
+    "Connection envelope/correlation publicAPI repaired",
+    "Mounted publicexportclosure/syntax supported",
+    "ExactcachedDocker differentauthority supported"
+  ],
+  "runtime_execution": false,
+  "repairs_used_before": 0,
+  "repair_cap": 2,
+  "budget_source": "config2",
+  "effort_escalations": 0,
+  "next": "One originaltask bounded prospectivebytefix attempt1/2, scratchplanonly untilfreshreview/admission; source/runtime writes unadmitted"
+}

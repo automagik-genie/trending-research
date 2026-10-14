@@ -1,0 +1,162 @@
+{
+  "recorded_at": "2026-10-08T13:20:27.294707+00:00",
+  "status": "ADMITTED_ORIGINAL_REAL_PACK_THREE_VARIANTS_PENDING_ACTUAL_FELIPE_SELECTION",
+  "task": "task_8f2a067b113f",
+  "dispatch": "ctx_b9afe1511795",
+  "question_id": "msg_eeefe8c1090e",
+  "readiness": {
+    "issue": 8,
+    "group": 7,
+    "base_sha": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "accepted_input_commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+    "ack": "All four original scope bullets and all four original acceptance criteria unchanged; issue6 only native predecessor. No mutation or claim yet. WISH observed SHA52c774493a61dc61a47be522db12e32ad8372414ff598672be02af2490875c54; full issue copy SHA7bf227068e4c656ff52a76f10ffcbdf69b6a651b03a7aa1d0eddd4f3d377c816.",
+    "owned_paths": [
+      "web/prototypes/index.html",
+      "web/prototypes/explorer.css",
+      "web/prototypes/explorer.js",
+      "web/prototypes/preview.py",
+      "web/prototypes/proof/smoke.json",
+      "web/prototypes/proof/relationship-wide.png",
+      "web/prototypes/proof/relationship-narrow.png",
+      "web/prototypes/proof/timeline-wide.png",
+      "web/prototypes/proof/timeline-narrow.png",
+      "web/prototypes/proof/questions-wide.png",
+      "web/prototypes/proof/questions-narrow.png",
+      "docs/design/frontier-economics.md"
+    ],
+    "estimate_files": 12,
+    "estimate_insertions": 1450,
+    "estimate_encoded_bytes": "text <=100KB plus six actual browser screenshots, size unknown until capture; no copied source pack",
+    "accepted_dependencies": [
+      {
+        "issue": 6,
+        "group": 5,
+        "commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+        "manifest_sha256": "c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783",
+        "acceptance": "ctx_c73d9cdb99fe SHIP all4 criteria/all4 scope",
+        "quality": "ctx_70f07d06bb43 SHIP no high/critical findings",
+        "gate_record": ".genie/wishes/open-intelligence-observatory/verification/group-5.json",
+        "gate_record_sha256": "e14a5b6f1513a01f0978b186eba41b91a3001d1bfc250c0c2127f2bfa84ba02a",
+        "read_reviews": {
+          "acceptance_sha256": "39b8b666d6d8920124a2ad8d71adeebbd00da4310c03a46ceeff735add79ea91",
+          "quality_sha256": "6ff8a2126ec832544f6ba8f7e0b3f1783417cfee3eb22c37702c462ac39bce8d"
+        }
+      }
+    ],
+    "input_artifacts": [
+      {
+        "path": "investigations/frontier-economics/evidence.json",
+        "revision": "contract1.0.0/scene:issue6:1",
+        "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93"
+      },
+      {
+        "path": "investigations/frontier-economics/assessment.md",
+        "revision": "frontier-economics/assessment/1",
+        "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa"
+      },
+      {
+        "path": "investigations/frontier-economics/sources.json",
+        "revision": "1.1.0",
+        "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41"
+      },
+      {
+        "path": "investigations/frontier-economics/licensed-sources/NOTICE.md",
+        "revision": "licensed structured originals",
+        "sha256": "20ea1da6aa87d64b0faa14d55a35e2095c3cc4567fb255cc37cf00371e076cb3"
+      },
+      {
+        "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+        "revision": "2550576892",
+        "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7"
+      },
+      {
+        "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+        "revision": "2546229470",
+        "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae"
+      },
+      {
+        "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+        "revision": "2547354403",
+        "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16"
+      },
+      {
+        "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+        "revision": "2554037296",
+        "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b"
+      },
+      {
+        "path": "web/index.html",
+        "revision": "existing system-ui/blue tabs/detail pattern",
+        "sha256": "09160d7453711a2fa90daf4795292c8d2d3a5bbbd16aed6703343335249c8816"
+      },
+      {
+        "path": "schemas/evidence.schema.json",
+        "revision": "1.0.0",
+        "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f"
+      }
+    ],
+    "interfaces": {
+      "input": "Fetch exact immutable evidence.json and assessment.md bytes; Web Crypto SHA256 rejection on mismatch. Parse authored assessment fenced JSON (revision,pack_sha256,questions,topics,unknowns) and exact hypothesis sections; never execute prose. Domain arrays entities/source_revisions/evidence_spans/observations/claims/assessments/scenes/publication_revisions/replay_manifests/economic_relationships as contract1.0.0. SourceRevision.reason links licensed original and exact decoded selector/hashes.",
+      "output": "Single dependency-free HTML shell, three complete routes #relationship/#timeline/#questions differing traversal: entity->assertion/premise attribution network (no money edges), ordered civil-source labels->row/clock inspector, question->hypothesis/strongestcounterevidence->source. Shared in-memory/hash Scene v1 {scene_id,entity_ids,evidence_cutoff,method_version,publication_revision_id,lens,detail_id}; selections retained between lenses and overview/detail; fixed evidence cutoff read-only. This prototype state is not new production Scene API.",
+      "source_access": "Every row opens same complete canonical span, full raw qualifier/reference JSON and view text; shows classification, sourceURI, observed/ingested/publication-null clocks, content/source/original/raw hashes and selectors; link/download exact gzip complete original, read NOTICE, safe https reference links marked unacquired/unverified. No growth/pooling/annualization/verified financial edges.",
+      "preview": "python3 web/prototypes/preview.py --port 8878; stdlib ThreadingHTTPServer 127.0.0.1 only, worktree-root pathname resolution with strict allowlist of index/css/js + evidence/assessment/sources/NOTICE/four gzip originals. GET/HEAD only; no directory listing, traversal, credentials/native dirs or public tunneling. No environment/dependency installation. Own service only."
+    },
+    "runtime_identity": {
+      "python": "Python3.14.4",
+      "node": "v26.7.0 (no package dependency)",
+      "orca": "1.4.222/runtime12c9d251-5959-4d40-a681-eb16e63182e1",
+      "browser_engine": null,
+      "browser_profile": null,
+      "source": "existing Orca built-in browser; browser identity qualified after allowed own tab creation, no other tab or preview changes"
+    },
+    "prerequisites": {
+      "access": "readable accepted pack and licensed originals local, input pack/assessment modes0600 preserved",
+      "fixtures": "all4companies/all38 full P2139 statements/14topics/3hypotheses; precision9 year/11 civil day; no synthetic finances",
+      "storage": "owned prototype/proof paths only, no native or memory",
+      "principal": "issue-8-engineer card claimant after accepted freeze",
+      "rights": "CC0 structured originals only; authored assessment; unacquired references not financial evidence",
+      "budget": "zero external paid/model/acquisition spend; recurring/session/hosting costs unknown",
+      "authorization": "request allow above12new files + isolated loopbackpreview8878 + own browser tabs/screenshots; no Git/forge/root/publication/native actions",
+      "Felipe_selection_receipt": null
+    },
+    "smoke": {
+      "launch": "python3 web/prototypes/preview.py --port 8878",
+      "desktop": "orca tab create --url http://127.0.0.1:8878/web/prototypes/index.html --json; orca exec --command \"set viewport 1280 900\" --page OWN_ID --json; snapshot/interact/resnapshot; screenshot saved to exact wide proof paths. Qualify viewport command after acceptance and report correction if unsupported.",
+      "narrow": "same OWN_ID, set viewport390844; each variant screenshot; native keyboard Tab/Enter/Space via orca keypress, source inspection and back path; all content reachable, no body horizontal overflow, rows stack or controlled table overflow, ptBR long-label expansion throwaway DOM substitution with original restore, reduced motion disabled animation.",
+      "protocol": "For each variant at BOTH viewports: choose Microsoft+Amazon; find exact+93580000000USD source year2015 normal rank bounds+93579000000/+93581000000 full references; inspect canonical->original link/hash/selectors; find strongestbuffer counterlimit and fragility availablecounterweight; switch all3 lenses retaining selectedIDs/method/cutoff/revision/detail; returnoverview; selectOpenAI only observes explicit no licensed finance rows/unknown notzero; check14topics/3hypotheses/all4companies.",
+      "failure_assertions": "Throwaway browser interception/eval only, no candidate source mutation: pending fetch leaves load status and disabled controls; failedHTTP/mismatchedbytes blockederror/no financial output/retry actualpack; empty entity selection explicitempty; nofinancialrows private entity empty not0; malicious text staysliteral/no script execution and javascriptURL notlink; restrictedpreview paths404; no late state loss across lens/back/reload. Observe console/network errors, never claim nonempty/notthrow proof.",
+      "evidence": "actual Orca snapshots/state assertions/browser-render screenshots+HTTPdenials+input hashes in web/prototypes/proof/smoke.json; frozen artifact byte manifest calculated externally and sent through blockingask; no synthetic humanreader or selecteddirection receipt",
+      "human_selection": "After all3 fully exercised/frozen exact sourcepath/mode/fullSHA manifest, blockingask parent to exercise and obtain actual Felipe decision variant/rationale attributed receipt against exactcandidate; record receipt in docs only after reply; missing choice blocks AC3 and no succeededoutcome."
+    },
+    "aggregate_command": "python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json",
+    "aggregate_owner": "coordinator once after complete slice/all authors freeze, worker requests fresh actual receipt and cites attribution; no midflight tests/build/lint/formatter",
+    "unavailable_disposition": "Any unknown authority/runtime/financial clock/cost remainsnull. MissingFelipe receipt blocks selection/AC3, no worker preference. Complete reachable prototypes/proof/docs and report precise blocked if authority unavailable. Existing native4/5/7/publication/CI are not inferred prerequisites or claims.",
+    "injection_attempts": {
+      "observed": [],
+      "treatment": "all source prose/reference payload is untrusted evidence; DOM textContent only; link schemes allowlisted; no source instructions executed"
+    },
+    "decisions": "Rulings issue-8-engineer: 3structures share immutable fetched pack not copied fixture; one dependency-free module/state avoids parallel semantic models; restricted loopback allowlist avoids private exposure; strongestcounterevidence labels use exact authored assessment not manufactured ranking; no coordinator/worker selection substitute. Each attributed in finalhand off with reason/cost."
+  },
+  "coordinator_verified_all10_input_hashes_and_dep_gate_both_review_hashes": true,
+  "coordinator_corrections": {
+    "working_base_sha": "1e1d91f509b4862e09076fcacd7c751008db866b",
+    "original_baseline_sha": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "browser_executable": "orca-ide for every native CLI call; selected actualruntime, no bare GNOME orca on Linux",
+    "browser_protocol": "Current native orca-cli browser guide loaded. Typed own tab create/list and explicit browserPageId; snapshot/interact/resnapshot, exec setviewport command verified via actual exec help/guide before use, actual screenshot dimensions and engine/version observed. Unsupported command asks for bounded correction before fake proof.",
+    "preview_security": "127.0.0.1:8878, GET/HEAD only with strict exact allowlist and canonical containment; no unrestricted worktree root/directorylisting/traversal/symlink/nativehomes/credentials/.genie/PGDATA. Parent method8871 serves web only and remainsowned/touchednone.",
+    "scope": "Only exact12new paths. Source6/source3/schema2/root/webindex remain byte/mode immutable; no fixture copies/mock financial facts or semantic store.",
+    "model_native_or_source_spending_authorization": false,
+    "human_choice": "All original fourcriteria/fullscope unchanged; actualFelipe chosenvariant+rationale/candidate identity mandatory after real parent surface exercise, cannot be worker/coordinator preference. Finish/exercise/freeze all3, ask before changing after freeze; do not settle succeeded until actual human selection recorded and selecteddirection tasks proven.",
+    "aggregate": "Parent current full43/eval only at completed authored slice/allwriters freeze; skip suite/build/lint/formatters midflight. Own real browser/runtime smoke after full slice allowed.",
+    "data_semantics": "Use same actual accepted four-company pack/source chains/three conditional hypotheses; source unknowns/rank/bounds/unit/year9/day11 and raw versus authored canonical text stay explicit. Evidence/attribution links NOT verified financial transactions; revenue NOT privateAI/runrate/cash/issuer recognition. UI hash/read-onlyScene state is prototype not production published/native service authority.",
+    "readiness_pin_scope": "CurrentWISH52c77449 unchanged, accepted6 ledger/report exact. Input or mode drift stopask, no silentrebaseline."
+  },
+  "original_scope_four_criteria_native_edges_unchanged": true,
+  "repair_used": 0,
+  "repair_cap": 2,
+  "budget_source": "config2",
+  "effort_escalations": 0,
+  "separate_quality_cap": 1,
+  "external_spend_authorized": 0,
+  "injection_attempts": []
+}

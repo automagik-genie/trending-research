@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-09T22:15:01.333054+00:00",
+  "head": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "branch": "wish/open-intelligence-observatory",
+  "allowed_productpaths": [
+    "web/prototypes/explorer.css",
+    "web/prototypes/explorer.js",
+    "web/prototypes/index.html",
+    "web/prototypes/preview.py",
+    "docs/design/frontier-economics.md",
+    "web/prototypes/proof/smoke.json",
+    "web/prototypes/proof/relationship-wide.png",
+    "web/prototypes/proof/relationship-narrow.png",
+    "web/prototypes/proof/timeline-wide.png",
+    "web/prototypes/proof/timeline-narrow.png",
+    "web/prototypes/proof/questions-wide.png",
+    "web/prototypes/proof/questions-narrow.png",
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md",
+    "integrations/dsh/qualification/sandbox-readiness.json",
+    ".genie/wishes/open-intelligence-observatory/WISH.md"
+  ],
+  "actual_target_numstat": "132\t8\t.genie/wishes/open-intelligence-observatory/WISH.md\n23\t8\tdocs/design/frontier-economics.md\n9\t1\tdocs/integrations/cordis.md\n21\t6\tdocs/integrations/dsh.md\n8\t2\tweb/prototypes/explorer.js\n-\t-\tweb/prototypes/proof/questions-narrow.png\n-\t-\tweb/prototypes/proof/questions-wide.png\n-\t-\tweb/prototypes/proof/relationship-narrow.png\n2\t1\tweb/prototypes/proof/smoke.json\n-\t-\tweb/prototypes/proof/timeline-wide.png\n",
+  "existing_staged_targets": "",
+  "source7paths_and_tests_not_in_target": true,
+  "private_BWS_balance_key_path_identity_records_excluded_from_publiccommit": true,
+  "original8_fullreview_and_quality": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-7-final-actual-human-original-acceptance-1.txt",
+    "sha256": "c09eaf0d1a470ecf474d10ce1a0dc511b79a1303ab149c3ccc6e3293421c6605"
+  },
+  "original4_qualifieddocs_no_featureacceptance": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-final-disclosure-and-blocked-original-independent-review-1.txt",
+    "sha256": "6abe71527643ad650d9aacbb90f7c05c1161ecb03ed56d4ec4d8f12700258984"
+  },
+  "all_target_writers_frozen_source8author_andDSHauthor_released": true,
+  "source7codingonlyprospective_data_preparation_not_targetwriter": true,
+  "no_git_mutation_yet": true,
+  "routine_validation_not_used_specific_integration_gate": true
+}

@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "kind": "owner_authorized_cumulative_draft_checkpoint_not_feature_completion",
+  "captured_at": "2026-10-14T21:09:24.900936+00:00",
+  "git": {
+    "initial_roadmap_baseline": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "comparison_baseline": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+    "comparison_baseline_committed_at": "2026-10-10T00:44:04Z",
+    "current_head": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+    "branch": "wish/open-intelligence-observatory",
+    "local_main": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "local_origin_main": "65fe46ef8fde709fa3993cea98b20392b50089d9",
+    "base_branch": "main",
+    "local_origin": "https://github.com/namastex888/trending-research/",
+    "pr_url": "https://github.com/namastex888/trending-research/pull/22",
+    "head_owner": "automagik-genie",
+    "head_branch": "wish/open-intelligence-observatory",
+    "published_checkpoint_commit": null,
+    "head_index_remote_mutated_by_preparation": false
+  },
+  "goal": {
+    "tracking_issue": 1,
+    "children": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "milestones": 5,
+    "original_child_criteria": 80,
+    "native_dependency_edges": 41,
+    "local_accepted_original_plus_quality": [
+      2,
+      3,
+      5,
+      6,
+      8,
+      11
+    ],
+    "unaccepted_originals": [
+      4,
+      7,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "goal_status": "IN_PROGRESS",
+    "milestone_exits_accepted": 0,
+    "dates_assignees_unset": true,
+    "canonical_wish": "../../WISH.md"
+  },
+  "current_diff": {
+    "origin": "Current user/native-worker authored goal changes; packaging did not mutate product/tests/original records",
+    "tracked_numstat": [
+      {
+        "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+        "insertions": 154,
+        "deletions": 8
+      },
+      {
+        "path": "docs/integrations/cordis.md",
+        "insertions": 9,
+        "deletions": 1
+      },
+      {
+        "path": "docs/integrations/dsh.md",
+        "insertions": 21,
+        "deletions": 6
+      },
+      {
+        "path": "tests/test_evidence_contracts.py",
+        "insertions": 6,
+        "deletions": 349
+      }
+    ],
+    "tracked_insertions": 190,
+    "tracked_deletions": 364,
+    "untracked_initial_count": 592,
+    "private_originals_excluded": 6,
+    "initial_to_f429_committed_diff": {
+      "files": 104,
+      "insertions": 17313,
+      "deletions": 400
+    },
+    "source_candidate9_applied": false,
+    "ui_source_changed_by_checkpoint": false
+  },
+  "comparison_metrics": {
+    "cumulative_goal_current": {
+      "product_source": {
+        "files": 17,
+        "bytes": 300606,
+        "physical_lf": 4838
+      },
+      "product_data": {
+        "files": 17,
+        "bytes": 6486035,
+        "physical_lf": 4661
+      },
+      "tests": {
+        "files": 4,
+        "bytes": 49548,
+        "physical_lf": 688
+      },
+      "docs": {
+        "files": 11,
+        "bytes": 314386,
+        "physical_lf": 2540
+      },
+      "evidence": {
+        "files": 641,
+        "bytes": 44838097,
+        "physical_lf": 116628
+      }
+    },
+    "since_f429_current_paths": {
+      "product_source": {
+        "files": 6,
+        "bytes": 55089,
+        "physical_lf": 901
+      },
+      "product_data": {
+        "files": 0,
+        "bytes": 0,
+        "physical_lf": 0
+      },
+      "tests": {
+        "files": 2,
+        "bytes": 16953,
+        "physical_lf": 283
+      },
+      "docs": {
+        "files": 2,
+        "bytes": 36973,
+        "physical_lf": 200
+      },
+      "evidence": {
+        "files": 580,
+        "bytes": 43498314,
+        "physical_lf": 106878
+      }
+    }
+  },
+  "metric_definitions": {
+    "bytes": "Exact current UTF8/binary file byte count, not token/work cost",
+    "physical_lf": "LF bytes; compressed strings/archive containers are not expanded source lines",
+    "cumulative_goal_current": "Current complete safe goal path contents, excluding unrelated pre-goal/private records and new checkpoint packaging",
+    "since_f429_current_paths": "Current file content of changed/new safe paths, not net diff insertions; tracked diff separate",
+    "categories": "product_source=authored executable/web source; product_data=authored/retained data/media; tests; docs; evidence=.genie or qualification/native receipt JSON"
+  },
+  "gates": {
+    "aggregate": {
+      "exit_code": 0,
+      "tests": 45,
+      "failure_names": [],
+      "report": "verification/aggregate.txt"
+    },
+    "scoring_smoke": {
+      "exit_code": 0,
+      "report": "verification/scoring-smoke.txt"
+    },
+    "wish_lint": {
+      "exit_code": 1,
+      "findings": 1,
+      "failure_names": [
+        "verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md: missing Execution Strategy table"
+      ],
+      "report": "verification/wish-lint.txt"
+    },
+    "remote_pr": {
+      "observed_head": "f429a573ddc98ce8aef50520c2e420d1ea883f19",
+      "is_draft": true,
+      "state": "OPEN",
+      "merge_state": "DIRTY",
+      "status_checks": [],
+      "ci_pass": null,
+      "report": "verification/remote-snapshot.json"
+    },
+    "native_7_4_acceptance": "BLOCKED; no new native/paid/candidate execution",
+    "new_ui_acceptance": null,
+    "publication_security_verdict": "pending independent exact-path audit"
+  },
+  "repair_counters": {
+    "source7_source": {
+      "configured": 2,
+      "used": 0,
+      "effort": 0
+    },
+    "source7_prospective_quality": {
+      "cap": 6,
+      "used": 5,
+      "sixth_prepared_only": true,
+      "reset": false
+    },
+    "dsh4_design": {
+      "cap": 3,
+      "used": 3
+    },
+    "dsh4_native_bootstrap_prospective": {
+      "cap": 2,
+      "used": 2
+    },
+    "brain5_isolated_continuation": {
+      "cap": 4,
+      "used": 4
+    },
+    "visual8_source": {
+      "cap": 2,
+      "used": 2
+    },
+    "visual8_quality": {
+      "cap": 1,
+      "used": 1
+    }
+  },
+  "accounting": {
+    "product_model_generations_recorded": 0,
+    "checkpoint_native_calls": 0,
+    "checkpoint_paid_calls": 0,
+    "actual_work_hours": null,
+    "actual_total_cost": null,
+    "actual_coding_cost": null,
+    "actual_time_cost": null,
+    "currency": "UNKNOWN for actual all-cost total; existing USD reservations separate",
+    "existing_budget_reservation_usd": {
+      "total": 20,
+      "DSH": 12,
+      "Brain": 8
+    },
+    "requested_next_comparison_interval_hours_approx": 100
+  },
+  "artifacts": {
+    "publication_manifest": "publication-manifest.json",
+    "external_references": "external-references.json",
+    "complete_external_artifacts": [
+      {
+        "source_locator": "/tmp/oi4-native-extension-design-repair3-full-handoff.txt",
+        "portable_path": "artifacts/oi4-native-extension-design-repair3-full-handoff.txt",
+        "identity": {
+          "bytes": 73211,
+          "lf": 122,
+          "sha256": "dc42f54c928b976188ddbf7fcec764613c0771bbce64f7a83d91a4b33d86b131"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-repair2-before-DRAFT-b491.md",
+        "portable_path": "artifacts/oi4-native-extension-repair2-before-DRAFT-b491.md",
+        "identity": {
+          "bytes": 16518,
+          "lf": 155,
+          "sha256": "b4913fbc63db6c23f14c0d09d47f908c0d996010a4879120f92acafa45c70e63"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-repair2-before-DESIGN-4e895.md",
+        "portable_path": "artifacts/oi4-native-extension-repair2-before-DESIGN-4e895.md",
+        "identity": {
+          "bytes": 83809,
+          "lf": 333,
+          "sha256": "4e89524c84d14479a2cf77f9614383286e231f3a1a010b43852a75742789a7a7"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-design-repair2-full-handoff.txt",
+        "portable_path": "artifacts/oi4-native-extension-design-repair2-full-handoff.txt",
+        "identity": {
+          "bytes": 39942,
+          "lf": 130,
+          "sha256": "fb17ff8965639610aeea095739bdfd74e551880cd1a81185298b4f26905f57d0"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-repair3-before-DRAFT-ce898.md",
+        "portable_path": "artifacts/oi4-native-extension-repair3-before-DRAFT-ce898.md",
+        "identity": {
+          "bytes": 22290,
+          "lf": 178,
+          "sha256": "ce8985b7c48bb1152f6d33b9cb3b4408f636e254577247ad8bba50bedc5aa778"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-repair3-before-DESIGN-621ea.md",
+        "portable_path": "artifacts/oi4-native-extension-repair3-before-DESIGN-621ea.md",
+        "identity": {
+          "bytes": 96908,
+          "lf": 358,
+          "sha256": "621ea7dbbcd88898e4068cc4f06e7caee1be33391c11b968842ed32dd80ec717"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-gated-implementation-complete-independent-plan-review.txt",
+        "portable_path": "artifacts/oi4-gated-implementation-complete-independent-plan-review.txt",
+        "identity": {
+          "bytes": 98486,
+          "lf": 582,
+          "sha256": "cc65c444af1932f3d5a021181ccc633925e46dfc851c50829e7b40b8baf887b7"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-gated-implementation-complete-independent-quality-plan-review.txt",
+        "portable_path": "artifacts/oi4-gated-implementation-complete-independent-quality-plan-review.txt",
+        "identity": {
+          "bytes": 159332,
+          "lf": 370,
+          "sha256": "fd8162214fa3c6b2417f1338a61c771bdc399af7819b9917a2102b07be3b6501"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "full Parent intake pending; checkpoint-priority HOLD"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-design-repair1-full-handoff.txt",
+        "portable_path": "artifacts/oi4-native-extension-design-repair1-full-handoff.txt",
+        "identity": {
+          "bytes": 35764,
+          "lf": 70,
+          "sha256": "66c8ebd3c1438bf341fa1e1515667539d100a725249b903720e670637c954895"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-design-repair3-original-full-review.txt",
+        "portable_path": "artifacts/oi4-native-extension-design-repair3-original-full-review.txt",
+        "identity": {
+          "bytes": 89938,
+          "lf": 148,
+          "sha256": "3583e83c50773c7fa1632a91731af818d5d9789b016ef95975fc62c55bd85f24"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-native-extension-design-repair3-quality-full-review.txt",
+        "portable_path": "artifacts/oi4-native-extension-design-repair3-quality-full-review.txt",
+        "identity": {
+          "bytes": 115040,
+          "lf": 172,
+          "sha256": "74da73de79bfd405a3b4a98b67ba0af26267912e5db96ba9d086ebbca1f2e6ef"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt",
+        "portable_path": "artifacts/oi4-gated-implementation-complete-sdk-build-export-closure-and-bounded-contracts.txt",
+        "identity": {
+          "bytes": 5954426,
+          "lf": 29241,
+          "sha256": "f63bb65d85f99c217ae78bec309b114410c618331f019b8035b8638601c87f67"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi7-corrective8-original-full-C1-C8-independent-review.txt",
+        "portable_path": "artifacts/oi7-corrective8-original-full-C1-C8-independent-review.txt",
+        "identity": {
+          "bytes": 87588,
+          "lf": 157,
+          "sha256": "11381f40e7e397fed1ec0a6c7cccd0e9f1264bd9c5bcc2fe73735a5806c7fcaf"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi7-corrective7-WHOLE-PROSPECTIVE-DATA.json",
+        "portable_path": "artifacts/oi7-corrective7-WHOLE-PROSPECTIVE-DATA.json",
+        "identity": {
+          "bytes": 260400,
+          "lf": 1,
+          "sha256": "eafab1520267da216f8fe826caaf1d13ee940b70e8481f452a9eea5fe8623eb5"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+        "portable_path": "artifacts/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+        "identity": {
+          "bytes": 318376,
+          "lf": 1,
+          "sha256": "814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi7-corrective8-separate-full-privacy-transport-deadline-quality-review.txt",
+        "portable_path": "artifacts/oi7-corrective8-separate-full-privacy-transport-deadline-quality-review.txt",
+        "identity": {
+          "bytes": 89923,
+          "lf": 125,
+          "sha256": "33d29a6e063d35c19bfbcd4e2b2a27aa4a68233241c76a56cf2460a0352743a5"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi7-corrective9-WHOLE-PROSPECTIVE-DATA.json",
+        "portable_path": "artifacts/oi7-corrective9-WHOLE-PROSPECTIVE-DATA.json",
+        "identity": {
+          "bytes": 597919,
+          "lf": 1,
+          "sha256": "04fb8c864a4d16e70d345440361d12d84b8b5d43050433962cc3439b711e67b5"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      },
+      {
+        "source_locator": "/tmp/oi-goal-checkpoint-coordinator-state.json",
+        "portable_path": "artifacts/oi-goal-checkpoint-coordinator-state.json",
+        "identity": {
+          "bytes": 107254,
+          "lf": 70,
+          "sha256": "ab2f284b1426345d1406ebd1bdf7813f8768ca5252ba8e5f18fb4c080e8c7ec3"
+        },
+        "classification": "INCLUDE",
+        "byte_exact": true,
+        "provenance": "goal-owned immutable prospective DATA / full independent review / public SDK closure inventory / coordinator chronology",
+        "execution_authority": false,
+        "lifecycle": "retained evidence; no feature acceptance implied"
+      }
+    ],
+    "private_derivatives": [
+      {
+        "source_record": ".genie/wishes/open-intelligence-observatory/readiness/actual-user-confirmed-exact-BWS-secret-fresh-product-ownership-and-isolated-custody-admission.json",
+        "portable_path": "private-derivatives/actual-user-confirmed-exact-BWS-secret-fresh-product-ownership-and-isolated-custody-admission.json",
+        "classification": "INCLUDE",
+        "identity": {
+          "bytes": 2534,
+          "lf": 44,
+          "sha256": "30bc3e381751ba4e0dda3c7082c33d05f2dd35c20ee10f038ec4b0493178eee1"
+        },
+        "source_identity": {
+          "opaque_id": "private-original-01",
+          "content_digest": null,
+          "note": "Private original retained locally unchanged; no private-content hashes exported"
+        },
+        "omitted_fields": [
+          "actual_identifier_metadata_only",
+          "authorized_next",
+          "exact_secret_ID",
+          "exact_secret_key_name",
+          "organization_ID",
+          "question",
+          "saved_BWS_auth_verified0600_and_authenticated.path",
+          "saved_BWS_auth_verified0600_and_authenticated.sha256"
+        ]
+      },
+      {
+        "source_record": ".genie/wishes/open-intelligence-observatory/readiness/user-BWS-value-free-secret-identifier-UUID-serialization-corrected-actual-metadata.json",
+        "portable_path": "private-derivatives/user-BWS-value-free-secret-identifier-UUID-serialization-corrected-actual-metadata.json",
+        "classification": "INCLUDE",
+        "identity": {
+          "bytes": 1613,
+          "lf": 34,
+          "sha256": "879f095070ca6c9f9771e5b780edb51812ea5ad305dee2cd2c8db111cd61ff48"
+        },
+        "source_identity": {
+          "opaque_id": "private-original-02",
+          "content_digest": null,
+          "note": "Private original retained locally unchanged; no private-content hashes exported"
+        },
+        "omitted_fields": [
+          "previous_failed_safe_metadata_serialization_not_auth_fail.path",
+          "previous_failed_safe_metadata_serialization_not_auth_fail.sha256",
+          "result.matching_metadata"
+        ]
+      },
+      {
+        "source_record": ".genie/wishes/open-intelligence-observatory/readiness/user-authorized-saved-BWS-authentication-and-project-metadata-only.json",
+        "portable_path": "private-derivatives/user-authorized-saved-BWS-authentication-and-project-metadata-only.json",
+        "classification": "INCLUDE",
+        "identity": {
+          "bytes": 1916,
+          "lf": 44,
+          "sha256": "0790fa4cc0628d856dd75b1e2176957656e2e80946d5f4080375536454ed0edc"
+        },
+        "source_identity": {
+          "opaque_id": "private-original-03",
+          "content_digest": null,
+          "note": "Private original retained locally unchanged; no private-content hashes exported"
+        },
+        "omitted_fields": [
+          "actual_BWS_projectmetadata_result.projects",
+          "private_token_custody.path",
+          "private_token_custody.user_lookup_authorization"
+        ]
+      },
+      {
+        "source_record": ".genie/wishes/open-intelligence-observatory/readiness/user-confirmed-BWS-product-secret-isolated-custody-and-actual-provider-account-model-metadata.json",
+        "portable_path": "private-derivatives/user-confirmed-BWS-product-secret-isolated-custody-and-actual-provider-account-model-metadata.json",
+        "classification": "INCLUDE",
+        "identity": {
+          "bytes": 2421,
+          "lf": 47,
+          "sha256": "6afd91a68433f6acb90a04d2b44cb218e9032ce6306d7c7f2b69bf3a7661996f"
+        },
+        "source_identity": {
+          "opaque_id": "private-original-04",
+          "content_digest": null,
+          "note": "Private original retained locally unchanged; no private-content hashes exported"
+        },
+        "omitted_fields": [
+          "actual_user_exact_secret_ownership",
+          "result.private_key_path",
+          "result.provider_balance",
+          "result.provider_models",
+          "result.secret_ID",
+          "result.secret_key_name"
+        ]
+      },
+      {
+        "source_record": ".genie/wishes/open-intelligence-observatory/readiness/user-confirmed-private-product-key-parent-stat-only-custody-and-paid-admission-hold.json",
+        "portable_path": "private-derivatives/user-confirmed-private-product-key-parent-stat-only-custody-and-paid-admission-hold.json",
+        "classification": "INCLUDE",
+        "identity": {
+          "bytes": 2002,
+          "lf": 37,
+          "sha256": "dc5b02cb88ac8f5dec88d1c6147bec1c554201b91b76a0437af95d0879c15940"
+        },
+        "source_identity": {
+          "opaque_id": "private-original-05",
+          "content_digest": null,
+          "note": "Private original retained locally unchanged; no private-content hashes exported"
+        },
+        "omitted_fields": [
+          "path",
+          "user_confirmed_product_ID"
+        ]
+      },
+      {
+        "source_record": ".genie/wishes/open-intelligence-observatory/verification/user-authorized-BWS-saved-token-filename-and-private-custody-only.json",
+        "portable_path": "private-derivatives/user-authorized-BWS-saved-token-filename-and-private-custody-only.json",
+        "classification": "INCLUDE",
+        "identity": {
+          "bytes": 1155,
+          "lf": 27,
+          "sha256": "b5597be711f1ca534b4e6092821ca68418020cdf726cbc5ceefea7eabcf0a00e"
+        },
+        "source_identity": {
+          "opaque_id": "private-original-06",
+          "content_digest": null,
+          "note": "Private original retained locally unchanged; no private-content hashes exported"
+        },
+        "omitted_fields": [
+          "path",
+          "user_lookup_authorization"
+        ]
+      }
+    ],
+    "external_complete_files": 18,
+    "external_complete_bytes": 8247124,
+    "native_state": "verification/native-state.json"
+  },
+  "authority": "DATA ONLY; fresh runtime rebind and exact current formal admission required. This checkpoint never resets grants/budgets or reduces original objective."
+}

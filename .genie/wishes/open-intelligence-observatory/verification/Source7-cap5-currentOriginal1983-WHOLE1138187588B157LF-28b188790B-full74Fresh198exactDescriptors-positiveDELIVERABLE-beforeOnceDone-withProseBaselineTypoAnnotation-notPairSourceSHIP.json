@@ -1,0 +1,537 @@
+{
+  "report": {
+    "path": "/tmp/oi7-corrective8-original-full-C1-C8-independent-review.txt",
+    "bytes": 87588,
+    "LF": 157,
+    "sha256": "11381f40e7e397fed1ec0a6c7cccd0e9f1264bd9c5bcc2fe73735a5806c7fcaf",
+    "mode": "0600"
+  },
+  "question": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/Source7-cap5-currentOriginal1983-ACTUAL-WHOLE28b1-reportBeforeOnceDone-nativeBody.txt",
+    "bytes": 88790,
+    "LF": 158,
+    "sha256": "06b5e2637aa81a0fad7c9eb470b84db1ec2744aa00ab7da89a9a0fc3193d2cb3",
+    "mode": "0600"
+  },
+  "all74freshactualguards": [
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/contracts.py",
+      "bytes": 22505,
+      "LF": 354,
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/brain.py",
+      "bytes": 12768,
+      "LF": 220,
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/model.py",
+      "bytes": 5908,
+      "LF": 83,
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/cordis.mjs",
+      "bytes": 2646,
+      "LF": 70,
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/__main__.py",
+      "bytes": 2361,
+      "LF": 52,
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/receipts.json",
+      "bytes": 11997001,
+      "LF": 30,
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/python_adapter.py",
+      "bytes": 8901,
+      "LF": 122,
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/python-pipeline.md",
+      "absent": true
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/manifest.json",
+      "absent": true
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/test_investigation.py",
+      "bytes": 3439,
+      "LF": 53,
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/test_evidence_contracts.py",
+      "bytes": 13514,
+      "LF": 230,
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/WISH.md",
+      "bytes": 126131,
+      "LF": 1157,
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/contracts/evidence.md",
+      "bytes": 28218,
+      "LF": 173,
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/schemas/evidence.schema.json",
+      "bytes": 12261,
+      "LF": 153,
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/evidence_contracts.json",
+      "bytes": 13033,
+      "LF": 53,
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/evidence.json",
+      "bytes": 294150,
+      "LF": 200,
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/sources.json",
+      "bytes": 109773,
+      "LF": 843,
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/assessment.md",
+      "bytes": 52115,
+      "LF": 544,
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native_qualification.py",
+      "bytes": 48211,
+      "LF": 825,
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native-receipts.json",
+      "bytes": 550314,
+      "LF": 43,
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native-tools.json",
+      "bytes": 17422,
+      "LF": 510,
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/cordis.md",
+      "bytes": 12132,
+      "LF": 62,
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/receipts.json",
+      "bytes": 10949,
+      "LF": 185,
+      "sha256": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/web/data.json",
+      "bytes": 4223271,
+      "LF": 1,
+      "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/features_a.json",
+      "bytes": 105582,
+      "LF": 0,
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/features_b.json",
+      "bytes": 105962,
+      "LF": 0,
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "bytes": 9903,
+      "LF": 34,
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "bytes": 92295,
+      "LF": 320,
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "bytes": 63002,
+      "LF": 233,
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "bytes": 27251,
+      "LF": 112,
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "bytes": 2956,
+      "LF": 22,
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+      "bytes": 4416,
+      "LF": 38,
+      "sha256": "aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json",
+      "bytes": 3461,
+      "LF": 32,
+      "sha256": "e0b95459d2d11b1807674fd7e31284b586f9f8d3d10c4e7e2a98283e5b0f38fb",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-owner-cap3-corrective6-PROSPECTIVE-DATA-ONLY-full-C1-C8-before-preparation-method-gate.json",
+      "bytes": 5916,
+      "LF": 34,
+      "sha256": "3e51fd7e02abae15cb285342c7070d44af0bc18c48cac17039cdf005a3d0b3fd",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-prospective-cap4-ONE-additional-cycle-and-native-DSH-DESIGN-only-final-repair2-human-disagreement-resolution-authority.json",
+      "bytes": 4578,
+      "LF": 37,
+      "sha256": "c2b3131dfa905687c8538d9d86b391492a6a0d386db499c04cf7cc1d29e5dad1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-prospective-diagnostic-repair-1-independent-review.txt",
+      "bytes": 22442,
+      "LF": 154,
+      "sha256": "b3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-independent-review-2.txt",
+      "bytes": 26258,
+      "LF": 115,
+      "sha256": "1274997130447ed001d46f828d2bcad23bcc2da66e83197a329840a572033e81",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt",
+      "bytes": 34164,
+      "LF": 219,
+      "sha256": "3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-full-C1-C8-independent-FIX-FIRST-full-report.txt",
+      "bytes": 26815,
+      "LF": 122,
+      "sha256": "35f912c97a544401ac827dcaa84e0acc2e4e0a2b1af4604de05d942dc4055d46",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-independent-privacy-transport-quality-FIX-FIRST-full-report.txt",
+      "bytes": 26752,
+      "LF": 143,
+      "sha256": "1caa207996399e66a51d60153a7e7f8fbec9c1876d334329c5c3a0b7c64a3a12",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-full-original-C1-C8-independent-2HIGH-FIX-FIRST-report.txt",
+      "bytes": 31908,
+      "LF": 96,
+      "sha256": "51b9c5e16791e1d827ad6656cc88a2f3abd480f9a7667c44fbc00e8b21d3deb1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-separate-privacy-transport-quality-full-3HIGH-FIX-FIRST-report.txt",
+      "bytes": 28857,
+      "LF": 144,
+      "sha256": "9e637207fcc425337aa4b7206e421415c0c693559eafbb37cb4b02c6459a4949",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-full-original-C1-C8-independent-two-HIGH-FIX-FIRST-report.txt",
+      "bytes": 37600,
+      "LF": 141,
+      "sha256": "6277bb7b5289dc1bd0d4f562106728eb40d66494cad7d5d48313ff2a511c6aa7",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-separate-full-privacy-transport-deadline-quality-three-HIGH-FIX-FIRST-report.txt",
+      "bytes": 43431,
+      "LF": 149,
+      "sha256": "07da62a7ea46b0adc5ce7e0eafd93d31ad408c92efa21a1ce52e4f39068186f3",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-corrected-ReplayManifest-prospective-diagnostic-repair-1.json",
+      "bytes": 33425,
+      "LF": 190,
+      "sha256": "844206f7876ad566645303d22c203abaed31ef986112d081f0c5de9b6e76c982",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-final-byte-causal-diagnostic-repair-1-corrected-prospective-data.json",
+      "bytes": 80124,
+      "LF": 191,
+      "sha256": "3d64dc7250eaf0a3c0d7736c434419d80f557863284be9794974c08a2930a021",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+      "bytes": 215816,
+      "LF": 380,
+      "sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-one-complete-corrective-causal-diagnostic-prospective-data-4.json",
+      "bytes": 85554,
+      "LF": 392,
+      "sha256": "ae20ec2ed24d71e2606473baaad63a79195fc54bd7407cd9a1ba0f4e686c3437",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle2-complete-corrective5-whole-PROSPECTIVE-DATA.json",
+      "bytes": 118850,
+      "LF": 696,
+      "sha256": "c97db392d44ce5add695d4491e47be624b4fd3e1f07e69b0f84d469acca4f257",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-WHOLE-PROSPECTIVE-DATA.json",
+      "bytes": 121984,
+      "LF": 545,
+      "sha256": "b12a8ec6b262ead73c805b5171b8e374cbba5ad558bdf98202f6ada41e99bfc1",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-original-native-question-WHOLE-DATA.txt",
+      "bytes": 121713,
+      "LF": 5,
+      "sha256": "a12539fd731f2bc51edf22b5d90af26b10ba7608d2d2d838e0affef67b94cb6f",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-actual-owner-third-prospective-cycle-COMPLETE-both-WHOLE-reports-actualDone-releases-FIX-FIRST-four-HIGH-families-3-of-3-EXHAUSTED-NO-source-smoke-runtime-authority.json",
+      "bytes": 7466,
+      "LF": 104,
+      "sha256": "22bfa4cbe4848bf4f8716532c92866015944c3731c55fba9dce3c65d1db41551",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-quality-FULL149LF-three-HIGH-and-original-WHOLE141LF-conservative-four-family-UNION-positive-review-intake-BEFORE-quality-Done.json",
+      "bytes": 4314,
+      "LF": 23,
+      "sha256": "a5fa5502aca5dfdb9f2a237c2ef6cd61e37eaab95e2f7ec8dac94cef45ab3a94",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-corrective6-explicit-308-TRUE-insertions-and-whole-lossless-seven-group-carrier-full-C1-C8-two-blind-review-admission.json",
+      "bytes": 39801,
+      "LF": 1139,
+      "sha256": "45c0b5794678e49b8a671e4014612a9238064583a8cb64c306403f3cafac3f1c",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle3-corrective6-original-full-before-preparation-method-ACK.txt",
+      "bytes": 15266,
+      "LF": 18,
+      "sha256": "e137cf42a3bab90e4405b5b1427964178a5bae044d2176e07f2fd022d2ca537d",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-corrective6-C7-three-absence-only-and-three-exact-initial-history-artifacts-pre-read-scope-clarification.json",
+      "bytes": 2438,
+      "LF": 35,
+      "sha256": "5c0a62fabc544aa275dddc292973cc82b8dcba216d2c9a9c6675c330939efa76",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap3-corrective6-entire-opaque-DATA-and-actual-34guards-three-source-hashes-308insertions-and-lossless-seven-group-carrier-metadata-intake.json",
+      "bytes": 15813,
+      "LF": 451,
+      "sha256": "4a4845349eb5ec4cebc557ab9db17d7714d3b7a39e8be6abedad4f35a065081b",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-owner-authorized-quality-cycle2-and-native-DSH-extension-design.txt",
+      "bytes": 120136,
+      "LF": 1135,
+      "sha256": "dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-current-six-local-acceptances-and-user-BWS-custody.txt",
+      "bytes": 108506,
+      "LF": 1093,
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-human-cap4-corrective7-WHOLE6983-original-currentcontext-before-ANY-newArtifact-access-preparation-method.txt",
+      "bytes": 36513,
+      "LF": 28,
+      "sha256": "eced700d9512b8c3fffffe282a20df653b8d586083672f4a0834586adaeaecde",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-human-cap4-corrective7-PROSPECTIVE-DATA-only-FULL6983-positive-before-preparation-EXACT61path-access-and-one-inert-output-gate.json",
+      "bytes": 38016,
+      "LF": 578,
+      "sha256": "3a4895721db2aabb65363efd0a89cef054e312c1dbeb33c74eb93b01abdf8285",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-WHOLE0b6-source-author-C6-native-admission-vs-same-primary-publication-deadline-method-clarification-before-seal.txt",
+      "bytes": 4074,
+      "LF": 3,
+      "sha256": "c6b172643ab3923c0c17294fdda8c225c43b9ef63f2695273f307dd94e9293aa",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-C6-deadline-POLICY-require-independent-inner-pre-effect-cutoff-within-existing-two-runner-inert-scope-no-pre-primary-kill-exception.json",
+      "bytes": 17355,
+      "LF": 93,
+      "sha256": "9cc4c41de45d18b9ecf853fabc95a43af56eac41bb0635a750feb737a9280c6a",
+      "mode": "0600"
+    },
+    {
+      "path": "/tmp/oi7-corrective7-WHOLE-PROSPECTIVE-DATA.json",
+      "bytes": 260400,
+      "LF": 1,
+      "sha256": "eafab1520267da216f8fe826caaf1d13ee940b70e8481f452a9eea5fe8623eb5",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-WHOLE-aa93-sealed-source-author-numeric-C7-before-review-access-question.txt",
+      "bytes": 98552,
+      "LF": 1,
+      "sha256": "f7d177c77969816842c682cb62c9482a4f472944cf4ee9464297b471597096bc",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-human-cap4-corrective7-two-NEW-fresh-FULL-original-and-quality-frozen-review-contract-PREPARED-NOT-DISPATCHED.txt",
+      "bytes": 24776,
+      "LF": 44,
+      "sha256": "2f1a7ed46c677f190f207451b2a68464328a719f41d3efcc7f0949b94d72c239",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap4-corrective7-ACTUAL-WHOLE-aa93-positive-opaque-C7-before-twoFresh-review-firstAccess-405trueIns38del367net.json",
+      "bytes": 28275,
+      "LF": 550,
+      "sha256": "5d3abe12ac27a18ab7f4da50d24b5e964fa88950656d2e31de771229c2f50d11",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap4-corrective7-original-FULL207LF-threeHIGH-FIX-FIRST-report.txt",
+      "bytes": 49959,
+      "LF": 207,
+      "sha256": "6f4cfdd99fd644583426dc74f1cb84a4e059884e1239e686aba79946cd287091",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cap4-corrective7-quality-FULL141LF-twoHIGH-FIX-FIRST-report.txt",
+      "bytes": 41112,
+      "LF": 141,
+      "sha256": "1b239d42bd26dfa320ccc08a4b32be1ef71058923c9fb42d31927dc3a8547e68",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-actual-owner-FOURTH-prospective-cycle-COMPLETE-bothWHOLE207141-reports-actualDone-AFTERreleases-conservativeFOURhigh-4of4EXHAUSTED-HOLD-noSourceSmokeNative.json",
+      "bytes": 10302,
+      "LF": 171,
+      "sha256": "2f6c3d0ab101a6e8114906cef96d9aaa8999edb5781bd7df00d31a4bca311c16",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-cap5-ONE-additional-prospective-cycle-and-native-DSH-DESIGN-repair3-ONE-final-extra-repair-authority.json",
+      "bytes": 6581,
+      "LF": 111,
+      "sha256": "c0a519dd4db4a257e231fe58874917324ccf132aa1af3c64ac720c03b0eb01e4",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-source7-cap5-existingONEinertCandidate-MINIMAL-private-publication-ACK-interface-only-authority-noExtraCycle-source-runtime-paid.json",
+      "bytes": 6976,
+      "LF": 74,
+      "sha256": "eb86c20248310720b3a0a936ad7b12ada67a4d5d14cbc2eb570306a53abb0179",
+      "mode": "0600"
+    },
+    {
+      "path": "/tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+      "bytes": 318376,
+      "LF": 1,
+      "sha256": "814f7a95b27865f658522b394b960157852e00fd814746e65ef52356331157d7",
+      "mode": "0600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/source7-cap5-SEALED814f-ENTIRE318376B-directopaque-C7all3actual1106ins37del1069net-ALL72-198refs222unique89035763B-bounded-beforeBothFreshFULLreviewers.json",
+      "bytes": 123066,
+      "LF": 2028,
+      "sha256": "c710a9ad1541f8f8ff34249b70c77f0bed647dfc7b9786bf96c4c9cefcc25c8a",
+      "mode": "0600"
+    }
+  ],
+  "all74report_inventory_exact": true,
+  "all198descriptor_identity_multiset_exact": true,
+  "full_report_and_native_question_read_EOF": true,
+  "own_independent_verdict": "SHIP boundedPROSPECTIVEDATA CRITICAL0 HIGH0 only",
+  "positive_body": "WHOLEnative28b1 88790B158LF06b5 and ENTIREowned11381 report87588B157LF read THROUGHREVIEW_END/EOF; actualquestionfullreportsuffix byteequalstoredfile. All74reportedOWNbefore=after rows MATCHfrozen AND Parentfreshactual74; all198complete decodeddescriptorB/LF/SHA multiset byteidentities EXACTMATCH Parentactualwholeopaque decoded198refs/151unique68732718B +inputs/candidate222unique89035763B; all3completefutureprogram identities/fullcanonical8bcc actual1106TRUEins37del1069net match prioropaquegate; 3futureabsencesretained. FULLalloriginalC1-C8/F1-F4/fourcurrentfamilies/allhistory/old7/R1R4/130wires/23methodACK15schedules/current25actualACK19schedules/wholeP1P2P3owningflows/rights40spans/4originalgzip/prooflimits/ownvalidatornegativecontrols reviewedasYOURindependentreport, notParentcodeSemantics orrerun. POSITIVE completed FULLindependentORIGINALstatic reviewDELIVERABLE intake ONLY forTask214d/currentctx1983. PreserveYOUR boundedPROSPECTIVEDATA SHIP0CRITICAL0HIGH, currentfour staticclosure explanations/opposedhistory, all4featureBLOCKED_NOTRUN/f6LOSTUNKNOWN. Missing separatefullqualityreport preventsfullpair/sourceapplication/qualifiedSAFEsmoke, native/paid stillnotgranted. ACTUALOWNERnewconditionalpermission onlyAFTERBOTHFULLSHIP thenSEPARATEworkerEXACT814fapply+separatelyqualifiedsafechangedpathsmoke; Sourcectx1b2alreadyactualFAILEDpreparationonly/released, not activeauthor/SourcefeatureDone. No newsource/candidate/repaircycle6/reset/peernewreport/fixtureparser/helper/vector/runtime/materialization/card/Genie/ledger/Git edits. Report staysIMMUTABLE; no semanticrereview orreportrewrite requested. Deliveryannotation: C7 prose line P1 baseline quotes d75f91efb7ac90edb1b50be7fb7f56720756e36b7c6c018a77e8edc97bf47f2, while YOURexact74guardregister ANDactualbaseline unambiguouslybind CORRECT d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2. This is retained as nonblocking prose/transcription discrepancy, NOTsourceHIGH/Sourcecriteriachange/candidatebaselinewaiver; fullmachineinventory/canonical actualopaqueproof controls. In nativeDone confirm correctfrozenbaseline binding in your ownsummary, no extraoutput/quoteediting. Checkcurrentnativefollowups then exactonceactualworkerDone succeeded for completeREADONLYreviewdeliverable withrealreportpath, thenidle; Parent receivesactualtypedDone and releasesAFTERDone BEFOREdeliveryACK, no selfrelease. NoSourceTask/claimReport/CardDone/originalfeature/runtime promotion. All20/80/41/5/sixhistorical local/unsetdatesassignees/stock2no3/Brain4no5/model0USD20DSH12Brain8codingstorageallinUNKNOWN preserved.",
+  "report_prose_baseline_typo": "nonblocking annotation; exact74register+actualcanonicaldiff bind correctd75f91 actualsource; no fabricated or re-pinnedSourcebaseline",
+  "no_parent_source_semantics_or_pair_feature_permission": true
+}

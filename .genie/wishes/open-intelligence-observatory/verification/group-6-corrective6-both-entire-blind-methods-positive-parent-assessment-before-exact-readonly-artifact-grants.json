@@ -1,0 +1,179 @@
+{
+  "at": "2026-10-10T06:21:50.991216+00:00",
+  "wholeMethodsActuallyRead": [
+    "msg_7738d66bc717 9941B5LF4951794a2b99365c28727620b8bed764b17510f814e194f3a0544e3294f6cc79",
+    "msg_5cf9c8750968 9656B1LF0320c66b3c52470a56ccc29d50bf376f01888f972059c98623155daf1e565d73"
+  ],
+  "assessment": "ACCEPT both entire pre-artifact frozen methods: original FULLC1C8+all4feature vs separate quality FULLC1C8/security/privacy/protocol/deadline/custody/maintenance/performance; all3currentHIGH/oldH1H2H3M3R1R2Q1-Q6M1M2/fullhistories/all3programs/wholeDiff/current34/full7fixturegroups and48refs31unique completewires up to16777218B. LABnotrealNative.Never featureSHIPfromstaticzeroHIGH. No artifact access beforethis actualreply",
+  "exactReadonlyPathset": [
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/contracts.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/brain.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/model.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/cordis.mjs",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/__main__.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/evidence/receipts.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/observatory/python_adapter.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/python-pipeline.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/manifest.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/test_investigation.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/test_evidence_contracts.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/WISH.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/contracts/evidence.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/schemas/evidence.schema.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/evidence_contracts.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/evidence.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/sources.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/assessment.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native_qualification.py",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native-receipts.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/brain/qualification/native-tools.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/docs/integrations/cordis.md",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/integrations/dsh/qualification/receipts.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/web/data.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/features_a.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/tests/fixtures/features_b.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-actual-owner-cap3-corrective6-PROSPECTIVE-DATA-ONLY-full-C1-C8-before-preparation-method-gate.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle2-complete-corrective5-whole-PROSPECTIVE-DATA.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle2-complete-corrective5-original-native-question-whole-DATA.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-one-complete-corrective-causal-diagnostic-prospective-data-4.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-full-original-C1-C8-independent-2HIGH-FIX-FIRST-report.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-separate-privacy-transport-quality-full-3HIGH-FIX-FIRST-report.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-full-C1-C8-independent-FIX-FIRST-full-report.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-independent-privacy-transport-quality-FIX-FIRST-full-report.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-independent-review-2.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-full-snapshot-failed-native-receipts-1.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-current-six-local-acceptances-and-user-BWS-custody.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-owner-authorized-quality-cycle2-and-native-DSH-extension-design.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-WHOLE-PROSPECTIVE-DATA.json",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-original-native-question-WHOLE-DATA.txt",
+    "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-corrective6-explicit-308-TRUE-insertions-and-whole-lossless-seven-group-carrier-full-C1-C8-two-blind-review-admission.json"
+  ],
+  "historicalMetadataRecoveredNoSourceSemantics": [
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle2-complete-corrective5-whole-PROSPECTIVE-DATA.json",
+      "bytes": 118850,
+      "lf": 696,
+      "sha256": "c97db392d44ce5add695d4491e47be624b4fd3e1f07e69b0f84d469acca4f257",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cycle2-complete-corrective5-original-native-question-whole-DATA.txt",
+      "bytes": 115256,
+      "lf": 3,
+      "sha256": "20732439f71fae6dd39bfda8bb8ea9a05c1bbaa16310b1d960942c27a72b654f",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-one-complete-corrective-causal-diagnostic-prospective-data-4.json",
+      "bytes": 85554,
+      "lf": 392,
+      "sha256": "ae20ec2ed24d71e2606473baaad63a79195fc54bd7407cd9a1ba0f4e686c3437",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json",
+      "bytes": 215816,
+      "lf": 380,
+      "sha256": "dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-full-original-C1-C8-independent-2HIGH-FIX-FIRST-report.txt",
+      "bytes": 31908,
+      "lf": 96,
+      "sha256": "51b9c5e16791e1d827ad6656cc88a2f3abd480f9a7667c44fbc00e8b21d3deb1",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-owner-cycle2-corrective5-separate-privacy-transport-quality-full-3HIGH-FIX-FIRST-report.txt",
+      "bytes": 28857,
+      "lf": 144,
+      "sha256": "9e637207fcc425337aa4b7206e421415c0c693559eafbb37cb4b02c6459a4949",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-full-C1-C8-independent-FIX-FIRST-full-report.txt",
+      "bytes": 26815,
+      "lf": 122,
+      "sha256": "35f912c97a544401ac827dcaa84e0acc2e4e0a2b1af4604de05d942dc4055d46",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-independent-privacy-transport-quality-FIX-FIRST-full-report.txt",
+      "bytes": 26752,
+      "lf": 143,
+      "sha256": "1caa207996399e66a51d60153a7e7f8fbec9c1876d334329c5c3a0b7c64a3a12",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-full-C1-C8-independent-review-2.txt",
+      "bytes": 26258,
+      "lf": 115,
+      "sha256": "1274997130447ed001d46f828d2bcad23bcc2da66e83197a329840a572033e81",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-complete-prospective3-independent-privacy-transport-quality-2.txt",
+      "bytes": 34164,
+      "lf": 219,
+      "sha256": "3ae2e63397d3ef667325b7a0144a08d2b8b4845ce57f3cd2c191a90b036062c5",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-full-snapshot-failed-native-receipts-1.json",
+      "bytes": 11997001,
+      "lf": 30,
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-current-six-local-acceptances-and-user-BWS-custody.txt",
+      "bytes": 108506,
+      "lf": 1093,
+      "sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/WISH-before-owner-authorized-quality-cycle2-and-native-DSH-extension-design.txt",
+      "bytes": 120136,
+      "lf": 1135,
+      "sha256": "dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-WHOLE-PROSPECTIVE-DATA.json",
+      "bytes": 121984,
+      "lf": 545,
+      "sha256": "b12a8ec6b262ead73c805b5171b8e374cbba5ad558bdf98202f6ada41e99bfc1",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-original-native-question-WHOLE-DATA.txt",
+      "bytes": 121713,
+      "lf": 5,
+      "sha256": "a12539fd731f2bc51edf22b5d90af26b10ba7608d2d2d838e0affef67b94cb6f",
+      "mode": "0o600"
+    },
+    {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-corrective6-explicit-308-TRUE-insertions-and-whole-lossless-seven-group-carrier-full-C1-C8-two-blind-review-admission.json",
+      "bytes": 39801,
+      "lf": 1139,
+      "sha256": "45c0b5794678e49b8a671e4014612a9238064583a8cb64c306403f3cafac3f1c",
+      "mode": "0o600"
+    }
+  ],
+  "ownReportOutputs": {
+    "ctx_43adf1ba121a": "/tmp/oi7-corrective6-original-full-C1-C8-independent-review.txt",
+    "ctx_f40ff8d2b067": "/tmp/oi7-corrective6-separate-full-privacy-transport-deadline-quality-review.txt"
+  },
+  "noSourceRuntimePermission": "OnlyboundedreadonlyinMemorySourceAST/JSON/hexXZ/gzipASDATA permitted; no candidate/vector/helper/source import/exec/compile/materialization/run or product/node/SDK/native/PG/docker/model/private/network/Git/card/docs. No newpeerreport/council/subagents. Exactly ownTMP report38000B190LF0600. 34guards includes2absence notpermission tocreate. DistinctlaterCode+SafechangedpathSmokeThenNativeactivationunmet; cap3used2beforecurrentreviews nofourth/reset/SourceB2backdoor. Zero productmodels/shared20allcostUNKNOWN. Allfeaturecriteriaunaccepted. ActualDoneonce thenparentfullpositiveReview/releaseAFTERDoneBEFOREACK. ParentneverCodeReviewer."
+}

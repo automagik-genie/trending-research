@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-10T00:34:38.294294+00:00",
+  "task": "task_2bbfe79e0b5f",
+  "dispatch": "ctx_0c242e837d41",
+  "originalcard": "t_muz1j39160558b4b",
+  "actual_owner_authority": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+    "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec"
+  },
+  "current_WISH": {
+    "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+    "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+    "bytes": 126131,
+    "mode": "0600"
+  },
+  "priorWISH_dc6_exacthistorical_copy": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/WISH-before-owner-authorized-quality-cycle2-and-native-DSH-extension-design.txt",
+    "sha256": "dc6a2d8f92f0f47721357a387ddd09475126c581eb50d73e70f702c83e81aa3b"
+  },
+  "qualified_DATA4_history": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-one-complete-corrective-causal-diagnostic-prospective-data-4.json",
+    "sha256": "ae20ec2ed24d71e2606473baaad63a79195fc54bd7407cd9a1ba0f4e686c3437"
+  },
+  "full_original_c1_c8_FIXFIRST": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-full-C1-C8-independent-FIX-FIRST-full-report.txt",
+    "sha256": "35f912c97a544401ac827dcaa84e0acc2e4e0a2b1af4604de05d942dc4055d46"
+  },
+  "separate_quality_FIXFIRST": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-6-one-corrective4-independent-privacy-transport-quality-FIX-FIRST-full-report.txt",
+    "sha256": "1caa207996399e66a51d60153a7e7f8fbec9c1876d334329c5c3a0b7c64a3a12"
+  },
+  "budget": "qualitycap2 total used1 BEFOREcompletecorrective5+freshreviews; firstcycle1/1EXHAUSTED immutable, noreset. SourceB2used0/config2/effort0 remains. OneadditionalDATAcorrectivecycle2/2 only, no3rdpermission.",
+  "before_anysource_runtime": "ONLYcompleteCORRECTIVE5 PROSPECTIVE DATA. No source/candidatefiles/scripts/materialization/vectors/LAB/PG/provider/secret/model/Git/cards. Readyreportnativequestion carrieswhole candidate source+inner+outer+diff/newcurrentbaseline11/currentinput19+ownerauthoritynewpins/no omitted footer+ALLguards+all4fixtures + alloldclosures. Preservetwoabsent/currentd75/0b0; futurebrainpin explicitfutureNOTcurrent.",
+  "required_findings": "All3distinctHIGH (qualityH1=originalF1 exactwholecontentenvelope completeness/rejectALLunrecognized/dropped nodes; H2 validboundedprimarypublishedontoexternalretainedchannelbeforeouterownpotentialblockingcleanup, cleanupadditive; H3 parser/canonicalizationexceptions includingRecursionError/OverflowError preserveactualreceivedbytes/digest+constant safephase, EOFseparate) ANDmediumM3strictRPCidtype/booldecline. PreserveoldR1/R2/Q1-Q6/M1/M2 closures, nativeall86toolsexactcatalog, ownedselectedPID/source fullmanifest, nullablecause strictabort/preflight retainedPGdata genuinelyfailclosed/no payload/text/nativeidentifiers leak. No invented causecode/truncation fallback/completeflag inferredfromnonempty.",
+  "criteria": "Full unchangedfrozenC1-C8/C7SAFEwitnessoptional API tosole__main__None caller scope. Same11paths2permanentmutations1700forecast2000hard25files. Exactcomplete inner/outer/source replacementdiffactualinsert/delete/net/linecounts/hashbytes beforeblindaccess; ifbeyond216insertions25filesforecastamendment explicitrequestedbeforeanysourcechange. SourceB notqualitybackdoor. ExistingONEreadonlypgreadinessprobe/currentatomictemp/2/tmp runners unchanged; nonewStore/WitnessFile/semanticDB.",
+  "guards": "Re-readactualcurrentinputsandbaseline11; newWISH260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743 replaceshistoricaldc6ONLYcurrentpin. Preserveoldreplays/manifests/cohorts/clocks/source3stockfailure2/2/source5actual4/4 no fifthqualifier. Allrootcounterfactuals preserved; no newsnapshotclock/paging/reimport/31kgetgetter/newexperimentalformat.",
+  "after_completeDATAonly": "ParenttwoNEWblindfullcriteria/methodACKs BEFOREartifactaccess, verifyopaqueDATAhash/count/boundaryamendment THENaccess, bothfulloriginal+separatequality0HIGH required. IfFIX-FIRST/BLOCKED cycle2/2spent hold/ownercall, nofurtherprep. No productionbyteapplyorsafechangedpathsmoke/nativeactivation bythisgate. Separateexactpostreviewparentgate mandatory; paid/model0, totalallcostUNKNOWN."
+}

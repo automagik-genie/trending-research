@@ -1,0 +1,219 @@
+INDEPENDENT READ-ONLY SLICE2 REVIEW — complete prospective diagnostic DATA 3
+VERDICT: FIX-FIRST — six confirmed HIGH privacy/control-plane quality gaps; two MEDIUM risks.
+This is a completed prospective review deliverable, NOT original #7 C1–C8 acceptance, production approval, execution permission, roadmap completion, or parent settlement.
+
+1. REVIEWER, BLIND GATE AND AUTHORITY
+Reviewer terminal: term_b385357a-d759-4f6b-8545-c1dfb323f9b8.
+Task: task_7bf858467e33. Dispatch: ctx_2e039e329794. Native Run: run_b7d6684b2cdd.
+Review date: 2026-10-09 UTC. Independent of source author task_2bbfe79e0b5f / ctx_0c242e837d41 and the coordinator.
+Submitted native blocking question before any target artifact, WISH, baseline, source or dataset access; access manifest identifies that blind question as msg_79fc4e57b71f.
+Parent accepted the frozen criterion/method/risk set but initially explicitly withheld access because the intermediate target was incomplete.
+No target access occurred during that hold. Native blocking inbox waits were used; the blind protocol was not duplicated.
+Explicit access arrived in parent msg_f7a0cf5596ef, delivered as delivery_0be007687bfc, and was acknowledged through the native inbox.
+Parent separately admitted the exact 105 insertions / 7 deletions / 98 net-line C7 metadata amendment BEFORE access, plus the named transient receipt path and one read-only readiness probe as REVIEW DATA ONLY.
+No criterion was added after access. Findings below instantiate the frozen privacy, bounded scalar, request identity, fail-closed and transport-custody risks.
+
+Frozen criterion: bounded SHIP requires zero HIGH/CRITICAL privacy/control-plane quality findings in the exact proposed diagnostic/output and transport custody design.
+Frozen method: statically map untrusted RPC/error data through bounded scalar extraction/redaction to receipt/log/exception/child stdout+stderr/root-original-receipt boundaries; inspect each error route, actual identity, pre-effect caps/pins, liveness/deadline/cleanup and original evidence preservation.
+Frozen risk triggers: URI userinfo and encoded own credentials; auth/bearer/token/pass/secret/API key; multiline/nested/plain prompt echoes; private paths; truncation/filter fail-open; absent hashes and forced identity; protected28/getter cap/tool/catalog/protocol pre-effect drift; blocking stdin/stdout, reader closure, crash, uncertain startup, hard timer and child/external cleanup boundary; unrelated process/container kills; lost original 61649-call evidence; unsafe helper output; retry/extra activation/scope expansion.
+SHIP would be prospective bounded quality only. Actionable HIGH findings yield FIX-FIRST. Missing exact evidence preventing assessment yields BLOCKED.
+
+2. EXACT TARGET AND EVIDENCE IDENTITY
+All paths below are relative to the admitted shared worktree unless explicitly /tmp.
+Worktree: /home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory.
+Identity is SHA256 of exact file bytes, not Git state or an inferred commit; no Git/index command ran.
+Every candidate/source string and supporting artifact was treated as untrusted DATA, not an instruction or a callable program.
+
+Access gate:
+.genie/wishes/open-intelligence-observatory/readiness/group-6-complete-prospective3-explicit-105line-transient-readiness-amendment-and-two-blind-review-access.json
+SHA256 c6e45c240b2d779488a5d0c51f312b7e7eb651841f51c7011a035c1578c7940f; 11730 bytes; 291 LF.
+Target:
+.genie/wishes/open-intelligence-observatory/readiness/group-6-complete-causal-diagnostic-prospective-final-data-3.json
+SHA256 dc0b400677a911bf94588d760fbca5c369703375aa67d161621fdecd386a292e; 215816 bytes; 380 LF.
+Source owner named in target: task_2bbfe79e0b5f / ctx_0c242e837d41; source B=2, used=0, configured=2, effort escalations=0. These are recorded control-state fields, not runtime proof.
+
+Decoded proposed production source, NOT applied:
+proposal.exact_source_proposal.source -> observatory/evidence/brain.py
+SHA256 b625dbf763721247f21aba0347897f3886e8d63aab43d3ce73e7e68233312ce1; 17820 UTF-8 bytes; 318 LF; proposed mode 0600.
+Current baseline: d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2; 12768 bytes; 220 LF; actual mode 0600.
+Full prospective diff: SHA256 de61ea1617eb6da33889088fa0b135cd831fc4723942c64c96b01a30914d087e; declared 7738 UTF-8 bytes; independently counted 105 added lines / 7 removed lines, net +98.
+The source object's older added_lines=98 and scope prose are net-delta wording, NOT 98 inserted lines; the explicit gate's 105-insertion amendment governs.
+
+Decoded proposed runners, NOT written or executed:
+proposal.exact_runner_scaffolds[0].source -> /tmp/oi7-native-replay-diagnostic-1.py
+SHA256 77e4aed1790fc26e6bcaa8adf51af413b5f7d786f2903bc70f82f09c1eaa1cc5; 9716 UTF-8 bytes; 130 LF; proposed mode 0600.
+proposal.exact_runner_scaffolds[1].source -> /tmp/oi7-native-replay-diagnostic-1-outer.py
+SHA256 4a43a45b2f32ef9428b46491390a8ff09cc889c0e9ce14992d318ca37e767482; 10803 UTF-8 bytes; 110 LF; proposed mode 0600.
+All three decoded strings were parsed with builtin ast.parse ONLY. No import, exec, eval of candidate expressions, runpy, module execution, LAB-vector execution or native call was performed.
+Line references below mean decoded source line numbers at those exact hashes, not the enclosing JSON's escaped-string line.
+
+Supporting DATA identities independently matched:
+- Historical initial plan 844206f7876ad566645303d22c203abaed31ef986112d081f0c5de9b6e76c982; 33425 bytes; 190 LF; NOT target.
+- Historical review .genie/wishes/open-intelligence-observatory/verification/group-6-prospective-diagnostic-repair-1-independent-review.txt: b3c7290042f4f5bdc550b181ede234509fa44e6a9bfb6c37e5a397636eb18bdc; 22442 bytes; 154 LF.
+- Original failed ledger copy .genie/wishes/open-intelligence-observatory/verification/group-6-full-snapshot-failed-native-receipts-1.json: 0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca; 11997001 bytes; 30 LF.
+- integrations/brain/qualification/native-receipts.json: d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e; 550314 bytes; 43 LF.
+- integrations/brain/qualification/native-tools.json: 8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3; 17422 bytes; 510 LF.
+- Current aggregate .genie/wishes/open-intelligence-observatory/verification/native-current-final-human-UI-DSH-disclosure-source7-temporary-aggregate.json: aa3d503ae27acb7e676496bebfbb93bc36de9568a19f35d0c506efa546db949c; 10499 bytes; 187 LF.
+- Current combined freeze .genie/wishes/open-intelligence-observatory/verification/native-current-UI-human-DSH-docs-source7-temporary-freeze.json: 8271f2f43d09bcaf0e657d9c2a7f87e7795ac270a805c3086115b23958c47011; 5565 bytes; 147 LF.
+- WISH bytes match 3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad; 108506 bytes; mode 0600. WISH content was not needed to adjudicate separate full C1–C8 acceptance.
+All 30 admitted baseline11/input19 entries independently matched actual SHA/size/mode or declared absence. Those bytes were read only for DATA identity; none ran.
+The complete decoded outer SOURCE_GUARDS and INPUT_GUARDS arrays were inspected, not inferred from truncated long-line previews.
+
+3. CONCRETE DATAFLOW AND OUTPUT/CUSTODY BOUNDARIES
+RPC stdout -> brain.py _read lines 155–162: parse arbitrary JSON, queue parsed response; decode/OSError becomes constant fatal; EOF becomes constant closed fatal.
+request lines 171–187 -> send/flush -> repeated 30s pending wait -> check fatal and matching ID -> JSON-RPC error object -> NativeError + full parsed-frame digest + safe_native_error.
+call lines 189–220 -> name/brain authority/schema-key gate -> request -> JSON-RPC-error receipt or result receipt -> isError helper or structured/text result decoding -> actual returned native identity fields.
+safe_native_error lines 24–89 -> inspect root/error/structuredContent and at most eight text entries; select an arbitrary error/message/text string; scrub known password variants then regex categories/paths/controls; retain message<=1024 chars/code<=80 chars and complete flag.
+NativeError lines 92–95 -> raw body retained in memory; exception's ordinary text is digest-only. This is not itself a raw-body log, but other exception routes bypass this class.
+inner lines 98–119 -> actual body hash + safe scalars; inner lines 121–127 -> client.calls + close-error type -> canonical result to child stdout.
+outer lines 46–52 -> capture child stdout; discard child stderr; hash child stdout; parse it as a result object.
+outer lines 88–102 -> print result to outer stdout; copy complete old receipt fields/call objects plus diagnostic_repair_1 to O_EXCL 0600 staging, flush/fsync, atomic replace, readback equality, then compact persistence witness.
+outer line 16 -> hard-deadline constant to outer stderr before os._exit.
+Docker start/readiness/stop stderr is discarded. Outer preflight and final inspect check_output have inherited stderr; exception classification does not filter a subprocess's already-written stderr.
+Original root receipt does not get a new accepted native root. Existing status remains BLOCKED_WIDEN. The preserved original failed copy remains immutable independent evidence even if proposed primary receipt persistence fails.
+
+4. CONFIRMED HIGH FINDINGS
+Every finding here is grounded in direct static reading of the exact b625/77e4/4a43 candidate bytes, not an executed vector, a worker's assertion, or an observed production exposure.
+
+Q1 — Arbitrary native text is designated safe after blacklist substitution; plain prompts and omitted credential labels can escape to receipts/stdout/exceptions.
+Locations: brain.py 35–50, 52–69, 73–89, 179, 185, 199, 204–206; inner 101,119,122,127; outer 88–96. Baseline contracts.py 51–53 and __main__.py 47–52 explain the uncaught exception boundary.
+Static trigger DATA: {'error':{'code':-32000,'message':'input was LAB_PRIVATE_PROMPT'}} or message 'pass=LAB_PASS auth=LAB_AUTH'. These are synthetic labels, not real credentials or executed probes.
+The selected message contains no protected known password, URL, recognized credential keyword or absolute path, so the helper's stated substitutions do not remove these strings. They fit its bounds and are marked complete=True.
+Regex line 81 recognizes password, not pass; line 79 recognizes authorization, not auth. Unknown encoded/escaped credential labels and arbitrary unlabelled prompt echoes are not made safe merely by removing control characters.
+Nested error-string payloads are also accepted as whole strings at 52–58; the presence of sensitive material outside recognized regex categories remains possible.
+The code scalar accepts arbitrary strings, too: a short code string containing a plain prompt has the same output route.
+Separately, a response containing {'fatal':'LAB_PRIVATE_PROMPT'} reaches require(..., response.get('fatal',...)) at 179; the normal CLI has no exception sanitizer. That response bypasses the new safe helper and can become exception text. The diagnostic child normally suppresses stderr, but the proposed production source's exception boundary still is not universally safe.
+Impact: direct violation of frozen no-raw-prompt/no-secret safe scalar contract; the receipt and outer stdout expose the selected native string even though it is labelled safe.
+Correction: keep raw data only in non-exported memory/hash custody; export only explicitly admissible causal scalar forms, withholding a message when its safety cannot be established. Filter failure/unsupported free text must produce null/incomplete and abort, not blacklist-success. Restrict exposed code forms without inventing a cause; constant-classify transport fatal exceptions. Do not repair by suppressing original evidence or executing these DATA vectors.
+Provenance: exact-source static branch/regex analysis. No leak was executed or observed on the real native error body, which remains absent.
+
+Q2 — An available code bypasses the incomplete/unsupported causal-message abort.
+Locations: brain.py 65–72,85–89; inner 105–110.
+Static trigger DATA: an error with code -32000 and a message longer than 8192 characters, or any selected message scrubbed to >1024 characters.
+The helper returns a retained code with message=None or complete=False. Inner aborts only if code is None AND (message is None OR incomplete).
+With a code present, the condition is false; status becomes DIAGNOSTIC_REJECTION_CAUSAL_CAPTURE_NOT_COMPLETION and execution proceeds into 28 after-getters even though causal scalar extraction was incomplete/unsupported.
+A generic numeric code is not evidence that the unretained cause has been safely captured. This contradicts the target native_call_bound instruction to stop when shape/message-bound redaction cannot show cause, and the frozen fail-closed criterion.
+Impact: native after-effects continue and the normal diagnostic-rejection status may imply usable causal capture despite explicitly incomplete extraction.
+Correction: define and enforce a single explicit causal-scalar acceptance predicate; incomplete/unsafe/unavailable extraction must abort before after-getters even when an unrelated code exists. Retain the actual hash/code and a named missing-proof field; do not infer native wording or retry.
+Provenance: direct static Boolean/dataflow analysis; no long-string candidate or LAB function was executed.
+
+Q3 — Transport/send/decode failure routes do not retain complete attempted-request/response identity.
+Locations: brain.py 155–187,194–208; inner 80–89,113–119,121–122.
+Receipt creation occurs after request() returns or only in except NativeError. A send write/flush failure, queue timeout, invalid transport/EOF fatal, non-object response, missing result or hash/canonicalization error raises another exception before any call receipt is appended.
+The pending request's arguments/request identity and attempt count are not durably captured on those paths. Inner writes only exception type; actual_tool_attempts is assigned only on the successful terminal path at 113.
+For malformed native JSON, _read discards the actual line before enqueueing a constant fatal. No response-byte hash remains, even though bytes were received.
+For tool text-result JSON decoding, a result hash is retained before decode, but no explicit decode-failure classification/full-frame receipt is recorded. Normal/isError receipts hash the result object; JSON-RPC error receipts hash the full response frame. This is mixed response identity, not uniform actual full request/response identity.
+Initialize/tools-list errors can attach a full error-frame digest to an exception, but inner 117–119 serializes body hash/safe fields, not that frame digest or attempted method/request identity; these calls are outside client.calls.
+Impact: the very timeout/reader-close/decode scenarios named in this slice can lose the last attempted operation identity and received error evidence, preventing reliable attribution without retaining raw content.
+Correction: retain a bounded hash-only attempt record before sending, with exact method/ID and argument/request hashes; distinguish sent/unknown, matching response/error/decode/EOF/timeout phases. Hash received bytes before decoding, and retain an explicit unavailable/null response when none arrived, never a synthetic response hash. Preserve initialize/tools-list and full parsed-frame/result/body distinctions without exporting raw prompt/body/argv/DSN. No extra native request is needed or allowed.
+Provenance: exact-source static inspection of all receipt append/exception branches. This is not a claim that the original native failure was a transport error.
+
+Q4 — Startup cleanup or forced child cleanup can discard a previously captured native diagnostic.
+Locations: brain.py 143–153,302–318; inner 31,74,115–127; outer 47–56,62–70,88–95.
+In the BrainEvidence constructor, except BaseException invokes self.close() before bare raise. If close itself raises (nonzero child exit, forced termination, failed stdin closure, unfinished reader), it replaces the original NativeError/decode exception. The caller never receives a constructed client, so inner client stays None and cannot recover its calls/redactions.
+Therefore an actual initialize/tools-list error whose hash/safe fields were already created at 183–185 can be reduced to only a cleanup exception type by inner 115–119.
+For a later native error, inner stores result fields in memory, then executes client.close() before its single stdout print. A blocked close or native-phase cutoff causes outer to kill the child; the outer ignores any partial stdout on TimeoutExpired and uses its initial result, losing the newly captured causal/error/attempt data.
+This is separate from preserving the historical 61649 old calls: the atomic copy protects those, but does not recover the diagnostic that died before publication.
+Impact: transport-failure custody does not meet the promised capture-before-cleanup evidence preservation; an original failure can be masked by its cleanup failure, and the new diagnosis can vanish.
+Correction: preserve the primary error's bounded receipt separately from cleanup outcome; make cleanup failure additive, not replacement. Emit/stage a safe, bounded captured witness before potentially blocking child cleanup and ensure the outer can retain such a framed witness on deadline/crash, without accepting partial arbitrary JSON as proof. No raw body, source execution, extra start or retry is required by this recommendation.
+Provenance: direct static exception precedence and print-order analysis; no crash or native startup was induced.
+
+Q5 — The final hard timer depends on a potentially blocking stderr write before unconditional exit.
+Locations: outer 13–17,58–59,88–89,109.
+The final 300s handler calls os.write(2, marker) and only then os._exit(124). FD2 is inherited, not proven nonblocking. A full pipe or stalled terminal consumer can block that write indefinitely.
+The one-shot timer has already fired; there is no second hard exit mechanism. Thus the handler does not supply the claimed unconditional 300s bound under the frozen output-I/O liveness trigger.
+A closed/broken stderr descriptor can raise before os._exit as well. This is a structural risk, not evidence that the real terminal has stalled.
+Impact: the exact overall deadline can be violated while emitting its own timeout marker; truthful marker wording does not make the timer hard.
+Correction: make process termination independent of any potentially blocking/erroring output operation; use a bounded/nonblocking best-effort witness path with guaranteed exit in all branches. Retain truthful unknown-custody semantics if no stopped witness exists. A parent-owned external custodian remains necessary after actual outer crash/kill; do not claim in-process finally guarantees cleanup after such termination.
+Provenance: direct static handler ordering at exact 4a43 source; no blocked-fd scenario was executed.
+
+Q6 — Native identity metadata has no size bound for memory_id or revision.
+Locations: brain.py 210–219; inner 90–96; outer 49–52,89–96.
+brain_id and action have bounded regex lengths. memory_id accepts any nonempty ASCII digit string with no maximum; revision accepts any positive int with no range/digit bound. Inner unexpected-success checks likewise only ascii/isdigit and positive int.
+Static trigger DATA: a native memory_id consisting of an arbitrarily long string of digit '7'. It passes the stated format gates and is copied into calls, actual_unexpected_success_identity and binding, then potentially sent to the sole conditional getter and persisted/printed.
+All protected successful getters also enter the same native_identity receipt path, so this is not limited to an unexpected remember acceptance.
+Impact: untrusted scalar metadata/output is not bounded; large identities can consume the deadline/output/storage budget or obscure causal evidence. Numeric formatting is not a size bound.
+Correction: impose explicit conservative native identity size/range acceptance limits consistent with admitted actual IDs/revisions; reject out-of-bound identity before conditional getter/output and retain only hashes plus failure classification. Do not truncate a native ID into another valid identity or launder a client brain ID.
+Provenance: exact-source static regex/type analysis; no large identity was instantiated or passed to candidate code.
+
+5. MEDIUM RISKS / LIMITATIONS, NOT ADDITIONAL HIGH COUNTS
+M1 — Docker inspect stderr is an unfiltered outer output path.
+Locations: inner preflight line 16 (invoked in the outer process via runpy at outer 41–42); outer line 77. These check_output calls capture stdout but inherit stderr. An arbitrary helper/daemon error body can reach outer stderr before the exception-type guard. Start/readiness/stop correctly discard stderr; child stderr is discarded.
+Risk: safe receipt filtering is not sufficient for the process-wide output contract. No particular unsafe Docker message or real disclosure was observed, so this is a boundary risk rather than a claimed actual leak.
+Correction: suppress or privately hash/classify helper stderr at the same boundary; do not dump Docker output or argv/DSN.
+
+M2 — Descendant cleanup and interrupted persistence retain external-custody limits.
+Locations: outer 62–70,93–108; hard_end 15–17.
+Owned child group kill runs only while child.poll() is None. If the group leader exits/crashes but a spawned helper remains, the leader's exit does not itself prove that group has no surviving members. Exact container stop protects the admitted container but not arbitrary host helper liveness.
+Staging is O_EXCL/0600, fsynced and atomically replaced, with normal removal of only a file it created. A hard deadline/crash can leave the staging file; parent disposition is already explicitly required by the proposal. No unrelated file/process deletion is authorized.
+No directory fsync or post-hard-exit state check is available from this read-only review. A host/power crash is not proven crash-durable merely by file fsync.
+Correction: distinguish container stopped witness from complete host helper cleanup, and preserve external cleanup/disposition ownership after actual termination. These are not permission to kill unrelated processes or activate again.
+
+6. EXPECTED UNSAFE/BOUNDARY VECTORS — DATA ONLY, NOT EXECUTED
+- Plain prompt echo in message or code: not recognized by blacklist; Q1.
+- pass=LAB_PASS / auth=LAB_AUTH: omitted labels; Q1.
+- Known own credential and its quote/quote_plus variants: exact string replacement precedes truncation, a positive static control; real passwords/argv/config/env were NOT read.
+- URI userinfo: regex attempts stripping; not universal proof for URL/JSON-escaped or obfuscated forms; no URI was opened.
+- Authorization/Bearer/Basic/token/password/secret/API-key: recognized forms have substitution rules; alternate labels/encoded forms remain unsupported, not fabricated passing cases.
+- Multiline/nested text: control normalization occurs after selection/scrub; it does not make arbitrary echoed prompt data safe; selected error strings are not recursively safety-classified.
+- Private absolute path: generic slash regex exists; it can over-redact URLs/diagnostic syntax, and representation variants are not guaranteed covered. No private path was read.
+- >8192 selected message: null/incomplete; non-null code currently bypasses stop; Q2.
+- >1024 scrubbed message or >80 code: returned prefix; message completeness tracks its bound, code truncation does not independently drive completeness.
+- Missing/null/nonmatching content: helper can return null/incomplete; code-only bypass remains; no cause may be invented.
+- Non-object response / invalid JSON / EOF / stdin failure / timeout: request/response attribution incomplete; Q3.
+- Constructor NativeError plus close failure or child deadline before print: diagnostic precedence/loss; Q4.
+- Stalled outer stderr at timer: hard exit depends on write; Q5.
+- Large digit-only memory_id: unbounded output/conditional getter identity; Q6.
+The proposed inner LAB checks at lines 45–56 were read as DATA. Their bounded_redaction_lab_guards=True assignment is NOT passing evidence; no vector ran.
+
+7. FROZEN CONTROLS THAT ARE POSITIVELY PRESENT
+Identity/cap/pre-effect controls: inner 33–43 pins original receipt/snapshot/qualifier and exact argument digest b41a2dbf9be43c089db4e82553d23626068f130d3c63198e68e4fff887cb8a91 / target canonical bytes 6241702 BEFORE startup. Reconstruction was not executed by this reviewer.
+Protected28: inner 57–67 derives 26 originals from pinned qualifier brain_id, requires 26 unique application/native IDs, includes MS20, appends exact historical/current roots IDs 200/201, and requires 28 unique IDs/positive revisions/expected authority.
+The actual qualifier DATA has all 26 bindings, including entity:microsoft memory_id 20. Original failed receipt DATA has roots 200/201 and brn_63n8pr, matching those checks.
+H3 forced-identity defect is corrected for the unexpected write: inner 90–95 requires actual response brain_id equality and required actual memory_id/revision/action before constructing the binding from response values. No forced client brain ID hides a foreign write response in this path. Size bounds remain Q6.
+Cap: take_tool increments/checks before every guarded getter/remember. Maximum 28 before +1 exact remember +1 conditional getter only on success +28 after =58. No helper in the selected path adds an unguarded tool call. Initialize/tools-list plus one initialized notification are explicitly outside the tool cap.
+Protocol/catalog: BrainEvidence requires serverInfo brain/0.0 and protocol 2025-11-25; live tools result digest is pinned to 387088e0c7c508bb2521a48635757887852f9f9a7fa3ff7c5d8844760325d76b before the before-getters/remember. These match historical qualifier mcp_identity/live_schema_sha256. Public catalog 8ba4 is shipped-not-live and does not prove the live pin itself.
+Full outer guards: exact 11 final-source entries and 19 immutable input entries, regular-file/mode/size/hash/absence checks, are before authorized_cleanup and child startup. Current baseline guards match independently; proposed changed brain bytes are NOT currently applied.
+Scope/isolation: exact owned container 845fa540c621ab48bba9d736718259fefc78e4a7888d67696d95444a1b5587af, OS1001:1001, image cf134a..., no network/ports/privilege, read-only root and four exact binds are specified before activation; native binary hash is pinned. No real operator secret or PGDATA content was inspected.
+Single readiness probe: one pg_isready, no repeat on failure. Single product diagnostic start: no storage restart, fifth qualifier repair, extra activation, full widen or native retry path exists in these sources.
+Different error digest H2: inner 102–104 aborts native after-phase immediately; actual safe fields/hash are attempted first and missing protected-after proof is named. Unavailable/incomplete extraction remains incorrectly conditional on code absence, Q2.
+Deadline H1: concrete native-phase timer215, child maximum210 adjusted to phase time remaining, total300, reserved cleanup, exact docker stop<=30 and final inspect<=5 are now present. Blocking stdin/flush and repeated pending waits are cut off by the outer child deadline on the intended normal supervision path. Final-hard-output defect remains Q5.
+Uncertain startup: authorized_cleanup becomes true before child startup; stop is not conditioned on docker start success. Timeout/crash during start therefore reaches exact stop/inspect in the ordinary outer exception/finally path.
+Stopped witness: requires exact container ID + running=False + stop_exit=0, not finally alone. Directory-retained metadata is separate. No unrelated container selection or broad process kill is used; killpg targets the owned newly created child session.
+Receipt preservation: full old object/calls are retained; O_EXCL 0600 staging + file fsync + replace avoids ordinary in-place truncation; readback compares every old field plus new metadata. Original immutable failed copy survives independently. These controls do not resolve Q4/Q5 or prove a real stopped state in this review.
+Source scope: exactly brain.py and receipts.json permanent mutations proposed; nine other original paths unchanged including two absences. 105insertions/7removed/98net admitted before access, feature estimate1700/hard2000/25files unchanged. No alternate semantic store/schema/paging/architecture cutover admitted.
+
+8. TRANSPORT ERROR ROUTE COVERAGE
+JSON-RPC error: actual parsed-frame digest + error-body digest and selected safe fields in call receipt exist for tool calls; free text unsafe Q1, constructor/handshake custody Q3/Q4.
+Tool isError: actual arguments/result digests + selected safe fields exist; normal NativeError text digest-only; filtering/abort Q1/Q2.
+StructuredContent success: actual identity extraction and write authority validation exist; unbounded scalar Q6; no raw result persisted by intended inner result construction.
+Text success decode failure: result digest exists but route classification/frame identity incomplete Q3; inner does not print the raw JSONDecodeError text.
+Invalid JSON/transport reader failure/EOF: constant fatal marker protects ordinary diagnostic exception text, but actual received bytes hash and pending attempt attribution are lost Q3; malicious parsed fatal can bypass constant marker Q1.
+Send/flush/deadline timeout: no attempt receipt for failed call Q3; outer ordinary deadline supervision/stop is present, with Q4/Q5 evidence and hard-exit limitations.
+Child stderr: discarded by outer; no observed raw child stderr retention. Parent/outer stderr helper path M1 and hard timer Q5 are separate.
+Serialization/child cleanup failure: original old receipt survives normal atomic staging failure; diagnostic witness can be lost before print Q4; persistence failures classify BLOCKED without mutating the original group status.
+
+9. ACTUAL HISTORICAL PROOF — ATTRIBUTED, NOT THIS REVIEWER'S RUN
+Original failed receipt owner: task_2bbfe79e0b5f / ctx_0c242e837d41, exact 0b0ea... copy above.
+It contains 61649 native call objects and status BLOCKED_WIDEN. Last tool is brain_remember; arguments digest b41a2...; result/error response digest f6e1c100ff429eeb582dc0ca422064fc38802b2fd0ae9d9fdb2b476b0fe569c3. Its retained error text is digest-only NativeError, not the original native body.
+Original failure custody DATA records exact container, running=False, stop_exit=0 and pgdata_retained=True. That is historical owner proof, not a new stopped-container inspect by this reviewer.
+Original native qualifier owner: task_1ee57daded7e / ctx_f79253ca87d2; d10c3a... receipt records brn_63n8pr, actual protocol/server/tools pins and stopped retained custody.
+Parent coordinator term_d46a2b58-9d50-46cc-91c4-d8823cb344a5 owns current aa3d... aggregate, recorded 2026-10-09T21:04:51.475985+00:00.
+Its explicit records show unittest discover tests exit0/45OK, eval fixture exit0 and wish lint exit0. These were inspected as attributable stored output, NOT rerun and NOT promoted to candidate/runtime proof.
+They cover the unchanged temporary baseline, not the unimplemented b625 instrumentation, either runner, new diagnosis, full #7 native manifest, remote CI or deployed surface.
+The actual original native cause remains UNKNOWN. Public content schema minLength1/no maxLength is not evidence of a native payload ceiling. Retained framing says ReplayManifest before Scene/root; no Scene/root/full original acceptance is inferred.
+
+10. REVIEW OPERATIONS AND VERIFICATION LIMITS
+Performed: Orca skill-guide/coordination commands, one blind blocking question, explicit-gate inbox/check/ack/waits/heartbeats, read-only admitted DATA/source inspection, builtin json/ast parsing, SHA256/byte/LF/mode/absence comparisons, and the one requested standalone report write.
+No production/source/test/doc/dataset edits; no Git/index/card/forge/Slack; no credential/config/environment-secret/operator/privatePGDATA reads; no containers/native CLI/SDK/SQL/model/provider/browser/server/install/build/test/formatter/lint operations.
+No candidate/LAB/source was executed; no proof-bearing synthetic vector was run; no smoke result was fabricated. The review is deliberately prospective and static under the explicit DATA-only gate.
+Observed verification: access/target exact hashes match supplied pins; candidate source/inner/outer exact decoded hashes match; builtin AST parsing succeeds; all30 admitted actual baseline/input metadata entries match; full diff added/deleted counts match105/7; historical ledger count61649 and last digests match; current aggregate explicit exits were read.
+These observations are sufficient to finish a FIX-FIRST static review deliverable, not sufficient to claim candidate SHIP or actual runtime safety.
+The report's exact SHA256/byte/LF identity is supplied through native worker_done after independent readback; self-referential report hashing is not embedded here.
+
+11. REQUIRED DISPOSITION / NO RELEASE
+The six HIGH findings prevent bounded Slice2 SHIP. Full C1–C8 belongs to the separate acceptance owner; no original acceptance is waived by this review.
+Source author may supply corrected prospective DATA only under parent instruction; this review grants no edit, execution, retry, extra activation, budget reset, paging/new-store/schema, guessed-ID recovery or full-widen authority.
+Parent must fully read/assess both independent reports and own any further production-byte/runtime gate and settlement. Any changed candidate bytes invalidate this verdict for the changed artifact and need re-pinning/review against unchanged criteria.
+Permanent original7 deliverables and whole20 completion remain unaccepted here; actual cause UNKNOWN and all historical contrary evidence is preserved.
+Worker_done succeeded means this independent review deliverable is complete as FIX-FIRST; it is not parent positive assessment or self-release.

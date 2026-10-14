@@ -1,0 +1,451 @@
+{
+  "at": "2026-10-10T06:05:46.043992+00:00",
+  "wholeNativeQuestionBody": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-original-native-question-WHOLE-DATA.txt",
+  "wholeBodyMetadata": {
+    "sha256": "a12539fd731f2bc51edf22b5d90af26b10ba7608d2d2d838e0affef67b94cb6f",
+    "bytes": 121713,
+    "mode": "0600"
+  },
+  "wholeCompactJSON": {
+    "bytes": 118428,
+    "sha256": "4d8994da05573acd8a362b1cba850aa356cd273e76665ecb9195e6a3fec234ac"
+  },
+  "wholePrettyDATA": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-owner-cap3-complete-corrective6-WHOLE-PROSPECTIVE-DATA.json",
+  "wholePrettyMetadata": {
+    "sha256": "b12a8ec6b262ead73c805b5171b8e374cbba5ad558bdf98202f6ada41e99bfc1",
+    "bytes": 121984,
+    "mode": "0600"
+  },
+  "parentNoSourceSemantics": "ProgramsP1P2P3andfullunifiedDiff ASDATAONLY allbytes/LF/hash/diffcounts/paths actualverified; no sourceTextprinted/reviewed/import/eval/exec/compile/materialization. AllCurrent34files hashesmetadataONLY, whitelistedapprovedrepoPathSets beforeRead.No key/private/env/account/PGDATA/nativeBody reads",
+  "actual34CurrentGuardReadbacks": [
+    {
+      "path": "observatory/evidence/contracts.py",
+      "sha256": "0d668af21dea125fc51a4b4e589f8653bcdfe1efea6c851afacf680b28f94c15",
+      "bytes": 22505,
+      "mode": "0600",
+      "lf": 354,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/brain.py",
+      "sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+      "bytes": 12768,
+      "mode": "0600",
+      "lf": 220,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/model.py",
+      "sha256": "80dc7623ff75415b4d59f7d720d7d6c42945ca946d8a6c0888b7bb86668a29e5",
+      "bytes": 5908,
+      "mode": "0600",
+      "lf": 83,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/cordis.mjs",
+      "sha256": "949636ba0cb1841ef669a18d3312b9c736fd9fa5e7aa995a8a66a6e38c262374",
+      "bytes": 2646,
+      "mode": "0600",
+      "lf": 70,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/__main__.py",
+      "sha256": "8fb2aecf5738d3560b8a2ed6bff0e107206c630da2dc0a581c57672026d9888e",
+      "bytes": 2361,
+      "mode": "0600",
+      "lf": 52,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/evidence/receipts.json",
+      "sha256": "0b0ea376ef833b32613a3c150a926f1d0867f8fc68270ce1eb904527a0d074ca",
+      "bytes": 11997001,
+      "mode": "0600",
+      "lf": 30,
+      "exactmatch": true
+    },
+    {
+      "path": "observatory/python_adapter.py",
+      "sha256": "aaaad3a3131901f7112b1bbc9c20c4d10653cc267024275ffe23ed1625034ac1",
+      "bytes": 8901,
+      "mode": "0600",
+      "lf": 122,
+      "exactmatch": true
+    },
+    {
+      "path": "docs/integrations/python-pipeline.md",
+      "actualABSENT": true
+    },
+    {
+      "path": "investigations/frontier-economics/manifest.json",
+      "actualABSENT": true
+    },
+    {
+      "path": "tests/test_investigation.py",
+      "sha256": "c551384a6602174966f503fb643105f4ed73176cd00e9faf6f41c6a6fc94143d",
+      "bytes": 3439,
+      "mode": "0600",
+      "lf": 53,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/test_evidence_contracts.py",
+      "sha256": "13a1655bb9be4906bc667c33efa9486e4eaee5205ebade3d6beba9d1ed94740e",
+      "bytes": 13514,
+      "mode": "0600",
+      "lf": 230,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/WISH.md",
+      "sha256": "260fd630484485aaf27466b9131d20f93c629fd4e2ccd49087a7e1d8b50b0743",
+      "bytes": 126131,
+      "mode": "0600",
+      "lf": 1157,
+      "exactmatch": true
+    },
+    {
+      "path": "docs/contracts/evidence.md",
+      "sha256": "b89b8f17b0504d39483a368c5344f6e974f7d38b610178763fd0f5f1372a372f",
+      "bytes": 28218,
+      "mode": "0600",
+      "lf": 173,
+      "exactmatch": true
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "aebfc00e228ccd3f7c25a570c365b013532abd1ed25dfed8781282501a766b9f",
+      "bytes": 12261,
+      "mode": "0600",
+      "lf": 153,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/fixtures/evidence_contracts.json",
+      "sha256": "48b857151ad0899a130b9f9cc7096bc96fcd59c865883fb887048d93593885b5",
+      "bytes": 13033,
+      "mode": "0600",
+      "lf": 53,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/evidence.json",
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93",
+      "bytes": 294150,
+      "mode": "0600",
+      "lf": 200,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/sources.json",
+      "sha256": "b2335dbc7fa67d53795fe1565c7f5fffc8ec9f54a9ed9daada789a1d5256aa41",
+      "bytes": 109773,
+      "mode": "0600",
+      "lf": 843,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/assessment.md",
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa",
+      "bytes": 52115,
+      "mode": "0600",
+      "lf": 544,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/brain/qualification/native_qualification.py",
+      "sha256": "a8be30e11fbd30a6a8028f3d6c96c11a59c8e57f0a63286158a951cf061d0389",
+      "bytes": 48211,
+      "mode": "0600",
+      "lf": 825,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/brain/qualification/native-receipts.json",
+      "sha256": "d10c3a91b9f309624a94fd5fdfe974263e93743d28174d3b243c1c59f636aa1e",
+      "bytes": 550314,
+      "mode": "0600",
+      "lf": 43,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/brain/qualification/native-tools.json",
+      "sha256": "8ba41b50f89b942bc7468c129ef34f72dad5560f84eb572c05a1dc713d0671b3",
+      "bytes": 17422,
+      "mode": "0600",
+      "lf": 510,
+      "exactmatch": true
+    },
+    {
+      "path": "docs/integrations/cordis.md",
+      "sha256": "ea09cb6a8b99fb647007ac58ad0583600ca937965ff31b03225a6bef2d3ccac2",
+      "bytes": 12132,
+      "mode": "0600",
+      "lf": 62,
+      "exactmatch": true
+    },
+    {
+      "path": "integrations/dsh/qualification/receipts.json",
+      "sha256": "434a289eef95b6875a4062347b5194b96adc8f9f5077733c6dc5d82cf692abdb",
+      "bytes": 10949,
+      "mode": "0600",
+      "lf": 185,
+      "exactmatch": true
+    },
+    {
+      "path": "web/data.json",
+      "sha256": "a2b5010a8955cc73780d696dbbb449dc67e44da0bc9f5effbb70c64c67ffdc36",
+      "bytes": 4223271,
+      "mode": "0600",
+      "lf": 1,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/fixtures/features_a.json",
+      "sha256": "7223cea6b0efc977702bf026627f87bc089f45ad15c925edc2a0ab965c8915b7",
+      "bytes": 105582,
+      "mode": "0600",
+      "lf": 0,
+      "exactmatch": true
+    },
+    {
+      "path": "tests/fixtures/features_b.json",
+      "sha256": "92bbef31ab1540fc73b36ae9b31f722d36d07e02eda62513c6897daa18ee129f",
+      "bytes": 105962,
+      "mode": "0600",
+      "lf": 0,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/P2139-r2547354403.json.bin",
+      "sha256": "666228419f2c6dbe9dceff5f1fbcc05c05c385853c31877494c71b3a2bb49c16",
+      "bytes": 9903,
+      "mode": "0600",
+      "lf": 34,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q2283-r2550576892.json.bin",
+      "sha256": "e42b8f0fb3d1f8ff6f407dae8ca8785bee53a84af8bcd16ccc7ae68c29445dc7",
+      "bytes": 92295,
+      "mode": "0600",
+      "lf": 320,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q3884-r2546229470.json.bin",
+      "sha256": "0d229497867527ed774e0a97ff5160b5e6197e58eed217c507e0bf8d309daeae",
+      "bytes": 63002,
+      "mode": "0600",
+      "lf": 233,
+      "exactmatch": true
+    },
+    {
+      "path": "investigations/frontier-economics/licensed-sources/Q4917-r2554037296.json.bin",
+      "sha256": "268964a13ed18c0ab6b517d8c88b498d74272403ccd00d7205c77e1b22254c6b",
+      "bytes": 27251,
+      "mode": "0600",
+      "lf": 112,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-extra-read-model-quality-cycle-and-native-DSH-extension-design-only-authority.json",
+      "sha256": "7520706ca1cf1435425a13310e8cdb1434c2e02255ee9d7d878fd9546986e6ec",
+      "bytes": 2956,
+      "mode": "0600",
+      "lf": 22,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-owner-authorized-final-quality-cycle2-corrective5-PROSPECTIVE-DATA-ONLY-gate.json",
+      "sha256": "aa1088643777eeae5e176367546d314cc50dd3a940c511a6024a1669c28eba20",
+      "bytes": 4416,
+      "mode": "0600",
+      "lf": 38,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/actual-owner-read-model-quality-cap3-ONE-additional-prospective-cycle-only-authority.json",
+      "sha256": "e0b95459d2d11b1807674fd7e31284b586f9f8d3d10c4e7e2a98283e5b0f38fb",
+      "bytes": 3461,
+      "mode": "0600",
+      "lf": 32,
+      "exactmatch": true
+    },
+    {
+      "path": ".genie/wishes/open-intelligence-observatory/readiness/group-6-actual-owner-cap3-corrective6-PROSPECTIVE-DATA-ONLY-full-C1-C8-before-preparation-method-gate.json",
+      "sha256": "3e51fd7e02abae15cb285342c7070d44af0bc18c48cac17039cdf005a3d0b3fd",
+      "bytes": 5916,
+      "mode": "0600",
+      "lf": 34,
+      "exactmatch": true
+    }
+  ],
+  "futureSourcesMetadataOnlyNOTCurrentApplied": [
+    {
+      "LF": 494,
+      "bytes": 27255,
+      "future_mode": 384,
+      "label": "P1 full prospective source DATA",
+      "path": "observatory/evidence/brain.py",
+      "sha256": "cdbfdd1fc1cd48e9b0537dccb37b655333f042d036679ecc25f74d766a1feede"
+    },
+    {
+      "LF": 179,
+      "bytes": 11928,
+      "future_mode": 384,
+      "label": "P2 full prospective inner runner DATA",
+      "path": "/tmp/oi7-native-replay-diagnostic-1.py",
+      "sha256": "61f418e462db741061ae78e0e6f076ce9cbaea0dd61ffece712e591a494f9c47"
+    },
+    {
+      "LF": 253,
+      "bytes": 18682,
+      "future_mode": 384,
+      "label": "P3 full prospective streaming outer runner DATA",
+      "path": "/tmp/oi7-native-replay-diagnostic-1-outer.py",
+      "sha256": "5a5554d156aa4e662f075985be6a224b4dcd91906b0e339689531f29639e0376"
+    }
+  ],
+  "wholeActualOpaqueDiffMetadataCountsOnly": {
+    "LF": 403,
+    "baseline_sha256": "d75f91efb7ac90ebd1b50be7fb7f56720756e36b7c6c018a77e8edc97b7f47f2",
+    "bytes": 20740,
+    "deletions": 34,
+    "net": 274,
+    "sha256": "11bb0f988237227029a5cbaa02aa58abbac50b2bd0e4027f3c6127f1914f46da",
+    "true_insertions": 308
+  },
+  "actualMechanicalTRUEinsertions308_DELETIONS34_NET274": "notprior23632/netAsInsertions.ManylargereadtoollinefailedCLIcurrentDeliveryReplaycapturedwholewithouttruncation. FullNativebody=payloadQuestion.BackupOriginalc97/51b/9e/historynotmutated",
+  "losslessEntireSevenGroupCarrierMetadata": {
+    "LF": 0,
+    "bytes": 89438,
+    "decoded_bound": 89438,
+    "encoded_bytes": 9408,
+    "encoding": "base64-xz COMPLETE LOSSLESS DATA, not a generator/executable fixture",
+    "sha256": "ca282831fb1952a3d4cf613dbabadf5ab698ced30efcf927cee20e1199ae239e"
+  },
+  "actualMetadataDecoderOnly": "base64strict12544ASCIItransit->XZ9408declaredencoded_bytesBEFOREb64;XZmemlimit64MiB/maxout89439/eofunused0 decodedexact89438B0LFca2828 JSONLISTsevenGroups. Parentinitialshape/byte-countassumptionsfailedBEFOREguardreads butallcarrierfactsMATCH; onlycoordinatorassumptionscorrected, wholeproposalunchanged.No fixture/programsemantics/execution/materialization. ONLYcompleteparentOpaqueDatarecords noSRC/helper/runner/vectorprograms",
+  "SevenGroupStructureONLY": [
+    {
+      "index": 1,
+      "kind": "PURE HELPER INPUT/EXPECTED OUTPUT DATA; NOT RUN",
+      "criterion": "H1=F1/C5",
+      "fieldNames": [
+        "additional_complete_source_vectors",
+        "complete_supported_body",
+        "criterion",
+        "expected_every_incomplete",
+        "expected_supported",
+        "incomplete_bodies",
+        "kind"
+      ],
+      "nestedCountsONLY": {
+        "complete_supported_body": 2,
+        "expected_every_incomplete": 3,
+        "expected_supported": 3,
+        "incomplete_bodies": 8
+      }
+    },
+    {
+      "index": 2,
+      "kind": "BOUNDED EXTERNAL PUBLICATION FIXTURE DATA; NOT RUN; NO NATIVE/MOCK ADAPTER",
+      "criterion": "H2/C6",
+      "fieldNames": [
+        "additional_partial_suffix_utf8",
+        "complete_primary_bytes",
+        "complete_primary_frame_utf8",
+        "complete_primary_sha256",
+        "criterion",
+        "cutoff_scenario",
+        "expected",
+        "kind",
+        "proof_boundary",
+        "unchanged_recovery_prefix_case"
+      ],
+      "nestedCountsONLY": {
+        "expected": 5
+      }
+    },
+    {
+      "index": 3,
+      "kind": "EXACT RECEIVED BYTE FIXTURE DATA; NOT RUN",
+      "criterion": "H3/C5",
+      "fieldNames": [
+        "boundary",
+        "criterion",
+        "kind",
+        "recursion_precondition",
+        "wire_frames"
+      ],
+      "nestedCountsONLY": {
+        "wire_frames": 3
+      }
+    },
+    {
+      "index": 4,
+      "kind": "STRICT HANDSHAKE NUMERIC TYPE FIXTURE DATA; NOT RUN",
+      "criterion": "M3/C5",
+      "fieldNames": [
+        "boundary",
+        "criterion",
+        "frames",
+        "kind"
+      ],
+      "nestedCountsONLY": {
+        "frames": 5
+      }
+    },
+    {
+      "index": 5,
+      "kind": "F1-success-whole-call-branch",
+      "criterion": "C4/C5 full actual call envelope before identity and follow-on tools, not isolated error-helper proof",
+      "fieldNames": [
+        "cases",
+        "criterion",
+        "kind",
+        "not_observed_native_responses"
+      ],
+      "nestedCountsONLY": {
+        "cases": 11
+      }
+    },
+    {
+      "index": 6,
+      "kind": "F2-H2-incremental-prefix-control-flow",
+      "criterion": "C6 valid complete prefix externally retained BEFORE every owned potentially blocking cleanup despite suffix errors; no opaque communicate capture",
+      "fieldNames": [
+        "criterion",
+        "kind",
+        "not_executed",
+        "streams",
+        "timer_and_custody_whole_scenarios_DATA"
+      ],
+      "nestedCountsONLY": {
+        "streams": 8,
+        "timer_and_custody_whole_scenarios_DATA": 6
+      }
+    },
+    {
+      "index": 7,
+      "kind": "F3-native-actual-reader-LF-line-queue-boundaries",
+      "criterion": "C5 native response reader before parse/admit;16MiB is LOCAL capture not server max or causal diagnosis",
+      "fieldNames": [
+        "cases",
+        "criterion",
+        "kind",
+        "not_executed",
+        "queue_cases"
+      ],
+      "nestedCountsONLY": {
+        "cases": 6,
+        "queue_cases": 2
+      }
+    }
+  ],
+  "SourceB2used0_config2_effort0_Ownercap3used2BeforeReview3": "unchanged,noFourth/reset/sourceBbackdoor.All3CurrentHIGHplusoldH1H2H3M3/R1R2Q1-Q6M1M2 fullC1C8/fourOriginalCriteria unaccepted.NextC7explicitnumeric+carrierGate beforeNEWblindMethodsBeforeAccess BOTHFULL0HIGH mandatory thenSeparateSource+SafeSmokeThenSeparateNativeActivation",
+  "currentBaseline9present2absent1214LF12069043B": "confirmed, d75brain/0b0receipts/absent2 andtwoFutureTMP/atomicTempABSENT, futurecdbf494LFnotapplied. Wish260f/owner7520aa10old+e0b3e51newexact unchanged. NativeSource4B1onlyunrelated2designdocs no34guardconflict",
+  "all20_80_41_5_noCI/model0/allCostUNKNOWN/shared20": "sixlocalacceptedf429publishedDraftPR22source8proof actual43already.noRoadmapComplete.NoBrain5th/noDSHstock3"
+}

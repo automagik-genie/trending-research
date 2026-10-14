@@ -1,0 +1,29 @@
+{
+  "owned_handle": "term_86abe2a6-7142-47be-8d27-1ba7ca1312c1",
+  "wait_exit_code": 0,
+  "wait_receipt": {
+    "id": "68c524f4-6b7c-44fb-b4b1-e8ae4bf0b651",
+    "ok": true,
+    "result": {
+      "wait": {
+        "handle": "term_86abe2a6-7142-47be-8d27-1ba7ca1312c1",
+        "condition": "exit",
+        "satisfied": true,
+        "status": "exited",
+        "exitCode": 0,
+        "exitCause": {
+          "kind": "exited",
+          "exitCode": 0
+        }
+      }
+    },
+    "_meta": {
+      "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+    }
+  },
+  "read_exit_code": 0,
+  "exact_marker_lines": [],
+  "no_raw_terminal_output_persisted": true,
+  "vault_or_secret_calls": 0,
+  "no_secret_values_printed_or_copied": true
+}

@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-10T07:46:50.718144+00:00",
+  "wholeBeforeReleasePositiveNativeDoneSettlements": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair1-both-ACTUAL-native-Done9865-and8089-after-WHOLE119118-positive-report-intakes-same-b2-disagreeing-proposal-only-verdicts-before-release-after-Orca-recovery475.json",
+  "actualReleaseReceiptsAfterBothDoneBeforeAnyCurrentAck": {
+    "ctx_2f8487091d79": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"469d8407-86ce-4817-a863-3b0c3af9c6fe\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_2f8487091d79\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"510ed227-07ce-4396-bf48-645366b31cd4\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "469d8407-86ce-4817-a863-3b0c3af9c6fe",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_2f8487091d79",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "terminal",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "510ed227-07ce-4396-bf48-645366b31cd4",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    },
+    "ctx_25039c13ad74": {
+      "exit_code": 0,
+      "stdout": "{\n  \"id\": \"8a022413-706c-4030-bf33-3c9542893265\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_25039c13ad74\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"2f3ba408-6c76-40c7-8e22-6cbe79e29ee1\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+      "stderr": "",
+      "receipt": {
+        "id": "8a022413-706c-4030-bf33-3c9542893265",
+        "ok": true,
+        "result": {
+          "dispatchId": "ctx_25039c13ad74",
+          "state": "released",
+          "processAction": "closed_agent_terminal",
+          "archive": {
+            "source": "terminal",
+            "status": "captured"
+          },
+          "mutation": {
+            "requestId": "2f3ba408-6c76-40c7-8e22-6cbe79e29ee1",
+            "replayed": false
+          }
+        },
+        "_meta": {
+          "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+        }
+      }
+    }
+  },
+  "noCurrentDoneDeliveryACKyet": "old104stillunacknewDone9865/8089nonconsumingPEEKread.PositiveacceptedcompleteREVIEWonly release exactsettledtwo native-ownedterminals noactiveAuthorRoot.NoCoreSource/readinessValues/test/model/paid/index/stamp/newRun/duplicateoperation."
+}

@@ -1,0 +1,130 @@
+{
+  "at": "2026-10-09T22:26:16.584534+00:00",
+  "HEAD": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "branch": "wish/open-intelligence-observatory",
+  "candidate_git_tree_NOT_COMMIT": "a04fb194d94977f343b2fff74f749dda4705f30a",
+  "allowed15product_paths": [
+    "web/prototypes/explorer.css",
+    "web/prototypes/explorer.js",
+    "web/prototypes/index.html",
+    "web/prototypes/preview.py",
+    "docs/design/frontier-economics.md",
+    "web/prototypes/proof/smoke.json",
+    "web/prototypes/proof/relationship-wide.png",
+    "web/prototypes/proof/relationship-narrow.png",
+    "web/prototypes/proof/timeline-wide.png",
+    "web/prototypes/proof/timeline-narrow.png",
+    "web/prototypes/proof/questions-wide.png",
+    "web/prototypes/proof/questions-narrow.png",
+    "docs/integrations/dsh.md",
+    "docs/integrations/cordis.md",
+    "integrations/dsh/qualification/sandbox-readiness.json"
+  ],
+  "actual_staged_in_PRIVATEindex_paths": [
+    "docs/design/frontier-economics.md",
+    "docs/integrations/cordis.md",
+    "docs/integrations/dsh.md",
+    "integrations/dsh/qualification/sandbox-readiness.json",
+    "web/prototypes/explorer.js",
+    "web/prototypes/proof/questions-narrow.png",
+    "web/prototypes/proof/questions-wide.png",
+    "web/prototypes/proof/relationship-narrow.png",
+    "web/prototypes/proof/smoke.json",
+    "web/prototypes/proof/timeline-wide.png"
+  ],
+  "original8_frozen12_fullcontents_equal_in_cleanCheckout": {
+    "web/prototypes/explorer.css": {
+      "sha256": "251c89d4db9e27ed072ffa616768acfe02abe38ae1bac002825b4c6ae23f70ad",
+      "bytes": 5754,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/explorer.js": {
+      "sha256": "7f39db9ef42fae3b728a57374e11dd28e8d3045dad8a432a686013eeb66deb48",
+      "bytes": 23172,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/index.html": {
+      "sha256": "5ee5e4f42c2d9b12f2bc48f147351b7464230d7887abf5f46520db41e6550478",
+      "bytes": 2403,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/preview.py": {
+      "sha256": "f29d951d5b516449955fcd1f1122cb4af5c417d04d7a5a41bea45dca91e8b513",
+      "bytes": 3934,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "docs/design/frontier-economics.md": {
+      "sha256": "78a8b419e16b3439dd7f564848b12a60635ba342f92cf56f270e6b47f9aa6c7e",
+      "bytes": 27702,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/proof/smoke.json": {
+      "sha256": "8038617b2783f0fbb599901598a7ca0820b49fcfbe517be0209dde03e02fbefc",
+      "bytes": 277492,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/proof/relationship-wide.png": {
+      "sha256": "f07626f112b29290593a55ecf302cdc083228ac60445707f9520f603a8929b31",
+      "bytes": 114519,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/proof/relationship-narrow.png": {
+      "sha256": "f59d738f1312765a3ed3a73ec6773536f2d17ab156a7ac49b55c55391884d5c6",
+      "bytes": 63444,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/proof/timeline-wide.png": {
+      "sha256": "af4eff4701eaaa11745be18775057cba8ed6e9756827526b9354101d91d36321",
+      "bytes": 138665,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/proof/timeline-narrow.png": {
+      "sha256": "d4833f3a6d168c9391fd2a9082cb28ae86b8611d131f0c3059a2a6d1a23fddf4",
+      "bytes": 79872,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/proof/questions-wide.png": {
+      "sha256": "9bac25b986e00ccddf22a53d82a3d3307db4127ef355d97af076d1fcc31124f7",
+      "bytes": 134452,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    },
+    "web/prototypes/proof/questions-narrow.png": {
+      "sha256": "1815a7e40fb2d1bc01d1fc6c7b51753e7e680b439e9ea5025d0ab5790e9d34d3",
+      "bytes": 77091,
+      "local_author_freeze_mode": "0600",
+      "Git_checkout_mode": "0600",
+      "content_equal": true
+    }
+  },
+  "real_index_byte_entries_equal_before_after": true,
+  "currentWISHdc6_uncommittedinput_preserved": "excludedcandidatechange; candidateHEADhistoricalWishnotcurrentledger",
+  "source7unaccepted_newcode_tests_doc_manifest_PRIVATEproductauthfiles_EXCLUDED": true,
+  "private_product_secret_outsideRepo_not_in_tree": true,
+  "all_current_original8_andDSHtargetwriters_released_frozen": true,
+  "actual_native_runtimeUIproof_previous_exact_content_reused_NOTRERUN": true,
+  "candidate_aggregate_NOTYETexecuted": true,
+  "Git_HEAD_notmoved": true,
+  "copy_is_throwaway_gitarchive_not_managed_worktree_or_provision": true
+}

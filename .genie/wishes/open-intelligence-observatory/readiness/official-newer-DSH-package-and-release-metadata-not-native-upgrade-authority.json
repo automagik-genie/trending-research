@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-09T22:48:09.737852+00:00",
+  "primary_sources": [
+    "https://registry.npmjs.org/@deepseek-ai%2Fdsh/latest",
+    "https://api.github.com/repos/deepseek-ai/deepseek-harness/releases?per_page=5",
+    "https://api.github.com/repos/deepseek-ai/deepseek-harness/git/ref/tags/dsh-v0.2.1-alpha.2"
+  ],
+  "npm_latest_observed": {
+    "name": "@deepseek-ai/dsh",
+    "version": "0.2.0-rc.2",
+    "profile_boot_export": "./profile-boot",
+    "repository_directory": "apps/cli",
+    "license": "MIT",
+    "package_tarball": "https://registry.npmjs.org/@deepseek-ai/dsh/-/dsh-0.2.0-rc.2.tgz",
+    "tarball_shasum_sha1": "dfc8f7e09cfa96b854d6f0cf3a973ce7f2948925",
+    "tarball_integrity": "sha512-EAJ3gPNcVt/uv8X19PMm9NkVhWgT7xXNMk0UKCVm+IQ5rpSQOcsMUa0HWlnYYVybKMsccjcRB21vVVsaXQ6IdA==",
+    "unpacked_bytes_declared": 73328,
+    "devsdkclientversion": "0.2.0-rc.2",
+    "cordisdependency": "~4.0.4"
+  },
+  "latest_GH_list_head_observed": {
+    "tag": "dsh-v0.2.1-alpha.2",
+    "html_url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-alpha.2",
+    "immutable": true,
+    "prerelease": true,
+    "published_at": "2026-10-09T11:09:26Z",
+    "annotated_tag_object": "6851e496285b2c9670066fdd142e7e46da586649",
+    "type": "tag",
+    "resolved_commit": "NOTYETread",
+    "release_claims_NOTactualnativeproof": [
+      "sessionstate-record experimentalAPI",
+      "idle-timeouttransport cancellation fix",
+      "Web IPv4IPv6 binding+TLS cert/key",
+      "nativeSDKworkingdirectory APIs",
+      "defaultSDKgeneralagentidentity",
+      "customSDKruntime session/wait requirement",
+      "compatible securityfixes utilities/MCP/images/client"
+    ]
+  },
+  "observed_rc2_GHrelease": {
+    "tag": "dsh-v0.2.0-rc.2",
+    "immutable": true,
+    "prerelease": true,
+    "published_at": "2026-09-29T09:42:36Z"
+  },
+  "scope_NOTqualification": "officialmetadata readonly, notinstall/import/newnativeattempt/constructor/sourcepatch/capreset. CurrentRC1fullsource pinned remainsUNCHANGED. Differentreleaseexists; inspectedRC1 contractabsence doesNOTestablish absenceonnewrelease. Needread-onlyfullsupported-seam inspection before ownerdecision, mustnotassume releasefixes4contracts.",
+  "no_productsource_parentreads_orwrites": true,
+  "no_privatekey_orBWSrecords_orbalances_in_metadata": true,
+  "paid_model_calls": 0,
+  "coding_storage_all_cost": "UNKNOWN",
+  "source4prospective2of2_remains_exhausted": true,
+  "no_subset_public_commit_withoverbroad_newest_contractclaims": true
+}

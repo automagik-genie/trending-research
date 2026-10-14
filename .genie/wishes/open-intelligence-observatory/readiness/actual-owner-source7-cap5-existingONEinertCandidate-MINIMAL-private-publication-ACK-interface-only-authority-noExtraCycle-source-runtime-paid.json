@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-13T17:57:56.451371+00:00",
+  "kind": "ACTUAL_USER_SELECTED_MINIMAL_PRIVATE_PUBLICATION_ACK_ONLY",
+  "actualOwnerPrompt": "The read-model author found a missing interface: the inner diagnostic can flush its witness, but cannot know that the outer process validated and retained it before cleanup. Admit a minimal private acknowledgement channel for the existing three-program prospective candidate?",
+  "actualOwnerSelected": "Admit minimal private ACK",
+  "actualOwnerSelectedDescription": "Extend only the inert candidate’s existing private witness/runner control boundary. Require a complete amended method and both full independent reviews. No extra cycle, production edits, runtime, paid calls, or relaxed acceptance criteria.",
+  "otherOptionNotSelected": "Keep scope; retain BLOCKED: Do not add the acknowledgement interface. Preserve the cleanup/publication criterion as unresolved; diagnostic or unknown-custody evidence cannot qualify it or unblock dependent delivery.",
+  "sourceQuestion": {
+    "nativeMessageId": "msg_449b3df6120f",
+    "wholeMethod": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/readiness/group-6-cap5-replacementctx5c-ACTUAL-WHOLE449b-beforeAUTHORING-existingC6-witness-constructor-boundary-METHOD.txt",
+      "bytes": 82889,
+      "LF": 633,
+      "sha256": "f47b59d95353727974f224d3a93ce3655a133dd2f7e20ab8058fdf85eed85447",
+      "mode": "0600"
+    },
+    "actualHoldReplyAndWholeQuestion": {
+      "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-6-cap5-WHOLE449b-beforeauthoring-C6-positiveExternalRetention-privateACK-MISSINGscope-actualNativeHOLD-beforeOwnerDisposition-noWeakCleanup-waiver.json",
+      "bytes": 184592,
+      "LF": 77,
+      "sha256": "e6f14259ae851ca1cc70b81d4087b4a3dca0ad5730d85c1ee5039130eb12abc1",
+      "mode": "0600"
+    }
+  },
+  "identity": {
+    "task": "task_2bbfe79e0b5f",
+    "dispatch": "ctx_5c1b196869dd",
+    "terminal": "term_e85e3d31-ff1d-4c95-beed-56351ace4f64",
+    "actor": "distinctoperationalreplacementOMPauthor, originalsourceclaimspanuntouched",
+    "run": "run_b7d6684b2cdd",
+    "worktree": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory"
+  },
+  "permittedDelta": "ONEminimalPRIVATEpublicationACK boundary only withinexistingP1optionaldiagnosticwitness/P2inner/P3outer literal prospectiveprograms; existingONEimmutableprivatecontrolmetadata maydescribeexactackendpoint/identity alongsidesameoveralltrustedmonotonicstart/cutoffs. ExistingordinarywitnessNone/nativeclose/publiccontracts remaincompatible. Noextraartifact/program/helper/sourceinput/process/thread/store/framework/environment/sdk/tool-protocol/publicschema/credential field byinference. EphemeralprivateACKendpoint IFneeded onlyproposedasliteralDATA, nevercreated/run atthisgate. Exactminimalmechanism/endpoints/ownership/fields/frames/bounds/allfailbranches mustbeENTIREamendedmethodBEFOREauthoring andANYnewOwnerartifactaccess thenParentWHOLEpositive; ParentdoesNOTselectcode implementation or review production/SDKsource.",
+  "originalC6Unweakened": "Actualouterpositivevalidation+completepublicationofSAMEcapturedprimary/prefix precedesACK andEVERYinnerP1constructor/request/witness/nativeclose/P2cleanup/close/P3childwait/stop/inspect/pipeclose branch. Localchildflush/notthrowing/EOF/closedhandles/nestederrorunknown isNOTexternalretentionproof; doNOTauthorizecleanupbytimeout/stalepartialmalformedduplicateforeignwrong-sequence/hashACK. Missing/unavailable/lateACK/caller/hardstop retainsBLOCKED/UNKNOWN, knownprimaryfailureandearliestwireidentity; nofakeSuccess/no nativeclose skip masqueradingascomplete/no silent acceptance downgrade. Allinflight/preT/retirement/custody limits retained. No preprimarysignal/exception/uncertainpartialwriteRetry/bytezeroRestart/duplicateRelay.",
+  "amendedMethodMustSpecify": "Entireall71existingidentityrows+ONEnewactualownerrecordrow=72readonlylocators, E6existingrestriction ifany retained; existing3futureabsences/sole8outputabsence andcaps; exactchangedprivateinterfacewithinexistingonecontrolrecord/defaultNonecompatibility/callers; ACKboundseq/hash/owner/origin/generation asneeded fromexistingtrustedwitnessidentity, immutableunforgeablebinding/trust andsingle-offsetpublication causalorder without extra semanticstore ornewclock; allblocked/invalid/replayed/early/late/closed/overflow/deadline/error/exited-descendant branches; literalpositive+negativeACKwires/schedules addedalongsideALLold7andcurrent4families+oldduplicate/nonfinite/UTF8/firstcause/deadline cases, independentgoldens/ranges; fullnewC7trueNUMERICbeforefirstreview; no helperexecution. No currentSource7nativeobservations/preimagef6 invented.",
+  "counterAndBudgetNoReset": {
+    "prospectiveCap": 5,
+    "completedBeforeThisCycle": 4,
+    "remainingExistingCycle": 1,
+    "soleExistingCandidate": "/tmp/oi7-corrective8-WHOLE-PROSPECTIVE-DATA.json",
+    "sixthCandidateDenied": true,
+    "sourceRepairUsed": 0,
+    "sourceRepairConfigured": 2,
+    "effortEscalations": 0,
+    "productModelCalls": 0,
+    "USDtotal": 20,
+    "DSHUSD": 12,
+    "BrainUSD": 8,
+    "allInCodingStorageCost": "UNKNOWN"
+  },
+  "outputBounds": {
+    "maxUTF8B": 350000,
+    "maxLF": 2000,
+    "mode": "0600",
+    "exclusiveRegularNonsymlink": true,
+    "nativeWholeQuestionMaxUTF8B": 120000,
+    "forecastTRUEInsertions": 1700,
+    "hardTRUEInsertions": 2000,
+    "hardFiles": 25
+  },
+  "bothNewFullIndependentReviewsStillRequired": "BothFULLoriginalC1C8/allfouroriginalfeatures ANDseparatefullprivacytransportdeadlinequality evenfirstFIXFIRST/BLOCKED, nooldverdictsubstitution/newpanel/council/reset. ParentwholeopaqueC7numeric+carrier/guard intake BEFOREfreshreviewerFIRSTaccess; bothENTIREbeforeaccessmethods/reportlifecycle unchanged. ACKgrantisnotzeroHIGH/staticSHIP/sourceacceptance.",
+  "notGranted": [
+    "production/sourceapply",
+    "safechangedpathsmoke",
+    "nativeprocess/Docker/PG/Brain/provider/network/private/runtime",
+    "candidate/helper/parser/vector/import/compile/exec/tests/build/lint/formatter",
+    "thirdstockDSH/fifthBrain",
+    "paidgeneration/credentials/PGDATA/secret/env access",
+    "sourceclaimcheckoutReportNativeFeatureDoneCardDone",
+    "alterfouroriginalfeatures/20issues80criteria41links5milestones/datesassignees",
+    "DSHsemanticrepair4/futureimplementation/runtime/currentproposalSHIP/Ready/currentreviewstamp"
+  ],
+  "previewServiceNotice": "Separatesupervisedroadmap-method-review-preview failedexit1 reportedauthoritatively; procservice readshowsfailed/exit1/127.0.0.1:8871 historicalservinglog/readytruehistorical. CauseUNDETERMINED/notrerun. No currentliveUI/deployedrevisionproof asserted; unrelated toS7nativeauthorlifecycle orDSHreviewerdigests; cannotinferchildexit."
+}

@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-11T00:11:35.539732+00:00",
+  "actualAcceptedDoneAndFullReportIntake": {
+    "path": "/home/genie/workspace/repos/trending-research/.claude/worktrees/wish-open-intelligence-observatory/.genie/wishes/open-intelligence-observatory/verification/group-3-repair3-ACTUAL-nativeDone3db-afterWHOLEc04-corrected211377122-intake-andONEactual3459B113-report-fullParent-read-BEFOREnativeRelease-beforec914ACK.json",
+    "bytes": 13218,
+    "LF": 151,
+    "sha256": "7ade3b0e170f66338c8ee758411a30e67b5536e87a24845393ff2b75720a7a4a",
+    "mode": "0600"
+  },
+  "actualNativeReleaseAfterDoneBeforeACK": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"0717a56f-38ec-4c38-86c8-3001b472d8a7\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_521891ff5995\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"884728f8-f9d6-4efb-8481-d37cc0b53869\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "0717a56f-38ec-4c38-86c8-3001b472d8a7",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_521891ff5995",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "884728f8-f9d6-4efb-8481-d37cc0b53869",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "actualClaimRelease": {
+    "exit_code": 0,
+    "stdout": "Released task t_mv1nxer60fedac1d (ready).\n",
+    "stderr": ""
+  },
+  "actualEnforcedFullReviewHold": {
+    "exit_code": 0,
+    "stdout": "Blocked task t_mv1nxer60fedac1d (ready, hold).\n",
+    "stderr": ""
+  },
+  "holdReason": "DESIGN-only repair3 author actualWHOLEcorrectedc04 intake completed; currentDRAFTeb5/32366B211LF DESIGN506/107953B377LF handoffdc42/73211B122LF/authordigest498c/fourPENDING WRS90PROPOSED/INDEXSimmering. NativeDone3db actualacceptedctx521 completed+succeeded, actualrelease0stateReleased capturedAFTERDone/fullactualGenieReport1133459B11LF8cea onefreshclaim112 BEFOREc914deliveryACK; claimreleaseactual0. ENFORCED HOLD pendingTWO NEW FULL independentoriginalA1A10C1C4K1K4+separatequality/14bothwayrefreshcold/37wholeowningsources/historicalscope beforeANYReady/cardDone/implementation/runtime/paid/featureacceptance. InstructionB3used3/3remaining0/historicalCONFIGB2used2/2/council0effort0 retainednoFourth/counterreset/panel. Source7cap5used4ONEinertcycle SourceB0CONFIG2 independent operationalnewreplacementctx5c truthful noSourceApplySmokeNativeauthority. AllC1C4BLOCKED_NOTRUN/20-80-41-5/sixaccepted14held/model0/allcostUNKNOWN/stockcauseUNKNOWNglobalcompletionUNAVAILABLE/noStock3Brain5.",
+  "actualAuxAfterReleaseAndHoldExport": {
+    "agent_kind": null,
+    "assigned_agent": null,
+    "assigned_reason": null,
+    "block_kind": "hold",
+    "blocked_by": "cli",
+    "blocked_reason": "DESIGN-only repair3 author actualWHOLEcorrectedc04 intake completed; currentDRAFTeb5/32366B211LF DESIGN506/107953B377LF handoffdc42/73211B122LF/authordigest498c/fourPENDING WRS90PROPOSED/INDEXSimmering. NativeDone3db actualacceptedctx521 completed+succeeded, actualrelease0stateReleased capturedAFTERDone/fullactualGenieReport1133459B11LF8cea onefreshclaim112 BEFOREc914deliveryACK; claimreleaseactual0. ENFORCED HOLD pendingTWO NEW FULL independentoriginalA1A10C1C4K1K4+separatequality/14bothwayrefreshcold/37wholeowningsources/historicalscope beforeANYReady/cardDone/implementation/runtime/paid/featureacceptance. InstructionB3used3/3remaining0/historicalCONFIGB2used2/2/council0effort0 retainednoFourth/counterreset/panel. Source7cap5used4ONEinertcycle SourceB0CONFIG2 independent operationalnewreplacementctx5c truthful noSourceApplySmokeNativeauthority. AllC1C4BLOCKED_NOTRUN/20-80-41-5/sixaccepted14held/model0/allcostUNKNOWN/stockcauseUNKNOWNglobalcompletionUNAVAILABLE/noStock3Brain5.",
+    "board_id": null,
+    "claimed_at": null,
+    "claimed_by": null,
+    "created_at": 1791592518642,
+    "group_name": "group-3-native-extension-design",
+    "heartbeat_at": null,
+    "id": "t_mv1nxer60fedac1d",
+    "lane": null,
+    "status": "ready",
+    "title": "Design the bounded native DSH extension architecture — design only",
+    "updated_at": 1791677453132,
+    "wish": "open-intelligence-observatory"
+  },
+  "actualHoldSemantics": "CLIexactBlockedtask(ready,hold); statusready notblocked, claimnull/block_kindhold/blocked_bycli exactreason. Advertisedenforcedholdrefusescheckout untilcleared despiteavailablequeuephase; NOTReady architecture/feature gate.",
+  "scope": "DESIGNauthor deliverable only; alloriginalfeaturecriteriaunaccepted/nosource/runtime/paid/Ready/cardDone/no newcurrentSHIPstamp",
+  "next": "twoNEWFULLindependentoriginal+quality withactualfullcurrentguards/sources/freshownreadonlydigest beforecurrentreportSHIP; bothmustfinish fullmethods/reports/releasesbeforeACK evenfirstFIXFIRST. NoB4/source7cap6."
+}

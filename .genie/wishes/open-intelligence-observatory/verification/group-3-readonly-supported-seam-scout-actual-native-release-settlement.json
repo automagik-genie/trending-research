@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-09T22:31:53.633815+00:00",
+  "assessment": {
+    "path": ".genie/wishes/open-intelligence-observatory/verification/group-3-readonly-supported-seam-scout-full-parent-positive-bounded-acceptance.json",
+    "sha256": "f0d623d96ac9689441e29d4de9be3462f5eadc3d8f18af317dfea9c29ced69ca"
+  },
+  "report": {
+    "sha256": "774accebe8456f3314de428d4735b3361e333b5f7c107af7b32ebfe7f9089025",
+    "bytes": 21643,
+    "mode": "0600"
+  },
+  "actualLF": 101,
+  "release_actual": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"c1e59de5-737c-4d96-9a07-1d5c10a3141e\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_c33ecca7956f\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"transcript\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"afa49f90-08d4-48b4-93f1-e1613413fa41\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "c1e59de5-737c-4d96-9a07-1d5c10a3141e",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_c33ecca7956f",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "transcript",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "afa49f90-08d4-48b4-93f1-e1613413fa41",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "delivery_e9_NOTyetACK": "fullassessment+actualsupportedreleasecompletebeforeACK",
+  "original4acceptance": "BLOCKED unchanged"
+}

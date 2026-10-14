@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-09T20:43:45.153057+00:00",
+  "task": "task_8f2a067b113f",
+  "dispatch": "ctx_a45e75e8c6bc",
+  "readiness_ACK": "msg_e9ae49b28428",
+  "status": "ADMITTED_DOC_ONLY_REAL_HUMAN_SELECTION_RECORD",
+  "owned_path": "docs/design/frontier-economics.md",
+  "prior_doc_sha256": "9d345a577c618ff37463a69c987831af238d2a54bad38ba98db46127807d6cde",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "historical12_sha256": "00cfaf1dd043d2790b7ff744a2019a8d653f6b977652420ec0a87fe5ee032549",
+  "human_receipt_sha256": "b65454df0354a8ece8e421825c7d3dee5273482ff87a6a9eecdc5c8e819e80cf",
+  "selected_primary": "questions",
+  "actual_rationale": "Compare explanations, inspect evidence, then identify missing premises before drawing conclusions. Relationship and timeline lenses remain available.",
+  "bounded_quality_historical_report_sha256": "9d369bab178f010641e3b3a7d1de5d796793893d93b0a9f51f67a57fc213dcd7",
+  "one_file_max_added_lines": 8,
+  "cumulative12_max_textlines": 1289,
+  "unchanged": "all4code/6PNG/smoke/realpack/assessment, no sourcebug3/qualityrepair2/API change",
+  "not_claimed": "original8/currentaggregate/changeddocquality/deployment/fullroadmap",
+  "source_repair_caps": "2/2 quality1/1 B2effort0"
+}

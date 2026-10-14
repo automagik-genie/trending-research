@@ -1,0 +1,59 @@
+{
+  "recorded_at": "2026-10-09T18:07:06.334500+00:00",
+  "status": "PROSPECTIVE_SCOPE_FROZEN_AWAITING_AUTHOR_ACK",
+  "issue": 8,
+  "group": 7,
+  "task": "task_8f2a067b113f",
+  "dispatch": "ctx_a45e75e8c6bc",
+  "card": "t_muz1j3f7944dc064",
+  "current_wish_sha256": "3b2f7c0c9dcc06e99f10fbb565ee2f43b0876b00aedb9ba59ec67036c202ddad",
+  "base_commit": "1f4a2723dd93730c9ce2bc9c34129bb24c4927d3",
+  "before_source4_sha256": "776f8b73fb0204fea96ed08db21af0922aaa53cd35b0d2d9a69d55f1cf949d63",
+  "before_manifest12_sha256": "3b91b9abfabae00621b25da33a8ee7fe3ff694960ddf86c522e257ce883ae949",
+  "confirmed_finding": {
+    "report_path": ".genie/wishes/open-intelligence-observatory/verification/group-7-independent-quality-1.txt",
+    "sha256": "60800cba0121578da724c97792b92bace99a6ce166a4b1ab84ebe3cda7d1ca59",
+    "severity": "HIGH",
+    "Q1": "NativeEnter question/step dropsBODY; nextTabfirstquestion at1280x900/390x844; verified byindependentquality, no unchangedrerun"
+  },
+  "owned_changes": [
+    "web/prototypes/explorer.js",
+    "existing six web/prototypes/proof/*.png manifestpaths",
+    "web/prototypes/proof/smoke.json",
+    "docs/design/frontier-economics.md"
+  ],
+  "immutable_sources": [
+    "web/prototypes/index.html",
+    "web/prototypes/explorer.css",
+    "web/prototypes/preview.py"
+  ],
+  "budget": {
+    "source_repair_next": 2,
+    "source_repair_cap": 2,
+    "separate_quality_repair_next": 1,
+    "separate_quality_repair_cap": 1,
+    "config_B": 2,
+    "effort_escalations_used": 0,
+    "effort_escalations_cap": 2,
+    "scope_estimate_files": 12,
+    "scope_estimate_insertions": 1450,
+    "hard_insertions": 2000
+  },
+  "observable_acceptance": [
+    "Atbothsizes actualquestionchanges nativeEnter retainsvisiblefocus onnew equivalentbutton thennextTabprogresses expectedcontrol, notBODY/firstquestion",
+    "Allthree stepEnter nativefocusretained andTabforward, source/counter/gap actions reachable",
+    "Scene/entity/cutoff/method/revision/unknowns actualdataunchanged",
+    "Six guardedcaptures actualpopulated surfaces + realreader/source/counter/overview controls updateinexistingproof",
+    "Selectedhover remainscorrect andreducedmotion/loadfailure/recovery/privacy supported"
+  ],
+  "runtime": "ExistingChrome153 private toolmanagedprofile loopbackonly, noinstall/no-sandboxnottenantproof; exclusivelease available afterauthorreadyfreeze; parent8879canservecurrentcandidate/worker8878ownonly",
+  "gates": [
+    "AUTHOR exactblockingACK+honestsize/readiness beforeanymutation",
+    "Parentacceptance thenboundedrepair actualchangedpath proof",
+    "Freeze new4/12hashes thenfreshindependentquality andoriginalacceptance",
+    "Currentaggregate aftercompletewriterfreeze",
+    "ActualFelipe selection+rationale null notsubstituted"
+  ],
+  "no_original_criterion_reduction": true,
+  "paid_model_calls_authorized": false
+}

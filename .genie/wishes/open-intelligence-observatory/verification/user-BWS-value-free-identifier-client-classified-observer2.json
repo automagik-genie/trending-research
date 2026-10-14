@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-09T21:51:27.028568+00:00",
+  "actual_process_exit": 0,
+  "result": {
+    "status": "MetadataClientFailed",
+    "phase": "metadata_projection",
+    "exception_class": "TypeError",
+    "auth_success": true,
+    "list_success": true,
+    "nonprivate_function_frames_only": [
+      {
+        "function": "<module>",
+        "line": 25
+      },
+      {
+        "function": "dumps",
+        "line": 235
+      },
+      {
+        "function": "encode",
+        "line": 202
+      },
+      {
+        "function": "iterencode",
+        "line": 263
+      },
+      {
+        "function": "default",
+        "line": 182
+      }
+    ],
+    "no_raw_exception_or_value_output": true,
+    "secret_values_fetched": false
+  },
+  "original_TypeError_preserved": {
+    "path": ".genie/wishes/open-intelligence-observatory/readiness/user-authorized-saved-BWS-value-free-secret-identifiers-discovery.json",
+    "sha256": "585c483026d1e5a8bb0f0f626259a334443036cb22023824cf0f26b6fdd7177b"
+  },
+  "secret_values_get_by_ids_sync_all_NOTCALLED": true
+}

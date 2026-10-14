@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-10T23:48:34.783296+00:00",
+  "bg205ActualResult": "exit0 ACKdelivery_bb8e2a9836d1; timedOuttrue count0 cancelledfalse connectionLostfalse actual475; no failureinferred",
+  "currentWait": "bg206 actual900000ms/1000s noPoll",
+  "nativeSource7Observation": "Actual957nativeprovidertranscript sourceExacttrue sourceIdentityZ5s8FNTrxTqz9fJkKxpyZ403qQQFcS3L lastaf0cfb93 assistanttext1791643681884 HOLDawaitowner no workerDone, statusPTYlive, fleetunverifiablestalestatus. PriorclippedtoolbodyNOTusedasfullproof; finaltextunclipped. Unknown agentliveness notprocessdeath.",
+  "nonDestructiveExistingTabReveal": "Actual terminal switch old exacthandle exit0 request8142a91b-9e33-402f-86d5-023a2e98f736 focus.navigatedtrue samehandle+sameTab no duplicateowner",
+  "sameDispatchAfterRevealAttention": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"6d6e5d70-4d2d-4f52-985b-d92fa0b89cd4\",\n  \"ok\": true,\n  \"result\": {\n    \"message\": {\n      \"id\": \"msg_f4f6b299aa1c\",\n      \"run_id\": \"run_b7d6684b2cdd\",\n      \"delivery_contract\": \"current_delivery\",\n      \"from_handle\": \"term_d46a2b58-9d50-46cc-91c4-d8823cb344a5\",\n      \"to_handle\": \"dispatch:ctx_0c242e837d41\",\n      \"subject\": \"Preserved author tab revealed; same-dispatch inbox continuation only\",\n      \"body\": \"Coordinator used actual current advertised terminal switch to reveal YOUR existing term_61425050-f58f-4771-8cbf-af43d00ef05f (actual0), not stop/abandon/retry/newauthor/newclaim/reset. Your attributable finalturnaf0cfb93 correctly awaited actual owner; that owner disposition is NOW already durable in msg_a8db14a839f9 FULL59003B and subsequent msg_43e36dc2ab54. Resume SAME original active task_2bbfe79e0b5f/ctx_0c242e837d41 by exactnativeinboxcheck WHOLEFIFO, ACKonlyafterWHOLEread, then ENTIRE changedbeforeANYnewArtifactmethod exact71 via your injectednativeblockingask. Do NOT readanynewartifact/source/apply/smoke/createDATA8 fromthisattentionmessage; currentallcriteria andC6frozen; no semantic/source/runtime/paid permission beforeParentwholemethodpositive. Existingclaim/reportspan/eafabsealedcandidate/WISH/d75/0b0 unchanged. No newworker orlife-cyclecompletion asserted.\",\n      \"type\": \"status\",\n      \"priority\": \"normal\",\n      \"thread_id\": null,\n      \"payload\": null,\n      \"created_at\": \"2026-10-10T23:48:34Z\",\n      \"delivered_at\": null\n    },\n    \"mutation\": {\n      \"requestId\": \"d7ecf505-4515-4874-8a64-d6ea190ec521\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"47576929-f4c2-437d-8559-b9e1785758fd\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "6d6e5d70-4d2d-4f52-985b-d92fa0b89cd4",
+      "ok": true,
+      "result": {
+        "message": {
+          "id": "msg_f4f6b299aa1c",
+          "run_id": "run_b7d6684b2cdd",
+          "delivery_contract": "current_delivery",
+          "from_handle": "term_d46a2b58-9d50-46cc-91c4-d8823cb344a5",
+          "to_handle": "dispatch:ctx_0c242e837d41",
+          "subject": "Preserved author tab revealed; same-dispatch inbox continuation only",
+          "body": "Coordinator used actual current advertised terminal switch to reveal YOUR existing term_61425050-f58f-4771-8cbf-af43d00ef05f (actual0), not stop/abandon/retry/newauthor/newclaim/reset. Your attributable finalturnaf0cfb93 correctly awaited actual owner; that owner disposition is NOW already durable in msg_a8db14a839f9 FULL59003B and subsequent msg_43e36dc2ab54. Resume SAME original active task_2bbfe79e0b5f/ctx_0c242e837d41 by exactnativeinboxcheck WHOLEFIFO, ACKonlyafterWHOLEread, then ENTIRE changedbeforeANYnewArtifactmethod exact71 via your injectednativeblockingask. Do NOT readanynewartifact/source/apply/smoke/createDATA8 fromthisattentionmessage; currentallcriteria andC6frozen; no semantic/source/runtime/paid permission beforeParentwholemethodpositive. Existingclaim/reportspan/eafabsealedcandidate/WISH/d75/0b0 unchanged. No newworker orlife-cyclecompletion asserted.",
+          "type": "status",
+          "priority": "normal",
+          "thread_id": null,
+          "payload": null,
+          "created_at": "2026-10-10T23:48:34Z",
+          "delivered_at": null
+        },
+        "mutation": {
+          "requestId": "d7ecf505-4515-4874-8a64-d6ea190ec521",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "47576929-f4c2-437d-8559-b9e1785758fd"
+      }
+    }
+  },
+  "DSHCurrentNativeObservation": "worker-showactual0 missing_status PTYlive exactworker; lastheartbeat23:41:37 actualpreviewrunningPython19m; noDone or completioninferred",
+  "frozenBoundaries": "Allsource/test/SDK/native/runtime/paid/currentfeatureacceptance withheld, same20/80/41/5 sixaccepted14blocked WISH260f no reset",
+  "lifeCycleAction": "No stop/abandon/retry/release fromabsence; source7currentTaskDispatchclaimspan preserved"
+}

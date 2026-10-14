@@ -1,0 +1,51 @@
+{
+  "group": 5,
+  "issue": 6,
+  "stage": "separate_original_quality",
+  "task": "task_7e28a8a627b0",
+  "dispatch": "ctx_70f07d06bb43",
+  "reviewer_independent_of": [
+    "ctx_76f21ad589b3",
+    "ctx_c73d9cdb99fe"
+  ],
+  "target_commit": "1e1d91f509b4862e09076fcacd7c751008db866b",
+  "comparison_commit": "3db0d3690973e2c5077fc0788a8ce150435871ea",
+  "original_full_scope_and_four_criteria_unchanged": true,
+  "production_manifest_sha256": "c6bca1f2af13e42686bf07f84b5285a639ddd67b11a944566c1af733708bd783",
+  "production_paths": {
+    "investigations/frontier-economics/evidence.json": {
+      "mode": "0600",
+      "sha256": "e452bf54e446ccda30602ca0d2b21188571c78f79bbe4ed7d72d08b9e2d2be93"
+    },
+    "investigations/frontier-economics/assessment.md": {
+      "mode": "0600",
+      "sha256": "1868924ae64190276b8fef2f4b356f64fa01b426bfb3ca0bf71df3e7d13fbeaa"
+    }
+  },
+  "current_wish_sha256": "52c774493a61dc61a47be522db12e32ad8372414ff598672be02af2490875c54",
+  "historical_acceptance_wish_sha256": "925b29b9ab4798b994c0d1f269b0d2c836818333f04a1013f78f51e5b4e8fa3f",
+  "current_wish_changes": "Review Results append only: original6 acceptance plus actual human sandbox/shared USD20 cap; no production/criteria/ownership/dependency waiver. No native authority granted to quality reviewer.",
+  "source_original_manifest_sha256": "b58e1177c15fb03ddbc128678b95e1c55fe2c1b1a34ebf2f5f995fc0a22e9eff",
+  "original_acceptance_raw_report_sha256": "5de48095877e792ddf348f5656d63fe4144db6209144724af70f32ba89c5f903",
+  "pre_candidate_pin_and_criteria_freeze_ack": {
+    "message": "msg_73d442e58a13",
+    "created_at": "2026-10-08T12:53:18Z",
+    "body_source": "artifact://278:raw",
+    "report": "/tmp/issue6-original-quality.txt"
+  },
+  "gates": {
+    "parent_complete_slice_aggregate": "verification/group-5-coordinator-frozen-gate.json",
+    "receipt_sha256": "12d3dc56490cfbfc8a9fff60b855a8beae5539690421c41c4409ad7070b3fdba",
+    "reuse": "attributed parent43-test/full evaluator0; not reviewer fresh aggregate",
+    "reviewer_fresh_required": "actual declared consumer and independent substantive semantic/denial smoke after complete slice; no suites/build/lint/formatters mid-flight"
+  },
+  "limits": "Never use native DSH/Brain/model/paid calls/source collection; no production/Git/card/forge mutation, only own report/lifecycle. All later release/human/CI/runtime/replay acceptance gates remain required.",
+  "budgets": {
+    "implementation_repairs": 0,
+    "repair_cap": 2,
+    "configuration": 2,
+    "effort_escalations": 0,
+    "separate_quality_attempt": 1,
+    "separate_quality_cap": 1
+  }
+}

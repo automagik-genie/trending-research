@@ -1,0 +1,44 @@
+{
+  "recorded_at": "2026-10-09T19:34:57.523599+00:00",
+  "worker_done": "msg_ef524955539f",
+  "task": "task_6db05d5f1177",
+  "dispatch": "ctx_1b1380a17517",
+  "review": "SHIP bounded separateUIquality,zeroHIGH/CRITICAL,Q1closedexactcandidate",
+  "source4_sha256": "28c1a7b90f112e7549b44e7902e197e9f672adabe1c8f027c7965e8139873a91",
+  "manifest12_sha256": "00cfaf1dd043d2790b7ff744a2019a8d653f6b977652420ec0a87fe5ee032549",
+  "full_report_path": ".genie/wishes/open-intelligence-observatory/verification/group-7-final-guided-focus-independent-quality-2.txt",
+  "full_report_sha256": "9d369bab178f010641e3b3a7d1de5d796793893d93b0a9f51f67a57fc213dcd7",
+  "parent_native14_sha256": "201409891910145bcf3d604d2bd73c61dd9c370cf9044e3134900301c1a18e09",
+  "parent_six_paths_sha256": "0f8bfcd9bc928a1c3321dd8b5527c739948a3b26c90bbd827f375f304ce994b2",
+  "browser_lease_returned_unused": "msg_53dda202c471 no childtabcreated",
+  "positive_assessment_release": {
+    "exit_code": 0,
+    "stdout": "{\n  \"id\": \"fadcf0e6-0999-4f3d-8cec-853f2d5f8270\",\n  \"ok\": true,\n  \"result\": {\n    \"dispatchId\": \"ctx_1b1380a17517\",\n    \"state\": \"released\",\n    \"processAction\": \"closed_agent_terminal\",\n    \"archive\": {\n      \"source\": \"terminal\",\n      \"status\": \"captured\"\n    },\n    \"mutation\": {\n      \"requestId\": \"7f539125-3ab4-4e9a-bc37-147cf2948b00\",\n      \"replayed\": false\n    }\n  },\n  \"_meta\": {\n    \"runtimeId\": \"705217db-55fb-4554-9936-280ef44447d0\"\n  }\n}\n",
+    "stderr": "",
+    "receipt": {
+      "id": "fadcf0e6-0999-4f3d-8cec-853f2d5f8270",
+      "ok": true,
+      "result": {
+        "dispatchId": "ctx_1b1380a17517",
+        "state": "released",
+        "processAction": "closed_agent_terminal",
+        "archive": {
+          "source": "terminal",
+          "status": "captured"
+        },
+        "mutation": {
+          "requestId": "7f539125-3ab4-4e9a-bc37-147cf2948b00",
+          "replayed": false
+        }
+      },
+      "_meta": {
+        "runtimeId": "705217db-55fb-4554-9936-280ef44447d0"
+      }
+    }
+  },
+  "actual_Felipe": null,
+  "original8_done": false,
+  "current_aggregate": "PENDINGnotpassednotwaived",
+  "repair_cap_used": "source2/2 quality1/1 configB2effort0",
+  "file_or_mode_change_requires_fresh_binding_evidence": true
+}
