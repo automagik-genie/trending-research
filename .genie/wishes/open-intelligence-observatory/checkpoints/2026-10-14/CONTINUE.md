@@ -1,10 +1,24 @@
 # Continue the full observatory roadmap
 
-Owner-requested cumulative **draft checkpoint**, not feature completion or scope reduction. Canonical full goal: [WISH.md](../../WISH.md); original issue bodies/milestone exits: [github-roadmap.json](../../github-roadmap.json); tracking [#1](https://github.com/namastex888/trending-research/issues/1). Keep the ONE existing draft [PR #22](https://github.com/namastex888/trending-research/pull/22), base `main`, head `automagik-genie:wish/open-intelligence-observatory`. No another PR, merge, ready-for-review transition, closure, date/assignee changes or budget reset.
+Owner-requested cumulative **unfinished-goal checkpoint**, not feature completion or scope reduction. Canonical full goal: [WISH.md](../../WISH.md); original issue bodies/milestone exits: [github-roadmap.json](../../github-roadmap.json); tracking [#1](https://github.com/namastex888/trending-research/issues/1). While [PR #22](https://github.com/namastex888/trending-research/pull/22) remains OPEN, continue that ONE existing PR, base `main`, head `automagik-genie:wish/open-intelligence-observatory`. The user intends to merge it themselves: no automatic GitHub merge, another PR, closure, date/assignee changes or budget reset. If already MERGED, continue from updated `main`, never reopen or push the historical merged PR.
+
+## Current-session overlay — 2026-10-16
+
+- **Lifecycle:** intake observed PR22 **OPEN / non-draft / CONFLICTING / DIRTY** after new upstream changes; the integration worker is resolving the two conflicts. Latest published telemetry checkpoint: `7b7d15d7504f56891bdbd538621a76e369947845`, previous `9a78b11`. These are dated observations, not the future handoff commit or proof of current mergeability/gates. Read updated [REBASE.md](REBASE.md), then obtain current `gh pr view` and `git HEAD` readback at new-session start; record the actual published handoff identity rather than guessing it. Earlier rebase, smoke and publication receipts remain historical.
+- **Ownership and admission:** Parent orchestrates only; native workers own implementation and distinct reviews. This handoff is DATA, not executable authority. Discover the installed native runtime/guide and current authoritative bindings before effects; never replay copied grants. Both original roadmap review HOLDS below remain untouched: #4 whole Parent quality intake pending; #7 original-request recovery and both fresh full reviews pending. Do not duplicate, retry, release or grant access to either held review task from this overlay.
+- **Human decision: KEEP THE STRICT HOLD.** The telemetry bridge has been stopped/disabled since approximately **2026-10-15T19:35Z**. Later activity lies outside verified cohorts; subsequent eligible-suffix growth is **UNKNOWN**. No mutex reservation was acquired. Production rollback/restore, same-ledger restart, same-epoch suffix delivery and native continuity across recreate remain unverified. A 15-minute maintenance reservation can miss/retire scheduled jobs with a 120-second one-shot grace; allowed metadata cannot prove nonmutex writers quiet.
+- **No new effects:** new explicit current-state human operator approval is required before any runtime/DB/Phoenix/BWS/helper/export/restart/resume action. Settled telemetry worker/review tasks retain their honest blocked-full-runtime scope; do not restart them. Existing credential, paid, candidate, source-budget and runtime prerequisites remain separate; no reset, model call or source/test/SDK/runtime edit follows from this document.
+- **Public boundary:** publish aggregate methods/results only, never private instrumentation source/repo/PR/CI/commit links, receipts or operator bindings. Six untracked private BWS/custody records remain in the worktree: do not open, hash, stage, copy, delete or include them.
+
+### Verified research checkpoint, not a new live probe
+
+The [public research note](../../../../../docs/research-experiment.md) supplies the detailed methods, tables and limits. Confirmed distinct full-typed records: **2,047 HISTORY (2,046 LLM + one unknown-usage error CHAIN) + 382 LIVE (272 parent + 110 automatically discovered worker) = 2,429**. The exact second standalone historical replay attempted **0** new submissions and changed no stored rows. This is bounded stored confirmation, not current capture or all-worker history.
+
+The fixed **2026-10-10T18:19Z–2026-10-14T22:19Z** 100-hour diagnostic window reconciles **595 records = 594 complete + one unknown**, **80,698,328 prompt + 474,046 output = 81,172,374 tokens**, and **USD21.13568240 SDK-local estimate**. This is not an invoice, all-worker or whole-harness spend. Error and ten window compactions have unknown usage/cost, not free usage. Recorded request identity is `gpt-6.1-sol` / `openai-codex` / `openai-codex-responses`; historical producing OMP version remains unknown. No active-hours, cost-per-issue or efficiency ranking follows.
 
 ## Frozen objective and progress
 
-Deliver all twenty children #2–#21, five milestones, eighty original criteria and forty-one native dependencies without feature substitution. Fresh remote metadata confirms tracking/children all open/unassigned, milestones open/no dates and complete forty-one-edge DAG matching the frozen snapshot. Six original+quality issues locally accepted: **#2, #3, #5, #6, #8, #11**; fourteen unaccepted. Acceptance remains historical/artifact-bound, not a new certification of every combined current byte. All milestone exits remain unaccepted: M0 needs #4; M1 needs #7/#9/#10/#12; M2/M3/M4 exits are outstanding.
+Deliver all twenty children #2–#21, five milestones, eighty original criteria and forty-one native dependencies without feature substitution. Historical remote metadata recorded tracking/children all open/unassigned, milestones open/no dates and the complete forty-one-edge DAG matching the frozen snapshot; re-read current metadata without changing dates/assignees. Six original+quality issues locally accepted: **#2, #3, #5, #6, #8, #11**; fourteen unaccepted. Acceptance remains historical/artifact-bound, not a new certification of every combined current byte. All five milestone exits remain **HOLD / unaccepted**: M0 needs #4; M1 needs #7/#9/#10/#12; M2/M3/M4 exits are outstanding.
 
 | Issue | Milestone | Depends on | Original acceptance / progress |
 |---|---|---|---|
@@ -39,7 +53,7 @@ Six private originals remain local immutable, with safe `private-derivatives/` r
 
 - Original claim `t_muz1j39160558b4b` stays unaccepted. Source B2 **used0/configured2/effort0**, prospective quality **cap6/used5**, no reset/seventh cycle. Sixth preparation only is accepted; actual Done **msg_e38853ece2b0**, source author **task_18eca447c474 / ctx_847fb091af31** subsequently released. No source application, SAFE smoke or feature acceptance.
 - Retain [candidate9](artifacts/oi7-corrective9-WHOLE-PROSPECTIVE-DATA.json) **597919B / 1 LF / SHA256 04fb8c864a4d16e70d345440361d12d84b8b5d43050433962cc3439b711e67b5** whole. Three source strings, true1177 inserted/37 removed/net1140; inert unapplied DATA. Do not decode/materialize/execute these programs to restore the checkpoint.
-- Resume **two NEW full independent static reviews**, all original scope/criteria. Quality **task_51dc028ee32f / ctx_294897b88715**, before-access method **msg_bd3c071ae344**, is explicit checkpoint-priority **HOLD**, not failed; no access grant. Parent must read/positively assess the ENTIRE current method before new review access. Publication security review is not product review.
+- Keep the **two NEW full independent static reviews** pending, all original scope/criteria. Quality **task_51dc028ee32f / ctx_294897b88715**, before-access method **msg_bd3c071ae344**, is explicit checkpoint-priority **HOLD**, not failed; no access grant. Parent must read/positively assess the ENTIRE current method before new review access. Publication security review is not product review.
 - Original launch errored **terminal_surface_ownership_unavailable**, request **970afac8-8a4e-4f7c-8b39-642cffe4df48**. Request-show ABSENT alone is not no-effects proof. Coordinator additionally inspected full128-task/97-worker scopes and found no original-sixth Task/Dispatch. Preserve exact [nativeStarts](../../readiness/Source7-cap6-SEALED04fb-twoNEW-FULL-originalQuality82-nativeStarts-beforeOwnMethods-NOaccessGrant.json); inspect current task/dispatch/resource facts and recover the **same request** using installed recovery guide. No duplicate task.
 - Only after both complete original+quality reviews meet existing conditional zero-HIGH/CRITICAL gates AND fresh formal admission may an exact authorized worker apply the exact candidate and run qualified SAFE changed-path smoke. Whole-source bytes/size gates and separate runtime/credential/spend admission remain mandatory. No native/paid permission follows. Preserve original failed full-snapshot receipt and stopped retained store; unretained failure cause remains UNKNOWN, not an inferred payload ceiling.
 
@@ -61,17 +75,34 @@ Other historical counters: #3 source repair1/2 effort0/2; #11 repair1/2 effort0/
 
 ## Clean-machine checkout and checking
 
-In a new disposable directory, fetch the existing PR branch, not merge/deploy:
+In a new disposable directory, first read the live PR lifecycle; do not merge or deploy:
 
 ```sh
 git clone https://github.com/namastex888/trending-research.git trending-research-checkpoint
 cd trending-research-checkpoint
+gh pr view 22 --repo namastex888/trending-research --json state,mergedAt,mergeCommit,baseRefName,headRefName,headRefOid,isDraft,statusCheckRollup,mergeable,mergeStateStatus,url
+git rev-parse HEAD
+```
+
+If OPEN, fetch and inspect that same PR head:
+
+```sh
 git fetch origin pull/22/head:checkpoint-22
 git switch checkpoint-22
 git rev-parse HEAD
 ```
 
-Read this only after checkpoint files actually land on that PR head; pre-publication head observed here is **f429**, checkpoint commit identity pending. Record the real landed SHA. Stdlib offline path needs `python3`; no SDK/global build/install/native collector. Do not run `run.py` collection or diagnostic/Brain/DSH/candidate/ancillary runners. Discovered offline commands:
+If MERGED, fetch updated `main`, check it out in this disposable clone, and record both the actual PR merge SHA and the actual `main` SHA (they need not be equal):
+
+```sh
+git fetch origin main
+git switch --detach origin/main
+git rev-parse HEAD
+```
+
+Do not reopen/push historical PR22 after merge. An unexpected CLOSED/unmerged state requires reconciliation with the user, not automatic recreation.
+
+Record the actual checked-out SHA and committed handoff link after publication. Historical pre-publication head **f429** and `checkpoint.json`'s `current_head` are not current identities; [REBASE.md](REBASE.md) records later integration evidence. The original **draft** label and pre-publication restrictions describe earlier history, not an instruction to revert PR22's non-draft lifecycle. Stdlib offline path needs `python3`; no SDK/global build/install/native collector. Do not run `run.py` collection or diagnostic/Brain/DSH/candidate/ancillary runners. Discovered offline commands:
 
 ```sh
 python3 -m unittest discover tests && python3 eval.py --features tests/fixtures/features_a.json tests/fixtures/features_b.json --hype tests/fixtures/hype_small.json
@@ -79,16 +110,16 @@ python3 eval.py --issue11-smoke --features tests/fixtures/features_a.json tests/
 genie wish lint --dir "$PWD"
 ```
 
-Preparation ran each once: aggregate **exit0 / 45 tests OK + fixture evaluation**, actual scoring smoke **exit0**; wish lint **exit1**, one preserved documentary snapshot `verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md` lacks Execution Strategy table. No suppression/repair/confirmation rerun. Genie absent on new machine means lint unexercised, not permission to install globally. Tests/smoke do not prove native requirements, candidate correctness, CI, tenancy or release. Accepted UI source unchanged; no new UI acceptance exercise.
+Historical checkpoint preparation ran each once: aggregate **exit0 / 45 tests OK + fixture evaluation**, actual scoring smoke **exit0**; wish lint **exit1**, one then-recorded documentary snapshot `verification/group-3-native-extension-round1-before-design-repair1-full-DESIGN-originald689.md` lacks Execution Strategy table. The later rebase recorded three preserved lint findings; consult [REBASE.md](REBASE.md) for dated results and any current conflict-resolution evidence, not a fresh gate claim here. No suppression/repair/confirmation rerun. Genie absent on new machine means lint unexercised, not permission to install globally. Tests/smoke do not prove native requirements, candidate correctness, CI, tenancy or release. Accepted UI source unchanged by this handoff; no new UI acceptance exercise.
 
 ## Comparison recipe
 
-Requested next interval approximately100 hours; **past work hours/coding/total costs UNKNOWN**, not inferred from user wording. Comparison baseline **f429a573ddc98ce8aef50520c2e420d1ea883f19**, dated2026-10-10T00:44:04Z, last published head; original roadmap baseline **65fe46ef8fde709fa3993cea98b20392b50089d9**. `checkpoint.json` records real UTC clock, source/data/tests/docs/evidence physical file/LF/B counts; large evidence volume is not product progress.
+The earlier requested next interval was approximately100 hours; **active work/coding hours and whole-goal total costs remain UNKNOWN**, distinct from the bounded measured research checkpoint above. Historical comparison baseline **f429a573ddc98ce8aef50520c2e420d1ea883f19**, dated2026-10-10T00:44:04Z, was the then-published head; original roadmap baseline **65fe46ef8fde709fa3993cea98b20392b50089d9**. The later rebased comparison baseline is **aa932ad3c29af7f5a67c3060344af97bc8d87c75**; use [REBASE.md](REBASE.md) and current HEAD for subsequent integration identities. `checkpoint.json` records historical UTC clock and source/data/tests/docs/evidence physical file/LF/B counts; large evidence volume is not product progress.
 
 ```sh
 git diff --numstat f429a573ddc98ce8aef50520c2e420d1ea883f19 HEAD -- observatory tests docs .genie/wishes/open-intelligence-observatory
 git diff --numstat 65fe46ef8fde709fa3993cea98b20392b50089d9 HEAD
-gh pr view 22 --repo namastex888/trending-research --json headRefOid,isDraft,statusCheckRollup,mergeStateStatus
+gh pr view 22 --repo namastex888/trending-research --json state,mergedAt,mergeCommit,headRefOid,isDraft,statusCheckRollup,mergeable,mergeStateStatus
 ```
 
-Compare original+quality accepted IDs, remaining eighty criteria/five exits, separate product/source versus test/doc/evidence counts, exact changed-path smoke observations, full aggregate/lint failures, real remote checks/serving identity and observed model/spend receipts. Current model generations **0 recorded**; actual total/coding/time costs **null/UNKNOWN**. Existing USD20 total / DSH12 / Brain8 reservations are not measured expenditure or fresh paid permission. Credential readiness does not establish enforced paid-use admission.
+Compare original+quality accepted IDs, remaining eighty criteria/five exits, separate product/source versus test/doc/evidence counts, exact changed-path smoke observations, full aggregate/lint failures, real remote checks/serving identity and scoped model/spend receipts. Historical original product validation recorded **0 model calls**; that is not zero research requests or current whole-session activity. Actual whole-goal total/coding/time costs remain **null/UNKNOWN** despite the bounded SDK-local estimate above. Existing USD20 total / DSH12 / Brain8 reservations are not measured expenditure or fresh paid permission. Credential readiness does not establish enforced paid-use admission.
